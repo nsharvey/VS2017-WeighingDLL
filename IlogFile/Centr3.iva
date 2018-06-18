@@ -8,11 +8,11 @@ application "Centr3" {
     iref           4.01; 
     ViewsVersion   6.21; 
     system         "x86_.net2017_15.0"; 
-    date           "Thu Jun 14 11:11:11 2018"; 
+    date           "Mon Jun 18 12:06:28 2018"; 
     fileBase       "Centr3"; 
     class          "Testapp"; 
     baseClass      "IlvApplication"; 
-    dataDir        "C:\\GitHub\\Weighing2017\\IlogFile\\"; 
+    dataDir        "C:\\GitHub\\VS2017-WeighingDLL\\IlogFile\\"; 
     JvScript       true; 
     targetPlatform "x86_.net2017_15.0 (MDA)"; 
     srcDir         "../cssrc/"; 

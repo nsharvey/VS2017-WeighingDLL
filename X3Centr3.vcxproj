@@ -66,7 +66,7 @@
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>true</GenerateManifest>
-    <IncludePath>C:\GitHub\Weighing2017\Rogue Wave\Views 6.2.1\lib;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Program Files (x86)\Rogue Wave\Views 6.2.1\lib;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='test gbe|Win32'">
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
@@ -105,8 +105,8 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalOptions>/GR  %(AdditionalOptions)</AdditionalOptions>
-      <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\GitHub\Weighing2017\Rogue Wave\Views 6.2.1\include;C:\GitHub\Weighing2017\cssrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Rogue Wave\Views 6.2.1\include;C:\GitHub\VS2017-WeighingDLL\cssrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;IL_STD;X3CENTR3_EXPORTS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -115,11 +115,12 @@
       <WarningLevel>Level1</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4996;4482;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <AdditionalDependencies>winviews.lib;ilvbmp.lib;ilvjpg.lib;ilvgadgt.lib;ilvadvgdt.lib;ilvatext.lib;ilvadvgadmgr.lib;ilvappframe.lib;ilvmgr.lib;ilvgadmgr.lib;ilog.lib;views.lib;wsock32.lib;imm32.lib;comctl32.lib;shlwapi.lib;Version.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>C:\Program Files (x86)\Sage\ILogConnector\Scales\V6\X3Scales.dll</OutputFile>
-      <AdditionalLibraryDirectories>C:\GitHub\Weighing2017\Rogue Wave\Views 6.2.1\lib\x86_.net2017_15.0\stat_mta;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Rogue Wave\Views 6.2.1\lib\x86_.net2017_15.0\stat_mta;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ModuleDefinitionFile>.\cssrc\x3centr1.def</ModuleDefinitionFile>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>

@@ -1,8 +1,8 @@
 // -------------------------------------------------------------- -*- C++ -*-
-// File: C:\e\MyDevelopment\centrale sarto modif\cssrc\clavier_tactile.h
-// IlogViews 5 generated header file
-// File generated Tue May 11 17:33:38 2010
-//      by IBM ILOG Views Studio
+// File: C:\GitHub\VS2017-WeighingDLL\cssrc\clavier_tactile.h
+// RogueWaveViews 6 generated header file
+// File generated Mon Jun 18 12:06:28 2018
+//      by Rogue Wave Views Studio
 // --------------------------------------------------------------------------
 #ifndef __clavier_tactile__header__
 #define __clavier_tactile__header__
@@ -11,9 +11,9 @@
 #include <ilviews/graphics/rectangl.h>
 #include <ilviews/graphics/relfrect.h>
 #include <ilviews/gadgets/button.h>
+#include <ilviews/gadgets/frame.h>
 #include <ilviews/graphics/scale.h>
 #include <ilviews/gadgets/numfield.h>
-#include <ilviews/gadgets/frame.h>
 #include <ilviews/graphics/gauge.h>
 #include <ilviews/gadgets/matrix.h>
 #include <ilviews/gadgets/datfield.h>
@@ -61,10 +61,10 @@ public:
                            visible)
         { initialize(); }
 // --------------------------------------------------------------------------
-    virtual void toucheCB(IlvGraphic*);
-    virtual void retourCB(IlvGraphic*);
     virtual void validationCB(IlvGraphic*);
+    virtual void toucheCB(IlvGraphic*);
     virtual void arriereCB(IlvGraphic*);
+    virtual void retourCB(IlvGraphic*);
     IlvTextField* getchampSaisie() const
 	{ return (IlvTextField*)getObject("champSaisie"); }
     IlvZoomableTransparentIcon* getE() const
@@ -150,7 +150,7 @@ public:
     IlvZoomableTransparentIcon* getretour() const
 	{ return (IlvZoomableTransparentIcon*)getObject("retour"); }
     IlvZoomableTransparentIcon* gettiret() const
-	{ return (IlvZoomableTransparentIcon*)getObject("A12"); }
+	{ return (IlvZoomableTransparentIcon*)getObject("tiret"); }
 protected:
     void initialize();
 };
