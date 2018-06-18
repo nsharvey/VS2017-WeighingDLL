@@ -1,0 +1,76 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Data Access - Samples: nodb</title>
+	</head>
+    <body>
+		<a name="folio"><h1>Sample: <code>folio</code></h1><h1 class="subtitle">Rogue Wave Views Data Access Folio sample</h1></a>
+		<p>This sample shows how to customize a Table Gadget look and how to define a custom subclass.</p>
+		<img src="data/folio.png"/>
+		<p>Table Gadget's even rows are white and odd rows gray.</p>
+          <p>The font color is blue except for the Profits column if it's value is negative: it that case, the color is red.</p>
+          <p>Buttons:
+             <ul><li>Load: to load a pfl file in the Table Gadget</li>
+                 <li>Save: to save the Table Gadget contents in a pfl file</li>
+                 <li>Clear: to clear the Table Gadget</li></ul></p>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/folio.h"><code>include/folio.h</code></a></li>
+			<li><a href="src/folio.cpp"><code>src/folio.cpp</code></a></li>
+			<li><a href="include/foliotbl.h"><code>include/foliotbl.h</code></a></li>
+			<li><a href="src/foliotbl.cpp"><code>src/foliotbl.cpp</code></a></li>
+		</ul>
+		<a name="form"><h1>Sample: <code>form</code></h1><h1 class="subtitle">Rogue Wave Views Data Access Form sample</h1></a>
+		<p>This sample shows how to modify a datasource by using db-gadgets connected to it.</p>
+		<img src="data/form.png"/>
+		<p>The Navigator lets you move from one row to another.</p>
+          <p>The Lock data button lets you edit or not the differents fields you depending it is on or off.</p>
+          <p>The Name field is always in capital letter even if it is edited with small letters. The Account field font is blue if positive, red if negative.</p>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/form.h"><code>include/form.h</code></a></li>
+			<li><a href="src/form.cpp"><code>src/form.cpp</code></a></li>
+		</ul>
+		<a name="html"><h1>Sample: <code>html</code></h1><h1 class="subtitle">Rogue Wave Views Data Access Html sample</h1></a>
+		<p>This sample shows how to use the HTML Reporter to generate a HTML report.</p>
+		<img src="data/html.png"/>
+		<p>The generated report is named &quot;report.html&quot; and can be opened with any HTML browser.</p>
+          <p>You can choose:
+             <ul><li>if you want a table of contents or not and if you want it at the end or at the beginning of the report</li>
+                 <li>which model you want for the generated file</li></ul>
+When this is done, you just have to click the Generate button.</p>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/html.h"><code>include/html.h</code></a></li>
+			<li><a href="src/html.cpp"><code>src/html.cpp</code></a></li>
+		</ul>
+		<a name="sintoggl"><h1>Sample: <code>sintoggl</code></h1><h1 class="subtitle">Rogue Wave Views Data Access Single Toggle sample</h1></a>
+		<p>This sample shows how to modify the current editor of a Table Gadget's column.</p>
+		<img src="data/sintoggl.png"/>
+		<p>The Sell's column contains a three states button instead of a boolean.</p>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/sintoggl.h"><code>include/sintoggl.h</code></a></li>
+			<li><a href="src/sintoggl.cpp"><code>src/sintoggl.cpp</code></a></li>
+		</ul>
+		<a name="usercall"><h1>Sample: <code>usercall</code></h1><h1 class="subtitle">Rogue Wave Views Data Access User Call sample</h1></a>
+		<p>This sample shows how to define global callbacks.</p>
+		<img src="data/usercall.png"/>
+		<p>Buttons:
+             <ul><li>Load: to load a mem file in the Table Gadget</li>
+                 <li>Save: to save the Table Gadget contents in a mem file</li></ul></p>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/usercall.h"><code>include/usercall.h</code></a></li>
+			<li><a href="src/usercall.cpp"><code>src/usercall.cpp</code></a></li>
+		</ul>

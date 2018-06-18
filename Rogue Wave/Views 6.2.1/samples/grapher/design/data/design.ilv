@@ -1,0 +1,21 @@
+// Ilv Version: 4.0
+// File generated: Mon Mar 13 19:12:33 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "design"
+PathName "D:\\users\\cmt\\dev\\Grapher\\Samples\\data\\design.ilv"
+Palettes 1
+"default" 0 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 2
+1 { 0 P 2
+[ IlvAttachments _IlvAttachments 368  1 0 1 0 1 0 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToolBar 0 0 640 34 F935 2 V0 2 0 0 32 32 } 32 "Toolbar"
+0
+1 { 1 P 2
+[ IlvAttachments _IlvAttachments 1008  1 0 1 35 1 0 1 0 2 2 ]
+[ IlvInteractorProperty __ilvInteractor "SCManager" ]
+0 IlvSCGrapherRectangle 0 35 624 429 YY } 32 "GraphRect"
+0
+Size 640 480
+Background "gray"
+EOF

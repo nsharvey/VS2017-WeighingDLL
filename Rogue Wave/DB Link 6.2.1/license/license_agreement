@@ -1,0 +1,613 @@
+                  ROGUE WAVE(R) SOFTWARE LICENSE AGREEMENT
+                         VISUALIZATION PRODUCT LINE
+                                 (MAY 2017)
+
+IMPORTANT - READ CAREFULLY:
+
+   THIS SOFTWARE LICENSE AGREEMENT IS A LEGAL AGREEMENT BETWEEN YOU
+AND ROGUE WAVE SOFTWARE, INC.  IF YOU ARE INSTALLING THE SOFTWARE FOR
+PERSONAL USE, THIS AGREEMENT APPLIES TO AND BINDS YOU PERSONALLY.  IF
+YOU ARE INSTALLING THE SOFTWARE AS PART OF YOUR WORK FOR AN
+ORGANIZATION, THIS AGREEMENT APPLIES TO AND BINDS SUCH
+ORGANIZATION. "LICENSEE" OR "YOU" AND "YOUR" REFER TO THE PERSON OR
+ENTITY THAT IS LICENSEE OF THE SOFTWARE.  BY INSTALLING, COPYING, OR
+OTHERWISE USING THE SOFTWARE THAT ACCOMPANIES THIS AGREEMENT, YOU OR
+SUCH ENTITY AGREE TO BE BOUND BY THE TERMS AND CONDITIONS OF THIS
+AGREEMENT.  IF YOU OR SUCH ORGANIZATION DOES NOT AGREE TO BE BOUND BY
+THIS AGREEMENT, YOU MAY NOT USE, COPY OR INSTALL THE SOFTWARE, AND
+SHOULD, WITHIN THIRTY (30) DAYS OF PURCHASE, RETURN IT WHERE YOU
+OBTAINED THE SOFTWARE, FOR A FULL REFUND.
+
+   THE TERMS OF THIS LICENSE AGREEMENT CONSTITUTE THE ENTIRE AGREEMENT
+AND UNDERSTANDING BETWEEN THE PARTIES AND SUPERSEDE ANY AND ALL
+PREVIOUS COMMUNICATIONS, REPRESENTATIONS OR AGREEMENTS, WHETHER
+WRITTEN OR ORAL, WITH RESPECT TO THE SUBJECT MATTER HEREOF.  ANY TERM
+OR CONDITION IN ANY PURCHASE ORDER OR OTHER DOCUMENT FURNISHED BY
+LICENSEE THAT IS IN ADDITION TO OR INCONSISTENT WITH THIS LICENSE
+AGREEMENT IS HEREBY EXPRESSLY REJECTED.  THE SOFTWARE IS LICENSED AND
+NOT SOLD.
+
+1. DEFINITIONS.
+
+1.1  "Application" means a software application created by a Licensed
+  Developer to support the internal operation of Licensee's business
+  that makes use of or incorporates the Licensed Software in its
+  implementation without exposing any part of the Licensed Software
+  application programming interface either directly or indirectly.
+
+1.2 "Licensed Developer" means an individual software developer
+  employed by or under contract to Licensee for whom Licensee has paid
+  the applicable development license fees required to authorize such
+  person to use the Licensed Software to develop Applications on
+  Licensee's behalf.  Licenses for Licensed Developers are priced on an
+  individual, concurrent or academic user, platform specific, per
+  product basis.
+
+1.3 "Licensed Device" means a single user computing device owned or
+  leased by Licensee or contractors under Licensee's control for which
+  Licensee has paid the applicable device license fees required to
+  authorize Licensed Users to deploy, use or access Applications on such
+  device.  Licenses for Licensed Devices are priced on a platform
+  specific, per product, per device basis for use by Licensed Users on
+  an individual, concurrent or academic basis.  Use or access of
+  Applications deployed on servers is limited to Licensed Devices and
+  Licensed Users.
+
+1.4  "Licensed Software" means the Rogue Wave software product(s), in
+  object code format only, together with the user guides, reference
+  manuals and other documentation accompanying such software or
+  otherwise made available by Rogue Wave (collectively, the
+  "Documentation") for which Licensee has paid the applicable license
+  fees, and any modified or updated versions of any of the foregoing
+  made available to Licensee pursuant to Licensee's purchase of
+  Maintenance and Support under the same terms and conditions.  Licensed
+  Software does not include any third-party software products that may
+  be embedded in or bundled with the Licensed Software, which products
+  are separately licensed by the copyright holder.
+
+1.5 "Licensed User" means an individual employed by or under contract
+  to Licensee for whom Licensee has paid the applicable fees required to
+  authorize such person to use a Licensed Device on Licensee's behalf.
+  Licenses for Licensed Users are priced on an individual ("Individual
+  User"), concurrent ("Concurrent User") or academic ("Academic User")
+  user a platform specific, per product, basis for designated devices.
+
+1.6 "Maintenance and Support" means the technical support and software
+  maintenance services on the Licensed Software for which Licensee has
+  paid the applicable fees.
+
+
+2. LICENSE GRANTS.
+
+2.1 Development License Grant.
+  Subject to the terms and conditions of this License Agreement, and
+  upon payment of the applicable fees, Rogue Wave grants to Licensee a
+  nonexclusive, nontransferable, perpetual, limited right and license to
+  permit Licensed Developers to install and use the Licensed Software in
+  object code form for the sole purpose of creating and testing
+  Applications.  In connection with this license, Licensee may make or
+  have made one copy of the Licensed Software for back-up or disaster
+  recovery purposes, provided, that Rogue Wave's copyright notice and
+  other proprietary rights notices are reproduced on the copy.
+
+2.2 Use License Grant.
+  Subject to the terms and conditions of this License Agreement, and
+  upon payment of the applicable fees, Rogue Wave grants to Licensee a
+  nonexclusive, nontransferable, perpetual, limited right and license to
+  permit Licensed Users to use the Licensed Software, as embedded in
+  Applications developed by Licensed Developers, on Licensed Devices
+  located at facilities owned by Licensee or contractors under
+  Licensee's control, solely for Licensee's internal business purposes.
+  In connection with this license, Licensee may copy or have copied the
+  Licensed Software embedded in or used in the execution of an
+  Application as necessary for the purpose of exercising the rights
+  granted under this Section, provided that Licensee may not remove any
+  copyright notice or other proprietary rights notices contained in the
+  Licensed Software.
+
+
+3. LICENSE RESTRICTIONS AND LICENSEE RESPONSIBILITIES. 
+
+3.1 Development Restrictions.
+  The development rights granted to Licensee in Section 2.1 may only
+  be exercised by individual developers employed by or under contract
+  to Licensee that Licensee has designated as "Licensed Developers"
+  and for whom Licensee has paid the applicable development license
+  fees.  With regard to individual or node-locked developer licenses,
+  if one Licensed Developer ceases to be employed by or under contract
+  to Licensee or permanently ceases work on projects involving the
+  Licensed Software, then Licensee may designate an alternate
+  developer to replace such Licensed Developer at no additional cost.
+  However, individual or node-locked development licenses may not be
+  used by numerous developers in shifts.  Conversely, concurrent or
+  floating development licenses may be used by any number of
+  individuals so long as the maximum number of individuals using the
+  Licensed Software at any time does not exceed the number of
+  concurrent or floating development licenses purchased.  Licensee may
+  not create a programmatic interface that makes use of the Licensed
+  Software application programming interfaces for use by any party
+  other than Licensed Developers and must ensure that persons other
+  than Licensed Developers do not have programmatic access to the
+  Licensed Software either directly or indirectly.  Licensee may not
+  allow anyone other than a Licensed Developer to use the Licensed
+  Software or Documentation for the development of Applications or
+  allow Licensed Developers to use the Licensed Software or
+  Documentation for any purpose except for the development of
+  Applications.
+
+3.2 Use Restrictions.
+  The use rights granted to Licensee in Section 2.2 may only be
+  exercised by individuals employed by or under contract to Licensee
+  that Licensee has designated as "Licensed Users" and for whom
+  Licensee has paid the applicable license fees and on specific
+  computing devices owned or leased by Licensee or contractors under
+  Licensee's control, located at facilities owned or leased by
+  Licensee or contractors under Licensee's control that Licensee has
+  designated as "Licensed Devices" and for which Licensee has paid the
+  applicable license fees.  Licensee must license every device which
+  runs, provides data to, uses services provided by, or otherwise
+  accesses Applications containing the Licensed Software.  Licensee
+  may not install Applications on back-up or fail-over computers
+  without paying the applicable fees for such computers.
+  Notwithstanding any license management mechanisms used by the
+  Licensed Software, Licensee is responsible for ensuring that the
+  Licensed Software is not used by users or on computing devices in
+  excess of those for which Licensee has paid the applicable fees.
+  Individual User license rights may only be exercised by individuals
+  employed by or under contract to Licensee for whom Licensee has paid
+  the applicable per product Individual User license fees.  If an
+  Individual User ceases to be employed by or under contract to
+  Licensee or permanently ceases work on projects involving the
+  Licensed Software, then Licensee may designate an alternate
+  individual to replace such Individual User at no additional cost.
+  However, the Individual User license is not a concurrent license
+  that may be used by more than one individual in shifts.  Concurrent
+  User license rights may only be exercised by individuals employed by
+  or under contract to Licensee and for whom Licensee has paid the
+  applicable per product Concurrent User license fees.  Licensee must
+  ensure that no more than the maximum number of licensed Concurrent
+  Users is using the Licensed Software at any one time.  Academic User
+  license rights may only be exercised by a teacher or student at an
+  accredited institution organized and operated exclusively for the
+  purpose of teaching its enrolled students (e.g., a university,
+  college or high school), which has been granted a discount to
+  authorize such person to use the Licensed Software solely for
+  student instruction and learning.  Academic discounts are not
+  available for satellite organizations such as research laboratories
+  and hospitals.
+
+3.3 Distribution Restrictions.
+  Except as may be otherwise specified in a written addendum to this
+  License Agreement executed by Rogue Wave, Licensee has no right to
+  copy for distribution, distribute or permit deployment of the
+  Licensed Software or Applications on computers or at facilities not
+  owned or leased by Licensee or contractors under Licensee's
+  control.
+
+3.4 General Use Limitations.
+  All rights not specifically granted herein are retained by Rogue
+  Wave.  Licensee may not, nor may Licensee permit any other person or
+  entity to use, copy, modify, or distribute the Licensed Software
+  (electronically or otherwise), or any copy, adaptation,
+  transcription, or merged portion thereof, or the Documentation
+  except as expressly authorized by Rogue Wave.  Licensee may not
+  modify or port the Licensed Software to operate on or deploy the
+  Licensed Software or Applications on platforms other than those for
+  which it has paid the appropriate fees.  Licensee may not, nor may
+  Licensee permit any other person or entity to, reverse assemble,
+  reverse compile, or otherwise translate any binary forms of the
+  Licensed Software, except to the extent applicable laws specifically
+  prohibit such restriction. Licensee's rights may not be transferred,
+  leased, assigned, or sublicensed except for a transfer of the
+  License Agreement in its entirety to (1) a successor in interest of
+  Licensee's entire business who assumes the obligations of this
+  License Agreement or (2) any other party who is reasonably
+  acceptable to Rogue Wave, enters into a substitute version of this
+  License Agreement, and pays an administrative fee intended to cover
+  attendant costs. No service bureau work, multiple-user license, or
+  time-sharing arrangement is permitted, except as expressly
+  authorized by Rogue Wave.  If Licensee uses, copies, or modifies the
+  Licensed Software or transfers possession of any copy, adaptation,
+  transcription, or merged portion thereof to any other party in any
+  way not expressly authorized by Rogue Wave, all licenses under this
+  License Agreement are automatically terminated.
+
+3.5 Proprietary Protection.
+  Rogue Wave shall have sole and exclusive ownership of all right,
+  title, and interest in and to the Licensed Software and all
+  modifications and enhancements thereof (including ownership of all
+  trade secrets and copyrights pertaining thereto), subject only to
+  the rights and privileges expressly granted to Licensee herein by
+  Rogue Wave.  This License Agreement does not provide Licensee with
+  title or ownership of the Licensed Software, but only a right of
+  limited use. Licensee must keep the Licensed Software free and clear
+  of all claims, liens, and encumbrances.
+
+3.6 Compliance Verification.
+  Licensee must have a commercially-reasonable process in place to
+  track the usage of the Licensed Software in order to ensure that the
+  appropriate license fees have been paid under this License
+  Agreement.  Licensee will, upon Rogue Wave's request, certify in
+  writing its usage of Licensed Software.  In the event Licensee fails
+  to provide such certification within thirty (30) days of Rogue
+  Wave's request, or, if Rogue Wave reasonably believes that a
+  certification provided by Licensee is inaccurate, Licensee will
+  permit Rogue Wave, or a mutually-approved independent
+  representative, to enter Licensee's premises, during regular
+  business hours, to verify Licensee's compliance with the terms of
+  this License Agreement.
+
+3.7 Confidentiality.
+  Licensee agrees that all material and information relating to the
+  Licensed Software is made available for use solely under and in
+  accordance with the terms and conditions of this License
+  Agreement. Licensee has no right at any time during or after
+  cancellation or termination of this License Agreement to disclose
+  such material and/or information relating to the Licensed Software,
+  whether directly or indirectly, to any third party without Rogue
+  Wave's prior written approval. Licensee shall hold harmless, defend
+  and indemnify Rogue Wave from and against any and all losses, costs,
+  damages and expenses arising out of or in connection with Licensee's
+  failure to comply with requirements of this Section.
+
+3.8 Development of Applications.
+  The Licensed Software is intended for use by sophisticated
+  developers.  Licensee is responsible for selecting persons who are
+  qualified to use the Licensed Software on Licensee's own equipment
+  and are familiar with the Licensed Software.  Licensee is also
+  responsible for ensuring a proper environment and proper utilities
+  for the development and execution of Applications utilizing the
+  Licensed Software.  Licensee represents that it has the requisite
+  expertise to evaluate the suitability of the Licensed Software and
+  that it has undertaken its own investigation of the suitability of
+  the Licensed Software in the Applications. Licensee represents that
+  it has relied upon its own skill and judgment in selecting the
+  Licensed Software and developing the Applications.
+
+3.9 Relationship with End Users.
+  There are no third party beneficiaries to this License Agreement.
+  Consequently, Rogue Wave provides no warranty at all to any person,
+  other than the limited warranty provided to Licensee hereunder.
+  Licensee will be solely responsible for the development of the
+  Applications authorized by this License Agreement and for providing
+  all support or services required or requested by end users of the
+  Applications. Licensee will not make any representations or
+  warranties to its employees, customers, end users or any other third
+  party on Rogue Wave's behalf.  Rogue Wave assumes no responsibility
+  under this License Agreement, either directly or indirectly, for
+  damages to Licensee or third parties resulting from the direct or
+  indirect use of the Applications created by or on behalf of
+  Licensee.
+
+3.10 Remedies.
+  Licensee acknowledges that, in the event of Licensee's breach of any
+  of the foregoing provisions, Rogue Wave will not have an adequate
+  remedy in money or damages.  Rogue Wave will therefore be entitled
+  to obtain an injunction against such breach from any court of
+  competent jurisdiction immediately upon request without posting a
+  bond.  Rogue Wave's right to obtain injunctive relief shall not
+  limit its right to seek further remedies.
+
+
+4. MAINTENANCE AND SUPPORT OF LICENSED SOFTWARE.
+
+   Rogue Wave or its authorized resellers shall provide Maintenance
+and Support on the Licensed Software at the level and for the period
+for which Licensee has paid the applicable fees.  Maintenance and
+Support services provided by Rogue Wave are provided in accordance
+with Rogue Wave's standard maintenance and support and obsolescence
+policies, which are subject to change.  Maintenance and Support is
+limited to platforms listed on Rogue Wave's current product support
+matrix, which is also subject to change.  Licensee is responsible for
+ensuring that its environment is on the current product support
+matrix.  Off-matrix support is available from Rogue Wave for an
+additional fee.  Unless otherwise specified in a quote generated by
+Rogue Wave, at the end of the initial maintenance and support term,
+Maintenance and Support will automatically renew for successive terms
+of one (1) year subject to Licensee's acceptance of Rogue Wave's or
+its authorized reseller's then-current fees, unless notice of
+non-renewal is given by either party no less than thirty (30) days
+before expiration of the term.  Licensee will be deemed to have
+accepted Rogue Wave's or its authorized reseller's then-current fees
+for any successive term unless Licensee gives notice to Rogue Wave or
+its authorized reseller (as applicable) of its rejection of any
+increase in fees no later than thirty (30) days after Licensee
+receives notice thereof.
+
+
+5. LIMITED WARRANTY, DISCLAIMER AND LIMITATION OF LIABILITY.
+
+5.1 Limited Warranty.
+  Rogue Wave warrants to Licensee and for Licensee's benefit only that
+  the unaltered Licensed Software, when used as permitted under the
+  License Agreement and in accordance with the instructions in the
+  Documentation, will operate substantially as described in the
+  Documentation for a period of thirty (30) days from the date of
+  delivery (the "Software Warranty Period"). Rogue Wave does not
+  warrant that use of the Licensed Software will be uninterrupted or
+  error-free, that all errors will be corrected, or that use of the
+  Licensed Software will meet Licensee's needs. Rogue Wave will, at
+  its own expense and as its sole obligation and Licensee's sole and
+  exclusive remedy for any breach of this warranty, use commercially
+  reasonable efforts to correct any reproducible error in the Licensed
+  Software reported to Rogue Wave by Licensee in writing during the
+  Software Warranty Period; provided, however, that no such error
+  correction provided to Licensee will extend the original Software
+  Warranty Period. If Rogue Wave determines that it is unable to
+  correct the error, Rogue Wave may, upon approval by Licensee, refund
+  to Licensee the fees paid by the Licensee for the defective Licensed
+  Software and terminate the License Agreement and all licenses
+  granted herein. In the event Licensee does not approve of such
+  refund and termination of the License Agreement, Licensee will be
+  entitled to keep the Licensed Software and use it pursuant to the
+  licenses granted herein; provided, however, that Rogue Wave will not
+  be obligated to provide Maintenance and Support for the Licensed
+  Software that is impacted by the reported defect.
+
+5.2 Exclusions.
+  The limited warranty set forth above will not apply to defects
+  resulting from, or because of, modifications made to the Licensed
+  Software by anyone other than Rogue Wave, misuse, failure of media
+  not furnished by Rogue Wave, operation with media, software or
+  equipment not authorized by Rogue Wave in the Documentation or not
+  meeting or not maintained in accordance with the supplier's
+  specifications, or causes other than ordinary use. The warranty set
+  forth above will not be enlarged, diminished or affected by, and no
+  obligation or liability will arise from, Rogue Wave's rendering of
+  technical advice, assistance or service in connection with
+  Licensee's selection or use of the Licensed Software.  Certain open
+  source or other-vendor software may be distributed with the Licensed
+  Software or recommended in connection with its installation and use.
+  Such products are provided or recommended for Licensee's convenience
+  only.  Rogue Wave makes no representation or warranty of any kind
+  regarding such products.  Rogue Wave offers no support for such
+  products and shall have no liability associated with their use.
+  Licensee's use of these products shall be in accordance with the
+  licenses for such products, copies of which are included with the
+  products and/or in the Rogue Wave documentation.
+
+5.3 DISCLAIMER.
+  EXCEPT FOR THE LIMITED WARRANTY SET FORTH IN SECTION 5.1 ABOVE, THE
+  LICENSED SOFTWARE IS PROVIDED "AS IS," WITHOUT REPRESENTATIONS OR
+  WARRANTIES OF ANY KIND. ROGUE WAVE SPECIFICALLY DISCLAIMS ALL OTHER
+  PROMISES, REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED,
+  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND
+  NON-INFRINGEMENT, AND ANY IMPLIED WARRANTY ARISING FROM COURSE OF
+  PERFORMANCE OR COURSE OF DEALING.
+
+5.4 LIMITATION OF LIABILITY.
+  THE CUMULATIVE LIABILITY OF ROGUE WAVE TO LICENSEE FOR ALL CLAIMS
+  RELATING TO THE LICENSED SOFTWARE AND THIS LICENSE AGREEMENT,
+  INCLUDING ANY CAUSE OF ACTION SOUNDING IN CONTRACT, TORT, OR STRICT
+  LIABILITY, SHALL NOT EXCEED THE TOTAL AMOUNT OF ALL LICENSE FEES
+  PAID TO ROGUE WAVE HEREUNDER. THIS LIMITATION OF LIABILITY IS
+  INTENDED TO APPLY WITHOUT REGARD TO WHETHER OTHER PROVISIONS OF THIS
+  LICENSE AGREEMENT HAVE BEEN BREACHED OR HAVE PROVEN INEFFECTIVE.
+  ROGUE WAVE SHALL HAVE NO LIABILITY FOR LOSS OF DATA OR
+  DOCUMENTATION, IT BEING UNDERSTOOD THAT LICENSEE IS RESPONSIBLE FOR
+  REASONABLE BACK-UP PRECAUTIONS.  IN NO EVENT SHALL ROGUE WAVE BE
+  LIABLE FOR ANY LOSS OF PROFITS; ANY INCIDENTAL, SPECIAL, EXEMPLARY,
+  OR CONSEQUENTIAL DAMAGES; OR ANY CLAIMS OR DEMANDS BROUGHT AGAINST
+  LICENSEE, EVEN IF ROGUE WAVE HAS BEEN ADVISED OF THE POSSIBILITY OF
+  SUCH CLAIMS OR DEMANDS. THIS LIMITATION UPON DAMAGES AND CLAIMS IS
+  INTENDED TO APPLY WITHOUT REGARD TO WHETHER OTHER PROVISIONS OF THIS
+  LICENSE AGREEMENT HAVE BEEN BREACHED OR HAVE PROVEN INEFFECTIVE.
+  LICENSEE MAY HAVE ADDITIONAL RIGHTS UNDER CERTAIN LAWS (E.G.,
+  CONSUMER LAWS) THAT DO NOT ALLOW THE EXCLUSION OF IMPLIED
+  WARRANTIES, OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF
+  SUCH LAWS APPLY, CERTAIN EXCLUSIONS OR LIMITATIONS MAY NOT APPLY TO
+  LICENSEE; HOWEVER, ALL OTHER RESTRICTIONS AND LIMITATIONS SHALL
+  REMAIN IN EFFECT.
+
+
+6. INDEMNIFICATION.
+
+  Rogue Wave agrees to defend Licensee from and against any third
+party claims alleging that the Licensed Software furnished and used
+within the scope of this Agreement infringes or misappropriates a
+U.S. patent issued as of the Effective Date, copyright, trademark or
+trade secret and will pay all final judgments awarded or settlements
+entered into on such claims.  The foregoing indemnity obligation shall
+not extend to any claims of infringement arising out of or related to
+(i) a modification of a Licensed Software by anyone other than Rogue
+Wave or its duly authorized agent; (ii) the incorporation into the
+Licensed Software of any information provided by or requested by
+Licensee; (iii) a combination of the Licensed Software with any third
+party software or equipment not specified in the Documentation and
+where such combination is the cause of such infringement; or (iv) the
+use of a version of a Licensed Software other than the then-current
+version if the infringement would have been avoided by using of the
+then-current version.  In the event the Licensed Software is held or
+is believed by Rogue Wave to infringe, Rogue Wave may, at its sole
+option and expense, elect to (a) modify the Licensed Software so that
+it is non-infringing; (b) replace the Licensed Software with
+non-infringing Licensed Software which is functionally equivalent; (c)
+obtain a license for Licensee to continue to use the Licensed Software
+as provided hereunder; or if none of (a), (b), or (c) is commercially
+reasonable, then (d) terminate the license for the infringing Licensed
+Software and refund the license fees paid for that Licensed Software,
+prorated over a five (5) year term from the Effective Date.  THIS
+SECTION 6 STATES ROGUE WAVE'S ENTIRE LIABILITY AND LICENSEE'S SOLE AND
+EXCLUSIVE REMEDY FOR ANY INFRINGEMENT OF THIRD PARTY PROPRIETARY
+RIGHTS OF ANY KIND.  Rogue Wave's indemnification obligations under
+this Section 6 are conditioned upon the Licensee (a) giving prompt
+notice of the claim to Rogue Wave; (b) granting sole control of the
+defense or settlement of the claim or action to Rogue Wave; and (c)
+providing reasonable cooperation to Rogue Wave and, at Rogue Wave's
+request and expense, assistance in the defense or settlement of the
+claim.
+
+
+7. TERMINATION.
+
+7.1 Term.
+  The term of this License Agreement will begin as of the date that
+  Licensee receives the Licensed Software and will remain in effect
+  perpetually unless terminated under this Section 7.
+
+7.2 Termination for Convenience.
+  Licensee may terminate this License Agreement for any reason, or for
+  no reason, by giving Rogue Wave thirty (30) days written notice.
+
+7.3 Termination for Cause.
+  Rogue Wave may terminate this License Agreement if Licensee breaches
+  its obligations hereunder.  Rogue Wave will effect such termination
+  by giving Licensee notice of termination, specifying therein the
+  alleged breach.  If the breach is curable, Licensee will have a
+  grace period of thirty (30) days after such notice is served to cure
+  the breach described therein.  If the breach is cured within the
+  thirty (30) day grace period, then this License Agreement will
+  remain in effect; otherwise, this License Agreement will
+  automatically terminate upon the conclusion of the thirty (30) day
+  grace period.
+
+7.4 Effect of Termination.
+  Upon termination of the License Agreement for any reason the
+  following terms shall apply:  (a) all rights granted under this
+  License Agreement will immediately terminate and Licensee must
+  immediately stop all use of the Licensed Software; (b) Licensee must
+  return to Rogue Wave or destroy all copies of the Licensed Software
+  provided to or made by or on behalf of Licensee, and will, within
+  ten (10) days after the effective date of termination, provide Rogue
+  Wave with written certification that all such copies have been
+  returned or destroyed; and (c) all provisions of this License
+  Agreement with the exception of the licenses granted in Section 2
+  and Maintenance and Support obligations set forth in Section 4 will
+  survive termination of this License Agreement for any reason.
+  Termination of the License Agreement will not affect Licensee's
+  obligation to pay all amounts accrued hereunder prior to the
+  effective date of termination.  Licensee agrees that the termination
+  of this Agreement by Rogue Wave can never entail liability for Rogue
+  Wave to pay damages to Licensee for anticipated or missing profits
+  that could otherwise have arisen through Licensee's use of the
+  License.
+
+
+8. MISCELLANEOUS.
+
+8.1 Severability.
+  If any term or provision of the License Agreement is found to be
+  invalid under any applicable statute or rule of law, then, that
+  provision notwithstanding, the License Agreement will remain in full
+  force and effect, and in such event, such provision will be changed
+  and interpreted so as to best accomplish the objectives of such
+  unenforceable or invalid provision within the limits of applicable
+  law or applicable court decisions.
+
+8.2 Governing Law/Forum Selection.
+  The License Agreement and the parties' rights and obligations
+  hereunder shall be solely and exclusively construed, interpreted and
+  enforced under and in accordance with the laws of the State of
+  Colorado, United States of America, without any reference to
+  conflicts of law principles.  The parties agree that the
+  U.N. Convention on the International Sale of Goods shall not apply
+  to the License Agreement.  Any and all disputes between the parties
+  shall be brought and resolved solely and exclusively in the state or
+  federal courts located in the State of Colorado, United States of
+  America.  Both parties hereby irrevocably consent to the
+  jurisdiction of such courts and service of process in connection
+  therewith.  Any judgment rendered by such courts may be entered and
+  enforced by any court having jurisdiction over the party against
+  which an award is entered or its assets.  Both parties hereby
+  irrevocably waive any objections to the jurisdiction of such courts
+  based on any ground, including without limitation improper venue or
+  forum non conveniens.
+
+8.3 No Joint Venture.
+  Nothing contained in the License Agreement will be construed so as
+  to make the parties partners or joint venturers or to permit either
+  party to bind the other party to any agreement or purport to act on
+  behalf of the other party in any respect.
+
+8.4 Waiver and Modifications.
+  Failure by Rogue Wave to enforce any rights under this License
+  Agreement will not be construed as a waiver of such rights, and a
+  waiver in one or more instances will not be construed as
+  constituting a continuing waiver or as a waiver in other instances.
+  No modification of this License Agreement shall be binding unless it
+  is in writing and is signed by an authorized representative of the
+  party against whom enforcement of the modification is sought.
+
+8.5 Import/Export Law.
+  Licensee may not import, use or otherwise export or re-export the
+  Licensed Software except as authorized by United States law and the
+  laws of the jurisdiction in which the Licensed Software was
+  obtained.
+
+8.6 Taxes.
+  License fees and Maintenance and Support fees are exclusive of, and
+  Licensee will pay, all shipping charges and all taxes, duties and
+  other charges or fees imposed by governmental authorities arising
+  out of the License Agreement or the use of the Licensed Software by
+  Licensee.  In addition, if any Licensed Software will be delivered
+  to points outside of the United States, all export duties, import
+  duties, tariffs, value added taxes, licenses and other similar
+  taxes, duties and fees will be paid by Licensee.  If Licensee is
+  required by the laws of any jurisdiction to deduct or withhold from
+  any payment to Rogue Wave any income taxes which may be levied
+  against Rogue Wave, then Licensee's payment shall be increased to an
+  amount equal to the pre-tax payment due divided by a factor equal to
+  one minus the applicable foreign tax rate.  The tax shall then be
+  applied to and deducted from the increased payment.
+
+8.7 U.S. Government Rights.
+  The Licensed Software is a "commercial item" as that term is defined
+  at 48 C.F.R. 2.101, consisting of "commercial computer software" and
+  "commercial computer software documentation" as such terms are used
+  in 48 C.F.R. 12.212.  Consistent with 48 C.F.R. 12.212 and 48
+  C.F.R. 227.7202-1 through 227.7202-4, all U.S. Government end users
+  acquire the Licensed Software with only those rights set forth in
+  this License Agreement.  The software licensed to civilian agencies
+  is licensed with Restricted Rights pursuant to FAR 52.227-19.
+
+8.8 English Language.
+  The parties hereto have expressly required that the present License
+  Agreement be drawn up in the English language.
+  Les parties présentes ont expressément exigé que la présente
+  Convention soit rédigée en langue anglaise.
+
+
+9. EVALUATION LICENSE.
+
+  If You obtained the software for evaluation purposes, subject to the
+terms of this License Agreement, Rogue Wave grants You a nonexclusive
+license to install and use the software on computers owned or operated
+by You and which are subject to Your control, for purposes of testing
+and evaluation.  Provided You include all Rogue Wave copyright,
+trademark, and government notices in each copy of the software, You
+may make a reasonable number of copies of the software to accomplish
+the foregoing.   You may not: (i) duplicate, distribute, publish,
+transfer, sublicense, or make software available in any form to
+others; or (ii) assign, sublicense or transfer any license granted
+herein.  You may not export software to another country. Rogue Wave
+retains sole and exclusive ownership of all right, title, and interest
+in and to the software and associated materials, and all copies
+thereof including changes made by You.  The term of the evaluation
+license is THIRTY (30) days, unless terminated as provided herein or
+extended in Rogue Wave's sole discretion.  Rogue Wave may, at its
+option at any time, in addition to other available remedies, with or
+without cause, terminate this license.  Upon termination or expiration
+of the evaluation license You are required to return or destroy, as
+requested by Rogue Wave, all copies of the software in your possession
+and all other materials pertaining to the Software, including all
+copies thereof.  You agree to certify your compliance with such
+requirement upon Rogue Wave's request.  Software provided under an
+evaluation license is provided "AS IS" with NO WARRANTY. Rogue Wave
+MAKES AND YOU RECEIVE NO WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY.
+ROGUE WAVE SPECIFICALLY DISCLAIMS ANY WARRANTY OF MERCHANTABILITY OR
+FITNESS FOR A PARTICULAR PURPOSE.  IN NO EVENT SHALL ROGUE WAVE BE
+LIABLE TO YOU FOR ANY DAMAGES WHATSOEVER UNDER THE EVALUATION LICENSE,
+INCLUDING BUT NOT LIMITED TO DIRECT, CONSEQUENTIAL, INDIRECT, SPECIAL,
+OR INCIDENTAL DAMAGES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGES.
+
+------------------------------------------------------------------------------
+THE LICENSED SOFTWARE IS PROTECTED BY UNITED STATES COPYRIGHT LAW AND
+INTERNATIONAL TREATY. UNAUTHORIZED REPRODUCTION OR DISTRIBUTION IS SUBJECT TO CIVIL AND CRIMINAL PENALTIES.
+------------------------------------------------------------------------------
+
+Copyright 2012-2017, Rogue Wave Software, Inc.  All Rights Reserved.
+Protected by copyright and licenses restricting use, copying,
+distribution and decompilation.  Rogue Wave is a registered trademark
+of Rogue Wave Software, Inc. in the United States and other countries.

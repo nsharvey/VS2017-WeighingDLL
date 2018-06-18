@@ -1,0 +1,163 @@
+// Ilv Version: 5.1
+// File generated: Thu Sep 13 16:59:56 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "geominsp"
+PathName "geominsp.ilv"
+Palettes 6
+5 F "defaultBg" "red" "default" "StockedDefaultGui" 0 solid solid 2 0 0 65535 0
+1 F "defaultBg" "black" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+"IlvStToolBar" 2 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+3 F "defaultBg" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+0 F "defaultBg" "black" "%MS Sans Serif-11-" 0 solid solid 2 0 0 65535 0
+4 F "defaultBg" "yellow" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+IlvObjects 32
+2 { 0 0 IlvRectangle 83 58 89 48 } 32 "rect"
+0
+2 { 1 1 IlvRectangle 83 74 89 16 } 32 "width"
+0
+2 { 2 1 IlvRectangle 120 30 15 28 } 32 "top"
+0
+2 { 3 1 IlvRectangle 120 105 15 29 } 32 "bottom"
+0
+2 { 4 1 IlvRectangle 120 58 15 48 } 32 "height"
+0
+2 { 5 1 IlvRectangle 171 74 37 16 } 32 "right"
+0
+2 { 6 1 IlvRectangle 47 74 36 16 } 32 "left"
+0
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 107 5 40 22 F6 2 16 -1 0 "0" } 32 "ttop"
+0
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 107 136 40 22 F6 2 16 -1 0 "0" } 32 "tbottom"
+0
+2 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 4 71 40 22 F6 2 16 -1 0 "0" } 32 "tleft"
+0
+2 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 211 71 40 22 F6 2 16 -1 0 "0" } 32 "tright"
+0
+2 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+3 IlvButton 170 174 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 544 "Button_1"
+1
+1 "__ilvCallback" "cancel"
+4096 "apply"
+2 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+3 IlvButton 85 174 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+2048 "Button_1"
+2 { 13 4 IlvRectangle 47 30 161 104 } 32 "Rect"
+0
+3 { 14 5 IlvLine 82 74 171 74 } 32 "hori1"
+0
+3 { 15 5 IlvLine 120 57 120 105 } 32 "verti1"
+0
+3 { 16 5 IlvLine 47 81 83 81 } 32 "left0"
+0
+3 { 17 5 IlvLine 47 74 83 74 } 32 "left1"
+0
+3 { 18 5 IlvLine 47 89 83 89 } 32 "left2"
+0
+3 { 19 5 IlvLine 170 74 207 74 } 32 "right1"
+0
+3 { 20 5 IlvLine 170 81 207 81 } 32 "right0"
+0
+3 { 21 5 IlvLine 170 89 207 89 } 32 "right2"
+0
+3 { 22 5 IlvLine 82 81 171 81 } 32 "hori0"
+0
+3 { 23 5 IlvLine 82 89 171 89 } 32 "hori2"
+0
+3 { 24 5 IlvLine 120 30 120 58 } 32 "top1"
+0
+3 { 25 5 IlvLine 127 30 127 58 } 32 "top0"
+0
+3 { 26 5 IlvLine 134 30 134 58 } 32 "top2"
+0
+3 { 27 5 IlvLine 120 104 120 133 } 32 "bottom1"
+0
+3 { 28 5 IlvLine 127 104 127 133 } 32 "bottom0"
+0
+3 { 29 5 IlvLine 134 104 134 133 } 32 "bottom2"
+0
+3 { 30 5 IlvLine 127 57 127 105 } 32 "verti0"
+0
+3 { 31 5 IlvLine 134 57 134 105 } 32 "verti2"
+0
+Size 255 202
+GeometryHandlers
+3 100 100 100 0 100 0
+ 0 0 52 100 52 100
+ 100 100 103 152 103 152
+20 3 170 0 170  0 0 80 11  0 0 5 2
+ 3 211 0 211  0 0 40 10  0 0 4 2
+ 3 0 0 47  161 0 161 13  0 0 47 2
+ 3 0 0 83  89 0 89 0  0 0 83 2
+ 3 0 0 83  89 0 89 1  0 0 83 2
+ 3 170 0 170  0 0 38 20  0 0 47 2
+ 3 170 0 170  0 0 38 19  0 0 47 2
+ 3 0 0 82  90 0 90 14  0 0 83 2
+ 3 0 0 82  90 0 90 22  0 0 83 2
+ 3 0 0 82  90 0 90 23  0 0 83 2
+ 3 120 0 120  0 0 1 24  0 0 31 1
+ 3 127 0 127  0 0 1 25  0 0 24 1
+ 3 134 0 134  0 0 1 26  0 0 17 1
+ 3 134 0 134  0 0 1 31  0 0 17 1
+ 3 127 0 127  0 0 1 30  0 0 24 1
+ 3 120 0 120  0 0 1 15  0 0 31 1
+ 3 120 0 120  0 0 1 27  0 0 31 1
+ 3 127 0 127  0 0 1 28  0 0 24 1
+ 3 133 0 133  0 0 1 29  0 0 18 1
+ 3 85 0 85  0 0 80 12  0 0 90 2
+5 3 0 0 7  40 0 40 8  0 0 5 1
+ 3 0 0 7  40 0 40 7  0 0 5 1
+ 3 0 0 20  15 0 15 2  0 0 17 1
+ 3 0 0 20  15 0 15 3  0 0 17 1
+ 3 0 0 20  15 0 15 4  0 0 17 1
+2 3 19 0 19  0 0 37 5  0 0 47 2
+ 3 18 0 18  0 0 38 21  0 0 47 2
+4 100 67 67 0 67 0
+ 0 0 29 67 29 67
+ 100 67 67 96 67 96
+ 0 0 39 163 39 163
+21 3 174 0 174  0 0 23 11  0 0 5 3
+ 3 174 0 174  0 0 23 12  0 0 5 3
+ 3 136 0 136  0 0 22 8  0 0 5 2
+ 3 0 0 30  104 0 104 13  0 0 68 3
+ 3 0 0 58  48 0 48 0  0 0 57 2
+ 3 0 0 58  48 0 48 4  0 0 96 3
+ 3 89 0 89  0 0 1 21  0 0 6 1
+ 3 81 0 81  0 0 1 20  0 0 14 1
+ 3 74 0 74  0 0 1 19  0 0 21 1
+ 3 74 0 74  0 0 1 14  0 0 21 1
+ 3 81 0 81  0 0 1 22  0 0 14 1
+ 3 89 0 89  0 0 1 23  0 0 6 1
+ 3 89 0 89  0 0 1 18  0 0 6 1
+ 3 81 0 81  0 0 1 16  0 0 14 1
+ 3 74 0 74  0 0 1 17  0 0 21 1
+ 3 0 0 57  49 0 49 31  0 0 96 3
+ 3 0 0 57  49 0 49 30  0 0 96 3
+ 3 0 0 57  49 0 49 15  0 0 96 3
+ 3 104 0 104  0 0 30 27  0 0 29 2
+ 3 104 0 104  0 0 30 28  0 0 29 2
+ 3 104 0 104  0 0 30 29  0 0 29 2
+5 3 0 0 4  22 0 22 9  0 0 3 1
+ 3 0 0 4  22 0 22 10  0 0 3 1
+ 3 0 0 7  16 0 16 5  0 0 6 1
+ 3 0 0 7  16 0 16 1  0 0 6 1
+ 3 0 0 7  16 0 16 6  0 0 6 1
+1 3 9 0 9  0 0 29 3  0 0 29 2
+0
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

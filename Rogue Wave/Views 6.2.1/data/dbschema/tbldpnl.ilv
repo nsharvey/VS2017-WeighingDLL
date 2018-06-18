@@ -1,0 +1,73 @@
+// Ilv Version: 5.1
+// File generated: Tue Oct 30 08:55:15 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "tbldpnl"
+PathName "tbldpnl.ilv"
+Palettes 5
+2 F "defaultBg" "black" "button" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+3 F "defaultBg" "black" "bold" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+1 F "lightgrey" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+4 F "white" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 9
+1 { 0 P 2
+[ IlvAttachments _IlvAttachments 336  1 0 1 0 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvGadget 0 0 416 38 2 } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliMemoryDataSource 37 218 24 24 1 14 1 -1 IliMemoryTable 0 10 5 
+     10 "Column" String 1 -1 1 114 32 
+     8 "Type" Int 2 -1 1 87 32 
+     9 "Length" Int 3 -1 2 58 32 
+     24 "Key" Bool 4 -1 1 49 "0" 45 "%boolmap" "Value" "Label" 
+     24 "Null" Bool 5 -1 1 49 "0" 45 "%boolmap" "Value" "Label" 
+     16 0 8 0
+0
+ } 32 "Schema"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvButton 246 244 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&ok"  }   } 512
+1
+1 "__ilvCallback" "apply"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvButton 331 244 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cancel"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IliTableGadget 5 45 406 191 2 2067 "Schema" 591248975 0 0 1 1 17 18 21 4 0 0 0 1 1 "white" A"normal" "%Tahoma-11-[Charset:0]"  } 32 "TableGadget"
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvMessageLabel 9 9 39 22 F268435468 0 { IlvMessageItem 262153 4 16 4 "Table:"  }   } 0
+0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 60 9 145 22 F6 2 1 -1 0 "" } 32 "TableName"
+0
+1 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvMessageLabel 214 9 54 22 F268435468 0 { IlvMessageItem 262153 4 16 4 "Owner:"  }   } 0
+0
+1 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 280 9 109 22 F6 2 1 -1 0 "" } 32 "TableOwner"
+0
+Size 416 272
+GeometryHandlers
+1 100 0 416 0 416 0
+3 3 331 0 331  0 0 80 3  0 0 5 0
+ 3 246 0 246  0 0 80 2  0 0 90 0
+ 3 0 0 5  406 0 406 4  0 0 5 0
+1 100 0 272 0 272 0
+4 3 244 0 244  0 0 23 3  0 0 5 0
+ 3 244 0 244  0 0 23 2  0 0 5 0
+ 3 218 0 218  0 0 40 1  0 0 15 0
+ 3 0 0 45  191 0 191 4  0 0 36 0
+EOF

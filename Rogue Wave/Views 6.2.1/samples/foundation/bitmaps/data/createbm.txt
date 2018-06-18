@@ -1,0 +1,3 @@
+Files: createbm.cpp, createbm.h
+This sample shows how to create a bitmap. It also shows how to save
+the contents of a container to a jpeg file.

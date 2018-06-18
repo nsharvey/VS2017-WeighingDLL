@@ -1,0 +1,46 @@
+// -------------------------------------------------------------- -*- C++ -*-
+//						 Rogue Wave Views source file
+// File: samples/studio/extension/include/myext.h
+// --------------------------------------------------------------------------
+//
+// Licensed Materials - Property of Rogue Wave Software, Inc.
+// (c) Copyright Rogue Wave Software, Inc. 2012, 2018
+// (c) Copyright IBM Corp. 2009, 2011
+// (c) Copyright ILOG 1992, 2009
+// All Rights Reserved.
+//
+// Note to U.S. Government Users Restricted Rights:
+// The Software and Documentation were developed at private expense and
+// are "Commercial Items" as that term is defined at 48 CFR 2.101,
+// consisting of "Commercial Computer Software" and
+// "Commercial Computer Software Documentation", as such terms are
+// used in 48 CFR 12.212 or 48 CFR 227.7202-1 through 227.7202-4,
+// as applicable.
+//
+// --------------------------------------------------------------------------
+// Declaration of the MyStudioExtension class
+// Initialize the extension
+// --------------------------------------------------------------------------
+
+#ifndef __myext_header
+#define __myext_header
+
+#include <ivstudio/studext.h>
+
+// --------------------------------------------------------------------------
+class MyStudioExtension : public IlvStExtension
+{
+public:
+    MyStudioExtension(IlvStudio* editor);
+    virtual IlBoolean preInitialize();
+    virtual IlBoolean initializePanels();
+    virtual IlBoolean initializeCommandDescriptors();
+    virtual IlBoolean initializeBuffers();
+    virtual IlBoolean initializeInspectors();
+
+    static MyStudioExtension* Get(IlvStudio*);
+    static MyStudioExtension* Make(IlvStudio*);
+};
+
+// --------------------------------------------------------------------------
+#endif /* __myext_header */

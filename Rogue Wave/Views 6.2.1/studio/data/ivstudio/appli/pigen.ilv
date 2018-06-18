@@ -1,0 +1,101 @@
+// Ilv Version: 4.0
+// File generated: Wed Jun 13 15:39:49 2001
+// Creator class: IlvGadgetManagerOutput
+FileName "pigen"
+PathName "pigen.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0
+IlvObjects 17
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 130 80 221 22 F6 2 1 -1 0 "" } 32 "title"
+6144 "transient" "userClass"
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 130 55 221 22 F6 2 1 -1 0 "" } 32 "userClass"
+6144 "title" "name"
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 130 5 219 22 F6 2 1 -1 0 "" } 32 "name"
+2048 "userClass"
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 130 30 219 22 F7 2 1 -1 0 "" } 32 "class"
+6144 "userClass" "name"
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFileSelectorField 130 155 221 22 F6 2 1 -1 0 "" } 32 "bitmap"
+6144 "visible" "destroyCb"
+3 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 5 118 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&name"  }   } 0
+0
+3 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 30 118 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&class"  }   } 0
+0
+3 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 55 118 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&userClass"  }   } 0
+0
+3 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 80 118 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&title"  }   } 0
+0
+3 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 105 118 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&transient"  }   } 0
+0
+3 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 130 118 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&destroyCallback"  }   } 0
+0
+3 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 130 130 221 22 F807 2 1 -1 0 "None" 3
+{ IlvGadgetItem 1 2 4 "None"  } 
+{ IlvGadgetItem 1 2 4 "Exit"  } 
+{ IlvGadgetItem 1 2 4 "Hide"  }  3 0 } 32 "destroyCb"
+6144 "bitmap" "transient"
+3 { 12 0 IlvToggle 130 190 219 16 F1073741825 2 1 2 0 14 0 Y "&visible" } 32 "visible"
+6144 "panelX" "bitmap"
+3 { 13 0 IlvToggle 130 215 219 16 F1 2 1 2 0 14 0 Y "&accelerators" } 32 "accelerators"
+0
+3 { 14 0 IlvToggle 130 240 219 16 F1 2 1 2 0 14 0 Y "&doubleBuffering" } 32 "doubleBuffering"
+0
+3 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 155 118 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&bitmap"  }   } 32 "bitmapLabel"
+0
+3 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 130 105 221 22 F806 2 1 -1 0 "" 0 7 0 } 32 "transient"
+6144 "destroyCb" "title"
+Size 356 271
+GeometryHandlers
+1 100 356 356 0 356 0
+17 3 0 0 130  219 0 219 2  0 0 7 0
+ 3 0 0 130  219 0 219 3  0 0 7 0
+ 3 0 0 130  221 0 221 1  0 0 5 0
+ 3 0 0 130  221 0 221 0  0 0 5 0
+ 3 0 0 10  0 0 118 5  228 0 228 0
+ 3 0 0 10  0 0 118 6  228 0 228 0
+ 3 0 0 10  0 0 118 7  228 0 228 0
+ 3 0 0 10  0 0 118 8  228 0 228 0
+ 3 0 0 10  0 0 118 9  228 0 228 0
+ 3 0 0 10  0 0 118 10  228 0 228 0
+ 3 0 0 130  221 0 221 11  0 0 5 0
+ 3 0 0 130  219 0 219 12  0 0 7 0
+ 3 0 0 130  219 0 219 13  0 0 7 0
+ 3 0 0 130  219 0 219 14  0 0 7 0
+ 3 0 0 10  0 0 118 15  228 0 228 0
+ 3 0 0 130  221 0 221 4  0 0 5 0
+ 3 0 0 130  221 0 221 16  0 0 5 0
+1 100 250 271 0 271 0
+0
+Layers 4
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+EOF

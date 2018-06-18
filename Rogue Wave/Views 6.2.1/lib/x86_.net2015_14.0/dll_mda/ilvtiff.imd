@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- Rogue Wave Views TIFF Dynamic Module Descriptor -->
+<module name="ilvtiff" version="6.2">
+  <class name="IlvTIFFStreamer" rootClass="IlvBitmapStreamer" version="4.0">
+    <format description="Tag Image File Format (TIFF)">
+      <signature>0x49 0x49 0x2a 0x00</signature>
+      <signature>0x4d 0x4d 0x00 0x2a</signature>
+      <extension>tiff</extension>
+      <extension>tif</extension>
+    </format>
+  </class>
+</module>

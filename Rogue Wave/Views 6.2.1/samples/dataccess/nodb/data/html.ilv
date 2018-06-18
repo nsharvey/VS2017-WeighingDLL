@@ -1,0 +1,106 @@
+// Ilv Version: 3.1
+// File generated: Mon Feb  1 11:37:30 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "html"
+PathName "html.ilv"
+Palettes 6
+"IlvStText" 3 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+1 "gray" "black" "bold" "%helvetica-12-B" 0 solid solid 0 0 0
+4 "gray" "black" "large" "%helvetica-18-B" 0 solid solid 0 0 0
+0 "gray" "black" "small" "%helvetica-10-" 0 solid solid 0 0 0
+2 "white" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+5 "gray" "black" "button" "%helvetica-12-B" 0 solid solid 0 0 0
+IlvObjects 11
+1 { 0 0 IliMemoryDataSource 127 51 24 24 1 14 3 10 IliMemoryTable 0 6 5 
+     8 "ID" Int 1 -1 2 71 32 
+     8 "NAME" String 2 -1 1 71 32 
+     8 "STATUS" Int 3 -1 2 71 45 "STATUS_MS" "ID" "NAME" 
+     8 "DEPTNO" Int 4 -1 2 71 45 "DEPT_MS" "ID" "NAME" 
+     8 "SALARY" Double 5 -1 2 74 32 
+     16 0 0 10
+1 1 "Rochette" 1 2 1 1 1 6000.0 
+1 2 "Fernandez" 1 1 1 1 1 7500.0 
+1 3 "Goodman" 1 2 1 4 1 6300.0 
+1 4 "Thomasson" 1 1 1 2 1 8000.0 
+1 5 "Williams" 1 2 1 2 1 4000.0 
+1 6 "Wong" 1 2 1 3 1 7700.0 
+1 7 "Bornstein" 1 1 1 3 1 8600.0 
+1 8 "Harrison" 1 2 1 2 1 4575.0 
+1 9 "Horner" 1 1 1 4 1 6375.0 
+1 10 "Tanaka" 1 1 1 5 1 9000.0 
+0
+ } 32 "EMP_MS"
+0
+1 { 1 0 IliMemoryDataSource 344 8 24 24 1 14 3 5 IliMemoryTable 0 3 2 
+     8 "ID" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 288 32 
+     16 0 0 5
+1 1 "Administration" 
+1 2 "Marketing" 
+1 3 "R & D" 
+1 4 "Documentation" 
+1 5 "Finance" 
+0
+ } 32 "DEPT_MS"
+0
+1 { 2 0 IliMemoryDataSource 268 10 24 24 1 14 3 2 IliMemoryTable 0 3 2 
+     8 "ID" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 323 32 
+     16 0 0 2
+1 1 "Permanent" 
+1 2 "Temporary" 
+0
+ } 32 "STATUS_MS"
+0
+1 { 3 1 IliTableGadget 5 155 400 160 2 2067 "EMP_MS" 1799208543 1 4 0 0 17 18 21 4 10 0 0 1 1 "white" A"normal" "%helvetica-12-"  } 0
+0
+1 { 4 0 IliHTMLReporter 251 118 24 24 1 14  0  0  "EMP_MS" "./report.html" 0 0  3 
+"" "Employees List" "Copyright"
+"Table of contents" "NAME"
+"Contents of the Table" ""
+  } 32 "HTMLRep"
+0
+1 { 5 P 1
+[ IliGadgetSetToolTip __ilvToolTip 0 4 4 ]
+3 IliToggleSelector 160 40 240 105 2 0  3971 "MODEL_MS" "ID" "NAME" 2 -1 "Document model" 4 "Table with standard look" "Form with standard look" "Table with blue & white look" "Form with blue & white look"  } 32 "TOGDoc"
+0
+1 { 6 P 1
+[ IliGadgetSetToolTip __ilvToolTip 0 4 4 ]
+3 IliToggleSelector 5 40 150 80 2 0  3971 "YESNO_MS" "ID" "NAME" 2 -1 "Table of contents" 3 "No" "At beginning" "At end"  } 32 "TOGTable"
+0
+1 { 7 0 IliMemoryDataSource 335 60 24 24 1 14 3 3 IliMemoryTable 0 3 2 
+     8 "ID" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 -1 32 
+     16 0 0 3
+1 0 "No" 
+1 1 "At beginning" 
+1 2 "At end" 
+0
+ } 32 "YESNO_MS"
+0
+1 { 8 0 IliMemoryDataSource 338 114 24 24 1 14 3 4 IliMemoryTable 0 3 2 
+     8 "ID" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 176 32 
+     16 0 0 4
+1 0 "Table with standard look" 
+1 1 "Form with standard look" 
+1 2 "Table with blue & white look" 
+1 3 "Form with blue & white look" 
+0
+ } 32 "MODEL_MS"
+0
+1 { 9 4 IlvMessageLabel 5 5 250 25 F8 0 25 16 4 "Generate a HTML report"   } 0
+0
+1 { 10 5 IlvButton 5 125 150 25 F9 2 1 16 4 "Generate"   } 544 "BTNGenerate"
+1
+1 "__ilvCallback" "bnGenerate"
+0
+Size 410 320
+GeometryHandlers
+1 100 0 410 0 410 0
+2 3 0 0 5  400 0 400 3  0 0 5 0
+ 3 0 0 160  240 0 240 5  0 0 10 0
+1 100 0 320 0 320 0
+2 3 0 0 155  160 0 160 3  0 0 5 0
+ 3 0 0 40  0 0 105 5  175 0 175 0
+EOF

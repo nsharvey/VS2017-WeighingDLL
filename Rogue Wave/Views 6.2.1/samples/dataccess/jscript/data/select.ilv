@@ -1,0 +1,88 @@
+// Ilv Version: 3.1
+// File generated: Mon Feb  1 11:29:27 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "select"
+PathName "select.ilv"
+Palettes 4
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+1 "gray" "black" "bold" "%helvetica-12-B" 0 solid solid 0 0 0
+2 "white" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+3 "gray" "black" "button" "%helvetica-12-B" 0 solid solid 0 0 0
+IlvObjects 9
+1 { 0 0 IlvText 5 318 420 100 F133 2 Y N 1 1 1 1 0 9
+"This panel shows how to inspect a table-gadget's current "
+"selection."
+"- The left part contains a table-gadget, the selection of which is"
+"  described on the right part."
+"- With the mouse, change the selection of the table-gadget on "
+"  the left and see how it is described on the right part of the panel."
+"- Edit the selection type and the row and column indices on the "
+"  right part and see how the table-gadget's selection is changed."
+""
+0 0 0 0 } 0
+0
+1 { 1 0 IliMemoryDataSource 274 14 24 24 1 14 3 0 IliMemoryTable 0 3 1 
+     8 "Index" Int 2 -1 2 114 32 
+     16 0 0 2
+1 0 
+1 0 
+0
+ } 544 "SelectionDS"
+3
+1 "QuitInsertMode" S"JvScript" "onRowInserted"
+1 "DeleteRow" S"JvScript" "onRowDeleted"
+1 "QuitUpdateMode" S"JvScript" "onRowUpdated"
+0
+1 { 2 0 IliMemoryDataSource 214 17 24 24 1 14 3 0 IliMemoryTable 0 4 3 
+     8 "Id" Int 1 -1 2 47 32 
+     8 "Name" String 2 -1 1 91 32 
+     8 "Birthday" Date 3 -1 1 91 32 
+     16 0 0 3
+1 1 "Smith" 1 "5-6-1971" 
+1 2 "Jones" 1 "3-2-1957" 
+1 3 "Monroe" 1 "2-7-1951" 
+0
+ } 32 "TableDS"
+0
+1 { 3 1 IliTableGadget 10 30 255 270 2 2067 "TableDS" 1866317407 1 0 0 0 17 18 21 4 0 0 0 1 1 "white" A"normal" "%helvetica-12-"  } 544 "Tg"
+1
+1 "SelectionChange" S"JvScript" "onSelChange"
+0
+1 { 4 1 IliTableGadget 280 60 140 240 2 2067 "SelectionDS" 1799208535 2 0 0 0 17 18 21 4 0 0 0 1 1 "white" A"normal" "%helvetica-12-"  } 32 "SelTg"
+0
+1 { 5 3 IlvFrame 5 5 265 305 F8 0 25 16 4 "^Table"   } 0
+0
+1 { 6 0 IliDbField 280 30 140 21 2 3971 "SelTypeDS" "Name" "Name" 0 3 280 12 0 IliTableComboBox 280 30 140 21 F6 2 1 -1 0 "" 3841 "Name" "Name" 11 2 1  ""    } 544 "TypeCombo"
+1
+1 "__ilvCallback" S"JvScript" "onTypeChanged"
+0
+1 { 7 0 IliMemoryDataSource 374 12 24 24 1 14 3 5 IliMemoryTable 0 2 1 
+     8 "Name" String 1 -1 1 -1 32 
+     16 0 0 5
+"None" 
+"Cell" 
+"Row" 
+"Column" 
+"Full" 
+0
+ } 32 "SelTypeDS"
+0
+1 { 8 3 IlvFrame 275 5 150 305 F8 0 25 16 4 "^Selection"   } 0
+0
+Size 430 423
+GeometryHandlers
+1 100 0 430 0 430 0
+6 3 0 0 5  420 0 420 0  0 0 5 0
+ 3 0 0 5  265 0 265 5  0 0 160 0
+ 3 0 0 10  255 0 255 3  0 0 165 0
+ 3 280 0 280  0 0 140 4  0 0 10 0
+ 3 280 0 280  0 0 140 6  0 0 10 0
+ 3 275 0 275  0 0 150 8  0 0 5 0
+1 100 0 423 0 423 0
+6 3 318 0 318  0 0 100 0  0 0 5 0
+ 3 0 0 5  305 0 305 5  0 0 113 0
+ 3 0 0 30  270 0 270 3  0 0 123 0
+ 3 0 0 60  240 0 240 4  0 0 123 0
+ 3 0 0 30  0 0 21 6  372 0 372 0
+ 3 0 0 5  305 0 305 8  0 0 113 0
+EOF

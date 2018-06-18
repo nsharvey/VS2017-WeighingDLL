@@ -1,0 +1,4 @@
+help "respanel" {
+    title "Resources panel";
+    description "Editing resource palettes";
+}

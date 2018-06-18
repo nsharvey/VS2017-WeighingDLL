@@ -1,0 +1,14 @@
+// IlvMessageDatabase 5.1 Sun Jan  2 15:37:11 2005
+// Language: ja_JP
+// Encoding: Shift_JIS
+"&JSErrorList" "Script ｴﾗｰ ﾘｽﾄ"
+"&JSErrorListP" "Script ｴﾗｰ ﾘｽﾄの表示"
+"&auxLib" "補助ﾗｲﾌﾞﾗﾘ"
+"&is" "IS"
+"&js" "JS"
+"&jsEdition" "Rogue Wave Script ｴﾃﾞｨｼｮﾝ"
+"&scriptEditor" "Script ｴﾃﾞｨﾀ"
+"&scriptFile" "Script ﾌｧｲﾙ"
+"&syntaxErrors" "構文ｴﾗｰ"
+"&useJScript" "Rogue Wave Script を使用"
+

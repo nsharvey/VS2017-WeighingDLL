@@ -1,0 +1,18 @@
+// Ilv Version: 3.1
+// File generated: Fri Mar 26 19:38:17 1999
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 2
+1 { 0 0 IlvMessageLabel 4 1 150 22 F8 0 25 16 4 "&LineColor"   } 0
+0
+1 { 1 0 IlvButton 159 1 123 23 F9 2 1 16 4 "button"   } 32 "ChartLineColor"
+0
+Size 284 31
+GeometryHandlers
+1 100 0 284 0 284 0
+2 3 0 0 4  150 0 150 0  0 0 130 0
+ 3 159 0 159  0 0 123 1  0 0 2 0
+1 100 0 31 0 31 0
+0
+EOF

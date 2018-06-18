@@ -1,0 +1,21 @@
+var pairs =
+{
+"architecture":{"architecture":1,"data":1}
+,"data":{"access":1,"database":1}
+,"access":{"viewed":1,"environment":1,"retrieve":1}
+,"viewed":{"two":1}
+,"two":{"viewpoints":1}
+,"viewpoints":{"externally":1}
+,"externally":{"interaction":1}
+,"interaction":{"data":1,"components":1}
+,"environment":{"situated":1}
+,"situated":{"internally":1}
+,"internally":{"interaction":1}
+,"components":{"making":1}
+,"making":{"data":1}
+,"retrieve":{"edit":1}
+,"edit":{"display":1}
+,"display":{"data":1}
+,"database":{"sources":1}
+}
+;Search.control.loadWordPairs(pairs);

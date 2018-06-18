@@ -1,0 +1,48 @@
+// Ilv Version: 1.0
+// File generated: Sat Feb  5 20:01:22 1994
+//  IlvGadgetManagerOutput
+Palettes 2
+0 "defaultBg" "defaultFg" %times-12- 0 solid solid  0 0 0 
+1 "defaultBg" "defaultFg"  %times-12- 0 solid solid  0 0 0 
+IlvObjects 32
+2 { 0 0 IlvRectangle 34 315 185 127  } 0  0   
+2 { 1 0 IlvLabel 17 34 5 "Steps" } 0  0   
+2 { 2 0 IlvLabel 17 69 9 "Step Size" } 0  0   
+2 { 3 0 IlvLabel 17 104 8 "SubSteps" } 0  0   
+2 { 4 0 IlvTextField 134 18 80 23 2 0 1 " " } 64 9 "TextField"  0   
+2 { 5 0 IlvTextField 134 53 80 23 2 0 1 " " } 64 9 "TextField"  0   
+2 { 6 0 IlvTextField 134 89 80 23 2 0 1 " " } 64 9 "TextField"  0   
+2 { 7 0 IlvLabel 17 139 12 "SubStep Size" } 0  0   
+2 { 8 0 IlvTextField 134 119 80 23 2 0 1 " " } 64 9 "TextField"  0   
+2 { 9 1 IlvLabel 22 251 9 "Direction" } 0  0   
+2 { 10 1 IlvLabel 25 299 14 "Division Style" } 0  0   
+2 { 11 1 IlvLabel 43 339 3 "Min" } 0  0   
+2 { 12 1 IlvLabel 44 380 3 "Max" } 0  0   
+2 { 13 0 IlvTextField 116 322 80 23 2 0 1 " " } 64 9 "TextField"  0   
+2 { 14 0 IlvTextField 113 364 80 23 2 0 1 " " } 64 9 "TextField"  0   
+2 { 15 0 IlvTextField 133 154 80 23 2 0 1 " " } 64 9 "TextField"  0   
+2 { 16 0 IlvTextField 131 182 80 23 2 0 1 " " } 64 9 "TextField"  0   
+2 { 17 0 IlvLabel 15 171 11 "Start Angle" } 0  0   
+2 { 18 0 IlvLabel 13 202 11 "Angle Range" } 0  0   
+2 { 19 0 IlvOptionMenu 139 237 80 23 2 2 0
+2 "In"
+3 "Out"
+ } 64 10 "OptionMenu"  0   
+2 { 20 0 IlvOptionMenu 132 278 87 25 2 2 0
+5 "Range"
+6 "Labels"
+ } 64 10 "OptionMenu"  0   
+2 { 21 0 IlvReliefLine 30 605 226 605 2 } 0  0   
+2 { 22 0 IlvButton 30 625 56 23 2 Y 6 "button"  } 64 6 "Button"  0   
+2 { 23 0 IlvButton 170 624 56 23 2 Y 6 "button"  } 64 6 "Button"  0   
+2 { 24 1 IlvLabel 46 416 6 "Format" } 0  0   
+2 { 25 0 IlvTextField 115 401 80 23 2 0 1 " " } 64 9 "TextField"  0   
+2 { 26 0 IlvButton 36 460 61 23 2 Y 6 "button"  } 64 6 "Button"  0   
+2 { 27 0 IlvButton 36 491 61 23 2 Y 6 "button"  } 64 6 "Button"  0   
+2 { 28 0 IlvButton 36 522 61 23 2 Y 6 "button"  } 64 6 "Button"  0   
+2 { 29 0 IlvTextField 36 553 61 23 2 0 1 " " } 64 9 "TextField"  0   
+2 { 30 0 IlvRectangle 32 451 194 137  } 0  0   
+2 { 31 0 IlvScrolledStringList 125 459 78 100 2 0 1 0 1
+5 "item1"
+  Y Y } 64 18 "ScrolledStringList"  0   
+//Size 419 689

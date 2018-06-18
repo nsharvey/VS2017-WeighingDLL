@@ -1,0 +1,49 @@
+// Ilv Version: 5.3
+// File generated: Tue May 11 15:32:44 2010
+// Creator class: IlvGadgetManagerOutput
+FileName "message"
+PathName "C:\\e\\MyDevelopment\\centrale sarto modif\\IlogFile\\message.ilv"
+Palettes 2
+"default" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+1 F "gray" "black" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 5
+1 { 0 0 IlvZoomableTransparentIcon 0 0 "default" F9.335194956390559 0 0 9.334765268906951 8 16 } 32 "secu"
+2
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 90 28 549 50 F268435468 0 { IlvMessageItem 262169 4 16 4 "MessageLabel"  }   } 32 "Message"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 128 104 120 53 F13 2 { IlvMessageItem 262145 4 16 4 "&OUI"  }   } 544 "BoutonOui"
+1
+1 "__ilvCallback" "BoutonCB"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 400 104 120 53 F13 2 { IlvMessageItem 262145 4 16 4 "&NON"  }   } 544 "BoutonNon"
+1
+1 "__ilvCallback" "BoutonCB"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 264 104 120 53 F13 2 { IlvMessageItem 262145 4 16 4 "&OK"  }   } 544 "BoutonOK"
+1
+1 "__ilvCallback" "BoutonCB"
+0
+Size 646 190
+Background "gray"
+GeometryHandlers
+1 100 0 646 0 646 0
+5 3 8 0 8  75 0 75 0  563 0 563 0
+ 3 90 0 90  549 0 549 1  7 1 7 0
+ 3 128 0 128  120 0 120 2  398 0 398 0
+ 3 264 0 264  120 0 120 4  262 0 262 0
+ 3 400 0 400  120 0 120 3  126 0 126 0
+1 100 0 190 0 190 0
+5 3 16 0 16  75 0 75 0  99 0 99 0
+ 3 28 0 28  50 0 50 1  112 0 112 0
+ 3 104 0 104  53 0 53 2  33 0 33 0
+ 3 104 0 104  53 0 53 4  33 0 33 0
+ 3 104 0 104  53 0 53 3  33 0 33 0
+EOF

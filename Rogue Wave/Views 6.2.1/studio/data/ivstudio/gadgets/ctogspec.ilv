@@ -1,0 +1,104 @@
+// Ilv Version: 5.0
+// File generated: Fri Feb 08 14:24:55 2002
+// Creator class: IlvGadgetManagerOutput
+FileName "ctogspec"
+Palettes 1
+"IlvStToolBar" 0 F "defaultBg" "defaultFg" "normal" "%helvetica-12" 0 solid solid 0 0 0 65535 1
+IlvObjects 16
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 111 161 145 23 F13 2 { IlvMessageItem 262145 4 16 4 "button"  }   } 32 "ToggleColor"
+6144 "bufferSizeX" "defaultBufferName"
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 111 2 145 22 F6 2 1 -1 0 "0" } 32 "ToggleLabel"
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFileSelectorField 111 29 145 22 F6 2 1 -1 0 "0" } 32 "ToggleBitmap"
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 111 56 145 20 F1 2 2
+{ IlvMenuItem 1 2 4 "&left"  } 
+{ IlvMenuItem 65 2 4 "&right"  }  1  } 32 "TogglePosition"
+0
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 111 82 145 22 F6 2 1 -1 0 "0" } 32 "ToggleSize"
+0
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 12 212 246 16 F1073741829 2 1 2 0 0 0 Y "&state" } 32 "ToggleState"
+0
+2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 111 110 145 20 F1 2 2
+{ IlvMenuItem 65 2 4 "&checkbox"  } 
+{ IlvMenuItem 1 2 4 "&radio"  }  0  } 32 "ToggleShape"
+0
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 111 136 145 20 F1 2 3
+{ IlvMenuItem 1 2 4 "&left"  } 
+{ IlvMenuItem 1 2 4 "&center"  } 
+{ IlvMenuItem 65 2 4 "&right"  }  2  } 32 "ToggleAlignment"
+0
+2 { 8 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 136 109 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&alignment"  }   } 0
+0
+3 { 9 P 2
+[ IlvAttachments _IlvAttachments 48  1 10 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 5 109 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&label"  }   } 0
+0
+3 { 10 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 29 109 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&bitmap"  }   } 0
+0
+3 { 11 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 56 109 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&position"  }   } 0
+0
+3 { 12 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 82 109 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&size"  }   } 0
+0
+3 { 13 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 110 109 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&shape"  }   } 0
+0
+3 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 12 192 246 16 F1073741825 2 1 2 0 0 0 Y "&indeterminateMode" } 32 "ToggleIndeterminate"
+0
+3 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 164 109 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&color"  }   } 0
+0
+Size 261 233
+GeometryHandlers
+1 100 0 261 0 261 0
+9 3 0 0 12  246 0 246 5  0 0 3 0
+ 3 0 0 111  145 0 145 1  0 0 5 0
+ 3 0 0 111  145 0 145 2  0 0 5 0
+ 3 0 0 111  145 0 145 3  0 0 5 0
+ 3 0 0 111  145 0 145 4  0 0 5 0
+ 3 0 0 111  145 0 145 6  0 0 5 0
+ 3 0 0 111  145 0 145 7  0 0 5 0
+ 3 0 0 12  246 0 246 14  0 0 3 0
+ 3 0 0 111  145 0 145 0  0 0 5 0
+1 100 0 233 0 233 0
+0
+Layers 4
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+EOF

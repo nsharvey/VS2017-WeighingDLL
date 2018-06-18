@@ -1,0 +1,104 @@
+div.Body, caption.Body
+{
+  color: #000000;
+  direction: ltr;
+  font-family: Sans-Serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6.0pt;
+  margin-left: 1.35em;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: left;
+  text-indent: 0em;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 96%;
+}
+
+div.BookTitle, caption.BookTitle
+{
+  background-color: #226099;
+  color: White;
+  direction: ltr;
+  font-family: Sans-Serif;
+  font-size: xx-large;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 50.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  text-align: center;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 96%;
+}
+
+div.Itemize, caption.Itemize
+{
+  color: #000000;
+  direction: ltr;
+  font-family: Sans-Serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6.0pt;
+  margin-left: 3em;
+  margin-right: 0pt;
+  margin-top: 6.0pt;
+  text-align: left;
+  text-indent: -14.173228346456696pt;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 90%;
+}
+
+span.diamond, abbreviation.diamond, acronym.diamond, citation.diamond
+{
+  color: #000000;
+  font-family: ZapfDingbats;
+  font-size: 9.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.emphasis, abbreviation.emphasis, acronym.emphasis, citation.emphasis
+{
+  color: #000000;
+  font-style: italic;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.hypertext, abbreviation.hypertext, acronym.hypertext, citation.hypertext
+{
+  color: #000000;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+img.Default
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+video.Default
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+

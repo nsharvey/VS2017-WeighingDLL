@@ -1,0 +1,28 @@
+/* XPM */
+static char *altop_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 6 1",
+"+ c Black",
+"o c #FFFFFF",
+"  c None",
+"X c #FEFCFA",
+". c #000288",
+"O c #868986",
+/* pixels */
+"                ",
+" ...............",
+"  XXX  XXX  XXX ",
+"  oO+  oO+  oO+ ",
+"  oO+  oO+  oO+ ",
+"  oO+  oO+  oO+ ",
+"  oO+  o++  oO+ ",
+"  oO+       oO+ ",
+"  oO+       oO+ ",
+"  oO+       o++ ",
+"  oO+           ",
+"  oO+           ",
+"  o++           ",
+"                ",
+"                ",
+"                "
+};

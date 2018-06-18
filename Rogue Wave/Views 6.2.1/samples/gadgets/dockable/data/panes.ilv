@@ -1,0 +1,79 @@
+// Ilv Version: 4.0
+// File generated: Tue May 23 12:46:52 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "panes"
+Palettes 2
+"IlvStText" 1 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+"default" 0 "gray" "black" "default" "fixed" 0 solid solid 0 0 0
+IlvObjects 6
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToolBar 17 17 220 44 F423 2 V0 2 6
+{ IlvMenuItem 67108865 2 4 "File"  0 IlvPopupMenu 0 0 4 4 F36 2 V0 2 4
+{ IlvMenuItem 1 2 4 "Open"  } 
+{ IlvMenuItem 1 2 4 "Close"  } 
+{ IlvMenuItem 1 2 4 "Revert"  } 
+{ IlvMenuItem 1 2 4 "Quit"  }   } 
+{ IlvMenuItem 67108865 2 4 "Edit"  0 IlvPopupMenu 0 0 4 4 F36 2 V0 2 4
+{ IlvMenuItem 1 2 4 "Copy"  } 
+{ IlvMenuItem 1 2 4 "Cut"  } 
+{ IlvMenuItem 1 2 4 "Paste"  } 
+{ IlvMenuItem 1 2 4 "Delete"  }   } 
+{ IlvMenuItem 67108865 2 4 "View"  0 IlvPopupMenu 0 0 4 4 F36 2 V0 2 2
+{ IlvMenuItem 1 2 4 "Motif Look and Feel"  } 
+{ IlvMenuItem 1 2 4 "Windows Look And Feel"  }   } 
+{ IlvMenuItem 67108865 2 4 "Tools"  0 IlvPopupMenu 0 0 4 4 F36 2 V0 2 1
+{ IlvMenuItem 1 2 4 "Show Inspector"  }   } 
+{ IlvMenuItem 67108865 2 4 "Windows"  0 IlvPopupMenu 0 0 4 4 F36 2 V0 2 3
+{ IlvMenuItem 1 2 4 "Cascade"  } 
+{ IlvMenuItem 1 2 4 "Tile Horizontally"  } 
+{ IlvMenuItem 1 2 4 "Tile Vertically"  }   } 
+{ IlvMenuItem 67108865 2 4 "Help"  0 IlvPopupMenu 0 0 4 4 F36 2 V0 2 1
+{ IlvMenuItem 1 2 4 "About"  }   }  0 } 32 "MainMenuBar"
+0
+1 { 1 P 2
+[ IlvToolTip __ilvToolTip 2 "TOTO" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvText 21 65 101 58 F133 2 Y N S 1 1 1 1 0 2
+"This pane has a minimum size in the horizontal"
+"direction of 200 pixels"
+0 0 0 0 } 32 "Debug"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvText 22 129 101 58 F133 2 Y N S 1 1 1 1 0 4
+"This pane is only dockable in the"
+"horizontal direction."
+"It also has a minimum size in the"
+"vertical direction of 90 pixels"
+0 0 0 0 } 32 "Output"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvTreeGadget 19 203 150 80 F32 2 A A S 0 0 0 0 20 1 1 1 1 1 0 V0 2
+{ IlvTreeGadgetItem 1 2 4 "root" 2
+{ IlvTreeGadgetItem 1 2 4 "Project Root" 2
+{ IlvTreeGadgetItem 1 2 4 "Sub-Project 1" 0
+ } { IlvTreeGadgetItem 1 2 4 "Sub-Project 2" 0
+ }  } { IlvTreeGadgetItem 1 2 4 "Second Root" 0
+ }  }  } 32 "Project"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToolBar 153 141 220 21 F536871207 0 V0 2 1
+{ IlvMenuItem 1 2 4 "Ready"  }  0 } 32 "StatusBar"
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToolBar 179 82 171 31 F295 2 V0 2 8
+{ IlvMenuItem 2 2 4 1 0 "icon/new.png"  } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 2 2 4 1 0 "icon/open.png"  } 
+{ IlvMenuItem 2 2 4 1 0 "icon/save.png"  } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 2 2 4 1 0 "icon/cut.png"  } 
+{ IlvMenuItem 2 2 4 1 0 "icon/copy.png"  } 
+{ IlvMenuItem 2 2 4 1 0 "icon/paste.png"  }  0 } 32 "StandardToolBar"
+0
+Size 475 331
+EOF

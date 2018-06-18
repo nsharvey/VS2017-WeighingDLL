@@ -1,0 +1,5 @@
+EXPORTS
+	X3Centr1_InitAppEx
+	X3Centr1_ShowAccueil
+	X3Centr1_CloseScales
+	X3Ilog_Notify

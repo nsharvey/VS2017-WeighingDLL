@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+
+Project("3599563E-1D63-11E8-8E12-F080772C9500") = "inspect", "inspect.vcxproj", "35990DD2-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Global
+EndGlobal
+

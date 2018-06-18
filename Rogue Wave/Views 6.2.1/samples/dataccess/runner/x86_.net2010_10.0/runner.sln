@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("DC909648-1D61-11E8-866E-3591772C9500") = "runner", "runner.vcxproj", "DC9041E8-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Global
+EndGlobal
+

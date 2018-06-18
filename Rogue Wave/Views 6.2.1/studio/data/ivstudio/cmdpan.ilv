@@ -1,0 +1,149 @@
+// Ilv Version: 5.4
+// File generated: Wed Oct 27 10:00:19 2010
+// Creator class: IlvGadgetManagerOutput
+FileName "cmdpan"
+PathName "cmdpan.ilv"
+Palettes 3
+"defaultGadget" 2 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+1 F "defaultBg" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 21
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 320 30 190 22 F6 2 1 -1 0 "" } 544 "cmdField"
+1
+1 "__ilvCallback" "executeCommand"
+6144 "Button_2" "cmdList"
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvButton 350 252 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+6144 "Button_1" "cmdHelpButton"
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvButton 10 252 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&help"  }   } 544 "Button_1"
+1
+1 "__ilvCallback" "help"
+6144 "category" "apply"
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 320 55 190 22 F7 2 1 -1 0 "" } 32 "cmdLabel"
+6144 "acctext" "state"
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 320 130 190 22 F7 2 1 -1 0 "" } 32 "cmdPrompt"
+0
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 107 30 125 22 F815 2 1 -1 0 "" 0 9 0 } 544 "category"
+1
+1 "__ilvCallback" "categoryCB"
+6144 "cmdList" "Button_1"
+2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvButton 440 160 70 70 F13 1 { IlvMessageItem 262145 4 16 4 ""  }   } 544 "BitmapButton"
+1
+1 "__ilvCallback" "apply"
+4096 "accdef"
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 320 80 190 22 F7 2 1 -1 0 "" } 32 "acctext"
+6144 "accdef" "cmdLabel"
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 320 105 190 22 F7 2 1 -1 0 "" } 32 "accdef"
+6144 "BitmapButton" "acctext"
+2 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvButton 440 252 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+3 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 260 55 60 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&label"  }   } 0
+0
+3 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 260 80 60 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&acc."  }   } 0
+0
+3 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 260 30 60 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&name"  }   } 0
+0
+3 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 260 105 60 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&key"  }   } 0
+0
+3 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 30 80 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&category"  }   } 0
+0
+3 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 320 160 90 16 F1 2 1 2 0 0 0 Y "&state" } 32 "state"
+6144 "cmdHelpButton" "accdef"
+3 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 20 60 213 171 F131 2 A A 0 0 0 0 0 4 0 0 V0 2 0 } 544 "cmdList"
+2
+1 "__ilvCallback" "executeCommand"
+1 "__ilvSCallback" "cmdSelected"
+0
+3 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 260 208 28 23 F13 2 { IlvMessageItem 262146 4 16 4 1 0 "ivstudio/icons/ichelp.png"  }   } 544 "cmdHelpButton"
+1
+1 "__ilvCallback" "cmdHelp"
+6144 "apply" "state"
+3 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvFrame 10 5 230 236 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Commands"  }   } 0
+0
+3 { 19 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvFrame 250 5 270 236 F268435468 0 { IlvMessageItem 262169 4 16 4 "&CommandDetails"  }   } 0
+0
+3 { 20 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 260 130 60 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&description"  }   } 0
+0
+Size 530 285
+GeometryHandlers
+2 100 200 242 0 242 0
+ 150 200 288 242 288 242
+7 3 0 0 10  0 0 80 2  440 0 440 1
+ 3 440 0 440  0 0 70 6  0 0 20 1
+ 3 107 0 107  0 0 125 5  0 0 10 0
+ 3 440 0 440  0 0 80 9  0 0 10 1
+ 3 0 0 20  213 0 213 16  0 0 9 0
+ 3 350 0 350  0 0 80 1  0 0 100 1
+ 3 0 0 10  230 0 230 18  0 0 2 0
+12 3 0 0 78  0 0 90 15  120 0 120 1
+ 3 0 0 78  190 0 190 0  0 20 20 1
+ 3 0 0 78  190 0 190 3  0 20 20 1
+ 3 0 0 78  190 0 190 7  0 20 20 1
+ 3 0 0 78  190 0 190 8  0 10 20 1
+ 3 0 6 18  0 0 60 10  210 0 210 1
+ 3 0 0 18  0 0 60 12  210 0 210 1
+ 3 0 0 18  0 0 60 11  210 0 210 1
+ 3 0 0 18  0 0 60 13  210 0 210 1
+ 3 0 0 18  0 0 28 17  242 0 242 1
+ 3 0 0 8  270 0 270 19  0 0 10 1
+ 3 0 0 78  190 0 190 4  0 0 20 1
+1 100 235 285 0 285 0
+8 3 0 0 130  0 0 22 4  133 0 133 0
+ 3 252 0 252  0 0 23 1  0 4 10 0
+ 3 252 0 252  0 0 23 2  0 0 10 0
+ 3 252 0 252  0 0 23 9  0 0 10 0
+ 3 0 0 60  171 0 171 16  0 0 54 0
+ 3 208 0 208  0 0 23 17  0 0 54 0
+ 3 0 0 5  236 0 236 18  0 0 44 0
+ 3 0 0 5  236 0 236 19  0 0 44 0
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

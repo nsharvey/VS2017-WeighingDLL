@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvaw95look -->
+<module name="ilvaw95look" version="6.2">
+<class name="IlvArrowButton/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvHierarchicalSheet/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvMatrix/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvOptionMenu/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvScrolledComboBox/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvScrolledGadget/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvSpinBox/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvTreeGadget/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvViewFrame/win95" rootClass="IlvObjectLFHandler"/>
+</module>

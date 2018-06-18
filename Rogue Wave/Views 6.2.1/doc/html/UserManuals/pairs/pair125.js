@@ -1,0 +1,21 @@
+var pairs =
+{
+"showinfopanel":{"label":1}
+,"label":{"info":1}
+,"info":{"path":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"help":1}
+,"help":{"menu":1}
+,"menu":{"category":1}
+,"category":{"studio":1}
+,"studio":{"panel":1,"information":1}
+,"panel":{"action":1}
+,"action":{"shows":1}
+,"shows":{"rogue":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1}
+,"views":{"studio":1}
+,"information":{"panel":1}
+}
+;Search.control.loadWordPairs(pairs);

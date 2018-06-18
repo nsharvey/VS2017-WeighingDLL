@@ -1,0 +1,19 @@
+var pairs =
+{
+"rogue":{"wave":1}
+,"wave":{"views":1}
+,"views":{"studio":1}
+,"studio":{"improvements":1,"enhanced":1}
+,"improvements":{"rogue":1}
+,"enhanced":{"follows":1}
+,"follows":{"better":1}
+,"better":{"support":1}
+,"support":{"zoom\u002Fzoom":1}
+,"zoom\u002Fzoom":{"buffers":1}
+,"buffers":{"addition":1}
+,"addition":{"graphic":1}
+,"graphic":{"object":1}
+,"object":{"inspectors":1}
+,"inspectors":{"missing":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,23 @@
+3 19
+NewYork 500 250
+LAX 10 400
+Ohara 250 20
+NewYork Ohara 100 NO1
+NewYork Ohara 200 NO2
+NewYork Ohara 500 NO3
+NewYork LAX 120 NL1
+NewYork LAX 220 NL2
+NewYork LAX 480 NL3
+LAX NewYork 120 LN1
+LAX NewYork 220 LN2
+LAX NewYork 480 LN3
+LAX Ohara 80 LO1
+LAX Ohara 160 LO2
+LAX Ohara 260 LO3
+LAX Ohara 360 LO4
+Ohara LAX 120 OL1
+Ohara LAX 220 OL2
+Ohara LAX 440 OL3
+Ohara NewYork 140 ON1
+Ohara NewYork 270 ON2
+Ohara NewYork 450 ON3

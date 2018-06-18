@@ -1,0 +1,4 @@
+Files: query.h query.cpp
+Note: Shows how the IliSQLTable::setQueryConjunct member function can be 
+used to dynamically modify the selection criteria on which a sql-data-source
+is based.

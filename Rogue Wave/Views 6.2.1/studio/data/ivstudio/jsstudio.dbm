@@ -1,0 +1,13 @@
+// IlvMessageDatabase 6.2 2017-04-12 01:33:25
+// Language: en_US
+// Encoding: US-ASCII
+"&JSErrorList" "Script Error List"
+"&JSErrorListP" "Show the Script Error List"
+"&auxLib" "Auxiliary Library"
+"&is" "IS"
+"&js" "JS"
+"&jsEdition" "Rogue Wave Script Edition"
+"&scriptEditor" "Script Editor"
+"&scriptFile" "Script File"
+"&syntaxErrors" "Syntax errors"
+"&useJScript" "Use Rogue Wave Script"

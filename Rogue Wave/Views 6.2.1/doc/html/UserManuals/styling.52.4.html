@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>CSS Styling</title><link rel="Prev" href="styling.52.3.html" title="Previous" /><link rel="Next" href="styling.52.5.html" title="Next" /><link rel="StyleSheet" href="css/styling.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/styling_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/UserManuals/styling.52.4.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="phpw60Rz1DmuwjWueWBWHKg" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/UserManuals/styling.52.4.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/ctrusrfrontcover.html#wwconnect_header">Gadgets</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/ctrusrpart2.html#ww997005">Rogue Wave&nbsp;Views Gadgets</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/styling.52.1.html#wwconnect_header">Styling </a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">CSS Styling</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww113642" class="Heading1"><span></span>CSS Styling</div><div id="ww113643" class="Body">Rogue Wave Views supports CSS, which was designed by the World Wide Web Consortium (W3C) to provide a way to style HTML. Views implements the <span class="blue"><a href="http://www.w3.org/TR/CSS21/" target="external_window">level 2 specification for CSS</a></span>. </div><div id="ww113644" class="Body">An application can instantiate the <span class="ClassName"><a href="../RefMan/refcppgadgets/classIlvCssStyleSheet.html">IlvCssStyleSheet</a></span> class, allowing the application to read and apply CSS styles to Stylables handled by Styslists:</div><div id="ww113645" class="NormalCode">IlvGadgetContainer* container = …;</div><div id="ww113646" class="NormalCode">IlvCssStyleSheet* sheet = new IlvCssStyleSheet();</div><div id="ww113647" class="NormalCode">sheet.setContent("/* some CSS definitions */");</div><div id="ww113648" class="NormalCode">container-&gt;addStyleSheet(sheet);</div><div id="ww113649" class="LastNormalCode">// Now objects stored in the container are styled</div><div id="ww113650" class="Body">Of course, <span class="code">IlvCssStyleSheet</span> can read CSS files:</div><div id="ww113651" class="NormalCode">sheet = new IlvCssStyleSheet();</div><div id="ww113652" class="NormalCode">std::ifstream stream("…/file.css");</div><div id="ww113653" class="LastNormalCode">sheet-&gt;read(stream);</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

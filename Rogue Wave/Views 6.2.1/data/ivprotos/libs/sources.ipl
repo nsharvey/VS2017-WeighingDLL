@@ -1,0 +1,333 @@
+// Rogue Wave Views Prototype Library File
+// Rogue Wave Views Version: 5.0
+// Date: Thu Jan 03 23:28:37 2002
+Library: sources
+SingleFile: true
+clock
+diclock
+random
+file
+IlvProtoLibraryBlocks
+IlvProtoLibraryBlock clock.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype clock
+    accessors {
+        IlvNodeAccessor ValueSourceState state clock.state
+        IlvNodeAccessor UInt period clock.period
+        IlvNodeAccessor UInt initialTime clock.initialTime
+        IlvNodeAccessor Int seconds seconds.value
+        IlvExportOutputAccessor Int seconds clock.seconds
+
+        IlvLoopbackAccessor Int seconds clock.seconds
+        IlvNodeAccessor Int minutes minutes.value
+        IlvExportOutputAccessor Int minutes clock.minutes
+
+        IlvLoopbackAccessor Int minutes clock.minutes
+        IlvNodeAccessor Int hours hours.value
+        IlvExportOutputAccessor UInt hours clock.hours
+
+        IlvLoopbackAccessor UInt hours clock.hours
+        IlvConditionAccessor Boolean running == "\"true\"" state "\"running\"" "\"suspended\""
+        IlvValueAccessor Boolean running
+        IlvCallbackAccessor (P) String clicked [All_nodes] Generic 0
+        IlvLoopbackAccessor (P) String clicked clicked
+        IlvToggleAccessor (P) String clicked running
+    }
+    values {
+        ValueSourceState state = suspended
+        UInt period = 1000
+        UInt initialTime = 0
+        Float seconds = 0
+        Float minutes = 0
+        Float hours = 0
+        Boolean running = false
+    }
+    nodes {
+        IlvValueSourceNode clock IlvClockValueSource clock 1000 0
+        IlvGraphicNode background "TN" 0 0
+        IlvGraphicNode scale "TN" 0 1
+        IlvGraphicNode hours "TN" 0 2
+        IlvGraphicNode minutes "TN" 0 3
+        IlvGraphicNode seconds "TN" 0 4
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock clock.ilv
+// Ilv Version: 5.0
+// File generated: Thu Jan 03 23:28:37 2002
+// Creator class: IlvGraphOutput
+Palettes 5
+1 F 48830 48830 48830 "black" "%helvetica-12-B[Charset:0]" 0 solid solid 2 0 0 65535 0
+0 F 48830 48830 48830 "white" "%Times New Roman-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+4 F 48830 48830 48830 "red" "%Times New Roman-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+3 F 48830 48830 48830 "dimgray" "%Times New Roman-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+2 F 48830 48830 48830 "black" "%Times New Roman-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+IlvObjects 5
+0 0 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvFilledEllipse 81 32 138 135 } 0
+1 0 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvCircularScale 81 32 139 136 13 5 10 5 M 0 12 "%4.f"
+" " " " " " "3" " " " " "6" " " " " "9" " " " " "12"  1 90 -360 } 0
+1 0 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+2 IlvCircularGauge 109 61 82 77 0 12 0 90 -360 } 0
+2 0 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+3 IlvCircularGauge 94 47 112 106 0 60 0 90 -360 } 0
+3 0 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+4 IlvCircularGauge 81 31 139 139 0 60 0 90 -360 } 0
+Layers 4
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock diclock.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype diclock
+    accessors {
+        IlvPrototypeAccessor Any inherit sources.clock
+    }
+    values {
+        ValueSourceState state = stopped
+        UInt period = 1000
+        UInt initialTime = 0
+        String seconds = 0
+        UInt minutes = 0
+        UInt hours = 0
+        String running = 0
+    }
+    nodes {
+        IlvValueSourceNode clock IlvClockValueSource clock 1000 0
+        IlvSubGroupNode "" 
+        IlvGroup ticks
+            nodes {
+                IlvGraphicNode IlvFilledRectangle "TN" 0 0
+                IlvGraphicNode IlvFilledRectangle "TN" 0 1
+            }
+            subscriptions {
+            }
+        ;
+        IlvSubGroupNode ticks_1 
+        IlvGroup ticks_1
+            nodes {
+                IlvGraphicNode IlvFilledRectangle "TN" 0 2
+                IlvGraphicNode IlvFilledRectangle "TN" 0 3
+            }
+            subscriptions {
+            }
+        ;
+        IlvGraphicNode hours "" 0 4
+        IlvGraphicNode seconds "" 0 5
+        IlvGraphicNode minutes "" 0 6
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock diclock.ilv
+// Ilv Version: 5.0
+// File generated: Thu Jan 03 23:28:37 2002
+// Creator class: IlvGraphOutput
+Palettes 2
+0 F "antiquewhite3" "black" "fixed" 0 solid solid 0 0 0 65535 0
+"default" 1 F "gray" "black" "default" "%helvetica-12" 0 solid solid 0 0 0 65535 0
+IlvObjects 7
+2 0 { 0 0 IlvFilledRectangle 78 33 3 4 } 0
+2 0 { 1 0 IlvFilledRectangle 78 41 3 4 } 0
+2 0 { 2 0 IlvFilledRectangle 120 33 3 4 } 0
+2 0 { 3 0 IlvFilledRectangle 120 41 3 4 } 0
+2 2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+1 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance lcd.lcd2 hours
+    values {
+        UInt value = 0
+        Int x = 40
+        Int y = 26
+        Double scaleX = 0.453333
+        Double scaleY = 0.666667
+        String name = hours
+    }
+    subscriptions {
+    }
+;
+ } 32 "hours"
+2 2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+1 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance lcd.lcd2 seconds
+    values {
+        Int x = 128
+        Int y = 26
+        Double scaleX = 0.453333
+        Double scaleY = 0.666667
+        String name = seconds
+    }
+    subscriptions {
+    }
+;
+ } 32 "seconds"
+2 2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+1 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance lcd.lcd2 minutes
+    values {
+        UInt value = 0
+        Int x = 83
+        Int y = 26
+        Double scaleX = 0.453333
+        Double scaleY = 0.666667
+        String name = minutes
+    }
+    subscriptions {
+    }
+;
+ } 32 "minutes"
+Layers 3
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock random.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype random
+    accessors {
+        IlvNodeAccessor ValueSourceState state random.state
+        IlvNodeAccessor UInt period random.period
+        IlvNodeAccessor UInt initialTime random.initialTime
+        IlvNodeAccessor Float min random.min
+        IlvNodeAccessor Float max random.max
+        IlvNodeAccessor (RP) String valueName random.valueName
+        IlvToggleAccessor (P) Boolean toggle running
+        IlvLoopbackAccessor (P) Boolean toggle clicked
+        IlvValueAccessor (P) Boolean running
+        IlvConditionAccessor (P) Boolean running == true state "\"running\"" "\"suspended\""
+        IlvConditionAccessor (P) Boolean running == true blink 200 0
+        IlvConditionAccessor (P) Boolean running == true IlvButton.label "\"Stop\"" "\"Start\""
+        IlvConditionAccessor (P) Boolean running == false IlvIcon.visible true "\"\""
+        IlvBlinkAccessor (P) UInt blink IlvIcon.visible
+        IlvNodeAccessor Float random IlvNumberField.label
+        IlvExportOutputAccessor Float random random.random
+
+        IlvConditionAccessor Float random > 50 boolean 1 0
+        IlvLoopbackAccessor Float random random.random
+        IlvCallbackAccessor (P) Int clicked IlvButton Generic 0
+        IlvOutputAccessor Int boolean
+    }
+    values {
+        ValueSourceState state = suspended
+        UInt period = 1000
+        UInt initialTime = 0
+        Float min = 0
+        Float max = 100
+        Boolean running = false
+        UInt blink = 0
+        String random = 0
+    }
+    nodes {
+        IlvValueSourceNode random IlvRandomValueSource random 1000 0
+random 0 100
+        IlvGraphicNode IlvFilledRectangle "T" 0 0
+        IlvGraphicNode IlvNumberField "T" 0 1
+        IlvGraphicNode IlvButton "" 0 2
+        IlvGraphicNode IlvIcon "T" 0 3
+        IlvGraphicNode IlvRectangle "T" 0 4
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock random.ilv
+// Ilv Version: 5.0
+// File generated: Thu Jan 03 23:28:37 2002
+// Creator class: IlvGraphOutput
+Palettes 5
+2 F 48830 48830 48830 "black" "button" "%helvetica-12" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 1 F "gray" "black" "normal" "%helvetica-12" 0 solid solid 0 0 0 65535 1
+"default" 3 F "gray" "black" "default" "%helvetica-12" 0 solid solid 0 0 0 65535 0
+0 F "antiquewhite3" "cadetblue" "%helvetica-12" 0 solid solid 0 0 0 65535 0
+4 F 48830 48830 48830 "black" "%helvetica-12" 0 solid solid 0 0 0 65535 0
+IlvObjects 5
+0 2 { 0 0 IlvFilledRectangle 81 47 110 67 } 0
+1 2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvNumberField 88 82 95 22 F6 2 2 -1 0 "0" . , 2 16 -3.40282e+038 3.40282e+038 } 0
+1 2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvButton 88 54 61 23 F13 2 { IlvMessageItem 262145 4 16 4 "Start"  }   } 0
+1 2 { 3 3 IlvTransparentIcon 152 48 "ivprotos/icon/randsrc.xpm" "" } 0
+1 2 { 4 4 IlvRectangle 81 47 110 67 } 0
+Layers 2
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock file.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype file
+    accessors {
+        IlvNodeAccessor ValueSourceState state file.state
+        IlvToggleAccessor (P) Boolean toggle running
+        IlvLoopbackAccessor (P) Boolean toggle clicked
+        IlvValueAccessor (P) Boolean running
+        IlvConditionAccessor (P) Boolean running == true state "\"running\"" "\"suspended\""
+        IlvConditionAccessor (P) Boolean running == true blink 200 0
+        IlvConditionAccessor (P) Boolean running == true IlvButton.label "\"Stop\"" "\"Start\""
+        IlvConditionAccessor (P) Boolean running == false IlvIcon.visible true "\"\""
+        IlvBlinkAccessor (P) UInt blink IlvIcon.visible
+        IlvExportOutputAccessor Float value file.value
+
+        IlvNodeAccessor Float value IlvNumberField.label
+        IlvLoopbackAccessor Float value file.value
+        IlvCallbackAccessor (P) Int clicked IlvButton Generic 0
+        IlvNodeAccessor String file file.file
+    }
+    values {
+        ValueSourceState state = suspended
+        Boolean running = false
+        UInt blink = 0
+        String value = 0
+        String file = ivprotos/values/sinus
+    }
+    nodes {
+        IlvValueSourceNode file IlvFileValueSource file ivprotos/values/sinus
+        IlvGraphicNode IlvFilledRectangle "T" 0 0
+        IlvGraphicNode IlvNumberField "T" 0 1
+        IlvGraphicNode IlvButton "" 0 2
+        IlvGraphicNode IlvIcon "T" 0 3
+        IlvGraphicNode IlvRectangle "T" 0 4
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock file.ilv
+// Ilv Version: 5.0
+// File generated: Thu Jan 03 23:28:37 2002
+// Creator class: IlvGraphOutput
+Palettes 5
+2 F 48830 48830 48830 "black" "button" "%helvetica-12" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 1 F "gray" "black" "normal" "%helvetica-12" 0 solid solid 0 0 0 65535 1
+"default" 3 F "gray" "black" "default" "%helvetica-12" 0 solid solid 0 0 0 65535 0
+0 F "antiquewhite3" "cadetblue" "%helvetica-12" 0 solid solid 0 0 0 65535 0
+4 F 48830 48830 48830 "black" "%helvetica-12" 0 solid solid 0 0 0 65535 0
+IlvObjects 5
+0 2 { 0 0 IlvFilledRectangle 81 47 110 67 } 0
+1 2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvNumberField 88 82 95 22 F6 2 2 -1 0 "0" . , 2 16 -3.40282e+038 3.40282e+038 } 0
+1 2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvButton 88 54 61 23 F13 2 { IlvMessageItem 262145 4 16 4 "Start"  }   } 0
+1 2 { 3 3 IlvTransparentIcon 159 56 "ivprotos/icon/icopen.xpm" "" } 0
+1 2 { 4 4 IlvRectangle 81 47 110 67 } 0
+Layers 2
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryEnd

@@ -1,0 +1,65 @@
+// Ilv Version: 5.2
+// File generated: Tue Mar 17 15:08:41 2009
+// Creator class: IlvGadgetManagerOutput
+FileName "connpan"
+PathName "connpan.ilv"
+Palettes 2
+1 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 10
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 125 40 170 22 F6 2 1 -1 0 "" } 32 "user"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 125 100 170 22 F6 2 1 -1 0 "" } 32 "sid"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 10 140 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "Connect"  }   } 32 "connect"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 215 140 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "Cancel"  }   } 32 "cancel"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 10 40 100 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "User:"  }   } 0
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 10 70 100 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "Password:"  }   } 0
+0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 10 100 100 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "SID:"  }   } 0
+0
+1 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 10 10 100 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "DbLink driver:"  }   } 0
+0
+1 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvPasswordTextField 125 70 170 22 F102 2 1 -1 0 "" 42 } 32 "password"
+0
+1 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvComboBox 125 10 170 22 F39 2 1 -1 0 "oracle9" 3
+{ IlvMenuItem 1 2 4 "oracle9"  } 
+{ IlvMenuItem 1 2 4 "oracle10"  } 
+{ IlvMenuItem 1 2 4 "oracle11"  }  } 32 "drivers"
+0
+Size 305 173
+GeometryHandlers
+1 100 0 305 0 305 0
+6 3 0 0 125  170 0 170 9  0 0 10 0
+ 3 0 0 125  170 0 170 0  0 0 10 0
+ 3 0 0 125  170 0 170 8  0 0 10 0
+ 3 0 0 125  170 0 170 1  0 0 10 0
+ 3 215 0 215  0 0 80 3  0 0 10 0
+ 3 0 0 10  0 0 80 2  215 0 215 0
+1 100 0 173 0 173 0
+2 3 140 0 140  0 0 23 3  0 0 10 0
+ 3 140 0 140  0 0 23 2  0 0 10 0
+EOF

@@ -1,0 +1,17 @@
+<html><head><title>Prototypes</title></head>
+<body bgcolor=#ffffff>
+<a name="948564">
+<h3><FONT color=#b61840> Format</FONT></h3>
+</a><a name="948565">
+The Format accessor (class <a href="../../refman/html/IlvFormatAccessor.html"><code>IlvFormatAccessor</code></a>) can be used to convert a numeric value to a character string using a user-specified format. The formatted string is then copied to another accessor. The format of the value is specified by the Format parameter, which is defined in the C library function <code>printf</code>. The numeric value is passed to the conversion function as an <code>IlvFloat</code>, so the format should contain a <code>%f</code> or <code>%g</code> specifier. <p>
+</a><a name="948566">
+<h4><FONT color=#b61840> Parameters</FONT></h4>
+</a><ul><a name="948567">
+<li>Format (printf-style): Format string as defined by the <code>printf</code> C library function. Must be a <code>String</code> value.
+</a><p><a name="948568">
+<li>Max # of chars: Maximum length of the string after the conversion. If this length is exceeded, the value is replaced by * characters. Must be an <code>Integer</code> value.
+</a><p><a name="948569">
+<li>Accessor: Prototype value or node attribute to which the formatted value is assigned.
+</a><p></ul><a name="948570">
+</body>
+</html><hr><a href=displayb>Back</a>

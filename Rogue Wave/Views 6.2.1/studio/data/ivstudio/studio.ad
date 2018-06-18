@@ -1,0 +1,14 @@
+ivstudio.foreground: Black
+ivstudio.background: #C0C0C0
+ivstudio.menuBackground: #C0C0C0
+ivstudio.menuForeground: Black
+ivstudio.panelBackground: #C0C0C0
+ivstudio.toolBarBackground: #A0A0A0
+ivstudio.toolBarForeground: Black
+ivstudio.workSpaceBackground: #808080
+ivstudio.miscBackground: #C0C0C0
+ivstudio.focusPathColor: Blue
+ivstudio.attachmentColor: Blue
+ivstudio.attachmentHighlightColor: coral
+ivstudio.toolBarFont: %helvetica-12
+ivstudio.menuFont: %helvetica-14-B

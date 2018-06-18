@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvw95look -->
+<module name="ilvw95look" version="6.2">
+<class name="IlvAbstractBar/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvAbstractMenu/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvButton/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvComboBox/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvFrame/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvGadget/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvMessageLabel/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvPopupMenu/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvReliefLine/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvScrollBar/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvSlider/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvTextField/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvToggle/win95" rootClass="IlvObjectLFHandler"/>
+<class name="IlvToolBar/win95" rootClass="IlvObjectLFHandler"/>
+</module>

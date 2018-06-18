@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("D6D2E6D4-1D61-11E8-866E-3591772C9500") = "loadOnDemand", "loadOnDemand.vcxproj", "D6D2A53E-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Project("D6DBF620-1D61-11E8-866E-3591772C9500") = "mainpol", "mainpol.vcxproj", "D6D2A53E-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Project("D6E55F94-1D61-11E8-866E-3591772C9500") = "useviews", "useviews.vcxproj", "D6D2A53E-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Project("D6F026A4-1D61-11E8-866E-3591772C9500") = "useproj", "useproj.vcxproj", "D6D2A53E-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Project("D6F9687C-1D61-11E8-866E-3591772C9500") = "proj_step1", "proj_step1.vcxproj", "D6D2A53E-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Project("D7027098-1D61-11E8-866E-3591772C9500") = "proj_step2", "proj_step2.vcxproj", "D6D2A53E-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Project("D70C167A-1D61-11E8-866E-3591772C9500") = "proj_step3", "proj_step3.vcxproj", "D6D2A53E-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Project("D7156C84-1D61-11E8-866E-3591772C9500") = "shapeLOD", "shapeLOD.vcxproj", "D6D2A53E-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Project("D71EA574-1D61-11E8-866E-3591772C9500") = "imageReader", "imageReader.vcxproj", "D6D2A53E-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Project("D7288684-1D61-11E8-866E-3591772C9500") = "tiff", "tiff.vcxproj", "D6D2A53E-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Project("D7316E8E-1D61-11E8-866E-3591772C9500") = "maptileloader", "maptileloader.vcxproj", "D6D2A53E-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Global
+EndGlobal
+

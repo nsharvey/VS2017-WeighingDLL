@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("939B06B4-1D69-11E8-91B2-87BE772C9500") = "shapeviewer", "shapeviewer.vcxproj", "939AB60A-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

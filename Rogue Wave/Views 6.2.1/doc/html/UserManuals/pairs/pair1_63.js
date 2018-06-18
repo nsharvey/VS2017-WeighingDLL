@@ -1,0 +1,24 @@
+var pairs =
+{
+"manager":{"event":1,"components":1}
+,"event":{"handling":1,"handled":1,"hooks":1}
+,"handling":{"section":1,"events":1}
+,"section":{"describes":1}
+,"describes":{"managers":1}
+,"managers":{"handle":1}
+,"handle":{"events":1}
+,"events":{"event":1,"described":1,"presented":1}
+,"handled":{"different":1}
+,"different":{"types":1,"manager":1}
+,"types":{"manager":1}
+,"components":{"event":1,"handle":1}
+,"hooks":{"view":1}
+,"view":{"interactors":1}
+,"interactors":{"object":1,"accelerators":1}
+,"object":{"interactors":1}
+,"accelerators":{"first":1}
+,"first":{"mechanism":1}
+,"mechanism":{"handling":1}
+,"described":{"different":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,35 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Gadgets - Samples: dragdrop</title>
+	</head>
+    <body>
+		<a name="dragdrop"><h1>Sample: <code>dragdrop</code></h1><h1 class="subtitle">Rogue Wave Views Gadgets Drag-and-Drop Features</h1></a>
+		<p>This sample shows how to use the drag-and-drop feature of the <code>IlvGadgetItem</code> class between two instances of the <code>IlvTreeGadget</code> class.</p>
+		<img src="data/dragdrop.png"/>
+		<p>You can drag and drop one item, or a whole hierarchy, from a tree gadget to the other one. When an item is being dragged over a possible target, the target is highlighted. If you press the CTRL key during the operation, the item being dragged will be copied and inserted into the target tree gadget. Otherwise, the item being dragged will be simply moved to its new location.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvTreeGadget</code></li>
+			<li><code>IlvTreeGadgetItem</code></li>
+			<li><code>IlvGadgetItem</code></li>
+			<li><code>IlvSplitterGadget</code></li>
+			<li><code>IlvContainer</code></li>
+			<li><code>IlvGadgetItemHolder</code></li>
+			<li><code>IlvGraphicHolder</code></li>
+			<li><code>IlvPalette</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/dragdrop.cpp"><code>src/dragdrop.cpp</code></a></li>
+		</ul>

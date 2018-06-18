@@ -1,0 +1,21 @@
+var pairs =
+{
+"rotate90":{"label":1}
+,"label":{"rotate":1}
+,"rotate":{"right":1}
+,"right":{"path":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"draw":1}
+,"draw":{"menu":1}
+,"menu":{"transform":1}
+,"transform":{"category":1}
+,"category":{"edit":1}
+,"edit":{"action":1}
+,"action":{"rotates":1}
+,"rotates":{"selected":1}
+,"selected":{"object":1}
+,"object":{"degrees":1}
+,"degrees":{"clockwise":1}
+}
+;Search.control.loadWordPairs(pairs);

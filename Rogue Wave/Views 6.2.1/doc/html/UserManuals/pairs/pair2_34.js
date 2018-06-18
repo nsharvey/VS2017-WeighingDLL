@@ -1,0 +1,22 @@
+var pairs =
+{
+"extending":{"rogue":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1}
+,"views":{"studio":1}
+,"studio":{"components":1,"messages":1}
+,"components":{"section":1,"extend":1}
+,"section":{"describes":1}
+,"describes":{"rogue":1}
+,"extend":{"defining":1}
+,"defining":{"new":1}
+,"new":{"command":1,"panel":1,"buffer":1,"editing":1}
+,"command":{"defining":1}
+,"panel":{"rogue":1}
+,"messages":{"defining":1}
+,"buffer":{"defining":1}
+,"editing":{"mode":1}
+,"mode":{"class":1}
+,"class":{"ilvstextension":1}
+}
+;Search.control.loadWordPairs(pairs);

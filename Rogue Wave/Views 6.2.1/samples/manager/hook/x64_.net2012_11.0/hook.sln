@@ -1,0 +1,11 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("98440E4A-1D69-11E8-91B2-87BE772C9500") = "magnify", "magnify.vcxproj", "9843C516-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("984E936A-1D69-11E8-91B2-87BE772C9500") = "scalemgr", "scalemgr.vcxproj", "9843C516-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

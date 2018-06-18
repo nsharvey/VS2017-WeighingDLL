@@ -1,0 +1,29 @@
+// Ilv Version: 3.1
+// File generated: Fri Oct 22 11:22:28 1999
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 7
+1 { 0 0 IlvToggle 4 5 182 19 F1 2 1 2 0 0 0 Y "&visible" } 32 "DisplayerVisible"
+0
+1 { 1 0 IlvMessageLabel 4 29 182 22 F8 0 25 16 4 "&OrdinateScale"   } 0
+0
+1 { 2 0 IlvScrolledComboBox 4 56 182 20 F807 2 "" 0 4 0 } 32 "DisplayerAxis"
+0
+1 { 3 0 IlvMessageLabel 4 91 85 22 F8 0 25 16 4 "&Palette"   } 0
+0
+1 { 4 0 IlvButton 89 91 97 23 F9 2 1 16 4 "button"   } 32 "ForegroundDisplayerColor"
+0
+1 { 5 0 IlvMessageLabel 4 128 85 22 F8 0 25 16 4 "&Legend"   } 0
+0
+1 { 6 0 IlvTextField 89 128 97 22 F6 2 1 -1 0 "" } 32 "DisplayerLegend"
+0
+Size 186 171
+GeometryHandlers
+1 100 0 186 0 186 0
+3 3 0 0 89  97 0 97 4  0 0 0 0
+ 3 0 0 89  97 0 97 6  0 0 0 0
+ 3 0 0 4  182 0 182 2  0 0 0 0
+1 100 0 171 0 171 0
+0
+EOF

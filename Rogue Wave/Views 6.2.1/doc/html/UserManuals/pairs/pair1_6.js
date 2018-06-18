@@ -1,0 +1,21 @@
+var pairs =
+{
+"image":{"processing":1}
+,"processing":{"filters":1,"classes":1}
+,"filters":{"chapter":1,"(for":1}
+,"chapter":{"presents":1}
+,"presents":{"various":1}
+,"various":{"image":1}
+,"classes":{"rogue":1,"related":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1}
+,"views":{"provides":1}
+,"provides":{"classes":1}
+,"related":{"svg":1}
+,"svg":{"filters":1}
+,"(for":{"complete":1}
+,"complete":{"description":1}
+,"description":{"features":1}
+,"features":{"www.w3.org\u002Ftr\u002F2000\u002Fcr-svg-20001102\u002Ffilters.html":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,19 @@
+var pairs =
+{
+"groupintographicset":{"label":1}
+,"label":{"ilvgraphicset":1}
+,"ilvgraphicset":{"path":1,"class":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"draw":1}
+,"draw":{"menu":1}
+,"menu":{"group":1}
+,"group":{"category":1,"action":1}
+,"category":{"group":1}
+,"action":{"groups":1}
+,"groups":{"selected":1}
+,"selected":{"objects":1}
+,"objects":{"object":1}
+,"object":{"ilvgraphicset":1}
+}
+;Search.control.loadWordPairs(pairs);

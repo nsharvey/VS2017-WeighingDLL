@@ -1,0 +1,78 @@
+// Ilv Version: 3.0
+// File generated: Mon Jan 19 13:27:49 1998
+// Creator class: IlvProtoGadgetManagerOutput
+Palettes 0
+IlvObjects 0
+Size 474 313
+Instances 9
+IlvProtoInstance samples.display display#2
+    values {
+        Int x = 344
+        Int y = 39
+    }
+;
+IlvProtoInstance samples.display display#3
+    values {
+        Int x = 344
+        Int y = 105
+    }
+;
+IlvProtoInstance samples.display display#4
+    values {
+        Int x = 344
+        Int y = 164
+    }
+;
+IlvProtoInstance output.slider slider#3
+    values {
+        String sliderLabel = 0
+        String title = Value:
+        Int x = 144
+        Int y = 21
+    }
+;
+IlvProtoInstance operations.divide divide#2
+    values {
+        Int x = 175
+        Int y = 104
+    }
+;
+IlvProtoInstance lcd.lcd lcd#3
+    values {
+        Int value = 0
+        Int x = 209
+        Int y = 241
+        Float scaleX = 0.794118
+    }
+;
+IlvProtoInstance output.button button#2
+    values {
+        String label = Reset
+        Int x = 36
+        Int y = 137
+    }
+;
+IlvProtoInstance operations.trigger trigger#2
+    values {
+        Int x = 25
+        Int y = 76
+    }
+;
+IlvProtoInstance operations.round round#2
+    values {
+        Int x = 175
+        Int y = 164
+    }
+;
+ValueSources 0
+Subscriptions {
+    slider#3 divide#2 sliderValue input Any 1
+    slider#3 display#2 sliderValue value Any 1
+    divide#2 display#3 output value Any 1
+    divide#2 round#2 output input Any 1
+    button#2 trigger#2 click input Any 1
+    trigger#2 slider#3 output sliderValue Any 1
+    round#2 lcd#3 output value Any 1
+    round#2 display#4 output value Any 1
+}
+EOF

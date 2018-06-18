@@ -1,0 +1,26 @@
+var pairs =
+{
+"including":{"projection":1}
+,"projection":{"declaration":1,"classes":1,"class":1}
+,"declaration":{"able":1}
+,"able":{"rogue":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1}
+,"views":{"maps":1}
+,"maps":{"projections":1}
+,"projections":{"library":1}
+,"library":{"include":1,"<ilviews\u002Fmaps\u002Fprojection\u002Fallprojs.h>":1}
+,"include":{"header":1}
+,"header":{"file":1}
+,"file":{"declares":1,"<ilviews\u002Fmaps\u002Fprojection\u002Fmercator.h>":1,"includes":1}
+,"declares":{"projection":1}
+,"classes":{"example":1,"defined":1}
+,"example":{"mercator":1}
+,"mercator":{"projection":1}
+,"class":{"declared":1}
+,"declared":{"header":1}
+,"<ilviews\u002Fmaps\u002Fprojection\u002Fmercator.h>":{"header":1}
+,"includes":{"projection":1}
+,"defined":{"library":1}
+}
+;Search.control.loadWordPairs(pairs);

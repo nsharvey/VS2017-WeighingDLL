@@ -1,0 +1,71 @@
+// Ilv Version: 4.0
+// File generated: Thu Jun  8 19:52:31 2000
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 10
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 1 107 113 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&MaxSize"  }   } 32 "MsgMaxSize"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 126 107 105 22 2 0 200 64 2 1
+0 IlvNumberField 126 107 82 22 F6 2 1 -1 0 "1" . , 6 0 1 2147483647  f 1 0 1 1 } 32 "MaxSize"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 1 133 113 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&MinSize"  }   } 32 "MsgMinSize"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 126 134 105 22 2 0 200 64 2 1
+0 IlvNumberField 126 134 82 22 F6 2 1 -1 0 "1" . , 6 0 0 2147483647  f 1 0 1 1 } 32 "MinSize"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 78 11 146 20 F6 2 1 -1 0 "Text Field" } 32 "GraphicModelName"
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 2 10 74 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Graphic"  }   } 0
+0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 57 69 170 20 F807 2 "" 2
+{ IlvGadgetItem 1 2 4 "&MinMaxMode"  } 
+{ IlvGadgetItem 1 2 4 "&ScalingMode"  }  4 0 } 32 "BubbleSizeMode"
+0
+1 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 2 42 221 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&BubbleSizeMode"  }   } 0
+0
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 2 108 118 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&ScalingFactor"  }   } 32 "MsgScalingFactor"
+0
+2 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 128 107 103 22 2 0 200 64 2 1
+0 IlvNumberField 128 107 80 22 F6 2 1 -1 0 "1." . , 6 24 -1.79769e+308 1.79769e+308  f 1 1 1 1 } 32 "ScalingFactor"
+0
+Size 232 235
+GeometryHandlers
+1 100 0 232 0 232 0
+10 3 0 0 1  113 0 113 0  0 0 118 0
+ 3 0 0 1  113 0 113 2  0 0 118 0
+ 3 126 0 126  0 0 105 3  0 0 1 0
+ 3 126 0 126  0 0 105 1  0 0 1 0
+ 3 78 0 78  0 0 146 4  0 0 8 0
+ 3 0 0 2  74 0 74 5  0 0 156 0
+ 3 0 0 2  118 0 118 8  0 0 112 0
+ 3 128 0 128  0 0 103 9  0 0 1 0
+ 3 57 0 57  0 0 170 6  0 0 5 0
+ 3 0 0 2  221 0 221 7  0 0 9 0
+1 100 0 235 0 235 0
+0
+Layers 3
+"" 4 0 
+"" 4 0 
+"" 4 0 
+EOF

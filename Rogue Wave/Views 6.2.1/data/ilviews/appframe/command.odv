@@ -1,0 +1,484 @@
+; ---------------------------------------------------------------------------
+; Description of commands
+
+class Command
+{
+	string MenuDescription = ""
+	string Description = ""
+	string Bitmap = ""
+        string SelectedBitmap = ""
+        string UnsensitiveBitmap = ""
+        string HighlightedBitmap = ""
+        string BigBitmap = ""
+        string BigSelectedBitmap = ""
+        string BigUnsensitiveBitmap = ""
+        string BigHighlightedBitmap = ""
+        string[] Accelerators
+	string Tooltip = ""
+	string[] Categories 
+        bool   IsCustomCommand = false
+}
+
+; ---------------------------------------------------------------------------
+; Command Variables
+
+Command CloseDocument {
+	MenuDescription "&MenuCloseDocument"
+	Description "&CloseDocumentDesc"
+	Categories {
+		 "&File"
+	}
+}
+
+Command RecentFiles {
+	MenuDescription "&MenuRecentFiles"
+	Description "&RecentFileDesc"
+	Categories {
+		 "&File"
+	}
+}
+
+Command Copy {
+	MenuDescription "&MenuCopy"
+	Description "Copy the selection to the clipboard"
+	Tooltip "&copy"
+	Bitmap "ilviews/appframe/copy.xpm"
+        BigBitmap "ilviews/appframe/bigicons/copy.xpm"
+	Accelerators {
+                 "Ctrl+C",
+                 "Ctrl+Ins"
+        }
+	Categories {
+		 "&Editor"
+	}
+}
+
+Command Cut {
+	MenuDescription "&MenuCut"
+	Description "Cut the selection and moves it to the clipboard"
+	Bitmap "ilviews/appframe/cut.xpm"
+        BigBitmap "ilviews/appframe/bigicons/cut.xpm"
+	Tooltip "&cut"
+        Accelerators {
+                 "Ctrl+X",
+                 "Ctrl+Suppr"
+        }
+	Categories {
+		 "&Editor"
+	}
+}
+
+Command Paste {
+	MenuDescription "&MenuPaste"
+	Description "Copy the selection to the clipboard"
+	Bitmap "ilviews/appframe/paste.xpm"
+        UnsensitiveBitmap "ilviews/appframe/pasteu.xpm"
+        BigBitmap "ilviews/appframe/bigicons/paste.xpm"
+        BigUnsensitiveBitmap "ilviews/appframe/bigicons/pasteu.xpm"
+	Tooltip "&paste"
+        Accelerators {
+                 "Ctrl+V",
+                 "Shift+Inser"
+        }
+	Categories {
+		 "&Editor"
+	}
+}
+
+Command Delete {
+	MenuDescription "&MenuDelete"
+	Description "Deletes the selection"
+	Bitmap "ilviews/appframe/delete.xpm"
+        BigBitmap "ilviews/appframe/bigicons/delete.xpm"
+	Accelerators {
+                    "Del"
+        }
+	Categories {
+		 "&Editor"
+	}
+}
+
+Command SelectAll {
+	MenuDescription "&MenuSelectAll"
+	Description "SelectAll"
+        Accelerators {
+                    "Ctrl+A"
+        }
+	Categories {
+		 "&Editor"
+	}
+}
+
+Command Undo {
+	MenuDescription "&Undo"
+	Description "&Undo"
+	Bitmap "ilviews/appframe/undo.xpm"
+        BigBitmap "ilviews/appframe/bigicons/undo.xpm"
+        UnsensitiveBitmap "ilviews/appframe/undou.xpm"
+        BigUnsensitiveBitmap "ilviews/appframe/bigicons/undou.xpm"
+	Accelerators {
+                "Ctrl+Z",
+                "Alt+Backspace"
+        }
+	Categories {
+		 "&Editor"
+	}
+}
+
+Command Redo {
+	MenuDescription "&Redo"
+	Description "&Redo"
+	Bitmap "ilviews/appframe/redo.xpm"
+        UnsensitiveBitmap "ilviews/appframe/redou.xpm"
+        BigBitmap "ilviews/appframe/bigicons/redo.xpm"
+        BigUnsensitiveBitmap "ilviews/appframe/bigicons/redou.xpm"
+	Categories {
+		 "&Editor"
+	}
+}
+
+Command Repeat {
+	MenuDescription "&Repeat"
+	Description "&Repeat"
+	Bitmap "ilviews/appframe/repeat.xpm"
+        BigBitmap "ilviews/appframe/bigicons/repeat.xpm"
+	Accelerators {
+                    "F4"
+        }
+	Categories {
+		 "&Editor"
+	}
+}
+
+Command Exit {
+	MenuDescription "&MenuExit"
+	Description "&ExitApplication"
+	Categories {
+		 "&Application"
+	}
+}
+
+Command NewDocument {
+	MenuDescription "&MenuNew"
+	Tooltip "&New"
+	Description "&NewDocument"
+	Accelerators {
+                    "Ctrl+N"
+        }
+	Bitmap "ilviews/appframe/new.xpm"
+        BigBitmap "ilviews/appframe/bigicons/new.xpm"
+	Categories {
+		 "&File"
+	}
+}
+
+Command OpenDocument {
+	MenuDescription "&MenuOpen"
+	Tooltip "&Open"
+	Description "&OpenDocument"
+	Accelerators {
+                 "Ctrl+O"
+        }
+	Bitmap "ilviews/appframe/open.xpm"
+    BigBitmap "ilviews/appframe/bigicons/open.xpm"
+	Categories {
+		 "&File"
+	}
+}
+
+Command SaveAllDocuments {
+	MenuDescription "&MenuSaveAll"
+	Tooltip "&SaveAll"
+	Description "&SaveAllDocuments"
+	Bitmap "ilviews/appframe/saveall.xpm"
+        BigBitmap "ilviews/appframe/bigicons/saveall.xpm"
+	Categories {
+		 "&File"
+	}
+}
+
+Command SaveAsDocument {
+	MenuDescription "&MenuSaveAs"
+	Tooltip "&SaveAs"
+	Description "&SaveAsDocument"
+	Bitmap "ilviews/appframe/saveas.xpm"
+	Categories {
+		 "&File"
+	}
+}
+
+Command SaveDocument {
+	MenuDescription "&MenuSave"
+	Tooltip "&Save"
+	Description "&SaveDocument"
+	Accelerators {
+                 "Ctrl+S"
+        }
+	Bitmap "ilviews/appframe/save.xpm"
+        BigBitmap "ilviews/appframe/bigicons/save.xpm"
+	Categories {
+		 "&File"
+	}
+}
+
+Command RevertDocument {
+	MenuDescription "&MenuRevert"
+	Tooltip "&Revert"
+	Description "&RevertDesc"
+	Categories {
+		 "&File"
+	}
+}
+
+Command Print {
+	MenuDescription "&MenuPrint"
+        Tooltip "&print"
+	Description "&PrintDesc"
+	Bitmap "ilviews/appframe/print.xpm"
+    BigBitmap "ilviews/appframe/bigicons/print.xpm"
+	Accelerators {
+		"Ctrl+P"
+	}
+	Categories {
+		 "&Print"
+	}
+}
+
+Command PageSetup {
+	MenuDescription "&MenuPageSetup"
+        Tooltip "&PageSetup"
+	Description "&PageSetupDesc"
+	Bitmap "ilviews/appframe/pgsetup.xpm"
+	Categories {
+		 "&Print"
+	}
+}
+
+Command PrinterSetup {
+	MenuDescription "&MenuPrinterSetup"
+        Tooltip "&PrinterSetup"
+	Description "&PrinterSetupDesc"
+	Bitmap "ilviews/appframe/prnsetup.xpm"
+	Categories {
+		 "&Print"
+	}
+}
+
+Command DumpPostScript {
+	MenuDescription "&MenuDumpPostcript"
+        Tooltip "&DumpPostScript"
+	Description "&DumpPostScriptDesc"
+	Bitmap "ilviews/appframe/postscript.xpm"
+	Categories {
+		 "&Print"
+	}
+}
+
+Command NewWindow {
+	MenuDescription "&MenuNewWindow"
+        Tooltip "&NewWindow"
+	Description "&NewWindowDesc"
+	Bitmap "ilviews/appframe/newwnd.xpm"
+        BigBitmap "ilviews/appframe/bigicons/newwnd.xpm"
+	Categories {
+		 "&Window"
+	}
+}
+
+Command NextWindow {
+	MenuDescription "&MenuNextWindow"
+        Tooltip "&NextWindow"
+	Description "&NextWindowDesc"
+	Bitmap "ilviews/appframe/nextwnd.xpm"
+	BigBitmap "ilviews/appframe/bigicons/nextwnd.xpm"
+	Accelerators {
+		"Ctrl+F6"
+	}
+	Categories {
+		 "&Window"
+	}
+}
+
+Command PreviousWindow {
+	MenuDescription "&MenuPreviousWindow"
+        Tooltip "&PreviousWindow"
+	Description "&PreviousWindowDesc"
+	Bitmap "ilviews/appframe/prevwnd.xpm"
+    BigBitmap "ilviews/appframe/bigicons/prevwnd.xpm"
+	Accelerators {
+		"Ctrl+Shift+F6"
+	}
+	Categories {
+		 "&Window"
+	}
+}
+
+Command Cascade {
+	MenuDescription "&MenuCascade"
+        Tooltip "&Cascade"
+	Description "&CascadeDesc"
+	Bitmap "ilviews/appframe/cascade.xpm"
+        BigBitmap "ilviews/appframe/bigicons/cascade.xpm"
+	Categories {
+		 "&Window"
+	}
+}
+
+Command TileHorizontaly {
+	MenuDescription "&MenuTileHorizontaly"
+	Description "&TileHorizontalyDesc"
+	Bitmap "ilviews/appframe/htilewnd.xpm"
+        BigBitmap "ilviews/appframe/bigicons/htilewnd.xpm"
+	Categories {
+		 "&Window"
+	}
+}
+
+Command TileVerticaly {
+	MenuDescription "&MenuTileVerticaly"
+	Description "&TileVerticalyDesc"
+	Bitmap "ilviews/appframe/vtilewnd.xpm"
+        BigBitmap "ilviews/appframe/bigicons/vtilewnd.xpm"
+	Categories {
+		 "&Window"
+	}
+}
+
+Command Windows {
+	MenuDescription "&MenuWindows"
+	Description "&WindowsDesc"
+	Bitmap "ilviews/appframe/windows.xpm"
+        BigBitmap "ilviews/appframe/bigicons/windows.xpm"
+	Categories {
+		 "&Window"
+	}
+}
+
+; ---------------------------------------------------------------------------
+; Project commands
+
+Command OpenProject {
+	MenuDescription "&MenuOpenProject"
+	Description "&OpenProjectDesc"
+	Categories {
+		 "&Project"
+	}
+}
+
+Command NewProject {
+	MenuDescription "&MenuNewProject"
+	Description "&NewProjectDesc"
+	Categories {
+		 "&Project"
+	}
+}
+
+Command SaveProject {
+	MenuDescription "&MenuSaveProject"
+	Description "&SaveProjectDesc"
+	Categories {
+		 "&Project"
+	}
+}
+
+Command SaveAsProject {
+	MenuDescription "&MenuSaveAsProject"
+	Description "&SaveAsProjectDesc"
+	Categories {
+		 "&Project"
+	}
+}
+
+Command CloseProject {
+	MenuDescription "&MenuCloseProject"
+	Description "&CloseProjectDesc"
+	Categories {
+		 "&Project"
+	}
+}
+
+Command InsertFile {
+	MenuDescription "&MenuInsertFile"
+	Description "&InsertFileDesc"
+	Categories {
+		 "&Project"
+	}
+}
+
+Command InsertFolder {
+	MenuDescription "&MenuInsertFolder"
+	Description "&InsertFolderDesc"
+	Categories {
+		 "&Project"
+	}
+}
+
+Command Customize {
+	MenuDescription "&MenuCustomize"
+	Description "&CustomizeDesc"
+	Categories {
+		 "&Customize"
+	}
+}
+
+Command Modules {
+	MenuDescription "&MenuModules"
+	Description "&ModulesDesc"
+	Tooltip "&Modules"
+	Categories {
+		 "&Application"
+	}
+}
+
+Command ToggleFrameBar {
+	MenuDescription "&FrameToBar"
+	Tooltip "&FrameToBar"
+	Description "&FrameToBarDesc"
+	Categories {
+		 "&Window"
+	}
+}
+
+Command CloseWindow {
+	MenuDescription "&Close"
+	Tooltip "&Close"
+	Description "&CloseDesc"
+	Categories {
+		 "&Window"
+	}
+}
+
+Command Properties {
+	MenuDescription "&MenuProperties"
+	Tooltip "&Properties"
+	Description "&PropertiesDesc"
+	Accelerators {
+                 "Alt+Return"
+        }
+	Bitmap "ilviews/appframe/propert.xpm"
+    BigBitmap "ilviews/appframe/bigicons/propert.xpm"
+	Categories {
+		 "&Edition"
+	}
+}
+
+Command OpenProjectItem {
+	MenuDescription "&MenuOpenProjectItem"
+	Description "&OpenProjectItemDesc"
+	Accelerators {
+                 "Return"
+        }
+	Bitmap "ilviews/appframe/open.xpm"
+    BigBitmap "ilviews/appframe/bigicons/open.xpm"
+	Categories {
+		 "&Edition"
+	}
+}
+
+Command HideBar {
+	MenuDescription "&MenuHideBar"
+	Description "&HideBarDesc"
+	Categories {
+		 "&Window"
+	}
+}

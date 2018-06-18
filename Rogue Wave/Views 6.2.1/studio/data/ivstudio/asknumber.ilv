@@ -1,0 +1,48 @@
+// Ilv Version: 5.2
+// File generated: Thu Apr 10 15:05:11 2008
+// Creator class: IlvGadgetManagerOutput
+FileName "asknumber"
+PathName "asknumber.ilv"
+Palettes 2
+0 F "defaultBg" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 1 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 4
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvButton 64 87 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvButton 154 87 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cancel"  }   } 544 "cancel"
+1
+1 "__ilvCallback" "cancel"
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 5 8 234 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&StNumber"  }   } 32 "title"
+0
+3 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvNumberField 5 36 234 23 F6 2 1 -1 0 "0" . , 2 1 0 200 } 544 "strtext"
+1
+1 "__ilvCallback" "apply"
+0
+Size 244 120
+GeometryHandlers
+1 100 200 244 0 244 0
+4 3 0 0 5  234 0 234 2  0 0 5 0
+ 3 154 0 154  0 0 80 1  0 0 10 0
+ 3 0 0 5  234 0 234 3  0 0 5 0
+ 3 64 0 64  0 0 80 0  0 0 100 0
+1 100 120 120 0 120 0
+3 3 87 0 87  0 0 23 0  0 0 10 0
+ 3 87 0 87  0 0 23 1  0 0 10 0
+ 3 0 0 8  0 0 26 2  86 0 86 0
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

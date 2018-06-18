@@ -1,0 +1,11 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("7A610362-1D62-11E8-AB12-0BC9772C9500") = "readbm", "readbm.vcxproj", "7A60B718-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Project("7A680E14-1D62-11E8-AB12-0BC9772C9500") = "bitmaps", "bitmaps.vcxproj", "7A60B718-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Global
+EndGlobal
+

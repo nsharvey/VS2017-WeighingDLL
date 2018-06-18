@@ -1,0 +1,23 @@
+// Ilv Version: 2.4
+// File generated: Sat Apr  5 19:35:42 1997
+// Creator class: IlvGadgetManagerOutput
+Palettes 3
+"IlvStMenu" 2 30840 38550 43690 "black" "menu" "%helvetica-12-B" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+1 49344 49344 49344 0 0 0 "button" "%helvetica-12-B" 0 solid solid 0 0 0
+IlvObjects 5
+1 { 0 0 IlvGadget 0 0 292 103 2 } 0
+1008 1 0 1 0 1 0 1 0 2 2
+1 { 1 1 IlvButton 216 14 59 23 F1 2 16 Y "&ok" } 544 "ok"
+1
+1 "__ilvCallback" "apply"
+6208 "Button_2" "dataSources" 1 17
+1 { 2 1 IlvButton 216 45 59 23 F1 2 16 Y "&cancel" } 544 "Button_2"
+1
+1 "__ilvCallback" "cancel"
+4160 "Button_1" 1 17
+1 { 3 2 IlvMessageLabel 21 19 151 22 0 "&lab_DataSource" 1 } 0
+0
+1 { 4 0 IlvSwTableComboBox 21 42 154 20 F6 2 1 -1 0 "" 2051 11 2 0  } 32 "dataSources"
+0
+Size 292 103

@@ -1,0 +1,5 @@
+Files: dynsel.cpp
+Note:  Each time the user chooses a department in the combo-box,
+the table-gadget's contents are changed to show all employees working 
+in the choses department.
+

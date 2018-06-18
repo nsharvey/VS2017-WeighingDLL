@@ -1,0 +1,32 @@
+<html>
+<head><title>Attribute Types</title></head>
+<body>
+<h1>Attribute Types</h1>
+All attributes are typed: the type indicates the kind of values
+the attribute can be assigned to, which helps determine its meaning. 
+A type can be a:
+<ul>
+<li><em>value</em>: The attribute holds a value that can be set or queried directly
+(a string, a color, an integer, and so on) 
+<li><em>reference</em>: A reference to another internal attribute of the group.
+For instance, creating an attribute named 'temperature' and
+having it reference the 'value' attribute of a 'slider' graphic object allows
+you to access the 'value' internal attribute of the gauge under the more appropriate
+name--'temperature'--if the group is to represent a thermometer.
+This is equivalent to a pointer or an alias in a programming language.
+<li><em>script</em>: A script is executed. This script should return a value, 
+which defines the attribute. Use the <a href="displayb">
+Behavior</a> page to change the name of the function that defines the value.
+<li><em>group</em>ing of attributes: Given an attribute name, 
+all subattributes of the same name in the group will be assigned to the 
+same value. For instance, creating an attribute named "foreground" 
+and giving it a type of "group" will create an attribute that will set the 
+foreground of all objects contained in the group to the same value.
+<li><em>none</em>: Some attributes can be purely functional, 
+and therefore be untyped. However, if an attribute as neither a type nor a behavior, it
+cannot exist. <em>Therefore, setting a type of "none" to an attribute after
+creating it is equivalent to deleting the attribute.</em>
+</ul>
+<hr><a href="interface">Back</a>
+</body>
+</html>

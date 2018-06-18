@@ -1,0 +1,53 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Application Framework - Samples: introspc</title>
+	</head>
+    <body>
+		<a name="introspc"><h1>Sample: <code>introspc</code></h1><h1 class="subtitle">AppFrame Introspection Demo</h1></a>
+		<p>Program showing the introspection mechanism of the Application Framework library.</p>
+		<img src="data/introspc.png"/>
+		<p>
+		This program shows you how to use the introspection mechanism of
+		the Application Framework library. This 
+		mechanism allows you to list all the
+		fields and methods exported by an <code>IlvDvInterface</code> 
+		object, get and change the value of its fields, and invoke 
+		its methods.<br/>
+		The sample lets you create documents whose sheet views 
+		display and edit the exported fields and methods of 
+		the document. It is possible to change the value of the 
+		document fields by editing the corresponding row within
+		the sheet view. To invoke a method, select the corresponding
+		row in the sheet view and activate the Execute Method button.
+		A dialog box appears allowing you to edit the parameters
+		passed to the method, invoke the method, and get the value
+		returned by the method.
+		</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDvInterface</code></li>
+			<li><code>IlvDvHierarchicalSheetView</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/IntroDocument.cpp"><code>src/IntroDocument.cpp</code></a></li>
+			<li><a href="src/IntroView.cpp"><code>src/IntroView.cpp</code></a></li>
+			<li><a href="src/execdlg.cpp"><code>src/execdlg.cpp</code></a></li>
+			<li><a href="src/introcmd.cpp"><code>src/introcmd.cpp</code></a></li>
+			<li><a href="src/introspc.cpp"><code>src/introspc.cpp</code></a></li>
+			<li><a href="include/IntroDocument.h"><code>include/IntroDocument.h</code></a></li>
+			<li><a href="include/IntroView.h"><code>include/IntroView.h</code></a></li>
+			<li><a href="include/execdlg.h"><code>include/execdlg.h</code></a></li>
+			<li><a href="include/introcmd.h"><code>include/introcmd.h</code></a></li>
+		</ul>

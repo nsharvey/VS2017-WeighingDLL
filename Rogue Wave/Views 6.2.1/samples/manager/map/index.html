@@ -1,0 +1,67 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Manager - Samples: map</title>
+	</head>
+    <body>
+		<a name="map"><h1>Sample: <code>map</code></h1><h1 class="subtitle"></h1></a>
+		<p>Uses a manager view hook to improve the drawing performance
+		of a whole map by storing it in a bitmap.</p>
+		<img src="data/map.png"/>
+		<p>
+		Shows the use of a hook on the <code>beforeDraw</code> event to maintain a
+		background map while many graphic objects are animated using
+		a timer.
+		A pan/zoom interactor is installed on the manager view to allow
+		scrolling and zooming using the mouse.
+		<ul>
+			<li>left button down + mouse motion: scroll in the
+				given direction.</li>
+			<li>right or middle button down +
+			<ul>
+				<li>upward motion: zoom out</li>
+				<li>downward motion: zoom in</li>
+			</ul></li>
+		</ul>
+		The manager default accelerators are available:
+		<ul>
+			<li>'Z':	zoom in</li>
+			<li>'U':	zoom out</li>
+			<li>'i':	set transformer to 'identity'</li>
+			<li>'f':	fit to size</li>
+			<li>'R':	rotate drawing</li>
+			<li>arrows:	pan in a given direction</li>
+		</ul>
+		Additional accelerators:
+		<ul>
+			<li>'b':	set/unset double buffering</li>
+			<li>'m':	show/hide the map</li>
+			<li>'s':	stop/start the animation</li>
+			<li>'t':	show/hide the routes of the animated objects</li>
+			<li>'+':	increase the animation speed</li>
+			<li>'-':	decrease the animation speed</li>
+		</ul>
+		</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvManager</code></li>
+			<li><code>IlvManagerViewHook</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/track.h"><code>include/track.h</code></a></li>
+			<li><a href="include/hook.h"><code>include/hook.h</code></a></li>
+			<li><a href="src/track.cpp"><code>src/track.cpp</code></a></li>
+			<li><a href="src/hook.cpp"><code>src/hook.cpp</code></a></li>
+			<li><a href="src/map.cpp"><code>src/map.cpp</code></a></li>
+		</ul>

@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("7C39DD4E-1D62-11E8-AB12-0BC9772C9500") = "calendar", "calendar.vcxproj", "7C398600-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Global
+EndGlobal
+

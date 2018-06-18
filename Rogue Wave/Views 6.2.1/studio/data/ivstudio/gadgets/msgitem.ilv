@@ -1,0 +1,71 @@
+// Ilv Version: 4.0
+// File generated: Tue Nov  2 14:05:15 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "msgitem"
+PathName "/nfs/views-work/work.noiret/studio/data/ivstudio/inspectors/msgitem.ilv"
+Palettes 2
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+1 "gray" "black" "button" "%helvetica-12-B" 0 solid solid 0 0 0
+IlvObjects 13
+1 { 0 0 IlvOptionMenu 15 176 77 20 F1 2 3
+{ IlvMenuItem 65 2 4 "&left"  } 
+{ IlvMenuItem 1 2 4 "&center"  } 
+{ IlvMenuItem 1 2 4 "&right"  }  0  } 96 "AlignMsgLabelItem" "Gadget"
+0
+1 { 1 0 IlvMessageLabel 15 154 84 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&alignment"  }   } 64 "Gadget"
+0
+1 { 2 0 IlvNumberField 15 134 77 22 F6 2 2 -1 0 "1234543" . , 2 0 0 2147483647 } 96 "SpacingItem" "Gadget"
+0
+1 { 3 1 IlvFrame 4 96 259 107 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Aspect"  }   } 64 "Gadget"
+0
+1 { 4 1 IlvFrame 100 104 159 95 F268435468 0 { IlvMessageItem 262169 4 16 4 "&AlignmentLabelPicture"  }   } 96 "AlignmentGadgetItemLabel" "Gadget"
+0
+1 { 5 0 IlvMessageLabel 6 8 104 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Label"  }   } 64 "Gadget"
+0
+1 { 6 0 IlvMessageLabel 15 111 79 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&spacing"  }   } 96 "SpacingItemLabel" "Gadget"
+0
+2 { 7 0 IlvFileSelectorField 115 65 143 23 F6 2 1 -1 0 "" } 96 "GadItemBitmapPath" "TextField"
+6144 "callb" "label"
+2 { 8 0 IlvTextField 113 8 144 22 F6 2 1 -1 0 "Text Field" } 608 "labelItem" "Gadget"
+1
+1 "__ilvCallback" "labelItemCallback"
+0
+2 { 9 0 IlvSelector -1 9
+0 IlvToggle 141 150 18 17 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 152 126 18 17 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 177 117 18 17 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 202 126 18 17 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 213 150 18 17 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 202 172 18 17 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 177 181 18 17 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 152 172 18 17 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 177 150 18 17 F1 2 1 2 1 0 0 B "noname" 
+ } 96 "AlignmentMsgLabPictItem" "Selector"
+0
+2 { 10 0 IlvScrolledComboBox 6 67 105 20 F807 2 "SCCombo" 0 4 0 } 96 "GadItemBitmapState" "Gadget"
+0
+2 { 11 0 IlvScrolledComboBox 154 42 104 20 F807 2 "" 3
+{ IlvGadgetItem 1 2 4 "&bitmap"  } 
+{ IlvGadgetItem 1 2 4 "&Graphic"  } 
+{ IlvGadgetItem 1 2 4 "&None"  }  4 0 } 96 "GraphicItemType" "Gadget"
+0
+2 { 12 0 IlvMessageLabel 6 41 148 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&GadgetItemPictureType"  }   } 64 "Gadget"
+0
+Size 268 208
+GeometryHandlers
+1 100 0 268 0 268 0
+8 3 0 0 113  144 0 144 8  0 0 11 0
+ 3 0 0 15  77 0 77 0  0 0 176 0
+ 3 0 0 154  104 0 104 11  0 0 10 0
+ 3 0 0 115  143 0 143 7  0 0 10 0
+ 3 0 1 4  259 0 259 3  0 5 5 0
+ 3 100 0 100  0 0 159 4  0 0 9 0
+ 3 141 0 141  0 0 90 9  0 0 37 0
+ 3 0 0 15  77 0 77 2  0 0 176 0
+1 100 0 208 0 208 0
+0
+Layers 3
+"" 0
+"" 0
+"" 0
+EOF

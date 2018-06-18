@@ -1,0 +1,101 @@
+// Ilv Version: 5.1
+// File generated: Thu Aug 30 14:56:01 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "asslabel"
+PathName "asslabel.ilv"
+Palettes 3
+"defaultGadget" 2 F "defaultBg" "black" "default" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 1 F "defaultBg" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+0 F "defaultBg" "black" "button" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 16
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 5 295 110 F268435468 0 { IlvMessageItem 262169 4 16 4 "&assist_Labels"  }   } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 120 295 80 F268435468 0 { IlvMessageItem 262169 4 16 4 "&assist_Fields"  }   } 0
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliEntryField 115 25 150 22 F7 2 1 -1 0 "" 2051 11  } 32 "EDTLabelColor"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 270 26 20 20 F13 2 { IlvMessageItem 262145 4 16 4 "..."  }   } 32 "BTNLabelColor"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliEntryField 115 55 150 22 F7 2 1 -1 0 "" 2051 11  } 32 "EDTLabelFont"
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 270 56 20 20 F13 2 { IlvMessageItem 262145 4 16 4 "..."  }   } 32 "BTNLabelFont"
+0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliEntryField 115 140 150 22 F7 2 1 -1 0 "" 2051 11  } 32 "EDTFieldColor"
+0
+1 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliEntryField 115 170 150 22 F7 2 1 -1 0 "" 2051 11  } 32 "EDTFieldFont"
+0
+1 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 270 141 20 20 F13 2 { IlvMessageItem 262145 4 16 4 "..."  }   } 32 "BTNFieldColor"
+0
+1 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 270 171 20 20 F13 2 { IlvMessageItem 262145 4 16 4 "..."  }   } 32 "BTNFieldFont"
+0
+1 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 15 25 95 22 F268435468 0 { IlvMessageItem 262153 4 16 4 "&assist_Color_"  }   } 0
+0
+1 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 15 55 95 22 F268435468 0 { IlvMessageItem 262153 4 16 4 "&assist_Font_"  }   } 0
+0
+1 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 15 85 95 22 F268435468 0 { IlvMessageItem 262153 4 16 4 "&assist_Position_"  }   } 0
+0
+1 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 15 140 95 22 F268435468 0 { IlvMessageItem 262153 4 16 4 "&assist_Color_"  }   } 0
+0
+1 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 15 170 95 22 F268435468 0 { IlvMessageItem 262153 4 16 4 "&assist_Font_"  }   } 0
+0
+1 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IliScrolledComboBox 115 85 175 20 F806 2 1 -1 0 "" 0 4 0 18435 0  } 32 "CBNLabelPos"
+0
+Size 305 205
+GeometryHandlers
+1 100 0 305 0 305 0
+11 3 0 0 5  295 0 295 0  0 0 5 0
+ 3 270 0 270  0 0 20 3  0 0 15 0
+ 3 0 0 115  150 0 150 2  0 0 40 0
+ 3 270 0 270  0 0 20 5  0 0 15 0
+ 3 0 0 115  150 0 150 4  0 0 40 0
+ 3 0 0 5  295 0 295 1  0 0 5 0
+ 3 0 0 115  150 0 150 6  0 0 40 0
+ 3 270 0 270  0 0 20 8  0 0 15 0
+ 3 270 0 270  0 0 20 9  0 0 15 0
+ 3 0 0 115  150 0 150 7  0 0 40 0
+ 3 0 0 115  175 0 175 15  0 0 15 0
+1 100 0 205 0 205 0
+11 3 0 0 5  0 0 110 0  90 0 90 0
+ 3 0 0 26  0 0 20 3  159 0 159 0
+ 3 0 0 25  0 0 22 2  158 0 158 0
+ 3 0 0 56  0 0 20 5  129 0 129 0
+ 3 0 0 55  0 0 22 4  128 0 128 0
+ 3 0 0 120  80 0 80 1  0 0 5 0
+ 3 0 0 140  0 0 22 6  43 0 43 0
+ 3 0 0 141  0 0 20 8  44 0 44 0
+ 3 0 0 171  0 0 20 9  14 0 14 0
+ 3 0 0 170  0 0 22 7  13 0 13 0
+ 3 0 0 85  0 0 20 15  100 0 100 0
+EOF

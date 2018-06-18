@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("92056D1C-1D69-11E8-91B2-87BE772C9500") = "multitouch", "multitouch.vcxproj", "92052302-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

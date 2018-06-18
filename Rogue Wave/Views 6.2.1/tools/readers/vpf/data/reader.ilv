@@ -1,0 +1,112 @@
+// Ilv Version: 3.1
+// File generated: Fri Apr 28 19:02:58 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "reader"
+
+Palettes 2
+0 "gray" "black" "button" "%helvetica-12-B" 0 solid solid 0 0 0
+"IlvStText" 1 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 21
+1 { 0 0 IlvButton 16 376 56 23 F9 2 1 16 4 "Push"   } 32 "push"
+0
+1 { 1 0 IlvButton 80 376 56 23 F9 2 1 16 4 "Pop"   } 32 "pop"
+0
+1 { 2 0 IlvButton 144 376 56 23 F9 2 1 16 4 "Delete"   } 32 "delete"
+0
+1 { 3 1 IlvSheet 16 248 504 120 F2136 2 1 1 1 40 25 0 1 0 1 1 0 0 6 1 2 88 
+128 
+171 
+314 
+394 
+499 
+6 0 0 162 IlvGadgetMatrixItem 0 IlvButton 19 250 86 21 F9 2 1 16 4 "Name"   0 
+1 0 162 IlvGadgetMatrixItem 0 IlvButton 107 250 38 21 F9 2 1 16 4 "Visible"   0  2 0 162 IlvGadgetMatrixItem 0 IlvButton 147 250 41 21 F9 2 1 16 4 "Palette"   0  3 0 162 IlvGadgetMatrixItem 0 IlvButton 190 250 141 21 F9 2 1 16 4 "Coverage"   0  4 0 162 IlvGadgetMatrixItem 0 IlvButton 333 250 78 21 F9 2 1 16 4 "Class"   0 
+5 0 162 IlvGadgetMatrixItem 0 IlvButton 413 250 103 21 F9 2 1 16 4 "Filter"   0  1 N 3 1 0 1 1 0 0  } 32 "list"
+0
+1 { 4 0 IlvButton 288 376 57 23 F9 2 1 16 4 "Requery"   } 32 "refresh"
+0
+1 { 5 0 IlvButton 352 376 57 23 F9 2 1 16 4 "Extent..."   } 32 "extent"
+0
+1 { 6 0 IlvButton 480 376 57 23 F9 2 1 16 4 "Save as..."   } 32 "save"
+0
+1 { 7 0 IlvButton 416 376 57 23 F9 2 1 16 4 "Open..."   } 32 "open"
+0
+1 { 8 1 IlvTreeGadget 16 40 376 160 F32 2 A A 0 0 0 0 20 1 1 1 1 1 0 2
+IlvTreeGadgetItem 1 2 4 "root" 0
+  } 32 "libraries"
+0
+1 { 9 0 IlvFrame 8 0 394 242 F8 0 25 16 4 "Databases"   } 0
+0
+1 { 10 0 IlvButton 16 208 72 23 F9 2 1 16 4 "Make layer"   } 32 "makelayer"
+0
+1 { 11 0 IlvButton 304 16 40 20 F9 2 1 16 4 "Add..."   } 32 "adddb"
+0
+1 { 12 0 IlvButton 352 16 40 20 F9 2 1 16 4 "Close"   } 32 "closedb"
+0
+1 { 13 1 IlvOptionMenu 16 16 280 20 F1 2 0 0  } 32 "db"
+0
+1 { 14 0 IlvFrame 400 0 144 242 F8 0 25 16 4 "Views"   } 0
+0
+1 { 15 0 IlvFrame 8 240 536 168 F8 0 25 16 4 ""   } 0
+0
+1 { 16 0 IlvButton 408 208 56 23 F9 2 1 16 4 "Add"   } 32 "addview"
+0
+1 { 17 0 IlvButton 472 208 56 23 F9 2 1 16 4 "Delete"   } 32 "deleteview"
+0
+1 { 18 0 IlvButton 96 208 72 23 F9 2 1 16 4 "Properties..."   } 32 "properties"
+0
+1 { 19 1 IlvLabel 8 428 "Status" } 32 "status"
+0
+1 { 20 1 IlvStringList 408 16 129 183 F131 2 A A 0 0 0 0 0 3 0 0 2 0 } 32 "views"
+0
+Size 555 432
+Background "gray"
+GeometryHandlers
+2 100 350 400 0 400 0
+ 30 150 155 400 155 400
+17 3 0 0 16  520 0 520 3  0 0 19 1
+ 3 0 0 16  0 0 56 0  483 0 483 1
+ 3 0 0 80  0 0 56 1  419 0 419 1
+ 3 0 0 144  0 0 56 2  355 0 355 1
+ 3 480 0 480  0 0 57 6  0 0 18 1
+ 3 416 0 416  0 0 57 7  0 0 82 1
+ 3 352 0 352  0 0 57 5  0 0 146 1
+ 3 288 0 288  0 0 57 4  0 0 210 1
+ 3 0 0 8  0 0 30 19  517 0 517 1
+ 3 0 0 16  0 0 72 10  312 0 312 0
+ 3 0 0 96  0 0 72 18  232 0 232 0
+ 3 0 0 16  376 0 376 8  0 0 8 0
+ 3 0 0 16  280 0 280 13  0 0 104 0
+ 3 304 0 304  0 0 40 11  0 0 56 0
+ 3 352 0 352  0 0 40 12  0 0 8 0
+ 3 0 0 8  394 0 394 9  0 -2 -2 0
+ 3 0 0 8  536 0 536 15  0 0 11 1
+4 3 0 0 8  0 0 56 16  91 0 91 1
+ 3 0 0 72  0 0 56 17  27 0 27 1
+ 3 0 0 0  144 0 144 14  0 0 11 1
+ 3 0 0 8  129 0 129 20  0 0 18 1
+3 100 120 241 0 241 0
+ 200 100 166 241 166 241
+ 0 0 25 407 25 407
+11 3 208 0 208  0 0 23 18  0 0 10 0
+ 3 208 0 208  0 0 23 10  0 0 10 0
+ 3 208 0 208  0 0 23 16  0 0 10 0
+ 3 208 0 208  0 0 23 17  0 0 10 0
+ 3 0 0 40  160 0 160 8  0 0 41 0
+ 3 0 0 16  0 0 20 13  205 0 205 0
+ 3 0 0 16  0 0 20 11  205 0 205 0
+ 3 0 0 16  0 0 20 12  205 0 205 0
+ 3 0 0 0  242 0 242 9  0 -1 -1 0
+ 3 0 0 0  242 0 242 14  0 -1 -1 0
+ 3 0 0 16  183 0 183 20  0 0 42 0
+9 3 0 0 7  120 0 120 3  0 0 39 1
+ 3 135 0 135  0 0 23 2  0 0 8 1
+ 3 135 0 135  0 0 23 1  0 0 8 1
+ 3 135 0 135  0 0 23 0  0 0 33 2
+ 3 135 0 135  0 0 23 6  0 0 8 1
+ 3 135 0 135  0 0 23 7  0 0 8 1
+ 3 135 0 135  0 0 23 5  0 0 8 1
+ 3 135 0 135  0 0 23 4  0 0 8 1
+ 3 0 -1 -1  168 0 168 15  0 -1 -1 1
+1 3 0 0 9  12 0 12 19  0 0 4 2
+EOF

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvadvgadmgr -->
+<module name="ilvadvgadmgr" version="6.2">
+<class name="IlvManagerNotebookPage" rootClass="IlvNotebookPage"/>
+</module>

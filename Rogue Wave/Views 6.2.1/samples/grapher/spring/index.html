@@ -1,0 +1,92 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Grapher - Samples: spring</title>
+	</head>
+    <body>
+		<a name="spring"><h1>Sample: <code>spring</code></h1><h1 class="subtitle">Spring Embedder Sample</h1></a>
+		<p>This sample shows an animated layout on a grapher.</p>
+		<img src="data/spring.png"/>
+		<p>
+	This sample implements a spring-embedder that performs an animated 
+	layout on the contents of a grapher. The algorithmic part of the spring-embedder 
+	is inspired from the force-directed layout that is provided in the JDK release.
+	Since refinements of this layout are beyond the scope of this sample, the 
+	implementation does not perform oscillation or rotation detection. Also, the 
+	translation threshold, that is how far a node can be moved at each iteration 
+	of the layout, is defined by a constant (<code>MaxNodeTranslation</code>).
+	</p>
+	<p>This sample covers the following topics:</p>
+	<UL>
+	<LI> 
+		It shows how you can associate information with a graphic object. In this sample,
+		each node keeps a data structure (<code>LayoutHandler::NodeInfo</code>) that is used 
+		to store the sum of the force vectors applied by its connected links and neighbouring nodes. 
+		This structure is also used to cache the center of the node, which is intensively used
+		throughout an iteration of the algorithm and might be expensive to compute if the
+		graphic object is complex.
+	</LI>
+	<LI>
+		It shows you how you can subclass <code>IlvGraphSelectInteractor</code> to perform
+		additional operations when graphic objects are selected and edited. In the case of 
+		this sample, the subclass is used to run the layout whenever a node is moved. It
+		also ensures that selected nodes are not moved by the layout.
+	</LI>
+	<LI>
+		It shows how you can buffer the drawing operations across several iterations of
+		the algorithm.
+	</LI>
+	<LI>
+		It implements a subclass of <code>IlvGrapherPin</code> that provides a connection 
+		point located at the center of a node.
+	</LI>
+	</UL>
+	<p>
+	The sample shows two windows connected to the same grapher. The 
+	<em>overview</em> view shows the grapher contents with an unzoom level. 
+	The <em>main</em> view displays the graph with no initial transformer. On top
+	of the predefined grapher accelerators, the following interactions are available:</p>
+	<UL>
+	<LI> Pressing the <b>'r'</b> key runs the layout. </LI>
+	<LI> Pressing the <b>'s'</b> key stops the layout. </LI>
+	<LI> Pressing the <b>space bar</b> applies a random translation to all the nodes 
+	of the grapher. </LI>
+	<LI> Pressing the <b>'a'</b> key toggles the animation mode of the layout. 
+	When the animation is not active, interaction with nodes is disabled.</LI>
+	<LI> Pressing the <b>'n'</b> or <b>'l'</b> keys toggles respectively the visibility 
+	of the nodes or of the links in the view that receives the event. 
+	When the program starts, links are hidden in the main view and nodes are 
+	hidden in the overview window.</LI>
+	<LI> You can select and move nodes in the main view during the animation. </LI>
+	</UL>
+	<p>
+	The spring executable can be invoked with a parameter that gives the ilv file 
+	that is read by the grapher. All nodes stored in the file are moved to the layer
+	of index <code>1</code>, whereas all links are moved to the layer of index <code>0</code>. 
+	Three predefined data files are available in 
+	<code>[ILVHOME]/samples/grapher/spring/data:</code> <code>balls.ilv</code> 
+	(the default file if no parameter is given), <code>circle.ilv</code>, and <code>flower.ilv</code>
+	</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGrapher</code></li>
+			<li><code>IlvLinkImage</code></li>
+			<li><code>IlvGraphSelectInteractor</code></li>
+			<li><code>IlvGrapherPin</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/spring.cpp"><code>src/spring.cpp</code></a></li>
+			<li><a href="include/centerpin.h"><code>include/centerpin.h</code></a></li>
+			<li><a href="src/centerpin.cpp"><code>src/centerpin.cpp</code></a></li>
+		</ul>

@@ -1,0 +1,52 @@
+// Ilv Version: 5.0
+// File generated: Fri Feb 08 14:31:19 2002
+// Creator class: IlvGadgetManagerOutput
+FileName "screct"
+Palettes 1
+"IlvStToolBar" 0 F "defaultBg" "defaultFg" "normal" "%helvetica-12" 0 solid solid 0 0 0 65535 1
+IlvObjects 6
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 186 33 79 16 F1 2 1 2 0 0 0 Y "&left" } 32 "vsbPos"
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 186 84 79 16 F1 2 1 2 0 0 0 Y "&top" } 32 "hsbPos"
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 11 6 151 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&verticalScrollBar"  }   } 0
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 11 29 151 20 F815 2 1 -1 0 "As Needed" 2
+{ IlvGadgetItem 1 2 4 "&show"  } 
+{ IlvGadgetItem 1 2 4 "&hide"  }  4 0 } 32 "vsbar"
+0
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 11 57 151 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&horizontalScrollBar"  }   } 0
+0
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 11 82 151 20 F815 2 1 -1 0 "As Needed" 2
+{ IlvGadgetItem 1 2 4 "&show"  } 
+{ IlvGadgetItem 1 2 4 "&hide"  }  4 0 } 32 "hsbar"
+0
+Size 272 112
+GeometryHandlers
+1 100 0 272 0 272 0
+6 3 0 0 11  0 0 151 2  0 0 110 0
+ 3 0 0 11  0 0 151 3  0 0 110 0
+ 3 0 0 186  0 0 79 0  0 1 7 0
+ 3 0 0 186  0 0 79 1  0 1 7 0
+ 3 0 0 11  0 0 151 4  110 0 110 0
+ 3 0 0 11  0 0 151 5  110 0 110 0
+1 100 0 112 0 112 0
+6 3 0 0 6  0 0 22 2  84 0 84 0
+ 3 0 0 29  0 0 20 3  63 0 63 0
+ 3 0 0 33  0 0 16 0  63 0 63 0
+ 3 0 0 84  0 0 16 1  12 0 12 0
+ 3 0 0 57  0 0 22 4  33 0 33 0
+ 3 0 0 82  0 0 20 5  10 0 10 0
+EOF

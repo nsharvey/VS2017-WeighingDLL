@@ -1,0 +1,36 @@
+// Ilv Version: 3.1
+// File generated: Mon Jan 11 11:17:58 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "txtfdspe"
+PathName "C:\\users\\noiret\\dev\\views.work\\studio\\data\\ivstudio\\inspectors\\txtfdspe.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 8
+2 { 0 0 IlvMessageLabel 4 2 138 22 F8 0 25 16 4 "&Label"   } 0
+0
+2 { 1 0 IlvTextField 140 2 160 22 F6 2 1 -1 0 "Label" } 32 "LabelName"
+0
+2 { 2 0 IlvMessageLabel 4 28 138 22 F8 0 25 16 4 "&alignment"   } 0
+0
+2 { 3 0 IlvScrolledComboBox 140 28 161 20 F807 2 "" 3
+IlvGadgetItem 1 2 4 "&right"  
+IlvGadgetItem 1 2 4 "&center"  
+IlvGadgetItem 1 2 4 "&left"   4 0 } 32 "TxtFdAlignment"
+0
+2 { 4 0 IlvMessageLabel 5 54 138 22 F8 0 25 16 4 "&nb chars"   } 0
+0
+2 { 5 0 IlvNumberField 140 54 161 22 F6 2 2 -1 0 "1234543" . , 2 0 0 2147483647 } 32 "TxtFdNoChars"
+0
+2 { 6 0 IlvToggle 5 82 292 16 F1 2 1 2 0 0 0 Y "&editable" } 96 "TxtFdEditable" "Toggle"
+16 1 5
+2 { 7 0 IlvToggle 5 104 292 16 F1 2 1 2 0 0 0 Y "&ChangeFocusOnValidation" } 96 "TxtFdChangeFocus" "Toggle"
+16 1 5
+Size 303 133
+GeometryHandlers
+1 100 0 303 0 303 0
+3 3 0 0 140  160 0 160 1  0 0 3 0
+ 3 0 0 140  161 0 161 3  0 0 2 0
+ 3 0 0 140  161 0 161 5  0 0 2 0
+1 100 0 133 0 133 0
+0
+EOF

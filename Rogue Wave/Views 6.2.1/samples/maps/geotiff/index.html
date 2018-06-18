@@ -1,0 +1,61 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Maps - Samples: geotiff</title>
+	</head>
+    <body>
+		<a name="geotiff"><h1>Sample: <code>geotiff</code></h1><h1 class="subtitle">GeoTIFF Viewer and Tiler</h1></a>
+		<p>GeoTIFF viewer with Load-On-Demand implementation.</p>
+		<img src="data/geotiff.png"/>
+		<p>
+			This sample shows how to read GeoTIFF files with 
+			Rogue Wave Views. This sample can load tiled GeoTIFF
+			files and is able to produce a tiled GeoTIFF files
+			(the tile width and height must be a multiple of 16
+			then).
+			<h2> Using the Sample </h2>
+
+			You can launch the sample without any argument. In this
+			case, the sample will load a file located in
+			the data directory. <br/>
+			To show the Load-On-Demand mechanism in action, you must
+ 			provide a tiled TIFF file. See <b> About the GeoTIFF Format </b>
+			to know how to find some data. <br/>			
+
+			<h2> About the GeoTIFF Format </h2> 
+                        The GeoTIFF format is an extension of the TIFF format in the way that it defines 
+                        cartographic data embedded as tags. Among many others, cartographic tags include 
+                        georeferencing and tiling information. For more information about the GeoTIFF 
+                        format, visit 
+                        <a href="http://www.remotesensing.org/geotiff/geotiff.html">
+			 http://www.remotesensing.org/geotiff/geotiff.html </a>		      
+			<br/>		      
+			</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGeoTIFFTileLoader</code></li>
+			<li><code>IlvGeoTIFFLayer</code></li>
+			<li><code>IlvGeoTIFFReader</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/alert.cpp"><code>src/alert.cpp</code></a></li>
+			<li><a href="src/filesel.cpp"><code>src/filesel.cpp</code></a></li>
+			<li><a href="src/geotiff.cpp"><code>src/geotiff.cpp</code></a></li>
+			<li><a href="src/tiler.cpp"><code>src/tiler.cpp</code></a></li>
+			<li><a href="src/view.cpp"><code>src/view.cpp</code></a></li>
+			<li><a href="include/alert.h"><code>include/alert.h</code></a></li>
+			<li><a href="include/filesel.h"><code>include/filesel.h</code></a></li>
+			<li><a href="include/tiler.h"><code>include/tiler.h</code></a></li>
+			<li><a href="include/view.h"><code>include/view.h</code></a></li>
+		</ul>

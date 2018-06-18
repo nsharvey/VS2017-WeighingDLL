@@ -1,0 +1,72 @@
+// Ilv Version: 5.0
+// File generated: Mon Dec 17 15:52:05 2001
+// Creator class: IlvGadgetManagerOutput
+FileName "pciopt"
+PathName "pciopt.ilv"
+Palettes 2
+1 F "gray" "black" "button" "%helvetica-12-" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 0 F "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0 65535 1
+IlvObjects 10
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 115 45 87 16 F1073741825 2 1 2 0 14 0 Y "&data" } 32 "data"
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 115 70 87 16 F1073741825 2 1 2 0 14 0 Y "&names" } 32 "names"
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 115 120 226 16 F1073741825 2 1 2 0 14 0 Y "&cbdefs" } 544 "cbdefs"
+1
+1 "__ilvCallback" "cbdefsCb"
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 115 185 205 16 F1073741825 2 1 2 0 14 0 Y "&systemView" } 32 "systemViewConstructor"
+0
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 115 210 205 16 F1073741825 2 1 2 0 14 0 Y "&systemViewChild" } 32 "systemViewChildConstructor"
+0
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 115 95 229 16 F1073741825 2 1 2 0 14 0 Y "&cbdecls" } 544 "cbdecls"
+1
+1 "__ilvCallback" "cbdeclsCb"
+0
+2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 115 235 205 16 F1073741825 2 1 2 0 14 0 Y "&viewChild" } 32 "viewChildConstructor"
+0
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 115 260 205 16 F1073741825 2 1 2 0 14 0 Y "&topView" } 32 "topViewConstructor"
+0
+3 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFrame 5 25 356 125 F268435468 0 { IlvMessageItem 262169 4 16 4 "&generate"  }   } 0
+0
+3 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFrame 5 165 356 125 F268435468 0 { IlvMessageItem 262169 4 16 4 "&optionalConstructors"  }   } 0
+0
+Size 366 342
+GeometryHandlers
+1 100 0 366 0 366 0
+8 3 0 0 5  356 0 356 8  0 0 5 0
+ 3 0 0 5  356 0 356 9  0 0 5 0
+ 3 0 0 115  0 0 87 0  164 0 164 0
+ 3 0 0 115  0 0 87 1  164 0 164 0
+ 3 0 0 115  0 0 226 2  25 0 25 0
+ 3 0 0 115  0 0 205 3  46 0 46 0
+ 3 0 0 115  0 0 205 4  46 0 46 0
+ 3 0 0 115  0 0 229 5  22 0 22 0
+1 100 0 342 0 342 0
+0
+Layers 4
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+EOF

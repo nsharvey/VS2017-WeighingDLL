@@ -1,0 +1,140 @@
+// Rogue Wave Views Prototype Library File
+// Rogue Wave Views Version: 4.0
+// Date: Wed Mar 15 16:12:35 2000
+Library: atc
+SingleFile: true
+airport
+plane
+IlvProtoLibraryBlocks
+IlvProtoLibraryBlock airport.ivp
+// Ilog Views Group Version 1.1
+IlvPrototype airport
+    accessors {
+        IlvNodeAccessor Int PosX x
+        IlvOutputAccessor Int PosX
+        IlvNodeAccessor Int PosY y
+        IlvOutputAccessor Int PosY
+        IlvNodeAccessor String Name IlvLabel.label
+        IlvOutputAccessor String Name
+    }
+    values {
+        Int PosX = 0
+        Int PosY = 0
+        String Name = airport
+    }
+    nodes {
+        IlvGraphicNode IlvEllipse "" 0 0
+        IlvGraphicNode "" "" 0 1
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock airport.ilv
+// Ilv Version: 4.0
+// File generated: Wed Mar 15 16:12:35 2000
+// Creator class: IlvGraphOutput
+Palettes 2
+0 48830 48830 48830 0 0 0 "default" "-*-courier-medium-r-normal-*-*-140-*-*-*-*-*-*" 0 solid solid 0 0 0
+1 "Grey40" 0 0 0 "-*-courier-medium-r-normal-*-*-140-*-*-*-*-*-*" 0 solid solid 0 0 0
+IlvObjects 2
+0 2 { 0 0 IlvEllipse 0 0 64 60 } 0
+0 2 { 1 1 IlvLabel 3 74 "airport" } 0
+Layers 2
+"" 4 0 
+"" 4 0 
+Views 0
+EOF
+IlvProtoLibraryBlock plane.ivp
+// Ilog Views Group Version 1.1
+IlvPrototype plane
+    accessors {
+        IlvNodeAccessor Float PosX x
+        IlvOutputAccessor Float PosX
+        IlvNodeAccessor Float PosY y
+        IlvOutputAccessor Float PosY
+        IlvNodeAccessor String Name IlvLabel.label
+        IlvOutputAccessor String Name
+        IlvValueAccessor Float Direction
+        IlvOutputAccessor Float Direction
+        IlvValueAccessor Float Speed
+        IlvOutputAccessor Float Speed
+        IlvValueAccessor Float Altitude
+        IlvOutputAccessor Float Altitude
+        IlvRotationAccessor (RP) Float doRotation IlvLine IlvPolygon.centerX IlvPolygon.centerY 0 360 0 6.283185 false
+        IlvZoomXAccessor (RP) Float doSpeed IlvLine IlvPolygon.centerX 
+        IlvLoopbackAccessor (RP) Float doXform Direction
+        IlvLoopbackAccessor (RP) Float doXform Speed
+        IlvTriggerAccessor (RP) Float doXform doRotation 0
+        IlvTriggerAccessor (RP) Float doXform doSpeed Speed
+        IlvTriggerAccessor (RP) Float doXform doRotation Direction
+        IlvCallbackAccessor (RP) Boolean showSlider IlvPolygon Generic true
+        IlvLoopbackAccessor (RP) Boolean showSlider showSlider
+        IlvToggleAccessor (RP) Boolean showSlider IlvSlider.visible
+        IlvCallbackAccessor Float changeSpeed IlvSlider Generic IlvSlider.value*3.0/(IlvSlider.maxValue-IlvSlider.minValue)
+        IlvLoopbackAccessor Float changeSpeed changeSpeed
+        IlvTriggerAccessor Float changeSpeed Speed IlvSlider.value*3.0/(IlvSlider.maxValue-IlvSlider.minValue)
+        IlvEventAccessor Any changeAngleStart IlvLabel ButtonDown LeftButton AnyModifier X
+        IlvValueAccessor Any changeAngleStart
+        IlvEventAccessor Any changeAngleMain IlvLabel ButtonDragged LeftButton AnyModifier X
+        IlvRotationAccessor Any changeAngleTest IlvLine IlvPolygon.centerX IlvPolygon.centerY 0 360 0 360 true
+    }
+    values {
+        Int PosX = 0
+        Int PosY = 0
+        String Name = no
+        Float Direction = 0
+        Double Speed = 1.5
+        Float Altitude = 0
+        Float changeAngleTest = 0
+    }
+    nodes {
+        IlvGraphicNode IlvPolygon "" 0 0
+        IlvGraphicNode IlvPolyline "" 0 1
+        IlvGraphicNode IlvPolyline_2 "" 0 2
+        IlvGraphicNode IlvPolyline_3 "" 0 3
+        IlvGraphicNode IlvPolyline_4 "" 0 4
+        IlvGraphicNode IlvLine "" 0 5
+        IlvGraphicNode IlvLabel "" 0 6
+        IlvGraphicNode IlvSlider "I" 0 7
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock plane.ilv
+// Ilv Version: 4.0
+// File generated: Wed Mar 15 16:12:35 2000
+// Creator class: IlvGraphOutput
+Palettes 5
+"IlvStText" 4 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+1 "Grey40" "antiquewhite3" "-*-courier-medium-r-normal-*-*-140-*-*-*-*-*-*" 0 solid solid 0 0 0
+2 "Grey40" 25443 42405 27499 "-*-courier-medium-r-normal-*-*-140-*-*-*-*-*-*" 0 solid solid 1 0 0
+3 "Grey40" "white" "%times-10-" 0 solid solid 0 0 0
+0 "Grey40" 52685 29555 23130 "-*-courier-medium-r-normal-*-*-140-*-*-*-*-*-*" 0 solid solid 0 0 0
+IlvObjects 8
+0 2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvPolygon 3
+0 30 20 0 39 30 } 0
+0 2 { 1 1 IlvPolyline 4
+6 26 20 3 33 26 7 26 } 0
+0 2 { 2 1 IlvPolyline 4
+10 24 20 5 29 24 11 24 } 0
+0 2 { 3 1 IlvPolyline 4
+12 22 20 7 27 22 13 22 } 0
+0 2 { 4 1 IlvPolyline 4
+12 22 20 7 27 22 13 22 } 0
+0 2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "_EventAccessor" ]
+2 IlvLine 28 16 272 18 } 384
+0 2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "_EventAccessor" ]
+3 IlvLabel 15 42 "no" } 384
+0 2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+4 IlvSlider 2 41 60 14 F1 2 0 100 50 10 1 10 } 2
+Layers 2
+"" 4 0 
+"" 4 0 
+Views 0
+EOF
+IlvProtoLibraryEnd

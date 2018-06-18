@@ -1,0 +1,60 @@
+// Ilv Version: 5.2
+// File generated: Thu Apr 10 16:06:23 2008
+// Creator class: IlvGadgetManagerOutput
+FileName "newnbpi"
+PathName "newnbpi.ilv"
+Palettes 1
+"IlvStToolBar" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 6
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 296 318 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cancel"  }   } 544 "CancelButton"
+1
+1 "__ilvCallback" "cancel"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 206 318 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&ok"  }   } 544 "OKButton"
+1
+1 "__ilvCallback" "apply"
+0
+1 { 2 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvPanelObjectReference IlvPanelObjectReference  "912922521.0" ]
+0 IlvNotebook 10 10 366 199 F1 2 0 2  1
+" { IlvNotebookPageItem 1 2 4 "Tab 1"  }  "gray" ""
+0 0 4 5 2 10 10 10 10  } 32 "Notebook"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 232 283 144 22 F6 2 1 -1 0 "" } 32 "Label"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 24 283 190 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&TabLabel"  }   } 0
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Selector" ]
+0 IlvSelector 0 3
+0 IlvToggle 10 214 366 16 F1 2 1 2 1 0 0 Y "&AddNewPage" 
+0 IlvToggle 10 235 366 16 F1 2 1 2 1 0 0 Y "&InsertNewPage" 
+0 IlvToggle 10 259 366 16 F1 2 1 2 1 0 0 Y "&ReplacePage" 
+ } 32 "Selector"
+0
+Size 386 351
+GeometryHandlers
+1 100 0 386 0 386 0
+6 3 0 0 24  0 0 190 4  172 0 172 0
+ 3 206 0 206  0 0 80 1  0 0 100 0
+ 3 296 0 296  0 0 80 0  0 0 10 0
+ 3 0 0 232  144 0 144 3  0 0 10 0
+ 3 0 0 10  366 0 366 5  0 0 10 0
+ 3 0 0 10  366 0 366 2  0 0 10 0
+1 100 0 351 0 351 0
+6 3 283 0 283  0 0 22 4  0 0 46 0
+ 3 318 0 318  0 0 23 1  0 0 10 0
+ 3 318 0 318  0 0 23 0  0 0 10 0
+ 3 283 0 283  0 0 22 3  0 0 46 0
+ 3 214 0 214  0 0 61 5  0 0 76 0
+ 3 0 0 10  199 0 199 2  0 0 142 0
+EOF

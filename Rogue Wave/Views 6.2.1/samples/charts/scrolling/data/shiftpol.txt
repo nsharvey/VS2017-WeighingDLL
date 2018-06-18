@@ -1,0 +1,4 @@
+Files: shiftpol.cpp, shiftpol.h
+This sample demonstrates the automatic scrolling feature of the Charts package. This sample is similar to the 
+shiftcar sample, except that it uses a polar coordinate system. It creates a polar chart and connects it to 
+several data sets. New random data points are added to these data sets at a given timer period.

@@ -1,0 +1,47 @@
+// Ilv Version: 5.2
+// File generated: Thu Apr 10 15:03:30 2008
+// Creator class: IlvGadgetManagerOutput
+FileName "askcombo"
+PathName "askcombo.ilv"
+Palettes 2
+0 F "defaultBg" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 1 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 4
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvButton 68 87 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvButton 158 87 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cancel"  }   } 544 "cancel"
+1
+1 "__ilvCallback" "cancel"
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 5 5 238 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "string"  }   } 32 "title"
+0
+3 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvScrolledComboBox 5 36 238 20 F806 2 1 -1 0 "" 0 7 0 } 32 "strtext"
+0
+Size 248 120
+GeometryHandlers
+1 100 200 248 0 248 0
+4 3 0 0 5  238 0 238 3  0 0 5 0
+ 3 0 0 5  238 0 238 2  0 0 5 0
+ 3 158 0 158  0 0 80 1  0 0 10 0
+ 3 68 0 68  0 0 80 0  0 0 100 0
+1 100 120 120 0 120 0
+4 3 87 0 87  0 0 23 0  0 0 10 0
+ 3 87 0 87  0 0 23 1  0 0 10 0
+ 3 0 0 5  0 0 26 2  89 0 89 0
+ 3 0 0 36  0 0 20 3  64 0 64 0
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

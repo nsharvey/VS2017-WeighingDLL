@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="test gbe|Win32">
+      <Configuration>test gbe</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F682C8AC-DCF8-449B-9830-5DE8ADCD1ED0}</ProjectGuid>
+    <RootNamespace>X3Centr3</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='test gbe|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='test gbe|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27625.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental />
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <IncludePath>C:\GitHub\Weighing2017\Rogue Wave\Views 6.2.1\lib;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='test gbe|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/GR /D "_CRT_SECURE_NO_DEPRECATE" %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\GitHub\weighing\Rogue Wave\Views 5.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;IL_STD;X3CENTR3_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4482;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winviews.lib;ilvbmp.lib;ilvjpg.lib;ilvgadgt.lib;ilvadvgdt.lib;ilvatext.lib;ilvadvgadmgr.lib;ilvappframe.lib;ilvmgr.lib;ilvgadmgr.lib;ilog.lib;views.lib;wsock32.lib;imm32.lib;comctl32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>LinkVerbose</ShowProgress>
+      <OutputFile>"C:\Program Files (x86)\Sage\ILogConnector\Scales\V6\X3Scales.dll"</OutputFile>
+      <AdditionalLibraryDirectories>C:\GitHub\weighing\Rogue Wave\Views 5.6\lib\x86_.net2005_8.0\stat_mda;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\cssrc\x3centr1.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/GR  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\GitHub\Weighing2017\Rogue Wave\Views 6.2.1\include;C:\GitHub\Weighing2017\cssrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;IL_STD;X3CENTR3_EXPORTS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4482;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winviews.lib;ilvbmp.lib;ilvjpg.lib;ilvgadgt.lib;ilvadvgdt.lib;ilvatext.lib;ilvadvgadmgr.lib;ilvappframe.lib;ilvmgr.lib;ilvgadmgr.lib;ilog.lib;views.lib;wsock32.lib;imm32.lib;comctl32.lib;shlwapi.lib;Version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>C:\Program Files (x86)\Sage\ILogConnector\Scales\V6\X3Scales.dll</OutputFile>
+      <AdditionalLibraryDirectories>C:\GitHub\Weighing2017\Rogue Wave\Views 6.2.1\lib\x86_.net2017_15.0\stat_mta;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\cssrc\x3centr1.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>C:\GitHub\Weighing2017\vrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='test gbe|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/GR  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Rogue Wave\Views 5.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;IL_STD;X3CENTR3_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winviews.lib;ilvbmp.lib;ilvjpg.lib;ilvgadgt.lib;ilvadvgdt.lib;ilvatext.lib;ilvadvgadmgr.lib;ilvappframe.lib;ilvmgr.lib;ilvgadmgr.lib;ilog.lib;views.lib;wsock32.lib;imm32.lib;comctl32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>C:\Program Files (x86)\Sage\Safe X3 Client V1\Scales\V6\X3Scales.dll</OutputFile>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Rogue Wave\Views 5.6\lib\x86_.net2005_8.0\stat_mda;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\cssrc\x3centr1.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cssrc\accueil.cpp" />
+    <ClCompile Include="cssrc\Adxaccueil.cpp" />
+    <ClCompile Include="cssrc\AdxBalance.cpp" />
+    <ClCompile Include="cssrc\AdxBasic.cpp" />
+    <ClCompile Include="cssrc\AdxChoix_Balance.cpp" />
+    <ClCompile Include="cssrc\Adxchoix_OF.cpp" />
+    <ClCompile Include="cssrc\Adxclavier_tactile.cpp" />
+    <ClCompile Include="cssrc\AdxComposant.cpp" />
+    <ClCompile Include="cssrc\AdxCsvfiles.cpp" />
+    <ClCompile Include="cssrc\AdxData.cpp" />
+    <ClCompile Include="cssrc\AdxDate.cpp" />
+    <ClCompile Include="cssrc\AdxEtalon.cpp" />
+    <ClCompile Include="cssrc\AdxEtalonLigne.cpp" />
+    <ClCompile Include="cssrc\AdxFicheISM.cpp" />
+    <ClCompile Include="cssrc\AdxFicheISMRecipient.cpp" />
+    <ClCompile Include="cssrc\AdxGadgetContainer.cpp" />
+    <ClCompile Include="cssrc\AdxInterface.cpp" />
+    <ClCompile Include="cssrc\AdxLot.cpp" />
+    <ClCompile Include="cssrc\AdxMeid5.cpp" />
+    <ClCompile Include="cssrc\AdxMeid7.cpp" />
+    <ClCompile Include="cssrc\AdxMepm.cpp" />
+    <ClCompile Include="cssrc\Adxmessage.cpp" />
+    <ClCompile Include="cssrc\AdxMSICS.cpp" />
+    <ClCompile Include="cssrc\AdxMultiCom.cpp" />
+    <ClCompile Include="cssrc\AdxOrder.cpp" />
+    <ClCompile Include="cssrc\AdxPesee_Etalon.cpp" />
+    <ClCompile Include="cssrc\AdxPesee_OF.cpp" />
+    <ClCompile Include="cssrc\AdxPhase.cpp" />
+    <ClCompile Include="cssrc\Adxphrase_Secu.cpp" />
+    <ClCompile Include="cssrc\AdxPortCom.cpp" />
+    <ClCompile Include="cssrc\AdxProfile.cpp" />
+    <ClCompile Include="cssrc\AdxRecipient.cpp" />
+    <ClCompile Include="cssrc\Adxrecontrole_OF.cpp" />
+    <ClCompile Include="cssrc\AdxSartorius.cpp" />
+    <ClCompile Include="cssrc\Adxselection_Balance.cpp" />
+    <ClCompile Include="cssrc\Adxselection_EtalonLigne.cpp" />
+    <ClCompile Include="cssrc\AdxSelection_LOT.cpp" />
+    <ClCompile Include="cssrc\Adxselection_MWF.cpp" />
+    <ClCompile Include="cssrc\Adxselection_OF.cpp" />
+    <ClCompile Include="cssrc\Adxselection_phase.cpp" />
+    <ClCompile Include="cssrc\Adxselection_Recipient.cpp" />
+    <ClCompile Include="cssrc\AdxUnit.cpp" />
+    <ClCompile Include="cssrc\AdxWeighingInterface.cpp" />
+    <ClCompile Include="cssrc\Choix_Balance.cpp" />
+    <ClCompile Include="cssrc\choix_OF.cpp" />
+    <ClCompile Include="cssrc\clavier_tactile.cpp" />
+    <ClCompile Include="cssrc\fexist.cpp" />
+    <ClCompile Include="cssrc\message.cpp" />
+    <ClCompile Include="cssrc\Pesee_Etalon.cpp" />
+    <ClCompile Include="cssrc\pesee_OF.cpp" />
+    <ClCompile Include="cssrc\phrase_Secu.cpp" />
+    <ClCompile Include="cssrc\recontrole_OF.cpp" />
+    <ClCompile Include="cssrc\selection_Balance.cpp" />
+    <ClCompile Include="cssrc\selection_EtalonLigne.cpp" />
+    <ClCompile Include="cssrc\selection_LOT.cpp" />
+    <ClCompile Include="cssrc\selection_MWF.cpp" />
+    <ClCompile Include="cssrc\selection_OF.cpp" />
+    <ClCompile Include="cssrc\selection_phase.cpp" />
+    <ClCompile Include="cssrc\selection_Recipient.cpp" />
+    <ClCompile Include="cssrc\StdAfx.cpp" />
+    <ClCompile Include="cssrc\Win unicode.cpp" />
+    <ClCompile Include="cssrc\x3centr1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\GitHub\Weighing2017\vrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ResourceOutputFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Resource.rc</ResourceOutputFileName>
+    </ResourceCompile>
+    <ResourceCompile Include="vrc\resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cssrc\x3centr1.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cssrc\accueil.h" />
+    <ClInclude Include="cssrc\Adxaccueil.h" />
+    <ClInclude Include="cssrc\AdxBalance.h" />
+    <ClInclude Include="cssrc\AdxBasic.h" />
+    <ClInclude Include="cssrc\AdxChoix_Balance.h" />
+    <ClInclude Include="cssrc\Adxchoix_OF.h" />
+    <ClInclude Include="cssrc\Adxclavier_tactile.h" />
+    <ClInclude Include="cssrc\AdxComposant.h" />
+    <ClInclude Include="cssrc\AdxCsvfiles.h" />
+    <ClInclude Include="cssrc\AdxData.h" />
+    <ClInclude Include="cssrc\AdxDate.h" />
+    <ClInclude Include="cssrc\AdxEtalon.h" />
+    <ClInclude Include="cssrc\AdxEtalonLigne.h" />
+    <ClInclude Include="cssrc\AdxFicheISM.h" />
+    <ClInclude Include="cssrc\AdxFicheISMRecipient.h" />
+    <ClInclude Include="cssrc\AdxGadgetContainer.h" />
+    <ClInclude Include="cssrc\AdxInterface.h" />
+    <ClInclude Include="cssrc\AdxLot.h" />
+    <ClInclude Include="cssrc\AdxMeid5.h" />
+    <ClInclude Include="cssrc\AdxMeid7.h" />
+    <ClInclude Include="cssrc\AdxMepm.h" />
+    <ClInclude Include="cssrc\Adxmessage.h" />
+    <ClInclude Include="cssrc\AdxMSICS.h" />
+    <ClInclude Include="cssrc\AdxMultiCom.h" />
+    <ClInclude Include="cssrc\AdxOrder.h" />
+    <ClInclude Include="cssrc\AdxPesee_Etalon.h" />
+    <ClInclude Include="cssrc\AdxPesee_OF.h" />
+    <ClInclude Include="cssrc\AdxPhase.h" />
+    <ClInclude Include="cssrc\Adxphrase_Secu.h" />
+    <ClInclude Include="cssrc\AdxPortCom.h" />
+    <ClInclude Include="cssrc\AdxProfile.h" />
+    <ClInclude Include="cssrc\AdxRecipient.h" />
+    <ClInclude Include="cssrc\Adxrecontrole_OF.h" />
+    <ClInclude Include="cssrc\AdxSartorius.h" />
+    <ClInclude Include="cssrc\Adxselection_Balance.h" />
+    <ClInclude Include="cssrc\Adxselection_EtalonLigne.h" />
+    <ClInclude Include="cssrc\AdxSelection_LOT.h" />
+    <ClInclude Include="cssrc\Adxselection_MWF.h" />
+    <ClInclude Include="cssrc\Adxselection_OF.h" />
+    <ClInclude Include="cssrc\Adxselection_phase.h" />
+    <ClInclude Include="cssrc\Adxselection_Recipient.h" />
+    <ClInclude Include="cssrc\AdxUnit.h" />
+    <ClInclude Include="cssrc\AdxWeighingInterface.h" />
+    <ClInclude Include="cssrc\Choix_Balance.h" />
+    <ClInclude Include="cssrc\choix_OF.h" />
+    <ClInclude Include="cssrc\clavier_tactile.h" />
+    <ClInclude Include="cssrc\fexist.h" />
+    <ClInclude Include="cssrc\message.h" />
+    <ClInclude Include="cssrc\Pesee_Etalon.h" />
+    <ClInclude Include="cssrc\pesee_OF.h" />
+    <ClInclude Include="cssrc\phrase_Secu.h" />
+    <ClInclude Include="cssrc\recontrole_OF.h" />
+    <ClInclude Include="cssrc\selection_Balance.h" />
+    <ClInclude Include="cssrc\selection_EtalonLigne.h" />
+    <ClInclude Include="cssrc\selection_LOT.h" />
+    <ClInclude Include="cssrc\selection_MWF.h" />
+    <ClInclude Include="cssrc\selection_OF.h" />
+    <ClInclude Include="cssrc\selection_phase.h" />
+    <ClInclude Include="cssrc\selection_Recipient.h" />
+    <ClInclude Include="cssrc\StdAfx.h" />
+    <ClInclude Include="cssrc\Win unicode.h" />
+    <ClInclude Include="cssrc\x3centr1.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,22 @@
+var pairs =
+{
+"gadget":{"items":1,"item":1}
+,"items":{"gadgets":1,"defined":1,"explains":1,"using":1,"gadget":1}
+,"gadgets":{"composed":1}
+,"composed":{"items":1}
+,"defined":{"ilvgadgetitem":1}
+,"ilvgadgetitem":{"class":1}
+,"class":{"chapter":1}
+,"chapter":{"introduces":1}
+,"introduces":{"gadget":1}
+,"explains":{"covers":1}
+,"covers":{"following":1}
+,"following":{"topics":1}
+,"topics":{"introducing":1}
+,"introducing":{"gadget":1}
+,"using":{"gadget":1}
+,"item":{"holders":1}
+,"holders":{"list":1}
+,"list":{"gadget":1}
+}
+;Search.control.loadWordPairs(pairs);

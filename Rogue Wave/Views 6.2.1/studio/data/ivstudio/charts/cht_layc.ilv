@@ -1,0 +1,111 @@
+// Ilv Version: 3.1
+// File generated: Tue May 18 18:45:45 1999
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 28
+1 { 0 0 IlvScrolledComboBox 6 162 300 20 F807 2 "" 3
+IlvGadgetItem 1 2 4 "&AutoGraphAndDataAreas"  
+IlvGadgetItem 1 2 4 "&AutoGraphArea"  
+IlvGadgetItem 1 2 4 "&AutoDataArea"   4 0 } 32 "ChartGLayoutMode"
+0
+2 { 1 0 IlvMessageLabel 18 205 180 22 F8 0 262169 4 16 4 "&leftMargin"   } 32 "DataXAreaMsg"
+0
+2 { 2 0 IlvSpinBox 193 205 100 22 2 0 200 64 2 1
+0 IlvNumberField 193 205 85 22 F6 2 2 -1 0 "1234543" . , 2 0 -2147483648 2147483647  f 1 1 1 1.23454e+006 } 32 "DataXArea"
+0
+2 { 3 0 IlvMessageLabel 18 259 180 22 F8 0 262169 4 16 4 "&rightMargin"   } 32 "DataWAreaMsg"
+0
+2 { 4 0 IlvSpinBox 193 259 100 22 2 0 200 64 2 1
+0 IlvNumberField 193 259 85 22 F6 2 2 -1 0 "1234543" . , 2 0 -2147483648 2147483647  f 1 1 1 1.23454e+006 } 32 "DataWArea"
+0
+2 { 5 0 IlvSpinBox 193 232 100 22 2 0 200 64 2 1
+0 IlvNumberField 193 232 85 22 F6 2 2 -1 0 "1234543" . , 2 0 -2147483648 2147483647  f 1 1 1 1.23454e+006 } 32 "DataYArea"
+0
+2 { 6 0 IlvMessageLabel 18 232 180 22 F8 0 262169 4 16 4 "&topMargin"   } 32 "DataYAreaMsg"
+0
+2 { 7 0 IlvSpinBox 193 286 100 22 2 0 200 64 2 1
+0 IlvNumberField 193 286 85 22 F6 2 2 -1 0 "1234543" . , 2 0 -2147483648 2147483647  f 1 1 1 1.23454e+006 } 32 "DataHArea"
+0
+2 { 8 0 IlvMessageLabel 18 286 180 22 F8 0 262169 4 16 4 "&bottomMargin"   } 32 "DataHAreaMsg"
+0
+2 { 9 0 IlvMessageLabel 16 19 167 22 F8 0 262169 4 16 4 "&Left"   } 0
+0
+2 { 10 0 IlvSpinBox 184 19 109 22 2 0 200 64 2 1
+0 IlvNumberField 184 19 94 22 F6 2 2 -1 0 "1234543" . , 2 0 0 2147483647  f 1 1 1 1.23454e+006 } 32 "XLayoutGraphMargin"
+0
+2 { 11 0 IlvSpinBox 184 46 109 22 2 0 200 64 2 1
+0 IlvNumberField 184 46 94 22 F6 2 2 -1 0 "1234543" . , 2 0 0 2147483647  f 1 1 1 1.23454e+006 } 32 "YLayoutGraphMargin"
+0
+2 { 12 0 IlvMessageLabel 16 46 167 22 F8 0 262169 4 16 4 "&top"   } 0
+0
+2 { 13 0 IlvMessageLabel 16 100 167 22 F8 0 262169 4 16 4 "&bottom"   } 384
+0
+2 { 14 0 IlvMessageLabel 16 73 167 22 F8 0 262169 4 16 4 "&Right"   } 384
+0
+2 { 15 0 IlvSpinBox 184 73 109 22 2 0 200 64 2 1
+0 IlvNumberField 184 73 94 22 F6 2 2 -1 0 "1234543" . , 2 0 0 2147483647  f 1 1 1 1.23454e+006 } 32 "RightLayoutGraphMargin"
+0
+2 { 16 0 IlvSpinBox 184 100 109 22 2 0 200 64 2 1
+0 IlvNumberField 184 100 94 22 F6 2 2 -1 0 "1234543" . , 2 0 0 2147483647  f 1 1 1 1.23454e+006 } 32 "BottomLayoutGraphMargin"
+0
+3 { 17 0 IlvMessageLabel 18 206 180 22 F8 0 262169 4 16 4 "&leftMargin"   } 32 "XLayoutGraphMsg"
+0
+3 { 18 0 IlvSpinBox 193 206 100 22 2 0 200 64 2 1
+0 IlvNumberField 193 206 85 22 F6 2 2 -1 0 "1234543" . , 2 0 -2147483648 2147483647  f 1 1 1 1.23454e+006 } 32 "XLayoutGraph"
+0
+3 { 19 0 IlvMessageLabel 18 260 180 22 F8 0 262169 4 16 4 "&rightMargin"   } 32 "WLayoutGraphMsg"
+0
+3 { 20 0 IlvSpinBox 193 260 100 22 2 0 200 64 2 1
+0 IlvNumberField 193 260 85 22 F6 2 2 -1 0 "1234543" . , 2 0 -2147483648 2147483647  f 1 1 1 1.23454e+006 } 32 "WLayoutGraph"
+0
+3 { 21 0 IlvSpinBox 193 233 100 22 2 0 200 64 2 1
+0 IlvNumberField 193 233 85 22 F6 2 2 -1 0 "1234543" . , 2 0 -2147483648 2147483647  f 1 1 1 1.23454e+006 } 32 "YLayoutGraph"
+0
+3 { 22 0 IlvMessageLabel 18 233 180 22 F8 0 262169 4 16 4 "&topMargin"   } 32 "YLayoutGraphMsg"
+0
+3 { 23 0 IlvSpinBox 193 287 100 22 2 0 200 64 2 1
+0 IlvNumberField 193 287 85 22 F6 2 2 -1 0 "1234543" . , 2 0 -2147483648 2147483647  f 1 1 1 1.23454e+006 } 32 "HLayoutGraph"
+0
+3 { 24 0 IlvMessageLabel 18 287 180 22 F8 0 262169 4 16 4 "&bottomMargin"   } 32 "HLayoutGraphMsg"
+0
+3 { 25 0 IlvFrame 3 0 301 128 F8 0 262169 4 16 4 "&SurroundingMargins"   } 0
+0
+3 { 26 0 IlvMessageLabel 4 139 301 22 F8 0 262169 4 16 4 "&DefinitionGraphDataAreas"   } 0
+0
+3 { 27 0 IlvFrame 6 186 299 129 F8 0 262169 4 16 4 "&MarginsToDrawingArea"   } 32 "GraphAndAreaFrm"
+0
+Size 310 319
+GeometryHandlers
+1 100 0 310 0 310 0
+28 3 0 0 16  167 0 167 9  0 0 127 0
+ 3 184 0 184  0 0 109 10  0 0 17 0
+ 3 0 0 18  180 0 180 1  0 0 112 0
+ 3 0 0 18  180 0 180 6  0 0 112 0
+ 3 0 0 18  180 0 180 3  0 0 112 0
+ 3 0 0 18  180 0 180 8  0 0 112 0
+ 3 193 0 193  0 0 100 2  0 0 17 0
+ 3 193 0 193  0 0 100 5  0 0 17 0
+ 3 193 0 193  0 0 100 4  0 0 17 0
+ 3 193 0 193  0 0 100 7  0 0 17 0
+ 3 0 0 18  180 0 180 17  0 0 112 0
+ 3 0 0 18  180 0 180 22  0 0 112 0
+ 3 0 0 18  180 0 180 19  0 0 112 0
+ 3 0 0 18  180 0 180 24  0 0 112 0
+ 3 193 0 193  0 0 100 18  0 0 17 0
+ 3 193 0 193  0 0 100 21  0 0 17 0
+ 3 193 0 193  0 0 100 20  0 0 17 0
+ 3 193 0 193  0 0 100 23  0 0 17 0
+ 3 0 0 6  300 0 300 0  0 0 4 0
+ 3 0 0 4  301 0 301 26  0 0 5 0
+ 3 0 0 6  299 0 299 27  0 0 5 0
+ 3 0 0 3  301 0 301 25  0 0 6 0
+ 3 0 0 16  167 0 167 12  0 0 127 0
+ 3 0 0 16  167 0 167 14  0 0 127 0
+ 3 0 0 16  167 0 167 13  0 0 127 0
+ 3 184 0 184  0 0 109 11  0 0 17 0
+ 3 184 0 184  0 0 109 15  0 0 17 0
+ 3 184 0 184  0 0 109 16  0 0 17 0
+1 100 0 319 0 319 0
+0
+EOF

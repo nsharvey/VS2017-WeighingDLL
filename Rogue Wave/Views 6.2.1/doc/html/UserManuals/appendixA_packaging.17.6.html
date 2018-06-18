@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Adding a Resource File to a Windows DLL</title><link rel="Prev" href="appendixA_packaging.17.5.html" title="Previous" /><link rel="Next" href="appendixB_windows.18.01.html" title="Next" /><link rel="StyleSheet" href="css/appendixA_packaging.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/appendixA_packaging_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/UserManuals/appendixA_packaging.17.6.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pN1dDXg7IPYI8G_002f_002faIugZdQg" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/UserManuals/appendixA_packaging.17.6.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/foundusrfrontcover.html#wwconnect_header">Foundation</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/appendixA_packaging.17.1.html#wwconnect_header">Packaging Rogue Wave&nbsp;Views Applications</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Adding a Resource File to a Windows DLL</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww997213" class="Heading1"><span></span>Adding a Resource File to a Windows DLL</div><div id="ww997550" class="Body">You must add the following lines to any dll module:</div><div id="ww997214" class="NormalCode">#include &lt;windows.h&gt;</div><div id="ww997719" class="NormalCode">#include &lt;ilviews/macros.h&gt;</div><div id="ww997720" class="NormalCode">&nbsp;</div><div id="ww997721" class="NormalCode">extern "C" {</div><div id="ww997722" class="NormalCode">    void _declspec(dllimport) IlvAddHandleToResPath(long, int);</div><div id="ww997723" class="NormalCode">    void _declspec(dllimport) IlvRemoveHandleFromResPath(long);</div><div id="ww997724" class="NormalCode">}</div><div id="ww997742" class="NormalCode">&nbsp;</div><div id="ww997743" class="NormalCode">BOOL WINAPI</div><div id="ww997725" class="NormalCode">DllEntryPoint(HINSTANCE instance, DWORD reason, LPVOID)</div><div id="ww997726" class="NormalCode">{</div><div id="ww997727" class="NormalCode">    switch (reason) {</div><div id="ww997728" class="NormalCode">    case DLL_PROCESS_ATTACH:</div><div id="ww997729" class="NormalCode">        IlvAddHandleToResPath((long)instance, -1);</div><div id="ww997730" class="NormalCode">        return 1;</div><div id="ww997731" class="NormalCode">    case DLL_PROCESS_DETACH:</div><div id="ww997732" class="NormalCode">        IlvRemoveHandleFromResPath((long)instance);</div><div id="ww997733" class="NormalCode">        return 0;</div><div id="ww997734" class="NormalCode">    }</div><div id="ww997735" class="NormalCode">    return 0;</div><div id="ww997736" class="NormalCode">}</div><div id="ww997737" class="NormalCode">BOOL WINAPI</div><div id="ww997738" class="NormalCode">DllMain(HINSTANCE hinstance, DWORD reason, LPVOID reserved)</div><div id="ww997739" class="NormalCode">{</div><div id="ww997740" class="NormalCode">    return DllEntryPoint(hinstance, reason, reserved);</div><div id="ww997741" class="LastNormalCode">}</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

@@ -1,0 +1,3 @@
+Files: jpgcomp.cpp, jpgcomp.h
+This sample shows how to modify the quality of a jpg picture.
+You can use the slider to modify the quality.

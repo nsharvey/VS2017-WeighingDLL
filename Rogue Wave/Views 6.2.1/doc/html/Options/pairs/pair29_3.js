@@ -1,0 +1,19 @@
+var pairs =
+{
+"defining":{"unit":1}
+,"unit":{"converters":1,"converter":1,"equivalent":1,"ilvunitconverter":1}
+,"converters":{"define":1}
+,"define":{"unit":1}
+,"converter":{"provide":1,"(1000":1}
+,"provide":{"name":1}
+,"name":{"measurement":1}
+,"measurement":{"unit":1}
+,"equivalent":{"meters":1}
+,"meters":{"following":1}
+,"following":{"code":1}
+,"code":{"defines":1}
+,"defines":{"kilometer":1}
+,"kilometer":{"measurement":1}
+,"ilvunitconverter":{"converter":1}
+}
+;Search.control.loadWordPairs(pairs);

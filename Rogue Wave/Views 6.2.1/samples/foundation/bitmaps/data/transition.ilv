@@ -1,0 +1,81 @@
+// Ilv Version: 5.2
+// File generated: Wed Aug 06 11:14:53 2008
+// Creator class: IlvGadgetManagerOutput
+FileName "transition"
+PathName "transition.ilv"
+Palettes 4
+"default" 2 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+"IlvStToolBar" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+1 F "defaultBg" "black" "bold" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"defaultGadget" 3 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 10
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSlider 60 31 187 19 F7 2 250 5000 1000 10 1 250 } 544 "Speed"
+1
+1 "__ilvCallback" "SpeedCB"
+6144 "Transition" "Transition"
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 30 40 22 F268435468 0 { IlvMessageItem 262145 4 16 4 "Fast"  }   } 0
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 250 30 40 22 F268435468 0 { IlvMessageItem 262145 4 16 4 "Slow"  }   } 0
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 60 53 18 F268435468 0 { IlvMessageItem 262169 4 16 4 "Transition"  }   } 0
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 0 160 290 22 F268435468 0 { IlvMessageItem 262145 4 16 4 "Click the image to see the transition"  }   } 0
+0
+1 { 5 2 IlvIcon 10 39 "tajmahal.png" } 34 "Image2"
+0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 320 30 275 185 F13 2 { IlvMessageItem 262146 4 16 4 1 0 "sea.png"  }   } 928 "Image1"
+1
+1 "__ilvCallback" "DoItCB"
+0
+1 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvComboBox 69 60 216 20 F807 2 1 -1 0 "Alpha Blending" 15
+{ IlvMenuItem 1 2 4 "Alpha Blending"  } 
+{ IlvMenuItem 1 2 4 "Dissolve"  } 
+{ IlvMenuItem 1 2 4 "Wipe Left"  } 
+{ IlvMenuItem 1 2 4 "Wipe Right"  } 
+{ IlvMenuItem 1 2 4 "Wipe Down"  } 
+{ IlvMenuItem 1 2 4 "Wipe Up"  } 
+{ IlvMenuItem 1 2 4 "Box In"  } 
+{ IlvMenuItem 1 2 4 "Box Out"  } 
+{ IlvMenuItem 1 2 4 "Split Horizontal In"  } 
+{ IlvMenuItem 1 2 4 "Split Horizontal Out"  } 
+{ IlvMenuItem 1 2 4 "Split Vertical In"  } 
+{ IlvMenuItem 1 2 4 "Split Vertical Out"  } 
+{ IlvMenuItem 1 2 4 "Snail In"  } 
+{ IlvMenuItem 1 2 4 "Band Horizontal In"  } 
+{ IlvMenuItem 1 2 4 "Band Vertical In"  }  } 544 "Transition"
+1
+1 "__ilvCallback" "TransitionCB"
+10240 "Speed"
+1 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvFrame 5 5 290 220 F268435468 0 { IlvMessageItem 262169 4 16 4 "Parameters"  }   } 0
+0
+1 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvFrame 310 5 290 220 F268435468 0 { IlvMessageItem 262169 4 16 4 "Preview"  }   } 0
+0
+Size 605 235
+GeometryHandlers
+1 100 0 605 0 605 0
+3 3 0 0 5  0 0 290 8  310 0 310 0
+ 3 0 0 310  290 0 290 9  0 0 5 0
+ 3 0 0 320  0 0 275 6  10 0 10 0
+1 100 0 235 0 235 0
+3 3 0 0 5  220 0 220 8  0 0 10 0
+ 3 0 0 5  220 0 220 9  0 0 10 0
+ 3 0 0 30  0 0 185 6  20 0 20 0
+EOF

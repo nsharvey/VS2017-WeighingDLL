@@ -1,0 +1,122 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Foundations - Samples: printing</title>
+	</head>
+    <body>
+		<a name="headfoot"><h1>Sample: <code>headfoot</code></h1><h1 class="subtitle">Header and footer sample</h1></a>
+		<p>Header and footer usage with <code>IlvPrintableLayout</code>.</p>
+		<img src="data/headfoot.png"/>
+		<p>An example of how to use to print a chart on two pages, with header and footer using an <code>IlvPrintableLayoutMultiplePages</code> instance.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvPrintableLayoutMultiplePages</code></li>
+			<li><code>IlvPrintableText</code></li>
+			<li><code>IlvPrintableDocument</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/headfoot.cpp"><code>src/headfoot.cpp</code></a></li>
+		</ul>
+		<a name="photops"><h1>Sample: <code>photops</code></h1><h1 class="subtitle">Basic PostScript Printing</h1></a>
+		<p>An example of how to print using Postscript printing.</p>
+		<img src="data/photops.png"/>
+		<p>This sample prints a bitmap on an A6 paper in landscape mode using an <code>IlvPSPrinter</code> without displaying any printing dialog box.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvPSPrinter</code></li>
+			<li><code>IlvPrintableDocument</code></li>
+			<li><code>IlvPrintableGraphic</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/photops.cpp"><code>src/photops.cpp</code></a></li>
+		</ul>
+		<a name="photpsdlg"><h1>Sample: <code>photpsdlg</code></h1><h1 class="subtitle">Postscript Printing using a Printing Setting Dialog Box</h1></a>
+		<p>An example of how to print using an <code>IlvPSPrinter</code> and an <code>IlvPostscripPrinterDialog</code> instance.</p>
+		<img src="data/photpsdlg.png"/>
+		<p>This sample prints a bitmap on an A6 paper in landscape mode using an <code>IlvPSPrinter</code> with an <code>IlvPostscripPrinterDialog</code> to allow the user to change the printing settings.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvPSPrinter</code></li>
+			<li><code>IlvPostscripPrinterDialog</code></li>
+			<li><code>IlvPrintableDocument</code></li>
+			<li><code>IlvPrintableGraphic</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/photpsdlg.cpp"><code>src/photpsdlg.cpp</code></a></li>
+		</ul>
+		<a name="photpspr"><h1>Sample: <code>photpspr</code></h1><h1 class="subtitle">Postscript Printing using a Printing Preview Displayer</h1></a>
+		<p>An example of how to print using Postscript printing with a printing preview displayer.</p>
+		<img src="data/photpspr.png"/>
+		<p>This sample prints a bitmap on an A6 paper in landscape mode using an <code>IlvPSPrinter</code> and an <code>IlvPrinterPreviewDialog</code>.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvPSPrinter</code></li>
+			<li><code>IlvPrinterPreviewDialog</code></li>
+			<li><code>IlvPrintableDocument</code></li>
+			<li><code>IlvPrintableGraphic</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/photpspr.cpp"><code>src/photpspr.cpp</code></a></li>
+		</ul>
+		<a name="photowin"><h1>Sample: <code>photowin</code></h1><h1 class="subtitle">Basic Windows Printing</h1></a>
+		<p>An example of how to print using a Windows printer.</p>
+		<img src="data/photowin.png"/>
+		<p>This sample prints a bitmap on an A6 paper in landscape mode using an IlvWindowsPrinter. During this print operation, an OS-dependent printing dialog box is displayed.<br/><b>This sample only runs under Windows.</b></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvWindowsPrinter</code></li>
+			<li><code>IlvPrintableDocument</code></li>
+			<li><code>IlvPrintableGraphic</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/photowin.cpp"><code>src/photowin.cpp</code></a></li>
+		</ul>
+		<a name="phowindc"><h1>Sample: <code>phowindc</code></h1><h1 class="subtitle">Custom Windows Printing without any Dialog Box</h1></a>
+		<p>An example of how to print using <code>IlvWindowsPrinter</code> and an <code>IlvWindowsPrinterDCFactory</code> subclass.</p>
+		<img src="data/phowindc.png"/>
+		<p>This sample prints a bitmap on an A6 paper in landscape mode using an <code>IlvWindowsPrinter</code> without displaying any printing dialog box.<br/>To achieve that, a subclass of <code>IlvWindowsPrinterDCFactory</code> has been implemented. This subclass sets the paper size to A6, and the orientation to Landscape. The usage of this subclass gives the possibility to print with these non default settings without any dialog box.<br/><b>This sample only runs under Windows.</b></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvWindowsPrinter</code></li>
+			<li><code>IlvWindowsPrinterDCFactory</code></li>
+			<li><code>IlvPrintableDocument</code></li>
+			<li><code>IlvPrintableGraphic</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/phowindc.cpp"><code>src/phowindc.cpp</code></a></li>
+			<li><a href="src/windcfac.cpp"><code>src/windcfac.cpp</code></a></li>
+			<li><a href="include/windcfac.h"><code>include/windcfac.h</code></a></li>
+		</ul>
+		<a name="phowinpr"><h1>Sample: <code>phowinpr</code></h1><h1 class="subtitle">Windows Printing using a Printing Preview Displayer</h1></a>
+		<p>An example of how to print using <code>IlvWindowsPrinter</code> printing with a printing preview displayer.</p>
+		<img src="data/phowinpr.png"/>
+		<p>This sample prints a bitmap on an A6 paper in landscape mode using an <code>IlvWindowsPrinter</code> and an <code>IlvPrinterPreviewDialog</code>.<br/>The IlvWindowsPrinterDCDialogFactory is also used in this sample to allow the user to update the printing settings while the printer preview is displayed.
+		<code>IlvWindowsPrinterDCDialogFactory</code> is a subclass of <code>IlvWindowsPrinterDCFactory</code>.<br/><b>This sample only runs under Windows.</b></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvWindowsPrinter</code></li>
+			<li><code>IlvWindowsPrinterDCDialogFactory</code></li>
+			<li><code>IlvPrinterPreviewDialog</code></li>
+			<li><code>IlvPrintableDocument</code></li>
+			<li><code>IlvPrintableGraphic</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/phowinpr.cpp"><code>src/phowinpr.cpp</code></a></li>
+		</ul>

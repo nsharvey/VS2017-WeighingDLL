@@ -1,0 +1,54 @@
+// Ilv Version: 3.0
+// File generated: Mon Jan 19 13:29:51 1998
+// Creator class: IlvProtoGadgetManagerOutput
+Palettes 0
+IlvObjects 0
+Size 416 332
+Instances 5
+IlvProtoInstance samples.pump pump#1
+    values {
+        Int rotatePeriod = 50
+        Int x = 101
+        Int y = 105
+    }
+;
+IlvProtoInstance samples.bulb bulb#2
+    values {
+        Color gazColor = Light Gray
+        Boolean on = false
+        Int x = 316
+        Int y = 97
+    }
+;
+IlvProtoInstance output.slider slider#4
+    values {
+        Int sliderValue = 50
+        String sliderLabel = 50
+        String title = Rotation period:
+        Int sliderMin = 1
+        Int x = 58
+        Int y = 239
+    }
+;
+IlvProtoInstance output.toggle lightToggle
+    values {
+        String label = Light on
+        Int x = 308
+        Int y = 44
+    }
+;
+IlvProtoInstance output.toggle rotateToggle
+    values {
+        String label = Rotate
+        Int x = 98
+        Int y = 44
+    }
+;
+ValueSources 0
+Subscriptions {
+    slider#4 slider#4 sliderValue IlvMessageLabel.label Any 1
+    slider#4 pump#1 sliderValue rotatePeriod Any 1
+    lightToggle bulb#2 toggleState on Any 1
+    rotateToggle pump#1 toggleState rotate Any 1
+}
+EOF

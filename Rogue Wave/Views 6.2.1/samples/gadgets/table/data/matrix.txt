@@ -1,0 +1,3 @@
+Files: matrix.cpp, matrix.h
+This sample shows how to subclass the IlvAbstractMatrix class to 
+implement a matrix that has in infinite number of rows. 

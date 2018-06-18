@@ -1,0 +1,28 @@
+application "ActiveXGraphicAdapterApp" {
+    creator      "Rogue Wave Views Studio"; 
+    version      4; 
+    iref         3.9; 
+    ViewsVersion 4; 
+    system       "msvc5"; 
+    date         "Tue Jan 04 15:02:28 2000"; 
+    fileBase     "ActiveXGraphicAdapterApp"; 
+    class        Testapp; 
+    baseClass    IlvApplication; 
+    dataDir      "C:\\ilog\\views40\\doc\\core\\windows\\tutorials\\code\\data\\"; 
+    headerDir    "../include"; 
+    srcDir       "../src"; 
+    objDir       "../msvc6/stat_mda"; 
+    panelClass "ActiveXGraphicAdapter" {
+        class     ActiveXGraphicAdapter; 
+        fileBase  "ActiveXGraphicAdapter"; 
+        dataDir   "./"; 
+        baseClass IlvGadgetContainer; 
+    }
+    panel "ActiveXGraphicAdapter" {
+        class           ActiveXGraphicAdapter; 
+        title           "ActiveXGraphicAdapter"; 
+        width           523; 
+        height          426; 
+        destroyCallback Exit; 
+    }
+}

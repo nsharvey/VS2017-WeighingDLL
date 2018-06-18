@@ -1,0 +1,29 @@
+// Ilv Version: 3.1
+// File generated: Mon Nov 23 11:46:06 1998
+// Creator class: MyGadgetManagerOutput
+FileName "colorpnl"
+PathName "C:\\users\\noiret\\dev\\views.work\\samples\\studio\\colorbox\\data\\colorpnl.ilv"
+Palettes 1
+"default" 0 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 1
+2 { 0 0 IlvColorComboBox 9 7 136 23 F806 2 "black" 16
+IlvColorGadgetItem 1 2 4 "black"  
+IlvColorGadgetItem 1 2 4 "white"  
+IlvColorGadgetItem 1 2 4 "gray"  
+IlvColorGadgetItem 1 2 4 "red"  
+IlvColorGadgetItem 1 2 4 "yellow"  
+IlvColorGadgetItem 1 2 4 "green"  
+IlvColorGadgetItem 1 2 4 "cyan"  
+IlvColorGadgetItem 1 2 4 "blue"  
+IlvColorGadgetItem 1 2 4 "magenta"  
+IlvColorGadgetItem 1 2 4 "#808080808080"  
+IlvColorGadgetItem 1 2 4 "#808000000000"  
+IlvColorGadgetItem 1 2 4 "#808080800000"  
+IlvColorGadgetItem 1 2 4 "#000080800000"  
+IlvColorGadgetItem 1 2 4 "#000080808080"  
+IlvColorGadgetItem 1 2 4 "navy"  
+IlvColorGadgetItem 1 2 4 "#808000008080"   4 1 20 1 0 2 1  } 0
+0 0 
+Size 153 189
+Background "gray"
+EOF

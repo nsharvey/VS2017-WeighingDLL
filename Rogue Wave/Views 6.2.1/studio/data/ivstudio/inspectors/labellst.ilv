@@ -1,0 +1,27 @@
+// Ilv Version: 5.3
+// File generated: Thu Sep 17 10:16:21 2009
+// Creator class: IlvGadgetManagerOutput
+FileName "labellst"
+PathName "labellst.ilv"
+Palettes 1
+"defaultGadget" 0 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 2
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 5 318 288 F268435468 0 { IlvMessageItem 262169 4 16 4 "&gadText"  }   } 0
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvText 15 30 298 253 F129 2 Y N 1 1 1 1 0 1
+""
+0 0 0 0 } 32 "textValue"
+0
+Size 328 298
+GeometryHandlers
+1 100 0 328 0 328 0
+2 3 0 0 5  318 0 318 0  0 0 5 0
+ 3 0 0 15  298 0 298 1  0 0 15 0
+1 100 0 298 0 298 0
+2 3 0 0 5  288 0 288 0  0 0 5 0
+ 3 0 0 30  253 0 253 1  0 0 15 0
+EOF

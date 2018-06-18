@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvjs -->
+<module name="ilvjs" version="6.2">
+<class name="IlvJSHValueInterface"/>
+</module>

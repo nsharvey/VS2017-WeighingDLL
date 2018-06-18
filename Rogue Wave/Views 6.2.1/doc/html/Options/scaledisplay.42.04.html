@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Using Single Scale Displayers</title><link rel="Prev" href="scaledisplay.42.03.html" title="Previous" /><link rel="Next" href="scaledisplay.42.05.html" title="Next" /><link rel="StyleSheet" href="css/scaledisplay.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/scaledisplay_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/Options/scaledisplay.42.04.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="ppNhvUermDU2iTrwBONbD3g" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/Options/scaledisplay.42.04.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../Options/chusrfrontcover.html#wwconnect_header">Charts</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/chusrpart2.html#ww145481">Using the Charts Library </a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/scaledisplay.42.01.html#wwconnect_header">Scales Display</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Using Single Scale Displayers</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww1023986" class="Heading1"><span></span>Using Single Scale Displayers</div><div id="ww1022504" class="Body">The base class used to represent a single scale is the <span class="ClassName"><a href="../RefMan/refcppcharts/classIlvSingleScaleDisplayer.html">IlvSingleScaleDisplayer</a></span> class. </div><div id="ww1024395" class="Body">A single scale is composed of:</div><div id="ww1022545" class="Itemize"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span><img src="bullet.gif" alt="*" border="0" width="8" height="8" /></span></span>An <span style="font-style: italic">axis</span>, which can have an optional <span style="font-style: italic">arrow</span> and an optional <span class="emphasis">label</span> at the end</div><div id="ww1022546" class="Itemize"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span><img src="bullet.gif" alt="*" border="0" width="8" height="8" /></span></span><span class="emphasis">Major ticks</span>, the marks drawn on the axis at each <span class="emphasis">step</span> of the scale</div><div id="ww1022548" class="Itemize"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span><img src="bullet.gif" alt="*" border="0" width="8" height="8" /></span></span><span class="emphasis">Step labels</span> drawn next to the major ticks. These labels indicate the values of the coordinate represented by the scale.</div><div id="ww1022547" class="Itemize"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span><img src="bullet.gif" alt="*" border="0" width="8" height="8" /></span></span><span class="emphasis">Minor ticks</span><span style="font-style: italic">,</span> the marks drawn on the axis at each <span class="emphasis">substep</span> of the scale</div><div id="ww1033738" class="Body"><a href="../Options/scaledisplay.42.04.html#ww1033795" title="Using Single Scale Displayers">Elements of a Single Scale</a> shows the different elements of a single scale. </div><div class="ww_skin_page_overflow"><div id="ww1033793" class="Startfigure">     <img class="Default" src="../Options/images/onlinescalebasicelements.gif" width="100%" style="display: block; left: 0.0pt; max-height: 400px; max-width: 660px; top: 0.0pt" alt="" />    </div></div><div id="ww1033795" class="Caption">Elements of a Single Scale</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

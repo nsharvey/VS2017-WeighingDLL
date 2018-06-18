@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Syntax Errors</title><link rel="Prev" href="jsstudio.27.5.html" title="Previous" /><link rel="Next" href="jsstudio.27.7.html" title="Next" /><link rel="StyleSheet" href="css/jsstudio.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/jsstudio_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/UserManuals/jsstudio.27.6.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pZtv4z3Cb46zKr8CnJ9nBcw" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/UserManuals/jsstudio.27.6.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/studiousrfrontcover.html#wwconnect_header">Studio</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/jsstudio.27.1.html#wwconnect_header">Using Rogue Wave&nbsp;Script </a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/jsstudio.27.2.html#wwconnect_header">Using Rogue Wave&nbsp;Script for Rogue Wave&nbsp;Views in your Application </a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Syntax Errors </span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww997413" class="Heading2"><span></span>Syntax Errors </div><div id="ww997425" class="Body">When you test the application or the current buffer, the script attached to the concerned buffers are evaluated. If your scripts contain syntax errors, these errors are displayed in the Script Error List. You can double-click on an error to locate it and edit the source code in the Script Editor. Note that the buffer corresponding to the script is selected. You can show or hide the script error list by using the Script Error List icon in the tool bar.</div><div id="ww997433" class="Body">By default, the Script Error List is displayed in the Main panel on top of the Generic Inspector. If you want it to be created in a separate top window, define a panel description for the <span class="code">ScriptErrorList</span> panel using the <span class="code">topView</span> property, as shown below:</div><div id="ww997465" class="NormalCode">panel "ScriptErrorList" {</div><div id="ww999619" class="NormalCode">   topView true;</div><div id="ww999620" class="LastNormalCode">}</div><div id="ww997485" class="Body">For more information, see the section <a href="../UserManuals/customize.30.5.html#ww1001385" title="Rogue Wave Views Studio Panel Description File">Rogue Wave&nbsp;Views Studio Panel Description File</a>.</div><div id="ww997505" class="Body">The contents of the Script Error List is updated each time you execute a <span class="code">Test</span> command. </div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

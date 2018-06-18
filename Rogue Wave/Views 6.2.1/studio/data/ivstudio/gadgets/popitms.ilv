@@ -1,0 +1,149 @@
+// Ilv Version: 4.0
+// File generated: Fri May 05 11:31:00 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "popitms"
+Palettes 2
+"IlvStText" 0 "defaultBg" "defaultFg" "normal" "%MS Sans Serif13-" 0 solid solid 0 0 0
+1 "defaultBg" "defaultFg" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 20
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTreeGadget 19 29 143 268 F32 2 A A S 0 0 0 0 20 0 0 1 0 1 0 V0 2
+{ IlvTreeGadgetItem 1 2 4 "root" 0
+ }  } 32 "MenuItems"
+6144 "InsertMenuItem" "GadgetItemEditable"
+1 { 1 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&insert" 4 4 ]
+1 IlvButton 19 304 26 23 F29 1 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/icons/insert.png"  }   } 32 "InsertMenuItem"
+0
+1 { 2 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&remove" 4 4 ]
+1 IlvButton 117 304 22 23 F29 1 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/icons/removitm.png"  }   } 32 "RemoveMenuItem"
+0
+1 { 3 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&clean" 4 4 ]
+1 IlvButton 140 304 22 23 F29 1 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/icons/clean.png"  }   } 32 "CleanMenuItems"
+0
+1 { 4 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&separator" 4 4 ]
+1 IlvButton 88 304 26 23 F29 1 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/gadgets/separatr.png"  }   } 32 "MenuInsertSeparator"
+0
+1 { 5 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&PopupMenu" 4 4 ]
+1 IlvButton 62 304 26 23 F29 1 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/gadgets/popmenu.png"  }   } 32 "InsertPopupMenu"
+0
+1 { 6 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&add" 4 4 ]
+1 IlvButton 41 304 26 23 F29 1 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/icons/add.png"  }   } 32 "AddMenuItem"
+0
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 190 31 261 18 F1 2 1 2 0 0 0 Y "&setTearOff" } 32 "PopupMenuTearOff"
+0
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFrame 178 0 293 334 F268435468 0 { IlvMessageItem 262169 4 16 4 "&SelectedPopupMenu"  }   } 32 "SelectedPopupMenu"
+0
+2 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 190 56 181 18 F536870913 2 1 2 0 0 0 Y "&LabelOffset" } 32 "PopupLabelOffsetCheck"
+2
+2 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 366 53 99 22 F536870912 2 0 200 64 2 1
+0 IlvNumberField 366 53 87 22 F6 2 1 -1 0 "0" . , 6 0 -2147483648 2147483647  f 1 0 1 0 } 32 "PopupLabelOffset"
+2
+3 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFrame 178 0 293 333 F268435468 0 { IlvMessageItem 262169 4 16 4 "&SelectedSeparator"  }   } 32 "SelectedSeparator"
+0
+4 { 12 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvPanelObjectReference IlvPanelObjectReference  "913209950.0" ]
+0 IlvNotebook 186 24 278 306 F1 2 0 2  2
+" { IlvNotebookPageItem 1 2 4 "&general"  }  B "ivstudio/gadgets/popignl.ilv"
+" { IlvNotebookPageItem 1 2 4 "&Aspect"  }  B "ivstudio/gadgets/menuaspt.ilv"
+0 0 4 5 2 10 10 10 10  } 32 "PopupGadgetItemEditor"
+0
+4 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFrame 178 0 293 333 F268435468 0 { IlvMessageItem 262169 4 16 4 "&SelectedPopupItem"  }   } 32 "SelectedPopupItemFrame"
+0
+4 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFrame 6 0 163 333 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Popup_gad_itms"  }   } 32 "PopupItemsFrame"
+0
+6 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFrame 178 0 293 334 F268435468 0 { IlvMessageItem 262169 4 16 4 "&SelectedPopupMenu"  }   } 32 "SelectedMPopupMenu"
+0
+6 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 190 31 261 18 F1 2 1 2 0 0 0 Y "&setTearOff" } 32 "MPopupMenuTearOff"
+0
+6 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 190 56 270 18 F536870913 2 1 2 0 0 0 Y "&AutomaticLabelAlignment" } 32 "MPopupLabelOffsetCheck"
+2
+6 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 361 80 99 22 F536870912 2 0 200 64 2 1
+0 IlvNumberField 361 80 87 22 F6 2 1 -1 0 "0" . , 6 0 -2147483648 2147483647  f 1 0 1 0 } 32 "MPopupLabelOffset"
+2
+6 { 19 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 233 80 132 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&spacing"  }   } 32 "MPopupLabelOffsetLabel"
+0
+Size 475 339
+GeometryHandlers
+2 100 174 174 0 174 0
+ 0 301 301 174 301 174
+8 3 0 0 19  143 0 143 0  0 0 12 0
+ 3 0 0 6  163 0 163 14  0 0 5 0
+ 3 140 0 140  0 0 22 3  0 0 12 0
+ 3 117 0 117  0 0 22 2  0 0 35 0
+ 3 0 0 19  0 0 26 1  430 0 430 1
+ 3 0 0 41  0 0 26 6  408 0 408 1
+ 3 0 0 62  0 0 26 5  387 0 387 1
+ 3 0 0 88  0 0 26 4  361 0 361 1
+12 3 0 0 4  293 0 293 8  0 0 4 1
+ 3 0 0 16  261 0 261 7  0 0 24 1
+ 3 0 0 16  181 0 181 9  0 0 104 1
+ 3 192 0 192  0 0 99 10  0 0 10 1
+ 3 0 0 12  278 0 278 12  0 0 11 1
+ 3 0 0 4  293 0 293 13  0 0 4 1
+ 3 0 0 4  293 0 293 11  0 0 4 1
+ 3 0 0 4  293 0 293 15  0 0 4 1
+ 3 0 0 16  261 0 261 16  0 0 24 1
+ 3 0 0 16  270 0 270 17  0 0 15 1
+ 3 187 0 187  0 0 99 18  0 0 15 1
+ 3 0 0 59  132 0 132 19  0 0 110 1
+1 100 0 339 0 339 0
+13 3 0 0 29  268 0 268 0  0 0 42 0
+ 3 0 0 0  334 0 334 8  0 0 5 0
+ 3 0 0 24  306 0 306 12  0 0 9 0
+ 3 0 0 0  333 0 333 13  0 0 6 0
+ 3 0 0 0  333 0 333 11  0 0 6 0
+ 3 0 0 0  333 0 333 14  0 0 6 0
+ 3 0 0 0  334 0 334 15  0 0 5 0
+ 3 304 0 304  0 0 23 1  0 0 12 0
+ 3 304 0 304  0 0 23 6  0 0 12 0
+ 3 304 0 304  0 0 23 5  0 0 12 0
+ 3 304 0 304  0 0 23 4  0 0 12 0
+ 3 304 0 304  0 0 23 2  0 0 12 0
+ 3 304 0 304  0 0 23 3  0 0 12 0
+Layers 7
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+EOF

@@ -1,0 +1,95 @@
+// Ilv Version: 4.0
+// File generated: Tue Apr 18 10:38:38 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "p_misc"
+Palettes 2
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif16-" 0 solid solid 0 0 0
+"default" 1 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 14
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvGadget 40 385 135 23 2 } 0
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvArrowButton 5 385 27 23 F13 2 { IlvMessageItem 262145 4 16 4 ""  }   2 0 } 0
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSlider 5 5 146 19 F1 2 0 100 50 10 1 10 } 0
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrollBar 5 185 155 4294967279 F1 2 0 100 50 10 1 10 32 1 10 } 0
+0
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSlider 5 30 18 145 F1 2 0 100 50 10 4 10 } 0
+0
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrollBar 160 0 4294967279 184 F134217729 2 0 100 50 10 1 10 64 1 10 } 0
+0
+2 { 6 0 IlvLabel 65 64 "Label" } 0
+0
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 5 220 170 20 F1 2 3
+{ IlvMenuItem 65 2 4 "item1"  } 
+{ IlvMenuItem 1 2 4 "item2"  } 
+{ IlvMenuItem 1 2 4 "item3"  }  0  } 0
+0
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvComboBox 5 250 170 20 F32 2 "ComboBox" 3
+{ IlvMenuItem 1 2 4 "item1"  } 
+{ IlvMenuItem 1 2 4 "item2"  } 
+{ IlvMenuItem 1 2 4 "item3"  }  } 0
+0
+4 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvColoredToggle 5 360 170 18 F1 2 1 2 0 0 0 Y "Colored" 0 0 0  } 0
+0
+6 { 10 0 IlvListLabel 50 85 1 2
+"Multi lines"
+"label" } 0
+0
+7 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvPasswordTextField 5 330 170 22 F102 2 1 -1 0 "Rogue Wave Views Studio" 42 } 0
+0
+7 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 5 280 170 22 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038 } 0
+0
+7 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvDateField 5 305 170 22 F6 2 1 -1 0 "01/01/2000" / 3 1 7 } 0
+0
+Size 180 410
+GeometryHandlers
+1 100 0 180 0 180 0
+11 3 0 2 5  170 0 170 11  0 0 5 0
+ 3 0 0 5  170 0 170 9  0 0 5 0
+ 3 0 0 5  0 0 27 1  148 0 148 0
+ 3 0 0 40  135 0 135 0  0 2 5 0
+ 3 0 1 5  146 0 146 2  0 0 29 0
+ 3 0 1 5  155 0 155 3  0 0 20 0
+ 3 160 0 160  0 0 17 5  0 0 3 0
+ 3 0 0 5  170 0 170 7  0 0 5 0
+ 3 0 0 5  170 0 170 8  0 0 5 0
+ 3 0 0 5  170 0 170 12  0 0 5 0
+ 3 0 0 5  170 0 170 13  0 0 5 0
+1 100 0 410 0 410 0
+2 3 0 0 0  0 0 184 5  226 0 226 0
+ 3 0 0 30  0 0 145 4  0 0 235 0
+Layers 8
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+EOF

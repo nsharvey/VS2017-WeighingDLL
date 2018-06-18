@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("D7E60826-1D61-11E8-866E-3591772C9500") = "projvect", "projvect.vcxproj", "D7E5B9DE-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Global
+EndGlobal
+

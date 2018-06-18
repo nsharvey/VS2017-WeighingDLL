@@ -1,0 +1,4 @@
+Files: folio.h folio.cpp foliotbl.h foliotbl.cpp
+Note:It shows how to customize the look of a table-gadget (change the colors 
+of the cells), how to define a custom subclass (portfolio of stock exchange) 
+of class IliTable and how to connect a table-gadget to it.

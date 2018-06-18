@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvatext -->
+<module name="ilvatext" version="6.2">
+<class name="IlvAnnoText" rootClass="IlvGraphic"/>
+<class name="IlvAnnoText/basic" rootClass="IlvObjectLFHandler"/>
+<class name="IlvATBreakRope" rootClass="IlvATRope"/>
+<class name="IlvATEndCursor" rootClass="IlvATRope"/>
+<class name="IlvATGraphicRope" rootClass="IlvATRope"/>
+<class name="IlvATHtmlText" rootClass="IlvGraphic"/>
+<class name="IlvATInsertionCursor" rootClass="IlvATRope"/>
+<class name="IlvATLineCursor" rootClass="IlvATRope"/>
+<class name="IlvATSeparatorRope" rootClass="IlvATRope"/>
+<class name="IlvATSpecialRope" rootClass="IlvATRope"/>
+<class name="IlvATStartCursor" rootClass="IlvATRope"/>
+<class name="IlvATTabulationRope" rootClass="IlvATRope"/>
+<class name="IlvATTextRope" rootClass="IlvATRope"/>
+</module>

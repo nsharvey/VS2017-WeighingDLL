@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvbmpflt -->
+<module name="ilvbmpflt" version="6.2">
+<class name="IlvBlendFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvColorMatrixFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvComponentTransferFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvComposeFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvConvolutionFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvDiffuseLightingFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvDiscreteTransfer" rootClass="IlvTransferFunction"/>
+<class name="IlvDisplaceFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvDistantLight" rootClass="IlvLighSource"/>
+<class name="IlvFloodFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvGammaTransfer" rootClass="IlvTransferFunction"/>
+<class name="IlvGaussianBlurFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvHueRotateFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvIdentityTransfer" rootClass="IlvTransferFunction"/>
+<class name="IlvImageFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvLightingFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvLinearTransfer" rootClass="IlvTransferFunction"/>
+<class name="IlvLuminanceToAlphaFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvMergeFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvMorphologyFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvOffsetFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvPointLight" rootClass="IlvLighSource"/>
+<class name="IlvSaturationFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvSpecularLightingFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvSpotLight" rootClass="IlvLighSource"/>
+<class name="IlvTableTransfer" rootClass="IlvTransferFunction"/>
+<class name="IlvTileFilter" rootClass="IlvBitmapFilter"/>
+<class name="IlvTurbulenceFilter" rootClass="IlvBitmapFilter"/>
+</module>

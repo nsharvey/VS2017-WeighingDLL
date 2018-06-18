@@ -1,0 +1,83 @@
+// Ilv Version: 4.0
+// File generated: Wed Jul 18 17:25:58 2001
+// Creator class: IlvGadgetManagerOutput
+FileName "general"
+Palettes 1
+"IlvStText" 0 "defaultBg" "defaultFg" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 15
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 3 156 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Name"  }   } 0
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 160 3 133 22 F6 2 1 -1 0 "Name" } 32 "GraphicName"
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 54 156 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&thickness"  }   } 0
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 29 156 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Tooltip"  }   } 0
+0
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 160 29 133 22 F6 2 1 -1 0 "tooltip" } 32 "GraphicTooltip"
+0
+2 { 5 P 2
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+[ IlvAttachments _IlvAttachments 16  1 5 ]
+0 IlvToggle 5 159 168 16 F1 2 1 1 0 0 0 Y "&transparent" } 32 "gadgetTransparent"
+0
+2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 81 156 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Layer"  }   } 0
+0
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 106 156 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&interactor"  }   } 0
+0
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 131 156 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&state"  }   } 0
+0
+2 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 160 108 133 20 F807 2 1 -1 0 "" 0 4 0 } 32 "GraphicInteractor"
+0
+2 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 160 133 133 20 F807 2 1 -1 0 "" 0 4 0 } 32 "gadgetState"
+0
+2 { 11 P 2
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+[ IlvAttachments _IlvAttachments 16  1 5 ]
+0 IlvToggle 5 183 168 16 F1 2 1 1 0 0 0 Y "&Focusable" } 32 "gadgetFocusable"
+0
+2 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 160 83 133 20 F807 2 1 -1 0 "" 0 4 0 } 32 "GraphicLayer"
+0
+2 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 160 58 133 20 2 0 200 64 2 1
+0 IlvNumberField 160 58 121 20 F6 2 2 -1 0 "0" . , 2 0 0 100  f 1 0 1 0 } 32 "gadgetThickness"
+0
+2 { 14 P 2
+[ IlvAttachments _IlvAttachments 16  1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 5 207 168 16 F1 2 1 1 0 0 0 Y "&ShowFrame" } 32 "gadgetShowFrame"
+0
+Size 297 228
+GeometryHandlers
+1 100 0 297 0 297 0
+6 3 0 0 160  133 0 133 1  0 0 4 0
+ 3 0 0 160  133 0 133 4  0 0 4 0
+ 3 0 0 160  133 0 133 12  0 0 4 0
+ 3 0 0 160  133 0 133 9  0 0 4 0
+ 3 0 0 160  133 0 133 10  0 0 4 0
+ 3 0 0 160  133 0 133 13  0 4 4 0
+1 100 0 228 0 228 0
+0
+EOF

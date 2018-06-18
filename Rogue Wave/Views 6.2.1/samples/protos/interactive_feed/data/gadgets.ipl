@@ -1,0 +1,129 @@
+// Rogue Wave Views Prototype Library File
+// Rogue Wave Views Version: 4.0
+// Date: Thu Feb 17 20:39:22 2000
+Library: gadgets
+SingleFile: true
+button
+toggle
+slider
+IlvProtoLibraryBlocks
+IlvProtoLibraryBlock slider.ivp
+// Ilog Views Group Version 1.1
+IlvPrototype slider
+    accessors {
+        IlvValueAccessor UInt min
+        IlvValueAccessor UInt max
+        IlvValueAccessor UInt value
+        IlvOutputAccessor UInt value
+        IlvTriggerAccessor UInt value Thumb.x (Slider.width-Thumb.width)*value/(max-min)+Slider.x
+        IlvEventAccessor (RP) Int ButtonDown Thumb ButtonDown LeftButton AnyModifier X
+        IlvTriggerAccessor (RP) Color ButtonDown Thumb.foreground "\"Coral\""
+        IlvValueAccessor (RP) Int ButtonDown
+        IlvEventAccessor (RP) String ButtonUp [All_nodes] ButtonUp LeftButton AnyModifier X
+        IlvTriggerAccessor (RP) Color ButtonUp Thumb.foreground Thumb.background
+        IlvEventAccessor (RP) String Drag Thumb ButtonDragged LeftButton AnyModifier X
+        IlvMinMaxAccessor (RP) Int Drag Slider.x Slider.x+Slider.width false value value (Drag-Slider.x)*(max-min)/Slider.width value
+        IlvValueAccessor (RP) Int Drag
+    }
+    values {
+        UInt value = 0
+        UInt min = 0
+        UInt max = 100
+    }
+    nodes {
+        IlvGraphicNode Slider "" 0 0
+        IlvGraphicNode Thumb "" 0 1
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock slider.ilv
+// Ilv Version: 4.0
+// File generated: Thu Feb 17 20:39:22 2000
+// Creator class: IlvGraphOutput
+Palettes 2
+1 0 0 0 0 0 0 "fixed" 0 solid solid 0 0 0
+0 "antiquewhite3" 32640 32640 32640 "fixed" 0 solid solid 0 0 0
+IlvObjects 2
+0 2 { 0 0 IlvFilledRectangle 0 0 300 16 } 448 "_EventAccessor"
+0 2 { 1 1 IlvFilledRectangle 0 0 15 15 } 448 "_EventAccessor"
+Layers 2
+"" 0 0 
+"" 0 0 
+Views 0
+EOF
+IlvProtoLibraryBlock button.ivp
+// Ilog Views Group Version 1.1
+IlvPrototype button
+    accessors {
+        IlvValueAccessor Boolean pushed
+        IlvOutputAccessor Boolean pushed
+        IlvNodeAccessor (R) String Label IlvLabel.label
+        IlvCallbackAccessor (RP) String Action [All_nodes] Generic 0
+        IlvTriggerAccessor (RP) String Action pushed true
+        IlvLoopbackAccessor (RP) String Action Action
+    }
+    values {
+        Boolean pushed = false
+    }
+    nodes {
+        IlvGraphicNode IlvFilledRectangle "" 0 0
+        IlvGraphicNode IlvLabel "T" 0 1
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock button.ilv
+// Ilv Version: 4.0
+// File generated: Thu Feb 17 20:39:22 2000
+// Creator class: IlvGraphOutput
+Palettes 2
+1 "antiquewhite3" 0 0 0 "bold" "%helvetica-12-B" 0 solid solid 0 0 0
+0 "antiquewhite3" 32640 32640 32640 "fixed" 0 solid solid 0 0 0
+IlvObjects 2
+0 2 { 0 0 IlvFilledRectangle 0 0 80 32 } 0
+1 2 { 1 1 IlvLabel 21 21 "Label" } 64 "Button"
+Layers 2
+"" 0 0 
+"" 0 0 
+Views 0
+EOF
+IlvProtoLibraryBlock toggle.ivp
+// Ilog Views Group Version 1.1
+IlvPrototype toggle
+    accessors {
+        IlvValueAccessor Boolean value
+        IlvOutputAccessor Boolean value
+        IlvConditionAccessor (RP) Boolean value == true IlvFilledRectangle.foreground IlvLabel.foreground IlvLabel.background
+        IlvNodeAccessor String label IlvLabel.label
+        IlvCallbackAccessor (RP) String Action [All_nodes] Generic 0
+        IlvToggleAccessor (RP) String Action value
+        IlvLoopbackAccessor (P) String Action Action
+    }
+    values {
+        Boolean value = false
+        String label = Label
+    }
+    nodes {
+        IlvGraphicNode IlvFilledRectangle "" 0 0
+        IlvGraphicNode IlvLabel "T" 0 1
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock toggle.ilv
+// Ilv Version: 4.0
+// File generated: Thu Feb 17 20:39:22 2000
+// Creator class: IlvGraphOutput
+Palettes 2
+1 32640 32640 32640 0 0 0 "bold" "%helvetica-12-B" 0 solid solid 0 0 0
+0 "antiquewhite3" 32640 32640 32640 "fixed" 0 solid solid 0 0 0
+IlvObjects 2
+0 2 { 0 0 IlvFilledRectangle 18 7 15 15 } 64 "Button"
+1 2 { 1 1 IlvLabel 38 22 "Label" } 64 "Button"
+Layers 2
+"" 0 0 
+"" 0 0 
+Views 0
+EOF
+IlvProtoLibraryEnd

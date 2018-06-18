@@ -1,0 +1,5 @@
+Files: quantize.cpp, quantize.h
+This sample shows how to adjust the number of colors used to
+display a picture. 
+You can use the slider to modify the number of colors. Then you 
+You can turn on/off the dithering effect with the radio button.

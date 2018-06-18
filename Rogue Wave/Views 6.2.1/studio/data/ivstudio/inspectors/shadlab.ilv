@@ -1,0 +1,49 @@
+// Ilv Version: 5.4
+// File generated: Thu Apr 08 15:33:14 2010
+// Creator class: IlvGadgetManagerOutput
+FileName "shadlab"
+PathName "shadlab.ilv"
+Palettes 1
+"IlvStToolBar" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 6
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 40 252 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&thickness"  }   } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 257 39 138 22 2 0 200 64 2 1
+0 IlvNumberField 257 39 122 22 F6 2 1 -1 0 "1" . , 6 0 -2147483648 2147483647  f 1 0 1 1 } 32 "ShadowRectThickness"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 100 263 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&ShadowPosition"  }   } 0
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Selector" ]
+0 IlvSelector -1 9
+0 IlvToggle 281 104 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 292 80 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 317 71 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 342 80 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 353 104 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 342 126 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 317 135 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 292 126 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 317 104 18 16 F1 2 1 2 1 0 0 B "noname" 
+ } 32 "ShadowRectPosition"
+0
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 8 130 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Label"  }   } 0
+0
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 257 8 138 22 F6 2 1 -1 0 "Label" } 32 "LabelName"
+0
+Size 400 167
+Layers 3
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

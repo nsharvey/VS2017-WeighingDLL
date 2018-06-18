@@ -1,0 +1,13 @@
+readme.txt
+[!if CONTAINERAPP]
+container.cpp
+[!endif]
+[!if GADGETCONTAINERAPP]
+gadcont.cpp
+[!endif]
+[!if MANAGERAPP]
+manager.cpp
+[!endif]
+[!if GRAPHERAPP]
+grapher.cpp
+[!endif]

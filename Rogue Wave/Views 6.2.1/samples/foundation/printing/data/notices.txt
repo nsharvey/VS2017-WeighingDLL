@@ -1,0 +1,14 @@
+File: notices.txt
+-----------------
+This file indicates, for every relevant file in this directory, its
+origin and under which licence it was pubshised
+
+File name: rainbow.jpg
+  Author: dfbphotos
+  Original title: Rainbow-Crance Brook Road-02
+  Origin: http://www.flickr.com/photos/dfb_photos/7329750728/sizes/o/in/photostream/
+  License: Creative Common - Attribution 2.0 Generic
+  Copy date: 2012-09-18
+
+
+Rogue Wave Software

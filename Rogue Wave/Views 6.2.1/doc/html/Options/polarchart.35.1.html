@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Using Polar Charts</title><link rel="Prev" href="customizechart.34.8.html" title="Previous" /><link rel="Next" href="polarchart.35.2.html" title="Next" /><link rel="StyleSheet" href="css/polarchart.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/polarchart_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/Options/polarchart.35.1.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="phiwHrMVNsJFkMlpCIewCVA" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/Options/polarchart.35.1.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../Options/chusrfrontcover.html#wwconnect_header">Charts</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/chusrpart1.html#ww145981">Using Charts with Rogue Wave&nbsp;Views Studio</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Using Polar Charts</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww1005234" class="Chaptertitle">Using Polar Charts</div><div id="ww1005855" class="Body">In this chapter, you will learn how to use polar charts to represent in a circular way both angle values and non-angle values.</div><div id="ww1005857" class="Body">By default, a polar chart represents data expressed in polar coordinates (<span>θ</span>, <span>ρ</span>) in a circular way. The abscissa values <span>θ </span>are expressed in degrees and are mapped along a circular scale graduated in degrees by default. Therefore, you will use a polar chart to represent data whose abscissa values are expressed in degrees. However, a polar chart can also be used to get a circular representation of any data you want, even if the abscissa values are not expressed in degrees. To do this, you can do one of the following:</div><div id="ww999088" class="Itemize"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span><img src="bullet.gif" alt="*" border="0" width="8" height="8" /></span></span>Apply a transformation to the abscissa scale to convert the abscissa values into degrees. In this case, the abscissa scale will be graduated in degrees, no matter what the initial data may be.</div><div id="ww999089" class="Itemize"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span><img src="bullet.gif" alt="*" border="0" width="8" height="8" /></span></span>Indicate to the projector that the values to be projected are not expressed in degrees and then set a starting angle and a range to tell the projector how the abscissa values are mapped along the abscissa scale. In this case, the abscissa scale will bear the original abscissa values instead of being graduated in degrees.</div><div id="ww999106" class="Body">In this chapter, you will see two examples that show how to represent data that are not expressed in degrees on a polar chart.</div><div id="ww1003832" class="Itemize"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span><img src="bullet.gif" alt="*" border="0" width="8" height="8" /></span></span><a href="../Options/polarchart.35.2.html#ww999110" title="Example 1: Representing Values Expressed in Radians">Example 1: Representing Values Expressed in Radians</a> shows how to represent values expressed in radians.</div><div id="ww1003837" class="Itemize"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span><img src="bullet.gif" alt="*" border="0" width="8" height="8" /></span></span><a href="../Options/polarchart.35.5.html#ww999235" title="Example 2: Representing Time Values">Example 2: Representing Time Values</a> shows how to represent time values.</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

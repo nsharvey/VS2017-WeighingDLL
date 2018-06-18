@@ -1,0 +1,66 @@
+// Ilv Version: 3.1
+// File generated: Fri Nov 12 15:45:41 1999
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 14
+1 { 0 0 IlvToggle 2 3 323 19 F1 2 1 2 0 0 0 Y "&ScaleVisibility" } 32 "ScaleVisibility"
+0
+1 { 1 0 IlvMessageLabel 8 177 168 22 F8 0 25 4 16 "&min"   } 0
+0
+1 { 2 0 IlvMessageLabel 8 203 168 22 F8 0 25 4 16 "&max"   } 0
+0
+1 { 3 0 IlvSpinBox 183 177 136 22 2 0 200 64 2 1
+0 IlvNumberField 183 177 121 22 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038  f 1 1 1 1.23454e+006 } 32 "UserCoordInfoMin"
+0
+1 { 4 0 IlvSpinBox 183 203 136 22 2 0 200 64 2 1
+0 IlvNumberField 183 203 121 22 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038  f 1 1 1 1.23454e+006 } 32 "UserCoordInfoMax"
+0
+1 { 5 0 IlvScrolledComboBox 8 149 311 20 F807 2 "" 2
+IlvGadgetItem 1 2 4 "&UserMinMax"  
+IlvGadgetItem 1 2 4 "&Automatic"   4 0 } 32 "MinMaxUser"
+0
+1 { 6 0 IlvFrame 2 124 323 111 F8 0 25 4 16 "&MinMax"   } 0
+0
+1 { 7 0 IlvToggle 2 240 323 19 F1 2 1 2 0 0 0 Y "&DrawAbove" } 32 "ScaleDrawOrder"
+0
+5 { 8 0 IlvScrolledComboBox 8 64 196 20 F807 2 "" 2
+IlvGadgetItem 1 2 4 "&FixedToPosition"  
+IlvGadgetItem 1 2 4 "&FixedToValue"   4 0 } 32 "FixedToPositionOrValue"
+0
+5 { 9 0 IlvSpinBox 210 64 103 20 2 0 200 64 2 1
+0 IlvNumberField 210 64 88 20 F6 2 2 -1 0 "1234543" . , 2 0 -2147483648 2147483647  f 1 1 1 1.23454e+006 } 32 "FixedToPositionOffset"
+0
+5 { 10 0 IlvSpinBox 210 64 109 20 2 0 200 64 2 1
+0 IlvNumberField 210 64 94 20 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038  f 1 1 1 1.23454e+006 } 32 "FixedToValue"
+0
+5 { 11 0 IlvFrame 2 22 323 97 F8 0 25 4 16 "&Positioning"   } 0
+0
+5 { 12 0 IlvMessageLabel 11 41 290 22 F8 0 25 4 16 "&ScaleFixedTo"   } 0
+0
+5 { 13 0 IlvScrolledComboBox 8 92 311 20 F807 2 "" 2
+IlvGadgetItem 1 2 4 "&MinDataPosition"  
+IlvGadgetItem 1 2 4 "&MaxDataPosition"   4 0 } 32 "FixedPosition"
+0
+Size 327 348
+GeometryHandlers
+2 100 0 327 0 327 0
+ 0 0 0 327 0 327
+14 3 0 0 2  323 0 323 0  0 0 2 1
+ 3 0 0 8  196 0 196 8  0 0 123 1
+ 3 210 0 210  0 0 109 10  0 0 8 1
+ 3 210 0 210  0 0 103 9  0 0 14 1
+ 3 0 0 11  290 0 290 12  0 0 26 1
+ 3 0 0 2  323 0 323 11  0 0 2 1
+ 3 0 0 8  311 0 311 13  0 0 8 1
+ 3 0 0 8  311 0 311 5  0 0 8 1
+ 3 183 0 183  0 0 136 3  0 0 8 1
+ 3 183 0 183  0 0 136 4  0 0 8 1
+ 3 0 0 2  323 0 323 6  0 0 2 1
+ 3 0 0 8  168 0 168 1  0 0 151 1
+ 3 0 0 8  168 0 168 2  0 0 151 1
+ 3 0 0 2  323 0 323 7  0 0 2 1
+0
+1 100 0 348 0 348 0
+0
+EOF

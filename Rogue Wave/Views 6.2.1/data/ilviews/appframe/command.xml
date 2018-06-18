@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<Options>
+<!--***************************************************************************-->
+<!--Description of commands-->
+  <Class AF_Name="Command">
+    <MenuDescription AF_Class="string" AF_Value=""/>
+    <Description AF_Class="string" AF_Value=""/>
+    <Bitmap AF_Class="string" AF_Value=""/>
+    <SelectedBitmap AF_Class="string" AF_Value=""/>
+    <UnsensitiveBitmap AF_Class="string" AF_Value=""/>
+    <HighlightedBitmap AF_Class="string" AF_Value=""/>
+    <BigBitmap AF_Class="string" AF_Value=""/>
+    <BigSelectedBitmap AF_Class="string" AF_Value=""/>
+    <BigUnsensitiveBitmap AF_Class="string" AF_Value=""/>
+    <BigHighlightedBitmap AF_Class="string" AF_Value=""/>
+    <Accelerators AF_Class="string" AF_IsArray="1"/>
+    <Tooltip AF_Class="string" AF_Value=""/>
+    <Categories AF_Class="string" AF_IsArray="1"/>
+    <IsCustomCommand AF_Class="bool" AF_Value="false"/>
+  </Class>
+<!--***************************************************************************-->
+<!--Command Variables-->
+  <Command AF_Name="CloseDocument" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuCloseDocument" Description="&amp;CloseDocumentDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;File"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="RecentFiles" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuRecentFiles" Description="&amp;RecentFileDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;File"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Copy" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuCopy" Description="Copy the selection to the clipboard" Tooltip="&amp;copy" Bitmap="ilviews/appframe/copy.xpm" BigBitmap="ilviews/appframe/bigicons/copy.xpm">
+    <Accelerators>
+      <Accelerators AF_Value="Ctrl+C"/>
+      <Accelerators AF_Value="Ctrl+Ins"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Editor"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Cut" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuCut" Description="Cut the selection and moves it to the clipboard" Bitmap="ilviews/appframe/cut.xpm" BigBitmap="ilviews/appframe/bigicons/cut.xpm" Tooltip="&amp;cut">
+    <Accelerators>
+      <Accelerators AF_Value="Ctrl+X"/>
+      <Accelerators AF_Value="Ctrl+Suppr"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Editor"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Paste" SelectedBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuPaste" Description="Copy the selection to the clipboard" Bitmap="ilviews/appframe/paste.xpm" UnsensitiveBitmap="ilviews/appframe/pasteu.xpm" BigBitmap="ilviews/appframe/bigicons/paste.xpm" BigUnsensitiveBitmap="ilviews/appframe/bigicons/pasteu.xpm" Tooltip="&amp;paste">
+    <Accelerators>
+      <Accelerators AF_Value="Ctrl+V"/>
+      <Accelerators AF_Value="Shift+Inser"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Editor"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Delete" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuDelete" Description="Deletes the selection" Bitmap="ilviews/appframe/delete.xpm" BigBitmap="ilviews/appframe/bigicons/delete.xpm">
+    <Accelerators>
+      <Accelerators AF_Value="Del"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Editor"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="SelectAll" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuSelectAll" Description="SelectAll">
+    <Accelerators>
+      <Accelerators AF_Value="Ctrl+A"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Editor"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Undo" SelectedBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;Undo" Description="&amp;Undo" Bitmap="ilviews/appframe/Undo.xpm" BigBitmap="ilviews/appframe/bigicons/undo.xpm" UnsensitiveBitmap="ilviews/appframe/undou.xpm" BigUnsensitiveBitmap="ilviews/appframe/bigicons/undou.xpm">
+    <Accelerators>
+      <Accelerators AF_Value="Ctrl+Z"/>
+      <Accelerators AF_Value="Alt+Backspace"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Editor"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Redo" SelectedBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;Redo" Description="&amp;Redo" Bitmap="ilviews/appframe/redo.xpm" UnsensitiveBitmap="ilviews/appframe/redou.xpm" BigBitmap="ilviews/appframe/bigicons/redo.xpm" BigUnsensitiveBitmap="ilviews/appframe/bigicons/redou.xpm">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Editor"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Repeat" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;Repeat" Description="&amp;Repeat" Bitmap="ilviews/appframe/repeat.xpm" BigBitmap="ilviews/appframe/bigicons/repeat.xpm">
+    <Accelerators>
+      <Accelerators AF_Value="F4"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Editor"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Exit" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuExit" Description="&amp;ExitApplication">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Application"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="NewDocument" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuNew" Tooltip="&amp;New" Description="&amp;NewDocument" Bitmap="ilviews/appframe/new.xpm" BigBitmap="ilviews/appframe/bigicons/new.xpm">
+    <Accelerators>
+      <Accelerators AF_Value="Ctrl+N"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;File"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="OpenDocument" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuOpen" Tooltip="&amp;Open" Description="&amp;OpenDocument" Bitmap="ilviews/appframe/open.xpm" BigBitmap="ilviews/appframe/bigicons/open.xpm">
+    <Accelerators>
+      <Accelerators AF_Value="Ctrl+O"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;File"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="SaveAllDocuments" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuSaveAll" Tooltip="&amp;SaveAll" Description="&amp;SaveAllDocuments" Bitmap="ilviews/appframe/saveall.xpm" BigBitmap="ilviews/appframe/bigicons/saveall.xpm">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;File"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="SaveAsDocument" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuSaveAs" Tooltip="&amp;SaveAs" Description="&amp;SaveAsDocument" Bitmap="ilviews/appframe/saveas.xpm">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;File"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="SaveDocument" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuSave" Tooltip="&amp;Save" Description="&amp;SaveDocument" Bitmap="ilviews/appframe/save.xpm" BigBitmap="ilviews/appframe/bigicons/save.xpm">
+    <Accelerators>
+      <Accelerators AF_Value="Ctrl+S"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;File"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="RevertDocument" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuRevert" Tooltip="&amp;Revert" Description="&amp;RevertDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;File"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Print" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuPrint" Tooltip="&amp;print" Description="&amp;PrintDesc" Bitmap="ilviews/appframe/print.xpm" BigBitmap="ilviews/appframe/bigicons/print.xpm">
+    <Accelerators>
+      <Accelerators AF_Value="Ctrl+P"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Print"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="PageSetup" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuPageSetup" Tooltip="&amp;PageSetup" Description="&amp;PageSetupDesc" Bitmap="ilviews/appframe/pgsetup.xpm">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Print"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="PrinterSetup" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuPrinterSetup" Tooltip="&amp;PrinterSetup" Description="&amp;PrinterSetupDesc" Bitmap="ilviews/appframe/prnsetup.xpm">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Print"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="DumpPostScript" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuDumpPostcript" Tooltip="&amp;DumpPostScript" Description="&amp;DumpPostScriptDesc" Bitmap="ilviews/appframe/postscript.xpm">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Print"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="NewWindow" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuNewWindow" Tooltip="&amp;NewWindow" Description="&amp;NewWindowDesc" Bitmap="ilviews/appframe/newwnd.xpm" BigBitmap="ilviews/appframe/bigicons/newwnd.xpm">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Window"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="NextWindow" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuNextWindow" Tooltip="&amp;NextWindow" Description="&amp;NextWindowDesc" Bitmap="ilviews/appframe/nextwnd.xpm" BigBitmap="ilviews/appframe/bigicons/nextwnd.xpm">
+	<Accelerators>
+      <Accelerators AF_Value="Ctrl+F6"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Window"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="PreviousWindow" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuPreviousWindow" Tooltip="&amp;PreviousWindow" Description="&amp;PreviousWindowDesc" Bitmap="ilviews/appframe/prevwnd.xpm" BigBitmap="ilviews/appframe/bigicons/prevwnd.xpm">
+    <Accelerators>
+      <Accelerators AF_Value="Ctrl+Shift+F6"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Window"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Cascade" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuCascade" Tooltip="&amp;Cascade" Description="&amp;CascadeDesc" Bitmap="ilviews/appframe/cascade.xpm" BigBitmap="ilviews/appframe/bigicons/cascade.xpm">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Window"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="TileHorizontaly" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuTileHorizontaly" Description="&amp;TileHorizontalyDesc" Bitmap="ilviews/appframe/htilewnd.xpm" BigBitmap="ilviews/appframe/bigicons/htilewnd.xpm">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Window"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="TileVerticaly" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuTileVerticaly" Description="&amp;TileVerticalyDesc" Bitmap="ilviews/appframe/vtilewnd.xpm" BigBitmap="ilviews/appframe/bigicons/vtilewnd.xpm">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Window"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Windows" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuWindows" Description="&amp;WindowsDesc" Bitmap="ilviews/appframe/windows.xpm" BigBitmap="ilviews/appframe/bigicons/windows.xpm">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Window"/>
+    </Categories>
+  </Command>
+<!--***************************************************************************-->
+<!--Project commands-->
+  <Command AF_Name="OpenProject" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuOpenProject" Description="&amp;OpenProjectDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Project"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="NewProject" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuNewProject" Description="&amp;NewProjectDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Project"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="SaveProject" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuSaveProject" Description="&amp;SaveProjectDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Project"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="SaveAsProject" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuSaveAsProject" Description="&amp;SaveAsProjectDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Project"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="CloseProject" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuCloseProject" Description="&amp;CloseProjectDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Project"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="InsertFile" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuInsertFile" Description="&amp;InsertFileDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Project"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="InsertFolder" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuInsertFolder" Description="&amp;InsertFolderDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Project"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Customize" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuCustomize" Description="&amp;CustomizeDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Customize"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Modules" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuModules" Description="&amp;ModulesDesc" Tooltip="&amp;Modules">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Application"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="ToggleFrameBar" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;FrameToBar" Tooltip="&amp;FrameToBar" Description="&amp;FrameToBarDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Window"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="CloseWindow" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;Close" Tooltip="&amp;Close" Description="&amp;CloseDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Window"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Properties" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuProperties" Tooltip="&amp;Properties" Description="&amp;PropertiesDesc" Bitmap="ilviews/appframe/propert.xpm" BigBitmap="ilviews/appframe/bigicons/propert.xpm">
+    <Accelerators>
+      <Accelerators AF_Value="Alt+Return"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Edition"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="OpenProjectItem" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuOpenProjectItem" Description="&amp;OpenProjectItemDesc" Bitmap="ilviews/appframe/open.xpm" BigBitmap="ilviews/appframe/bigicons/open.xpm">
+    <Accelerators>
+      <Accelerators AF_Value="Return"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Edition"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="HideBar" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuHideBar" Description="&amp;HideBarDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Window"/>
+    </Categories>
+  </Command>
+</Options>

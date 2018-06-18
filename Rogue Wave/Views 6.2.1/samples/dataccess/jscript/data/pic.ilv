@@ -1,0 +1,68 @@
+// Ilv Version: 3.1
+// File generated: Mon Feb  1 11:28:07 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "pic"
+PathName "pic.ilv"
+Palettes 2
+"default" 1 44544 45568 49920 0 0 0 "default" "fixed" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 8
+1 { 0 0 IliDbPicture 5 110 348 167 2 2051  4  16 "rwlogo.png" "" } 32 "oPic"
+0
+1 { 1 1 IliDbTimer 315 8 24 24 1 14  0  0  } 544 "oTimer2"
+1
+1 "__ilvCallback" S"JvScript" "cbTimer2"
+0
+1 { 2 0 IliMemoryDataSource 263 10 24 24 1 14 3 2 IliMemoryTable 0 3 2 
+     8 "ID" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 90 32 
+     16 0 0 2
+1 0 "No" 
+1 1 "Yes" 
+0
+ } 32 "ZOOM_MS"
+0
+1 { 3 0 IliMemoryDataSource 261 60 24 24 1 14 3 4 IliMemoryTable 0 3 2 
+     8 "ID" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 90 32 
+     16 0 0 4
+1 0 "No flash" 
+1 1 "0.1 seconds" 
+1 2 "0.5 seconds" 
+1 3 "1 second" 
+0
+ } 32 "FREQ_MS"
+0
+1 { 4 0 IliMemoryDataSource 311 59 24 24 1 14 3 0 IliMemoryTable 0 2 1 
+     8 "NAME" String 1 -1 1 -1 32 
+     16 0 0 2
+"rwlogo1.png" 
+"rwlogo2.png" 
+0
+ } 32 "PICT_MS"
+0
+1 { 5 0 IlvText 5 282 349 99 F133 2 Y N 1 1 1 1 0 5
+"This panel shows how to "
+"- Use a DbTimer to animate a DbPicture or to change"
+"  the bitmap of a DbPicture"
+"- Change the period of a DbTimer"
+""
+0 0 0 0 } 0
+0
+1 { 6 0 IliDbField 5 5 90 60 2 2947 "ZOOM_MS" "ID" "NAME" 32 5 "Zoom" 5 -13 0 IliToggleSelector 5 5 90 60 2 0  2817 "ID" "NAME" 2 -1 "Zoom" 2 "No" "Yes"    } 544 "oZoom"
+1
+1 "__ilvCallback" S"JvScript" "cbZoom"
+0
+1 { 7 0 IliDbField 105 5 135 102 2 2947 "FREQ_MS" "ID" "NAME" 32 5 "Frequency" 105 -13 0 IliToggleSelector 105 5 135 102 2 0  2817 "ID" "NAME" 2 -1 "Frequency" 4 "No flash" "0.5 second" "1 second" "3 seconds"    } 544 "oFreq"
+1
+1 "__ilvCallback" S"JvScript" "cbFreq"
+0
+Size 358 386
+GeometryHandlers
+1 100 0 358 0 358 0
+2 3 0 0 5  349 0 349 5  0 0 4 0
+ 3 0 0 5  348 0 348 0  0 0 5 0
+1 100 0 386 0 386 0
+2 3 282 0 282  0 0 99 5  0 0 5 0
+ 3 0 0 110  167 0 167 0  0 0 109 0
+EOF

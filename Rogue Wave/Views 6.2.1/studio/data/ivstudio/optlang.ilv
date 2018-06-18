@@ -1,0 +1,54 @@
+// Ilv Version: 3.1
+// File generated: Fri Sep 04 15:33:31 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "optlang"
+PathName "W:\\work.noiret\\studio\\data\\ivstudio\\optlang.ilv"
+Palettes 2
+0 "gray" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+"IlvStText" 1 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+IlvObjects 12
+4 { 0 0 IlvButton 22 201 72 23 F9 2 1 16 4 "&InsertList"   } 32 "LanguageInsert"
+6144 "LanguageDelete" "LongName"
+4 { 1 0 IlvButton 101 201 72 23 F9 2 1 16 4 "&DeleteList"   } 32 "LanguageDelete"
+6144 "MessageDB" "LanguageInsert"
+4 { 2 1 IlvMessageLabel 189 79 254 22 F8 0 25 16 4 "&LanguageName"   } 32 "LanguageNameLabel"
+0
+4 { 3 1 IlvTextField 189 104 251 22 F6 2 1 -1 0 "Text Field" } 32 "LanguageName"
+0
+4 { 4 1 IlvMessageLabel 189 128 254 22 F8 0 25 16 4 "&ShortName"   } 32 "ShortNameLabel"
+0
+4 { 5 1 IlvStringList 22 83 150 109 F129 2 A A 0 0 0 0 0 1 0 0 2 0 } 32 "LanguageList"
+0
+4 { 6 1 IlvTextField 189 152 251 22 F6 2 1 -1 0 "Text Field" } 32 "ShortName"
+2048 "LongName"
+4 { 7 0 IlvFrame 9 62 442 173 F8 0 25 16 4 "&Language"   } 32 "LanguageFrame"
+0
+4 { 8 1 IlvMessageLabel 189 178 254 22 F8 0 25 16 4 "&LongName"   } 32 "LongNameLabel"
+0
+4 { 9 1 IlvTextField 189 202 251 22 F6 2 1 -1 0 "Text Field" } 32 "LongName"
+6144 "LanguageInsert" "ShortName"
+4 { 10 1 IlvMessageLabel 9 8 442 22 F8 0 25 16 4 "&MultiLanguageDB"   } 32 "messageDBLabel"
+0
+4 { 11 1 IlvFileSelectorField 9 34 328 23 F6 2 1 -1 0 "" } 96 "MessageDB" "TextField"
+6144 "callb" "LanguageDelete"
+Size 456 240
+GeometryHandlers
+2 100 0 182 0 182 0
+ 0 0 274 182 274 182
+5 3 0 0 9  442 0 442 10  0 0 5 1
+ 3 0 0 9  328 0 328 11  0 0 119 1
+ 3 0 0 9  442 0 442 7  0 0 5 1
+ 3 0 0 22  150 0 150 5  0 0 10 0
+ 3 0 0 101  72 0 72 1  0 0 9 0
+6 3 0 0 7  254 0 254 2  0 0 13 1
+ 3 0 0 7  251 0 251 3  0 0 16 1
+ 3 0 0 7  251 0 251 6  0 0 16 1
+ 3 0 0 7  251 0 251 9  0 0 16 1
+ 3 0 0 7  254 0 254 4  0 0 13 1
+ 3 0 0 7  254 0 254 8  0 0 13 1
+1 100 0 240 0 240 0
+4 3 0 0 62  173 0 173 7  0 0 5 0
+ 3 0 0 83  109 0 109 5  0 0 48 0
+ 3 201 0 201  0 0 23 0  0 0 16 0
+ 3 201 0 201  0 0 23 1  0 0 16 0
+EOF

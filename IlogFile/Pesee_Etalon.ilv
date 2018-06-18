@@ -1,0 +1,258 @@
+// Ilv Version: 5.3
+// File generated: Tue Sep 24 15:20:40 2013
+// Creator class: IlvGadgetManagerOutput
+FileName "Pesee_Etalon"
+PathName "C:\\Développement ILOG\\V5.x - Révisions extraites\\centrale 150 sartorius + modif SMO\\IlogFile\\Pesee_Etalon.ilv"
+Palettes 6
+1 F "darkslateblue" 65025 65025 65025 "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+5 F "gray" "black" "%Arial-16-B[Charset:0]" 0 solid solid 0 0 0 65535 0
+3 F "lightblue" "yellow" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+2 F "gray" "black" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 4 F "gray" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+"default" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+IlvObjects 37
+0 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.25 0 0 6.25 688 384 } 544 "aide"
+1
+1 "__ilvCallback" "aideCB"
+6144 "quitter" "Tactile"
+0 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.25 0 0 6.25 688 216 } 544 "Tactile"
+1
+1 "__ilvCallback" "tactileCB"
+6144 "aide" "Valider"
+0 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.25 0 0 6.25 688 96 } 544 "Valider"
+1
+1 "__ilvCallback" "validerCB"
+6144 "Tactile" "PoidsPese"
+0 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F3.75 0 0 3.75 616 176 } 544 "listerEtalonLignes"
+1
+1 "__ilvCallback" "listerEtalonCB"
+6144 "PoidsPese" "TypePesee"
+0 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.25 0 0 6.25 688 272 } 544 "mettreAZero"
+1
+1 "__ilvCallback" "mettreAZeroCB"
+0
+0 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.25 0 0 6.25 688 440 } 544 "quitter"
+1
+1 "__ilvCallback" "quitterCB"
+6144 "PoidsEtalon" "aide"
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 6 499 734 41 F12 0 { IlvMessageItem 262168 4 16 4  }   } 32 "Message"
+0
+1 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 160 8 142 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&Balance"  }   } 32 "LabelBalance"
+0
+1 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 312 8 163 30 F6 2 1 -1 0 "" } 416 "AffBalance"
+16384
+1 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 160 56 144 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&FicheEtalon"  }   } 32 "LabelFicheEtalon"
+0
+1 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 144 176 160 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&Poids/Type"  }   } 32 "LabelPoidsType"
+0
+1 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 144 224 160 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&PctTolerance"  }   } 32 "LabelPctTolerance"
+0
+1 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 312 56 124 30 F6 2 1 -1 0 "" } 416 "AffFicheEtalon"
+16384
+1 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gauge" ]
+3 IlvRectangularGauge 88 8 39 466 0 100 80 8 1 } 32 "JaugePesee"
+16384
+1 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 144 336 160 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&PoidsPese"  }   } 32 "LabelPoidsPese"
+0
+1 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 144 384 160 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&PoidsAPeser"  }   } 32 "LabelPoidsAPeser"
+0
+1 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 144 432 160 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&EcartPoids"  }   } 32 "LabelEcartPoids"
+0
+1 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 160 104 144 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&Compteur"  }   } 32 "LabelCompteur"
+0
+1 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 312 104 65 30 F6 2 2 -1 0 "" } 416 "AffCompteur"
+16384
+1 { 19 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+4 IlvFrame 150 0 594 152 F268435468 0 { IlvMessageItem 262168 4 16 4  }   } 0
+0
+1 { 20 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 440 56 272 30 F6 2 1 -1 0 "" } 416 "AffDesFiche"
+0
+1 { 21 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 480 336 70 30 F268435468 0 { IlvMessageItem 262145 4 16 4 "Kg"  }   } 32 "LabelUnPesee"
+0
+1 { 22 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 480 384 70 30 F268435468 0 { IlvMessageItem 262145 4 16 4 "Kg"  }   } 32 "LabelUnAPeser"
+0
+1 { 23 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 480 432 70 30 F268435468 0 { IlvMessageItem 262145 4 16 4 "Kg"  }   } 32 "LabelUnEcart"
+0
+1 { 24 0 IlvZoomableTransparentIcon 0 0 "default" F0.125 0 0 0.125 512 0 } 32 "Lighton"
+0
+1 { 25 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvNumberField 312 224 170 30 F6 2 2 -1 0 "0" . , 6 16 -3.40282e+038 3.40282e+038 } 416 "PctTolerance"
+0
+1 { 26 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvNumberField 312 384 170 30 F6 2 2 -1 0 "0" . , 6 16 -3.40282e+038 3.40282e+038 } 416 "PoidsAPeser"
+0
+1 { 27 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvNumberField 312 432 170 30 F6 2 2 -1 0 "0" . , 6 16 -3.40282e+038 3.40282e+038 } 416 "EcartPoids"
+0
+1 { 28 5 IlvRectangularScale 75 9 10 462 5 2 10 5 M 0 100 "%4.f"
+"   0.0000" "  25.0000" "  50.0000" "  75.0000" " 100.0000"  85 471 462 8 1  } 32 "JaugeScale"
+0
+1 { 29 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+4 IlvFrame 0 0 140 488 F268435468 0 { IlvMessageItem 262168 4 16 4  }   } 0
+0
+1 { 30 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 448 176 160 30 F6 2 1 -1 0 "" } 416 "LibTypPesee"
+0
+1 { 31 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvNumberField 312 176 132 30 F6 2 2 -1 0 "0" . , 6 16 -3.40282e+038 3.40282e+038 } 416 "PoidsEtalon"
+0
+1 { 32 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.25 0 0 6.25 688 328 } 544 "peser"
+1
+1 "__ilvCallback" "peserCB"
+0
+1 { 33 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 144 272 160 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&NbPesees"  }   } 32 "LabelcompteurPesees"
+0
+1 { 34 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 312 272 65 30 F6 2 2 -1 0 "" } 416 "AffCompteurPesees"
+16384
+1 { 35 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvNumberField 312 336 170 30 F6 2 2 -1 0 "0" . , 2 16 -3.4e+038 3.4e+038 } 544 "PoidsPese"
+2
+1 "__ilvCallback" "poidsPeseCB"
+1 "__ilvFocusIn" "EntreeNumberFieldCB"
+0
+1 { 36 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 480 8 232 30 F6 2 1 -1 0 "" } 416 "AffLibBalance"
+16384
+Size 749 545
+Background "gray"
+GeometryHandlers
+1 100 0 749 0 749 0
+37 3 160 0 160  142 0 142 7  447 0 447 0
+ 3 160 0 160  144 0 144 9  445 0 445 0
+ 3 144 0 144  160 0 160 10  445 0 445 0
+ 3 144 0 144  160 0 160 11  445 0 445 0
+ 3 312 0 312  163 0 163 8  274 0 274 0
+ 3 312 0 312  124 0 124 12  313 0 313 0
+ 3 688 0 688  50 0 50 0  11 0 11 0
+ 3 688 0 688  50 0 50 5  11 0 11 0
+ 3 6 0 6  734 0 734 6  9 0 9 0
+ 3 88 0 88  39 0 39 13  622 0 622 0
+ 3 144 0 144  160 0 160 14  445 0 445 0
+ 3 144 0 144  160 0 160 15  445 0 445 0
+ 3 144 0 144  160 0 160 16  445 0 445 0
+ 3 440 0 440  272 0 272 20  37 0 37 0
+ 3 312 0 312  65 0 65 18  372 0 372 0
+ 3 160 0 160  144 0 144 17  445 0 445 0
+ 3 150 0 150  594 0 594 19  5 0 5 0
+ 3 616 0 616  30 0 30 3  103 0 103 0
+ 3 688 0 688  50 0 50 2  11 0 11 0
+ 3 688 0 688  50 0 50 1  11 0 11 0
+ 3 512 0 512  1 0 1 24  236 0 236 0
+ 3 688 0 688  50 0 50 4  11 0 11 0
+ 3 480 0 480  70 0 70 21  199 0 199 0
+ 3 480 0 480  70 0 70 22  199 0 199 0
+ 3 480 0 480  70 0 70 23  199 0 199 0
+ 3 312 0 312  170 0 170 25  267 0 267 0
+ 3 312 0 312  170 0 170 26  267 0 267 0
+ 3 312 0 312  170 0 170 27  267 0 267 0
+ 3 0 0 0  86 0 86 28  663 0 663 0
+ 3 0 0 0  140 0 140 29  609 0 609 0
+ 3 448 0 448  160 0 160 30  141 0 141 0
+ 3 312 0 312  132 0 132 31  305 0 305 0
+ 3 688 0 688  50 0 50 32  11 0 11 0
+ 3 312 0 312  65 0 65 34  372 0 372 0
+ 3 144 0 144  160 0 160 33  445 0 445 0
+ 3 312 0 312  170 0 170 35  267 0 267 0
+ 3 480 0 480  232 0 232 36  37 0 37 0
+1 100 0 545 0 545 0
+37 3 0 0 8  30 0 30 7  507 0 507 0
+ 3 56 0 56  30 0 30 9  459 0 459 0
+ 3 176 0 176  30 0 30 10  339 0 339 0
+ 3 224 0 224  30 0 30 11  291 0 291 0
+ 3 0 0 8  30 0 30 8  507 0 507 0
+ 3 56 0 56  30 0 30 12  459 0 459 0
+ 3 384 0 384  50 0 50 0  111 0 111 0
+ 3 440 0 440  50 0 50 5  55 0 55 0
+ 3 499 0 499  41 0 41 6  5 0 5 0
+ 3 0 0 8  466 0 466 13  71 0 71 0
+ 3 336 0 336  30 0 30 14  179 0 179 0
+ 3 384 0 384  30 0 30 15  131 0 131 0
+ 3 432 0 432  30 0 30 16  83 0 83 0
+ 3 56 0 56  30 0 30 20  459 0 459 0
+ 3 104 0 104  30 0 30 18  411 0 411 0
+ 3 104 0 104  30 0 30 17  411 0 411 0
+ 3 0 0 0  152 0 152 19  393 0 393 0
+ 3 176 0 176  30 0 30 3  339 0 339 0
+ 3 96 0 96  50 0 50 2  399 0 399 0
+ 3 216 0 216  50 0 50 1  279 0 279 0
+ 3 0 0 0  1 0 1 24  544 0 544 0
+ 3 272 0 272  50 0 50 4  223 0 223 0
+ 3 336 0 336  30 0 30 21  179 0 179 0
+ 3 384 0 384  30 0 30 22  131 0 131 0
+ 3 432 0 432  30 0 30 23  83 0 83 0
+ 3 224 0 224  30 0 30 25  291 0 291 0
+ 3 384 0 384  30 0 30 26  131 0 131 0
+ 3 432 0 432  30 0 30 27  83 0 83 0
+ 3 0 0 0  482 0 482 28  63 0 63 0
+ 3 0 0 0  488 0 488 29  57 0 57 0
+ 3 176 0 176  30 0 30 30  339 0 339 0
+ 3 176 0 176  30 0 30 31  339 0 339 0
+ 3 328 0 328  50 0 50 32  167 0 167 0
+ 3 272 0 272  30 0 30 34  243 0 243 0
+ 3 272 0 272  30 0 30 33  243 0 243 0
+ 3 336 0 336  30 0 30 35  179 0 179 0
+ 3 0 0 8  30 0 30 36  507 0 507 0
+Layers 2
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

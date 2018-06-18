@@ -1,0 +1,36 @@
+help "stlayer" {
+    title "Layers panel";
+    description "Managing layers";
+}
+
+The Layers panel lets you manage the layers of the 
+current buffer.
+
+All the layers are listed inside the Layers frame.
+
+The + button lets you insert a new layer before the
+selected layer. If no layer is selected, a new layer
+is append after the last layer.
+
+The - button lets you remove the selected layer
+and the objects contained in that layer.
+
+The Visible toggle button lets you show or hide
+the objects in the selected layer.
+
+The Selectable toggle button lets you make the
+objects in the selected layer selectable or not.
+
+The Select button selects all the objects in
+the selected layer.
+
+The Move to button moves the selected objects to
+the selected layer.
+
+Note:
+
+The information related to the layers is only saved 
+when you use a 2D Graphics buffers. When you edit
+a Gadgets buffer, this panel just lets you temporarily 
+organize your objects.
+

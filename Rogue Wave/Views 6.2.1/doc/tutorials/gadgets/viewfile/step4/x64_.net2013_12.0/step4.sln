@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+
+Project("914B697A-1D60-11E8-B125-30D7772C9500") = "viewfile", "viewfile.vcxproj", "914AFC1A-1D60-11E8-B125-30D7772C9500"
+EndProject
+
+Global
+EndGlobal
+

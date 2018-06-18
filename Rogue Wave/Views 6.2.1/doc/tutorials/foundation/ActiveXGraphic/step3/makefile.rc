@@ -1,0 +1,16 @@
+# Makefile to generate .rc file for Windows.
+#
+# WARNING : generateRcFile.pl does NOT on Unix but only on Windows.
+#
+
+GENERATE=$(ILVHOME)/util//generateRcFile.pl
+
+RCDATADIRS=bin/data
+
+.SUFFIXES: .rc .rc.orig
+
+all: ActiveXApp.rc
+
+ActiveXApp.rc: ActiveXApp.rc.orig
+	$(GENERATE) $* $(RCDATADIRS)
+

@@ -1,0 +1,40 @@
+// Ilv Version: 3.0
+// File generated: Thu Oct 23 11:05:01 1997
+// Creator class: IlvGadgetManagerOutput
+FileName "piprop"
+Palettes 1
+0 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+IlvObjects 9
+3 { 0 0 IlvToggle 49 5 228 19 F1 2 1 2 0 14 0 Y "&noBorder" } 96 "noBorder" "Toggle"
+0
+3 { 1 0 IlvToggle 49 33 228 19 F1 2 1 2 0 14 0 Y "&noResizeBorder" } 96 "noResizeBorder" "Toggle"
+0
+3 { 2 0 IlvToggle 49 61 228 19 F1 2 1 2 0 14 0 Y "&noTitleBar" } 96 "noTitleBar" "Toggle"
+0
+3 { 3 0 IlvToggle 49 89 228 19 F1 2 1 2 0 14 0 Y "&noSysMenu" } 96 "noSysMenu" "Toggle"
+0
+3 { 4 0 IlvToggle 49 117 228 19 F1 2 1 2 0 14 0 Y "&noMinBox" } 96 "noMinBox" "Toggle"
+0
+3 { 5 0 IlvToggle 49 145 228 19 F1 2 1 2 0 14 0 Y "&noMaxBox" } 96 "noMaxBox" "Toggle"
+0
+3 { 6 0 IlvToggle 49 173 228 19 F1 2 1 2 0 14 0 Y "&iconified" } 96 "iconified" "Toggle"
+0
+3 { 7 0 IlvToggle 49 201 228 19 F1 2 1 2 0 14 0 Y "&maximized" } 96 "maximized" "Toggle"
+0
+3 { 8 0 IlvToggle 49 229 228 19 F1 2 1 2 0 14 0 Y "&MDIChild" } 96 "MDIChild" "Toggle"
+0
+Size 288 314
+GeometryHandlers
+1 100 356 356 0 356 0
+9 3 0 0 49  228 0 228 0  0 0 79 0
+ 3 0 0 49  228 0 228 1  0 0 79 0
+ 3 0 0 49  228 0 228 2  0 0 79 0
+ 3 0 0 49  228 0 228 3  0 0 79 0
+ 3 0 0 49  228 0 228 4  0 0 79 0
+ 3 0 0 49  228 0 228 5  0 0 79 0
+ 3 0 0 49  228 0 228 6  0 0 79 0
+ 3 0 0 49  228 0 228 7  0 0 79 0
+ 3 0 0 49  228 0 228 8  0 0 79 0
+1 100 250 314 0 314 0
+0
+EOF

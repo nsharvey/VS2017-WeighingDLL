@@ -1,0 +1,3 @@
+Files: gold.cpp, gold.h
+This sample uses the Rogue Wave Views bitmap filters to create a gold effect on an image.
+The filter uses a combination of two turbulences at various octaves and frequencies to create the gold relief.

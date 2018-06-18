@@ -1,0 +1,39 @@
+// Ilv Version: 3.1
+// File generated: Mon Feb  1 11:51:08 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "getstar2"
+PathName "getstar2.ilv"
+Palettes 4
+1 "gray" "black" "bold" "%helvetica-12-B" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+2 "white" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+3 "gray" "black" "large" "%helvetica-18-B" 0 solid solid 0 0 0
+IlvObjects 3
+1 { 0 0 IliSQLDataSource 271 7 24 24 1 14 3 0 IliSQLTable 0 13 4 
+     74 "EMPNO" Int 9 -1 2 91 "Number" 32 33 "EMPNO" 
+     72 "I_EMP.NAME" String 10 25 1 91 "Employee" 32 33 "NAME" 
+     72 "I_DEPT.NAME" String 11 25 1 91 "Department" 32 33 "NAME" 
+     72 "MANAGER" String 12 25 1 91 "Manager" 32 33 "MANAGER" 
+     16 0 1 31662 0 "oracle" "SELECT I_EMP.EMPNO,\n       I_EMP.NAME,\n       I_DEPT.NAME,\n       I_DEPT.MANAGER\nFROM I_EMP,\n     I_DEPT\nWHERE I_EMP.DEPTNO = I_DEPT.DEPTNO" 500 0 5 3 1 2 1 0 "I_EMP" "I_EMP" 0 3 20 23 130 155 1 0 "I_DEPT" "I_DEPT" 1 4 212 25 130 75 0 0 1 1 1 1 2 0 "DEPTNO" 1 "DEPTNO" 0 1 0 1 0 2 0 6 5 
+     10 "EMPNO" Int 1 -1 2 -1 0 
+     8 "NAME" String 2 25 1 -1 0 
+     8 "STATUS" Int 3 -1 2 -1 0 
+     8 "DEPTNO" Int 4 -1 2 -1 0 
+     9 "SALARY" Double 5 -1 2 -1 0 
+     0 0 "I_EMP" 0 0 0 4 3 
+     10 "DEPTNO" Int 1 -1 2 -1 0 
+     8 "NAME" String 2 25 1 -1 0 
+     8 "MANAGER" String 3 25 1 -1 0 
+     0 0 "I_DEPT" 0 0 6 "Main" "null" "/"  } 32 "EMPMGR_DS"
+0
+1 { 1 1 IliTableGadget 10 50 390 260 2 2067 "EMPMGR_DS" 725466719 1 0 0 0 17 18 21 4 0 0 0 1 1 "white" A"normal" "%helvetica-12-"  } 32 "TG"
+0
+1 { 2 3 IlvMessageLabel 10 10 190 22 F8 0 25 16 4 "Employee Manager"   } 0
+0
+Size 410 320
+GeometryHandlers
+1 100 0 410 0 410 0
+1 3 0 0 10  390 0 390 1  0 0 10 0
+1 100 0 320 0 320 0
+1 3 0 0 50  260 0 260 1  0 0 10 0
+EOF

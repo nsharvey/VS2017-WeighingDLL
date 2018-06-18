@@ -1,0 +1,74 @@
+// Ilv Version: 5.2
+// File generated: Tue May 19 17:14:11 2009
+// Creator class: IlvGadgetManagerOutput
+FileName "template"
+Palettes 2
+"IlvStToolBar" 1 F "gray" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 6
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMenuBar 0 0 348 26 F295 2 V0 2 2
+{ IlvMenuItem 1 2 4 "Normal"  } 
+{ IlvMenuItem 2097281 2 4 "Disabled"  }  0 } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToolBar 0 30 348 31 F295 2 V0 2 8
+{ IlvMenuItem 2 2 4 1 0 "icon/new.png"  } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 2 2 4 1 0 "icon/open.png"  } 
+{ IlvMenuItem 2 2 4 1 0 "icon/save.png"  } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 2 2 4 1 0 "icon/cut.png"  } 
+{ IlvMenuItem 2 2 4 1 0 "icon/copy.png"  } 
+{ IlvMenuItem 2 2 4 1 0 "icon/paste.png"  }  0 } 0
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 265 209 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "Ok"  }   } 0
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvText 176 80 162 111 F129 2 Y N 1 1 1 1 0 6
+"This directory contains subdirectories that show particular aspects of\r"
+"the classes provided in Rogue Wave Views.\r"
+"\r"
+"Each directory stored a set of samples that demonstrates a set of\r"
+"functionnalities of a given Rogue Wave Views package.\r"
+"Please refer to the README file of each subdirectory for more details."
+0 0 3 0 } 0
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvTreeGadget 10 80 156 111 F32 2 A A 0 0 0 0 20 1 1 1 1 1 0 V0 2
+{ IlvTreeGadgetItem 1 2 4 "root" 2
+{ IlvTreeGadgetItem 1 2 4 "First Root" 2
+{ IlvTreeGadgetItem 1 2 4 "Child 1" 0
+ } { IlvTreeGadgetItem 1 2 4 "Child 2" 0
+ }  } { IlvTreeGadgetItem 1 2 4 "Second Root" 3
+{ IlvTreeGadgetItem 1 2 4 "Child 1" 0
+ } { IlvTreeGadgetItem 1 2 4 "Child 2" 0
+ } { IlvTreeGadgetItem 1 2 4 "Child 3" 0
+ }  }  }  } 0
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFrame 0 60 348 141 F268435468 0 { IlvMessageItem 262169 4 16 4 "Frame"  }   } 0
+0
+Size 348 242
+GeometryHandlers
+2 100 0 171 0 171 0
+ 100 0 177 171 177 171
+5 3 0 0 0  348 0 348 0  0 0 0 1
+ 3 0 0 0  348 0 348 1  0 0 0 1
+ 3 0 0 0  348 0 348 5  0 0 0 1
+ 3 265 0 265  0 0 73 2  0 0 10 1
+ 3 0 0 10  156 0 156 4  0 0 5 0
+1 3 0 0 5  162 0 162 3  0 0 10 1
+1 100 0 242 0 242 0
+4 3 0 0 60  141 0 141 5  0 0 41 0
+ 3 0 0 80  111 0 111 4  0 0 51 0
+ 3 0 0 80  111 0 111 3  0 0 51 0
+ 3 209 0 209  0 0 23 2  0 0 10 0
+EOF

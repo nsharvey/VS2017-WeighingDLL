@@ -1,0 +1,3 @@
+Files: xml_date.cpp, xml_date.h
+This sample shows you how to extract dates from an XML data file using the 
+IlvXMLChartData class.

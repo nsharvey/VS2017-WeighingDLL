@@ -1,0 +1,26 @@
+panel "ApplicationProperties" {
+  visible false
+  commandName ApplicationProperties
+  x 300
+  y 250
+}
+ 
+panel "BrowseDS" {
+  visible false
+  commandName BrowseDS
+}
+
+panel "MainPanel" {
+  menuItem ShowCallbackInspector : "&mtools" -before ShowAlignPanel;
+  menuItem "Data^Access" : -before "&mcode";
+  menu "Data^Access" {
+    FormAssistant,
+    -,
+    DetachFieldsLabels,
+    -,
+    BrowseDS,
+    -,
+    ApplicationProperties,
+  }
+};
+

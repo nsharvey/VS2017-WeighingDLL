@@ -1,0 +1,97 @@
+// Ilv Version: 4.0
+// File generated: Fri Mar 24 11:25:20 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "transman"
+PathName "transman.ilv"
+Palettes 6
+0 "gray" "black" "small" "%helvetica-10-" 0 solid solid 0 0 0
+3 "Gray" 0 0 0 "button" "%helvetica-12-B" 0 solid solid 0 0 0
+2 "white" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+5 44544 45568 49920 0 0 0 "small" "%helvetica-10-" 0 solid solid 0 0 0
+1 "gray" "black" "bold" "%helvetica-12-B" 0 solid solid 0 0 0
+"IlvStText" 4 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 12
+1 { 0 0 IliSQLDataSource 172 5 24 24 1 14 3 0 IliSQLTable 0 28 5 
+     3 "EMPNO" Int 5 -1 2 64 32 33 "EMPNO" 
+     9 "NAME" String 6 25 1 113 32 33 "NAME" 
+     9 "STATUS" Int 7 -1 2 113 32 33 "STATUS" 
+     1 "DEPTNO" Int 8 -1 2 47 32 33 "DEPTNO" 
+     9 "SALARY" Double 9 -1 2 140 32 33 "SALARY" 
+     20 1 1 "dept" Int  -1 Int 0 "" "" 0 9 31118 0 "" "SELECT EMPNO,\n       NAME,\n       STATUS,\n       DEPTNO,\n       SALARY\nFROM I_EMP\nWHERE (DEPTNO = :dept or :dept=99)" 0 3 1 0 1 3 0 "I_EMP" "I_EMP" 0 1 15 15 130 75 0 0 0 0 0 0 2 1 0 3 "= :dept or :dept=99" 0 1 0 1 0 6 5 
+     10 "EMPNO" Int 1 -1 2 -1 0 
+     8 "NAME" String 2 25 1 -1 0 
+     8 "STATUS" Int 3 -1 2 -1 0 
+     8 "DEPTNO" Int 4 -1 2 -1 0 
+     9 "SALARY" Double 5 -1 2 -1 0 
+     0 0 "I_EMP" 0 0 5 "Main" "null" "/" 6 0 IMIAACGDEOEN  } 608 "EMP" "Gadget"
+2
+1 "ValidateRow" S"JvScript" "jvalrow"
+1 "FetchRow" S"JvScript" "jfetchrow"
+0
+1 { 1 0 IliSQLDataSource 202 4 24 24 1 14 3 0 IliSQLTable 0 7 3 
+     10 "DEPTNO" Int 2 -1 2 67 32 33 "DEPTNO" 
+     8 "NAME" String 3 25 1 67 32 33 "NAME" 
+     8 "MANAGER" String 4 25 1 59 32 33 "MANAGER" 
+     20 0 0 9 31118 0 "" "SELECT DEPTNO,\n       NAME,\n       MANAGER\nFROM I_DEPT" 0 2 1 1 1 3 0 "I_DEPT" "I_DEPT" 0 1 15 15 130 75 0 0 0 0 1 0 1 0 1 0 4 3 
+     10 "DEPTNO" Int 1 -1 2 -1 0 
+     8 "NAME" String 2 25 1 -1 0 
+     8 "MANAGER" String 3 25 1 -1 0 
+     0 0 "I_DEPT" 0 0 5 "Main" "null" "/" 6 0 IMIAACGDEOEN  } 96 "DEPT" "Gadget"
+0
+1 { 2 1 IliTableGadget 5 49 392 121 2 2067 "EMP" 1799208671 1 0 1 0 17 19 21 4 0 1 0 1 1 "white" A"normal" "%helvetica-12-"  } 96 "tg" "Gadget"
+6144 "buts" "ef"
+1 { 3 3 IlvButton 111 214 73 23 F536870925 2 { IlvMessageItem 262273 4 16 4 "Cancel"  }   } 608 "butc" "Gadget"
+1
+1 "__ilvCallback" S"JvScript" "jcancel"
+6146 "buta" "buts"
+1 { 4 3 IlvButton 201 214 73 23 F536870925 2 { IlvMessageItem 262273 4 16 4 "Accept"  }   } 608 "buta" "Gadget"
+1
+1 "__ilvCallback" S"JvScript" "jaccept"
+6146 "Button_4" "butc"
+1 { 5 4 IliTableComboBox 5 19 154 20 F7 2 1 -1 0 "" 3971 "DEPT" "DEPTNO" "NAME" 10 Int 0 0 1  ""  } 608 "tcb" "Gadget"
+1
+1 "__ilvCallback" S"JvScript" "jselect"
+10240 "ef"
+1 { 6 3 IlvButton 21 214 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "Start"  }   } 608 "buts" "Gadget"
+1
+1 "__ilvCallback" S"JvScript" "jstart"
+6144 "butc" "tg"
+1 { 7 5 IliDbTimer 370 183 24 24 1 14  0  40  } 608 "tim" "Gadget"
+1
+1 "__ilvCallback" S"JvScript" "jtimer"
+0
+1 { 8 4 IlvMessageLabel 294 176 23 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "0"  }   } 96 "msg" "Gadget"
+0
+1 { 9 4 IlvMessageLabel 68 176 221 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "Number of events in local transaction:"  }   } 64 "Gadget"
+0
+1 { 10 4 IliTableComboBox 243 19 154 20 F7 2 1 -1 0 "" 4019 "DEPT" "MANAGER" "EMP" "NAME" "NAME" 11 0 1  ""  } 608 "tcb2" "Gadget"
+1
+1 "__ilvFocusOut" S"JvScript" "jout"
+0
+1 { 11 3 IlvButton 291 214 73 23 F536870925 2 { IlvMessageItem 262273 4 16 4 "Stop"  }   } 608 "butst" "Gadget"
+1
+1 "__ilvCallback" S"JvScript" "jstop"
+6146 "Button_4" "Button_2"
+Size 400 253
+GeometryHandlers
+1 100 0 400 0 400 0
+9 3 0 0 5  0 0 154 5  241 0 241 0
+ 3 243 0 243  0 0 154 10  0 0 3 0
+ 3 0 0 5  392 0 392 2  0 3 3 0
+ 3 0 0 21  0 0 73 6  306 0 306 0
+ 3 0 0 111  0 0 73 3  216 0 216 0
+ 3 0 0 201  0 0 73 4  126 0 126 0
+ 3 0 0 68  0 0 221 9  111 0 111 0
+ 3 0 0 294  0 0 23 8  83 0 83 0
+ 3 0 0 291  0 0 73 11  36 0 36 0
+1 100 0 253 0 253 0
+9 3 0 0 19  0 0 20 5  214 0 214 0
+ 3 0 0 19  0 0 20 10  214 0 214 0
+ 3 0 0 49  121 0 121 2  0 0 83 0
+ 3 214 0 214  0 0 23 6  0 0 16 0
+ 3 214 0 214  0 0 23 3  0 0 16 0
+ 3 214 0 214  0 0 23 4  0 0 16 0
+ 3 176 0 176  0 0 22 9  0 0 55 0
+ 3 176 0 176  0 0 22 8  0 0 55 0
+ 3 214 0 214  0 0 23 11  0 0 16 0
+EOF

@@ -1,0 +1,71 @@
+// Ilv Version: 3.1
+// File generated: Thu Jan 14 17:33:22 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "listspec"
+PathName "C:\\users\\noiret\\dev\\views.work\\studio\\data\\ivstudio\\inspectors\\listspec.ilv"
+Palettes 2
+"IlvStText" 1 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+0 "gray" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 15
+1 { 0 0 IlvFrame 188 165 100 95 F8 0 25 16 4 "&alignment"   } 0
+0
+1 { 1 0 IlvFrame 7 155 288 108 F8 0 25 16 4 "&Aspect"   } 0
+0
+1 { 2 1 IlvToggle 19 177 167 16 F1 2 1 2 0 0 0 Y "&Visible_label" } 32 "ListLabelItemVisible"
+0
+1 { 3 1 IlvToggle 19 198 168 16 F1 2 1 2 0 0 0 Y "&Image" } 32 "ListGaphicItemVisible"
+0
+2 { 4 1 IlvMessageLabel 4 3 139 22 F8 0 25 16 4 "&selection"   } 0
+0
+2 { 5 1 IlvScrolledComboBox 179 4 121 20 F807 2 "" 0 5 0 } 32 "listSelectionMode"
+0
+2 { 6 1 IlvToggle 5 50 186 16 F1 2 1 1 0 0 0 Y "&editable" } 96 "ListEditable" "Toggle"
+16 1 5
+2 { 7 1 IlvToggle 5 70 186 16 F1 2 1 1 0 0 0 Y "&ItemTooltips" } 96 "ItemTooltips" "Toggle"
+16 1 5
+2 { 8 1 IlvToggle 5 91 186 16 F1 2 1 1 0 0 0 Y "&DragAndDrop" } 96 "ListDragAndDrop" "Toggle"
+16 1 5
+2 { 9 1 IlvToggle 5 29 186 16 F1 2 1 1 0 0 0 Y "&FullSelection" } 96 "ListFullSelection" "Toggle"
+16 1 5
+2 { 10 0 IlvSelector -1 9
+1 IlvToggle 195 211 18 16 F1 2 1 2 1 0 0 B "noname" 
+1 IlvToggle 206 187 18 16 F1 2 1 2 1 0 0 B "noname" 
+1 IlvToggle 231 178 18 16 F1 2 1 2 1 0 0 B "noname" 
+1 IlvToggle 256 187 18 16 F1 2 1 2 1 0 0 B "noname" 
+1 IlvToggle 267 211 18 16 F1 2 1 2 1 0 0 B "noname" 
+1 IlvToggle 256 233 18 16 F1 2 1 2 1 0 0 B "noname" 
+1 IlvToggle 231 242 18 16 F1 2 1 2 1 0 0 B "noname" 
+1 IlvToggle 206 233 18 16 F1 2 1 2 1 0 0 B "noname" 
+1 IlvToggle 231 211 18 16 F1 2 1 2 1 0 0 B "noname" 
+ } 96 "GenAlignmentListItems" "Selector"
+0
+2 { 11 1 IlvToggle 5 113 186 16 F536870913 2 1 1 0 0 0 Y "&FixedItemHeight" } 96 "FixedItemHeight" "Toggle"
+2
+2 { 12 1 IlvSpinBox 197 110 99 22 F536870912 2 0 200 64 2 1
+1 IlvNumberField 197 110 84 22 F6 2 1 -1 0 "0" . , 6 0 -2147483648 2147483647  f 1 0 1 0 } 32 "ItemHeight"
+2
+2 { 13 1 IlvToggle 5 139 186 16 F536870913 2 1 1 0 0 0 Y "&AutomaticLabelAlignment" } 96 "AutoLabelAlignCheck" "Toggle"
+2
+2 { 14 1 IlvSpinBox 197 136 99 22 F536870912 2 0 200 64 2 1
+1 IlvNumberField 197 136 84 22 F6 2 1 -1 0 "0" . , 6 0 -2147483648 2147483647  f 1 0 1 0 } 32 "LabelOffset"
+2
+Size 301 267
+GeometryHandlers
+1 100 0 301 0 301 0
+14 3 0 0 179  121 0 121 5  0 0 1 0
+ 3 0 0 5  186 0 186 9  0 0 110 0
+ 3 0 0 5  186 0 186 6  0 0 110 0
+ 3 0 0 5  186 0 186 7  0 0 110 0
+ 3 0 0 5  186 0 186 8  0 0 110 0
+ 3 0 0 5  186 0 186 11  0 0 110 0
+ 3 0 0 5  186 0 186 13  0 0 110 0
+ 3 197 0 197  0 0 99 12  0 0 5 0
+ 3 197 0 197  0 0 99 14  0 0 5 0
+ 3 0 0 7  288 0 288 1  0 0 6 0
+ 3 0 0 19  167 0 167 2  0 0 115 0
+ 3 0 0 19  168 0 168 3  0 0 114 0
+ 3 188 0 188  0 0 100 0  0 0 13 0
+ 3 195 0 195  0 0 90 10  0 0 16 0
+1 100 0 267 0 267 0
+0
+EOF

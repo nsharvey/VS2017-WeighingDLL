@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvawxplook -->
+<module name="ilvawxplook" version="6.2">
+<class name="IlvViewFrame/winxp" rootClass="IlvObjectLFHandler"/>
+<class name="IlvDockableContainer/winxp" rootClass="IlvObjectLFHandler"/>
+<class name="IlvScrolledGadget/winxp" rootClass="IlvObjectLFHandler"/>
+<class name="IlvScrolledComboBox/winxp" rootClass="IlvObjectLFHandler"/>
+<class name="IlvSpinBox/winxp" rootClass="IlvObjectLFHandler"/>
+<class name="IlvOptionMenu/winxp" rootClass="IlvObjectLFHandler"/>
+<class name="IlvTreeGadget/winxp" rootClass="IlvObjectLFHandler"/>
+<class name="IlvHierarchicalSheet/winxp" rootClass="IlvObjectLFHandler"/>
+<class name="IlvNotebook/winxp" rootClass="IlvObjectLFHandler"/>
+</module>

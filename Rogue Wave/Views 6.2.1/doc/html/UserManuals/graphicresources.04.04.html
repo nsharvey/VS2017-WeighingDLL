@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Named Resources</title><link rel="Prev" href="graphicresources.04.03.html" title="Previous" /><link rel="Next" href="graphicresources.04.05.html" title="Next" /><link rel="StyleSheet" href="css/graphicresources.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/graphicresources_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/UserManuals/graphicresources.04.04.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pDYNSH2pB_002fh8mVt0fkrLEEA" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/UserManuals/graphicresources.04.04.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/foundusrfrontcover.html#wwconnect_header">Foundation</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/graphicresources.04.01.html#wwconnect_header">Graphic Resources</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/graphicresources.04.02.html#wwconnect_header">IlvResource: The Resource Object Base Class</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Named Resources</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww828366" class="Heading2"><span></span>Named Resources</div><div id="ww828371" class="Body">You can assign specific names to resources by using the <span class="ClassName"><a href="../RefMan/refcppfoundation/classIlvResource.html">IlvResource</a></span> member functions:</div><div id="ww828374" class="NormalCode">void setName(const char* name);</div><div id="ww828380" class="LastNormalCode">const char* getName() const;</div><div class="ww_skin_page_overflow"><table class="NoteTable" cellspacing="0" summary=""><tr><td style="padding-bottom: 2pt; padding-left: 0pt; padding-right: 0pt; padding-top: 2pt; vertical-align: top"><div id="ww828379" class="Note"><span class="flag">Note:&nbsp;</span><span class="ClassName"><a href="../RefMan/refcppfoundation/classIlvFont.html">IlvFont</a></span> and <span class="ClassName"><a href="../RefMan/refcppfoundation/classIlvColor.html">IlvColor</a></span> make private use of their name field, so these classes restrict the use of <span class="code">IlvResource::setName</span>. <span class="ClassName"><a href="../RefMan/refcppfoundation/classIlvFont.html">IlvFont</a></span> disables the use of <span class="ClassName"><a href="../RefMan/refcppfoundation/classIlvResource.html">IlvResource</a></span><span class="code">::setName</span>, and <span class="ClassName"><a href="../RefMan/refcppfoundation/classIlvColor.html">IlvColor</a></span> only allows the renaming of mutable colors. Non-mutable colors either have a predefined name or get a default name based on their RGB values.</div></td></tr></table></div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

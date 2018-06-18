@@ -1,0 +1,20 @@
+var pairs =
+{
+"sql":{"sources":1,"data":1,"table":1}
+,"sources":{"chapter":1,"including":1,"find":1}
+,"chapter":{"provides":1}
+,"provides":{"information":1}
+,"information":{"sql":1,"following":1}
+,"data":{"sources":1,"source":1}
+,"including":{"define":1}
+,"define":{"parameters":1}
+,"parameters":{"sql":1,"working":1}
+,"table":{"sql":1}
+,"find":{"information":1}
+,"following":{"topics":1}
+,"topics":{"query":1}
+,"query":{"mode":1}
+,"mode":{"parameters":1}
+,"working":{"sql":1}
+}
+;Search.control.loadWordPairs(pairs);

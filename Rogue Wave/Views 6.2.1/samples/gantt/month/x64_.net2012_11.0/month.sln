@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("95996820-1D69-11E8-91B2-87BE772C9500") = "month", "month.vcxproj", "9599119A-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

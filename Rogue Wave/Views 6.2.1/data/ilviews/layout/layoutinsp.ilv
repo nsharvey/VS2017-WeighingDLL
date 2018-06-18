@@ -1,0 +1,27 @@
+// Ilv Version: 3.1
+// File generated: Thu Jan 27 10:36:56 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "layoutinsp"
+PathName "/nfs/views-work/work.lenorman/data/ilviews/layout/layoutinsp.ilv"
+Palettes 1
+"IlvStText" 0 "lightgrey" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 4
+1 { 0 0 IlvToggle 15 11 145 16 F1 2 1 2 0 0 0 Y "&useDefaultValues" } 32 "UseDefaultToggle"
+0
+1 { 1 0 IlvToggle 15 36 145 16 F1 2 1 2 0 0 0 Y "&preserveFixedNodes" } 32 "PresFixedNodesToggle"
+0
+1 { 2 0 IlvToggle 15 61 145 16 F1 2 1 2 0 0 0 Y "&animate" } 32 "AnimateToggle"
+0
+1 { 3 0 IlvToggle 15 86 145 16 F1 2 1 2 0 0 0 Y "&useViewCoordinates" } 32 "UseViewCoordinatesToggle"
+0
+Size 175 148
+Background "gray"
+GeometryHandlers
+1 100 0 175 0 175 0
+4 3 0 0 15  145 0 145 0  0 0 15 0
+ 3 0 0 15  145 0 145 1  0 0 15 0
+ 3 0 0 15  145 0 145 2  0 0 15 0
+ 3 0 0 15  145 0 145 3  0 0 15 0
+1 100 0 148 0 148 0
+0
+EOF

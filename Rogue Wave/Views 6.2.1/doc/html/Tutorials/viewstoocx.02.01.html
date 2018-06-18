@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Creating an ActiveX Control from Existing Rogue Wave&nbsp;Views Code</title><link rel="Prev" href="foundtutfrontcover.html" title="Previous" /><link rel="Next" href="viewstoocx.02.02.html" title="Next" /><link rel="StyleSheet" href="css/viewstoocx.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/viewstoocx_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/Tutorials/viewstoocx.02.01.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pPyYJ2OMgSDSK0UlCAJh_002fug" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/Tutorials/viewstoocx.02.01.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../Tutorials/foundtutfrontcover.html#wwconnect_header">Views Foundation</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Creating an ActiveX Control from Existing Rogue Wave&nbsp;Views Code</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww1008998" class="Chaptertitle">Creating an ActiveX Control from Existing Rogue Wave&nbsp;Views Code</div><div id="ww1007100" class="Body">You can create an ActiveX control using Rogue Wave®&nbsp;Views either with the Microsoft Foundation Classes (MFC) library or with the Active Template Library (ATL).</div><div id="ww1004208" class="Body">The following two tutorials demonstrate how to create an ActiveX control from an existing Rogue Wave&nbsp;Views program. </div><div id="ww998371" class="Itemize"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span><img src="bullet.gif" alt="*" border="0" width="8" height="8" /></span></span><a href="../Tutorials/viewstoocx.02.02.html#ww1008573" title="Creating an ActiveX Control with the ATL Library">Creating an ActiveX Control with the ATL Library</a></div><div id="ww998372" class="Itemize"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span><img src="bullet.gif" alt="*" border="0" width="8" height="8" /></span></span><a href="../Tutorials/viewstoocx.02.07.html#ww1001957" title="Creating an ActiveX Control with the MFC Library">Creating an ActiveX Control with the MFC Library</a></div><div id="ww1004220" class="Body">You will build the ActiveX control from the sample Rogue Wave&nbsp;Views program provided in the following file using the ATL COM AppWizard or the MFC ActiveX ControlWizard, depending on the library you choose:  <span class="code">manager.cpp</span></div><div id="ww1004193" class="Body">This program displays a map in a manager and allows you to zoom in or out and scroll the map. </div><div id="ww1004194" class="Body">You can also create an ActiveX from scratch. The procedure is the same as the one presented in this tutorial. </div><div id="ww1008571" class="Body">A knowledge of Rogue Wave&nbsp;Views, C++, Visual C++, COM, and the ATL or the MFC library is a prerequisite to work through these tutorials.</div><div class="ww_skin_page_overflow"><table class="NoteTable" cellspacing="0" summary=""><tr><td style="padding-bottom: 2pt; padding-left: 0pt; padding-right: 0pt; padding-top: 2pt; vertical-align: top"><div id="ww1014002" class="Note"><span class="flag">Note:&nbsp;</span>The registration of ActiveX controls must be performed with administrative rights. If you are building the control in Visual Studio, you must make sure it was run as Administrator.</div><div id="ww1014025" class="NoteContinued"><span class="flag"></span>Alternatively, you can manually register the control by creating an Administrator command prompt and using the command line <span class="code">regsvr32 /s /c "&lt;PATH_TO&gt;\&lt;CONTROL&gt;.dll"</span>.</div></td></tr></table></div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

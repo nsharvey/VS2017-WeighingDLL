@@ -1,0 +1,14 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{CFD1F154-1D6B-11E8-BAD0-7863772C9500}") = "ilvwin", "ilvwin.vcxproj", "{CFD1ADD4-1D6B-11E8-BAD0-7863772C9500}"
+EndProject
+Project("{CFD88960-1D6B-11E8-BAD0-7863772C9500}") = "winilv", "winilv.vcxproj", "{CFD1ADD4-1D6B-11E8-BAD0-7863772C9500}"
+EndProject
+Project("{CFDF0ABA-1D6B-11E8-BAD0-7863772C9500}") = "metafile", "metafile.vcxproj", "{CFD1ADD4-1D6B-11E8-BAD0-7863772C9500}"
+EndProject
+Project("{CFE5B702-1D6B-11E8-BAD0-7863772C9500}") = "ilvmdi", "ilvmdi.vcxproj", "{CFD1ADD4-1D6B-11E8-BAD0-7863772C9500}"
+EndProject
+Project("{CFEC7C5E-1D6B-11E8-BAD0-7863772C9500}") = "gdiplus", "gdiplus.vcxproj", "{CFD1ADD4-1D6B-11E8-BAD0-7863772C9500}"
+EndProject
+Global
+EndGlobal

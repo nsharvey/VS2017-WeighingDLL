@@ -1,0 +1,21 @@
+// IlvMessageDatabase 6.2 2017-04-12 01:33:25
+// Language: fr_FR
+// Encoding: ISO-8859-1
+"&AppStuFormView" "Vue forme"
+"&AppStuGrapherView" "Vue grapheur"
+"&AppStuHierView" "Vue hiérarchique"
+"&AppStuListView" "Vue liste"
+"&AppStuManagerView" "Vue manager"
+"&AppStuMatrixView" "Vue matrice"
+"&AppStuProjectView" "Vue projet"
+"&AppStuSheetView" "Vue tableur"
+"&AppStuTextView" "Vue texte"
+"&AppStuTreeView" "Vue arbre"
+"&Appframe" "Application Framework"
+"&Document" "Document"
+"&File" "Fichier"
+"&Folder1" "Premier dossier"
+"&Folder2" "Deuxième dossier"
+"&Project" "Projet"
+"&Title" "Titre"
+"&ViewOnThe" "Vue sur le"

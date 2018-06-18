@@ -1,0 +1,145 @@
+// Ilv Version: 4.0
+// File generated: Thu Feb 17 20:01:27 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "menuitms"
+PathName "menuitms.ilv"
+Palettes 2
+1 "defaultBg" "defaultFg" "button" "%helvetica-12-" 0 solid solid 0 0 0
+"IlvStText" 0 "defaultBg" "defaultFg" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 29
+1 { 0 0 IlvTreeGadget 19 24 139 229 F32 2 A A S 0 0 0 0 20 0 0 1 0 1 0 V0 2
+{ IlvTreeGadgetItem 1 2 4 "root" 0
+ }  } 96 "MenuItems" "Gadget"
+6144 "InsertMenuItem" "GadgetItemEditable"
+1 { 1 P 1
+[ IlvToolTip __ilvToolTip 2 "&clean" 4 4 ]
+1 IlvButton 136 259 22 23 F29 2 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/icons/clean.png"  }   } 96 "CleanMenuItems" "Gadget"
+0
+1 { 2 P 1
+[ IlvToolTip __ilvToolTip 2 "&remove" 4 4 ]
+1 IlvButton 117 259 22 23 F29 2 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/icons/removitm.png"  }   } 96 "RemoveMenuItem" "Gadget"
+0
+1 { 3 P 1
+[ IlvToolTip __ilvToolTip 2 "&add" 4 4 ]
+1 IlvButton 44 259 26 23 F29 2 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/icons/add.png"  }   } 96 "AddMenuItem" "Gadget"
+0
+1 { 4 P 1
+[ IlvToolTip __ilvToolTip 2 "&insert" 4 4 ]
+1 IlvButton 23 259 23 23 F29 2 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/icons/insert.png"  }   } 96 "InsertMenuItem" "Gadget"
+0
+1 { 5 P 1
+[ IlvToolTip __ilvToolTip 2 "&PopupMenu" 4 4 ]
+1 IlvButton 66 259 26 23 F29 2 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/gadgets/popmenu.png"  }   } 96 "InsertPopupMenu" "Gadget"
+0
+1 { 6 P 1
+[ IlvToolTip __ilvToolTip 2 "&separator" 4 4 ]
+1 IlvButton 92 259 26 23 F29 2 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/gadgets/separatr.png"  }   } 96 "MenuInsertSeparator" "Gadget"
+0
+2 { 7 0 IlvToggle 187 31 232 16 F1 2 1 2 0 0 0 Y "&setTearOff" } 96 "PopupMenuTearOff" "Gadget"
+0
+2 { 8 1 IlvFrame 175 0 264 288 F268435468 0 { IlvMessageItem 262169 4 16 4 "&SelectedPopupMenu"  }   } 96 "SelectedPopupMenu" "Gadget"
+0
+2 { 9 0 IlvToggle 187 56 244 16 F536870913 2 1 2 0 0 0 Y "&AutomaticLabelAlignment" } 96 "PopupLabelOffsetCheck" "Toggle"
+2
+2 { 10 0 IlvSpinBox 332 81 99 22 F536870912 2 0 200 64 2 1
+0 IlvNumberField 332 81 76 22 F6 2 1 -1 0 "0" . , 6 0 -2147483648 2147483647  f 1 0 1 0 } 96 "PopupLabelOffset" "Gadget"
+2
+2 { 11 0 IlvMessageLabel 220 81 114 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&spacing"  }   } 96 "PopupLabelOffsetLabel" "Gadget"
+0
+3 { 12 0 IlvToggle 187 150 211 16 F1 2 1 2 0 0 0 Y "&flushright" } 96 "MenuFlushRight" "Gadget"
+0
+3 { 13 1 IlvFrame 175 0 264 288 F268435468 0 { IlvMessageItem 262169 4 16 4 "&SelectedMenuBar"  }   } 96 "SelectedMenuBar" "Gadget"
+0
+3 { 14 0 IlvMessageLabel 187 24 127 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&direction"  }   } 96 "MenuDirectionLabel" "Gadget"
+0
+3 { 15 0 IlvScrolledComboBox 315 24 119 20 F807 2 "SCCombo" 2
+{ IlvGadgetItem 1 2 4 "&horizontal"  } 
+{ IlvGadgetItem 1 2 4 "&vertical"  }  4 0 } 96 "MenuDirection" "Gadget"
+0
+3 { 16 0 IlvToggle 187 54 149 16 F1 2 1 2 0 0 0 Y "&AutomaticResize" } 96 "MenuConstraint" "Gadget"
+0
+3 { 17 0 IlvToggle 187 78 133 16 F1 2 1 2 0 0 0 Y "&spacing" } 96 "MenuSpacingCheck" "Gadget"
+0
+3 { 18 0 IlvSpinBox 321 76 113 22 2 0 200 64 2 1
+0 IlvNumberField 321 76 90 22 F6 2 1 -1 0 "0" . , 6 0 -2147483648 2147483647  f 1 0 1 0 } 96 "MenuSpacing" "Gadget"
+0
+3 { 19 0 IlvToggle 187 103 163 16 F1 2 1 2 0 0 0 Y "&itemsWidth" } 96 "MenuItemsWidthCheck" "Gadget"
+0
+3 { 20 0 IlvSpinBox 321 99 113 22 2 0 200 64 2 1
+0 IlvNumberField 321 99 90 22 F6 2 1 -1 0 "0" . , 6 0 -2147483648 2147483647  f 1 0 1 0 } 96 "MenuItemsWidth" "Gadget"
+0
+3 { 21 0 IlvToggle 187 126 163 16 F1 2 1 2 0 0 0 Y "&itemsHeight" } 96 "MenuHeightCheck" "Gadget"
+0
+3 { 22 0 IlvSpinBox 321 122 113 22 2 0 200 64 2 1
+0 IlvNumberField 321 122 90 22 F6 2 1 -1 0 "0" . , 6 0 -2147483648 2147483647  f 1 0 1 0 } 96 "MenuItemsHeight" "Gadget"
+0
+4 { 23 1 IlvFrame 175 0 264 288 F268435468 0 { IlvMessageItem 262169 4 16 4 "&SelectedSeparator"  }   } 96 "SelectedSeparator" "Gadget"
+0
+5 { 24 1 IlvFrame 175 0 264 288 F268435468 0 { IlvMessageItem 262169 4 16 4 "&SelectedPopupItem"  }   } 96 "SelectedPopupItemFrame" "Gadget"
+0
+5 { 25 P 1
+[ IlvPanelObjectReference IlvPanelObjectReference  "913209478.0" ]
+0 IlvGadgetContainerRectangle 183 24 249 260 "ivstudio/gadgets/popitm.ilv" } 32 "PopupGadgetItemEditor"
+0
+6 { 26 1 IlvFrame 6 0 159 288 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Menu_gad_itms"  }   } 96 "MenuItemsFrame" "Gadget"
+0
+6 { 27 1 IlvFrame 175 0 264 288 F268435468 0 { IlvMessageItem 262169 4 16 4 "&SelectedMenuItem"  }   } 96 "SelectedMenuItem" "Gadget"
+0
+6 { 28 P 1
+[ IlvPanelObjectReference IlvPanelObjectReference  "913209478.1" ]
+0 IlvGadgetContainerRectangle 183 24 249 260 "ivstudio/gadgets/menuitm.ilv" } 32 "MenuGadgetItemEditor"
+0
+Size 443 330
+GeometryHandlers
+2 100 171 171 0 171 0
+ 0 237 272 171 272 171
+4 3 0 0 19  139 0 139 0  0 0 13 0
+ 3 0 0 6  159 0 159 26  0 0 6 0
+ 3 136 0 136  0 0 22 1  0 0 13 0
+ 3 117 0 117  0 0 22 2  0 0 32 0
+21 3 0 0 4  264 0 264 27  0 0 4 1
+ 3 0 0 4  264 0 264 8  0 0 4 1
+ 3 0 0 16  232 0 232 7  0 0 24 1
+ 3 0 0 4  264 0 264 13  0 0 4 1
+ 3 0 0 16  211 0 211 12  0 0 45 1
+ 3 0 0 16  149 0 149 16  0 0 107 1
+ 3 0 0 16  133 0 133 17  0 0 123 1
+ 3 150 0 150  0 0 113 18  0 0 9 1
+ 3 150 0 150  0 0 113 20  0 0 9 1
+ 3 150 0 150  0 0 113 22  0 0 9 1
+ 3 0 0 16  0 0 163 19  93 0 93 1
+ 3 0 0 16  0 0 163 21  93 0 93 1
+ 3 0 0 16  0 0 127 14  129 0 129 1
+ 3 0 0 144  119 0 119 15  0 0 9 1
+ 3 0 0 16  244 0 244 9  0 0 12 1
+ 3 161 0 161  0 0 99 10  0 0 12 1
+ 3 0 0 4  264 0 264 23  0 0 4 1
+ 3 0 0 4  264 0 264 24  0 0 4 1
+ 3 0 0 12  249 0 249 25  0 0 11 1
+ 3 0 0 12  249 0 249 28  0 0 11 1
+ 3 0 0 49  114 0 114 11  0 0 109 1
+1 100 0 293 0 293 0
+15 3 0 0 0  288 0 288 26  0 0 5 0
+ 3 0 0 24  229 0 229 0  0 0 40 0
+ 3 0 0 0  288 0 288 27  0 0 5 0
+ 3 0 0 0  288 0 288 8  0 0 5 0
+ 3 0 0 0  288 0 288 13  0 0 5 0
+ 3 0 0 0  288 0 288 23  0 0 5 0
+ 3 0 0 0  288 0 288 24  0 0 5 0
+ 3 0 0 24  260 0 260 25  0 0 9 0
+ 3 0 0 24  260 0 260 28  0 0 9 0
+ 3 259 0 259  0 0 23 4  0 0 11 0
+ 3 259 0 259  0 0 23 3  0 0 11 0
+ 3 259 0 259  0 0 23 5  0 0 11 0
+ 3 259 0 259  0 0 23 6  0 0 11 0
+ 3 259 0 259  0 0 23 2  0 0 11 0
+ 3 259 0 259  0 0 23 1  0 0 11 0
+Layers 7
+"" 0 0 
+"" 0 0 
+"" 0 0 
+"" 0 0 
+"" 0 0 
+"" 0 0 
+"" 0 0 
+EOF

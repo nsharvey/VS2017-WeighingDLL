@@ -1,0 +1,266 @@
+// Rogue Wave Views Prototype Library File
+// Rogue Wave Views Version: 5.0
+// Date: Thu Jan 03 23:29:54 2002
+Library: operations
+SingleFile: true
+add
+substract
+multiply
+divide
+round
+trigger
+counter
+IlvProtoLibraryBlocks
+IlvProtoLibraryBlock add.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype add
+    accessors {
+        IlvValueAccessor Float operand
+        IlvFormatAccessor Float operand "\"Add %g\"" 100 IlvMessageLabel.label
+        IlvConditionAccessor Float operand == 0 operand 1 "\"\""
+        IlvValueAccessor (R) Float input
+        IlvTriggerAccessor (R) Float input output output
+        IlvOperatorAccessor (R) Float output + {
+            input
+            operand
+        }
+        IlvOutputAccessor (R) Float output
+    }
+    values {
+        Float operand = 10
+    }
+    nodes {
+        IlvGraphicNode "" "" 0 0
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock add.ilv
+// Ilv Version: 5.0
+// File generated: Thu Jan 03 23:29:54 2002
+// Creator class: IlvGraphOutput
+Palettes 1
+0 F "cadetblue" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 1
+1 2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 65 39 96 22 F12 0 { IlvMessageItem 262145 4 16 4 "Add 10"  }   } 0
+Layers 2
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock substract.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype substract
+    accessors {
+        IlvValueAccessor Float operand
+        IlvFormatAccessor Float operand "\"Substract %g\"" 100 IlvMessageLabel.label
+        IlvConditionAccessor Float operand == 0 operand 1 "\"\""
+        IlvValueAccessor (R) Float input
+        IlvTriggerAccessor (R) Float input output output
+        IlvOperatorAccessor (R) Float output - {
+            input
+            operand
+        }
+        IlvOutputAccessor (R) Float output
+    }
+    values {
+        Float operand = 10
+    }
+    nodes {
+        IlvGraphicNode "" "" 0 0
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock substract.ilv
+// Ilv Version: 5.0
+// File generated: Thu Jan 03 23:29:54 2002
+// Creator class: IlvGraphOutput
+Palettes 1
+0 F "cadetblue" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 1
+1 2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 65 39 96 22 F12 0 { IlvMessageItem 262145 4 16 4 "Subtract 10"  }   } 0
+Layers 2
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock multiply.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype multiply
+    accessors {
+        IlvValueAccessor Float operand
+        IlvFormatAccessor Float operand "\"Multiply by %g\"" 100 IlvMessageLabel.label
+        IlvConditionAccessor Float operand == 0 operand 1 "\"\""
+        IlvValueAccessor (R) Float input
+        IlvTriggerAccessor (R) Float input output output
+        IlvOperatorAccessor (R) Float output * {
+            input
+            operand
+        }
+        IlvOutputAccessor (R) Float output
+    }
+    values {
+        Float operand = 10
+    }
+    nodes {
+        IlvGraphicNode "" "" 0 0
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock multiply.ilv
+// Ilv Version: 5.0
+// File generated: Thu Jan 03 23:29:54 2002
+// Creator class: IlvGraphOutput
+Palettes 1
+0 F "cadetblue" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 1
+1 2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 65 39 96 22 F12 0 { IlvMessageItem 262145 4 16 4 "Multiply by 10"  }   } 0
+Layers 2
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock divide.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype divide
+    accessors {
+        IlvValueAccessor Float operand
+        IlvFormatAccessor Float operand "\"Divide by %g\"" 100 IlvMessageLabel.label
+        IlvConditionAccessor Float operand == 0 operand 1 "\"\""
+        IlvValueAccessor (R) Float input
+        IlvTriggerAccessor (R) Float input output output
+        IlvOperatorAccessor (R) Float output / {
+            input
+            operand
+        }
+        IlvOutputAccessor (R) Float output
+    }
+    values {
+        Float operand = 10
+    }
+    nodes {
+        IlvGraphicNode "" "" 0 0
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock divide.ilv
+// Ilv Version: 5.0
+// File generated: Thu Jan 03 23:29:54 2002
+// Creator class: IlvGraphOutput
+Palettes 1
+0 F "cadetblue" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 1
+1 2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 65 39 96 22 F12 0 { IlvMessageItem 262145 4 16 4 "Divide by 10"  }   } 0
+Layers 2
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock round.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype round
+    accessors {
+        IlvOperatorAccessor (RP) Int result + {
+            input
+            0
+        }
+        IlvValueAccessor (R) Float input
+        IlvTriggerAccessor (R) Float input output result
+        IlvOutputAccessor (R) Int output
+    }
+    nodes {
+        IlvGraphicNode "" "" 0 0
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock round.ilv
+// Ilv Version: 5.0
+// File generated: Thu Jan 03 23:29:54 2002
+// Creator class: IlvGraphOutput
+Palettes 1
+0 F "cadetblue" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 1
+1 2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 65 39 96 22 F12 0 { IlvMessageItem 262145 4 16 4 "Round"  }   } 0
+Layers 2
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock trigger.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype trigger
+    accessors {
+        IlvValueAccessor (R) Float value
+        IlvFormatAccessor (R) Float value "\"Trigger -> %g\"" 100 IlvMessageLabel.label
+        IlvValueAccessor (R) Float input
+        IlvTriggerAccessor (R) Float input output value
+        IlvOutputAccessor (R) Float output
+    }
+    nodes {
+        IlvGraphicNode "" "" 0 0
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock trigger.ilv
+// Ilv Version: 5.0
+// File generated: Thu Jan 03 23:29:54 2002
+// Creator class: IlvGraphOutput
+Palettes 1
+0 F "cadetblue" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 1
+1 2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 65 39 96 22 F12 0 { IlvMessageItem 262145 4 16 4 "Trigger -> 0"  }   } 0
+Layers 2
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock counter.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype counter
+    accessors {
+        IlvValueAccessor (R) Float value
+        IlvFormatAccessor (R) Float value "\"Counter = %g\"" 100 IlvMessageLabel.label
+        IlvValueAccessor (R) Float input
+        IlvCounterAccessor (R) Float input value 1000
+        IlvTriggerAccessor (R) Float input output value
+        IlvOutputAccessor (R) Float output
+    }
+    nodes {
+        IlvGraphicNode IlvMessageLabel "" 0 0
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock counter.ilv
+// Ilv Version: 5.0
+// File generated: Thu Jan 03 23:29:54 2002
+// Creator class: IlvGraphOutput
+Palettes 1
+0 F "cadetblue" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 1
+1 2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 65 39 96 22 F12 0 { IlvMessageItem 262145 4 16 4 "Counter = 1"  }   } 0
+Layers 2
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryEnd

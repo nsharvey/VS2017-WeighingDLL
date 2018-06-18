@@ -1,0 +1,29 @@
+/* XPM */
+static char *alright_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 7 1",
+"O c Black",
+"X c #FFFFFF",
+"  c None",
+"@ c #FEFCFA",
+". c #000288",
+"o c #868986",
+"+ c #FEFEFE",
+/* pixels */
+"                ",
+"              . ",
+"   XXXXXXXXXXX. ",
+"   XoooooooooO. ",
+"   XOOOOOOOOOO. ",
+"              . ",
+"              . ",
+"         XXXX+. ",
+"         XoooO. ",
+"         XOOOO. ",
+"              . ",
+"              . ",
+"      XXXXXXX@. ",
+"      XooooooO. ",
+"      XOOOOOOO. ",
+"              . "
+};

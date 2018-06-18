@@ -1,0 +1,80 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Foundations - Samples: i18n</title>
+	</head>
+    <body>
+		<a name="changelang"><h1>Sample: <code>changelang</code></h1><h1 class="subtitle">Changing the UI Language with Rogue Wave Views</h1></a>
+		<p>This sample demonstrates how to use localized message 
+	databases and change the language of the UI.</p>
+		<img src="data/changelang.png"/>
+		<p>
+	This application needs to be started either in the French or
+	the Italian locale. Since this setting is system dependent, 
+	please refer to the User's Manual Internationalization chapter.
+	(For example on an HP-UX system, setting your LANG environment 
+	variable to fr_FR.iso88591 or it_IT.iso88591; on a Solaris
+	system, setting your LANG environment variable to <code>fr</code> or <code>it</code>;
+	on a Windows system, setting your Control Panel Regional 
+	Settings to French or Italian). <br/>
+	Clicking on any of the language button updates automatically 
+	the display using localized labels, due to the 
+	<code>IlvDisplay::setCurrentLanguage</code>. <br/>
+	You may notice that only the Italian translation of the Quit 
+	button is not found. This is because the label message is coming 
+	from the <code>views.dbm</code> file which is not provided in Italian.
+	</p>
+      <p>For demonstration purposes, this sample code uses portable GUI 
+      elements from the Gadgets package of the Rogue Wave Views suite. 
+      Feel free to use these elements in your application if you have 
+      a license for Rogue Wave Views or for Rogue Wave Views Controls. 
+      This information applies to the classes located in the library <code>ilvgadgt</code>, 
+      listed in the README file that you can find in the installation directory.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/changelang.cpp"><code>src/changelang.cpp</code></a></li>
+		</ul>
+		<a name="controlinput"><h1>Sample: <code>controlinput</code></h1><h1 class="subtitle">Controlling Localized Input with Rogue Wave Views</h1></a>
+		<p>This sample demonstrates how to control localized input in input
+	fields.</p>
+		<img src="data/controlinput.png"/>
+		<p>
+	Start this application in any locale. Be sure to have started
+	a valid input method for this locale. Since this setting is 
+	system dependent, please refer to the User's Manual 
+	Internationalization chapter and your system User's guide.<br/>
+	Type localized input in the text fields. You should not be 
+	able to do so in the second (the red) text field. <br/>
+	(For example on an HP-UX system, set your LANG environment 
+	variable to fr_FR.iso88591, and try typing e-acute using the 
+	multi-key or the dead-key method; on a Windows system, try using 
+	Japanese). 
+	</p>
+      <p>For demonstration purposes, this sample code uses portable GUI 
+      elements from the Gadgets package of the Rogue Wave Views suite. 
+      Feel free to use these elements in your application if you have 
+      a license for Rogue Wave Views or for Rogue Wave Views Controls. 
+      This information applies to the classes located in the library <code>ilvgadgt</code>, 
+      listed in the README file that you can find in the installation directory.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGraphic</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/controlinput.cpp"><code>src/controlinput.cpp</code></a></li>
+		</ul>

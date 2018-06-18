@@ -1,0 +1,167 @@
+// Ilv Version: 4.0
+// File generated: Thu Jun 22 17:54:17 2000
+// Creator class: IlvGadgetManagerOutput
+Palettes 2
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0
+1 "gray" "black" "button" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0
+IlvObjects 32
+0 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 111 278 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&DeltaStep"  }   } 32 "DeltaStepsMsg"
+0
+0 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 4 134 120 22 2 0 200 64 2 1
+0 IlvNumberField 4 134 105 22 F6 2 2 -1 0 "1234543.62" . , 2 16 1.0 3.40282e+038  f 1 1 1 1.23454e+006 } 32 "DeltaSteps"
+0
+0 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 161 277 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&SubStepsBetween"  }   } 32 "DeltaSubStepsMsg"
+0
+0 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 6 86 137 135 F131 2 A A S 0 0 0 0 0 4 0 0 V0 2 3
+{ IlvGadgetItem 1 2 4 "item1"  } 
+{ IlvGadgetItem 1 2 4 "item2"  } 
+{ IlvGadgetItem 1 2 4 "item3"  }  } 32 "StepsLabels"
+0
+0 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 151 93 131 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&SelectedLabel"  }   } 32 "SelStepLabelMsg"
+0
+0 { 5 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&MoveDown" 4 4 ]
+0 IlvButton 129 224 18 23 F29 1 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/icons/down.png"  }   } 32 "DownStepLabel"
+0
+0 { 6 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&RemoveLabel" 4 4 ]
+1 IlvButton 76 224 22 23 F29 1 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/icons/removitm.png"  }   } 32 "RemoveStepLabel"
+0
+0 { 7 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&AddLabel" 4 4 ]
+1 IlvButton 50 224 26 23 F29 1 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/icons/add.png"  }   } 32 "AddStepLabel"
+0
+0 { 8 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&InsertLabel" 4 4 ]
+1 IlvButton 29 224 23 23 F29 1 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/icons/insert.png"  }   } 32 "InsertStepLabel"
+0
+0 { 9 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&clean" 4 4 ]
+1 IlvButton 94 224 22 23 F29 1 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/icons/clean.png"  }   } 32 "CleanStepLabels"
+0
+0 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 151 118 131 22 F6 2 1 -1 0 "Text Field" } 32 "SelStepLabel"
+0
+0 { 11 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&MoveUp" 4 4 ]
+0 IlvButton 113 224 18 23 F29 1 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/icons/up.png"  }   } 32 "UpStepLabel"
+0
+1 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 3 278 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&TicksDefinition"  }   } 0
+0
+1 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 4 27 278 20 F807 2 "" 5
+{ IlvGadgetItem 1 2 4 "&Automatic"  } 
+{ IlvGadgetItem 1 2 4 "&StepsNumber"  } 
+{ IlvGadgetItem 1 2 4 "&DeltaBetweenTicks"  } 
+{ IlvGadgetItem 1 2 4 "&labels"  } 
+{ IlvGadgetItem 1 2 4 "&OtherMode"  }  4 0 } 32 "ScaleDispMode"
+0
+1 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 7 78 152 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&LabelFormat"  }   } 32 "LabelFmtMsg"
+0
+1 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 166 79 118 22 F6 2 1 -1 0 "Text Field" } 32 "LabelFormat"
+0
+1 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 148 237 133 22 2 0 200 64 2 1
+0 IlvNumberField 148 237 118 22 F6 2 2 -1 0 "1234543.62" . , 2 16 0.0 3.40282e+038  f 1 1 1 1.23454e+006 } 32 "Precision"
+0
+1 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 149 266 133 22 2 0 200 64 2 1
+0 IlvNumberField 149 266 118 22 F6 2 2 -1 0 "1234543.62" . , 2 16 1.0 3.40282e+038  f 1 1 1 1.23454e+006 } 32 "PrecisionBase"
+0
+2 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 7 112 155 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&DimBetweenSteps"  }   } 32 "DimBetweenStepsMsg"
+0
+2 { 19 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 164 111 119 22 2 0 200 64 2 1
+0 IlvNumberField 164 111 104 22 F6 2 2 -1 0 "1234543" . , 2 0 1 2147483647  f 1 1 1 1.23454e+006 } 32 "DimBetweenSteps"
+0
+2 { 20 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 172 159 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&NumberSubStepsBetween"  }   } 32 "NumberSubStepsBetweenMsg"
+0
+2 { 21 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 160 172 122 22 2 0 200 64 2 1
+0 IlvNumberField 160 172 107 22 F6 2 2 -1 0 "1234543" . , 2 0 0 2147483647  f 1 1 1 1.23454e+006 } 32 "NumberSubStepsBetween"
+0
+3 { 22 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 110 275 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Steps"  }   } 32 "StepsMsg"
+0
+3 { 23 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 8 164 278 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&SubStepsBetween"  }   } 32 "SubStepsBetweenMsg"
+0
+3 { 24 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 5 193 148 22 2 0 200 64 2 1
+0 IlvNumberField 5 193 133 22 F6 2 2 -1 0 "1234543" . , 2 0 0 2147483647  f 1 1 1 1.23454e+006 } 32 "SubStepsBetween"
+0
+3 { 25 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 5 137 148 22 2 0 200 64 2 1
+0 IlvNumberField 5 137 133 22 F6 2 2 -1 0 "1234543" . , 2 0 1 2147483647  f 1 1 1 1.23454e+006 } 32 "Steps"
+0
+4 { 26 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 5 193 120 22 2 0 200 64 2 1
+0 IlvNumberField 5 193 105 22 F6 2 2 -1 0 "1234543" . , 2 0 0 2147483647  f 1 1 1 1.23454e+006 } 32 "DeltaSubSteps"
+0
+5 { 27 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 7 55 272 16 F1 2 1 2 0 0 0 Y "&LabelFormatAuto" } 32 "LabelFormatAuto"
+0
+5 { 28 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 7 266 138 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&PrecisionBaseMsg"  }   } 32 "PrecisionBaseMsg"
+0
+5 { 29 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 7 149 274 16 F1 2 1 2 0 0 0 Y "&SubStepsAuto" } 32 "SubStepsAuto"
+0
+5 { 30 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 7 214 277 16 F1 2 1 2 0 0 0 Y "&PrecisionAuto" } 32 "PrecisionAuto"
+0
+5 { 31 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 7 237 138 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&PrecisionMsg"  }   } 32 "PrecisionMsg"
+0
+Size 291 349
+Background "gray"
+Layers 6
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+EOF

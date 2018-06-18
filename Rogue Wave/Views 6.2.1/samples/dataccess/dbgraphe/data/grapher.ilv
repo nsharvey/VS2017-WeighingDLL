@@ -1,0 +1,80 @@
+// Ilv Version: 5.4
+// File generated: Tue Jun 15 10:06:17 2010
+// Creator class: IlvGadgetManagerOutput
+FileName "grapher"
+PathName "grapher.ilv"
+Palettes 2
+"IlvStToolBar" 1 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"default" 0 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+IlvObjects 5
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor [[ IlvSCManagerInteractor  ]] ]
+0 IliDbGrapher 10 10 413 393 YY 3  42  5 "" "" "NODES_MS" "LINK_MS"
+"X" "Y" "ID" "" "" "" "" "FROM" "TO" "" "" "" 
+"blue" "black" "white"  } 32 "GRAPHER"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliMemoryDataSource 50 231 24 24 1 6 3 4 IliMemoryTable 0 6 5 
+     74 "ID" Int 1 -1 2 83 "Identifier" 32 
+     72 "X" Int 2 -1 2 83 "X" 32 
+     72 "Y" Int 3 -1 2 83 "Y" 32 
+     72 "NAME" String 4 -1 1 83 "City" 32 
+     72 "TYPE" Int 5 -1 2 50 "Type" 61 "NODETYPE_MS" "TYP" "NAME" 
+     20 0 0 8 4
+1 1 1 419 1 1084 "London" 1 0 
+1 2 1 604 1 1273 "Paris" 1 1 
+1 3 1 408 1 1569 "Madrid" 1 2 
+1 4 1 1039 1 1481 "Rome" 1 0 
+0
+ } 32 "NODES_MS"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliMemoryDataSource 113 231 24 24 1 6 3 4 IliMemoryTable 0 4 3 
+     72 "FROM" Int 1 -1 2 125 "From" 32 
+     72 "TO" Int 2 -1 2 125 "To" 32 
+     72 "TYPE" Int 3 -1 2 131 "Type" 61 "LINKTYPE_MS" "TYP" "NAME" 
+     20 0 0 8 4
+1 1 1 2 1 2 
+1 2 1 3 1 3 
+1 2 1 4 1 1 
+1 3 1 4 1 1 
+0
+ } 32 "LINK_MS"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliMemoryDataSource 189 231 24 24 1 6 3 2 IliMemoryTable 0 3 2 
+     8 "TYP" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 91 32 
+     20 0 0 8 3
+1 0 "Terminal" 
+1 1 "Center" 
+1 2 "Parabol" 
+0
+ } 32 "NODETYPE_MS"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliMemoryDataSource 282 231 24 24 1 6 3 4 IliMemoryTable 0 3 2 
+     8 "TYP" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 104 32 
+     20 0 0 8 4
+1 0 "9600" 
+1 1 "64 K" 
+1 2 "384 K" 
+1 3 "1 M" 
+0
+ } 32 "LINKTYPE_MS"
+0
+Size 450 430
+GeometryHandlers
+1 100 0 450 0 450 0
+1 3 0 0 10  430 0 430 0  0 0 10 0
+1 100 0 430 0 430 0
+1 3 0 0 10  410 0 410 0  0 0 10 0
+Script "JvScript" Inline ""
+
+ScriptEnd
+EOF

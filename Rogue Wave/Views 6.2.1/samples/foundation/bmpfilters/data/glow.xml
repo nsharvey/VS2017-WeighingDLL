@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<filters>
+<filter id="medGlow" x="-5" y="-5" width="115" height="110">
+     <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+     <feComponentTransfer> 
+        <feFuncA type="linear" slope="3"/>
+     </feComponentTransfer>
+</filter>
+</filters>

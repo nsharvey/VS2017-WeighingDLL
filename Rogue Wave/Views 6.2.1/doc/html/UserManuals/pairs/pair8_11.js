@@ -1,0 +1,19 @@
+var pairs =
+{
+"standard":{"rogue":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1}
+,"views":{"initialization":1,"establishes":1}
+,"initialization":{"procedure":1}
+,"procedure":{"ilvdisplay*display":1}
+,"ilvdisplay*display":{"=new":1}
+,"=new":{"ilvdisplay":1}
+,"ilvdisplay":{"program":1}
+,"program":{"argc":1}
+,"argc":{"argv)":1}
+,"argv)":{"rogue":1}
+,"establishes":{"connection":1}
+,"connection":{"display":1}
+,"display":{"system":1}
+}
+;Search.control.loadWordPairs(pairs);

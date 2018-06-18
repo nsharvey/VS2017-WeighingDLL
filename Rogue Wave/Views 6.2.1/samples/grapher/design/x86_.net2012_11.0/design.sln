@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("8067ECBC-1D62-11E8-AB12-0BC9772C9500") = "design", "design.vcxproj", "80677A8E-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Global
+EndGlobal
+

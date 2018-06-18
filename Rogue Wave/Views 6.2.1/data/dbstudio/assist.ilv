@@ -1,0 +1,42 @@
+// Ilv Version: 5.1
+// File generated: Thu Aug 23 16:52:28 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "assist"
+PathName "assist.ilv"
+Palettes 2
+0 F "defaultBg" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 1 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 3
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 270 302 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&ok"  }   } 544 "ok"
+1
+1 "__ilvCallback" "apply"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 355 302 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cancel"  }   } 544 "Button_2"
+1
+1 "__ilvCallback" "cancel"
+0
+1 { 2 P 2
+[ IlvPanelObjectReference IlvPanelObjectReference  "1187877744.0" ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvNotebook 5 5 430 289 F1 2 2 2  4
+" { IlvNotebookPageItem 1 2 4 "&dbchart_Data"  }  "gray" ""
+" { IlvNotebookPageItem 1 2 4 "&assist_Title"  }  "gray" ""
+" { IlvNotebookPageItem 1 2 4 "&assist_Fields"  }  "gray" ""
+" { IlvNotebookPageItem 1 2 4 "&assist_Navigator"  }  "gray" ""
+0 0 4 5 2 10 10 10 10  } 32 "NTNoteBook"
+0
+Size 440 330
+GeometryHandlers
+1 100 0 440 0 440 0
+3 3 0 0 5  430 0 430 2  0 0 5 0
+ 3 355 0 355  0 0 80 1  0 0 5 0
+ 3 270 0 270  0 0 80 0  0 0 90 0
+1 100 0 330 0 330 0
+3 3 0 0 5  289 0 289 2  0 0 36 0
+ 3 302 0 302  0 0 23 1  0 0 5 0
+ 3 302 0 302  0 0 23 0  0 0 5 0
+EOF

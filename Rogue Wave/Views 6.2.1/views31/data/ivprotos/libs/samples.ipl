@@ -1,0 +1,573 @@
+// Rogue Wave Views Prototype Library File
+// Rogue Wave Views Version: 3.10
+// Date: Mon Dec  7 10:19:52 1998
+Library: samples
+SingleFile: true
+pump
+bulb
+display
+circGauge
+vertGauge
+thermo
+symbol
+alert
+chart
+field
+IlvProtoLibraryBlocks
+IlvProtoLibraryBlock pump.ivp
+IlvPrototype pump
+    accessors {
+        IlvValueAccessor UInt rotatePeriod
+        IlvTriggerAccessor UInt rotatePeriod rotate rotate
+        IlvValueAccessor UInt invertPeriod
+        IlvTriggerAccessor UInt invertPeriod invert invert
+        IlvCompositeAccessor (P) Color rotorColor {
+            rotor.IlvFilledArc.foreground
+            rotor.IlvFilledArc#1.foreground
+        }
+        IlvValueAccessor (P) Color invertedColor
+        IlvRotateAccessor Boolean rotate rotor 20 IlvEllipse.centerX IlvEllipse.centerY rotatePeriod
+        IlvInvertAccessor Boolean invert rotorColor invertedColor invertPeriod
+    }
+    values {
+        Color rotorColor = blue
+        Color invertedColor = red
+        Int running = 0
+        UInt rotatePeriod = 250
+        UInt invertPeriod = 500
+        Boolean rotate = false
+        Boolean invert = false
+    }
+    nodes {
+        IlvSubGroupNode rotor 
+        IlvGroup rotor
+            nodes {
+                IlvGraphicNode IlvFilledArc "T" 0 0
+                IlvGraphicNode IlvFilledArc#1 "T" 0 1
+            }
+            subscriptions {
+            }
+        ;
+        IlvGraphicNode IlvEllipse "TN" 0 2
+        IlvGraphicNode IlvPolyline "T" 0 3
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock pump.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:19:52 1998
+// Creator class: IlvGraphOutput
+Palettes 3
+0 48830 48830 48830 "blue" "default" "8x13" 0 solid solid 2 0 0
+1 48830 48830 48830 0 0 0 "%times-12-" 0 solid solid 2 0 0
+2 "lightgrey" "black" "default" "8x13" 0 solid solid 2 0 0
+IlvObjects 4
+0 2 { 0 0 IlvFilledArc 95 48 60 60 0 90 } 0
+0 2 { 1 0 IlvFilledArc 95 48 60 60 180 90 } 0
+0 0 { 2 1 IlvEllipse 90 43 70 70 } 0
+0 2 { 3 2 IlvPolyline 4
+100 103 90 133 160 133 150 103 } 0
+Layers 2
+0
+0
+Views 0
+EOF
+IlvProtoLibraryBlock bulb.ivp
+IlvPrototype bulb
+    accessors {
+        IlvCompositeAccessor (P) Color gazColor {
+            gaz.gaztop.foreground
+            gaz.gazbot.foreground
+        }
+        IlvValueAccessor Color onColor
+        IlvValueAccessor Color offColor
+        IlvConditionAccessor Boolean on == true gazColor onColor offColor
+        IlvValueAccessor Boolean on
+    }
+    values {
+        Color onColor = yellow
+        Color offColor = Light Gray
+        Boolean on = true
+    }
+    nodes {
+        IlvSubGroupNode gaz 
+        IlvGroup gaz
+            nodes {
+                IlvGraphicNode gaztop "T" 0 0
+                IlvGraphicNode gazbot "T" 0 1
+            }
+            subscriptions {
+            }
+        ;
+        IlvGraphicNode base "TN" 0 2
+        IlvGraphicNode bordertop "T" 0 3
+        IlvGraphicNode borderleft "T" 0 4
+        IlvGraphicNode borderright "T" 0 5
+        IlvGraphicNode borderbot "T" 0 6
+        IlvGraphicNode line1 "T" 0 7
+        IlvGraphicNode line2 "T" 0 8
+        IlvGraphicNode line3 "T" 0 9
+        IlvGraphicNode contact "T" 0 10
+        IlvGraphicNode wire "T" 0 11 1 0 0 1 -1 0
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock bulb.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:19:52 1998
+// Creator class: IlvGraphOutput
+Palettes 5
+"default" 4 "grey" "black" "default" "8x13" 0 solid solid 0 0 0
+2 48830 48830 48830 0 0 0 "default" "8x13" 0 solid solid 3 0 0
+1 48830 48830 48830 25700 25700 25700 "%times-12-" 0 solid solid 0 0 0
+0 48830 48830 48830 "yellow" "default" "8x13" 0 solid solid 0 0 0
+3 54745 49390 47095 0 0 0 "fixed" 0 solid solid 0 0 0
+IlvObjects 12
+1 2 { 0 0 IlvFilledArc 54 42 58 63 352.304 197.821 } 0
+1 2 { 1 0 IlvPolygon 4
+54 73 68 127 98 127 112 74 } 0
+1 0 { 2 1 IlvFilledRoundRectangle 68 127 30 35 6 } 0
+2 2 { 3 2 IlvArc 53 42 60 60 345.379 203.974 } 0
+2 2 { 4 2 IlvLine 53 77 68 127 } 0
+2 2 { 5 2 IlvLine 112 78 98 127 } 0
+2 2 { 6 2 IlvLine 68 128 98 128 } 0
+2 2 { 7 2 IlvLine 68 132 98 137 } 0
+2 2 { 8 2 IlvLine 68 142 98 147 } 0
+2 2 { 9 2 IlvLine 68 152 97 157 } 0
+2 2 { 10 3 IlvFilledRectangle 75 161 16 6 } 0
+2 2 { 11 4 IlvPolyline 11
+63 80 67 68 71 80 75 68 79 80 83 68 87 80 91 68 95 80 99 68
+103 80 } 0
+Layers 3
+0
+0
+0
+Views 0
+EOF
+IlvProtoLibraryBlock display.ivp
+IlvPrototype display
+    accessors {
+        IlvValueAccessor Float minimum
+        IlvValueAccessor Float maximum
+        IlvValueAccessor Boolean notSignificant
+        IlvConditionAccessor Boolean notSignificant == true IlvNumberField.background notSignificantColor currentColor
+        IlvValueAccessor Color nominalColor
+        IlvValueAccessor Color minimumColor
+        IlvValueAccessor Color maximumColor
+        IlvValueAccessor Color notSignificantColor
+        IlvValueAccessor String format
+        IlvValueAccessor Int maxChars
+        IlvNodeAccessor Color textColor __ILV1 IlvNumberField.foreground
+        IlvValueAccessor Float value
+        IlvFormatAccessor Float value format maxChars IlvNumberField.label
+        IlvMinMaxAccessor Float value minimum maximum notSignificant IlvNumberField.background minimumColor nominalColor maximumColor
+        IlvMinMaxAccessor Float value minimum maximum notSignificant currentColor minimumColor nominalColor maximumColor
+        IlvValueAccessor (RP) Color currentColor
+        IlvNodeAccessor Boolean transparent __ILV1 IlvNumberField.transparent
+        IlvNodeAccessor Boolean border __ILV1 IlvRectangle.visible
+    }
+    values {
+        Color nominalColor = white
+        Color minimumColor = yellow
+        Color maximumColor = red
+        Color notSignificantColor = cyan
+        Float minimum = 0
+        Float maximum = 100
+        Boolean notSignificant = false
+        Float value = 0
+        String format = %g
+        Int maxChars = 10
+        Color textColor = #000000000000
+        Boolean transparent = false
+        Boolean border = true
+    }
+    nodes {
+        IlvGraphicNode IlvNumberField "" 0 0
+        IlvGraphicNode IlvRectangle "N" 0 1
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock display.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:19:52 1998
+// Creator class: IlvGraphOutput
+Palettes 2
+0 "white" 0 0 0 "normal" "%helvetica-12-" 0 solid solid 0 0 0
+1 48830 48830 48830 0 0 0 "%times-12-" 0 solid solid 0 0 0
+IlvObjects 2
+0 2 { 0 0 IlvMessageLabel 105 60 100 20 F8 0 257 16 4 "0"   } 384
+1 0 { 1 1 IlvRectangle 105 60 100 20 } 0
+Layers 2
+0
+0
+Views 0
+EOF
+IlvProtoLibraryBlock circGauge.ivp
+IlvPrototype circGauge
+    accessors {
+        IlvNodeAccessor Float value __ILV1 IlvCircularGauge.value
+        IlvConditionAccessor Float value > 50 IlvFilledEllipse.visible "true" "false"
+        IlvNodeAccessor Float minimum __ILV1 IlvCircularScale.min
+        IlvNodeAccessor Float minimum __ILV1 IlvCircularGauge.min
+        IlvNodeAccessor Float maximum __ILV1 IlvCircularScale.max
+        IlvNodeAccessor Float maximum __ILV1 IlvCircularGauge.max
+        IlvNodeAccessor String format __ILV1 IlvCircularScale.format
+        IlvNodeAccessor UInt steps __ILV1 IlvCircularScale.steps
+        IlvNodeAccessor UInt subSteps __ILV1 IlvCircularScale.subSteps
+        IlvNodeAccessor UInt stepSize __ILV1 IlvCircularScale.stepSize
+        IlvNodeAccessor UInt subStepSize __ILV1 IlvCircularScale.subStepSize
+        IlvCompositeAccessor Color foreground {
+            IlvCircularGauge.foreground
+            IlvCircularScale.foreground
+        }
+    }
+    values {
+        Float minimum = 0
+        Float maximum = 100
+        String format = %.0f
+        UInt steps = 6
+        Color foreground = black
+        Float value = 0
+        UInt subSteps = 4
+        UInt stepSize = 10
+        UInt subStepSize = 5
+    }
+    nodes {
+        IlvGraphicNode IlvCircularScale "TN" 0 0 0.831169 0 0 0.837398 9.11688 9.10569
+        IlvGraphicNode IlvCircularGauge "TN" 0 1 0.831169 0 0 0.837398 9.11688 9.10569
+        IlvGraphicNode IlvFilledEllipse "TIN" 0 2 0.831169 0 0 0.837398 9.11688 9.10569
+        IlvGraphicNode IlvFilledArc "TN" 0 3 0.831169 0 0 0.837398 9.11688 9.10569
+        IlvGraphicNode IlvPolygon "TN" 0 4 0.831169 0 0 0.837398 9.11688 9.10569
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock circGauge.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:19:52 1998
+// Creator class: IlvGraphOutput
+Palettes 4
+3 "lightgrey" "White" "default" "8x13" 0 solid solid 0 0 0
+2 48830 48830 48830 65535 0 0 "%times-12-" 0 solid solid 0 0 0
+1 48830 48830 48830 "black" "%times-12-" 0 solid solid 0 0 0
+0 48830 48830 48830 "black" "%helvetica-12-B" 0 solid solid 2 0 0
+IlvObjects 5
+1 0 { 0 0 IlvCircularScale 54 57 153 161 6 4 10 5 m 0 100 "%.0f"
+"0" "20" "40" "60" "80" "100"  1 210 -240 } 0
+1 0 { 1 1 IlvCircularGauge 54 57 153 161 0 100 0 210 -240 } 0
+1 0 { 2 2 IlvFilledEllipse 121 149 19 20 } 2
+0 0 { 3 3 IlvFilledArc 54 56 152 159 329.036 240.161 } 0
+0 0 { 4 3 IlvPolygon 4
+65 177 68 129 188 127 195 177 } 0
+Layers 2
+0
+0
+Views 0
+EOF
+IlvProtoLibraryBlock vertGauge.ivp
+IlvPrototype vertGauge
+    accessors {
+        IlvValueAccessor Float minThreshold
+        IlvValueAccessor Float maxThreshold
+        IlvValueAccessor Color minThresholdColor
+        IlvValueAccessor Color nominalColor
+        IlvValueAccessor Color notSignificantColor
+        IlvConditionAccessor Boolean notSignificant == true IlvRectangularGauge.background notSignificantColor "white"
+        IlvValueAccessor Boolean notSignificant
+        IlvValueAccessor Color maxThresholdColor
+        IlvNodeAccessor Float value __ILV1 IlvRectangularGauge.value
+        IlvMinMaxAccessor Float value minThreshold maxThreshold notSignificant IlvRectangularGauge.foreground minThresholdColor nominalColor maxThresholdColor
+        IlvNodeAccessor Float minimum __ILV1 IlvRectangularGauge.min
+        IlvNodeAccessor Float minimum __ILV1 IlvRectangularScale.min
+        IlvNodeAccessor Float maximum __ILV1 IlvRectangularGauge.max
+        IlvNodeAccessor Float maximum __ILV1 IlvRectangularScale.max
+        IlvNodeAccessor Boolean scaleVisible __ILV1 IlvRectangularScale.visible
+        IlvNodeAccessor UInt steps __ILV1 IlvRectangularScale.steps
+    }
+    values {
+        Color minThresholdColor = yellow
+        Color nominalColor = blue
+        Color notSignificantColor = grey
+        Boolean notSignificant = false
+        Float minThreshold = 10
+        Float maxThreshold = 90
+        Color maxThresholdColor = red
+        Float value = 25
+        Float minimum = 0
+        Float maximum = 100
+        Boolean scaleVisible = true
+        UInt steps = 5
+    }
+    nodes {
+        IlvGraphicNode IlvRectangularGauge "T" 0 0
+        IlvGraphicNode IlvRectangularScale "T" 0 1
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock vertGauge.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:19:52 1998
+// Creator class: IlvGraphOutput
+Palettes 2
+0 "white" "blue" "%times-12-" 0 solid solid 0 0 0
+1 48830 48830 48830 0 0 0 "%times-12-" 0 solid solid 0 0 0
+IlvObjects 2
+1 2 { 0 0 IlvRectangularGauge 70 37 19 128 0 100 25 8 1 } 0
+1 2 { 1 1 IlvRectangularScale 55 37 10 126 5 2 10 5 m 0 100 "%4.f"
+"   0" "  25" "  50" "  75" " 100"  65 163 126 8 1  } 0
+Layers 2
+0
+0
+Views 0
+EOF
+IlvProtoLibraryBlock thermo.ivp
+IlvPrototype thermo
+    accessors {
+        IlvValueAccessor Float threshold
+        IlvNodeAccessor Float temperature __ILV1 IlvRectangularGauge.value
+        IlvConditionAccessor Float temperature >= threshold color "red" "blue"
+        IlvCompositeAccessor Float minimum {
+            IlvRectangularGauge.min
+            scale.min
+        }
+        IlvCompositeAccessor Float maximum {
+            IlvRectangularGauge.max
+            scale.max
+        }
+        IlvNodeAccessor UInt steps __ILV1 scale.steps
+        IlvCompositeAccessor (RP) Color color {
+            IlvRectangularGauge.foreground
+            IlvFilledEllipse.foreground
+        }
+    }
+    values {
+        Float temperature = 20
+        Float scale.zoomThreshold = 0.5
+        Float threshold = 30
+        Float minimum = -20
+        Float maximum = 50
+        UInt steps = 8
+        Boolean IlvFilledEllipse.isNode = true
+    }
+    nodes {
+        IlvGraphicNode IlvFilledEllipse "TN" 0 0
+        IlvGraphicNode IlvRectangularGauge "T" 0 1
+        IlvGraphicNode IlvEllipse "T" 0 2
+        IlvGraphicNode scale "Tz" 0.5 3
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock thermo.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:19:52 1998
+// Creator class: IlvGraphOutput
+Palettes 4
+1 54745 49390 47095 "blue" "%times-12-" 0 solid solid 0 0 0
+0 48830 48830 48830 "blue" "%times-12-" 0 solid solid 0 0 0
+3 48830 48830 48830 0 0 0 "%times-12-" 0 solid solid 0 0 0
+2 48830 48830 48830 0 0 0 "%times-12-" 0 solid solid 1 0 0
+IlvObjects 4
+2 0 { 0 0 IlvFilledEllipse 98 204 36 31 } 0
+2 2 { 1 1 IlvRectangularGauge 108 50 15 158 -20 50 20 8 1 } 0
+1 2 { 2 2 IlvEllipse 98 204 36 31 } 0
+2 2 { 3 3 IlvRectangularScale 93 50 10 156 8 2 10 5 m -20 50 "%4.f"
+" -20" " -10" "   0" "  10" "  20" "  30" "  40" "  50"  103 206 156 8 1  } 0
+Layers 3
+0
+0
+0
+Views 0
+EOF
+IlvProtoLibraryBlock symbol.ivp
+IlvPrototype symbol
+    accessors {
+        IlvMultiRepAccessor Int state {
+            open
+            closed
+        }
+        IlvValueAccessor Int state
+    }
+    values {
+        Int state = 0
+    }
+    nodes {
+        IlvGraphicNode IlvLine "T" 0 0
+        IlvGraphicNode IlvFilledEllipse "T" 0 1
+        IlvGraphicNode IlvLine#1 "T" 0 2
+        IlvGraphicNode IlvFilledEllipse#1 "T" 0 3
+        IlvGraphicNode open "T" 0 4
+        IlvGraphicNode closed "TI" 0 5
+        IlvGraphicNode unknown "TI" 0 6
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock symbol.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:19:52 1998
+// Creator class: IlvGraphOutput
+Palettes 3
+2 48830 48830 48830 0 0 0 "large" "%helvetica-18-B" 0 solid solid 0 0 0
+1 48830 48830 48830 0 0 0 "%times-12-" 0 solid solid 0 0 0
+0 48830 48830 48830 0 0 0 "default" "8x13" 0 solid solid 4 0 0
+IlvObjects 7
+1 2 { 0 0 IlvLine 50 65 90 65 } 0
+1 2 { 1 1 IlvFilledEllipse 85 60 10 10 } 0
+1 2 { 2 0 IlvLine 135 65 175 65 } 0
+1 2 { 3 1 IlvFilledEllipse 130 60 10 10 } 0
+1 2 { 4 0 IlvLine 90 65 130 35 } 512
+1
+1 "__ilvCallback" "GroupCallback"
+1 2 { 5 0 IlvLine 90 65 135 65 } 514
+1
+1 "__ilvCallback" "GroupCallback"
+1 2 { 6 2 IlvLabel 110 75 "?" } 2
+Layers 2
+0
+0
+Views 0
+EOF
+IlvProtoLibraryBlock alert.ivp
+IlvPrototype alert
+    accessors {
+        IlvInvertAccessor (RP) UInt invert IlvMessageLabel.background IlvMessageLabel.foreground
+        IlvBlinkAccessor (RP) UInt blink IlvMessageLabel.visible
+        IlvValueAccessor UInt alert
+        IlvConditionAccessor UInt alert == 0 IlvMessageLabel.label "No Alert" ""
+        IlvConditionAccessor UInt alert == 1 IlvMessageLabel.label "Alert Level 1" ""
+        IlvConditionAccessor UInt alert == 2 IlvMessageLabel.label "Alert Level 2" ""
+        IlvConditionAccessor UInt alert == 3 IlvMessageLabel.label "Alert Level 3" ""
+        IlvConditionAccessor UInt alert > 3 IlvMessageLabel.label "Alert Level > 3" ""
+        IlvConditionAccessor UInt alert >= 2 IlvMessageLabel.background "red" "lightblue"
+        IlvConditionAccessor UInt alert >= 2 IlvMessageLabel.foreground "white" "black"
+        IlvConditionAccessor UInt alert == 3 invert 200 0
+        IlvConditionAccessor UInt alert > 3 blink 200 0
+        IlvConditionAccessor UInt alert <= 3 visible "true" ""
+    }
+    values {
+        UInt alert = 0
+    }
+    nodes {
+        IlvGraphicNode IlvMessageLabel "TN" 0 0
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock alert.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:19:52 1998
+// Creator class: IlvGraphOutput
+Palettes 1
+0 "lightblue" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 1
+1 0 { 0 0 IlvMessageLabel 45 42 151 22 F8 0 257 16 4 "No Alert"   } 384
+Layers 2
+0
+0
+Views 0
+EOF
+IlvProtoLibraryBlock chart.ivp
+IlvPrototype chart
+    accessors {
+        IlvXYChartAccessor (R) Any xy chart xscale yscale valueX valueY
+        IlvNodeAccessor Float xmin __ILV1 xscale.min
+        IlvNodeAccessor Float xmax __ILV1 xscale.max
+        IlvNodeAccessor Float ymin __ILV1 yscale.min
+        IlvNodeAccessor Float ymax __ILV1 yscale.max
+        IlvNodeAccessor Boolean frameVisible __ILV1 frameBorder.visible
+        IlvNodeAccessor Boolean frameVisible __ILV1 frameBackground.visible
+        IlvNodeAccessor UInt xsteps __ILV1 xscale.steps
+        IlvNodeAccessor UInt ysteps __ILV1 yscale.steps
+        IlvNodeAccessor UInt ysubSteps __ILV1 yscale.subSteps
+        IlvNodeAccessor UInt xsubSteps __ILV1 xscale.subSteps
+        IlvNodeAccessor Color frameColor __ILV1 frameBackground.foreground
+        IlvNodeAccessor Color scaleColor __ILV1 yscale.foreground
+        IlvNodeAccessor Color scaleColor __ILV1 xscale.foreground
+        IlvNodeAccessor Color scaleColor __ILV1 frameBorder.foreground
+        IlvNodeAccessor Color chartColor __ILV1 chart.foreground
+    }
+    values {
+        Boolean frameVisible = true
+        UInt xsteps = 5
+        Float xmin = 0
+        Float xmax = 100
+        Float ymin = 0
+        Float ymax = 100
+        UInt ysteps = 5
+        UInt ysubSteps = 2
+        UInt xsubSteps = 0
+        Color frameColor = #5F5F9E9EA0A0
+        Color scaleColor = Black
+        Color chartColor = Black
+    }
+    nodes {
+        IlvGraphicNode frameBackground "T" 0 0
+        IlvGraphicNode chart "T" 0 1
+        IlvGraphicNode frameBorder "TN" 0 2
+        IlvGraphicNode yscale "T" 0 3
+        IlvGraphicNode xscale "T" 0 4
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock chart.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:19:52 1998
+// Creator class: IlvGraphOutput
+Palettes 3
+2 48830 48830 48830 "Black" "%times-10-" 0 solid solid 0 0 0
+1 48830 48830 48830 "Black" "%times-12-" 0 solid solid 0 0 0
+0 52685 49344 45232 24415 40606 41120 "fixed" 0 solid solid 0 0 0
+IlvObjects 5
+0 2 { 0 0 IlvFilledRectangle 66 52 158 120 } 0
+2 2 { 1 1 IlvPolylineChart 104 108 1 1
+IlvChartDataPoints 1
+0 0  } 0
+2 0 { 2 1 IlvRectangle 66 52 158 120 } 0
+2 2 { 3 2 IlvRectangularScale 91 65 6 80 5 2 6 4 m 0 100 "%4.f"
+"   0" "  25" "  50" "  75" " 100"  97 145 80 8 1  } 0
+2 2 { 4 2 IlvRectangularScale 97 145 112 8 5 0 8 4 m 0 100 "%4.f"
+"   0" "  25" "  50" "  75" " 100"  97 145 112 1 8  } 0
+Layers 3
+0
+0
+0
+Views 0
+EOF
+IlvProtoLibraryBlock field.ivp
+IlvPrototype field
+    accessors {
+        IlvNodeAccessor Int value __ILV1 IlvNumberField.label
+        IlvCallbackAccessor (O) Int value IlvNumberField Generic value
+        IlvNodeAccessor String label __ILV1 IlvLabel.label
+    }
+    values {
+        Int value = 0
+        String label = Value:
+    }
+    nodes {
+        IlvGraphicNode IlvNumberField "N" 0 0
+        IlvGraphicNode IlvLabel "" 0 1
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock field.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:19:52 1998
+// Creator class: IlvGraphOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 2
+0 0 { 0 0 IlvNumberField 209 78 95 22 F6 2 2 -1 0 "0" . , 2 16 -3.40282e+38 3.40282e+38 } 0
+0 2 { 1 0 IlvLabel 154 95 "Value:" } 0
+Layers 2
+0
+0
+Views 0
+EOF

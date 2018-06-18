@@ -1,0 +1,62 @@
+! File: tools/annotext/data/html.slt
+!
+! Each line beginning with a '"' describes an HTML style that can be used by
+! the IlvAnnoText HTML reader. The '"' must be the first character on the line.
+!
+! An HTML style is the association of a style name (an HTML tag) and an
+! IlvATPalette, which is the gathering of an IlvPalette and a few parameters that
+! define a paragraph style.
+!
+! The format is:
+!
+! "styleName" bgcolor(r g b) fgcolor(r g b) ["fontAlias"] fontName
+!             fillStyle patternName lineStyleName lineWidth fillRule arcMode
+!
+!             lineSpacing rightMargin leftMargin firstLineOffset
+!	      spaceAfter spaceBefore
+!             verticalOffset visibilityFlag
+!             drawBackgroundFlag wrappingFlag
+!             interactor-type image-alignment
+
+! The default style is used when the style is not recognized:
+"default"	52992 52992 52992 "black"		%times-14-	   0 solid solid  0 0 0
+	1  0  4   0  5  2 0 1 0 1 0 0 0
+! Title 1
+"h1"		"lightgrey"       "black"		%times-24-B        0 solid solid  0 0 0
+	4  0  4   0 20 20 0 1 0 1 0 0 0
+! Title 2
+"h2"		"lightgrey"       "black"		%times-20-B        0 solid solid  0 0 0
+	1  0  4   0 15 15 0 1 0 1 0 0 0
+! Title 3
+"h3"		"lightgrey"       "black"		%times-18-B        0 solid solid  0 0 0
+	1  0  4   0 10 10 0 1 0 1 0 0 0
+! Title 4
+"h4"		"lightgrey"           0 38000 30000	%times-16-B        0 solid solid  0 0 0
+	1  0  4   0 10 10 0 1 0 1 0 0 0
+! Title 5
+"h5"		"lightgrey"           0 38000 30000	%times-16-B        0 solid solid  0 0 0
+	1  0  4   0 10 10 0 1 0 1 0 0 0
+! Title 6
+"h6"		"lightgrey"           0 38000 65000	%times-14-B        0 solid solid  0 0 0
+	1  0  4   0 10 10 0 1 0 1 0 0 0
+! Lists
+"ul"		"lightgrey"      "black"		%times-14-         0 solid solid  0 0 0
+	0  0  4   0  2  2 0 1 0 1 0 0 0
+! Numbered Lists
+"ol"		"lightgrey"      "black"		%times-14-         0 solid solid  0 0 0
+	0  0  4   0  2  2 0 1 0 1 0 0 0
+! Interactive
+"a"		"lightgrey"       20000 20000 60000	%times-14-         0 solid solid  0 0 0
+	1  0  4   0  0  0 0 1 0 1 1 0 0
+! Pre
+"pre"		"lightgrey"      "black"		%courrier-14-      0 solid solid  0 0 0
+	1  0  4   0  0  0 0 1 0 2 0 0 0
+
+! Code
+"code"		"lightgrey"      "black"		%courrier-14-      0 solid solid  0 0 0
+	1  0  4   0  0  0 0 1 0 2 0 0 0
+
+! Xmp
+"xmp"		"lightgrey"      "black"		%courrier-14-      0 solid solid  0 0 0
+	1  0  4   0  0  0 0 1 0 2 0 0 0
+

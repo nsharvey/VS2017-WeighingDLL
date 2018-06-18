@@ -1,0 +1,105 @@
+// Rogue Wave Views Prototype Library File
+// Rogue Wave Views Version: 3.10
+// Date: Mon Dec  7 10:18:00 1998
+Library: output
+SingleFile: true
+slider
+toggle
+button
+IlvProtoLibraryBlocks
+IlvProtoLibraryBlock slider.ivp
+IlvPrototype slider
+    accessors {
+        IlvCallbackAccessor (O) Float sliderValue IlvSlider Generic IlvSlider.value
+        IlvOutputAccessor Float sliderValue
+        IlvNodeAccessor Float sliderValue __ILV1 IlvSlider.value
+        IlvNodeAccessor (P) String sliderLabel __ILV1 IlvMessageLabel.label
+        IlvLoopbackAccessor (P) String sliderLabel sliderValue
+        IlvNodeAccessor String title __ILV1 IlvLabel.label
+        IlvNodeAccessor Float sliderMin __ILV1 IlvSlider.minValue
+        IlvNodeAccessor Float sliderMax __ILV1 IlvSlider.maxValue
+    }
+    values {
+        Float sliderValue = 0
+        String sliderLabel = label
+        String title = Title:
+    }
+    nodes {
+        IlvGraphicNode IlvSlider "" 0 0
+        IlvGraphicNode IlvMessageLabel "" 0 1
+        IlvGraphicNode IlvLabel "" 0 2
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock slider.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:18:00 1998
+// Creator class: IlvGraphOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 3
+1 2 { 0 0 IlvSlider 97 57 158 19 F1 2 0 100 0 10 1 10 } 0
+1 2 { 1 0 IlvMessageLabel 97 79 158 22 F8 0 1 16 4 "label"   } 384
+1 2 { 2 0 IlvLabel 163 52 "Title:" } 0
+Layers 2
+0
+0
+Views 0
+EOF
+IlvProtoLibraryBlock toggle.ivp
+IlvPrototype toggle
+    accessors {
+        IlvCallbackAccessor (O) Boolean toggleState IlvToggle Generic IlvToggle.state
+        IlvNodeAccessor String label __ILV1 IlvToggle.label
+        IlvNodeAccessor Direction position __ILV1 IlvToggle.position
+    }
+    values {
+        UInt toggleState = 0
+        String label = Toggle
+        Direction position = right
+    }
+    nodes {
+        IlvGraphicNode IlvToggle "" 0 0
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock toggle.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:18:00 1998
+// Creator class: IlvGraphOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 1
+1 2 { 0 0 IlvToggle 55 40 78 17 F1 2 2 2 0 0 0 Y "Toggle" } 0
+Layers 2
+0
+0
+Views 0
+EOF
+IlvProtoLibraryBlock button.ivp
+IlvPrototype button
+    accessors {
+        IlvCallbackAccessor Boolean click IlvButton Generic true
+        IlvNodeAccessor String label __ILV1 IlvButton.label
+    }
+    nodes {
+        IlvGraphicNode "" "" 0 0
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock button.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:18:00 1998
+// Creator class: IlvGraphOutput
+Palettes 1
+0 "grey" "black" "button" "%helvetica-12-B" 0 solid solid 0 0 0
+IlvObjects 1
+1 2 { 0 0 IlvButton 79 58 73 23 F9 2 1 16 4 "button"   } 0
+Layers 2
+0
+0
+Views 0
+EOF

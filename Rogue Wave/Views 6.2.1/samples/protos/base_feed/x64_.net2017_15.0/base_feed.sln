@@ -1,0 +1,6 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{CE9BC616-1D6B-11E8-BAD0-7863772C9500}") = "base_feed", "base_feed.vcxproj", "{CE9B8246-1D6B-11E8-BAD0-7863772C9500}"
+EndProject
+Global
+EndGlobal

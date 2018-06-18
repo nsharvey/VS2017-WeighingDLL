@@ -1,0 +1,11 @@
+// Ilv Version: 1.0
+// File generated: Sun Jan 16 01:10:27 1994
+//  IlvGadgetManagerOutput
+Palettes 2
+0 "defaultBg" "defaultFg"   %times-12- 0 solid solid  0 0 0 
+1 "defaultBg" "defaultFg"   %times-12- 0 solid solid  0 0 0 
+IlvObjects 3
+2 { 0 0 IlvScrollBar  457 0 16 365 2  0 100 50 10 1 10 64  } 96 3 "sbv" 9 "ScrollBar"  736  1  0 1  0 1  16 2  
+2 { 1 0 IlvScrollBar  0 365 457 16 2  0 100 50 10 1 10 32  } 96 3 "sbh" 9 "ScrollBar"  464  1  0 1  16 1  0 2  
+2 { 2 1 IlvViewRectangle 0 0 457 365  } 32 4 "view"  1008  1  0 1  0 1  16 1  16 2 2  
+//Size 473 381

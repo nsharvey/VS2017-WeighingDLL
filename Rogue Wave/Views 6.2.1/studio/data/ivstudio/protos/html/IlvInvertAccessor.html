@@ -1,0 +1,25 @@
+<html><head><title>Prototypes</title></head>
+<body bgcolor=#ffffff>
+<a name="949410">
+<h3><FONT color=#b61840> Invert</FONT></h3>
+</a><a name="949411">
+The Invert accessor (class <code>IlvInvertAccessor)</code> inverts the color of an element of your prototype periodically. When the property is set to <code>IlvTrue</code>, the color inversion starts. When the property is set to <code>IlvFalse</code>, the color inversion stops.<p>
+</a><a name="949412">
+While the colors are designated as the foreground and background colors, any colors defined by the prototype or one of its nodes can be used.<p>
+</a><a name="949413">
+<h4><FONT color=#b61840> Parameters</FONT></h4>
+</a><ul><a name="949414">
+<li>Fg Col. Accessor: Node attribute or prototype value that contains the foreground color.
+</a><p><a name="949415">
+<li>Bg Col. Accessor: Node attribute or prototype value that contains the background color.
+</a><p><a name="949416">
+<li>Period (ms): The interval (in milliseconds) between two inversions of the object colors. It can be Float or Integer.
+</a><p><a name="949417">
+<li>Type: Boolean (whether the accessors are exchanging their values or not)
+</a><p></ul><a name="949418">
+<h4><FONT color=#b61840> Example</FONT></h4>
+</a><a name="949419">
+An example is presented in the <code>pump</code> prototype of the <code>samples</code> library. When <code>invert</code> is set to true, the values of <code>rotorColor</code> and <code>invertedColor</code> are exchanged periodically. The period is defined by the <code>invert</code> value. Note that the <code>invertPeriod</code> value has an assign <code>invert &lt;- invert</code> accessor defined. This forces the accessors to be reevaluated and the internal timer to update its period whenever the period is changed.<p>
+</a><a name="949454">
+</body>
+</html><hr><a href=displayb>Back</a>

@@ -1,0 +1,4 @@
+Files: transition.cpp, transition.h
+This sample shows how to create a transition between two pictures.
+You can choose the speed and the style of the transition.
+If the transition does not start, click on the image to start it.

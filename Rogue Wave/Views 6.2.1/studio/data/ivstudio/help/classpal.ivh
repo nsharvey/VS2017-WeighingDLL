@@ -1,0 +1,46 @@
+help "classpal" {
+    title "Panel Classes";
+    description "Panel Class Palette";
+}
+
+The Panel Class palette is used to create, inspect, 
+or remove panel classes.  This palette may be 
+accessed, whatever the current buffer, by clicking 
+on the Classes button in the Main window Tool bar. The
+Edit Application item in the Tools menu opens the 
+application buffer, and the Panel Class palette.
+  
+Panel classes are represented by icons in the 
+Panel Class palette.  
+ 
+Once a panel class has been created, instances of it 
+may be added to the current application buffer. This 
+is done by simply dragging the required panel class 
+icon from the palette directly into the application 
+buffer. The new panel instance is represented as a 
+window within the application buffer.
+ 
+The Panel Class palette has a Tool Bar with the 
+following buttons in it:
+
+New Panel Class 
+If the current buffer is a panel buffer, click on the 
+New Panel Class button to add it to the palette. The 
+new panel class is represented by an icon in the 
+palette.
+ 
+Inspect Panel Class
+Opens the inspector for the panel class that is 
+currently selected in the palette.
+ 
+Remove Panel Class
+Removes the panel class that is currently selected, 
+from the Panel Class palette.
+ 
+Close
+Closes the Panel Class palette. 
+ 
+Help
+Accesses this online help
+
+

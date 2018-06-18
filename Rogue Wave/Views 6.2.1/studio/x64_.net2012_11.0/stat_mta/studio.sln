@@ -1,0 +1,20 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("90E38DB0-1D69-11E8-91B2-87BE772C9500") = "ivfstudio", "ivfstudio.vcxproj", "90E30FCA-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("9103C828-1D69-11E8-91B2-87BE772C9500") = "ivstudio", "ivstudio.vcxproj", "90E30FCA-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("91268980-1D69-11E8-91B2-87BE772C9500") = "jsstudio", "jsstudio.vcxproj", "90E30FCA-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("914D6226-1D69-11E8-91B2-87BE772C9500") = "prstudio", "prstudio.vcxproj", "90E30FCA-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("9178C704-1D69-11E8-91B2-87BE772C9500") = "chstudio", "chstudio.vcxproj", "90E30FCA-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

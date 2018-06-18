@@ -1,0 +1,12 @@
+panel "MainPanel" {
+  menuItem MyNewBuffer : "&mfile", "&new" -before NewGadgetBuffer;
+  menuItem MyShowGadgetPalette : "&mtools" -before ShowGadgetPalette;
+  menuItem MyShowPanel : "&mtools" -before ShowGridPanel;
+}
+
+panel "MyPanel" {
+   commandName MyShowPanel;
+   x 300;
+   y 300;
+}
+

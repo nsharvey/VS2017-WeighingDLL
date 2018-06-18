@@ -1,0 +1,28 @@
+// Ilv Version: 3.0
+// File generated: Thu Aug 13 16:41:04 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "textresource"
+
+Palettes 2
+0 "gray" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+"IlvStText" 1 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+IlvObjects 6
+1 { 0 0 IlvButton 80 8 92 23 F1 2 16 Y "Color..." } 32 "color"
+0
+1 { 1 0 IlvFrame 8 0 64 72 0 "Sample" 1 } 0
+0
+1 { 2 0 IlvButton 296 8 73 23 F1 2 16 Y "Apply" } 512
+1
+1 "__ilvCallback" "apply"
+0
+1 { 3 0 IlvButton 296 40 73 23 F1 2 16 Y "Cancel" } 512
+1
+1 "__ilvCallback" "cancel"
+0
+1 { 4 1 IlvLabel 16 28 "Aa" } 32 "text"
+0
+1 { 5 0 IlvButton 80 40 92 23 F1 2 16 Y "Font..." } 32 "font"
+0
+Size 381 78
+Background "gray"
+EOF

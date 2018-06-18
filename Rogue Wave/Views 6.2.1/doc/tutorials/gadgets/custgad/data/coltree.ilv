@@ -1,0 +1,40 @@
+// Ilv Version: 4.0
+// File generated: Tue Apr 18 16:45:26 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "coltree"
+Palettes 1
+"IlvStText" 0 "defaultBg" "defaultFg" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 1
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 ColoredTreeGadget 5 5 370 290 F32 2 A A S 0 0 0 0 20 1 1 1 1 1 0 V0 2
+{ IlvTreeGadgetItem 1 2 4 "root" 3
+{ IlvTreeGadgetItem 1 2 4 "First Root" 3
+{ IlvTreeGadgetItem 1 2 4 "Leaf 1" 4
+{ IlvTreeGadgetItem 1 2 4 "Leaf 11" 0
+ } { IlvTreeGadgetItem 1 2 4 "Leaf 12" 0
+ } { IlvTreeGadgetItem 1 2 4 "Leaf 13" 3
+{ IlvTreeGadgetItem 1 2 4 "Leaf 131" 0
+ } { IlvTreeGadgetItem 1 2 4 "Leaf 132" 0
+ } { IlvTreeGadgetItem 1 2 4 "Leaf 133" 0
+ }  } { IlvTreeGadgetItem 1 2 4 "Leaf 14" 0
+ }  } { IlvTreeGadgetItem 1 2 4 "Leaf 2" 0
+ } { IlvTreeGadgetItem 1 2 4 "Leaf 3" 0
+ }  } { IlvTreeGadgetItem 1 2 4 "Second Root" 3
+{ IlvTreeGadgetItem 1 2 4 "Leaf 1" 0
+ } { IlvTreeGadgetItem 1 2 4 "Leaf 2" 0
+ } { IlvTreeGadgetItem 1 2 4 "Leaf 3" 0
+ }  } { IlvTreeGadgetItem 1 2 4 "Third Root" 3
+{ IlvTreeGadgetItem 1 2 4 "Leaf 1" 0
+ } { IlvTreeGadgetItem 1 2 4 "Leaf 2" 0
+ } { IlvTreeGadgetItem 1 2 4 "Leaf 3" 0
+ }  }  } 1 } 32 "Tree"
+0
+Size 380 300
+Background "gray"
+GeometryHandlers
+1 100 0 380 0 380 0
+1 3 0 0 5  370 0 370 0  0 0 5 0
+1 100 0 300 0 300 0
+1 3 0 0 5  290 0 290 0  0 0 5 0
+EOF

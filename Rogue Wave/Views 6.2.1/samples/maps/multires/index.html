@@ -1,0 +1,65 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Maps - Samples: multires</title>
+	</head>
+    <body>
+		<a name="multires"><h1>Sample: <code>multires</code></h1><h1 class="subtitle">Multiresolution Shapefile and Image File</h1></a>
+		<p>Multiresolution viewer with Load-On-Demand implementation.</p>
+		<img src="data/multires.png"/>
+		<p>
+			This sample shows how to read multiresolution files
+			with Rogue Wave Views. This sample can load
+			multiresolution data found on the Data CD.
+			<h2> Using the sample </h2>
+			After having launched the sample, you can choose a
+			multiresolution directory to load with the Open icon.
+			This directory can be either a multiresolution
+			shapefile directory, 
+			a multiresolution raster directory, or a Data CD root.
+			You can also specify
+			the directory to load as argument on the command line.
+			<br/>
+			Il you choose a Data CD root, both the raster and the
+			shapefiles will be loaded.
+			<br/>
+			Once the data is loaded, you can navigate through it
+			by using the zoom, unzoom and pan interactors found
+			in the toolbar.
+			<h2> About the Data Format </h2> 
+			The data formats used in this sample are: a
+			multiresolution JPEG image set
+			and a multiresolution Shapefile files set.
+			</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvShapeFileTileLoader</code></li>
+			<li><code>IlvShapeFileLayer</code></li>
+			<li><code>IlvScaleVisibilityFilter</code></li>
+			<li><code>IlvImageTileLoader</code></li>
+			<li><code>IlvImageLayer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/filesel.cpp"><code>src/filesel.cpp</code></a></li>
+			<li><a href="src/multiraster.cpp"><code>src/multiraster.cpp</code></a></li>
+			<li><a href="src/viewer.cpp"><code>src/viewer.cpp</code></a></li>
+			<li><a href="src/alert.cpp"><code>src/alert.cpp</code></a></li>
+			<li><a href="src/main.cpp"><code>src/main.cpp</code></a></li>
+			<li><a href="src/multishape.cpp"><code>src/multishape.cpp</code></a></li>
+			<li><a href="include/filesel.h"><code>include/filesel.h</code></a></li>
+			<li><a href="include/multishape.h"><code>include/multishape.h</code></a></li>
+			<li><a href="include/alert.h"><code>include/alert.h</code></a></li>
+			<li><a href="include/multiraster.h"><code>include/multiraster.h</code></a></li>
+			<li><a href="include/viewer.h"><code>include/viewer.h</code></a></li>
+		</ul>

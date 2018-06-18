@@ -1,0 +1,22 @@
+var pairs =
+{
+"note":{"examples":1}
+,"examples":{"documentation":1,"explanations":1,"extracted":1}
+,"documentation":{"offers":1}
+,"offers":{"examples":1}
+,"explanations":{"rogue":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1}
+,"views":{"effectively":1,"samples":1,"installed":1}
+,"effectively":{"moreover":1}
+,"moreover":{"examples":1}
+,"extracted":{"source":1}
+,"source":{"code":1}
+,"code":{"delivered":1}
+,"delivered":{"rogue":1}
+,"samples":{"directory":1}
+,"directory":{"just":1,"rogue":1}
+,"just":{"below":1}
+,"below":{"directory":1}
+}
+;Search.control.loadWordPairs(pairs);

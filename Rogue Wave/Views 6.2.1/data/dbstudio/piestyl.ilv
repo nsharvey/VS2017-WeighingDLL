@@ -1,0 +1,45 @@
+// Ilv Version: 5.1
+// File generated: Wed Oct 31 08:41:43 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "piestyl"
+PathName "piestyl.ilv"
+Palettes 2
+1 F "defaultBg" "black" "bold" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 4
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IliMemoryDataSource 246 3 24 24 1 14 1 -1 IliMemoryTable 0 4 2 
+     92 "SERIE" String 1 128 1 136 "none" "&dbchart_ColSerie" 32 
+     88 "COLOR" String 3 128 1 138 "black" "&dbchart_Color" 32 
+     16 0 8 0
+0
+ } 32 "%DISPLAY_MS"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliTableGadget 5 5 300 109 2 2067 "%DISPLAY_MS" 725466711 1 0 0 0 17 18 21 0 0 0 0 1 1 "white" A"normal" "%Tahoma-11-[Charset:0]"  } 32 "TBLChart"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 205 122 100 23 F13 2 { IlvMessageItem 262145 4 16 4 "&insp_DeleteAll"  }   } 544 "BTNDel"
+1
+1 "__ilvCallback" "BNDel"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 100 122 100 23 F13 2 { IlvMessageItem 262145 4 16 4 "&word_Refresh"  }   } 544 "BTNRefresh"
+1
+1 "__ilvCallback" "BNRefresh"
+0
+Size 310 150
+GeometryHandlers
+1 100 0 310 0 310 0
+3 3 0 0 5  300 0 300 1  0 0 5 0
+ 3 100 0 100  0 0 100 3  0 0 110 0
+ 3 205 0 205  0 0 100 2  0 0 5 0
+1 100 0 150 0 150 0
+3 3 0 0 5  109 0 109 1  0 0 36 0
+ 3 122 0 122  0 0 23 3  0 0 5 0
+ 3 122 0 122  0 0 23 2  0 0 5 0
+EOF

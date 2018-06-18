@@ -1,0 +1,56 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:44:45 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "messagep"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\messagep.ilv"
+Palettes 2
+"IlvStToolBar" 1 F "gray" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 3
+2 { 0 P 2
+[ IlvAttachments _IlvAttachments 1008  1 2 1 31 1 2 1 30 2 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSheet 2 31 473 220 F34936 2 Y N 0 0 0 0 1 1 226 30 1 1 1 1 1 1 2 1 V0 2 2 0 0 162 IlvLabelMatrixItem "" 
+1 0 226 IlvGadgetMatrixItem P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 234 36 219 21 F268435468 0 { IlvMessageItem 262145 4 16 4 "&Name"  }   1  1 N 0 0 1 1 2  } 32 "messages"
+0
+2 { 1 P 2
+[ IlvAttachments _IlvAttachments 336  1 0 1 0 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMenuBar 0 0 477 29 F294 2 V0 2 5
+{ IlvMenuItem 67108865 2 4 "&menu_file"  0 IlvPopupMenu 0 0 136 129 F166 2 V0 2 7
+{ IlvMenuItem 436207617 2 4 "&menu_new"  "newfile" "Ctrl+N" 14 } 
+{ IlvMenuItem 436207617 2 4 "&menu_open..."  "open" "Ctrl+O" 15 } 
+{ IlvMenuItem 33554433 2 4 "&menu_insert..."  "insert" } 
+{ IlvMenuItem 436207617 2 4 "&menu_save"  "save" "Ctrl+S" 19 } 
+{ IlvMenuItem 33554433 2 4 "&menu_saveAs..."  "saveas" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 33554433 2 4 "&menu_quit"  "quit" }  16   } 
+{ IlvMenuItem 67108865 2 4 "&menu_message"  0 IlvPopupMenu 0 0 129 136 F166 2 V0 2 8
+{ IlvMenuItem 33554433 2 4 "&menu_new_message"  "newmessage" } 
+{ IlvMenuItem 33554433 2 4 "&menu_new_message..."  "newmessages" } 
+{ IlvMenuItem 33554433 2 4 "&menu_remove_message"  "removemessage" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 33554433 2 4 "&menu_search_message..."  "search" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 33554433 2 4 "&menu_sortName_message"  "sortname" } 
+{ IlvMenuItem 33554433 2 4 "&menu_sortlabel_message"  "sortlabel" }  16   } 
+{ IlvMenuItem 67108865 2 4 "&menu_language"  0 IlvPopupMenu 0 0 135 46 F166 2 V0 2 2
+{ IlvMenuItem 33554433 2 4 "&menu_language_new..."  "newlanguage" } 
+{ IlvMenuItem 33554433 2 4 "&menu_language_remove"  "removelanguage" }  16   } 
+{ IlvMenuItem 67108865 2 4 "&menu_display"  0 IlvPopupMenu 0 0 131 72 F166 2 V0 2 4
+{ IlvMenuItem 33554433 2 4 "&menu_display_reset"  "reset" } 
+{ IlvMenuItem 33554433 2 4 "&menu_display_append"  "append" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 33554433 2 4 "&menu_display_chooseLanguage"  "setlanguage" }  16   } 
+{ IlvMenuItem 16385 2 4 "helpItem" "&menu_help"  }  0 } 32 "menubar"
+0
+2 { 2 P 2
+[ IlvAttachments _IlvAttachments 464  1 2 1 2 1 2 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 2 254 473 25 F7 2 1 -1 0 "Message:" } 32 "message"
+0
+Size 477 281
+Background "gray"
+EOF

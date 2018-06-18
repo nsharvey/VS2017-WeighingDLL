@@ -1,0 +1,24 @@
+// Ilv Version: 1.0
+// File generated: Sat Feb  5 19:05:55 1994
+//  IlvGadgetManagerOutput
+Palettes 2
+1 48830 48830 48830  0 0 0  %times-12- 0 solid solid  0 0 0 
+0 48830 48830 48830  0 0 0  %times-12- 0 solid solid  0 0 0 
+IlvObjects 11
+2 { 0 0 IlvLabel 26 34 7 "Minimum" } 0  0   
+2 { 1 0 IlvLabel 26 65 7 "Maximum" } 0  0   
+2 { 2 0 IlvLabel 26 100 5 "Value" } 0  0   
+2 { 3 0 IlvLabel 26 141 9 "Direction" } 0  0   
+2 { 4 1 IlvTextField 107 18 80 23 2 0 10 "Text Field" } 64 9 "TextField"  0   
+2 { 5 1 IlvTextField 107 53 80 23 2 0 10 "Text Field" } 64 9 "TextField"  0   
+2 { 6 1 IlvTextField 108 89 80 23 2 0 10 "Text Field" } 64 9 "TextField"  0   
+2 { 7 1 IlvOptionMenu 108 126 80 23 2 4 0
+4 "Left"
+5 "Right"
+3 "Top"
+6 "Bottom"
+ } 64 10 "OptionMenu"  0   
+2 { 8 1 IlvReliefLine 23 163 195 163 2 } 0  0   
+2 { 9 1 IlvButton 24 182 56 23 2 Y 6 "button"  } 64 6 "Button"  0   
+2 { 10 1 IlvButton 136 181 56 23 2 Y 6 "button"  } 64 6 "Button"  0   
+//Size 219 228

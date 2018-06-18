@@ -1,0 +1,20 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("822BC596-1D62-11E8-AB12-0BC9772C9500") = "ilvwin", "ilvwin.vcxproj", "822B75E6-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Project("823283A4-1D62-11E8-AB12-0BC9772C9500") = "winilv", "winilv.vcxproj", "822B75E6-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Project("823A04DA-1D62-11E8-AB12-0BC9772C9500") = "metafile", "metafile.vcxproj", "822B75E6-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Project("8240B3CA-1D62-11E8-AB12-0BC9772C9500") = "ilvmdi", "ilvmdi.vcxproj", "822B75E6-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Project("82474AA0-1D62-11E8-AB12-0BC9772C9500") = "gdiplus", "gdiplus.vcxproj", "822B75E6-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Global
+EndGlobal
+

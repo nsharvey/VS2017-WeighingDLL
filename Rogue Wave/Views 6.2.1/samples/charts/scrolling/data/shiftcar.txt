@@ -1,0 +1,3 @@
+Files: shiftcar.cpp, shiftcar.h
+This sample demonstrates the automatic scrolling feature of the Charts package. It creates a Cartesian chart 
+and connects it to several data sets. New random data points are added to these data sets at a given timer period.

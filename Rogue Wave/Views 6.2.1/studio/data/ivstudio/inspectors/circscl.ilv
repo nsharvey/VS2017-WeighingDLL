@@ -1,0 +1,29 @@
+// Ilv Version: 3.1
+// File generated: Mon Dec 28 21:19:49 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "circscl"
+PathName "C:\\users\\noiret\\dev\\views.work\\studio\\data\\ivstudio\\inspectors\\circscl.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 5
+2 { 0 0 IlvTextField 75 7 78 22 F6 2 1 -1 0 "" } 96 "CircSclAngle" "TextField"
+0
+2 { 1 0 IlvTextField 75 38 78 22 F6 2 1 -1 0 "" } 96 "CircSclRange" "TextField"
+0
+2 { 2 0 IlvToggle 5 68 150 16 F1 2 1 2 0 14 0 Y "&direction" } 96 "CircSclDirection" "Toggle"
+0
+3 { 3 0 IlvMessageLabel 5 5 70 26 F8 0 25 16 4 "&startAngle"   } 0
+0
+3 { 4 0 IlvMessageLabel 5 36 70 26 F8 0 25 16 4 "&angleRange"   } 0
+0
+Size 159 89
+GeometryHandlers
+1 100 0 159 0 159 0
+5 3 0 0 5  70 0 70 3  0 0 84 0
+ 3 75 0 75  0 0 78 0  0 0 6 0
+ 3 75 0 75  0 0 78 1  0 0 6 0
+ 3 0 0 5  70 0 70 4  0 0 84 0
+ 3 0 0 5  150 0 150 2  0 0 4 0
+1 100 0 89 0 89 0
+0
+EOF

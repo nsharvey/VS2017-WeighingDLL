@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- Rogue Wave Views RGB Dynamic Module Descriptor -->
+<module name="ilvrgb" version="6.2">
+  <class name="IlvRGBStreamer" rootClass="IlvBitmapStreamer" version="4.0">
+    <format description="Silicon Graphics RGB">
+      <signature>0x01 0xda</signature>
+      <extension>bw</extension>
+      <extension>rgb</extension>
+      <extension>rgba</extension>
+    </format>
+  </class>
+</module>

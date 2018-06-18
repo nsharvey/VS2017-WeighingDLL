@@ -1,0 +1,25 @@
+// Ilv Version: 3.1
+// File generated: Mon Nov 15 11:49:06 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "yesnocancel"
+PathName "yesnocancel.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 4
+1 { 0 0 IlvButton 35 55 73 23 F9 2 1 16 4 "^Yes"   } 544 "yesButton"
+1
+1 "__ilvCallback" "apply"
+0
+1 { 1 0 IlvButton 123 56 73 23 F9 2 1 16 4 "^No"   } 544 "noButton"
+1
+1 "__ilvCallback" "NoCB"
+0
+1 { 2 0 IlvButton 208 56 73 23 F9 2 1 16 4 "Cancel"   } 544 "cancelButton"
+1
+1 "__ilvCallback" "cancel"
+0
+1 { 3 0 IlvMessageLabel 44 6 215 46 F8 0 1 16 4 "Save before closing ?"   } 416 "question"
+0
+Size 306 89
+Background "gray"
+EOF

@@ -1,0 +1,11 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("7E11B344-1D62-11E8-AB12-0BC9772C9500") = "displace", "displace.vcxproj", "7E1165B0-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Project("7E1B0804-1D62-11E8-AB12-0BC9772C9500") = "bmpfilters", "bmpfilters.vcxproj", "7E1165B0-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Global
+EndGlobal
+

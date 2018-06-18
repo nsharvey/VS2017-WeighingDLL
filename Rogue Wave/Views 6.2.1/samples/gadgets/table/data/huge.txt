@@ -1,0 +1,5 @@
+Files: hugetabl.cpp, hugetabl.h
+The actual number of items is larger than an IlUShort, which is the 
+basic type for table indexes. This sample demonstrates how to handle 
+an IlUInt index, using logical scroll on a smaller table.
+

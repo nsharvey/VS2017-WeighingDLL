@@ -1,0 +1,128 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Foundations - Samples: motif</title>
+	</head>
+    <body>
+		<a name="ilvmotif"><h1>Sample: <code>ilvmotif</code></h1><h1 class="subtitle">Motif-based Rogue Wave Views Sample</h1></a>
+		<p>This sample shows you how to create a Rogue Wave Views application
+	on top of a <i>Motif</i> application.</p>
+		<img src="data/ilvmotif.png"/>
+		<p>
+	A regular <i>Motif</i> <code>DrawingArea</code> gadget is created,
+	then a Rogue Wave Views <code>IlvContainer</code> is built using
+	this gadget.<br/>
+	A few objects are created to populate the container.
+	</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvContainer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/ilvmotif.cpp"><code>src/ilvmotif.cpp</code></a></li>
+		</ul>
+		<a name="dragdrop"><h1>Sample: <code>dragdrop</code></h1><h1 class="subtitle">Motif Drag-and-Drop</h1></a>
+		<p>Demonstration of <i>Motif</i> Drag-and-Drop from and to Rogue Wave Views.</p>
+		<img src="data/dragdrop.png"/>
+		<p>
+	<strong>To be able to build this sample, the Manager package
+	must be installed.</strong><br/>
+	A specific subclass of <code>IlvInteractor</code> is defined
+	to enable the drag-and-drop from a Motif-based gadget.<br/>
+	Four windows are created:
+	<UL>
+	<LI>Source Container: contains a few Rogue Wave Views graphic
+	objects that you can drag and drop in one of the two <i>Motif</i> drop 
+	sites.</LI>
+	<LI>Destination Container: a <i>Motif</i> drop site displaying
+	Rogue Wave Views graphic objects. If you drop a <i>Motif</i> gadget in
+	there, an <code>IlvLabel</code> is created.</LI>
+	<LI>DragArea: a <i>Motif</i> Shell containing a Label gadget
+	that can be dragged and dropped in one of the drop sites.</LI>
+	<LI>DropArea: a <i>Motif</i> Shell that accepts drop requests. If
+	you drop a Rogue Wave Views object in there, a Label gadget
+	displaying the graphic object class is created at the drop
+	location.</LI>
+	</UL>
+	A new Atom is created (<code>ILVOBJECT_Atom</code>) to
+	specify that the drop source is a Rogue Wave Views object.
+	</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvContainer</code></li>
+			<li><code>IlvInteractor</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/dragdrop.cpp"><code>src/dragdrop.cpp</code></a></li>
+			<li><a href="src/ddmotif.cpp"><code>src/ddmotif.cpp</code></a></li>
+			<li><a href="include/ddmotif.h"><code>include/ddmotif.h</code></a></li>
+			<li><a href="src/ddinter.cpp"><code>src/ddinter.cpp</code></a></li>
+			<li><a href="include/ddinter.h"><code>include/ddinter.h</code></a></li>
+			<li><a href="src/ddpanels.cpp"><code>src/ddpanels.cpp</code></a></li>
+			<li><a href="include/ddpanels.h"><code>include/ddpanels.h</code></a></li>
+		</ul>
+		<a name="multidd"><h1>Sample: <code>multidd</code></h1><h1 class="subtitle">Inter-Application Drag-and-Drop</h1></a>
+		<p>Another demonstration of <i>Motif</i> drag-and-drop between two
+	separated Rogue Wave Views applications.</p>
+		<img src="data/multidd.png"/>
+		<p>
+	<strong>To be able to build this sample, the Manager package
+	must be installed.</strong><br/>
+	This sample is very similar to <code>dragdrop</code>, except
+	that it lets you drag objects from one application, and drop them
+	in another one.<br/>
+	Note that you will have to run two instances of the sample in
+	order to manipulate it.
+	</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvContainer</code></li>
+			<li><code>IlvInteractor</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/dragdrop.cpp"><code>src/dragdrop.cpp</code></a></li>
+			<li><a href="src/ddmotif.cpp"><code>src/ddmotif.cpp</code></a></li>
+			<li><a href="include/ddmotif.h"><code>include/ddmotif.h</code></a></li>
+			<li><a href="src/ddinter.cpp"><code>src/ddinter.cpp</code></a></li>
+			<li><a href="include/ddinter.h"><code>include/ddinter.h</code></a></li>
+			<li><a href="src/ddpanels.cpp"><code>src/ddpanels.cpp</code></a></li>
+			<li><a href="include/ddpanels.h"><code>include/ddpanels.h</code></a></li>
+		</ul>
+		<a name="scrollhk"><h1>Sample: <code>scrollhk</code></h1><h1 class="subtitle">A Hook-Controlled ScrolledWindow Gadget</h1></a>
+		<p>This sample shows how to connect an
+	<code>IlvManagerViewHook</code> to a <i>Motif</i>
+	<code>ScrolledWindow</code> gadget.</p>
+		<img src="data/scrollhk.png"/>
+		<p>
+	<strong>The Grapher package must be installed to be able to build
+	this sample.</strong><br/>
+	A <code>ScrolledWindow</code> gadget is created inside an
+	<code>IlvView</code> controlled by an <code>IlvGrapher</code>
+	through an <code>IlvManagerViewHook</code>.<br/>
+	The hook controls the gadget scrollbars.<br/>
+	On the other hand, callbacks are added to the scrollbars of
+	the <i>Motif</i> gadget to update the view hook attached to
+	it (see <code>IlvScrollViewHook::initScrollBars</code>).
+	</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvManageViewHook</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/scrollhk.cpp"><code>src/scrollhk.cpp</code></a></li>
+		</ul>

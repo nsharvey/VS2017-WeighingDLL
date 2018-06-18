@@ -1,0 +1,69 @@
+// DemoMFC.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (DemoMFC.tlb) that will become a resource in
+// DemoMFC.ocx.
+
+[ uuid(3D31E7B5-400B-11D3-B74F-00C04F68A89D), version(1.0),
+  helpfile("DemoMFC.hlp"),
+  helpstring("DemoMFC ActiveX Control module"),
+  control ]
+library DEMOMFCLib
+{
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CDemoMFCCtrl
+
+	[ uuid(3D31E7B6-400B-11D3-B74F-00C04F68A89D),
+	  helpstring("Dispatch interface for DemoMFC Control"), hidden ]
+	dispinterface _DDemoMFC
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CDemoMFCCtrl)
+			[id(1)] BSTR Filename;
+			[id(2)] OLE_COLOR Background;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CDemoMFCCtrl)
+			//}}AFX_ODL_METHOD
+
+			// We could use DISPID_ABOUTBOX here (see olectl.h)
+			[id(-552)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CDemoMFCCtrl
+
+	[ uuid(3D31E7B7-400B-11D3-B74F-00C04F68A89D),
+	  helpstring("Event interface for DemoMFC Control") ]
+	dispinterface _DDemoMFCEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CDemoMFCCtrl)
+			[id(1)] void PointerPosition(BSTR* name, OLE_XPOS_PIXELS x, OLE_YPOS_PIXELS y);
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CDemoMFCCtrl
+
+	[ uuid(3D31E7B8-400B-11D3-B74F-00C04F68A89D),
+	  helpstring("DemoMFC Control"), control ]
+	coclass DemoMFC
+	{
+		[default] dispinterface _DDemoMFC;
+		[default, source] dispinterface _DDemoMFCEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("D6C94802-1D68-11E8-81D0-E787772C9500") = "showgui", "showgui.vcxproj", "D6C8F97E-1D68-11E8-81D0-E787772C9500"
+EndProject
+
+Global
+EndGlobal
+

@@ -1,0 +1,19 @@
+var pairs =
+{
+"pop":{"label":1}
+,"label":{"bring":1}
+,"bring":{"front":1}
+,"front":{"path":1,"buffer":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"draw":1}
+,"draw":{"menu":1}
+,"menu":{"category":1}
+,"category":{"edit":1}
+,"edit":{"action":1}
+,"action":{"brings":1}
+,"brings":{"selected":1}
+,"selected":{"objects":1}
+,"objects":{"front":1}
+}
+;Search.control.loadWordPairs(pairs);

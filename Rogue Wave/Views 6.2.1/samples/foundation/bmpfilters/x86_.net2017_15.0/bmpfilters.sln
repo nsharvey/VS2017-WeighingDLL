@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{1786E89E-1D6F-11E8-9A26-E378772C9500}") = "displace", "displace.vcxproj", "{178694B6-1D6F-11E8-9A26-E378772C9500}"
+EndProject
+Project("{1792482E-1D6F-11E8-9A26-E378772C9500}") = "bmpfilters", "bmpfilters.vcxproj", "{178694B6-1D6F-11E8-9A26-E378772C9500}"
+EndProject
+Global
+EndGlobal

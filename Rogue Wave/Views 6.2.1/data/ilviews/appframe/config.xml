@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<Options>
+<!--Description of configurations-->
+<!--A configuration save the position of all docked panes-->
+  <Class AF_Name="Rect">
+    <Left AF_Class="int" AF_Value="0"/>
+    <Top AF_Class="int" AF_Value="0"/>
+    <Width AF_Class="int" AF_Value="0"/>
+    <Height AF_Class="int" AF_Value="0"/>
+  </Class>
+  <Class AF_Name="Size">
+    <Cx AF_Class="int" AF_Value="0"/>
+    <Cy AF_Class="int" AF_Value="0"/>
+  </Class>
+  <Class AF_Name="Point">
+    <X AF_Class="int" AF_Value="0"/>
+    <Y AF_Class="int" AF_Value="0"/>
+  </Class>
+  <Class AF_Name="PaneLocation">
+    <Name AF_Class="string" AF_Value=""/>
+    <RelativeName AF_Class="string" AF_Value="Main Workspace Area"/>
+    <RelativePosition AF_Class="string" AF_Value="Top"/>
+    <DockedState AF_Class="string" AF_Value="DockedHorizontally"/>
+    <Visible AF_Class="bool" AF_Value="true"/>
+    <UndockedRect AF_Class="Rect" Left="0" Top="0" Width="0" Height="0"/>
+    <HorizontalRect AF_Class="Rect" Left="0" Top="0" Width="0" Height="0"/>
+    <VerticalRect AF_Class="Rect" Left="0" Top="0" Width="0" Height="0"/>
+  </Class>
+  <Class AF_Name="Configuration">
+    <Locations AF_Class="PaneLocation" AF_IsArray="1"/>
+  </Class>
+  <Class AF_Name="ContainerHandlerConfig">
+    <Type AF_Class="string" AF_Value="MDIChild"/>
+    <PaneConfig AF_Class="PaneLocation" Name="" RelativeName="Main Workspace Area" RelativePosition="Top" DockedState="DockedHorizontally" Visible="true">
+      <UndockedRect Left="0" Top="0" Width="0" Height="0"/>
+      <HorizontalRect Left="0" Top="0" Width="0" Height="0"/>
+      <VerticalRect Left="0" Top="0" Width="0" Height="0"/>
+    </PaneConfig>
+    <MaximizeMDIChild AF_Class="bool" AF_Value="false"/>
+    <Resizable AF_Class="bool" AF_Value="true"/>
+    <MinimalHSize AF_Class="int" AF_Value="50"/>
+    <MinimalVSize AF_Class="int" AF_Value="50"/>
+    <DockingConstraint AF_Class="string" AF_Value=""/>
+    <AllowToggleBarFrame AF_Class="bool" AF_Value="true"/>
+    <CreateNewViewsForBarFrame AF_Class="bool" AF_Value="false"/>
+  </Class>
+  <ContainerHandlerConfig AF_Name="DefaultContainerHandler" Type="MDIChild" MaximizeMDIChild="false" Resizable="true" MinimalHSize="50" MinimalVSize="50" DockingConstraint="" AllowToggleBarFrame="true" CreateNewViewsForBarFrame="false">
+    <PaneConfig Name="" RelativeName="Main Workspace Area" DockedState="DockedHorizontally" Visible="true" RelativePosition="Left">
+      <UndockedRect Left="0" Top="0" Width="0" Height="0"/>
+      <HorizontalRect Left="0" Top="0" Width="150" Height="150"/>
+      <VerticalRect Left="0" Top="0" Width="150" Height="100"/>
+    </PaneConfig>
+  </ContainerHandlerConfig>
+<!--***************************************************************************-->
+<!--Configuration Variables-->
+<!--***************************************************************************-->
+  <Configuration AF_Name="Default">
+    <Locations>
+      <Locations RelativeName="Main Workspace Area" RelativePosition="Top" DockedState="DockedHorizontally" Visible="true" Name="&amp;MainMenu">
+        <HorizontalRect Left="0" Top="0" Width="653" Height="25"/>
+        <UndockedRect Left="812" Top="226" Width="244" Height="52"/>
+        <VerticalRect Left="0" Top="0" Width="55" Height="450"/>
+      </Locations>
+      <Locations RelativeName="Main Workspace Area" RelativePosition="Top" DockedState="DockedHorizontally" Visible="true" Name="&amp;Standard">
+        <UndockedRect Left="0" Top="0" Width="0" Height="0"/>
+        <HorizontalRect Top="0" Left="323" Width="330" Height="25"/>
+        <VerticalRect Left="0" Top="0" Width="28" Height="498"/>
+      </Locations>
+    </Locations>
+  </Configuration>
+<!--***************************************************************************-->
+<!--Application class-->
+  <Class AF_Name="ApplicationConfig">
+    <showStarterDialog AF_Class="bool" AF_Value="true"/>
+    <showTipsOfTheDay AF_Class="bool" AF_Value="true"/>
+    <name AF_Class="string" AF_Value=""/>
+  </Class>
+  <ApplicationConfig AF_Name="App" showStarterDialog="true" showTipsOfTheDay="true" name=""/>
+<!--***************************************************************************-->
+<!--Container classes-->
+  <Class AF_Name="ContainerConfiguration">
+    <BoundingBox AF_Class="Rect" Left="0" Top="0" Width="0" Height="0"/>
+    <FrameMaximizing AF_Class="bool" AF_Value="false"/>
+    <BigIcons AF_Class="bool" AF_Value="false"/>
+    <ShowTooltips AF_Class="bool" AF_Value="true"/>
+    <WithShortcuts AF_Class="bool" AF_Value="true"/>
+    <ShowStatusBar AF_Class="bool" AF_Value="true"/>
+    <icon AF_Class="string" AF_Value=""/>
+    <title AF_Class="string" AF_Value="AppFrame Application"/>
+    <SortOpenedWindow AF_Class="bool" AF_Value="true"/>
+  </Class>
+<!--***************************************************************************-->
+<!--Container informations-->
+  <ContainerConfiguration AF_Name="MainPanel" FrameMaximizing="false" BigIcons="false" ShowTooltips="true" WithShortcuts="true" ShowStatusBar="true" icon="" title="AppFrame Application" SortOpenedWindow="true">
+    <BoundingBox Left="221" Top="69" Width="653" Height="500"/>
+  </ContainerConfiguration>
+<!--***************************************************************************-->
+<!--Module informations-->
+  <Class AF_Name="Module">
+    <Path AF_Class="string" AF_Value=""/>
+    <Name AF_Class="string" AF_Value=""/>
+    <ToBeLoaded AF_Class="bool" AF_Value="false"/>
+  </Class>
+  <Class AF_Name="Modules">
+    <ModulesList AF_Class="Module" AF_IsArray="1"/>
+    <DlgRect AF_Class="Rect" Left="0" Top="0" Width="0" Height="0"/>
+  </Class>
+<!--***************************************************************************-->
+<!--Dialog informations-->
+  <Class AF_Name="Dialog">
+    <DlgRect AF_Class="Rect" Left="0" Top="0" Width="0" Height="0"/>
+    <lastSelectedTab AF_Class="int" AF_Value="0"/>
+    <splitters AF_Class="int" AF_IsArray="1"/>
+  </Class>
+<!--***************************************************************************-->
+<!--Application modules-->
+  <Modules AF_Name="AppModules">
+    <DlgRect Left="0" Top="0" Width="0" Height="0"/>
+    <ModulesList/>
+  </Modules>
+<!--***************************************************************************-->
+<!--Transformer class-->
+<!--***************************************************************************-->
+  <Class AF_Name="Transformer">
+    <x11 AF_Class="double" AF_Value="0"/>
+    <x12 AF_Class="double" AF_Value="0"/>
+    <x21 AF_Class="double" AF_Value="0"/>
+    <x22 AF_Class="double" AF_Value="0"/>
+    <x0 AF_Class="double" AF_Value="0"/>
+    <y0 AF_Class="double" AF_Value="0"/>
+  </Class>
+<!--***************************************************************************-->
+<!--Printing classes-->
+<!--***************************************************************************-->
+  <Class AF_Name="PrinterInfo">
+    <Portrait AF_Class="bool" AF_Value="true"/>
+    <PageArea AF_Class="Rect" Left="0" Top="0" Width="0" Height="0"/>
+    <SourceSelection AF_Class="Rect" Left="0" Top="0" Width="0" Height="0"/>
+    <PrinterDescription AF_Class="string" AF_Value=""/>
+    <Margins AF_Class="Rect" Left="20" Top="20" Width="20" Height="20"/>
+    <DumpPartMode AF_Class="int" AF_Value="0"/>
+    <ScalingMode AF_Class="int" AF_Value="0"/>
+    <PaperFormat AF_Class="int" AF_Value="0"/>
+    <FitWidePages AF_Class="int" AF_Value="1"/>
+    <FitTallPages AF_Class="int" AF_Value="1"/>
+    <UseColor AF_Class="bool" AF_Value="false"/>
+  </Class>
+  <PrinterInfo AF_Name="Default" Portrait="true" PrinterDescription="" DumpPartMode="0" ScalingMode="0" PaperFormat="0" FitWidePages="1" FitTallPages="1" UseColor="false">
+    <PageArea Left="0" Top="0" Width="0" Height="0"/>
+    <SourceSelection Left="0" Top="0" Width="0" Height="0"/>
+    <Margins Left="20" Top="20" Width="20" Height="20"/>
+  </PrinterInfo>
+  <PrinterInfo AF_Name="PostScript" Portrait="true" PrinterDescription="" DumpPartMode="0" ScalingMode="0" PaperFormat="0" FitWidePages="1" FitTallPages="1" UseColor="false">
+    <PageArea Left="0" Top="0" Width="0" Height="0"/>
+    <SourceSelection Left="0" Top="0" Width="0" Height="0"/>
+    <Margins Left="20" Top="20" Width="20" Height="20"/>
+  </PrinterInfo>
+</Options>

@@ -1,0 +1,23 @@
+/* XPM */
+static char * sqlds_ppm[] = {
+"16 16 4 1",
+" 	c #000000000000",
+".	c #E0E0E0E0E0E0",
+"X	c #FFFF00000000",
+"o	c #FFFFFFFFFFFF",
+"..            ..",
+". o  oo  oo  o .",
+" oooooooooooooo ",
+"  oooooooooooo  ",
+"  oooooooooooo  ",
+" oooo      oooo ",
+" oooo oooo oooo ",
+"  ooo oooo ooo  ",
+"  ooo      ooo  ",
+" oooo ooooooooo ",
+" oooo ooooooooo ",
+"  ooo oooooooo  ",
+"  oooooooooooo  ",
+" oooooooooooooo ",
+". o  oo  oo  o .",
+"..            .."};

@@ -1,0 +1,75 @@
+// Ilv Version: 3.1
+// File generated: Thu Dec 31 11:34:45 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "matridim"
+PathName "C:\\users\\noiret\\dev\\views.work\\studio\\data\\ivstudio\\inspectors\\matridim.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 20
+2 { 0 0 IlvToggle 9 149 140 16 F1 2 1 2 0 0 0 Y "&fitToSize" } 96 "MatrixFito" "Toggle"
+0
+2 { 1 0 IlvToggle 9 169 124 16 F1 2 1 2 0 0 0 Y "&adjustLast" } 96 "MatrixALast" "Toggle"
+0
+3 { 2 0 IlvMessageLabel 9 4 93 26 F8 0 25 16 4 "&column"   } 0
+0
+3 { 3 0 IlvMessageLabel 166 4 93 26 F8 0 25 16 4 "&row"   } 0
+0
+3 { 4 0 IlvMessageLabel 9 88 93 26 F8 0 25 16 4 "&fixedRow"   } 0
+0
+3 { 5 0 IlvMessageLabel 9 60 93 26 F8 0 25 16 4 "&firstRow"   } 0
+0
+3 { 6 0 IlvMessageLabel 166 60 93 26 F8 0 25 16 4 "&firstColumn"   } 0
+0
+3 { 7 0 IlvMessageLabel 9 32 93 26 F8 0 25 16 4 "&width"   } 0
+0
+3 { 8 0 IlvMessageLabel 166 32 93 26 F8 0 25 16 4 "&height"   } 0
+0
+3 { 9 0 IlvMessageLabel 9 116 93 26 F8 0 25 16 4 "&spacing"   } 0
+0
+3 { 10 0 IlvMessageLabel 166 88 93 26 F8 0 25 16 4 "&fixedColumn"   } 0
+0
+3 { 11 0 IlvNumberField 100 5 53 22 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038 } 32 "MatrixColumns"
+0
+3 { 12 0 IlvNumberField 100 33 53 22 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038 } 32 "MatrixXSize"
+0
+3 { 13 0 IlvNumberField 100 61 53 22 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038 } 32 "MatrixFRow"
+0
+3 { 14 0 IlvNumberField 100 89 53 22 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038 } 32 "MatrixFixedRow"
+0
+3 { 15 0 IlvNumberField 100 117 53 22 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038 } 32 "MatrixSpacing"
+0
+3 { 16 0 IlvNumberField 259 5 53 22 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038 } 32 "MatrixRows"
+0
+3 { 17 0 IlvNumberField 259 33 53 22 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038 } 32 "MatrixYSize"
+0
+3 { 18 0 IlvNumberField 259 61 53 22 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038 } 32 "MatrixFCol"
+0
+3 { 19 0 IlvNumberField 259 89 53 22 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038 } 32 "MatrixFixedColumn"
+0
+Size 317 192
+GeometryHandlers
+2 100 0 159 0 159 0
+ 0 0 158 159 158 159
+12 3 100 0 100  0 0 53 11  0 0 6 0
+ 3 100 0 100  0 0 53 12  0 0 6 0
+ 3 100 0 100  0 0 53 13  0 0 6 0
+ 3 100 0 100  0 0 53 14  0 0 6 0
+ 3 100 0 100  0 0 53 15  0 0 6 0
+ 3 0 0 9  93 0 93 2  0 0 57 0
+ 3 0 0 9  93 0 93 7  0 0 57 0
+ 3 0 0 9  93 0 93 5  0 0 57 0
+ 3 0 0 9  93 0 93 4  0 0 57 0
+ 3 0 0 9  93 0 93 9  0 0 57 0
+ 3 0 0 9  140 0 140 0  0 0 10 0
+ 3 0 0 9  124 0 124 1  0 0 26 0
+8 3 0 0 7  93 0 93 3  0 0 58 1
+ 3 0 0 7  93 0 93 8  0 0 58 1
+ 3 0 0 7  93 0 93 6  0 0 58 1
+ 3 0 0 7  93 0 93 10  0 0 58 1
+ 3 100 0 100  0 0 53 16  0 0 5 1
+ 3 100 0 100  0 0 53 17  0 0 5 1
+ 3 100 0 100  0 0 53 18  0 0 5 1
+ 3 100 0 100  0 0 53 19  0 0 5 1
+1 100 0 192 0 192 0
+0
+EOF

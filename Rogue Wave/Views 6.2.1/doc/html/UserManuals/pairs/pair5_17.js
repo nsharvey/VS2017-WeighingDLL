@@ -1,0 +1,21 @@
+var pairs =
+{
+"adding":{"new":1}
+,"new":{"sources":1}
+,"sources":{"input":1}
+,"input":{"rogue":1,"member":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1}
+,"views":{"allows":1}
+,"allows":{"application":1}
+,"application":{"add":1}
+,"add":{"file":1}
+,"file":{"descriptors":1}
+,"descriptors":{"new":1}
+,"member":{"functions":1}
+,"functions":{"ilveventloop":1}
+,"ilveventloop":{":addinput":1,":addoutput":1}
+,":addinput":{"ilveventloop":1}
+,":addoutput":{"details":1}
+}
+;Search.control.loadWordPairs(pairs);

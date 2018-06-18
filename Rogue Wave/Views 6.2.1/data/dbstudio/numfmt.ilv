@@ -1,0 +1,22 @@
+// Ilv Version: 2.21
+// File generated: Mon Jul 22 19:39:26 1996
+// Creator class: IlvGadgetManagerOutput
+Palettes 2
+"IlvStToolBar" 0 50745 45390 43095 "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+1 "gray" "black" "bold" "%helvetica-12-B" 0 solid solid 0 0 0
+IlvObjects 9
+1 { 0 0 IlvMessageLabel 25 33 130 22 0 "&lab_DecimalPoint" 1 } 32 "MessageLabel_1" 10240 "DecimalPoint"
+1 { 1 1 IlvTextField 165 33 30 22 F6 2 1 1 0 "" } 32 "DecimalPoint" 6144 "MessageLabel_2" "MessageLabel_1"
+1 { 2 1 IlvTextField 165 59 30 22 F6 2 1 1 0 "" } 32 "ThousandsSeparator" 6144 "MessageLabel_3" "MessageLabel_2"
+1 { 3 1 IlvTextField 165 85 30 22 F6 2 1 -1 0 "" } 32 "CurrencySymbol" 6144 "MessageLabel_7" "MessageLabel_3"
+1 { 4 0 IlvMessageLabel 25 59 130 22 0 "&lab_ThousandsSeparator" 1 } 32 "MessageLabel_2" 6144 "ThousandsSeparator" "DecimalPoint"
+1 { 5 0 IlvMessageLabel 25 85 130 22 0 "&lab_CurrencySymbol" 1 } 32 "MessageLabel_3" 6144 "CurrencySymbol" "ThousandsSeparator"
+1 { 6 0 IlvMessageLabel 25 112 107 22 0 "&lab_CurrencyPosition" 1 } 32 "MessageLabel_7" 6144 "CurrencyPosition" "CurrencySymbol"
+1 { 7 1 IlvOptionMenu 165 113 70 20 2 4 0
+"$3.14"
+"$ 3.14"
+"3.14$"
+"3.14 $" } 32 "CurrencyPosition" 6144 "MessageLabel_4" "MessageLabel_7"
+1 { 8 1 IlvFrame 0 0 288 160 0 "&lab_NumberFormat" 1 } 0 1008 1 0 1 0 1 0 1 0 2 2
+Size 288 160
+

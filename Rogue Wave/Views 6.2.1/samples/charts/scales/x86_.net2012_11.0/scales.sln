@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("8265B1E8-1D62-11E8-AB12-0BC9772C9500") = "scales", "scales.vcxproj", "82655608-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Global
+EndGlobal
+

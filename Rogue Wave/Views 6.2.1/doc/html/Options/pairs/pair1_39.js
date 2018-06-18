@@ -1,0 +1,19 @@
+var pairs =
+{
+"data":{"handling":1,"storage":1,"among":1,"updating":1}
+,"handling":{"chapter":1,"charts":1,"data":1}
+,"chapter":{"provides":1}
+,"provides":{"detailed":1}
+,"detailed":{"information":1}
+,"information":{"data":1,"following":1}
+,"charts":{"find":1,"modifying":1}
+,"find":{"information":1}
+,"following":{"topics":1}
+,"topics":{"handling":1}
+,"storage":{"sharing":1}
+,"sharing":{"data":1}
+,"among":{"charts":1}
+,"modifying":{"data":1}
+,"updating":{"charts":1}
+}
+;Search.control.loadWordPairs(pairs);

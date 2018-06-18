@@ -1,0 +1,44 @@
+<html>
+<head><title>Graphic Representation</title></head>
+<body>
+<h1>Graphic Attributes</h1>
+<P>
+The pane on the left lets you edit several properties of the
+graphic objects in your prototype. For each graphic object you can change:
+<ul>
+<li><em>Name</em>: In order to give more meaningful
+names to each of the graphic objects.
+<li><em>Visibility</em> ("V" button on each line): Allows you to
+make the object visible or invisible. Additional behaviors can make the
+object appear or disappear on request.
+<li><em>Hidden in application</em> ("H" button): Specifies that the
+graphic objects remain visible when editing the prototype or panel in 
+PrStudio, but will be hidden in the final application. This can be useful
+when inserting intermediate graphic nodes such as those in the operations 
+prototype library.
+<li><em>Grapher Node</em> ("N" button): Specifies that the given graphic node is
+to behave as a graphic node when placed in an IlvGrapher. Therefore, links can be traced
+between the object and other grapher nodes. <em>This property is not implemented
+for groups encapsulated in IlvProtoGraphic</em>s.
+<li><em>Transformed</em> ("T" button): Specifies that the graphic object is included in a
+transformed object. This means the object will keep its original 
+coordinates intact, thereby avoiding degradations if geometric transformations are applied
+repeatedly. It is suggested that objects be
+transformed by default, to avoid degradation if the prototype is misused. 
+However, this requires slightly more memory.
+<li><em>Bounded Size</em> ("B" button): Specifies that the graphic node
+should maintain the same size whenever its view is zoomed in or out.
+If minimum zoom and maximum zoom are set but not Bounded Size, the
+object will disappear instead of being zoomed whenever the views zoom
+level reaches minimum or maximum thresholds.
+<li><em>Minimum zoom</em> level ("mZ" field): Specifies the
+minimum size the object can be zoomed to.
+<li><em>Maximum zoom</em> level ("MZ" field): Specifies the maximum 
+size the object can be zoomed to.
+<li><em>Layer</em> ("L" field): Specifies the layer on which the graphic
+objects will be placed. This lets you set a reliable order for all graphic
+objects in a group.
+</ul>
+<hr>
+<a href="graphics">Back</a>
+</body></html>

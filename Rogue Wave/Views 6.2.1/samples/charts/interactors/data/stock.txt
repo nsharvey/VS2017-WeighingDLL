@@ -1,0 +1,4 @@
+Files: stock.cpp, stock.h
+This sample shows you how to associate several behaviors with a chart object. To do this, it uses an instance of the 
+IlvChartInteractorManager class to register several predefined chart interactors (instances of subclasses of 
+IlvChartInteractor.

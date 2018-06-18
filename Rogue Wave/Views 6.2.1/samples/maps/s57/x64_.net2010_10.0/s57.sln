@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("D5D0CFC4-1D68-11E8-81D0-E787772C9500") = "s57viewer", "s57viewer.vcxproj", "D5D07FBA-1D68-11E8-81D0-E787772C9500"
+EndProject
+
+Global
+EndGlobal
+

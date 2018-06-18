@@ -1,0 +1,15 @@
+IlvButton {
+    color: white;
+    background-color: rgb(20,20,20);
+}
+IlvButton#button1:active {
+    background-color: grey;
+    color: rgb(20,20,20);
+}
+IlvToggle {
+    color: white;
+    background-color: rgb(10,10,10);
+}
+IlvMessageLabel {
+    color: white;
+}

@@ -1,0 +1,2 @@
+Files: getstart.cpp
+Note: Shows the panel "employee" of the "Getting started manual".

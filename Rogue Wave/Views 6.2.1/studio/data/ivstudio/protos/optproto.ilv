@@ -1,0 +1,18 @@
+// Ilv Version: 3.1
+// File generated: Tue Dec  1 16:54:15 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "optproto"
+PathName "../../data/ivprotos/optproto.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 4
+1 { 0 0 IlvToggle 40 33 275 17 F1 2 1 2 0 0 0 Y "&IlvMsgStProto218" } 32 "SingleFileProtoLibs"
+0
+1 { 1 0 IlvToggle 40 66 275 17 F1 2 1 2 0 0 0 Y "&IlvMsgStProto219" } 32 "UseSharedTimers"
+0
+1 { 0 0 IlvToggle 40 99 275 17 F1 2 1 2 0 0 0 Y "&IlvMsgStProto220" } 32 "RealSizeProtoPalette"
+0
+1 { 1 0 IlvToggle 40 132 275 17 F1 2 1 2 0 0 0 Y "&IlvMsgStProto221" } 32 "UseProtoGraphics"
+0
+Size 400 300
+EOF

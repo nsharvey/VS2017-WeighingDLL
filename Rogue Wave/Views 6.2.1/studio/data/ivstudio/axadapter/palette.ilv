@@ -1,0 +1,13 @@
+// Ilv Version: 4.0
+// File generated: Thu Jun 22 15:51:17 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "palette"
+Palettes 1
+"default" 0 "defaultBg" "defaultFg" "normal" "%helvetica-12" 0 solid solid 0 0 0
+IlvObjects 1
+1 { 0 P 1
+[ IlvStringProperty CreationMode  "SelectCOMGraphicAdapterMode" ]
+0 IlvGraphicCOMAdapterFactory 1 1 160 93 F7 2 16 -1 0 "&ActiveXAdapter" } 0
+0
+Size 380 300
+EOF

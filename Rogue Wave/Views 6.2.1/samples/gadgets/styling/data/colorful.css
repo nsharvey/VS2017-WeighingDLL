@@ -1,0 +1,18 @@
+IlvButton {
+    background-color: red;
+    color: yellow;
+}
+IlvButton:focus {
+    color: white;
+}
+IlvButton:hover {
+    background-color: orangered;
+}
+IlvButton:active {
+    background-color: white;
+    color: red;
+}
+IlvTextField {
+    color: blue;
+    background-color: lightseagreen;
+}

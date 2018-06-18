@@ -1,0 +1,92 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Manager - Samples: hook</title>
+	</head>
+    <body>
+		<a name="scalemgr"><h1>Sample: <code>scalemgr</code></h1><h1 class="subtitle">Manager Hooks and Scales</h1></a>
+		<p>Displays scales around a map and synchronizes them
+		with the transformer of the map.</p>
+		<img src="data/scalemgr.png"/>
+		<p>
+		Shows the connection of location scales around a map.<br/>
+		The usual accelerators are available to zoom and pan the map:
+		<ul>
+			<li>'Z':	zoom in</li>
+			<li>'U':	zoom out</li>
+			<li>'i':	set transformer to 'identity'</li>
+			<li>arrows:	pan in a given direction</li>
+			<li>'f':	fit to size</li>
+		</ul>
+		The map is very large: try to zoom out or 'fit-to-size'.<br/>
+
+		The surrounding scales will automatically be updated to match
+		the current coordinates system. The tick marks and the labels
+		are recomputed to show <i>reasonable</i> scales.<br/>
+
+		Note that two square markers are stored in the map (at [0,0]
+		and [200,200]). The scales also contain markers to indicate
+		the position of the markers on the map.<br/>
+
+		There is also a little trick to avoid clipping the scale labels
+		when they are too close from the edge of the scale. This trick
+		needs some tuning to get rid of some redraw bugs but the goal
+		is just to give an idea on how to solve this kind of problems.
+		</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvManager</code></li>
+			<li><code>IlvManagerViewHook</code></li>
+			<li><code>IlvRectangularScale</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/scalehk.h"><code>include/scalehk.h</code></a></li>
+			<li><a href="src/scalehk.cpp"><code>src/scalehk.cpp</code></a></li>
+			<li><a href="src/scalemgr.cpp"><code>src/scalemgr.cpp</code></a></li>
+		</ul>
+		<a name="magnify"><h1>Sample: <code>magnify</code></h1><h1 class="subtitle">Magnifier Demo</h1></a>
+		<p>Displays a map in a global view and a magnified view.</p>
+		<img src="data/magnify.png"/>
+		<p>
+		Illustrates a possible use of the multiview capabilities of
+		a manager.<br/>
+		Two views display the same map. The main view allows you to show
+		the map in detail. The small view is intended to provide
+		a global view of the map; it also contains a specialized
+		object representing the rectangular region of the map shown in
+		the main view. This object is called the <i>magnifier</i> and
+		is controlled by a manager view hook.<br/>
+		Zooming or moving in the main view changes the magnifier
+		position and size.<br/>
+		Clicking the global view moves the magnifier and
+		changes the area seen in the main view.
+		</p>
+            <p>
+            For demonstration purposes, this sample code uses portable GUI 
+            elements from the Gadgets package of the Rogue Wave Views suite. 
+            Feel free to use these elements in your application if you have 
+            a license for Rogue Wave Views or for Rogue Wave Views Controls. 
+            This information applies to the classes located in the library <code>ilvgadgt</code>, 
+            listed in the <a href="../../../readme.htm#libs:ilvgadgt">README</a> file that you can find in the installation directory.
+            </p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvManager</code></li>
+			<li><code>IlvManagerViewHook</code></li>
+			<li><code>IlvManagerMagViewInteractor</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/magnify.cpp"><code>src/magnify.cpp</code></a></li>
+		</ul>

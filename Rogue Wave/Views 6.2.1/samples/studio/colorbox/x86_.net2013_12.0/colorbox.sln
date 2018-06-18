@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+
+Project("307F3A7E-1D63-11E8-8E12-F080772C9500") = "colorbox", "colorbox.vcxproj", "307EF104-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Global
+EndGlobal
+

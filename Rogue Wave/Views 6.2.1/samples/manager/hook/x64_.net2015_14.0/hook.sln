@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{3207DCE0-1D61-11E8-9326-21D9772C9500}") = "magnify", "magnify.vcxproj", "{320795AA-1D61-11E8-9326-21D9772C9500}"
+EndProject
+Project("{321902B8-1D61-11E8-9326-21D9772C9500}") = "scalemgr", "scalemgr.vcxproj", "{320795AA-1D61-11E8-9326-21D9772C9500}"
+EndProject
+Global
+EndGlobal

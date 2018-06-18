@@ -1,0 +1,25 @@
+var pairs =
+{
+"troubleshooting":{"section":1}
+,"section":{"describes":1}
+,"describes":{"situations":1}
+,"situations":{"careful":1}
+,"careful":{"avoid":1}
+,"avoid":{"cause":1}
+,"cause":{"unexpected":1}
+,"unexpected":{"results":1}
+,"results":{"application":1}
+,"application":{"find":1}
+,"find":{"information":1}
+,"information":{"following":1}
+,"following":{"topics":1}
+,"topics":{"avoiding":1}
+,"avoiding":{"common":1}
+,"common":{"names":1}
+,"names":{"foreign":1}
+,"foreign":{"tables":1,"table":1}
+,"tables":{"matching":1}
+,"matching":{"types":1}
+,"types":{"foreign":1}
+}
+;Search.control.loadWordPairs(pairs);

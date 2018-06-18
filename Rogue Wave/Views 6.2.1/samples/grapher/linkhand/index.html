@@ -1,0 +1,56 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Grapher - Samples: linkhand</title>
+	</head>
+    <body>
+		<a name="linkhand"><h1>Sample: <code>linkhand</code></h1><h1 class="subtitle">IlvLinkHandle Sample</h1></a>
+		<p>This sample demonstrates the use of <code>IlvLinkHandle</code>.</p>
+		<img src="data/linkhand.png"/>
+		<p> 
+	This sample shows how the <code>IlvLinkHandle</code> class can be used to
+	create grapher links from graphic objects. Links are created by a factory 
+	(a subclass of <code>IlvMakeLinkInteractorFactory</code>) that references a graphic
+	model. These models are read from an ilv file and appear in a palette placed at the 
+	top of the panel. Below the palette, a grapher view displays nodes arranged in rows
+	and columns.</p>
+	<p>
+	Each graphic model is associated with a button interactor. Clicking on a model 
+	in the palette sets it as graphic model for the link factory. 
+	As a visual feedback, an image of the model appears in the rightmost part of the palette.
+	The actual models are copies of the graphic objects read from the file. This allows
+	to safely share a model between both its visual representation (managed by an 
+	<code>IlvTransformedGraphic</code> instance) and all the created link handles.</p>
+	<p>
+	Pressing the spacebar switches between two editing modes:</p>
+	<UL>
+	<LI> <b>Selection.</b> This mode is implemented by the 
+	<code>IlvGraphSelectInteractor</code> class. When this mode is active, the visual 
+	representation of the graphic model in the palette disappears. </LI>
+	<LI> <b>Link creation.</b> In this mode, you can connect the nodes displayed in the 
+	grapher view. The created link will reference the current graphic model.
+	</LI>
+	</UL></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGrapher</code></li>
+			<li><code>IlvMakeLinkInteractor</code></li>
+			<li><code>IlvMakeLinkInteractorFactory</code></li>
+			<li><code>IlvLinkHandle</code></li>
+			<li><code>IlvGraphSelectInteractor</code></li>
+			<li><code>IlvTransformedGraphic</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/linkhand.cpp"><code>src/linkhand.cpp</code></a></li>
+		</ul>

@@ -1,0 +1,80 @@
+// Ilv Version: 5.0
+// File generated: Fri Feb 08 14:04:54 2002
+// Creator class: IlvGadgetManagerOutput
+FileName "scombosp"
+Palettes 1
+"IlvStToolBar" 0 F "defaultBg" "defaultFg" "normal" "%helvetica-12" 0 solid solid 0 0 0 65535 1
+IlvObjects 12
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 2 3 138 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&label"  }   } 0
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 140 3 154 22 F6 2 1 -1 0 "Name" } 32 "ComboLabel"
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 2 162 293 16 F1 2 1 2 0 0 0 Y "&editable" } 32 "ComboEditable"
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 2 32 138 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&visibleItems"  }   } 0
+0
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 140 30 154 22 F6 2 2 -1 0 "1234543" . , 2 0 0 2147483647 } 32 "ComboVisibleItems"
+0
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 2 83 138 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&alignment"  }   } 0
+0
+2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 140 83 154 20 F807 2 1 -1 0 "" 3
+{ IlvGadgetItem 1 2 4 "&right"  } 
+{ IlvGadgetItem 1 2 4 "&center"  } 
+{ IlvGadgetItem 1 2 4 "&left"  }  4 0 } 32 "ComboAlignment"
+0
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 2 109 138 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&nb chars"  }   } 0
+0
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 140 109 154 22 F6 2 2 -1 0 "1234543" . , 2 0 0 2147483647 } 32 "ComboNoChars"
+0
+2 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 2 138 293 16 F1 2 1 2 0 0 0 Y "&ChangeFocusOnValidation" } 32 "ComboChangeFocus"
+0
+3 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 2 57 140 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&EnableLargeList"  }   } 32 "enableLargeListLabel"
+0
+3 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 140 57 154 20 F1 2 3
+{ IlvMenuItem 65 2 4 "&None"  } 
+{ IlvMenuItem 1 2 4 "&left"  } 
+{ IlvMenuItem 1 2 4 "&right"  }  0  } 32 "ComboEnableLargeList"
+0
+Size 297 187
+GeometryHandlers
+1 100 0 297 0 297 0
+8 3 0 0 2  0 0 138 0  0 0 157 0
+ 3 0 0 140  154 0 154 1  0 0 3 0
+ 3 0 0 2  293 0 293 2  0 0 2 0
+ 3 0 0 140  154 0 154 4  0 0 3 0
+ 3 0 0 2  0 0 138 3  157 0 157 0
+ 3 0 0 2  0 0 140 10  155 0 155 0
+ 3 0 0 140  154 0 154 11  0 0 3 0
+ 3 0 0 2  293 0 293 9  0 0 2 0
+1 100 0 187 0 187 0
+0
+Layers 4
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+EOF

@@ -1,0 +1,44 @@
+// Ilv Version: 5.0
+// File generated: Wed Mar 13 17:24:46 2002
+// Creator class: IlvGadgetManagerOutput
+FileName "p_matrix"
+Palettes 1
+0 F "defaultBg" "defaultFg" "default" "%helvetica-12" 0 solid solid 0 0 0 65535 1
+IlvObjects 3
+0 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvHierarchicalSheet 5 250 170 110 F43358 2 A A 0 0 0 0 1 0 100 20 1 0 0 1 1 0 2 5 V0 2 20 
+38 
+56 
+74 
+92 
+6 0 0 224 IlvLabelMatrixItem "Name" 
+0 1 136 IlvHierarchicalSheetItem   0 2 136 IlvHierarchicalSheetItem   0 3 136 IlvHierarchicalSheetItem   0 4 136 IlvHierarchicalSheetItem  
+1 0 224 IlvLabelMatrixItem "Value"  1 N 0 1 0 1 0  10 1
+{ IlvTreeGadgetItem 1 2 4 "root" 2
+{ IlvTreeGadgetItem 1 2 4 "First Root" 2
+{ IlvTreeGadgetItem 1 2 4 "Leaf 1" 0
+ } { IlvTreeGadgetItem 1 2 4 "Leaf 2" 0
+ }  } { IlvTreeGadgetItem 1 2 4 "Second Root" 0
+ }  }  } 0
+0
+0 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMatrix 5 5 170 115 F34904 2 N N 0 0 0 0 1 1 55 55 1 1 0 0 1 1 3 2 V0 2 0 1 N 0 0 0 0 0  } 0
+0
+0 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSheet 5 127 170 114 F34904 2 Y Y 0 0 0 0 1 1 40 25 1 1 1 1 0 0 4 4 V0 2 1 0 0 66 IlvLabelMatrixItem "" 
+1 N 0 0 1 1 0  } 0
+0
+Size 180 431
+GeometryHandlers
+1 100 0 180 0 180 0
+3 3 0 0 5  170 0 170 1  0 0 5 0
+ 3 0 0 5  170 0 170 2  0 0 5 0
+ 3 0 0 5  170 0 170 0  0 0 5 0
+1 100 0 431 0 431 0
+3 3 0 0 5  0 0 115 1  0 0 311 0
+ 3 0 0 127  0 0 114 2  0 0 190 0
+ 3 0 0 250  0 0 110 0  0 2 71 0
+EOF

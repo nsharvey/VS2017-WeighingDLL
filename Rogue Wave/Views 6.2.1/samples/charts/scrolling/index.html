@@ -1,0 +1,163 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Charts - Samples: scrolling</title>
+	</head>
+    <body>
+		<a name="shiftcar"><h1>Sample: <code>shiftcar</code></h1><h1 class="subtitle">Displaying a Cartesian Chart Using the Automatic Shift Scroll</h1></a>
+		<p>Demonstration of the automatic shift scroll mode of the charts.</p>
+		<img src="data/shiftcar.png"/>
+		<p>This sample demonstrates the automatic scrolling feature of 
+   the Rogue Wave Views Charts package. It creates a Cartesian chart and connects it to 
+   several data sets. New random data points are added to these data sets at a 
+   given timer period. You can specify this period, in milliseconds, as the only 
+   parameter of the command line. For example, to add new points every 100 
+   milliseconds, run: <br/>
+   <code>shiftcar 100</code>.</p>
+   <p>In the code of this sample, you can specify several other values: </p>
+   <ul>
+    <li>The number of data points added by the timer (<code>NbAddedPts</code>).</li>
+    <li>The number of shown data points (<code>NbShownPts</code>).</li>
+    <li>The number of displayers. Each displayer is associated to a data set 
+        (<code>NbDisplayers</code>).</li>
+   </ul>
+   <p>The timer can be suspended by pressing the 's' key, and resumed by pressing
+   the 'r' key.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvCartesianChart</code></li>
+			<li><code>IlvChartYValueSet</code></li>
+			<li><code>IlvPolylineChartDisplayer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="../include/samputil.h"><code>../include/samputil.h</code></a></li>
+			<li><a href="../src/samputil.cpp"><code>../src/samputil.cpp</code></a></li>
+			<li><a href="src/shiftcar.cpp"><code>src/shiftcar.cpp</code></a></li>
+		</ul>
+		<a name="shiftpol"><h1>Sample: <code>shiftpol</code></h1><h1 class="subtitle">Displaying a Polar Chart Using the Automatic Shift Scroll</h1></a>
+		<p>Demonstration of the automatic shift scroll mode of the charts.</p>
+		<img src="data/shiftpol.png"/>
+		<p>This sample demonstrates the automatic scrolling feature of 
+   the Rogue Wave Views Charts package. This sample is similar to the <code>shiftcar</code> sample, 
+   except that it uses a polar coordinate system. It creates a polar chart and 
+   connects it to several data sets. New random data points are added to these 
+   data sets at a given timer period. You can specify this period, in milliseconds, 
+   as the only parameter of the command line. For example, to add new points every 
+   100 milliseconds, run:<br/>
+   <code>shiftpol 100</code>.</p>
+   <p>In the code of this sample, you can specify several other values: </p>
+   <ul>
+    <li>The number of data points added by the timer (<code>NbAddedPts</code>).</li>
+    <li>The number of shown data points (<code>NbShownPts</code>).</li>
+    <li>The number of displayers. Each displayer is associated to a data set 
+        (<code>NbDisplayers</code>).</li>
+   </ul>
+   <p>The timer can be suspended by pressing the 's' key, and resumed by pressing
+   the 'r' key.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvPolarChart</code></li>
+			<li><code>IlvChartPointSet</code></li>
+			<li><code>IlvPointInfoMap</code></li>
+			<li><code>IlvChartDataPointInfo</code></li>
+			<li><code>IlvMarkedPolylineChartDisplayer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="../include/samputil.h"><code>../include/samputil.h</code></a></li>
+			<li><a href="../src/samputil.cpp"><code>../src/samputil.cpp</code></a></li>
+			<li><a href="src/shiftpol.cpp"><code>src/shiftpol.cpp</code></a></li>
+		</ul>
+		<a name="cyclic"><h1>Sample: <code>cyclic</code></h1><h1 class="subtitle">Displaying a Chart Using the Automatic Cycle Scroll</h1></a>
+		<p>Demonstration of the automatic cycle scroll mode of the charts.</p>
+		<img src="data/cyclic.png"/>
+		<p>This sample demonstrates the cycle scrolling feature of 
+   the Rogue Wave Views Charts package.</p>
+   <p>When new points are added and cannot be displayed on the right side of the 
+   chart, they are translated to the left side of the chart, where the minimum 
+   x-value is replaced by the previous maximum x-value. Previous data points 
+   are therefore dropped. 
+   Note how the x-scale values are updated to match the real translation. The color 
+   of the new markers depends on the actual values they represent. 
+   You can specify the period of the timer, in milliseconds, as the only parameter 
+   of the command line. For example, to add new points every 100 milliseconds, run: <br/>
+   <code>cyclic 100</code>.</p>
+   <p>The timer can be suspended by pressing the 's' key, and resumed by pressing 
+   the 'r' key.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvCartesianChart</code></li>
+			<li><code>IlvChartPointSet</code></li>
+			<li><code>IlvPointInfoMap</code></li>
+			<li><code>IlvChartDataPointInfo</code></li>
+			<li><code>IlvScatterChartDisplayer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="../include/samputil.h"><code>../include/samputil.h</code></a></li>
+			<li><a href="../src/samputil.cpp"><code>../src/samputil.cpp</code></a></li>
+			<li><a href="src/cyclic.cpp"><code>src/cyclic.cpp</code></a></li>
+		</ul>
+		<a name="listener"><h1>Sample: <code>listener</code></h1><h1 class="subtitle">Using Data Sets Listeners in Charts</h1></a>
+		<p>Synchronization of several data sets using listeners.</p>
+		<img src="data/listener.png"/>
+		<p>This sample shows you how to synchronize several data sets using listeners. 
+   This sample simulates the visualization of successive temperature samples. To do this, it 
+   uses two chart objects:</p>
+   <ul>
+    <li>The first one is used to display the actual temperature measures. The
+        temperature is rendered with bars whose color depends on the value of 
+        the temperature (blue for negative values, red for positive values). 
+        The temperature measures are handled by a data set updated randomly 
+        at a given period.
+        The example assumes that a measure is carried out every
+        hour of the day.</li>
+    <li>The second one is used to display the temperature variations across
+        a given period of time (in the case of the example, a
+        day). To do this, it is connected to four data sets
+        representing:</li>
+        <ul>
+            <li>The lowest temperature during the day.</li>
+            <li>The highest temperature during the day.</li>
+            <li>The temperature at the beginning of the day.</li>
+            <li>The temperature at the end of the day (during the
+                day, the value is set to the last measure).</li>
+        </ul>
+        <p> These four data sets are updated through a <strong>listener</strong> set
+        on the temperature data set. This listener is notified
+        whenever a new measure is available and updates the
+        high/low start/end values accordingly. To render these
+        data sets, an instance of <code>IlvHiLoOpenCloseChartDisplayer</code>
+        is used. The color of the start-end bar depends on
+        whether the temperature at the end of the day is greater
+        or lower than the temperature at the beginning of the
+        day.</p>
+   </ul>
+   <p>Every drawing update (scrolling/invalidation of the variations display) is
+   carried out automatically by the chart.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvCartesianChart</code></li>
+			<li><code>IlvChartDataSetListener</code></li>
+			<li><code>IlvChartYValueSet</code></li>
+			<li><code>IlvBarChartDisplayer</code></li>
+			<li><code>IlvHiLoOpenCloseChartDisplayer</code></li>
+			<li><code>IlvChartLegend</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="../include/samputil.h"><code>../include/samputil.h</code></a></li>
+			<li><a href="../src/samputil.cpp"><code>../src/samputil.cpp</code></a></li>
+			<li><a href="src/listener.cpp"><code>src/listener.cpp</code></a></li>
+		</ul>

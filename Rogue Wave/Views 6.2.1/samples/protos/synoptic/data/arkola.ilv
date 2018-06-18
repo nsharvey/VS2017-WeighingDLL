@@ -1,0 +1,283 @@
+// Ilv Version: 5.5
+// File generated: Fri Sep 30 23:05:09 2011
+// Creator class: IlvManagerOutput
+FileName "arkola"
+PathName "C:\\Views\\Work\\views\\samples\\protos\\synoptic\\data\\arkola.ilv"
+Palettes 35
+27 F 48830 48830 48830 "black" "%helvetica-12-B[Charset:0]" 0 solid solid 2 0 0 65535 0
+14 F "antiquewhite3" "lightblue" "fixed" 3 1 "tube" 3 0.000000 16299 32665 39581 65535 0.500000 39321 49427 65535 65535 1.000000 62965 65535 65535 65535 100 100 2 0 0 3 0 0 100 0 solid 0 0 0 65535 0
+26 F 48830 48830 48830 "white" "%Times New Roman-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+28 F 48830 48830 48830 "black" "%Times New Roman-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+4 F "grey40" "sienna" "default" "StockedDefaultGui" 3 0 3 0.000000 38283 24440 5790 65535 0.490000 65535 54270 38261 65535 1.000000 65535 46885 23003 65535 100 100 2 0 0 3 0 0 100 0 solid 0 0 0 65535 0
+29 F 48830 48830 48830 "dimgray" "%Times New Roman-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+19 F "gray" "lightblue" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+0 F "grey40" "darkolivegreen" "default" "StockedDefaultGui" 3 0 3 0.000000 38283 24440 5790 65535 0.490000 65535 54270 38261 65535 1.000000 65535 46885 23003 65535 100 100 2 0 0 3 0 100 0 0 solid 0 0 0 65535 0
+30 F 48830 48830 48830 "red" "%Times New Roman-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+7 F "gray" "black" "default" "StockedDefaultGui" 3 0 3 0.000000 0 5122 26603 65535 0.490000 57142 58354 65535 65535 1.000000 34824 39843 65535 65535 100 100 2 0 0 3 0 0 100 0 solid 0 0 0 65535 0
+24 F "antiquewhite3" "brown" "fixed" 0 solid solid 0 0 0 65535 0
+23 F 48830 48830 48830 "lightblue" "default" "StockedDefaultGui" 0 solid solid 2 0 0 65535 0
+21 F "grey40" "navyblue" "%Courier New-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+9 F "grey40" "navyblue" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+17 F 48830 48830 48830 "green" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+33 F "grey40" 62708 52428 0 "%Courier New-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+31 F "grey40" "black" "large" "%Tahoma-17-B[Charset:0]" 0 solid solid 0 0 0 65535 0
+2 F "gray" "black" "default" "StockedDefaultGui" 3 0 3 0.000000 38283 24440 5790 65535 0.490000 65535 54270 38261 65535 1.000000 65535 46885 23003 65535 100 100 2 0 0 3 0 100 0 0 solid 0 0 0 65535 0
+34 F "grey40" 58339 48059 0 "%Courier New-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+32 F "grey40" "black" "6x13" 0 solid solid 0 0 0 65535 0
+25 F "grey40" "lightblue" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 0
+5 F "gray" "black" "default" "StockedDefaultGui" 3 0 3 0.000000 38283 24440 5790 65535 0.490000 65535 54270 38261 65535 1.000000 65535 46885 23003 65535 100 100 2 0 0 3 0 0 100 0 solid 0 0 0 65535 0
+20 F "grey40" "brown" "%Courier New-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+15 F "lightgray" "black" "large" "%Tahoma-17-B[Charset:0]" 0 solid dashdot 0 0 0 65535 1
+3 F "grey40" "cornflowerblue" "default" "StockedDefaultGui" 3 0 3 0.000000 38283 24440 5790 65535 0.490000 65535 54270 38261 65535 1.000000 65535 46885 23003 65535 100 100 2 0 0 3 0 100 0 0 solid 0 0 0 65535 0
+6 F "grey40" "navyblue" "default" "StockedDefaultGui" 3 0 3 0.000000 0 5122 26603 65535 0.490000 57142 58354 65535 65535 1.000000 34824 39843 65535 65535 100 100 2 0 0 3 0 0 100 0 solid 0 0 0 65535 0
+1 F "grey40" "lightblue" "default" "StockedDefaultGui" 3 0 3 0.000000 38283 24440 5790 65535 0.490000 65535 54270 38261 65535 1.000000 65535 46885 23003 65535 100 100 2 0 0 3 0 100 0 0 solid 0 0 0 65535 0
+10 F "grey40" "coral" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+22 F "lightblue" "black" "italic" "%Tahoma-11-I[Charset:0]" 0 solid solid 0 0 0 65535 1
+18 F "grey40" "black" "%Courier New-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+13 F "grey40" "lightblue" "%Courier New-12-[Charset:0]" 0 solid solid 2 0 0 65535 0
+"default" 8 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+12 F "grey40" "cadetblue" "%Courier New-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+"IlvStToolBar" 16 F "gray" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+11 F "grey40" "dimgray" "%Courier New-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+IlvObjects 17
+0 { 0 0 IlvGraphicSet 3
+{ 0 IlvPolygon 6
+291 713 453 714 454 665 445 665 446 705 291 705 } 
+{ 1 IlvPolyline 3
+285 713 453 713 453 662 } 
+{ 2 IlvPolyline 3
+288 704 445 704 445 664 }  } 0
+0 { 1 0 IlvGraphicSet 3
+{ 3 IlvPolygon 6
+17 322 17 386 217 387 217 377 27 375 26 322 } 
+{ 2 IlvPolyline 3
+16 322 16 387 216 387 } 
+{ 2 IlvPolyline 3
+27 311 27 376 227 376 }  } 0
+0 { 2 0 IlvGraphicSet 2
+{ 4 IlvPolygon 6
+284 124 308 158 308 188 324 187 324 160 352 124 } 
+{ 5 IlvPolyline 6
+283 126 307 160 307 189 323 189 323 161 351 125 }  } 0
+0 { 3 0 IlvGraphicSet 2
+{ 6 IlvPolygon 6
+660 126 684 160 684 190 700 189 700 162 728 126 } 
+{ 7 IlvPolyline 6
+660 126 684 160 684 189 700 189 700 161 728 125 }  } 0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+8 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvGroup IlvGroup
+    nodes {
+        IlvGraphicNode "" "" 0  { -1 { -1 9 IlvPolygon 4
+708 386 912 385 912 358 708 358 } { [ "" F "grey40" "navyblue" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+ ] } }
+        IlvGraphicNode "" "" 0  { -1 { -1 8 IlvPolyline 2
+710 386 910 386 } { [ "default" F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+ ] } }
+        IlvGraphicNode "" "" 0  { -1 { -1 8 IlvPolyline 2
+711 358 912 358 } { @2 } }
+    }
+    subscriptions {
+    }
+;
+ } 32 "IlvGroup"
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+8 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvGroup IlvGroup
+    nodes {
+        IlvGraphicNode "" "" 0  { -1 { -1 10 IlvPolygon 4
+445 258 644 258 644 249 444 250 } { [ "" F "grey40" "coral" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+ ] } }
+        IlvGraphicNode "" "" 0  { -1 { -1 8 IlvPolyline 2
+443 258 643 258 } { @2 } }
+        IlvGraphicNode "" "" 0  { -1 { -1 8 IlvPolyline 2
+444 250 645 250 } { @2 } }
+    }
+    subscriptions {
+    }
+;
+ } 0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+8 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance arkola.Producer Producer_5
+    values {
+        String Name = Water
+        String Capacity = 5000
+        String Level = 3000
+        Color Color = cadetblue
+        String Cost = 0.1
+        Int x = -81
+        Int y = 59
+        String name = Producer_5
+    }
+    subscriptions {
+        Producer_5 Container_3 Output Input Any 17
+    }
+;
+ } 32 "Producer_5"
+1 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+8 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance arkola.Producer Producer_6
+    values {
+        String Name = Nuts
+        Color Color = brown
+        String Rate = 0.025
+        Int x = 215
+        Int y = -155
+        String name = Producer_6
+    }
+    subscriptions {
+        Producer_6 Container_4 Output Input Any 17
+    }
+;
+ } 32 "Producer_6"
+1 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+8 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance arkola.Producer Producer_7
+    values {
+        String Name = Bottles
+        Int x = 457
+        Int y = -153
+        String name = Producer_7
+    }
+    subscriptions {
+        Producer_7 Container_5 Output Input Any 17
+    }
+;
+ } 32 "Producer_7"
+1 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+8 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance arkola.Container Container_3
+    values {
+        String Name = WTank
+        Int x = 183
+        Int y = 180
+        String name = Container_3
+    }
+    subscriptions {
+        Container_3 Mixer_5 Output Input Any 17
+    }
+;
+ } 32 "Container_3"
+1 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+8 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance arkola.Container Container_4
+    values {
+        String Name = NTank
+        Color Color = brown
+        Int x = 263
+        Int y = 180
+        String name = Container_4
+    }
+    subscriptions {
+        Container_4 Mixer_5 Output Input Any 17
+    }
+;
+ } 32 "Container_4"
+1 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+8 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance arkola.Mixer Mixer_5
+    values {
+        String Name = Boiler
+        Int x = 344
+        Int y = 178
+        Double scaleY = 0.988
+        String name = Mixer_5
+    }
+    subscriptions {
+        Mixer_5 Mixer_6 Output Input Any 17
+    }
+;
+ } 32 "Mixer_5"
+1 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+8 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance arkola.Container Container_5
+    values {
+        String Name = BTank
+        Int x = 655
+        Int y = -116
+        String name = Container_5
+    }
+    subscriptions {
+        Container_5 Mixer_6 Output Input Any 17
+    }
+;
+ } 32 "Container_5"
+1 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+8 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance arkola.Mixer Mixer_6
+    values {
+        String Name = Bottler
+        Int x = 612
+        Int y = 173
+        String name = Mixer_6
+    }
+    subscriptions {
+        Mixer_6 Factory_5 Output Input Any 17
+    }
+;
+ } 32 "Mixer_6"
+1 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+8 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance arkola.Factory Factory_5
+    values {
+        String Name = Arkola
+        Int x = 885
+        Int y = 168
+        String name = Factory_5
+    }
+    subscriptions {
+    }
+;
+ } 32 "Factory_5"
+1 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+8 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance arkola.Container Container_6
+    values {
+        String Name = Burner
+        Color Color = #F4F4CCCC0000
+        Int x = 419
+        Int y = 442
+        String name = Container_6
+    }
+    subscriptions {
+        Container_6 Mixer_5 Output Input Any 17
+    }
+;
+ } 32 "Container_6"
+1 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+8 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance arkola.Producer Producer_8
+    values {
+        String Name = Fuel
+        Color Color = #E3E3BBBB0000
+        Int x = 109
+        Int y = 443
+        String name = Producer_8
+    }
+    subscriptions {
+        Producer_8 Container_6 Output Input Any 17
+    }
+;
+ } 32 "Producer_8"
+Layers 2
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+Views 1
+"v137" 1 0 0 1 81 -40
+Properties 1
+[ IlvGroupHolder __ilvGroupHolder  ]
+EOF

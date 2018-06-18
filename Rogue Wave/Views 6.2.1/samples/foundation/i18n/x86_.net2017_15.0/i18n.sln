@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{19468EF0-1D6F-11E8-9A26-E378772C9500}") = "changelang", "changelang.vcxproj", "{19462212-1D6F-11E8-9A26-E378772C9500}"
+EndProject
+Project("{194FF2C4-1D6F-11E8-9A26-E378772C9500}") = "controlinput", "controlinput.vcxproj", "{19462212-1D6F-11E8-9A26-E378772C9500}"
+EndProject
+Global
+EndGlobal

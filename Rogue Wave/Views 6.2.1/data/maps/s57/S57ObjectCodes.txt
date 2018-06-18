@@ -1,0 +1,181 @@
+Administration Area (Named),ADMARE,1
+Airport/airfield,AIRARE,2
+Anchor berth,ACHBRT,3
+Anchorage area,ACHARE,4
+Beacon (cardinal),BCNCAR,5
+Beacon (isolated danger),BCNISD,6
+Beacon (lateral),BCNLAT,7
+Beacon (safe water),BCNSAW,8
+Beacon (special purpose/general),BCNSPP,9
+Berth,BERTHS,10
+Bridge,BRIDGE,11
+Building (single),BUISGL,12
+Built-up area,BUAARE,13
+Buoy (cardinal),BOYCAR,14
+Buoy (installation),BOYINB,15
+Buoy (isolated danger),BOYISD,16
+Buoy (lateral),BOYLAT,17
+Buoy (safe water),BOYSAW,18
+Buoy (special purpose/general),BOYSPP,19
+Cable area,CBLARE,20
+Cable (overhead),CBLOHD,21
+Cable (submarine),CBLSUB,22
+Canal,CANALS,23
+Canal bank,CANBNK,24
+Cargo transhipment area,CTSARE,25
+Causeway,CAUSWY,26
+Caution area,CTNARE,27
+Checkpoint,CHKPNT,28
+Coastguard station,CGUSTA,29
+Coastline,COALNE,30
+Contiguous zone,CONZNE,31
+Continental shelf area,COSARE,32
+Control point,CTRPNT,33
+Conveyor,CONVYR,34
+Crane,CRANES,35
+Current - non-gravitational,CURENT,36
+Custom zone,CUSZNE,37
+Dam,DAMCON,38
+Daymark,DAYMAR,39
+Deep water route centerline,DWRTCL,40
+Deep water route part,DWRTPT,41
+Depth area,DEPARE,42
+Depth contour,DEPCNT,43
+Distance mark,DISMAR,44
+Dock area,DOCARE,45
+Dredged area,DRGARE,46
+Dry dock,DRYDOC,47
+Dumping ground,DMPGRD,48
+Dyke,DYKCON,49
+Exclusive economic zone,EXEZNE,50
+Fairway,FAIRWY,51
+Fence/wall,FNCLNE,52
+Ferry route,FERYRT,53
+Fishery zone,FSHZNE,54
+Fishing facility,FSHFAC,55
+Fishing ground,FSHGRD,56
+Floating dock,FLODOC,57
+Fog signal,FOGSIG,58
+Fortified structure,FORSTC,59
+Free port area,FRPARE,60
+Gate,GATCON,61
+Gridiron,GRIDRN,62
+Harbour area (administrative),HRBARE,63
+Harbour facility,HRBFAC,64
+Hulk,HULKES,65
+Ice area,ICEARE,66
+Incineration area,ICNARE,67
+Inshore traffic zone,ISTZNE,68
+Lake,LAKARE,69
+Lake shore,LAKSHR,70
+Land area,LNDARE,71
+Land elevation,LNDELV,72
+Land region,LNDRGN,73
+Landmark,LNDMRK,74
+Light,LIGHTS,75
+Light float,LITFLT,76
+Light vessel,LITVES,77
+Local magnetic anomaly,LOCMAG,78
+Lock basin,LOKBSN,79
+Log pond,LOGPON,80
+Magnetic variation,MAGVAR,81
+Marine farm/culture,MARCUL,82
+Military practice area,MIPARE,83
+Mooring/Warping facility,MORFAC,84
+Navigation line,NAVLNE,85
+Obstruction,OBSTRN,86
+Offshore platform,OFSPLF,87
+Offshore production area,OSPARE,88
+Oil barrier,OILBAR,89
+Pile,PILPNT,90
+Pilot boarding place,PILBOP,91
+Pipeline area,PIPARE,92
+Pipeline (overhead),PIPOHD,93
+Pipeline (submarine/on land),PIPSOL,94
+Pontoon,PONTON,95
+Precautionary area,PRCARE,96
+Production/storage area,PRDARE,97
+Pylon/bridge support,PYLONS,98
+Radar line,RADLNE,99
+Radar range,RADRNG,100
+Radar reflector,RADRFL,101
+Radar station,RADSTA,102
+Radar transponder beacon,RTPBCN,103
+Radio calling-in point,RDOCAL,104
+Radio station,RDOSTA,105
+Railway,RAILWY,106
+Rapids,RAPIDS,107
+Recommended route centerline,RCRTCL,108
+Recommended track,RECTRC,109
+Recommended traffic lane part,RCTLPT,110
+Rescue station,RSCSTA,111
+Restricted area,RESARE,112
+Retro-reflector,RETRFL,113
+River,RIVERS,114
+River bank,RIVBNK,115
+Road,ROADWY,116
+Runway,RUNWAY,117
+Sand waves,SNDWAV,118
+Sea area/named water area,SEAARE,119
+Sea-plane landing area,SPLARE,120
+Seabed area,SBDARE,121
+Shoreline construction,SLCONS,122
+Signal station (traffic),SISTAT,123
+Signal station (warning),SISTAW,124
+Silo/tank,SILTNK,125
+Slope topline,SLOTOP,126
+Sloping ground,SLOGRD,127
+Small craft facility,SMCFAC,128
+Sounding,SOUNDG,129
+Spring,SPRING,130
+Square,SQUARE,131
+Straight territorial sea baseline,STSLNE,132
+Submarine transit lane,SUBTLN,133
+Swept Area,SWPARE,134
+Territorial sea area,TESARE,135
+Tidal stream - flood/ebb,TS_FEB,160
+Tidal stream - harmonic prediction,TS_PRH,136
+Tidal stream - non-harmonic prediction,TS_PNH,137
+Tidal stream panel data,TS_PAD,138
+Tidal stream - time series,TS_TIS,139
+Tide - harmonic prediction,T_HMON,140
+Tide - non-harmonic prediction,T_NHMN,141
+Tide - time series,T_TIMS,142
+Tideway,TIDEWY,143
+Topmark,TOPMAR,144
+Traffic separation line,TSELNE,145
+Traffic separation scheme boundary,TSSBND,146
+Traffic separation scheme crossing,TSSCRS,147
+Traffic separation scheme lane part,TSSLPT,148
+Traffic separation scheme roundabout,TSSRON,149
+Traffic separation zone,TSEZNE,150
+Tunnel,TUNNEL,151
+Two-way route part,TWRTPT,152
+Underwater/awash rock,UWTROC,153
+Unsurveyed area,UNSARE,154
+Vegetation,VEGATN,155
+Water turbulence,WATTUR,156
+Waterfall,WATFAL,157
+Weed/Kelp,WEDKLP,158
+Wreck,WRECKS,159
+Accuracy of data,M_ACCY,300
+Compilation scale of data,M_CSCL,301
+Coverage,M_COVR,302
+Horizontal datum of data,M_HDAT,303
+Horizontal datum shift parameters,M_HOPA,304
+Nautical publication information,M_NPUB,305
+Navigational system of marks,M_NSYS,306
+Production information,M_PROD,307
+Quality of data,M_QUAL,308
+Sounding datum,M_SDAT,309
+Survey reliability,M_SREL,310
+Units of measurement of data,M_UNIT,311
+Vertical datum of data,M_VDAT,312
+Aggregation,C_AGGR,400
+Association,C_ASSO,401
+Stacked on/stacked under,C_STAC,402
+Cartographic area,$AREAS,500
+Cartographic line,$LINES,501
+Cartographic symbol,$CSYMB,502
+Compass,$COMPS,503
+Text,$TEXTS,504

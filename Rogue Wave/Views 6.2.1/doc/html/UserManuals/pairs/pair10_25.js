@@ -1,0 +1,19 @@
+var pairs =
+{
+"registering":{"gantt":1}
+,"gantt":{"data":1}
+,"data":{"change":1,"object":1,"objects":1}
+,"change":{"hooks":1,"name":1}
+,"hooks":{"section":1}
+,"section":{"shows":1}
+,"shows":{"handle":1}
+,"handle":{"name":1}
+,"name":{"property":1}
+,"property":{"gantt":1,"notified":1}
+,"object":{"show":1}
+,"show":{"first":1}
+,"first":{"change":1}
+,"notified":{"name":1}
+,"objects":{"changed":1}
+}
+;Search.control.loadWordPairs(pairs);

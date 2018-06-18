@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvgrapher -->
+<module name="ilvgrapher" version="6.2">
+<class name="IlvArcLinkImage" rootClass="IlvGraphic"/>
+<class name="IlvArcLinkInteractor" rootClass="IlvInteractor" sharedName="ArcLinkInteractor"/>
+<class name="IlvDoubleLinkImage" rootClass="IlvGraphic"/>
+<class name="IlvDoubleSplineLinkImage" rootClass="IlvGraphic"/>
+<class name="IlvGenericPin" rootClass="IlvNamedProperty"/>
+<class name="IlvGraphLinkSelection" rootClass="IlvGraphic"/>
+<class name="IlvGraphNodeSelection" rootClass="IlvGraphic"/>
+<class name="IlvGrapher" rootClass="IlvManager"/>
+<class name="IlvGrapherPin" rootClass="IlvNamedProperty"/>
+<class name="IlvLinkHandle" rootClass="IlvGraphic"/>
+<class name="IlvLinkImage" rootClass="IlvGraphic"/>
+<class name="IlvLinkInteractor" rootClass="IlvInteractor" sharedName="Link"/>
+<class name="IlvLinkLabel" rootClass="IlvGraphic"/>
+<class name="IlvMakeDoubleLinkImageInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeDoubleSplineLinkImageInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeLabelLinkImageInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeLinkImageInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeLinkInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeNodeInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeOneLinkImageInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeOneSplineLinkImageInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakePolyLinkInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakePolylineLinkInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeReliefNodeInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeShadowNodeInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvNDoubleLinkImage" rootClass="IlvGraphic"/>
+<class name="IlvOneLinkImage" rootClass="IlvGraphic"/>
+<class name="IlvOneLinkInteractor" rootClass="IlvInteractor" sharedName="OneLinkInteractor"/>
+<class name="IlvOneSplineLinkImage" rootClass="IlvGraphic"/>
+<class name="IlvPinEditorInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvPolyLinkInteractor" rootClass="IlvInteractor" sharedName="PolyLink"/>
+<class name="IlvPolyRelLinkImage" rootClass="IlvGraphic"/>
+<class name="IlvPolylineLinkImage" rootClass="IlvGraphic"/>
+</module>

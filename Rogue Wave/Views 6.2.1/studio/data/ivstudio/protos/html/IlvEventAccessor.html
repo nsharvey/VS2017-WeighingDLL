@@ -1,0 +1,23 @@
+<html><head><title>Prototypes</title></head>
+<body bgcolor=#ffffff>
+<a name="948894">
+<h3><FONT color=#b61840> Event </FONT></h3>
+</a><a name="948895">
+The Event accessor (class <a href="../../refman/html/IlvEventAccessor.html"><code>IlvEventAccessor</code></a>) is used to trigger a behavior in response to user or other application events. When an event of a given type occurs while the mouse pointer is over a node of the prototype, the value to which the accessor is attached is evaluated (that is, all its accessors handle the value). <p>
+</a><a name="948896">
+While the Callback pushes a value to another value of the prototype, the EventTrigger pushes the value to itself. The EventTrigger is thus similar to attaching a Connect accessor to itself after attaching a callback.<p>
+</a><a name="948897">
+<h4><FONT color=#b61840> Parameters</FONT></h4>
+</a><ul><a name="948898">
+<li>Graphic Node: The name of a graphic node. Events received from the input devices are sent to the accessor over this graphic node to trigger a behavior. The special value <code>[All &#32;Nodes]</code> indicates that this value is triggered when any event of the given type reaches any of the graphic nodes of the prototype.
+</a><p><a name="948899">
+<li>Event Type: The event type that triggers the accessor. The type can be any of the standard Rogue Wave Views event types: <code>AnyEvent</code>, <code>KeyUp</code>, <code>KeyDown</code>, <code>ButtonDown</code>, <code>ButtonUp</code>, <code>EnterWindow</code>, <code>LeaveWindow</code>, <code>PointerMoved</code>, <code>ButtonDragged</code>, <code>Repaint</code>, <code>ModifyWindow</code>, <code>Visibility</code>, <code>MapWindow</code>, <code>UnMapWindow</code>, <code>Reparent</code>, <code>KeyboardFocusIn</code>, <code>KeyboardFocusOut</code>, <code>DestroyWindow</code>, <code>ClientMessage</code>, and <code>DoubleClick</code>.
+</a><p><a name="948900">
+<li>Detail: The detail of the event. This parameter indicates additional filtering of the events and depends on the event type. For example, for a <code>ButtonDown</code> event, the detail can be: <code>AnyButton</code>, <code>LeftButton</code>, <code>RightButton</code>, <code>MiddleButton</code>, <code>Button4</code>, and <code>Button5</code>. For a <code>KeyDown</code> event, the detail parameter indicates the key (or <code>AnyKey</code>) that triggers the accessor. See the <a href="../../refman/html/IlvEvent.html"><code>IlvEvent</code></a> class in the <em>Rogue Wave Views Reference Manual</em> for a list of the valid keys.
+</a><p><a name="948901">
+<li>Modifiers: Indicates which modifiers should be pressed. Possible values are: <code>AnyModifier</code>, <code>NoModifier</code>, <code>Shift</code>, <code>Ctrl</code>, <code>Meta</code>, <code>Alt</code>, <code>Num</code>, <code>Lock</code>, <code>Alt+G</code>, or any combination of the previous modifiers (such as <code>Shift+Crtl</code>, <code>Ctrl+Shift+Alt</code>, and so on).
+</a><p><a name="948902">
+<li>Event data to send: The event attribute that is pushed to the current value. It can be the Type, the Detail, X (the horizontal position of the mouse relative to the window), Y (the vertical position of the mouse), GlobalX, and GlobalY (the position of the mouse relative to the screen).
+</a><p></ul><a name="948903">
+</body>
+</html><hr><a href=displayb>Back</a>

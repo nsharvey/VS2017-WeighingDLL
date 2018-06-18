@@ -1,0 +1,22 @@
+var pairs =
+{
+"release":{"notes":1}
+,"notes":{"version":1}
+,"version":{"5.0":1,"find":1}
+,"5.0":{"chapter":1}
+,"chapter":{"describes":1}
+,"describes":{"changes":1}
+,"changes":{"made":1}
+,"made":{"rogue":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1}
+,"views":{"version":1}
+,"find":{"information":1}
+,"information":{"following":1}
+,"following":{"topics":1}
+,"topics":{"new":1}
+,"new":{"features":1}
+,"features":{"code":1}
+,"code":{"changes":1}
+}
+;Search.control.loadWordPairs(pairs);

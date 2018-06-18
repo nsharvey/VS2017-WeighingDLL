@@ -1,0 +1,66 @@
+// Ilv Version: 3.1
+// File generated: Mon Jan 18 14:58:24 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "optres"
+PathName "C:\\users\\noiret\\dev\\views.work\\studio\\data\\ivstudio\\optres.ilv"
+Palettes 2
+"IlvStText" 1 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+0 "gray" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 12
+4 { 0 0 IlvFrame 8 -1 436 106 F8 0 25 16 4 "&FontNames"   } 32 "FontNamesLabel"
+0
+4 { 1 0 IlvButton 361 11 72 23 F9 2 1 16 4 "&InsertList"   } 32 "FontNamesInsert"
+6144 "FontNamesDelete" "FontName"
+4 { 2 0 IlvButton 361 40 72 23 F9 2 1 16 4 "&DeleteList"   } 32 "FontNamesDelete"
+6144 "FontFoundryList" "FontNamesInsert"
+4 { 3 1 IlvMessageLabel 19 47 251 22 F8 0 25 16 4 "&FontName"   } 32 "FontNameLabel"
+0
+4 { 4 1 IlvTextField 19 72 248 22 F6 2 1 -1 0 "Text Field" } 32 "FontName"
+6144 "FontNamesInsert" "FontNamesList"
+4 { 5 1 IlvScrolledComboBox 19 21 326 20 F815 2 "SCCombo" 8
+IlvGadgetItem 1 2 4 "A"  
+IlvGadgetItem 1 2 4 "B"  
+IlvGadgetItem 1 2 4 "C"  
+IlvGadgetItem 1 2 4 "D"  
+IlvGadgetItem 1 2 4 "E"  
+IlvGadgetItem 1 2 4 "F"  
+IlvGadgetItem 1 2 4 "G"  
+IlvGadgetItem 1 2 4 "H"   4 0 } 32 "FontNamesList"
+6144 "FontName" "GadgetPaletteFileName"
+4 { 6 0 IlvFrame 7 106 436 106 F8 0 25 16 4 "&FontFoundries"   } 32 "FontFoundriesLabel"
+0
+4 { 7 0 IlvButton 360 118 72 23 F9 2 1 16 4 "&InsertList"   } 32 "FontFoundryInsert"
+6144 "FontFoundryDelete" "FontFoundry"
+4 { 8 0 IlvButton 360 147 72 23 F9 2 1 16 4 "&DeleteList"   } 32 "FontFoundryDelete"
+6144 "GadgetPaletteFileName" "FontFoundryInsert"
+4 { 9 1 IlvMessageLabel 18 154 254 22 F8 0 25 16 4 "&Foundry"   } 32 "FoundryLabel"
+0
+4 { 10 1 IlvTextField 18 179 248 22 F6 2 1 -1 0 "Text Field" } 32 "FontFoundry"
+6144 "FontFoundryInsert" "FontFoundryList"
+4 { 11 1 IlvScrolledComboBox 18 128 326 20 F815 2 "SCCombo" 8
+IlvGadgetItem 1 2 4 "A"  
+IlvGadgetItem 1 2 4 "B"  
+IlvGadgetItem 1 2 4 "C"  
+IlvGadgetItem 1 2 4 "D"  
+IlvGadgetItem 1 2 4 "E"  
+IlvGadgetItem 1 2 4 "F"  
+IlvGadgetItem 1 2 4 "G"  
+IlvGadgetItem 1 2 4 "H"   4 0 } 32 "FontFoundryList"
+6144 "FontFoundry" "FontNamesDelete"
+Size 449 217
+GeometryHandlers
+1 100 0 449 0 449 0
+11 3 0 0 8  436 0 436 0  0 0 5 0
+ 3 0 0 19  326 0 326 5  0 0 104 0
+ 3 361 0 361  0 0 72 1  0 0 16 0
+ 3 361 0 361  0 0 72 2  0 0 16 0
+ 3 0 0 19  251 0 251 3  0 0 179 0
+ 3 0 0 19  248 0 248 4  0 0 182 0
+ 3 0 0 7  436 0 436 6  0 0 6 0
+ 3 0 0 18  326 0 326 11  0 0 105 0
+ 3 360 0 360  0 0 72 7  0 0 17 0
+ 3 360 0 360  0 0 72 8  0 0 17 0
+ 3 0 0 18  248 0 248 10  0 0 183 0
+1 100 0 217 0 217 0
+0
+EOF

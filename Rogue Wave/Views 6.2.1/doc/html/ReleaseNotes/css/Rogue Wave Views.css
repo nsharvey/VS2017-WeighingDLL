@@ -1,0 +1,169 @@
+div.Body, caption.Body
+{
+  color: #000000;
+  direction: ltr;
+  font-family: Sans-Serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6.0pt;
+  margin-left: 1.35em;
+  margin-right: 0pt;
+  margin-top: 6.0pt;
+  text-align: left;
+  text-indent: 0em;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 96%;
+}
+
+div.CellBody, caption.CellBody
+{
+  color: #000000;
+  direction: ltr;
+  font-family: Sans-Serif;
+  font-size: 9.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  padding-bottom: .25em;
+  padding-top: .25em;
+  text-align: left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 96%;
+}
+
+div.CellHeading, caption.CellHeading
+{
+  color: #000000;
+  direction: ltr;
+  font-family: Arial;
+  font-size: 9.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 0.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 96%;
+}
+
+div.Header, caption.Header
+{
+  color: #000000;
+  direction: ltr;
+  font-family: "Microsoft Sans Serif";
+  font-size: 10.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: justify;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 96%;
+}
+
+div.SplashTitle, caption.SplashTitle
+{
+  color: #226099;
+  direction: ltr;
+  font-family: Sans-Serif;
+  font-size: xx-large;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 0.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  padding-bottom: 1.5em;
+  text-align: center;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 96%;
+}
+
+span.arrow, abbreviation.arrow, acronym.arrow, citation.arrow
+{
+  color: #000000;
+  font-family: ZapfDingbats;
+  font-size: 10.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.emphasis, abbreviation.emphasis, acronym.emphasis, citation.emphasis
+{
+  font-style: italic;
+}
+
+span.mantitle, abbreviation.mantitle, acronym.mantitle, citation.mantitle
+{
+  color: #000000;
+  font-family: Helvetica;
+  font-size: 9.0pt;
+  font-style: normal;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+span.note, abbreviation.note, acronym.note, citation.note
+{
+  color: #7f7f7f;
+  font-family: Palatino;
+  font-size: 10.0pt;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: bold;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+table.List
+{
+  border-collapse: collapse;
+  direction: ltr;
+  margin-bottom: 3.0pt;
+  margin-left: 7em;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  padding-bottom: 4pt;
+  padding-left: 4pt;
+  padding-right: 4pt;
+  padding-top: 6pt;
+  text-align: center;
+}
+
+img.Default
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+video.Default
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+

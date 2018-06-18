@@ -1,0 +1,3 @@
+Files: session.h session.cpp
+Note: Shows how to use the IliSQLSession and IliSQLCursor classes to 
+directly submit SQL statements to a DBMS.

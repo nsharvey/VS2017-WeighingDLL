@@ -1,0 +1,130 @@
+help "proinsp" {
+    title "Prototype Inspector";
+    description "Prototype Inspector";
+}
+
+The Prototype Inspector is where you edit the structure and the
+behavior of your prototypes. This panel also lets you customize
+the values of prototype instances.
+
+The Prototype Inspector contains a notebook with three pages:
+"Values", "Nodes" and "Accessors". When you select a prototype
+instance in a panel, only the "Values" page is active.
+
+Values:
+-------
+The "Values" page lists the values of the accessors for the selected
+prototype or prototype instances.
+
+The combo box at the top lets you select which values are displayed:
+
+- Public values      Lists only the public values, i.e. the
+                     values defined by the accessors defined
+                     with the "Public" flag checked.
+- Modified values    Lists the values that differ between a
+                     prototype instance and its prototype.
+- Initial values     Lists the initial values of the prototype,
+                     i.e. the values that have been set for the
+                     prototype itself.
+- All values         Lists all the values, including the
+                     subvalues of the prototype's nodes.
+
+To change a value, click in the corresponding row of the matrix,
+An edition field appears on top of the value. If the value is an
+Rogue Wave Views resource (color, font or bitmap), an icon appears on the
+right of the field: click this icon to pop a resource selector.
+If the value can be selected from a number of predefined choices,
+the edition field is replaced by a combo box. If you click in the
+row with the right mouse button, the combo box or resource selector
+pops up directly.
+
+You can also type the value directly in the edition field.
+
+To apply the new value, click the "Apply" button.
+
+You can change several values (without clicking "Apply")
+and apply them all together by clicking the "Apply All" button.
+
+The "Update" button updates the values currently displayed.
+
+Nodes:
+------
+The "Nodes" page shows the structure of the prototype in the tree
+gadget on the left, and the properties of the selected node on the
+right.
+
+You can select a node by clicking in the tree gadget (Shift-click
+to extend the selection). If you select a group (i.e. the prototype
+itself or a sub-group in it), the properties apply to the whole group.
+
+The node properties are:
+
+- Node name:              The node's name.
+- Layer:                  The manager layer to which the node is added.
+- Visible:                The visiblity state of the node.
+- Use local transformer:  If this box is checked, the node will use
+                          a local IlvTransformer, which ensures that its
+                          geometry will not be corrupted when it is resized.
+- Zoom threshold:         The zooming factor below which the node becomes
+                          invisible (e.g. 0.5 makes the object disappear
+                          when the view is unzoomed by a factor of 2 or more).
+                          If the zoom threshold is negative, the object
+                          will *appear* only when the zooming factor is
+                          greater than the threshold.
+
+                          NOTE: The zoom threshold is effective only if
+                                "Use local transformer" is checked.
+
+- Grapher node:           Check this box to be able to use the object as
+                          a Grapher node and attach Grapher links to it.
+
+- Hidden in appli:        If this box is checked, the object will be visible
+                          only in Studio, and it will be invisible in your
+                          applications.
+
+To validate the new properties, click "Apply".
+
+To reset the properties to the current values of the selected node,
+click "Reset".
+
+Accessors:
+----------
+The "Accessors" page lets you define the accessors (i.e. the behavior)
+of your prototype.
+
+The tree gadget on the left contains a root item for every different
+accessor name. Each name item has one or several sub-items corresponding
+to the different actions attached to this name.
+
+To define an accessor, you must fill the fields on the right of the page:
+
+- Name:        The name of the accessor, i.e. the value to which the
+               accessor action will be associated.
+- Action:      The action that will be executed when the value of this
+               accessor is changed and/or queried. There are many predefined
+               actions that you can combine to "program" the behavior of
+               your prototype. Remember that you can add several actions
+               with the same name.
+- Type:        The type of the value: choose the type from the combo box.
+- Public:      Uncheck this box if you want this accessor to be private.
+- Persistent:  Uncheck this box if you do not want the value of this accessor
+               to be saved to panel files.
+
+Depending on the accessor action you selected, a number of parameters
+will appear in the matrix below. You must provide a value for every
+parameter. To do this, click in the matrix row. Most of the time, the
+parameter can be chosen from a combo box or from a resource selector.
+You can click with the right mouse button to pop the combo box or selector
+directly.
+
+Once you have entered all the parameters, click "Add": the new accessor
+appears in the tree.
+
+To change the parameters of an accessor, select it in the tree, edit
+the fields, and click "Replace".
+
+To delete an accessor, select it and click "Delete".
+
+You can change the order of your accessors with the "up" and "down"
+arrows. The order of the accessors can be important because the actions
+are always executed in the same order as they appear in the tree gadget.

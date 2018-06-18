@@ -1,0 +1,39 @@
+/* XPM */
+static char *cursor[] = {
+/* width height num_colors chars_per_pixel */
+"    28    28        4            1",
+/* colors */
+". c #000000",
+"# c #808080",
+"a c #ffffff",
+"b c none",
+/* pixels */
+"bbbbbbbbbbbbb..bbbbbbbbbbbbb",
+"bbbbbbbb............bbbbbbbb",
+"bbbbbbb...aaaaaaaaa..bbbbbbb",
+"bbbbb...aaaaa##aaaaaa..bbbbb",
+"bbbb...aaaaa####aaaaaa..bbbb",
+"bbb..aaaaaa######aaaaaaa.bbb",
+"bbb..aaaaa########aaaaaa.bbb",
+"bb..aaaaa##########aaaaaa.bb",
+"b..aaaaa############aaaaaa.b",
+"b..aaaa##############aaaaa.b",
+"b.aaaaaaaaaaaaaaaaaaaaaaaaab",
+"b.aaaaaaaaaaaaaaaaaaaaaaaaab",
+"b.aaaaaaaaaaa##aaaaaaaaaaaab",
+"b.aaaaaaaaaa####aaaaaaaaaaa.",
+"baaaaaaaaaaa####aaaaaaaaaaa.",
+"b.aaaaaaaaaaa##aaaaaaaaaaaab",
+"b.aaaaaaaaaaaaaaaaaaaaaaaaab",
+"b.aaaaaaaaaaaaaaaaaaaaaaaaab",
+"b.aaaaa##############aaaaaab",
+"b..aaaaa############aaaaaa.b",
+"bb.aaaaaa##########aaaaaaabb",
+"bbb.aaaaaa########aaaaaaabbb",
+"bbb..aaaaaa######aaaaaaaabbb",
+"bbbb.aaaaaaa####aaaaaaaabbbb",
+"bbbbb..aaaaaa##aaaaaaa.bbbbb",
+"bbbbbbb.aaaaaaaaaaaaa.bbbbbb",
+"bbbbbbbb..aaaaaaaaa.bbbbbbbb",
+"bbbbbbbbbbbbb..bbbbbbbbbbbbb"
+};

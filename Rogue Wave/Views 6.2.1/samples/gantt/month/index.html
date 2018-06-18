@@ -1,0 +1,35 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Gantt Chart - Samples: month</title>
+	</head>
+    <body>
+		<a name="month"><h1>Sample: <code>month</code></h1><h1 class="subtitle">Rogue Wave Views Gantt Chart With Customized Scales</h1></a>
+		<p>A Gantt chart shows customized scales, grids, line graphics, and link graphics.</p>
+		<img src="data/month.png"/>
+		<p>The <code>IlvGanttChart</code> subclasses (defined in <code>montgant.h</code> and <code>loadgant.h</code>) show how to customize the scale management (<code>updateScale</code> and <code>createScale</code> methods) and how to customize the drawing of the grid (<code>drawGrid</code> method).</p>
+         <p>The source file also shows how to define graphic models for the Gantt chart lines and how to define a graphic model for the Gantt chart links.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGanttChart</code></li>
+			<li><code>IlvGanttLine</code></li>
+			<li><code>IlvGanttNode</code></li>
+			<li><code>IlvGanttSubNode</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/month.h"><code>include/month.h</code></a></li>
+			<li><a href="include/monthgantt.h"><code>include/monthgantt.h</code></a></li>
+			<li><a href="src/month.cpp"><code>src/month.cpp</code></a></li>
+			<li><a href="src/monthgantt.cpp"><code>src/monthgantt.cpp</code></a></li>
+		</ul>

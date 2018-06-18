@@ -1,0 +1,24 @@
+// Ilv Version: 4.0
+// File generated: Wed Jun 21 08:08:02 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "dsselect"
+PathName "dsselect.ilv"
+Palettes 1
+"default" 0 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 1
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IliDataSourceSheet 5 5 281 207 F34896 2 Y N S 0 0 0 0 1 0 60 30 0 1 1 1 1 1 2 1 V0 2 60 
+261 
+2 0 0 226 IlvLabelMatrixItem "&insp_DataSourcesCols" 
+1 0 226 IlvLabelMatrixItem "&insp_Value"  1 L N 0 0 1 1 0  10 1
+{ IlvTreeGadgetItem 1 2 4 "root" 0
+ }  0 0  0  } 32 "DsSheet"
+0
+Size 291 217
+GeometryHandlers
+1 100 0 291 0 291 0
+1 3 0 0 5  281 0 281 0  0 0 5 0
+1 100 0 217 0 217 0
+1 3 0 0 5  207 0 207 0  0 0 5 0
+EOF

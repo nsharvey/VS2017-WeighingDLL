@@ -1,0 +1,20 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+
+Project("2AE5EA68-1D63-11E8-8E12-F080772C9500") = "ivfstudio", "ivfstudio.vcxproj", "2AE568B8-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Project("2B06B40A-1D63-11E8-8E12-F080772C9500") = "ivstudio", "ivstudio.vcxproj", "2AE568B8-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Project("2B285F2E-1D63-11E8-8E12-F080772C9500") = "jsstudio", "jsstudio.vcxproj", "2AE568B8-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Project("2B4EBE26-1D63-11E8-8E12-F080772C9500") = "prstudio", "prstudio.vcxproj", "2AE568B8-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Project("2B7AEBFE-1D63-11E8-8E12-F080772C9500") = "chstudio", "chstudio.vcxproj", "2AE568B8-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Global
+EndGlobal
+

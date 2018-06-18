@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("D5B9A7A6-1D61-11E8-866E-3591772C9500") = "withdb", "withdb.vcxproj", "D5B944C8-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Global
+EndGlobal
+

@@ -1,0 +1,20 @@
+var pairs =
+{
+"group":{"label":1,"path":1,"action":1,"specified":1,"options":1}
+,"label":{"group":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"draw":1}
+,"draw":{"menu":1}
+,"menu":{"category":1}
+,"category":{"group":1}
+,"action":{"groups":1}
+,"groups":{"selected":1}
+,"selected":{"objects":1}
+,"objects":{"preferred":1}
+,"preferred":{"type":1}
+,"type":{"group":1}
+,"specified":{"group":1}
+,"options":{"panel":1}
+}
+;Search.control.loadWordPairs(pairs);

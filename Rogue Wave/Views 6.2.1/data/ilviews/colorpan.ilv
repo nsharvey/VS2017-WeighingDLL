@@ -1,0 +1,39 @@
+// Ilv Version: 5.4
+// File generated: Tue Jun 29 16:22:35 2010
+// Creator class: IlvGadgetManagerOutput
+FileName "colorpan"
+PathName "colorpan.ilv"
+Palettes 1
+"defaultGadget" 0 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 3
+3 { 0 P 2
+[ IlvPanelObjectReference IlvPanelObjectReference  "1277366396.0" ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNotebook 8 8 314 399 F1 2 0 2  2
+" { IlvNotebookPageItem 1 2 4 "Tab 1"  }  B ""
+" { IlvNotebookPageItem 1 2 4 "Tab 2"  }  B ""
+0 0 4 5 2 10 10 10 10  } 32 "notebook"
+0
+3 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 10 417 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+0
+3 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 240 417 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cancel"  }   } 544 "cancel"
+1
+1 "__ilvCallback" "cancel"
+0
+Size 330 450
+GeometryHandlers
+1 100 0 330 0 330 0
+3 3 0 0 10  0 0 80 1  240 0 240 0
+ 3 240 0 240  0 0 80 2  0 0 10 0
+ 3 0 0 8  314 0 314 0  0 0 8 0
+1 100 0 450 0 450 0
+3 3 417 0 417  0 0 23 1  0 0 10 0
+ 3 417 0 417  0 0 23 2  0 0 10 0
+ 3 0 0 8  399 0 399 0  0 0 43 0
+EOF

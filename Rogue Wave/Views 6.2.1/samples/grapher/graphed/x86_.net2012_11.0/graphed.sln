@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("7FB00F70-1D62-11E8-AB12-0BC9772C9500") = "graphed", "graphed.vcxproj", "7FAFC1D2-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Global
+EndGlobal
+

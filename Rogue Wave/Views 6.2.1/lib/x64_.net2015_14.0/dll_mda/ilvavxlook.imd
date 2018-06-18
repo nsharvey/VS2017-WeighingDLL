@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvavxlook -->
+<module name="ilvavxlook" version="6.2">
+<class name="IlvArrowButton/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvDockableContainer/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvHierarchicalSheet/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvMatrix/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvNotebook/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvOptionMenu/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvScrolledComboBox/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvScrolledGadget/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvSpinBox/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvTreeGadget/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvViewFrame/vx" rootClass="IlvObjectLFHandler"/>
+</module>

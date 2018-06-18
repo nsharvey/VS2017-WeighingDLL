@@ -1,0 +1,14 @@
+// IlvMessageDatabase 3.0 Wed Nov 26 14:47:13 1997
+// Language: fr_FR
+// Encoding: windows-1252
+"&iljControl" "Contrôle"
+"&iljBacktrace" "Pile"
+"&iljListener" "Boucle d'intéraction"
+"&iljStopNext" "Arrêt à l'instruction suivante"
+"&iljStopDebugging" "Arrêt du mode déboguage"
+"&iljStepOut" "Continue jusqu'à la sortie du frame courant"
+"&iljStepOver" "Saute par dessus l'instruction suivante"
+"&iljStep" "Exécute un pas de programme"
+"&iljContinue" "Continue l'exécution"
+"&iljDebug" "Déboguer"
+"&iljDebuggerName" "Débogueur Rogue Wave Script"

@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("7DB7D658-1D62-11E8-AB12-0BC9772C9500") = "guitarchords", "guitarchords.vcxproj", "7DB77AD2-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Global
+EndGlobal
+

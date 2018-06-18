@@ -1,0 +1,215 @@
+## ----------------------------------------------------------- -*- Makefile -*-
+## Purpose:
+##
+## This makefile declares all the targets of the generic examples supplied
+## with Rogue Wave DB Link.
+##
+## ---------------------------------------------------------------------------
+## Technical notes:
+##
+## The variables CCC and CCFLAGS were set by the including makefile.
+##
+## Programs are compiled with the following options :
+##  SYSTEM   : the port name (see the $(ILDHOME)/readme.htm file
+##             for the possible values).
+##  ILDMODDIR: the compilation mode of the Db Link library for the
+##             specified RDBMS. E.G. on Unix platforms, its value can be
+##             static, static_pic or shared, while on Windows, its value can be
+##	       stat_sta, dll_mta or dll_mda.
+##  CCC      : the path to the compiler including compiler name.
+##  EXSRCDIR : the example sources directory
+##             (value: $(ILDHOME)/examples/src)
+##  ILDINC   : the Db Link include files directory
+##             (value: $(ILDHOME)/include)
+##  IL_HOME  : the home directory of the global ILOG library. As this library
+##             and its header files are common with Rogue Wave Views, this 
+##	       variable may point to a different place.
+##	       By default, you should set it to $(ILDHOME).
+## ICU_HOME  : the home directory of the International Components for Unicode
+##	       (ICU) libraries. 
+##	       By default, you should set it to $(ILDHOME).
+##
+## For more explanations about an example, please refer to the code to be
+## found in $(ILDHOME)/examples/src or the User Manual.
+##
+## ----------------------------------------------------------------------------
+
+# -----------------
+# Db Link settings
+# -----------------
+EXSRCDIR=../../src
+ILDINC=-I../../../include -I$(IL_HOME)/include -I$(ICU_HOME)/include -I$(EXSRCDIR)
+
+# -----------------
+# Compiler options
+# -----------------
+
+CCFLAGS=$(ILDMODE) $(DEBUG) $(DBMSCCFLAGS) $(ILDINC) $(SYSCCFLAGS) -c
+
+# ------------------
+# Linker options
+# ------------------
+
+LDFLAGS=$(DBMSLDFLAGS) $(LDDBG) $(ILDLIBS) $(ICULIBS) $(SYSLDFLAGS)
+
+#############################################################################
+# Targets
+#############################################################################
+
+clean : 
+	$(RM) *.$(OEXT) $(TARGETS) *.manifest
+
+# -----------------------------
+# Binary Lob features for DB2, Oracle, and Informix
+blob.$(OEXT): $(EXSRCDIR)/blob.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/blob.cpp
+
+blob$(EEXT): blob.$(OEXT) lobbin.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) blob.$(OEXT) lobbin.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Character Lob features for DB2, Oracle, and Informix
+clob.$(OEXT): $(EXSRCDIR)/clob.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/clob.cpp
+
+clob$(EEXT): clob.$(OEXT) lobtext.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) clob.$(OEXT) lobtext.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# DateTime and Numeric manipulations
+datasmpl$(EEXT) : datasmpl.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) datasmpl.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Scrollable cursors usage
+fscroll$(EEXT) : fscroll.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) fscroll.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Blob handling : LONG RAW column
+ildbin$(EEXT) : ildbin.$(OEXT) lobbin.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) ildbin.$(OEXT) lobbin.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# A tiny SQL statements interpretor
+ildsql$(EEXT) : ildsql.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) ildsql.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Blob handling : LONG column
+ildtext$(EEXT) : ildtext.$(OEXT) lobtext.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) ildtext.$(OEXT) lobtext.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Lob handling
+lobtext.$(OEXT) : $(EXSRCDIR)/lobtext.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/lobtext.cpp
+
+# -----------------------------
+# Multiple connections
+multidb$(EEXT) : multidb.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) multidb.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Notification handling.
+notif$(EEXT) : notif.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) notif.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Table description handling
+readrel$(EEXT) : readrel.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) readrel.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Table description handling
+rebindcl$(EEXT) : rebindcl.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) rebindcl.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Table names handling
+relnames$(EEXT) : relnames.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) relnames.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# A (very) quick survey of basic Db Link API
+sample$(EEXT) : sample.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) sample.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Single bind usage
+sbinding$(EEXT) : sbinding.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) sbinding.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Repeated use of bindings
+smplbnd$(EEXT) : smplbnd.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) smplbnd.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# User customization of error recovery
+testerr$(EEXT) : testerr.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) testerr.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Transaction context processing
+trans$(EEXT) : trans.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) trans.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Demonstrate transaction read-only mode
+transmod$(EEXT) : transmod.$(OEXT) timer.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) transmod.$(OEXT) timer.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+#############################################################################
+
+# -----------------------------
+# All purpose utility functions
+ildutil.$(OEXT) : $(EXSRCDIR)/ildutil.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/ildutil.cpp
+
+datasmpl.$(OEXT) : $(EXSRCDIR)/datasmpl.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/datasmpl.cpp
+
+fscroll.$(OEXT) : $(EXSRCDIR)/fscroll.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/fscroll.cpp
+
+ildbin.$(OEXT) : $(EXSRCDIR)/ildbin.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/ildbin.cpp
+
+lobbin.$(OEXT) : $(EXSRCDIR)/lobbin.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/lobbin.cpp
+
+ildsql.$(OEXT) : $(EXSRCDIR)/ildsql.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/ildsql.cpp
+
+ildtext.$(OEXT) : $(EXSRCDIR)/ildtext.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/ildtext.cpp
+
+multidb.$(OEXT) : $(EXSRCDIR)/multidb.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/multidb.cpp
+
+readrel.$(OEXT) : $(EXSRCDIR)/readrel.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/readrel.cpp
+
+rebindcl.$(OEXT) : $(EXSRCDIR)/rebindcl.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/rebindcl.cpp
+
+relnames.$(OEXT) : $(EXSRCDIR)/relnames.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/relnames.cpp
+
+sample.$(OEXT) : $(EXSRCDIR)/sample.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/sample.cpp
+
+sbinding.$(OEXT) : $(EXSRCDIR)/sbinding.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/sbinding.cpp
+
+smplbnd.$(OEXT) : $(EXSRCDIR)/smplbnd.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/smplbnd.cpp
+
+testerr.$(OEXT) : $(EXSRCDIR)/testerr.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/testerr.cpp
+
+trans.$(OEXT) : $(EXSRCDIR)/trans.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/trans.cpp
+
+#############################################################################

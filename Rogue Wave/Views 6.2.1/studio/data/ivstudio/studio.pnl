@@ -1,0 +1,268 @@
+// ----------------------------------------------------------------------------
+//
+//		Rogue Wave Views Studio Panel Description file
+//
+// ----------------------------------------------------------------------------
+
+panel "MainPanel" {
+    visible true;
+    width 640;
+    height 720;
+    menu "&mfile" {
+	"&new",
+        OpenDocument,
+	RevertDocument,
+        CloseDocument,
+	-,
+        SaveDocument,
+        SaveDocumentAs,
+	SaveAll,
+	-,
+	PrintCurrentBuffer,
+	PrinterPreviewCurrentBuffer,
+	Print,
+	PrinterPreview,
+        -,
+        Quit
+    };
+    menu "&mfile", "&new" {
+	NewGraphicBuffer,
+    };
+    menu "&medit" {
+	UnDo,
+	Redo,
+	ReDo,
+	-,
+	ClipboardCut,
+	ClipboardCopy,
+	ClipboardPaste,
+	-,
+	Duplicate,
+        Delete,
+	SelectAll,
+	-,
+	FitToContents
+    };
+    menu "&mview" {
+	 ToggleGrid,
+	 ToggleActiveGrid,
+	 ToggleForegroundGrid,
+	 ShowGridOptionsPanel,
+//	 ToggleCrossCursor,
+//	 ToggleLinks,
+//	 ToggleGuides,
+	 -,
+	 ZoomIn,
+	 ZoomOut,
+	 ResetView,
+	 FitViewToContents,
+	 -,
+	 "&moptions",
+    };
+    menu "&mview", "&moptions" {
+	DoubleBuffering,
+	OpaqueMoving,
+	-,
+	WindowsLook,
+	Windows95Look,
+	VXLook,
+	MotifLook,
+	-,
+	SetLanguage_en_US,
+	SetLanguage_fr_FR
+    };
+    menu "&mdraw" {
+	Group,
+	UnGroup,
+	EditGroup,
+	"&mgrouptype", 
+	-,
+	SetLayer,
+	Push,
+	Pop,
+	-,
+	ToggleTransformed,
+        MakeFilteredGraphic,
+	"&mnudge",
+	"&mtransform",
+	"&malign",
+	-,
+	LockInspector,
+	ShowInspector
+    };
+    menu "&mdraw", "&mgrouptype" {
+	GroupIntoGraphicSet,
+	GroupIntoSelector,
+	GroupIntoSmartSet
+    };
+    menu "&mdraw", "&mnudge" {
+	NudgeUp,
+	NudgeDown,
+	NudgeLeft,
+	NudgeRight
+    };
+    menu "&mdraw", "&mtransform" {
+	FlipHorizontal,
+	FlipVertical,
+	-,
+	Rotate90,
+	Rotatem90,
+	SelectRotateMode
+    };
+    menu "&mdraw", "&malign" {
+	AlignLeft,
+	AlignVertical,
+ 	AlignRight,
+	-,
+	AlignTop,
+	AlignHorizontal,
+ 	AlignBottom,
+	-,
+	SameWidth,
+	SameHeight,
+	HorizontalSpaces,
+	VerticalSpaces
+	-,
+	ShowAlignPanel
+    };
+    menu "&mtools" {
+	ShowViewOptionsPanel,
+	ShowLayerPanel,
+	-,
+        ShowPalettePanel,
+	ShowGenericInspector,
+	ShowPropertiesPanel,
+	-,
+        ShowMessagePanel,
+	-,
+        ShowCommandPanel,
+	ShowErrorPanel,
+        EditOptions,
+	-,
+	SelectPlugIns
+    };
+    menu "&mwindow" {
+	CloseAllBuffers,
+	MinimizeAllWindows,
+	RestoreAllWindows,
+	-,
+	CascadeWindows,
+	TileHorizontally,
+	TileVertically,
+        -	    
+    }
+    menu "&mhelp" {
+        ShowInfoPanel,
+	HelpMainPanel
+    }
+    helpFile "mainpan.ivh";
+    toolbar top { Main };
+    htmlHelpFile "MainPnl.html";
+    compiledHtmlHelpFile "studio.chm";
+}
+
+panel "GridPanel" {
+  title "&grid";
+  x 450;
+  y 250;
+}
+
+panel "ResourcePanel" {
+  title "&resources";
+  x 56;
+  y 362;
+}
+
+panel "Alignment" {
+  title "&alignment";	
+  commandName ShowAlignPanel;
+  filename "ivstudio/alignmt.ilv";
+  helpFile "alignmt.ivh";
+  htmlHelpFile "AlignPnl.html";
+  compiledHtmlHelpFile "studio.chm";
+  x 500;
+  y 100;
+  command "left"     	AlignLeft;
+  command "right"    	AlignRight;
+  command "vertical" 	AlignVertical;
+  command "samew"	SameWidth;
+  command "hspace"	HorizontalSpaces;
+  command "top" 	AlignTop;
+  command "bottom"	AlignBottom;
+  command "horizontal"	AlignHorizontal;
+  command "sameh"	SameHeight;
+  command "vspace"	VerticalSpaces;
+}
+
+panel "PropertiesPanel" {
+	title "&psPanel";
+	visible false;
+	x 1000;
+}
+
+panel "EventSequencer" {
+  commandName ShowEventSequencerPanel;
+  title "&eventSequencer";
+  toolbar top {
+	NewEventSequence,
+	OpenEventSequence,
+	SaveEventSequence,
+	SaveEventSequenceAs,
+	ExecuteEventSequence,
+	HideEventSequencerPanel,
+  }
+}
+
+panel "Errors" {
+    title "&errors";
+    commandName ShowErrorPanel;
+    helpFile "errpan.ivh";
+    toolbar top {
+	ClearErrorPanel,
+	HelpErrorPanel
+    }
+}
+
+panel "Layers" {
+    title "&layers";
+    commandName ShowLayerPanel;
+    helpFile "stlayer.ivh";
+}
+
+panel "Callbacks" {
+    title "&callbacks";
+    commandName ShowCallbackInspector;
+    helpFile "cbinsp.ivh";
+}
+
+panel "Commands" {
+    title "&commands";
+    commandName ShowCommandPanel;
+    helpFile "cmdpan.ivh";
+    htmlHelpFile "CommandsPnl.html";
+    compiledHtmlHelpFile "studio.chm";
+}
+
+panel "PalettePanel" {
+    title "&Palettes";
+    visible true;
+    htmlHelpFile "PalettesPnl.html";
+    compiledHtmlHelpFile "studio.chm";
+}
+
+panel "GridOptionsPanel" {
+    commandName ShowGridOptionsPanel;
+    title "&gridoptions";
+//    filename "ivstudio/gridopt.ilv";
+}
+
+panel "ViewOptionsPanel" {
+    commandName ShowViewOptionsPanel;
+    title "&viewoptions";
+  x 450;
+  y 250;
+}
+
+panel "MessagePanel" {
+    helpFile "messagep.ivh";
+}

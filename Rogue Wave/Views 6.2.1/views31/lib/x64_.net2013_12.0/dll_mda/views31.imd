@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- IMD file for module views31 -->
+<module name="views31" version="6.2">
+<class name="IlvPolygonChart" rootClass="IlvGraphic"/>
+<class name="IlvMultiChart" rootClass="IlvGraphic"/>
+<class name="IlvChartsHandle" rootClass="IlvGraphic"/>
+<class name="IlvChart" rootClass="IlvGraphic"/>
+<class name="IlvPolylineChart" rootClass="IlvGraphic"/>
+<class name="Ilv3dBarChart" rootClass="IlvGraphic"/>
+<class name="IlvSideBySideChart" rootClass="IlvGraphic"/>
+<class name="IlvStackedChart" rootClass="IlvGraphic"/>
+<class name="IlvAbstractChart" rootClass="IlvGraphic"/>
+<class name="IlvStairChart" rootClass="IlvGraphic"/>
+<class name="IlvBarChart" rootClass="IlvGraphic"/>
+<class name="IlvStackedBarChart" rootClass="IlvGraphic"/>
+<class name="IlvPieChart" rootClass="IlvGraphic"/>
+<class name="IlvScatterChart" rootClass="IlvGraphic"/>
+<class name="IlvSideBySideBarChart" rootClass="IlvGraphic"/>
+<class name="IlvChartDataFunction" rootClass="IlvChartData"/>
+<class name="IlvChartDataYPoints" rootClass="IlvChartData"/>
+<class name="IlvChartDataPoints" rootClass="IlvChartData"/>
+</module>

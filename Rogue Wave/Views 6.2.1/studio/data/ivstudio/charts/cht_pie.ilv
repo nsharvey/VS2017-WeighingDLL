@@ -1,0 +1,40 @@
+// Ilv Version: 3.1
+// File generated: Thu Apr 29 18:31:44 1999
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 8
+2 { 0 0 IlvMessageLabel 9 27 120 22 F8 0 262169 4 16 4 "&StartingAngle"   } 0
+0
+2 { 1 0 IlvSpinBox 129 27 97 22 2 0 200 64 2 1
+0 IlvNumberField 129 27 82 22 F6 2 1 -1 0 "1." . , 6 24 -1.79769e+308 1.79769e+308  f 1 1 1 1 } 32 "PieStartingAngle"
+0
+2 { 2 0 IlvMessageLabel 9 53 120 22 F8 0 262169 4 16 4 "&range"   } 0
+0
+2 { 3 0 IlvSpinBox 129 53 97 22 2 0 200 64 2 1
+0 IlvNumberField 129 53 82 22 F6 2 1 -1 0 "1." . , 6 24 -1.79769e+308 1.79769e+308  f 1 1 1 1 } 32 "PieRange"
+0
+2 { 4 0 IlvSpinBox 129 79 97 22 2 0 200 64 2 1
+0 IlvNumberField 129 79 82 22 F6 2 2 -1 0 "1234543" . , 2 0 0 2147483647  f 1 1 1 1.23454e+006 } 32 "PieTearOffDelta"
+0
+2 { 5 0 IlvMessageLabel 9 79 120 22 F8 0 262169 4 16 4 "&TearOffDelta"   } 0
+0
+2 { 6 0 IlvMessageLabel 9 1 120 22 F8 0 262169 4 16 4 "&Radius"   } 0
+0
+2 { 7 0 IlvSpinBox 129 1 97 22 2 0 200 64 2 1
+0 IlvNumberField 129 1 82 22 F6 2 2 -1 0 "1234543.62" . , 2 24 1.0 3.40282e+038  f 1 1 1 1.23454e+006 } 32 "PieRadius"
+0
+Size 226 105
+GeometryHandlers
+1 100 0 226 0 226 0
+8 3 129 0 129  0 0 97 1  0 0 0 0
+ 3 129 0 129  0 0 97 3  0 0 0 0
+ 3 129 0 129  0 0 97 4  0 0 0 0
+ 3 0 0 9  120 0 120 5  0 0 97 0
+ 3 0 0 9  120 0 120 2  0 0 97 0
+ 3 0 0 9  120 0 120 0  0 0 97 0
+ 3 0 0 9  120 0 120 6  0 0 97 0
+ 3 129 0 129  0 0 97 7  0 0 0 0
+1 100 0 105 0 105 0
+0
+EOF

@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+
+Project("36ADE4EA-1D63-11E8-8E12-F080772C9500") = "program", "program.vcxproj", "36ADA12E-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Global
+EndGlobal
+

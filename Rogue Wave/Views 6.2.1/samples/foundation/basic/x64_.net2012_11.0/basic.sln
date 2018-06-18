@@ -1,0 +1,14 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("91DF759E-1D69-11E8-91B2-87BE772C9500") = "ilvread", "ilvread.vcxproj", "91DF302A-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("91E6759C-1D69-11E8-91B2-87BE772C9500") = "inter", "inter.vcxproj", "91DF302A-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("91EE5CC6-1D69-11E8-91B2-87BE772C9500") = "hull", "hull.vcxproj", "91DF302A-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

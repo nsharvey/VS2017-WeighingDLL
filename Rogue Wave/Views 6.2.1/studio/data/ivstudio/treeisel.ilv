@@ -1,0 +1,47 @@
+// Ilv Version: 5.2
+// File generated: Thu Apr 10 15:57:17 2008
+// Creator class: IlvGadgetManagerOutput
+FileName "treeisel"
+PathName "treeisel.ilv"
+Palettes 2
+0 F "defaultBg" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 1 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 4
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 235 293 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&^cancel"  }   } 544 "cancel"
+1
+1 "__ilvCallback" "cancel"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 145 293 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&^ok"  }   } 544 "ok"
+1
+1 "__ilvCallback" "apply"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 10 5 305 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "MessageLabel"  }   } 32 "label"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvTreeGadget 10 40 305 240 F32 2 A A 0 0 0 0 20 1 1 1 1 1 0 V0 2
+{ IlvTreeGadgetItem 1 2 4 "root" 2
+{ IlvTreeGadgetItem 1 2 4 "First Root" 2
+{ IlvTreeGadgetItem 1 2 4 "Leaf 1" 0
+ } { IlvTreeGadgetItem 1 2 4 "Leaf 2" 0
+ }  } { IlvTreeGadgetItem 1 2 4 "Second Root" 0
+ }  }  } 32 "tree"
+0
+Size 325 326
+GeometryHandlers
+1 100 0 325 0 325 0
+4 3 235 0 235  0 0 80 0  0 0 10 0
+ 3 145 0 145  0 0 80 1  0 0 100 0
+ 3 0 0 10  305 0 305 2  0 0 10 0
+ 3 0 0 10  305 0 305 3  0 0 10 0
+1 100 0 326 0 326 0
+3 3 293 0 293  0 0 23 1  0 0 10 0
+ 3 293 0 293  0 0 23 0  0 0 10 0
+ 3 0 0 40  240 0 240 3  0 0 46 0
+EOF

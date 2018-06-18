@@ -1,0 +1,22 @@
+var pairs =
+{
+"matrices":{"rogue":1,"chapter":1,"using":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1}
+,"views":{"gadgets":1}
+,"gadgets":{"library":1}
+,"library":{"provides":1}
+,"provides":{"classes":1}
+,"classes":{"creating":1}
+,"creating":{"matrices":1}
+,"chapter":{"covers":1}
+,"covers":{"following":1}
+,"following":{"topics":1}
+,"topics":{"introducing":1}
+,"introducing":{"matrices":1}
+,"using":{"ilvabstractmatrix":1,"ilvmatrix":1,"ilvsheet":1,"ilvhierarchicalsheet":1}
+,"ilvabstractmatrix":{"using":1}
+,"ilvmatrix":{"using":1}
+,"ilvsheet":{"using":1}
+}
+;Search.control.loadWordPairs(pairs);

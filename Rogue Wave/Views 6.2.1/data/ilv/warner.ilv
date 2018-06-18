@@ -1,0 +1,15 @@
+// Ilv Version: 2.21
+// File generated: Mon Mar 04 16:33:25 1996
+// Creator class: IlvGadgetManagerOutput
+Palettes 4
+2 "defaultBg" "defaultFg" "button" StockedDefaultGui 0 solid solid 0 0 0
+"default" 3 "defaultBg" "defaultFg" "default" StockedSystem 0 solid solid 0 0 0
+1 "defaultBg" "defaultFg" %times-12- 0 solid solid 0 0 0
+0 "defaultBg" "defaultFg" "button" StockedDefaultGui 0 solid solid 0 0 0
+IlvObjects 4
+2 { 0 0 IlvButton 127 76 60 23 F1 2 16 Y "&ok" } 96 "apply" "Button" 132 "apply" 1 15
+2 { 1 1 IlvReliefLine 1 52 325 53 2 } 32 "line" 464 1 0 1 0 1 60 2
+2 { 2 2 IlvStringList 30 14 274 22 F1 0 0 1 0 0 1
+"Title" } 32 "title" 48 1 30 1 14
+2 { 3 3 IlvIcon 11 13 default } 0 0
+Size 325 114

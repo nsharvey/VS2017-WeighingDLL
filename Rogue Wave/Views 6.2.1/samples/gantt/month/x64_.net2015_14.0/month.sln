@@ -1,0 +1,6 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{2E9B0960-1D61-11E8-9326-21D9772C9500}") = "month", "month.vcxproj", "{2E9AB794-1D61-11E8-9326-21D9772C9500}"
+EndProject
+Global
+EndGlobal

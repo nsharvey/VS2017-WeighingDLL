@@ -1,0 +1,51 @@
+// Ilv Version: 3.1
+// File generated: Thu Jan 14 17:26:25 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "sliggspe"
+PathName "C:\\users\\noiret\\dev\\views.work\\studio\\data\\ivstudio\\inspectors\\sliggspe.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 11
+2 { 0 0 IlvTextField 105 3 148 22 F6 2 1 -1 0 "" } 96 "GaugeMinValue" "TextField"
+0
+2 { 1 0 IlvTextField 105 31 148 22 F6 2 1 -1 0 "" } 96 "GaugeMaxValue" "TextField"
+0
+2 { 2 0 IlvTextField 105 59 148 22 F6 2 1 -1 0 "" } 96 "GaugeValue" "TextField"
+0
+2 { 3 0 IlvOptionMenu 105 87 148 20 F1 2 4
+IlvMenuItem 65 2 4 "&left"  
+IlvMenuItem 1 2 4 "&right"  
+IlvMenuItem 1 2 4 "&bottom"  
+IlvMenuItem 1 2 4 "&top"   0  } 96 "RcGaugeDirection" "OptionMenu"
+0
+2 { 4 0 IlvToggle 4 115 248 16 F1 2 1 2 0 0 0 Y "&showBox" } 96 "RcGaugeShowBox" "Toggle"
+0
+3 { 5 0 IlvMessageLabel 4 1 99 26 F8 0 25 16 4 "&min"   } 0
+0
+3 { 6 0 IlvMessageLabel 4 29 99 26 F8 0 25 16 4 "&max"   } 0
+0
+3 { 7 0 IlvMessageLabel 4 57 99 26 F8 0 25 16 4 "&value"   } 0
+0
+3 { 8 0 IlvMessageLabel 4 90 99 14 F8 0 25 16 4 "&direction"   } 0
+0
+3 { 9 0 IlvMessageLabel 4 135 99 26 F8 0 25 16 4 "&sliderSize"   } 0
+0
+3 { 10 0 IlvSpinBox 105 137 148 22 2 0 200 64 2 1
+0 IlvNumberField 105 137 133 22 F6 2 1 -1 0 "1" . , 6 0 -2147483648 2147483647  f 1 0 1 1 } 32 "SliGaugeSize"
+0
+Size 257 164
+GeometryHandlers
+1 100 0 257 0 257 0
+10 3 0 0 4  99 0 99 5  0 0 154 0
+ 3 0 0 4  99 0 99 6  0 0 154 0
+ 3 0 0 4  99 0 99 7  0 0 154 0
+ 3 105 0 105  0 0 148 1  0 0 4 0
+ 3 105 0 105  0 0 148 0  0 0 4 0
+ 3 105 0 105  0 0 148 2  0 0 4 0
+ 3 0 0 4  99 0 99 8  0 0 154 0
+ 3 0 0 4  248 0 248 4  0 0 5 0
+ 3 105 0 105  0 0 148 3  0 0 4 0
+ 3 0 0 4  99 0 99 9  0 0 154 0
+1 100 0 164 0 164 0
+0
+EOF

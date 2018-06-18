@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Implementing Zoom in the BitmapView Class</title><link rel="Prev" href="bitmapeditor.08.22.html" title="Previous" /><link rel="Next" href="protostutfrontcover.html" title="Next" /><link rel="StyleSheet" href="css/bitmapeditor.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/bitmapeditor_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/Tutorials/bitmapeditor.08.23.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pl0B2cwu9U_002bF0PogfPf7_002byw" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/Tutorials/bitmapeditor.08.23.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../Tutorials/aftutfrontcover.html#wwconnect_header">Application Framework</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Tutorials/bitmapeditor.08.01.html#wwconnect_header">The Bitmap Editor Application</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Tutorials/bitmapeditor.08.20.html#wwconnect_header">Step 5: Adding Zoom Commands</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Implementing Zoom in the BitmapView Class</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww1012717" class="Heading2"><span></span>Implementing Zoom in the BitmapView Class</div><div id="ww1012718" class="Body">The <span class="code">BitmapView::zoomIn</span> and <span class="code">BitmapView::zoomOut</span> methods are inlined and the <span class="code">BitmapView::zoom</span> method is called:</div><div id="ww1012719" class="NormalCode">void zoomIn() { zoom((IlFloat)2.); }</div><div id="ww1012720" class="LastNormalCode">void zoomOut() { zoom((IlFloat).5); }</div><div id="ww1012721" class="Body">The only method that needs to be implemented is the <span class="code">BitmapView::zoom</span> method:</div><div id="ww1012722" class="NormalCode">void</div><div id="ww1012723" class="NormalCode">BitmapView::zoom(IlFloat factor)</div><div id="ww1012724" class="NormalCode">{</div><div id="ww1012725" class="NormalCode">   IlvContainer* container = IlvContainer::GetContainer(_icon);</div><div id="ww1012726" class="NormalCode">   container-&gt;zoomView(IlvPoint(0,0), factor, factor);</div><div id="ww1012727" class="NormalCode">   // Resize the container to fit the bitmap</div><div id="ww1012728" class="NormalCode">   IlvRect bbox;</div><div id="ww1012729" class="NormalCode">   container-&gt;boundingBox(bbox);</div><div id="ww1012730" class="NormalCode">   container-&gt;resize(bbox.w()*factor, bbox.h()*factor);</div><div id="ww1012731" class="LastNormalCode">}</div><div id="ww1012732" class="Body">It uses the <span class="code">IlvContainer::zoomView</span> method to change the transformer used to draw the <span class="ClassName"><a href="../RefMan/refcppfoundation/classIlvZoomableIcon.html">IlvZoomableIcon</a></span> that displays the document bitmap.</div><div id="ww1012733" class="Body">Then, the container of the icon is resized so that the scroll bars of the scrolled view are updated.</div><div id="ww1017832" class="Body">The final Bitmap Editor application is shown in <a href="../Tutorials/bitmapeditor.08.23.html#ww1012906" title="Implementing Zoom in the BitmapView Class">The Final Bitmap Editor Application</a>:</div><div class="ww_skin_page_overflow"><div id="ww1017837" class="Startfigure">  <img class="Default" src="../Tutorials/images/step5-preview.png" width="100%" style="display: block; left: 0.0pt; max-height: 495px; max-width: 584px; top: 0.0pt" alt="" />  </div></div><div id="ww1012906" class="Caption">The Final Bitmap Editor Application</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

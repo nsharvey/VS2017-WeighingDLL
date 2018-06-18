@@ -1,0 +1,545 @@
+// Ilv Version: 4.0
+// File generated: Thu Mar 16 12:46:54 2000
+// Creator class: IlvGraphOutput
+FileName "newspring2"
+PathName "C:\\WINNT\\Profiles\\mathey\\Desktop\\newspring2.ilv"
+Palettes 8
+"default" 6 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+7 "gray" "forestgreen" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+1 "gray" "indianred" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+0 "gray" "limegreen" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+3 "gray" 65025 65025 0 "default" "StockedDefaultGui" 0 solid solid 0 0 0
+5 "gray" 0 65025 0 "default" "StockedDefaultGui" 0 solid solid 0 0 0
+4 "gray" "lightgray" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+2 "gray" "steelblue" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 524
+1 0 { 0 0 IlvTransparentIcon 728 143 "../data/greenball.png" "" } 0
+1 0 { 1 0 IlvTransparentIcon 60 298 "../data/greenball.png" "" } 0
+0 1 { 2 0 IlvLinkImage 0 0 1 } 24
+1 0 { 3 5 IlvTransparentIcon 463 41 "../data/greenball.png" "" } 0
+1 0 { 4 0 IlvTransparentIcon 3 304 "../data/greenball.png" "" } 0
+0 1 { 5 0 IlvLinkImage 0 3 4 } 24
+1 0 { 6 0 IlvTransparentIcon 629 271 "../data/greenball.png" "" } 0
+1 0 { 7 0 IlvTransparentIcon 155 126 "../data/greenball.png" "" } 0
+0 1 { 8 0 IlvLinkImage 0 6 7 } 24
+1 0 { 9 0 IlvTransparentIcon 795 243 "../data/greenball.png" "" } 0
+1 0 { 10 0 IlvTransparentIcon 167 504 "../data/greenball.png" "" } 0
+0 1 { 11 0 IlvLinkImage 0 9 10 } 24
+1 0 { 12 1 IlvTransparentIcon 173 391 "../data/redball.png" "" } 0
+1 0 { 13 3 IlvTransparentIcon 677 336 "../data/yellowball.png" "" } 0
+0 1 { 14 0 IlvLinkImage 0 12 13 } 24
+1 0 { 15 1 IlvTransparentIcon 565 289 "../data/redball.png" "" } 0
+1 0 { 16 1 IlvTransparentIcon 203 340 "../data/redball.png" "" } 0
+0 1 { 17 1 IlvLinkImage 0 15 16 } 24
+1 0 { 18 1 IlvTransparentIcon 437 358 "../data/redball.png" "" } 0
+0 1 { 19 1 IlvLinkImage 0 18 16 } 24
+1 0 { 20 1 IlvTransparentIcon 65 567 "../data/redball.png" "" } 0
+1 0 { 21 1 IlvTransparentIcon 626 217 "../data/redball.png" "" } 0
+0 1 { 22 1 IlvLinkImage 0 20 21 } 24
+1 0 { 23 0 IlvTransparentIcon 267 208 "../data/greenball.png" "" } 0
+0 1 { 24 0 IlvLinkImage 0 10 23 } 24
+1 0 { 25 1 IlvTransparentIcon 453 501 "../data/redball.png" "" } 0
+1 0 { 26 1 IlvTransparentIcon 172 289 "../data/redball.png" "" } 0
+0 1 { 27 1 IlvLinkImage 0 25 26 } 24
+1 0 { 28 0 IlvTransparentIcon 58 352 "../data/greenball.png" "" } 0
+1 0 { 29 0 IlvTransparentIcon 622 409 "../data/greenball.png" "" } 0
+0 1 { 30 0 IlvLinkImage 0 28 29 } 24
+1 0 { 31 1 IlvTransparentIcon 181 218 "../data/redball.png" "" } 0
+0 1 { 32 1 IlvLinkImage 0 18 31 } 24
+1 0 { 33 2 IlvTransparentIcon 670 467 "../data/blueball.png" "" } 0
+1 0 { 34 2 IlvTransparentIcon 184 29 "../data/blueball.png" "" } 0
+0 1 { 35 2 IlvLinkImage 0 33 34 } 24
+1 0 { 36 1 IlvTransparentIcon 88 455 "../data/redball.png" "" } 0
+0 1 { 37 1 IlvLinkImage 0 18 36 } 24
+1 0 { 38 1 IlvTransparentIcon 275 385 "../data/redball.png" "" } 0
+0 1 { 39 1 IlvLinkImage 0 36 38 } 24
+1 0 { 40 0 IlvTransparentIcon 19 488 "../data/greenball.png" "" } 0
+1 0 { 41 0 IlvTransparentIcon 311 185 "../data/greenball.png" "" } 0
+0 1 { 42 0 IlvLinkImage 0 40 41 } 24
+1 0 { 43 1 IlvTransparentIcon 226 262 "../data/redball.png" "" } 0
+1 0 { 44 1 IlvTransparentIcon 456 268 "../data/redball.png" "" } 0
+0 1 { 45 1 IlvLinkImage 0 43 44 } 24
+1 0 { 46 2 IlvTransparentIcon 198 88 "../data/blueball.png" "" } 0
+1 0 { 47 2 IlvTransparentIcon 469 110 "../data/blueball.png" "" } 0
+0 1 { 48 2 IlvLinkImage 0 46 47 } 24
+1 0 { 49 2 IlvTransparentIcon 55 18 "../data/blueball.png" "" } 0
+1 0 { 50 2 IlvTransparentIcon 433 482 "../data/blueball.png" "" } 0
+0 1 { 51 2 IlvLinkImage 0 49 50 } 24
+1 0 { 52 0 IlvTransparentIcon 62 139 "../data/greenball.png" "" } 0
+1 0 { 53 0 IlvTransparentIcon 464 114 "../data/greenball.png" "" } 0
+0 1 { 54 0 IlvLinkImage 0 52 53 } 24
+1 0 { 55 3 IlvTransparentIcon 36 387 "../data/yellowball.png" "" } 0
+0 1 { 56 3 IlvLinkImage 0 13 55 } 24
+1 0 { 57 1 IlvTransparentIcon 129 172 "../data/redball.png" "" } 0
+1 0 { 58 1 IlvTransparentIcon 305 451 "../data/redball.png" "" } 0
+0 1 { 59 1 IlvLinkImage 0 57 58 } 24
+1 0 { 60 2 IlvTransparentIcon 585 143 "../data/blueball.png" "" } 0
+0 1 { 61 2 IlvLinkImage 0 46 60 } 24
+1 0 { 62 0 IlvTransparentIcon 16 152 "../data/greenball.png" "" } 0
+0 1 { 63 0 IlvLinkImage 0 29 62 } 24
+0 1 { 64 0 IlvLinkImage 0 62 6 } 24
+1 0 { 65 2 IlvTransparentIcon 226 435 "../data/blueball.png" "" } 0
+1 0 { 66 2 IlvTransparentIcon 476 397 "../data/blueball.png" "" } 0
+0 1 { 67 2 IlvLinkImage 0 65 66 } 24
+1 0 { 68 2 IlvTransparentIcon 64 266 "../data/blueball.png" "" } 0
+0 1 { 69 2 IlvLinkImage 0 68 66 } 24
+1 0 { 70 3 IlvTransparentIcon 243 374 "../data/yellowball.png" "" } 0
+1 0 { 71 3 IlvTransparentIcon 785 54 "../data/yellowball.png" "" } 0
+0 1 { 72 3 IlvLinkImage 0 70 71 } 24
+1 0 { 73 3 IlvTransparentIcon 161 127 "../data/yellowball.png" "" } 0
+0 1 { 74 3 IlvLinkImage 0 71 73 } 24
+1 0 { 75 1 IlvTransparentIcon 378 0 "../data/redball.png" "" } 0
+1 0 { 76 1 IlvTransparentIcon 103 246 "../data/redball.png" "" } 0
+0 1 { 77 1 IlvLinkImage 0 75 76 } 24
+1 0 { 78 1 IlvTransparentIcon 540 369 "../data/redball.png" "" } 0
+0 1 { 79 1 IlvLinkImage 0 78 76 } 24
+1 0 { 80 2 IlvTransparentIcon 340 283 "../data/blueball.png" "" } 0
+1 0 { 81 2 IlvTransparentIcon 201 516 "../data/blueball.png" "" } 0
+0 1 { 82 2 IlvLinkImage 0 80 81 } 24
+1 0 { 83 2 IlvTransparentIcon 647 313 "../data/blueball.png" "" } 0
+0 1 { 84 2 IlvLinkImage 0 81 83 } 24
+1 0 { 85 0 IlvTransparentIcon 473 12 "../data/greenball.png" "" } 0
+1 0 { 86 0 IlvTransparentIcon 116 372 "../data/greenball.png" "" } 0
+0 1 { 87 0 IlvLinkImage 0 85 86 } 24
+1 0 { 88 0 IlvTransparentIcon 415 29 "../data/greenball.png" "" } 0
+0 1 { 89 0 IlvLinkImage 0 88 86 } 24
+1 0 { 90 0 IlvTransparentIcon 775 307 "../data/greenball.png" "" } 0
+1 0 { 91 0 IlvTransparentIcon 18 405 "../data/greenball.png" "" } 0
+0 1 { 92 0 IlvLinkImage 0 90 91 } 24
+1 0 { 93 1 IlvTransparentIcon 732 396 "../data/redball.png" "" } 0
+1 0 { 94 1 IlvTransparentIcon 153 324 "../data/redball.png" "" } 0
+0 1 { 95 1 IlvLinkImage 0 93 94 } 24
+1 0 { 96 6 IlvTransparentIcon 137 410 "../data/yellowball.png" "" } 0
+0 1 { 97 1 IlvLinkImage 0 93 96 } 24
+1 0 { 98 1 IlvTransparentIcon 265 211 "../data/redball.png" "" } 0
+1 0 { 99 1 IlvTransparentIcon 684 323 "../data/redball.png" "" } 0
+0 1 { 100 1 IlvLinkImage 0 98 99 } 24
+1 0 { 101 6 IlvTransparentIcon 19 221 "../data/blueball.png" "" } 0
+0 1 { 102 1 IlvLinkImage 0 101 99 } 24
+1 0 { 103 2 IlvTransparentIcon 571 310 "../data/blueball.png" "" } 0
+0 1 { 104 2 IlvLinkImage 0 81 103 } 24
+1 0 { 105 0 IlvTransparentIcon 147 58 "../data/greenball.png" "" } 0
+1 0 { 106 0 IlvTransparentIcon 747 122 "../data/greenball.png" "" } 0
+0 1 { 107 0 IlvLinkImage 0 105 106 } 24
+1 0 { 108 6 IlvTransparentIcon 607 358 "../data/blueball.png" "" } 0
+1 0 { 109 0 IlvTransparentIcon 146 542 "../data/greenball.png" "" } 0
+0 1 { 110 0 IlvLinkImage 0 108 109 } 24
+0 1 { 111 0 IlvLinkImage 0 109 6 } 24
+1 0 { 112 2 IlvTransparentIcon 85 140 "../data/blueball.png" "" } 0
+1 0 { 113 2 IlvTransparentIcon 448 345 "../data/blueball.png" "" } 0
+0 1 { 114 2 IlvLinkImage 0 112 113 } 24
+1 0 { 115 2 IlvTransparentIcon 426 429 "../data/blueball.png" "" } 0
+1 0 { 116 2 IlvTransparentIcon 185 139 "../data/blueball.png" "" } 0
+0 1 { 117 2 IlvLinkImage 0 115 116 } 24
+1 0 { 118 1 IlvTransparentIcon 605 526 "../data/blueball.png" "" } 0
+0 1 { 119 2 IlvLinkImage 0 118 116 } 24
+1 0 { 120 2 IlvTransparentIcon 606 490 "../data/blueball.png" "" } 0
+0 1 { 121 2 IlvLinkImage 0 116 120 } 24
+1 0 { 122 2 IlvTransparentIcon 494 171 "../data/blueball.png" "" } 0
+1 0 { 123 2 IlvTransparentIcon 191 203 "../data/blueball.png" "" } 0
+0 1 { 124 2 IlvLinkImage 0 122 123 } 24
+0 1 { 125 2 IlvLinkImage 0 123 33 } 24
+1 0 { 126 3 IlvTransparentIcon 300 593 "../data/yellowball.png" "" } 0
+0 1 { 127 3 IlvLinkImage 0 73 126 } 24
+1 0 { 128 6 IlvTransparentIcon 183 424 "../data/yellowball.png" "" } 0
+0 1 { 129 3 IlvLinkImage 0 128 126 } 24
+1 0 { 130 3 IlvTransparentIcon 687 551 "../data/yellowball.png" "" } 0
+1 0 { 131 3 IlvTransparentIcon 116 321 "../data/yellowball.png" "" } 0
+0 1 { 132 3 IlvLinkImage 0 130 131 } 24
+1 0 { 133 2 IlvTransparentIcon 773 106 "../data/blueball.png" "" } 0
+1 0 { 134 2 IlvTransparentIcon 39 255 "../data/blueball.png" "" } 0
+0 1 { 135 2 IlvLinkImage 0 133 134 } 24
+1 0 { 136 1 IlvTransparentIcon 539 142 "../data/redball.png" "" } 0
+0 1 { 137 1 IlvLinkImage 0 76 136 } 24
+0 1 { 138 1 IlvLinkImage 0 136 94 } 24
+1 0 { 139 0 IlvTransparentIcon 493 428 "../data/greenball.png" "" } 0
+0 1 { 140 0 IlvLinkImage 0 52 139 } 24
+1 0 { 141 0 IlvTransparentIcon 148 36 "../data/greenball.png" "" } 0
+0 1 { 142 0 IlvLinkImage 0 139 141 } 24
+1 0 { 143 0 IlvTransparentIcon 697 454 "../data/greenball.png" "" } 0
+0 1 { 144 0 IlvLinkImage 0 86 143 } 24
+1 0 { 145 4 IlvTransparentIcon 510 245 "../data/grayball.png" "" } 0
+1 0 { 146 4 IlvTransparentIcon 208 166 "../data/grayball.png" "" } 0
+0 1 { 147 4 IlvLinkImage 0 145 146 } 24
+1 0 { 148 2 IlvTransparentIcon 14 144 "../data/blueball.png" "" } 0
+0 1 { 149 2 IlvLinkImage 0 108 148 } 24
+0 1 { 150 2 IlvLinkImage 0 113 148 } 24
+1 0 { 151 0 IlvTransparentIcon 388 18 "../data/greenball.png" "" } 0
+0 1 { 152 0 IlvLinkImage 0 141 151 } 24
+1 0 { 153 0 IlvTransparentIcon 33 248 "../data/greenball.png" "" } 0
+0 1 { 154 0 IlvLinkImage 0 151 153 } 24
+1 0 { 155 1 IlvTransparentIcon 436 83 "../data/redball.png" "" } 0
+0 1 { 156 1 IlvLinkImage 0 155 57 } 24
+1 0 { 157 1 IlvTransparentIcon 189 35 "../data/redball.png" "" } 0
+0 1 { 158 1 IlvLinkImage 0 58 157 } 24
+0 1 { 159 1 IlvLinkImage 0 29 157 } 24
+1 0 { 160 0 IlvTransparentIcon 731 484 "../data/greenball.png" "" } 0
+0 1 { 161 0 IlvLinkImage 0 86 160 } 24
+1 0 { 162 1 IlvTransparentIcon 724 117 "../data/redball.png" "" } 0
+0 1 { 163 1 IlvLinkImage 0 162 98 } 24
+1 0 { 164 0 IlvTransparentIcon 415 291 "../data/greenball.png" "" } 0
+1 0 { 165 0 IlvTransparentIcon 114 467 "../data/greenball.png" "" } 0
+0 1 { 166 0 IlvLinkImage 0 164 165 } 24
+1 0 { 167 0 IlvTransparentIcon 186 204 "../data/greenball.png" "" } 0
+0 1 { 168 0 IlvLinkImage 0 164 167 } 24
+1 0 { 169 0 IlvTransparentIcon 650 250 "../data/greenball.png" "" } 0
+0 1 { 170 0 IlvLinkImage 0 1 169 } 24
+0 1 { 171 0 IlvLinkImage 0 128 169 } 24
+0 1 { 172 0 IlvLinkImage 0 169 165 } 24
+1 0 { 173 2 IlvTransparentIcon 512 568 "../data/blueball.png" "" } 0
+1 0 { 174 2 IlvTransparentIcon 94 300 "../data/blueball.png" "" } 0
+0 1 { 175 2 IlvLinkImage 0 173 174 } 24
+1 0 { 176 1 IlvTransparentIcon 126 490 "../data/redball.png" "" } 0
+0 1 { 177 1 IlvLinkImage 0 25 176 } 24
+0 1 { 178 1 IlvLinkImage 0 38 176 } 24
+1 0 { 179 1 IlvTransparentIcon 37 351 "../data/redball.png" "" } 0
+0 1 { 180 1 IlvLinkImage 0 155 179 } 24
+1 0 { 181 3 IlvTransparentIcon 476 519 "../data/yellowball.png" "" } 0
+0 1 { 182 3 IlvLinkImage 0 55 181 } 24
+0 1 { 183 3 IlvLinkImage 0 181 70 } 24
+1 0 { 184 4 IlvTransparentIcon 181 316 "../data/grayball.png" "" } 0
+1 0 { 185 4 IlvTransparentIcon 377 202 "../data/grayball.png" "" } 0
+0 1 { 186 4 IlvLinkImage 0 184 185 } 24
+1 0 { 187 1 IlvTransparentIcon 75 475 "../data/redball.png" "" } 0
+0 1 { 188 1 IlvLinkImage 0 15 187 } 24
+1 0 { 189 0 IlvTransparentIcon 427 589 "../data/greenball.png" "" } 0
+0 1 { 190 0 IlvLinkImage 0 52 189 } 24
+0 1 { 191 0 IlvLinkImage 0 189 141 } 24
+1 0 { 192 0 IlvTransparentIcon 126 100 "../data/greenball.png" "" } 0
+0 1 { 193 0 IlvLinkImage 0 192 85 } 24
+1 0 { 194 0 IlvTransparentIcon 771 361 "../data/greenball.png" "" } 0
+0 1 { 195 0 IlvLinkImage 0 192 194 } 24
+1 0 { 196 2 IlvTransparentIcon 162 242 "../data/blueball.png" "" } 0
+0 1 { 197 2 IlvLinkImage 0 196 173 } 24
+1 0 { 198 1 IlvTransparentIcon 615 33 "../data/redball.png" "" } 0
+0 1 { 199 0 IlvLinkImage 0 196 198 } 24
+1 0 { 200 1 IlvTransparentIcon 641 492 "../data/redball.png" "" } 0
+0 1 { 201 1 IlvLinkImage 0 12 200 } 24
+0 1 { 202 1 IlvLinkImage 0 200 179 } 24
+1 0 { 203 1 IlvTransparentIcon 218 568 "../data/redball.png" "" } 0
+0 1 { 204 1 IlvLinkImage 0 200 203 } 24
+1 0 { 205 1 IlvTransparentIcon 708 544 "../data/redball.png" "" } 0
+0 1 { 206 1 IlvLinkImage 0 157 205 } 24
+0 1 { 207 1 IlvLinkImage 0 205 57 } 24
+1 0 { 208 4 IlvTransparentIcon 412 130 "../data/grayball.png" "" } 0
+1 0 { 209 4 IlvTransparentIcon 7 479 "../data/grayball.png" "" } 0
+0 1 { 210 4 IlvLinkImage 0 208 209 } 24
+1 0 { 211 3 IlvTransparentIcon 106 385 "../data/yellowball.png" "" } 0
+0 1 { 212 3 IlvLinkImage 0 130 211 } 24
+1 0 { 213 6 IlvTransparentIcon 517 580 "../data/redball.png" "" } 0
+1 0 { 214 1 IlvTransparentIcon 140 109 "../data/redball.png" "" } 0
+0 1 { 215 1 IlvLinkImage 0 213 214 } 24
+1 0 { 216 1 IlvTransparentIcon 546 545 "../data/redball.png" "" } 0
+0 1 { 217 1 IlvLinkImage 0 214 216 } 24
+1 0 { 218 0 IlvTransparentIcon 573 223 "../data/greenball.png" "" } 0
+0 1 { 219 0 IlvLinkImage 0 218 167 } 24
+1 0 { 220 2 IlvTransparentIcon 93 145 "../data/blueball.png" "" } 0
+0 1 { 221 2 IlvLinkImage 0 60 220 } 24
+0 1 { 222 2 IlvLinkImage 0 66 220 } 24
+0 1 { 223 2 IlvLinkImage 0 220 83 } 24
+1 0 { 224 2 IlvTransparentIcon 587 236 "../data/blueball.png" "" } 0
+0 1 { 225 2 IlvLinkImage 0 49 224 } 24
+1 0 { 226 0 IlvTransparentIcon 207 94 "../data/greenball.png" "" } 0
+0 1 { 227 0 IlvLinkImage 0 226 88 } 24
+1 0 { 228 0 IlvTransparentIcon 657 140 "../data/greenball.png" "" } 0
+0 1 { 229 0 IlvLinkImage 0 226 228 } 24
+1 0 { 230 0 IlvTransparentIcon 561 165 "../data/greenball.png" "" } 0
+0 1 { 231 0 IlvLinkImage 0 226 230 } 24
+1 0 { 232 1 IlvTransparentIcon 594 403 "../data/redball.png" "" } 0
+0 1 { 233 0 IlvLinkImage 0 105 232 } 24
+0 1 { 234 1 IlvLinkImage 0 232 187 } 24
+1 0 { 235 0 IlvTransparentIcon 291 110 "../data/greenball.png" "" } 0
+0 1 { 236 0 IlvLinkImage 0 235 10 } 24
+1 0 { 237 1 IlvTransparentIcon 515 596 "../data/redball.png" "" } 0
+0 1 { 238 1 IlvLinkImage 0 16 237 } 24
+0 1 { 239 1 IlvLinkImage 0 187 237 } 24
+0 1 { 240 1 IlvLinkImage 0 237 26 } 24
+1 0 { 241 0 IlvTransparentIcon 474 272 "../data/greenball.png" "" } 0
+0 1 { 242 0 IlvLinkImage 0 241 192 } 24
+1 0 { 243 0 IlvTransparentIcon 382 157 "../data/greenball.png" "" } 0
+0 1 { 244 0 IlvLinkImage 0 167 243 } 24
+0 1 { 245 0 IlvLinkImage 0 243 165 } 24
+1 0 { 246 0 IlvTransparentIcon 676 521 "../data/greenball.png" "" } 0
+0 1 { 247 0 IlvLinkImage 0 246 10 } 24
+1 0 { 248 3 IlvTransparentIcon 97 40 "../data/yellowball.png" "" } 0
+0 1 { 249 3 IlvLinkImage 0 126 248 } 24
+1 0 { 250 4 IlvTransparentIcon 476 224 "../data/grayball.png" "" } 0
+1 0 { 251 4 IlvTransparentIcon 133 151 "../data/grayball.png" "" } 0
+0 1 { 252 4 IlvLinkImage 0 250 251 } 24
+1 0 { 253 4 IlvTransparentIcon 466 364 "../data/grayball.png" "" } 0
+0 1 { 254 4 IlvLinkImage 0 251 253 } 24
+1 0 { 255 2 IlvTransparentIcon 384 348 "../data/blueball.png" "" } 0
+1 0 { 256 2 IlvTransparentIcon 235 320 "../data/blueball.png" "" } 0
+0 1 { 257 2 IlvLinkImage 0 255 256 } 24
+1 0 { 258 2 IlvTransparentIcon 753 293 "../data/blueball.png" "" } 0
+0 1 { 259 2 IlvLinkImage 0 258 256 } 24
+0 1 { 260 2 IlvLinkImage 0 256 113 } 24
+1 0 { 261 1 IlvTransparentIcon 11 250 "../data/redball.png" "" } 0
+1 0 { 262 1 IlvTransparentIcon 362 536 "../data/redball.png" "" } 0
+0 1 { 263 1 IlvLinkImage 0 261 262 } 24
+1 0 { 264 0 IlvTransparentIcon 769 529 "../data/greenball.png" "" } 0
+0 1 { 265 0 IlvLinkImage 0 91 264 } 24
+0 1 { 266 0 IlvLinkImage 0 264 40 } 24
+1 0 { 267 3 IlvTransparentIcon 519 265 "../data/yellowball.png" "" } 0
+0 1 { 268 3 IlvLinkImage 0 55 267 } 24
+0 1 { 269 3 IlvLinkImage 0 267 131 } 24
+0 1 { 270 3 IlvLinkImage 0 267 70 } 24
+1 0 { 271 0 IlvTransparentIcon 60 343 "../data/greenball.png" "" } 0
+0 1 { 272 0 IlvLinkImage 0 108 271 } 24
+1 0 { 273 1 IlvTransparentIcon 130 313 "../data/redball.png" "" } 0
+0 1 { 274 1 IlvLinkImage 0 213 273 } 24
+1 0 { 275 2 IlvTransparentIcon 155 14 "../data/blueball.png" "" } 0
+1 0 { 276 2 IlvTransparentIcon 768 363 "../data/blueball.png" "" } 0
+0 1 { 277 2 IlvLinkImage 0 275 276 } 24
+1 0 { 278 2 IlvTransparentIcon 71 78 "../data/blueball.png" "" } 0
+0 1 { 279 2 IlvLinkImage 0 276 278 } 24
+0 1 { 280 2 IlvLinkImage 0 276 134 } 24
+1 0 { 281 0 IlvTransparentIcon 716 458 "../data/greenball.png" "" } 0
+0 1 { 282 0 IlvLinkImage 0 192 281 } 24
+1 0 { 283 1 IlvTransparentIcon 585 474 "../data/redball.png" "" } 0
+0 1 { 284 1 IlvLinkImage 0 179 283 } 24
+0 1 { 285 1 IlvLinkImage 0 203 283 } 24
+0 1 { 286 1 IlvLinkImage 0 283 98 } 24
+1 0 { 287 2 IlvTransparentIcon 135 116 "../data/blueball.png" "" } 0
+0 1 { 288 2 IlvLinkImage 0 50 287 } 24
+0 1 { 289 2 IlvLinkImage 0 224 287 } 24
+1 0 { 290 0 IlvTransparentIcon 760 454 "../data/blueball.png" "" } 0
+0 1 { 291 2 IlvLinkImage 0 290 287 } 24
+0 1 { 292 2 IlvLinkImage 0 287 120 } 24
+1 0 { 293 0 IlvTransparentIcon 641 591 "../data/greenball.png" "" } 0
+0 1 { 294 0 IlvLinkImage 0 293 52 } 24
+1 0 { 295 1 IlvTransparentIcon 492 403 "../data/redball.png" "" } 0
+0 1 { 296 1 IlvLinkImage 0 26 295 } 24
+0 1 { 297 1 IlvLinkImage 0 295 176 } 24
+1 0 { 298 0 IlvTransparentIcon 662 559 "../data/greenball.png" "" } 0
+0 1 { 299 0 IlvLinkImage 0 46 298 } 24
+0 1 { 300 0 IlvLinkImage 0 141 298 } 24
+0 1 { 301 0 IlvLinkImage 0 298 153 } 24
+1 0 { 302 1 IlvTransparentIcon 482 53 "../data/redball.png" "" } 0
+0 1 { 303 1 IlvLinkImage 0 43 302 } 24
+0 1 { 304 1 IlvLinkImage 0 36 31 } 24
+1 0 { 305 4 IlvTransparentIcon 135 127 "../data/grayball.png" "" } 0
+1 0 { 306 4 IlvTransparentIcon 191 499 "../data/grayball.png" "" } 0
+0 1 { 307 4 IlvLinkImage 0 305 306 } 24
+0 1 { 308 4 IlvLinkImage 0 209 305 } 24
+1 0 { 309 1 IlvTransparentIcon 63 564 "../data/redball.png" "" } 0
+0 1 { 310 1 IlvLinkImage 0 43 309 } 24
+0 1 { 311 4 IlvLinkImage 0 306 261 } 24
+0 1 { 312 0 IlvLinkImage 0 4 40 } 24
+0 1 { 313 0 IlvLinkImage 0 165 1 } 24
+0 1 { 314 1 IlvLinkImage 0 12 203 } 24
+0 1 { 315 2 IlvLinkImage 0 81 65 } 24
+0 1 { 316 1 IlvLinkImage 0 203 179 } 24
+0 1 { 317 1 IlvLinkImage 0 187 16 } 24
+0 1 { 318 0 IlvLinkImage 0 40 271 } 24
+0 1 { 319 0 IlvLinkImage 0 271 109 } 24
+0 1 { 320 1 IlvLinkImage 0 20 273 } 24
+1 0 { 321 1 IlvTransparentIcon 432 108 "../data/redball.png" "" } 0
+1 0 { 322 1 IlvTransparentIcon 757 537 "../data/redball.png" "" } 0
+0 1 { 323 1 IlvLinkImage 0 321 322 } 24
+1 0 { 324 5 IlvTransparentIcon 325 329 "../data/greenball.png" "" } 0
+0 1 { 325 0 IlvLinkImage 0 324 13 } 24
+1 0 { 326 4 IlvTransparentIcon 313 192 "../data/grayball.png" "" } 0
+1 0 { 327 4 IlvTransparentIcon 615 171 "../data/grayball.png" "" } 0
+0 1 { 328 4 IlvLinkImage 0 326 327 } 24
+1 0 { 329 0 IlvTransparentIcon 311 44 "../data/greenball.png" "" } 0
+0 1 { 330 0 IlvLinkImage 0 0 329 } 24
+1 0 { 331 4 IlvTransparentIcon 659 515 "../data/grayball.png" "" } 0
+0 1 { 332 4 IlvLinkImage 0 122 331 } 24
+0 1 { 333 2 IlvLinkImage 0 33 47 } 24
+1 0 { 334 1 IlvTransparentIcon 397 129 "../data/redball.png" "" } 0
+0 1 { 335 1 IlvLinkImage 0 118 334 } 24
+0 1 { 336 0 IlvLinkImage 0 213 194 } 24
+0 1 { 337 0 IlvLinkImage 0 41 6 } 24
+0 1 { 338 1 IlvLinkImage 0 58 29 } 24
+0 1 { 339 1 IlvLinkImage 0 75 78 } 24
+1 0 { 340 7 IlvTransparentIcon 324 258 "../data/redball.png" "" } 0
+0 1 { 341 1 IlvLinkImage 0 340 78 } 24
+1 0 { 342 0 IlvTransparentIcon 297 165 "../data/greenball.png" "" } 0
+0 1 { 343 0 IlvLinkImage 0 106 342 } 24
+1 0 { 344 0 IlvTransparentIcon 689 325 "../data/greenball.png" "" } 0
+0 1 { 345 0 IlvLinkImage 0 342 344 } 24
+1 0 { 346 4 IlvTransparentIcon 534 573 "../data/grayball.png" "" } 0
+1 0 { 347 4 IlvTransparentIcon 664 123 "../data/grayball.png" "" } 0
+0 1 { 348 4 IlvLinkImage 0 346 347 } 24
+0 1 { 349 2 IlvLinkImage 0 115 118 } 24
+1 0 { 350 1 IlvTransparentIcon 641 48 "../data/redball.png" "" } 0
+0 1 { 351 1 IlvLinkImage 0 322 350 } 24
+0 1 { 352 1 IlvLinkImage 0 350 75 } 24
+0 1 { 353 2 IlvLinkImage 0 103 33 } 24
+0 1 { 354 3 IlvLinkImage 0 71 126 } 24
+1 0 { 355 3 IlvTransparentIcon 291 234 "../data/yellowball.png" "" } 0
+0 1 { 356 3 IlvLinkImage 0 355 130 } 24
+1 0 { 357 4 IlvTransparentIcon 376 582 "../data/grayball.png" "" } 0
+0 1 { 358 4 IlvLinkImage 0 185 357 } 24
+0 1 { 359 0 IlvLinkImage 0 143 85 } 24
+1 0 { 360 4 IlvTransparentIcon 764 192 "../data/grayball.png" "" } 0
+0 1 { 361 4 IlvLinkImage 0 360 346 } 24
+0 1 { 362 4 IlvLinkImage 0 331 145 } 24
+0 1 { 363 0 IlvLinkImage 0 324 230 } 24
+0 1 { 364 1 IlvLinkImage 0 155 58 } 24
+0 1 { 365 0 IlvLinkImage 0 88 160 } 24
+0 1 { 366 1 IlvLinkImage 0 198 322 } 24
+0 1 { 367 1 IlvLinkImage 0 21 216 } 24
+0 1 { 368 1 IlvLinkImage 0 334 216 } 24
+0 1 { 369 1 IlvLinkImage 0 216 44 } 24
+0 1 { 370 0 IlvLinkImage 0 329 169 } 24
+1 0 { 371 2 IlvTransparentIcon 529 128 "../data/blueball.png" "" } 0
+0 1 { 372 2 IlvLinkImage 0 173 371 } 24
+1 0 { 373 2 IlvTransparentIcon 292 115 "../data/blueball.png" "" } 0
+0 1 { 374 2 IlvLinkImage 0 173 373 } 24
+0 1 { 375 3 IlvLinkImage 0 13 181 } 24
+0 1 { 376 3 IlvLinkImage 0 181 71 } 24
+0 1 { 377 0 IlvLinkImage 0 53 189 } 24
+0 1 { 378 1 IlvLinkImage 0 200 155 } 24
+0 1 { 379 1 IlvLinkImage 0 162 205 } 24
+1 0 { 380 2 IlvTransparentIcon 309 95 "../data/blueball.png" "" } 0
+0 1 { 381 2 IlvLinkImage 0 120 380 } 24
+0 1 { 382 2 IlvLinkImage 0 380 115 } 24
+0 1 { 383 4 IlvLinkImage 0 357 208 } 24
+1 0 { 384 0 IlvTransparentIcon 548 496 "../data/greenball.png" "" } 0
+0 1 { 385 0 IlvLinkImage 0 340 384 } 24
+0 1 { 386 2 IlvLinkImage 0 224 50 } 24
+0 1 { 387 2 IlvLinkImage 0 224 120 } 24
+0 1 { 388 0 IlvLinkImage 0 9 235 } 24
+1 0 { 389 4 IlvTransparentIcon 284 424 "../data/grayball.png" "" } 0
+0 1 { 390 4 IlvLinkImage 0 347 389 } 24
+0 1 { 391 4 IlvLinkImage 0 389 250 } 24
+0 1 { 392 0 IlvLinkImage 0 384 243 } 24
+0 1 { 393 0 IlvLinkImage 0 53 246 } 24
+0 1 { 394 0 IlvLinkImage 0 23 246 } 24
+0 1 { 395 0 IlvLinkImage 0 246 9 } 24
+0 1 { 396 3 IlvLinkImage 0 267 130 } 24
+0 1 { 397 0 IlvLinkImage 0 241 281 } 24
+0 1 { 398 1 IlvLinkImage 0 283 162 } 24
+1 0 { 399 2 IlvTransparentIcon 310 251 "../data/blueball.png" "" } 0
+1 0 { 400 2 IlvTransparentIcon 536 369 "../data/blueball.png" "" } 0
+0 1 { 401 2 IlvLinkImage 0 399 400 } 24
+0 1 { 402 2 IlvLinkImage 0 399 258 } 24
+0 1 { 403 0 IlvLinkImage 0 293 198 } 24
+0 1 { 404 0 IlvLinkImage 0 293 139 } 24
+0 1 { 405 1 IlvLinkImage 0 235 295 } 24
+0 1 { 406 0 IlvLinkImage 0 151 298 } 24
+0 1 { 407 1 IlvLinkImage 0 302 118 } 24
+1 0 { 408 1 IlvTransparentIcon 567 194 "../data/redball.png" "" } 0
+0 1 { 409 1 IlvLinkImage 0 322 408 } 24
+1 0 { 410 1 IlvTransparentIcon 513 60 "../data/redball.png" "" } 0
+0 1 { 411 1 IlvLinkImage 0 75 410 } 24
+0 1 { 412 1 IlvLinkImage 0 340 410 } 24
+0 1 { 413 2 IlvLinkImage 0 122 80 } 24
+0 1 { 414 0 IlvLinkImage 0 151 23 } 24
+0 1 { 415 2 IlvLinkImage 0 371 373 } 24
+0 1 { 416 2 IlvLinkImage 0 371 380 } 24
+0 1 { 417 0 IlvLinkImage 0 342 218 } 24
+0 1 { 418 0 IlvLinkImage 0 340 243 } 24
+0 1 { 419 0 IlvLinkImage 0 139 189 } 24
+0 1 { 420 1 IlvLinkImage 0 25 295 } 24
+0 1 { 421 1 IlvLinkImage 0 99 205 } 24
+0 1 { 422 0 IlvLinkImage 0 281 194 } 24
+0 1 { 423 0 IlvLinkImage 0 1 329 } 24
+0 1 { 424 0 IlvLinkImage 0 105 342 } 24
+0 1 { 425 0 IlvLinkImage 0 329 128 } 24
+0 1 { 426 0 IlvLinkImage 0 153 23 } 24
+0 1 { 427 3 IlvLinkImage 0 73 355 } 24
+0 1 { 428 2 IlvLinkImage 0 174 373 } 24
+0 1 { 429 2 IlvLinkImage 0 373 49 } 24
+0 1 { 430 0 IlvLinkImage 0 324 226 } 24
+0 1 { 431 1 IlvLinkImage 0 235 26 } 24
+0 1 { 432 3 IlvLinkImage 0 248 355 } 24
+0 1 { 433 0 IlvLinkImage 0 399 105 } 24
+0 1 { 434 0 IlvLinkImage 0 28 62 } 24
+1 0 { 435 1 IlvTransparentIcon 25 397 "../data/redball.png" "" } 0
+0 1 { 436 1 IlvLinkImage 0 435 43 } 24
+0 1 { 437 0 IlvLinkImage 0 91 7 } 24
+0 1 { 438 2 IlvLinkImage 0 174 49 } 24
+0 1 { 439 3 IlvLinkImage 0 128 248 } 24
+0 1 { 440 2 IlvLinkImage 0 256 112 } 24
+0 1 { 441 4 IlvLinkImage 0 261 184 } 24
+0 1 { 442 1 IlvLinkImage 0 273 214 } 24
+0 1 { 443 1 IlvLinkImage 0 101 98 } 24
+0 1 { 444 0 IlvLinkImage 0 46 153 } 24
+0 1 { 445 2 IlvLinkImage 0 112 148 } 24
+0 1 { 446 2 IlvLinkImage 0 148 275 } 24
+0 1 { 447 1 IlvLinkImage 0 57 157 } 24
+0 1 { 448 2 IlvLinkImage 0 101 278 } 24
+0 1 { 449 2 IlvLinkImage 0 134 278 } 24
+0 1 { 450 3 IlvLinkImage 0 55 70 } 24
+0 1 { 451 0 IlvLinkImage 0 91 28 } 24
+0 1 { 452 2 IlvLinkImage 0 380 116 } 24
+0 1 { 453 2 IlvLinkImage 0 112 275 } 24
+0 1 { 454 2 IlvLinkImage 0 34 220 } 24
+0 1 { 455 2 IlvLinkImage 0 278 275 } 24
+0 1 { 456 3 IlvLinkImage 0 73 248 } 24
+0 1 { 457 1 IlvLinkImage 0 261 435 } 24
+0 1 { 458 2 IlvLinkImage 0 134 101 } 24
+0 1 { 459 1 IlvLinkImage 0 31 38 } 24
+0 1 { 460 1 IlvLinkImage 0 68 38 } 24
+1 0 { 461 4 IlvTransparentIcon 301 302 "../data/grayball.png" "" } 0
+0 1 { 462 4 IlvLinkImage 0 146 461 } 24
+0 1 { 463 3 IlvLinkImage 0 211 355 } 24
+0 1 { 464 2 IlvLinkImage 0 65 68 } 24
+0 1 { 465 1 IlvLinkImage 0 94 76 } 24
+0 1 { 466 2 IlvLinkImage 0 196 174 } 24
+1 0 { 467 4 IlvTransparentIcon 325 257 "../data/grayball.png" "" } 0
+0 1 { 468 4 IlvLinkImage 0 461 467 } 24
+0 1 { 469 1 IlvLinkImage 0 31 68 } 24
+0 1 { 470 4 IlvLinkImage 0 467 326 } 24
+0 1 { 471 1 IlvLinkImage 0 96 94 } 24
+0 1 { 472 3 IlvLinkImage 0 131 96 } 24
+0 1 { 473 3 IlvLinkImage 0 131 211 } 24
+0 1 { 474 3 IlvLinkImage 0 96 211 } 24
+0 1 { 475 0 IlvLinkImage 0 0 344 } 24
+0 1 { 476 2 IlvLinkImage 0 400 133 } 24
+0 1 { 477 0 IlvLinkImage 0 3 90 } 24
+1 0 { 478 1 IlvTransparentIcon 787 432 "../data/redball.png" "" } 0
+0 1 { 479 1 IlvLinkImage 0 321 478 } 24
+0 1 { 480 0 IlvLinkImage 0 53 9 } 24
+0 1 { 481 0 IlvLinkImage 0 194 85 } 24
+0 1 { 482 0 IlvLinkImage 0 106 344 } 24
+0 1 { 483 2 IlvLinkImage 0 400 258 } 24
+0 1 { 484 1 IlvLinkImage 0 410 78 } 24
+0 1 { 485 2 IlvLinkImage 0 258 255 } 24
+0 1 { 486 2 IlvLinkImage 0 133 255 } 24
+0 1 { 487 2 IlvLinkImage 0 371 115 } 24
+0 1 { 488 1 IlvLinkImage 0 478 136 } 24
+0 1 { 489 1 IlvLinkImage 0 136 93 } 24
+0 1 { 490 4 IlvLinkImage 0 3 360 } 24
+0 1 { 491 0 IlvLinkImage 0 230 228 } 24
+0 1 { 492 1 IlvLinkImage 0 162 99 } 24
+0 1 { 493 4 IlvLinkImage 0 253 3 } 24
+0 1 { 494 0 IlvLinkImage 0 344 218 } 24
+0 1 { 495 0 IlvLinkImage 0 228 241 } 24
+0 1 { 496 2 IlvLinkImage 0 133 276 } 24
+0 1 { 497 1 IlvLinkImage 0 478 408 } 24
+0 1 { 498 1 IlvLinkImage 0 408 350 } 24
+0 1 { 499 1 IlvLinkImage 0 321 408 } 24
+0 1 { 500 0 IlvLinkImage 0 88 228 } 24
+0 1 { 501 1 IlvLinkImage 0 350 410 } 24
+0 1 { 502 1 IlvLinkImage 0 198 321 } 24
+0 1 { 503 2 IlvLinkImage 0 47 60 } 24
+0 1 { 504 1 IlvLinkImage 0 302 334 } 24
+0 1 { 505 0 IlvLinkImage 0 106 0 } 24
+0 1 { 506 1 IlvLinkImage 0 15 18 } 24
+0 1 { 507 4 IlvLinkImage 0 327 122 } 24
+0 1 { 508 2 IlvLinkImage 0 108 113 } 24
+0 1 { 509 1 IlvLinkImage 0 232 15 } 24
+0 1 { 510 0 IlvLinkImage 0 218 164 } 24
+0 1 { 511 0 IlvLinkImage 0 230 241 } 24
+0 1 { 512 2 IlvLinkImage 0 400 255 } 24
+0 1 { 513 0 IlvLinkImage 0 164 243 } 24
+0 1 { 514 1 IlvLinkImage 0 478 93 } 24
+0 1 { 515 1 IlvLinkImage 0 262 20 } 24
+0 1 { 516 1 IlvLinkImage 0 176 36 } 24
+0 1 { 517 1 IlvLinkImage 0 309 20 } 24
+0 1 { 518 2 IlvLinkImage 0 290 50 } 24
+0 1 { 519 0 IlvLinkImage 0 213 281 } 24
+0 1 { 520 1 IlvLinkImage 0 237 25 } 24
+0 1 { 521 0 IlvLinkImage 0 290 143 } 24
+0 1 { 522 0 IlvLinkImage 0 160 143 } 24
+0 1 { 523 0 IlvLinkImage 0 160 290 } 24
+Layers 2
+"" 4 0 
+"" 4 0 
+Views 1
+"v207" 1 0 0 1 0 0
+EOF

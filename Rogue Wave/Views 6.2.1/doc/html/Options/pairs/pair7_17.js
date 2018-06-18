@@ -1,0 +1,26 @@
+var pairs =
+{
+"saving":{"product":1}
+,"product":{"window":1}
+,"window":{"already":1,"choosing":1,"give":1}
+,"already":{"saved":1}
+,"saved":{"window":1}
+,"choosing":{"save":1}
+,"save":{"file":1}
+,"file":{"menu":1}
+,"menu":{"main":1}
+,"main":{"window":1}
+,"give":{"name":1}
+,"name":{"product.ilv":1}
+,"product.ilv":{"finished":1}
+,"finished":{"brief":1}
+,"brief":{"tutorial":1}
+,"tutorial":{"supplement":1}
+,"supplement":{"using":1}
+,"using":{"nested":1}
+,"nested":{"tables":1}
+,"tables":{"feature":1}
+,"feature":{"data":1}
+,"data":{"access":1}
+}
+;Search.control.loadWordPairs(pairs);

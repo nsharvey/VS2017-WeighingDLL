@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvwxplook -->
+<module name="ilvwxplook" version="6.2">
+<class name="IlvWindowsXPLFHandler" rootClass ="IlvLookFeelHandler" sharedName="winxp"/>
+<class name="IlvButton/winxp" rootClass="IlvObjectLFHandler"/>
+<class name="IlvToggle/winxp" rootClass="IlvObjectLFHandler"/>
+<class name="IlvScrollBar/winxp" rootClass="IlvObjectLFHandler"/>
+<class name="IlvTextField/winxp" rootClass="IlvObjectLFHandler"/>
+<class name="IlvComboBox/winxp" rootClass="IlvObjectLFHandler"/>
+<class name="IlvFrame/winxp" rootClass="IlvObjectLFHandler"/>
+<class name="IlvSlider/winxp" rootClass="IlvObjectLFHandler"/>
+<class name="IlvToolBar/winxp" rootClass="IlvObjectLFHandler"/>
+</module>

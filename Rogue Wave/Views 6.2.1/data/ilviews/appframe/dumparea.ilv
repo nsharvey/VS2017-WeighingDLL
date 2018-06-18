@@ -1,0 +1,81 @@
+// Ilv Version: 4.0
+// File generated: Tue Apr 11 20:06:16 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "dumparea"
+Palettes 4
+2 48640 48640 48640 "black" "normal" "%helvetica-12" 0 solid solid 0 0 0
+"IlvStText" 1 "gray" "black" "normal" "%helvetica-12" 0 solid solid 0 0 0
+0 48640 48640 48640 "black" "button" "%helvetica-12-B" 0 solid solid 0 0 0
+3 "cornflowerblue" 65025 65025 65025 "bold" "%helvetica-12-B" 0 solid solid 6 0 0
+IlvObjects 11
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 5 104 98 23 F13 2 { IlvMessageItem 262145 4 16 4 "&dragRect..."  }   } 544 "DragRect"
+1
+1 "__ilvCallback" "DragRectCB"
+6144 "What" "What"
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvScrolledComboBox 164 8 176 20 F805 2 "Visible" 3
+{ IlvGadgetItem 1 2 4 "&visible"  } 
+{ IlvGadgetItem 1 2 4 "&all"  } 
+{ IlvGadgetItem 1 2 4 "&selection"  }  3 0 } 544 "What"
+1
+1 "__ilvCallback" "WhatCB"
+4096 "DragRect"
+3 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvNumberField 164 41 90 22 F6 2 2 -1 0 "0" . , 6 0 -2147483648 2147483647 } 32 "dumpy"
+2048 "dumpw"
+3 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvNumberField 32 68 90 22 F6 2 2 -1 0 "1" . , 6 0 -2147483648 2147483647 } 32 "dumpw"
+6144 "dumph" "dumpy"
+3 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvNumberField 32 41 90 22 F6 2 2 -1 0 "0" . , 6 0 -2147483648 2147483647 } 32 "dumpx"
+4096 "DragRect"
+3 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvNumberField 164 68 90 22 F6 2 2 -1 0 "1" . , 6 0 -2147483648 2147483647 } 32 "dumph"
+6144 "Where" "dumpw"
+3 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 5 42 19 20 F268435468 0 { IlvMessageItem 262153 4 16 4 "&x"  }   } 0
+0
+3 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 139 42 19 20 F268435468 0 { IlvMessageItem 262153 4 16 4 "&y"  }   } 0
+0
+3 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 139 69 19 20 F268435468 0 { IlvMessageItem 262153 4 16 4 "&h"  }   } 0
+0
+3 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 5 69 19 20 F268435468 0 { IlvMessageItem 262153 4 16 4 "&w"  }   } 0
+0
+11 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvTextField 5 7 156 20 F536870919 0 1 -1 0 "&PartToDump" } 0
+0
+Size 346 139
+GeometryHandlers
+1 100 320 346 0 346 0
+1 3 0 0 164  176 0 176 1  0 0 6 0
+1 100 274 274 0 274 0
+0
+Layers 12
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+EOF

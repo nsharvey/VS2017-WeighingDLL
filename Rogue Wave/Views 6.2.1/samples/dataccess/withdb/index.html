@@ -1,0 +1,118 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Data Access - Samples: withdb</title>
+	</head>
+    <body>
+		<a name="gauge"><h1>Sample: <code>gauge</code></h1><h1 class="subtitle">Rogue Wave Views Data Access Gauge sample</h1></a>
+		<p>This C++ sample shows how to connect a circular gauge to a SQL datasource column.</p>
+		<img src="data/gauge.png"/>
+		<p>To refresh, click the @ button of the Navigator.</p>
+          <p>You can change the salary by:
+             <ul><li>moving the gauge indicator</li>
+                 <li>changing its value in the Salary field</li></ul>
+and use the navigator to validate or cancel the changes.</p>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/gauge.h"><code>include/gauge.h</code></a></li>
+			<li><a href="src/gauge.cpp"><code>src/gauge.cpp</code></a></li>
+		</ul>
+		<a name="employee"><h1>Sample: <code>employee</code></h1><h1 class="subtitle">Rogue Wave Views Data Access Employee sample</h1></a>
+		<p>This C++ sample shows how to display a list of employees for the chosen department.</p>
+		<img src="data/employee.png"/>
+		<p>To refresh, click the @ button of the Navigator.</p>
+          <p>To change department, use the Navigator.</p>
+          <p>The tables are read-only which means that you can edit the fields and Table Gadget but you can't validate the changes: an error occurs.</p>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/getstart.cpp"><code>src/getstart.cpp</code></a></li>
+		</ul>
+		<a name="manager"><h1>Sample: <code>manager</code></h1><h1 class="subtitle">Rogue Wave Views Data Access Manager sample</h1></a>
+		<p>This C++ sample shows how to display employee information taken from two tables.</p>
+		<img src="data/manager.png"/>
+		<p>To refresh, click within the Table Gadget and press the F9 key.</p>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/getstart.cpp"><code>src/getstart.cpp</code></a></li>
+		</ul>
+		<a name="salary"><h1>Sample: <code>salary</code></h1><h1 class="subtitle">Rogue Wave Views Data Access Max Salary sample</h1></a>
+		<p>This C++ sample shows how to display the maximum salary for each department.</p>
+		<img src="data/salary.png"/>
+		<p>Buttons:
+             <ul><li>Select: to select and display in the Table Gadget the information</li>
+                 <li>Clear: to clear the Table Gadget</li></ul></p>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/getstart.cpp"><code>src/getstart.cpp</code></a></li>
+		</ul>
+		<a name="query"><h1>Sample: <code>query</code></h1><h1 class="subtitle">Rogue Wave Views Data Access Query sample</h1></a>
+		<p>This C++ sample shows how to use the <tt>IliSQLTable::setQueryConjunct</tt> member function to dynamically modify the selection criteria.</p>
+		<img src="data/query.png"/>
+		<p>To select all information, click Select button.</p>
+          <p>To display Employees, Department and/or Manager beginning with &quot;xy&quot;, type &quot;xy&quot; in the right field(s) and then click Select button.</p>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/query.h"><code>include/query.h</code></a></li>
+			<li><a href="src/query.cpp"><code>src/query.cpp</code></a></li>
+		</ul>
+		<a name="session"><h1>Sample: <code>session</code></h1><h1 class="subtitle">Rogue Wave Views Data Access Session sample</h1></a>
+		<p>This C++ sample shows how to use IliSQLSession and IliSQLCursor classes to directly submit SQL statement to a database.</p>
+		<img src="data/session.png"/>
+		<p>To display all information, click Apply button.</p>
+          <p>To add/substract a value or a percentage, type it in the Bonus field and then click Apply button.</p>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/session.h"><code>include/session.h</code></a></li>
+			<li><a href="src/session.cpp"><code>src/session.cpp</code></a></li>
+		</ul>
+		<a name="querymod"><h1>Sample: <code>querymod</code></h1><h1 class="subtitle">Rogue Wave Views Data Access Query Mode sample</h1></a>
+		<p>This Rogue Wave script sample shows how to use the query mode.</p>
+		<img src="data/querymod.png"/>
+		<p>To refresh, click within the Table Gadget and press the F9 key.</p>
+          <p>When in query mode, the Table Gadget lets you enter your query. All conditions on the same line will be combined with an OR operator whereas conditions on different lines will be combined with an OR operator.</p>
+          <p>Buttons:
+             <ul><li>Swith: to switch to query mode</li>
+                 <li>Cancel: to cancel the query</li>
+                 <li>Apply: to apply the query</li></ul></p>
+          <p>The message label tells you if cancel/apply succeeded, if you are in query mode or not and so on.</p>
+		<a name="transman"><h1>Sample: <code>transman</code></h1><h1 class="subtitle">Rogue Wave Views Data Access Transaction Manager sample</h1></a>
+		<p>This Rogue Wave script sample shows how to use a transaction manager.</p>
+		<img src="data/transman.png"/>
+		<p>To display all information, click Start button. Then, choose a department in the top left Combo Box.</p>
+          <p>You can changes values, add/suppress a row in the Table Gadget, change the department manager with the top right Combo Box.</p>
+          <p>Buttons:
+             <ul><li>Start: to start the local transaction</li>
+                 <li>Cancel: to cancel last changes</li>
+                 <li>Accept: to accept last changes</li>
+                 <li>Stop: to stops the local transaction</li></ul></p>
+		<a name="collect"><h1>Sample: <code>collect</code></h1><h1 class="subtitle">Rogue Wave Views Data Access Informix 9 sample</h1></a>
+		<p>This Rogue Wave script sample shows how to use Informix 9 collection property.</p>
+		<img src="data/collect.png"/>
+		<p>If the tables are not yet created, press create button.</p>
+          <p>To refresh, click within the top Table Gadget and press the F9 key.</p>
+          <p>The bottom Table Gadget displays the books information of the author selected in top Table Gadget.</p>
+          <p>Buttons:
+             <ul><li>create: to create Informix 9 needed tables</li>
+                 <li>drop: to delete this Informix 9 sample tables</li></ul></p>
+The message label tells you if the creation/deletion of the tables succeeded.</p>
+		<a name="nest"><h1>Sample: <code>nest</code></h1><h1 class="subtitle">Rogue Wave Views Data Access Oracle 9i sample</h1></a>
+		<p>This Rogue Wave script sample shows how to use Oracle 9i nested tables property.</p>
+		<img src="data/nest.png"/>
+		<p>If the tables are not yet created, press create button.</p>
+          <p>To select data, choose an itm in the top left Combo Box. The two Table Gadgets display the same information: the list of articles needed.</p>
+          <p>The first Table Gadget shows the &quot;on demand&quot; technique. Two SQL Tables are used: one for selecting the nested table part and one for selecting the rest.</p>
+          <p>The second Table Gadget shows the &quot;in memory&quot; technique. Two SQL Tables are used: one for selecting database table data and one, connected to a Memory Table, to be used as a row cache.</p>
+          <p>Buttons:
+             <ul><li>create: to create Oracle 9i needed tables</li>
+                 <li>drop: to delete this Oracle 9i sample tables</li></ul></p>
+The message label tells you if the creation/deletion of the tables succeeded.</p>

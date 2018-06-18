@@ -1,0 +1,2 @@
+Files: getstart.cpp
+Note: Shows the panel "max salary" of the "Getting started manual".

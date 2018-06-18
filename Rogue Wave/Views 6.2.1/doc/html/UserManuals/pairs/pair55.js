@@ -1,0 +1,19 @@
+var pairs =
+{
+"playerstart":{"label":1}
+,"label":{"start":1}
+,"start":{"category":1}
+,"category":{"player":1}
+,"player":{"action":1}
+,"action":{"starts":1}
+,"starts":{"recording":1}
+,"recording":{"events":1}
+,"events":{"keyboard":1,"recorded":1}
+,"keyboard":{"mouse":1}
+,"mouse":{"events":1}
+,"recorded":{"until":1}
+,"until":{"execute":1}
+,"execute":{"playerstop":1}
+,"playerstop":{"command":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,5 @@
+panel "MainPanel" {
+    menuItem ShowBidiTestPanel : "&mtools", "&moptions";
+    menuItem -              : "&mtools", "&moptions" -before ShowBidiTestPanel;
+}
+

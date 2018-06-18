@@ -1,0 +1,28 @@
+File: notices.txt
+-----------------
+This file indicates, for every relevant file in this directory, its
+origin and under which licence it was pubshised
+
+File name: pan.png
+  Author: GRPH3B18
+  Original title: Gesture Pan
+  Origin: http://en.wikipedia.org/wiki/File:Gestures_Pan.png
+  License: Creative Commons Attribution-Share Alike 3.0 Unported
+  Copy date: 2013-10-01
+
+File name: pinch.png
+  Author: GRPH3B18
+  Original title: Gesture Pinch
+  Origin: http://en.wikipedia.org/wiki/File:Gestures_Pinch.png
+  License: Creative Commons Attribution-Share Alike 3.0 Unported
+  Copy date: 2013-10-01
+
+File name: unpinch.png
+  Author: GRPH3B18
+  Original title: Gesture Pan
+  Origin: http://en.wikipedia.org/wiki/File:Gestures_Unpinch.png
+  License: Creative Commons Attribution-Share Alike 3.0 Unported
+  Copy date: 2013-10-01
+
+
+Rogue Wave Software

@@ -1,0 +1,23 @@
+var pairs =
+{
+"going":{"section":1}
+,"section":{"perform":1}
+,"perform":{"following":1}
+,"following":{"procedures":1}
+,"procedures":{"create":1}
+,"create":{"control":1}
+,"control":{"window":1}
+,"window":{"adding":1,"creating":1,"using":1}
+,"adding":{"menu":1}
+,"menu":{"bar":1,"attaching":1,"file":1,"item":1,"finishing":1}
+,"bar":{"window":1}
+,"creating":{"file":1,"attaching":1}
+,"file":{"pop-up":1,"menu":1}
+,"pop-up":{"menu":1}
+,"attaching":{"file":1,"panels":1}
+,"item":{"creating":1}
+,"panels":{"pop-up":1}
+,"finishing":{"control":1}
+,"using":{"browser":1}
+}
+;Search.control.loadWordPairs(pairs);

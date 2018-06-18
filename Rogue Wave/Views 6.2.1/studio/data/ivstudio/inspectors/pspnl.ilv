@@ -1,0 +1,28 @@
+// Ilv Version: 5.0
+// File generated: Wed Feb 20 17:28:02 2002
+// Creator class: IlvGadgetManagerOutput
+FileName "pspnl"
+PathName "/nfs/views-work/work.dupuy/work/studio/data/ivstudio/inspectors/pspnl.ilv"
+Palettes 1
+0 F "defaultBg" "defaultFg" "default" "fixed" 0 solid solid 0 0 0 65535 1
+IlvObjects 2
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvHierarchicalSheet 0 27 317 302 F43352 2 Y N 0 0 0 0 1 0 147 25 1 1 0 1 1 1 2 1 V0 2 2 0 0 192 IlvLabelMatrixItem "Name" 
+1 0 192 IlvLabelMatrixItem "Value"  1 N 0 1 0 1 0  10 1
+{ IlvTreeGadgetItem 1 2 4 "root" 0
+ }  } 32 "CMTPropertySheet"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 2 3 312 20 F806 2 1 -1 0 "SCCombo" 0 4 0 } 32 "CBDISPLAYER"
+0
+Size 317 329
+GeometryHandlers
+1 100 0 317 0 317 0
+2 3 0 0 0  317 0 317 0  0 -3 0 0
+ 3 0 0 2  312 0 312 1  0 0 3 0
+1 100 0 329 0 329 0
+2 3 0 0 27  302 0 302 0  0 0 0 0
+ 3 0 0 3  0 0 20 1  306 0 306 0
+EOF

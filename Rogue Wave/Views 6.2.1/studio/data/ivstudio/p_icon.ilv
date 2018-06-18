@@ -1,0 +1,17 @@
+// Ilv Version: 3.1
+// File generated: Tue Dec 22 11:25:40 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "p_icon"
+Palettes 1
+"default" 0 "gray" "black" "default" "%helvetica-12" 0 solid solid 0 0 0
+IlvObjects 4
+7 { 0 0 IlvIcon 40 40 "ivstudio/icons/ic_icon.png" } 0
+0
+7 { 1 0 IlvTransparentIcon 104 40 "ivstudio/icons/ic_ticon.png" "" } 0
+0
+7 { 2 0 IlvZoomableIcon 0 0 "ivstudio/icons/ic_zicon.png" F1 0 0 1 40 104 } 0
+0
+7 { 3 0 IlvZoomableTransparentIcon 0 0 "ivstudio/icons/ic_zticon.png" F1 0 0 1 104 104 } 0
+0
+Size 180 421
+EOF

@@ -1,0 +1,239 @@
+// Ilv Version: 4.0
+// File generated: Thu Mar 16 15:01:18 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "treeinsp"
+PathName "/home1/sander/views/data/ilviews/layout/treeinsp.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 34
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 138 182 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&siblingOffset"  }   } 32 "SiblingOffsetLab"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 162 182 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&branchOffset"  }   } 32 "BranchOffsetLab"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 30 140 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&flowDirectionTo"  }   } 32 "FlowDirectionLab"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 52 140 20 F268435468 0 { IlvMessageItem 262169 4 16 4 "&globalAlignment"  }   } 32 "GlobalAlignmentLab"
+0
+1 { 4 P 2
+[ IlvToolTip __ilvToolTip 2 "&treeAddRootNodeToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 22 260 138 23 F13 2 { IlvMessageItem 262145 4 16 4 "&addRootNode"  }   } 544 "AddRootBut"
+1
+1 "__ilvCallback" "AddRootCB"
+0
+1 { 5 P 2
+[ IlvToolTip __ilvToolTip 2 "&treeShowSpecRootToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 192 260 138 23 F13 2 { IlvMessageItem 262145 4 16 4 "&showSpecRootNode"  }   } 544 "ShowSpecRootBut"
+1
+1 "__ilvCallback" "ShowSpecRootCB"
+0
+1 { 6 P 2
+[ IlvToolTip __ilvToolTip 2 "&treeGlobalAlignmentToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvComboBox 166 52 179 20 F39 2 "" 6
+{ IlvMenuItem 1 2 4 "&eastAlignment"  } 
+{ IlvMenuItem 1 2 4 "&centerAlignment"  } 
+{ IlvMenuItem 1 2 4 "&borderCenterAlignment"  } 
+{ IlvMenuItem 1 2 4 "&westAlignment"  } 
+{ IlvMenuItem 1 2 4 "&tipOverAlignment"  } 
+{ IlvMenuItem 1 2 4 "&mixedAlignment"  }  } 32 "TreeGlobalAlignmentSel"
+0
+1 { 7 P 2
+[ IlvToolTip __ilvToolTip 2 "&treeFlowDirectionToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvComboBox 166 30 179 20 F39 2 "" 4
+{ IlvMenuItem 1 2 4 "&right"  } 
+{ IlvMenuItem 1 2 4 "&left"  } 
+{ IlvMenuItem 1 2 4 "&bottom"  } 
+{ IlvMenuItem 1 2 4 "&top"  }  } 32 "TreeFlowDirectionSel"
+0
+1 { 8 P 2
+[ IlvToolTip __ilvToolTip 2 "&treeSiblingOffsetToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 208 138 105 22 2 0 200 64 2 1
+0 IlvNumberField 208 138 82 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "TreeSiblingOffsetNum"
+0
+1 { 9 P 2
+[ IlvToolTip __ilvToolTip 2 "&treeBranchOffsetToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 208 162 105 22 2 0 200 64 2 1
+0 IlvNumberField 208 162 82 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "TreeBranchOffsetNum"
+0
+1 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 74 140 20 F268435468 0 { IlvMessageItem 262169 4 16 4 "&globalLinkStyle"  }   } 32 "GlobalLinkStyleLab"
+0
+1 { 11 P 2
+[ IlvToolTip __ilvToolTip 2 "&treeGlobalLinkStyleToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvComboBox 166 74 179 20 F39 2 "" 4
+{ IlvMenuItem 1 2 4 "&noReshapeLinkStyle"  } 
+{ IlvMenuItem 1 2 4 "&straightLineLinkStyle"  } 
+{ IlvMenuItem 1 2 4 "&orthogonalLinkStyle"  } 
+{ IlvMenuItem 1 2 4 "&mixedLinkStyle"  }  } 32 "TreeGlobalLinkStyleSel"
+0
+1 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 2 119 342 119 F268435468 0 { IlvMessageItem 262169 4 16 4 "&dimensionalParameters"  }   } 0
+0
+1 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 8 140 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&layoutMode"  }   } 32 "LayoutModeLab"
+0
+1 { 14 P 2
+[ IlvToolTip __ilvToolTip 2 "&treeLayoutModeToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvComboBox 166 8 179 20 F39 2 "" 8
+{ IlvMenuItem 1 2 4 "&treeLayoutFreeMode"  } 
+{ IlvMenuItem 1 2 4 "&treeLayoutLevelMode"  } 
+{ IlvMenuItem 1 2 4 "&treeLayoutRadialMode"  } 
+{ IlvMenuItem 1 2 4 "&treeLayoutAltRadialMode"  } 
+{ IlvMenuItem 1 2 4 "&treeLayoutTipOverMode"  } 
+{ IlvMenuItem 1 2 4 "&treeLayoutTipRootsOverMode"  } 
+{ IlvMenuItem 1 2 4 "&treeLayoutTipLeavesOverMode"  } 
+{ IlvMenuItem 1 2 4 "&treeLayoutTipRootsAndLeavesOverMode"  }  } 32 "TreeLayoutModeSel"
+0
+1 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 96 140 20 F268435468 0 { IlvMessageItem 262169 4 16 4 "&levelJustification"  }   } 32 "LevelJustificationLab"
+0
+1 { 16 P 2
+[ IlvToolTip __ilvToolTip 2 "&treeLevelJustificationToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvComboBox 166 96 179 20 F39 2 "" 3
+{ IlvMenuItem 1 2 4 "&centerAlignment"  } 
+{ IlvMenuItem 1 2 4 "&northAlignment"  } 
+{ IlvMenuItem 1 2 4 "&southAlignment"  }  } 32 "TreeLevelJustificationSel"
+0
+1 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 186 182 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&parentChildOffset"  }   } 32 "ParentChildOffsetLab"
+0
+1 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 210 182 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&tipOverBranchOffset"  }   } 32 "TipOverBranchOffset"
+0
+1 { 19 P 2
+[ IlvToolTip __ilvToolTip 2 "&parentChildOffsetToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 208 186 105 22 2 0 200 64 2 1
+0 IlvNumberField 208 186 82 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "TreeParentChildOffsetNum"
+0
+1 { 20 P 2
+[ IlvToolTip __ilvToolTip 2 "&treeTipOverBranchOffsetToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 208 210 105 22 2 0 200 64 2 1
+0 IlvNumberField 208 210 82 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "TreeTipOverBranchOffsetNum"
+0
+1 { 21 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 2 240 342 79 F268435468 0 { IlvMessageItem 262169 4 16 4 "&rootNode"  }   } 0
+0
+1 { 22 P 2
+[ IlvToolTip __ilvToolTip 2 "&treeClearRootNodeToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 22 290 138 23 F13 2 { IlvMessageItem 262145 4 16 4 "&clearRootNode"  }   } 544 "ClearRootBut"
+1
+1 "__ilvCallback" "ClearRootCB"
+0
+1 { 23 P 2
+[ IlvToolTip __ilvToolTip 2 "&treeShowCalcRootToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 192 290 138 23 F13 2 { IlvMessageItem 262145 4 16 4 "&showCalcRootNode"  }   } 544 "ShowCalcRootBut"
+1
+1 "__ilvCallback" "ShowCalcRootCB"
+0
+1 { 24 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 2 318 342 67 F268435468 0 { IlvMessageItem 262169 4 16 4 "&selectedNodesAndLinks"  }   } 0
+0
+1 { 25 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 360 143 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&linkStyle"  }   } 32 "LinkStyleLab"
+0
+1 { 26 P 2
+[ IlvToolTip __ilvToolTip 2 "&treeLinkStyleToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvComboBox 166 360 174 20 F39 2 "" 3
+{ IlvMenuItem 1 2 4 "&undefined"  } 
+{ IlvMenuItem 1 2 4 "&straightLineLinkStyle"  } 
+{ IlvMenuItem 1 2 4 "&orthogonalLinkStyle"  }  } 32 "TreeLinkStyleSel"
+0
+1 { 27 P 2
+[ IlvToolTip __ilvToolTip 2 "&treeAlignmentToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvComboBox 166 338 174 20 F39 2 "" 6
+{ IlvMenuItem 1 2 4 "&undefined"  } 
+{ IlvMenuItem 1 2 4 "&eastAlignment"  } 
+{ IlvMenuItem 1 2 4 "&centerAlignment"  } 
+{ IlvMenuItem 1 2 4 "&borderCenterAlignment"  } 
+{ IlvMenuItem 1 2 4 "&westAlignment"  } 
+{ IlvMenuItem 1 2 4 "&tipOverAlignment"  }  } 32 "TreeAlignmentSel"
+0
+1 { 28 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 338 143 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&alignment"  }   } 32 "NodeAlignmentLab"
+0
+1 { 29 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 2 388 342 72 F268435468 0 { IlvMessageItem 262169 4 16 4 "&expertOptions"  }   } 0
+0
+1 { 30 P 2
+[ IlvToolTip __ilvToolTip 2 "&treeAspectRatioToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 206 407 77 22 F6 2 2 25 0 " 1.0" } 32 "TreeAspectRatio"
+0
+1 { 31 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 407 182 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&aspectRatio"  }   } 32 "AspectRatioLab"
+0
+1 { 32 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 431 182 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&maxChildrenAngle"  }   } 32 "MaxChildrenAngleLab"
+0
+1 { 33 P 2
+[ IlvToolTip __ilvToolTip 2 "&treeMaxChildrenAngleToolTip" 4 4 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 206 431 100 22 2 0 200 64 2 1
+0 IlvNumberField 206 431 77 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "TreeMaxChildrenAngleNum"
+0
+Size 355 511
+Background "gray"
+GeometryHandlers
+3 50 150 166 0 166 0
+ 0 0 0 166 0 166
+ 100 150 188 166 188 166
+6 3 0 0 2  342 0 342 12  0 10 10 2
+ 3 0 0 22  0 0 138 4  0 6 6 1
+ 3 0 0 22  0 0 138 22  0 6 6 1
+ 3 0 0 2  342 0 342 21  0 10 10 2
+ 3 0 0 2  342 0 342 24  0 10 10 2
+ 3 0 0 2  342 0 342 29  0 10 10 2
+0
+15 3 0 0 26  0 0 138 5  0 24 24 2
+ 3 0 0 42  0 0 105 8  0 0 41 2
+ 3 0 0 42  0 0 105 9  0 0 41 2
+ 3 0 0 0  0 0 179 7  0 9 9 2
+ 3 0 0 0  0 0 179 6  0 9 9 2
+ 3 0 0 0  0 0 179 11  0 9 9 2
+ 3 0 0 0  0 0 179 14  0 9 9 2
+ 3 0 0 0  0 0 179 16  0 9 9 2
+ 3 0 0 0  0 0 174 27  0 14 14 2
+ 3 0 0 0  0 0 174 26  0 14 14 2
+ 3 0 0 26  0 0 138 23  0 24 24 2
+ 3 0 0 42  0 0 105 19  0 0 41 2
+ 3 0 0 42  0 0 105 20  0 0 41 2
+ 3 0 0 40  0 0 77 30  0 0 71 2
+ 3 0 0 40  0 0 100 33  0 0 48 2
+1 100 0 511 0 511 0
+0
+EOF

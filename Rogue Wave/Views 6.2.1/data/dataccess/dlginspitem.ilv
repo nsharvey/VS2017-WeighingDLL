@@ -1,0 +1,90 @@
+// Ilv Version: 5.1
+// File generated: Tue Oct 23 15:26:12 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "dlginspitem"
+PathName "dlginspitem.ilv"
+Palettes 1
+"IlvStToolBar" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 13
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IliEntryField 130 55 150 22 F6 2 1 -1 0 "" 18435 11  } 32 "EDT3"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IliEntryField 130 80 150 22 F6 2 1 -1 0 "" 18435 11  } 32 "EDT4"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IliEntryField 130 30 150 22 F6 2 1 -1 0 "" 18435 11  } 32 "EDT2"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IliEntryField 130 5 150 22 F6 2 1 -1 0 "" 18435 11  } 32 "EDT1"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 5 120 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "MessageLabel"  }   } 32 "TXT1"
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 30 120 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "MessageLabel"  }   } 32 "TXT2"
+0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 55 120 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "MessageLabel"  }   } 32 "TXT3"
+0
+1 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 80 120 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "MessageLabel"  }   } 32 "TXT4"
+0
+1 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 283 30 22 22 F13 2 { IlvMessageItem 262145 4 16 4 "..."  }   } 544 "BTN2"
+1
+1 "__ilvCallback" "bnCB2"
+0
+1 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 283 55 22 22 F13 2 { IlvMessageItem 262145 4 16 4 "..."  }   } 544 "BTN3"
+1
+1 "__ilvCallback" "bnCB3"
+0
+1 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 283 80 22 22 F13 2 { IlvMessageItem 262145 4 16 4 "..."  }   } 544 "BTN4"
+1
+1 "__ilvCallback" "bnCB4"
+0
+1 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 140 120 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&ok"  }   } 512
+1
+1 "__ilvCallback" "apply"
+0
+1 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 225 120 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cancel"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+Size 310 148
+GeometryHandlers
+1 100 0 310 0 310 0
+13 3 0 0 5  120 0 120 4  185 0 185 0
+ 3 130 0 130  150 0 150 3  0 0 30 0
+ 3 0 0 5  120 0 120 5  185 0 185 0
+ 3 130 0 130  150 0 150 2  0 0 30 0
+ 3 130 0 130  150 0 150 0  0 0 30 0
+ 3 0 0 5  120 0 120 6  185 0 185 0
+ 3 0 0 5  120 0 120 7  185 0 185 0
+ 3 130 0 130  150 0 150 1  0 0 30 0
+ 3 283 0 283  0 0 22 8  0 0 5 0
+ 3 283 0 283  0 0 22 9  0 0 5 0
+ 3 283 0 283  0 0 22 10  0 0 5 0
+ 3 225 0 225  0 0 80 12  0 0 5 0
+ 3 140 0 140  0 0 80 11  0 0 90 0
+1 100 0 148 0 148 0
+2 3 120 0 120  0 0 23 12  0 0 5 0
+ 3 120 0 120  0 0 23 11  0 0 5 0
+EOF

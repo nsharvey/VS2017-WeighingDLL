@@ -1,0 +1,30 @@
+// Ilv Version: 4.0
+// File generated: Thu Jan 03 16:08:02 2002
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "defaultBg" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0
+IlvObjects 4
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 2 138 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&baseClass"  }   } 0
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 29 138 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&userClass"  }   } 0
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 140 2 160 20 F806 2 "" 0 4 0 } 32 "DocviewClassname"
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 140 30 160 20 F6 2 1 -1 0 "" } 32 "UserClassname"
+0
+Size 303 53
+GeometryHandlers
+1 100 0 303 0 303 0
+2 3 0 0 140  160 0 160 2  0 0 3 0
+ 3 0 0 140  160 0 160 3  0 0 3 0
+1 100 0 53 0 53 0
+0
+EOF

@@ -1,0 +1,313 @@
+Command RecentProjects {
+	Description "&RecentFileDesc"
+	Categories {
+		 "&Project"
+	}
+}
+
+Command ExecMethod {
+	MenuDescription "Invoke"
+	Description "Invoke selected method"
+	Tooltip "Invoke selected method"
+	Categories {
+		 "&Project"
+	}
+}
+
+ProjectGenData projectGenData {
+	data {
+		 "class.xpm"
+		 "execute.ilv"
+		 "field.xpm"
+		 "method.xpm"
+		 "propert.xpm"
+	}
+	alreadyEdited true
+	projectName "Introspc"
+	projectDirectory "d:\\views\\work\\samples\\appframe\\Introspc\\"
+	implementations {
+		{
+			classname "IntroDocument"
+			headerData {
+				filename "IntroDocument.h"
+				maskFile "hdoc.txt"
+			}
+			sourceData {
+				filename "IntroDocument.cpp"
+				maskFile "cppdoc.txt"
+			}
+		}
+		{
+			classname "IntroView"
+			headerData {
+				filename "IntroView.h"
+				maskFile "hview.txt"
+			}
+			sourceData {
+				filename "IntroView.cpp"
+				maskFile "cppview.txt"
+			}
+		}
+	}
+	mainImplementation {
+		filename "introspc.cpp"
+		maskFile "main.txt"
+	}
+	rcImplementation {
+		filename "Introspc.rc"
+		maskFile "rc.txt"
+	}
+	superclasses {
+		{
+			classname "ProjectView"
+			superclass "IlvDvProjectView"
+		}
+		{
+			classname "TextView"
+			superclass "IlvDvTextView"
+		}
+		{
+			classname "ListView"
+			superclass "IlvDvListView"
+		}
+		{
+			classname "TreeView"
+			superclass "IlvDvTreeView"
+		}
+		{
+			classname "MatrixView"
+			superclass "IlvDvMatrixView"
+		}
+		{
+			classname "SheetView"
+			superclass "IlvDvSheetView"
+		}
+		{
+			classname "HierarchicalSheetView"
+			superclass "IlvDvHierarchicalSheetView"
+		}
+		{
+			classname "ManagerView"
+			superclass "IlvDvManagerView"
+		}
+		{
+			classname "ManagerDocument"
+			superclass "IlvDvManagerDocument"
+		}
+		{
+			classname "GrapherView"
+			superclass "IlvDvGrapherView"
+		}
+		{
+			classname "GrapherDocument"
+			superclass "IlvDvGrapherDocument"
+		}
+		{
+			classname "ProjectDocument"
+			superclass "IlvDvProjectDocument"
+		}
+		{
+			classname "TextDocument"
+			superclass "IlvDvTextDocument"
+		}
+		{
+			classname "FormView"
+			superclass "IlvDvFormView"
+		}
+		{
+			classname "IntroView"
+			superclass "IlvDvHierarchicalSheetView"
+		}
+		{
+			classname "IntroDocument"
+			superclass "IlvDvDocument"
+		}
+	}
+}
+
+DocumentTemplate Introspection {
+	DefaultDocName "Intro"
+	ShortName "HierarchicalSheet"
+	Description "Introspection document"
+	Filters {
+		{
+			Format "*.*"
+			Description "Introspection files (*.*)"
+		}
+	}
+	DocumentClass "IntroDocument"
+	ViewClasses {
+		 "IntroView"
+	}
+	DocMenu {
+		insertItems {
+			{
+				items {
+					{
+						label "&MenuEdit"
+						isPopup true
+						popupItems {
+							{
+								label "Undo"
+							}
+							{
+								label "Redo"
+							}
+							{
+								label "Repeat"
+							}
+							{
+								label "SEPARATOR"
+							}
+							{
+								label "ExecMethod"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	Toolbars {
+		{
+			Name "ManagerCommands"
+			items {
+				{
+					label "Undo"
+				}
+				{
+					label "Redo"
+				}
+				{
+					label "Repeat"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "ExecMethod"
+				}
+			}
+		}
+	}
+}
+
+; ---------------------------------------------------------------------------
+; Menu Variables
+
+Toolbar MainMenu {
+	Name "&MainMenu"
+	items {
+		{
+			label "&MenuFile"
+			isPopup true
+			popupItems {
+				{
+					label "NewDocument"
+				}
+				{
+					label "CloseDocument"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "Exit"
+				}
+			}
+		}
+		{
+			label "&MenuTools"
+			isPopup true
+			popupItems {
+				{
+					label "Customize"
+				}
+				{
+					label "Modules"
+				}
+			}
+		}
+		{
+			label "&MenuWindow"
+			isPopup true
+			popupItems {
+				{
+					label "NewWindow"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "NextWindow"
+				}
+				{
+					label "PreviousWindow"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "Cascade"
+				}
+				{
+					label "TileHorizontaly"
+				}
+				{
+					label "TileVerticaly"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "Windows"
+				}
+			}
+		}
+	}
+}
+
+; ---------------------------------------------------------------------------
+; Toolbar Variables
+
+Toolbar MainToolbar {
+	Name "&Standard"
+	items {
+		{
+			label "NewDocument"
+		}
+		{
+			label "SEPARATOR"
+		}
+		{
+			label "NewWindow"
+		}
+		{
+			label "NextWindow"
+		}
+		{
+			label "PreviousWindow"
+		}
+		{
+			label "Cascade"
+		}
+	}
+}
+
+ApplicationConfig App {
+	name "Introspc"
+}
+
+; ---------------------------------------------------------------------------
+; Container informations
+
+ContainerConfiguration MainPanel {
+	title "Introspection Application"
+	BoundingBox {
+		Left 221
+		Top 69
+		Width 653
+		Height 500
+	}
+}
+

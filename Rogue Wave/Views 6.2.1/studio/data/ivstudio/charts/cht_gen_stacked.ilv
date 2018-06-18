@@ -1,0 +1,31 @@
+// Ilv Version: 4.0
+// File generated: Tue Jul 18 18:39:51 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "cht_gen_stacked"
+PathName "cht_gen_stacked.ilv"
+Palettes 1
+"IlvStText" 0 "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 4
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 4 5 189 17 F1 2 1 2 0 0 0 Y "&visible" } 32 "DisplayerVisible"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 29 182 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&OrdinateScale"  }   } 0
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 4 56 202 20 F807 2 "" 0 4 0 } 32 "DisplayerAxis"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 4 94 190 17 F1 2 1 2 0 0 0 Y "&stacked100" } 32 "Stacked100"
+0
+Size 206 120
+GeometryHandlers
+1 100 0 206 0 206 0
+1 3 0 0 4  202 0 202 2  0 0 0 0
+1 100 0 120 0 120 0
+0
+EOF

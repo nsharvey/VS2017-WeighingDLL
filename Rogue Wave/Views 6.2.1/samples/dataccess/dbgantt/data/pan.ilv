@@ -1,0 +1,362 @@
+// Ilv Version: 4.0
+// File generated: Mon Mar 13 11:09:38 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "pan"
+PathName "pan.ilv"
+Palettes 7
+4 "white" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+3 "gray" "black" "bold" "%helvetica-12-B" 0 solid solid 0 0 0
+2 "gray" "black" "large" "%helvetica-18-B" 0 solid solid 0 0 0
+6 "gray" "black" "button" "%helvetica-12-B" 0 solid solid 0 0 0
+1 "gray" "black" "small" "%helvetica-10-" 0 solid solid 0 0 0
+"default" 5 44544 45568 49920 0 0 0 "default" "fixed" 0 solid solid 0 0 0
+IlvObjects 14
+1 { 0 0 IlvText 5 290 346 90 F129 2 Y N S 1 1 1 1 0 6
+"This panel shows how to:"
+"- Use a IliDbGantt."
+"- Use the IsActivePeriod callback."
+"To refresh the gantt:"
+"- Click within the gantt."
+"- Press F9 key."
+0 0 0 0 } 64 "Gadget"
+0
+1 { 1 1 IliMemoryDataSource 258 10 24 24 1 14 3 5 IliMemoryTable 0 5 4 
+     8 "ID" Int 1 -1 2 50 32 
+     8 "IDRES" Int 2 -1 2 50 32 
+     8 "FROM" Int 3 -1 2 50 32 
+     8 "TO" Int 4 -1 2 51 32 
+     16 0 8 5
+1 4000 1 1 1 4 1 6 
+1 4001 1 1 1 14 1 16 
+1 4002 1 1 1 21 1 22 
+1 4003 1 1 1 72 1 77 
+1 4004 1 1 1 109 1 113 
+0
+ } 96 "BRK_MS" "Gadget"
+0
+1 { 2 1 IliMemoryDataSource 205 10 24 24 1 14 3 85 IliMemoryTable 0 7 6 
+     8 "ID" Int 1 -1 2 48 32 
+     8 "IDRES" Int 2 -1 2 48 32 
+     8 "IDACT" Int 3 -1 2 48 32 
+     8 "CAPACITY" Int 4 -1 2 48 32 
+     9 "FORE" String 5 -1 1 48 32 
+     9 "BACK" String 6 -1 1 57 32 
+     16 0 8 85
+1 2000 1 1 1 1000 1 1 "white" "blue" 
+1 2001 1 1 1 1001 1 1 "white" "blue" 
+1 2002 1 1 1 1002 1 1 "white" "blue" 
+1 2003 1 1 1 1003 1 1 "white" "blue" 
+1 2004 1 1 1 1004 1 1 "white" "blue" 
+1 2005 1 1 1 1005 1 1 "white" "blue" 
+1 2006 1 2 1 1000 1 1 "white" "blue" 
+1 2007 1 2 1 1001 1 1 "white" "blue" 
+1 2008 1 2 1 1002 1 1 "white" "blue" 
+1 2009 1 2 1 1003 1 1 "white" "blue" 
+1 2010 1 2 1 1004 1 1 "white" "blue" 
+1 2011 1 2 1 1005 1 1 "white" "blue" 
+1 2012 1 1 1 1006 1 1 "black" "yellow" 
+1 2013 1 1 1 1007 1 1 "black" "yellow" 
+1 2014 1 3 1 1006 1 1 "black" "yellow" 
+1 2015 1 3 1 1007 1 1 "black" "yellow" 
+1 2016 1 1 1 1008 1 1 "white" "red" 
+1 2017 1 1 1 1009 1 1 "white" "red" 
+1 2018 1 1 1 1010 1 1 "white" "red" 
+1 2019 1 1 1 1011 1 1 "white" "red" 
+1 2020 1 1 1 1012 1 1 "white" "red" 
+1 2021 1 1 1 1013 1 1 "white" "red" 
+1 2022 1 4 1 1008 1 1 "white" "red" 
+1 2023 1 4 1 1009 1 1 "white" "red" 
+1 2024 1 4 1 1010 1 1 "white" "red" 
+1 2025 1 4 1 1011 1 1 "white" "red" 
+1 2026 1 4 1 1012 1 1 "white" "red" 
+1 2027 1 4 1 1013 1 1 "white" "red" 
+1 2028 1 1 1 1014 1 1 "white" "magenta" 
+1 2029 1 1 1 1015 1 1 "white" "magenta" 
+1 2030 1 1 1 1016 1 1 "white" "magenta" 
+1 2031 1 1 1 1017 1 1 "white" "magenta" 
+1 2032 1 1 1 1018 1 1 "white" "magenta" 
+1 2033 1 1 1 1019 1 1 "white" "magenta" 
+1 2034 1 5 1 1014 1 1 "white" "magenta" 
+1 2035 1 5 1 1015 1 1 "white" "magenta" 
+1 2036 1 5 1 1016 1 1 "white" "magenta" 
+1 2037 1 5 1 1017 1 1 "white" "magenta" 
+1 2038 1 5 1 1018 1 1 "white" "magenta" 
+1 2039 1 5 1 1019 1 1 "white" "magenta" 
+1 2040 1 1 1 1020 1 1 "blue" "yellow" 
+1 2041 1 1 1 1021 1 1 "blue" "yellow" 
+1 2042 1 1 1 1022 1 1 "blue" "yellow" 
+1 2043 1 1 1 1023 1 1 "blue" "yellow" 
+1 2044 1 1 1 1024 1 1 "blue" "yellow" 
+1 2045 1 1 1 1025 1 1 "blue" "yellow" 
+1 2046 1 1 1 1026 1 1 "black" "cyan" 
+1 2047 1 1 1 1027 1 1 "black" "cyan" 
+1 2048 1 1 1 1028 1 1 "black" "cyan" 
+1 2049 1 1 1 1029 1 1 "black" "cyan" 
+1 2050 1 1 1 1030 1 1 "black" "cyan" 
+1 2051 1 1 1 1031 1 1 "black" "cyan" 
+1 2052 1 6 1 1026 1 1 "black" "cyan" 
+1 2053 1 6 1 1027 1 1 "black" "cyan" 
+1 2054 1 6 1 1028 1 1 "black" "cyan" 
+1 2055 1 6 1 1029 1 1 "black" "cyan" 
+1 2056 1 6 1 1030 1 1 "black" "cyan" 
+1 2057 1 6 1 1031 1 1 "black" "cyan" 
+1 2058 1 1 1 1032 1 1 "red" "yellow" 
+1 2059 1 1 1 1033 1 1 "red" "yellow" 
+1 2060 1 1 1 1034 1 1 "red" "yellow" 
+1 2061 1 1 1 1035 1 1 "red" "yellow" 
+1 2062 1 1 1 1036 1 1 "red" "yellow" 
+1 2063 1 7 1 1032 1 1 "red" "yellow" 
+1 2064 1 7 1 1033 1 1 "red" "yellow" 
+1 2065 1 7 1 1034 1 1 "red" "yellow" 
+1 2066 1 7 1 1035 1 1 "red" "yellow" 
+1 2067 1 7 1 1036 1 1 "red" "yellow" 
+1 2068 1 1 1 1037 1 1 "green" "black" 
+1 2069 1 1 1 1038 1 1 "green" "black" 
+1 2070 1 8 1 1037 1 1 "green" "black" 
+1 2071 1 8 1 1038 1 1 "green" "black" 
+1 2072 1 1 1 1039 1 1 "yellow" "blue" 
+1 2073 1 1 1 1040 1 1 "grey" "black" 
+1 2074 1 1 1 1041 1 1 "grey" "black" 
+1 2075 1 1 1 1042 1 1 "red" "grey" 
+1 2076 1 9 1 1020 1 1 "blue" "yellow" 
+1 2077 1 9 1 1021 1 1 "blue" "yellow" 
+1 2078 1 9 1 1022 1 1 "blue" "yellow" 
+1 2079 1 9 1 1023 1 1 "blue" "yellow" 
+1 2080 1 9 1 1024 1 1 "blue" "yellow" 
+1 2081 1 9 1 1025 1 1 "blue" "yellow" 
+1 2082 1 10 1 1039 1 1 "yellow" "blue" 
+1 2083 1 11 1 1040 1 1 "grey" "black" 
+1 2084 1 11 1 1041 1 1 "grey" "black" 
+0
+ } 96 "CNT_MS" "Gadget"
+0
+1 { 3 1 IliMemoryDataSource 313 9 24 24 1 14 3 40 IliMemoryTable 0 5 4 
+     8 "ID" Int 1 -1 2 73 32 
+     8 "START" Int 2 -1 2 73 32 
+     8 "END" Int 3 -1 2 73 32 
+     8 "LABEL" String 4 -1 1 78 32 
+     16 0 8 43
+1 1000 1 0 1 4 "Ex1" 
+1 1001 1 10 1 14 "Ex2" 
+1 1002 1 6 1 8 "Ex3" 
+1 1003 1 8 1 10 "Ex4" 
+1 1004 1 17 1 21 "Ex5" 
+1 1005 1 29 1 36 "Ex6" 
+1 1006 1 36 1 64 "PD1" 
+1 1007 1 10 1 29 "PD2" 
+1 1008 1 6 1 16 "C1" 
+1 1009 1 16 1 22 "C2" 
+1 1010 1 64 1 70 "C3" 
+1 1011 1 29 1 35 "C4" 
+1 1012 1 22 1 28 "C5" 
+1 1013 1 36 1 50 "C6" 
+1 1014 1 16 1 17 "CM1" 
+1 1015 1 22 1 23 "CM2" 
+1 1016 1 70 1 71 "CM3" 
+1 1017 1 35 1 36 "CM4" 
+1 1018 1 28 1 29 "CM5" 
+1 1019 1 50 1 51 "CM6" 
+1 1020 1 17 1 18 "CS1" 
+1 1021 1 23 1 24 "CS2" 
+1 1022 1 71 1 72 "CS3" 
+1 1023 1 36 1 37 "CS4" 
+1 1024 1 29 1 30 "CS5" 
+1 1025 1 51 1 52 "CS6" 
+1 1026 1 21 1 43 "Br1" 
+1 1027 1 43 1 53 "Br2" 
+1 1028 1 77 1 87 "Br3" 
+1 1029 1 65 1 77 "Br4" 
+1 1030 1 55 1 65 "Br5" 
+1 1031 1 87 1 115 "Br6" 
+1 1032 1 55 1 71 "Cr1" 
+1 1033 1 133 1 149 "Cr2" 
+1 1034 1 93 1 109 "Cr3" 
+1 1035 1 77 1 93 "Cr4" 
+1 1036 1 115 1 133 "Cr5" 
+1 1037 1 71 1 93 "Ca1" 
+1 1038 1 133 1 147 "Ca2" 
+1 1039 1 30 1 32 "Be" 
+1 1040 1 0 1 10 "TH1" 
+1 1041 1 113 1 123 "TH2" 
+1 1042 1 149 1 150 "End" 
+0
+ } 96 "ACT_MS" "Gadget"
+0
+1 { 4 1 IliMemoryDataSource 156 10 24 24 1 14 3 9 IliMemoryTable 0 4 3 
+     72 "ID" Int 1 -1 2 101 "Number" 32 
+     72 "NAME" String 2 -1 1 101 "Name" 32 
+     72 "HEIGHT" Int 3 -1 2 101 "Height" 32 
+     16 0 8 11
+1 1 "Organisation" 1 10 
+1 2 "Excavator" 1 1 
+1 3 "Pile Driver" 1 1 
+1 4 "Carpentry" 1 1 
+1 5 "Concrete Mixer" 1 1 
+1 6 "Bricklaying" 1 1 
+1 7 "Crane" 1 1 
+1 8 "Bulldozer" 1 1 
+1 9 "Concrete Setting Time" 1 1 
+1 10 "Bearers" 1 1 
+1 11 "Temporary Housing" 1 1 
+0
+ } 96 "RES_MS" "Gadget"
+0
+1 { 5 1 IliMemoryDataSource 104 10 24 24 1 14 3 24 IliMemoryTable 0 5 4 
+     8 "IDRES" Int 1 -1 2 50 32 
+     8 "FROM" Int 2 -1 2 50 32 
+     8 "TO" Int 3 -1 2 50 32 
+     8 "CAPACITY" Int 4 -1 2 51 32 
+     16 0 8 24
+1 1 1 0 1 4 1 2 
+1 1 1 4 1 6 1 1 
+1 1 1 6 1 14 1 3 
+1 1 1 14 1 16 1 2 
+1 1 1 16 1 17 1 3 
+1 1 1 17 1 18 1 4 
+1 1 1 18 1 22 1 3 
+1 1 1 22 1 24 1 4 
+1 1 1 24 1 29 1 3 
+1 1 1 29 1 32 1 4 
+1 1 1 32 1 36 1 3 
+1 1 1 36 1 37 1 4 
+1 1 1 37 1 52 1 3 
+1 1 1 52 1 53 1 2 
+1 1 1 53 1 55 1 1 
+1 1 1 55 1 72 1 3 
+1 1 1 72 1 77 1 2 
+1 1 1 77 1 93 1 3 
+1 1 1 93 1 109 1 2 
+1 1 1 109 1 113 1 1 
+1 1 1 113 1 123 1 2 
+1 1 1 123 1 133 1 1 
+1 1 1 133 1 147 1 2 
+1 1 1 147 1 150 1 1 
+0
+ } 96 "LOA_MS" "Gadget"
+0
+1 { 6 1 IliMemoryDataSource 52 9 24 24 1 14 3 0 IliMemoryTable 0 6 5 
+     8 "SRC" Int 1 -1 2 40 32 
+     8 "DEST" Int 2 -1 2 40 32 
+     8 "TYPE" Int 3 -1 2 40 32 
+     8 "DELAY" Int 4 -1 2 40 32 
+     8 "COLOR" String 5 -1 1 41 32 
+     16 0 8 55
+1 2072 1 2058 1 0 1 0 "darkgray" 
+1 2046 1 2058 1 0 1 0 "darkgray" 
+1 2047 1 2058 1 0 1 0 "darkgray" 
+1 2072 1 2059 1 0 1 0 "darkgray" 
+1 2047 1 2059 1 0 1 0 "darkgray" 
+1 2048 1 2059 1 0 1 0 "darkgray" 
+1 2072 1 2060 1 0 1 0 "darkgray" 
+1 2048 1 2060 1 0 1 0 "darkgray" 
+1 2049 1 2060 1 0 1 0 "darkgray" 
+1 2072 1 2061 1 0 1 0 "darkgray" 
+1 2049 1 2061 1 0 1 0 "darkgray" 
+1 2050 1 2061 1 0 1 0 "darkgray" 
+1 2072 1 2062 1 0 1 0 "darkgray" 
+1 2050 1 2062 1 0 1 0 "darkgray" 
+1 2051 1 2062 1 0 1 0 "darkgray" 
+1 2016 1 2028 1 0 1 0 "darkgray" 
+1 2028 1 2040 1 0 1 0 "darkgray" 
+1 2040 1 2046 1 0 1 0 "darkgray" 
+1 2046 1 2074 1 0 1 -2 "darkgray" 
+1 2017 1 2029 1 0 1 0 "darkgray" 
+1 2029 1 2041 1 0 1 0 "darkgray" 
+1 2041 1 2047 1 0 1 0 "darkgray" 
+1 2047 1 2074 1 0 1 -2 "darkgray" 
+1 2018 1 2030 1 0 1 0 "darkgray" 
+1 2030 1 2042 1 0 1 0 "darkgray" 
+1 2042 1 2048 1 0 1 0 "darkgray" 
+1 2048 1 2074 1 0 1 -2 "darkgray" 
+1 2019 1 2031 1 0 1 0 "darkgray" 
+1 2031 1 2043 1 0 1 0 "darkgray" 
+1 2043 1 2049 1 0 1 0 "darkgray" 
+1 2049 1 2074 1 0 1 -2 "darkgray" 
+1 2020 1 2032 1 0 1 0 "darkgray" 
+1 2032 1 2044 1 0 1 0 "darkgray" 
+1 2044 1 2050 1 0 1 0 "darkgray" 
+1 2050 1 2074 1 0 1 -2 "darkgray" 
+1 2021 1 2033 1 0 1 0 "darkgray" 
+1 2033 1 2045 1 0 1 0 "darkgray" 
+1 2045 1 2051 1 0 1 0 "darkgray" 
+1 2051 1 2074 1 0 1 -2 "darkgray" 
+1 2002 1 2012 1 0 1 0 "darkgray" 
+1 2003 1 2013 1 0 1 0 "darkgray" 
+1 2000 1 2016 1 0 1 0 "darkgray" 
+1 2001 1 2017 1 0 1 0 "darkgray" 
+1 2012 1 2018 1 0 1 0 "darkgray" 
+1 2013 1 2019 1 0 1 0 "darkgray" 
+1 2004 1 2020 1 0 1 0 "darkgray" 
+1 2005 1 2021 1 0 1 0 "darkgray" 
+1 2058 1 2068 1 0 1 0 "darkgray" 
+1 2062 1 2069 1 0 1 0 "darkgray" 
+1 2068 1 2075 1 0 1 0 "darkgray" 
+1 2059 1 2075 1 0 1 0 "darkgray" 
+1 2060 1 2075 1 0 1 0 "darkgray" 
+1 2061 1 2075 1 0 1 0 "darkgray" 
+1 2069 1 2075 1 0 1 0 "darkgray" 
+1 2074 1 2075 1 0 1 0 "darkgray" 
+0
+ } 96 "PRE_MS" "Gadget"
+0
+1 { 7 2 IlvMessageLabel 5 5 345 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "Bridge building"  }   } 64 "Gadget"
+0
+1 { 8 1 IliMemoryDataSource 75 96 24 24 1 14 3 6 IliMemoryTable 0 3 2 
+     8 "ID" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 230 32 
+     20 0 0 8 6
+1 0 "Resources" 
+1 1 "Activities" 
+1 2 "Constraints" 
+1 3 "Precedences" 
+1 4 "Breaks" 
+1 5 "Work load curve" 
+0
+ } 96 "DS_MS" "Gadget"
+0
+1 { 9 0 IliTableComboBox 105 166 245 20 F7 2 1 -1 0 "Resources" 3971 "DS_MS" "ID" "NAME" 2 Int 1 0 0 1  ""  } 576 "Gadget"
+1
+1 "__ilvCallback" S"JvScript" "cbNewDs"
+0
+1 { 10 3 IliTableGadget 5 190 345 95 2 2067 "RES_MS" 1799208543 1 7 0 0 17 18 21 4 9 0 0 1 1 "white" A"normal" "%helvetica-12-"  } 96 "TGData" "Gadget"
+0
+1 { 11 0 IlvMessageLabel 5 165 95 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "Data source:"  }   } 64 "Gadget"
+0
+1 { 12 P 1
+[ IlvPanelObjectReference IlvPanelObjectReference  "917864787.0" ]
+5 IliDbGantt 5 30 345 130 "" 0 240 0 120 24 0 240 0 120 24 24 0 12 0 24 20 18 0 20 0 6 166 63 4 8 2 0 0 0 1 5 1 0 2 2 2 2 0 2 4 3 1 1 "" 3 5 IlvGanttResourceHeader 0 0 12 20 F34896 1 N N s 0 0 0 0 0 0 60 20 1 1 0 1 0 0 3 1 V0 2 0 1 N 0 0 0 1 0   0 0 1  11  1  1998 1 0 10 6 0  "RES_MS" 2 "ID" "HEIGHT" 
+0  "ACT_MS" 6 "START" "START" "END" "END" "ID" "LABEL" 
+0  "CNT_MS" 6 "ID" "IDRES" "IDACT" "CAPACITY" "FORE" "BACK" 
+0  "PRE_MS" 5 "SRC" "DEST" "TYPE" "DELAY" "COLOR" 
+0  "BRK_MS" 4 "ID" "IDRES" "FROM" "TO" 
+0  "LOA_MS" 4 "IDRES" "FROM" "TO" "CAPACITY" 
+
+1 "NAME" 
+6 "white" "gray" "green" "red" "darkgreen" "red" 
+0 1 "IliDbGanttFullModel"
+1 1   } 512
+1
+1 "IsActivePeriod" S"JvScript" "cbIsActivePeriod"
+0
+1 { 13 6 IlvButton 263 3 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "Quit"  }   } 576 "Gadget"
+1
+1 "__ilvCallback" "@Quit()"
+0
+Size 358 386
+GeometryHandlers
+1 100 0 358 0 358 0
+7 3 0 0 5  346 0 346 0  0 0 7 0
+ 3 0 0 5  345 0 345 7  0 0 8 0
+ 3 0 0 5  345 0 345 12  0 0 8 0
+ 3 0 0 105  245 0 245 9  0 0 8 0
+ 3 0 0 5  0 0 95 11  258 0 258 0
+ 3 0 0 5  345 0 345 10  0 0 8 0
+ 3 263 0 263  0 0 80 13  0 0 15 0
+1 100 0 386 0 386 0
+5 3 290 0 290  0 0 90 0  0 2 6 0
+ 3 0 0 30  130 0 130 12  0 0 226 0
+ 3 166 0 166  0 0 20 9  0 0 200 0
+ 3 165 0 165  0 0 22 11  0 0 199 0
+ 3 190 0 190  0 0 95 10  0 0 101 0
+EOF

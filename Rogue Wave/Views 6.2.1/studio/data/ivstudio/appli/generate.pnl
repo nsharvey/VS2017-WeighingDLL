@@ -1,0 +1,17 @@
+// 
+//	    Rogue Wave Views Studio 4.0 Panel Description File
+//		Application Generation Extension
+// 
+
+panel "MainPanel" {
+    menuItem GeneratePanelSubClass : "&mcode" -after ShowPanelClassInspector;
+    menuItem GenerateMakeFile : "&mcode" -after TestApplication;
+    menuItem GeneratePanelClass : "&mcode" -before GenerateMakeFile;
+    menuItem GenerateApplication : "&mcode" -before GeneratePanelClass;
+    menuItem GenerateAll : "&mcode" -before GenerateApplication;
+    menuItem Generate : "&mcode" -before GenerateAll;
+    menuItem - : "&mcode" -before Generate;
+}
+
+
+

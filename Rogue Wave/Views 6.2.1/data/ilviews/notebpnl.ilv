@@ -1,0 +1,33 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:45:57 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "notebpnl"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\notebpnl.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 3
+2 { 0 P 3
+[ IlvPanelObjectReference IlvPanelObjectReference  "1137678345.0" ]
+[ IlvAttachments _IlvAttachments 1008  1 5 1 5 1 5 1 35 2 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNotebook 5 5 377 320 F1 2 0 2  2
+" { IlvNotebookPageItem 1 2 4 "&notebook"  }  "gray" "ilviews/book.ilv"
+" { IlvNotebookPageItem 1 2 4 "&pads"  }  "gray" "ilviews/pads.ilv"
+0 0 4 5 2 0 0 0 0  } 32 "book"
+0
+2 { 1 P 2
+[ IlvAttachments _IlvAttachments 144  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 5 332 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 512
+1
+1 "__ilvCallback" "apply"
+0
+2 { 2 P 2
+[ IlvAttachments _IlvAttachments 192  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 309 332 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+Size 387 360
+EOF

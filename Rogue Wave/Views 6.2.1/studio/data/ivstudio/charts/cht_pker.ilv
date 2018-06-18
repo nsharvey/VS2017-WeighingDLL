@@ -1,0 +1,41 @@
+// Ilv Version: 3.1
+// File generated: Fri Apr 30 11:38:42 1999
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 6
+1 { 0 0 IlvMessageLabel 5 76 138 22 F8 0 262169 4 16 4 "&MarkerSize"   } 0
+0
+1 { 1 0 IlvSpinBox 138 77 88 22 2 0 200 64 2 1
+0 IlvNumberField 138 77 73 22 F6 2 1 -1 0 "1" . , 6 0 1 2147483647  f 1 1 1 1 } 32 "MarkerSize"
+0
+1 { 2 0 IlvStringList 4 104 223 83 F131 2 A A 0 0 0 0 0 4 0 0 2 10
+IlvGadgetItem 1 2 4 "&MarkerSquare"  
+IlvGadgetItem 1 2 4 "&MarkerDiamond"  
+IlvGadgetItem 1 2 4 "&MarkerCircle"  
+IlvGadgetItem 1 2 4 "&MarkerTriangle"  
+IlvGadgetItem 1 2 4 "&MarkerPlus"  
+IlvGadgetItem 1 2 4 "&MarkerFilledSquare"  
+IlvGadgetItem 1 2 4 "&MarkerFilledDiamond"  
+IlvGadgetItem 1 2 4 "&MarkerFilledCircle"  
+IlvGadgetItem 1 2 4 "&MarkerFilledTriangle"  
+IlvGadgetItem 1 2 4 "&MarkerCross"   } 32 "MarkerFlags"
+0
+1 { 3 0 IlvToggle 8 3 219 16 F1 2 1 2 0 0 0 Y "&visible" } 32 "ScatterMarkerVisibility"
+0
+1 { 4 0 IlvMessageLabel 8 24 219 22 F8 0 262169 4 16 4 "&Palette"   } 0
+0
+1 { 5 0 IlvButton 8 48 219 23 F9 2 262145 4 16 4 "button"   } 32 "ScatterMarkerPalette"
+0
+Size 231 190
+GeometryHandlers
+1 100 0 231 0 231 0
+6 3 0 0 4  223 0 223 2  0 0 4 0
+ 3 138 0 138  0 0 88 1  0 0 5 0
+ 3 0 0 5  138 0 138 0  0 0 88 0
+ 3 0 0 8  219 0 219 3  0 0 4 0
+ 3 0 0 8  219 0 219 4  0 0 4 0
+ 3 0 0 8  219 0 219 5  0 0 4 0
+1 100 0 190 0 190 0
+1 3 0 0 104  83 0 83 2  0 0 3 0
+EOF

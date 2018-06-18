@@ -1,0 +1,44 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Prototypes - Samples: interact_synoptic</title>
+	</head>
+    <body>
+		<a name="Synoptic with Dynamically-Created Interactive Objects"><h1>Sample: <code>Synoptic with Dynamically-Created Interactive Objects</code></h1><h1 class="subtitle">Synoptic with Dynamically-Created Interactive Objects</h1></a>
+		<p>Shows how to link a prototype to some application objects.</p>
+		<img src="data/inter_synopt.png"/>
+		<p>Here the program uses the <code>IlvProtoMediator</code> to create multiple
+instances of 'flight' prototypes. Each of these instances
+is synchronized to a corresponding 'Flight' in the 
+air traffic simulator. The file <code>data/easy_atc.cpp</code> describes
+the airport and traffic schedule of the simulation.
+
+The basic prototypes given display only speed and direction
+of the planes. However, one can add controls onto the prototypes
+(using callbacks or event accessors) to enable the user
+to edit interactively the attributes of the flight, for example,
+speed, direction or altitude.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGroupHolder</code></li>
+			<li><code>IlvGroup</code></li>
+			<li><code>IlvProtoMediator</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/plane.cpp"><code>src/plane.cpp</code></a></li>
+			<li><a href="src/atc.cpp"><code>src/atc.cpp</code></a></li>
+			<li><a href="include/atc.h"><code>include/atc.h</code></a></li>
+			<li><a href="data/atc.ipl"><code>data/atc.ipl</code></a></li>
+			<li><a href="data/easy_atc.txt"><code>data/easy_atc.txt</code></a></li>
+		</ul>

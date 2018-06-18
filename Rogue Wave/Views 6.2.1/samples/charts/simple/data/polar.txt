@@ -1,0 +1,6 @@
+Files: polar.cpp, polar.h
+This sample shows how to create a chart using a polar projector. To do so, it uses the 
+IlvPolarChart class. Note the two different scale types: rectangular for the rho 
+coordinate that is displayed radially, and circular for the theta coordinate. Two 
+callback functions are used as input data and are rendered with two displayers: A 
+polygon representation and a bar representation.

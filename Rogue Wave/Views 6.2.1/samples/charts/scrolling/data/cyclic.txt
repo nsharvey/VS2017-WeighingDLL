@@ -1,0 +1,7 @@
+Files: cyclic.cpp, cyclic.h
+This sample demonstrates the cycle scrolling feature of the Charts package. When new points are added and 
+cannot be displayed on the right side of the chart, they are translated to the left side of the chart, where 
+the minimum x-value is replaced by the previous maximum x-value. Previous data points are therefore dropped. 
+Note how the x-scale values are updated to match the real translation. The color of the new markers depends 
+on the actual values they represent. 
+

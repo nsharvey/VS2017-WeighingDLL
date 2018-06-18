@@ -1,0 +1,24 @@
+var pairs =
+{
+"data":{"<data>":1,"series":1}
+,"<data>":{"tag":1}
+,"tag":{"defines":1}
+,"defines":{"data":1}
+,"series":{"possible":1,"abscissa":1}
+,"possible":{"define":1}
+,"define":{"series":1}
+,"abscissa":{"values":1}
+,"values":{"using":1}
+,"using":{"xseries":1}
+,"xseries":{"attribute":1}
+,"attribute":{"<data":1}
+,"<data":{"xseries=\u0022":1}
+,"xseries=\u0022":{"x_ds_c":1}
+,"x_ds_c":{"<series":1,"<valueslist>":1}
+,"<series":{"id=\u0022":1}
+,"id=\u0022":{"x_ds_c":1}
+,"<valueslist>":{"<\u002Fvalueslist>":1}
+,"<\u002Fvalueslist>":{"<\u002Fseries>":1}
+,"<\u002Fseries>":{"<\u002Fdata>":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Home</title><link rel="Prev" href="display.07.4.html" title="Previous" /><link rel="Next" href="display.07.6.html" title="Next" /><link rel="StyleSheet" href="css/display.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/display_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/UserManuals/display.07.5.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pRGMSA6k8neSCCWmmejdfmg" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/UserManuals/display.07.5.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/foundusrfrontcover.html#wwconnect_header">Foundation</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/display.07.1.html#wwconnect_header">The Display System</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Home</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww930913" class="Heading1"><span></span>Home</div><div id="ww923144" class="Body">Most Rogue Wave®&nbsp;Views applications might need to load predefined data files. For data files to be transparently loaded, libraries need a way to locate these data files on the disk. This is done by getting the value of the <span class="code">ILVHOME</span> environment variable. If this variable is undefined, Rogue Wave&nbsp;Views tries to retrieve the value of the display system resource <span class="code">home</span>. Generally, this value is set to the directory where Rogue Wave&nbsp;Views was installed (the one containing the subdirectories <span class="code">include</span>, <span class="code">lib</span>, <span class="code">data</span>, and so on).</div><div class="ww_skin_page_overflow"><table class="NoteTable" cellspacing="0" summary=""><tr><td style="padding-bottom: 2pt; padding-left: 0pt; padding-right: 0pt; padding-top: 2pt; vertical-align: top"><div id="ww931195" class="Note"><span class="flag">Note:&nbsp;</span>The old <span class="code">IlvHome</span> display system resource is maintained for compatibility reasons but is deprecated. </div></td></tr></table></div><div id="ww931141" class="Body">There are two global functions that force the setting of <span class="code">home</span>:</div><div id="ww931143" class="Itemize" style="color: #000000; font-variant: normal; font-weight: normal; margin-bottom: 5.0pt; margin-top: 5.0pt; text-transform: none; vertical-align: baseline"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span><img src="bullet.gif" alt="*" border="0" width="8" height="8" /></span></span><span class="code">IlvGetDefaultHome</span></div><div id="ww931146" class="Itemize" style="color: #000000; font-variant: normal; font-weight: normal; margin-bottom: 5.0pt; margin-top: 5.0pt; text-transform: none; vertical-align: baseline"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span><img src="bullet.gif" alt="*" border="0" width="8" height="8" /></span></span><span class="code">IlvSetDefaultHome</span></div><div id="ww929907" class="Body">Use these functions if you want to provide a reasonable default value for a specific application without asking the user to set the environment variable <span class="code">ILVHOME</span> or the resource <span class="code">home</span>.</div><div id="ww924862" class="Body">The value of <span class="code">home</span> is used to compute the default value of the display path, described in the next section.</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

@@ -1,0 +1,255 @@
+/****************************************************************************
+                                 ilvedit.rc
+                    IlogViews resource for ilvedit.lib
+*****************************************************************************/
+
+ilviews_messagep_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/messagep.ilv"
+ilviews_messagep_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_msgsea_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/msgsea.ilv"
+ilviews_msgsea_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_msglabel_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/msglabel.ilv"
+ilviews_msglabel_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_label_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/label.ilv"
+ilviews_label_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_spinbox_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/spinbox.ilv"
+ilviews_spinbox_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_button_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/button.ilv"
+ilviews_button_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_rctsclpn_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/rctsclpn.ilv"
+ilviews_rctsclpn_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_cirscale_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/cirscale.ilv"
+ilviews_cirscale_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_toggle_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/toggle.ilv"
+ilviews_toggle_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_ctoggle_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/ctoggle.ilv"
+ilviews_ctoggle_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_rctgauge_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/rctgauge.ilv"
+ilviews_rctgauge_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_rlfgauge_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/rlfgauge.ilv"
+ilviews_rlfgauge_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_arrow_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/arrow.ilv"
+ilviews_arrow_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_cirgauge_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/cirgauge.ilv"
+ilviews_cirgauge_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_list_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/list.ilv"
+ilviews_list_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_optmenu_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/optmenu.ilv"
+ilviews_optmenu_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_textfd_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/textfd.ilv"
+ilviews_textfd_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_numfield_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/numfield.ilv"
+ilviews_numfield_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_datfield_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/datfield.ilv"
+ilviews_datfield_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_scrollb_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/scrollb.ilv"
+ilviews_scrollb_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_iscale_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/iscale.ilv"
+ilviews_iscale_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_combo_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/combo.ilv"
+ilviews_combo_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_grid_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/grid.ilv"
+ilviews_grid_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_menubar_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/menubar.ilv"
+ilviews_menubar_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_popup_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/popup.ilv"
+ilviews_popup_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_attach_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/attach.ilv"
+ilviews_attach_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_matrix_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/matrix.ilv"
+ilviews_matrix_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_matitpa_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/matitpa.ilv"
+ilviews_matitpa_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_sclist_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/sclist.ilv"
+ilviews_sclist_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_align_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/align.ilv"
+ilviews_align_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_scmgr_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/scmgr.ilv"
+ilviews_scmgr_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_rectgadc_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/rectgadc.ilv"
+ilviews_rectgadc_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_rectscgc_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/rectscgc.ilv"
+ilviews_rectscgc_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_text_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/text.ilv"
+ilviews_text_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_frame_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/frame.ilv"
+ilviews_frame_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_tooltip_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/tooltip.ilv"
+ilviews_tooltip_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_notebpnl_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/notebpnl.ilv"
+ilviews_notebpnl_sep	ILOGViewsResource
+BEGIN
+	0
+END
+ilviews_tree_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/tree.ilv"
+ilviews_tree_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_treegnrl_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/treegnrl.ilv"
+ilviews_treegnrl_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_treeitms_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/treeitms.ilv"
+ilviews_treeitms_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_respanel_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/respanel.ilv"
+ilviews_respanel_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_pattern_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/pattern.ilv"
+ilviews_pattern_sep	ILOGViewsResource
+BEGIN
+	0
+END

@@ -1,0 +1,2 @@
+Files: filtgraph.cpp, filtgraph.h
+This sample uses the IlvFilteredGraphic class to apply image processing effects to graphic objects.

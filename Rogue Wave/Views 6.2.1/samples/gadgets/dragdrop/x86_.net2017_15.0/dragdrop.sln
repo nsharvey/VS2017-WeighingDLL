@@ -1,0 +1,6 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{18F8A2DA-1D6F-11E8-9A26-E378772C9500}") = "dragdrop", "dragdrop.vcxproj", "{18F8463C-1D6F-11E8-9A26-E378772C9500}"
+EndProject
+Global
+EndGlobal

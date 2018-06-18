@@ -1,0 +1,20 @@
+// Ilv Version: 3.1
+// File generated: Fri Jul  9 16:44:23 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "groupopt"
+PathName "/nfs/views-work/work.baudel/studio/data/ivstudio/groupopt.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 3
+1 { 0 0 IlvMessageLabel 21 15 170 22 F8 0 { IlvMessageItem 262169 4 16 4 "&grouptype"  }   } 0
+0
+1 { 1 0 IlvScrolledComboBox 16 43 200 20 F806 2 "" 4
+{ IlvGadgetItem 1 2 4 "GroupIntoGraphicSet"  } 
+{ IlvGadgetItem 1 2 4 "GroupIntoSmartSet"  } 
+{ IlvGadgetItem 1 2 4 "GroupIntoSelector"  } 
+{ IlvGadgetItem 1 2 4 "GroupIntoGroup"  }  4 0 } 32 "grouptype"
+0
+1 { 2 0 IlvToggle 18 94 193 17 F536870913 2 1 2 0 0 0 Y "&usprotographics" } 32 "useprotographics"
+2
+Size 232 145
+EOF

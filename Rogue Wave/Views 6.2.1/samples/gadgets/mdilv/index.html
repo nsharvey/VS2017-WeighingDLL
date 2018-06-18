@@ -1,0 +1,40 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Gadgets - Samples: mdilv</title>
+	</head>
+    <body>
+		<a name="mdilv"><h1>Sample: <code>mdilv</code></h1><h1 class="subtitle">Rogue Wave Views Gadgets ILV Files Viewer</h1></a>
+		<p>This sample shows how to implement a multiframe application using the <code>IlvViewFrame</code> and <code>IlvDesktopManager</code> classes.</p>
+		<img src="data/mdilv.png"/>
+		<p>The main window has been built using Rogue Wave Views Studio. It is composed of a menu bar, a toolbar, a status bar, and a working area that will be used to display the frames. Each frame encapsulates an <code>IlvGadgetContainer</code>, itself contained in an <code>IlvScrolledView</code> to allow the scrolling. Here are different types of action that can be executed:</p>
+	<ul>
+		<li>Load a Rogue Wave Views file: use the menu bar, the toolbar, or the keyboard accelerator CTRL-O. The loaded file will be displayed in a new frame.</li>
+		<li>Create an empty frame: use the menu bar, the toolbar, or the keyboard accelerator CTRL-N. You cannot do anything with this frame except moving, resizing, or closing it.</li>
+		<li>Close a frame: use the close button of the view frame title bar, or the keyboard accelerator CTRL-F4. A message box appears to make you confirm your choice.</li>
+		<li>Toggle between double and simple buffering: use the toolbar option menu to choose between simple and double buffering.</li>
+		<li>Arranging frames: use the menu bar menu 'Windows' to tile, cascade, or activate a specific frame.</li>
+	</ul></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvViewFrame</code></li>
+			<li><code>IlvScrolledView</code></li>
+			<li><code>IlvDesktopManager</code></li>
+			<li><code>IlvApplication</code></li>
+			<li><code>IlvFileBrowser</code></li>
+			<li><code>IlvGadgetContainer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/mdilv.cpp"><code>src/mdilv.cpp</code></a></li>
+		</ul>

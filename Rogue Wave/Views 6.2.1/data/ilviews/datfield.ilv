@@ -1,0 +1,175 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:41:07 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "datfield"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\datfield.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 26
+1 { 0 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 10 107 135 142 F268435468 0 { IlvMessageItem 262145 4 16 4 "&value"  }   } 32 "Frame_1"
+0
+1 { 1 P 2
+[ IlvAttachments _IlvAttachments 16  1 157 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 157 108 229 142 F268435468 0 { IlvMessageItem 262145 4 16 4 "&format"  }   } 0
+0
+2 { 2 P 2
+[ IlvAttachments _IlvAttachments 144  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 5 265 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 512
+1
+1 "__ilvCallback" "apply"
+0
+2 { 3 P 2
+[ IlvAttachments _IlvAttachments 368  1 91 1 5 1 5 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 91 5 300 23 F6 2 1 -1 0 "" } 32 "label"
+0
+2 { 4 P 2
+[ IlvAttachments _IlvAttachments 192  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 331 265 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+2 { 5 P 2
+[ IlvAttachments _IlvAttachments 16  1 244 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 244 44 92 16 F1073741825 2 1 2 0 14 0 Y "&editable" } 32 "editable"
+0
+2 { 6 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 4 47 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&string"  }   } 0
+0
+2 { 7 P 2
+[ IlvAttachments _IlvAttachments 16  1 91 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 91 43 104 20 F1 2 3
+{ IlvMenuItem 1 2 4 "&left"  } 
+{ IlvMenuItem 1 2 4 "&right"  } 
+{ IlvMenuItem 65 2 4 "&center"  }  2  } 32 "align"
+0
+2 { 8 P 2
+[ IlvAttachments _IlvAttachments 16  1 8 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 8 41 78 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&alignment"  }   } 0
+0
+2 { 9 P 2
+[ IlvAttachments _IlvAttachments 16  1 8 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 8 76 79 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&nb chars"  }   } 0
+0
+2 { 10 P 2
+[ IlvAttachments _IlvAttachments 16  1 20 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 132 63 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&day"  }   } 0
+0
+2 { 11 P 2
+[ IlvAttachments _IlvAttachments 16  1 20 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 157 63 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&month"  }   } 0
+0
+2 { 12 P 2
+[ IlvAttachments _IlvAttachments 16  1 20 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 182 63 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&year"  }   } 0
+0
+2 { 13 P 2
+[ IlvAttachments _IlvAttachments 16  1 167 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 167 133 61 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&first"  }   } 0
+0
+2 { 14 P 2
+[ IlvAttachments _IlvAttachments 16  1 167 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 167 160 61 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&middle"  }   } 0
+0
+2 { 15 P 2
+[ IlvAttachments _IlvAttachments 16  1 167 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 167 187 61 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&last"  }   } 0
+0
+2 { 16 P 2
+[ IlvAttachments _IlvAttachments 16  1 167 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 167 214 82 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&separator"  }   } 0
+0
+2 { 17 P 2
+[ IlvAttachments _IlvAttachments 16  1 269 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 269 215 47 23 F6 2 1 1 0 "" } 32 "separator"
+0
+3 { 18 P 2
+[ IlvAttachments _IlvAttachments 16  1 91 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 91 76 52 23 F6 2 2 -1 0 "0" . , 6 0 -1 100 } 32 "max"
+0
+3 { 19 P 2
+[ IlvAttachments _IlvAttachments 16  1 88 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 88 132 47 23 F6 2 2 2 0 "0" . , 6 0 1 31 } 32 "dayVal"
+0
+3 { 20 P 2
+[ IlvAttachments _IlvAttachments 16  1 88 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 88 158 47 23 F6 2 2 2 0 "0" . , 6 0 1 12 } 32 "monthVal"
+0
+3 { 21 P 2
+[ IlvAttachments _IlvAttachments 16  1 88 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 88 184 47 23 F6 2 2 5 0 "0" . , 6 0 -32000 32000 } 32 "yearVal"
+0
+3 { 22 P 2
+[ IlvAttachments _IlvAttachments 16  1 225 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 225 135 146 20 F1 2 8
+{ IlvMenuItem 1 2 4 "df_day"  } 
+{ IlvMenuItem 1 2 4 "df_Day"  } 
+{ IlvMenuItem 1 2 4 "df_month"  } 
+{ IlvMenuItem 1 2 4 "df_Month"  } 
+{ IlvMenuItem 1 2 4 "df_month_text"  } 
+{ IlvMenuItem 65 2 4 "df_abbrevMonth"  } 
+{ IlvMenuItem 1 2 4 "df_year"  } 
+{ IlvMenuItem 1 2 4 "df_Year"  }  5  } 32 "firstFormat"
+0
+3 { 23 P 2
+[ IlvAttachments _IlvAttachments 16  1 225 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 225 189 146 20 F1 2 8
+{ IlvMenuItem 1 2 4 "df_day"  } 
+{ IlvMenuItem 1 2 4 "df_Day"  } 
+{ IlvMenuItem 1 2 4 "df_month"  } 
+{ IlvMenuItem 1 2 4 "df_Month"  } 
+{ IlvMenuItem 1 2 4 "df_month_text"  } 
+{ IlvMenuItem 65 2 4 "df_abbrevMonth"  } 
+{ IlvMenuItem 1 2 4 "df_year"  } 
+{ IlvMenuItem 1 2 4 "df_Year"  }  5  } 32 "lastFormat"
+0
+3 { 24 P 2
+[ IlvAttachments _IlvAttachments 16  1 225 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 225 162 146 20 F1 2 8
+{ IlvMenuItem 1 2 4 "df_day"  } 
+{ IlvMenuItem 1 2 4 "df_Day"  } 
+{ IlvMenuItem 1 2 4 "df_month"  } 
+{ IlvMenuItem 1 2 4 "df_Month"  } 
+{ IlvMenuItem 1 2 4 "df_month_text"  } 
+{ IlvMenuItem 65 2 4 "df_abbrevMonth"  } 
+{ IlvMenuItem 1 2 4 "df_year"  } 
+{ IlvMenuItem 1 2 4 "df_Year"  }  5  } 32 "middleFormat"
+0
+3 { 25 P 1
+[ IlvAttachments _IlvAttachments 464  1 0 1 0 1 35 2 ]
+0 IlvReliefLine 0 257 396 257 1 } 32 "line"
+0
+Size 396 293
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

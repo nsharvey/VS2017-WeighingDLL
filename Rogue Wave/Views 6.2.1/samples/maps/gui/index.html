@@ -1,0 +1,51 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Maps - Samples: gui</title>
+	</head>
+    <body>
+		<a name="showgui"><h1>Sample: <code>showgui</code></h1><h1 class="subtitle">Gui Component Presentation</h1></a>
+		<p>Showing scale, a compass and a coordinate viewer.</p>
+		<img src="data/showgui.png"/>
+		<p>
+			This sample shows three graphical
+			user interface components useful in cartography
+			applications. The scale component shows the scale
+			of a view connected to a manager. The coordinate 
+			viewer component shows the coordinates of the mouse
+			when on top of a view displaying a map.
+			The compass component
+			shows both the geographic and the cartographic north
+			directions. In this sample, the three components are
+			connected to a map representing the world. This map
+			can be scaled and translated using a pan/zoom 
+			interactor. The map can also be rotated using the
+			'o' accelerator. Each transformation of the map is
+			automatically monitored by the GUI components. 
+			You can also modify the aspect of the component
+			by clicking it.
+			A menu is then displayed to modify the aspect
+			of the component. 
+			</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvCompass</code></li>
+			<li><code>IlvScale</code></li>
+			<li><code>IlvCoordViewer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/main.cpp"><code>src/main.cpp</code></a></li>
+			<li><a href="src/guic.cpp"><code>src/guic.cpp</code></a></li>
+			<li><a href="include/guic.h"><code>include/guic.h</code></a></li>
+		</ul>

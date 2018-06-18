@@ -1,0 +1,29 @@
+// Ilv Version: 3.1
+// File generated: Thu Mar 30 16:57:53 2000
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+0 "default" "default" "default" "%helvetica-12-B" 0 solid solid 0 0 0
+IlvObjects 5
+2 { 0 0 IlvButton 15 95 70 23 F9 2 1 16 4 "&^ok"   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+10384 "cancel" 1 15 1 12
+2 { 1 0 IlvButton 110 95 70 23 F9 2 1 16 4 "&^cancel"   } 544 "cancel"
+1
+1 "__ilvCallback" "cancel"
+4288 "apply" 1 15 1 12
+3 { 2 0 IlvReliefLine 0 82 195 82 1 } 32 "line"
+464 1 0 1 0 1 47 2
+3 { 3 0 IlvMessageLabel 15 14 165 22 F8 0 25 16 4 "Title"   } 32 "title"
+48 1 43 1 14
+3 { 4 0 IlvTextField 15 46 165 22 F6 2 1 -1 0 "Text Field" } 32 "TextField"
+0
+Size 195 130
+Background "lightgrey"
+GeometryHandlers
+1 100 0 195 0 195 0
+2 3 0 0 15  165 0 165 4  0 0 15 0
+ 3 0 0 15  165 0 165 3  0 0 15 0
+1 100 0 130 0 130 0
+0
+EOF

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Rogue Wave Views Maps SDO Dynamic Module Descriptor -->
+<module name="ilvdbmaps" version="6.2">
+  <class name="IlvDefaultSDOTileLoader"
+         baseClass="IlvTileLoader" version="2.0"/>
+  <class name="IlvDefaultObjectSDOTileLoader"
+         baseClass="IlvTileLoader" version="2.0"/>
+  <class name="IlvObjectSDOLayer"
+         baseClass="IlvManagerLayer" version="2.0"/>
+  <class name="_DefaultObjectSDOKeyExtractor"
+         baseClass="IlvObjectSDOKeyExtractor" version="2.0"/>
+</module>
+

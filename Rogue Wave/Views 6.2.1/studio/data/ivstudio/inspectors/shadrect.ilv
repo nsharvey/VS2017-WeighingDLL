@@ -1,0 +1,29 @@
+// Ilv Version: 3.1
+// File generated: Thu Jan 14 17:27:50 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "shadrect"
+PathName "C:\\users\\noiret\\dev\\views.work\\studio\\data\\ivstudio\\inspectors\\shadrect.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 4
+1 { 0 0 IlvMessageLabel 5 4 252 22 F8 0 25 16 4 "&thickness"   } 0
+0
+1 { 1 0 IlvSpinBox 257 3 138 22 2 0 200 64 2 1
+0 IlvNumberField 257 3 123 22 F6 2 1 -1 0 "1" . , 6 0 -2147483648 2147483647  f 1 0 1 1 } 32 "ShadowRectThickness"
+0
+1 { 2 0 IlvMessageLabel 5 64 263 22 F8 0 25 16 4 "&ShadowPosition"   } 0
+0
+2 { 3 0 IlvSelector -1 9
+0 IlvToggle 281 68 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 292 44 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 317 35 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 342 44 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 353 68 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 342 90 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 317 99 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 292 90 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 317 68 18 16 F1 2 1 2 1 0 0 B "noname" 
+ } 96 "ShadowRectPosition" "Selector"
+0
+Size 400 132
+EOF

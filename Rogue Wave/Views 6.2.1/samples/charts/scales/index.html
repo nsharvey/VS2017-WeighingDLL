@@ -1,0 +1,76 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Charts - Samples: scales</title>
+	</head>
+    <body>
+		<a name="loga"><h1>Sample: <code>loga</code></h1><h1 class="subtitle">Displaying a Chart with Logarithmic Scales</h1></a>
+		<p>Creation of a chart using a logarithmic scale.</p>
+		<img src="data/loga.png"/>
+		<p>This sample shows you how to use a logarithmic scale in a chart. 
+   The logarithmic scale is created by setting a transformer (instance of 
+   <code>IlvSimpleChartTransformer</code>) on the associated coordinate. It is then added as the 
+   second ordinate axis of the chart and positioned at the right side of the data 
+   display area. The first ordinate does not use any coordinate transformation.</p>
+   <p>Three callback functions are used as input data and are rendered with three
+   displayers:</p>
+   <ul>
+   <li>A blue marked polyline, connected to the logarithmic scale. The
+       associated function is <code>y = x^4</code>.</li>
+   <li>A hatched stair chart, connected to the first ordinate. The
+       associated function is <code>y = 4*log(x)/log(10)</code>.</li>
+    <li>A yellow marked polyline, connected to the logarithmic scale. The
+        associated function is <code>y = x</code>.</li>
+   </ul></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvCartesianChart</code></li>
+			<li><code>IlvCallbackChartFunction</code></li>
+			<li><code>IlvChartCoordinateInfo</code></li>
+			<li><code>IlvSimpleChartTransformer</code></li>
+			<li><code>IlvRectangularScaleDisplayer</code></li>
+			<li><code>IlvRectangularGridDisplayer</code></li>
+			<li><code>IlvMarkedPolylineChartDisplayer</code></li>
+			<li><code>IlvStairChartDisplayer</code></li>
+			<li><code>IlvChartLegend</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="../include/samputil.h"><code>../include/samputil.h</code></a></li>
+			<li><a href="../src/samputil.cpp"><code>../src/samputil.cpp</code></a></li>
+			<li><a href="src/loga.cpp"><code>src/loga.cpp</code></a></li>
+		</ul>
+		<a name="ex2y"><h1>Sample: <code>ex2y</code></h1><h1 class="subtitle">Displaying a Chart With Two Ordinate Scales</h1></a>
+		<p>Creation of a chart with two ordinate scales.</p>
+		<img src="data/ex2y.png"/>
+		<p>This sample shows you how to use a chart with two ordinate scales, 
+   and how to connect each scale to one or several displayers.</p>
+   <p>It creates a Cartesian chart connected to four random data sets. Each data set is 
+   rendered by a displayer connected to the first (left) ordinate axis (the type of 
+   displayer used is <code>IlvMarkedPolylineChartDisplayer</code>). A stacked displayer 
+   (<code>IlvStacked3dBarChartDisplayer</code>) is then used to render the 4 data sets and is 
+   connected to the second (right) ordinate axis.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvCartesianChart</code></li>
+			<li><code>IlvChartCoordinateInfo</code></li>
+			<li><code>IlvRectangularScaleDisplayer</code></li>
+			<li><code>IlvMarkedPolylineChartDisplayer</code></li>
+			<li><code>IlvStacked3dBarChartDisplayer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="../include/samputil.h"><code>../include/samputil.h</code></a></li>
+			<li><a href="../src/samputil.cpp"><code>../src/samputil.cpp</code></a></li>
+			<li><a href="src/ex2y.cpp"><code>src/ex2y.cpp</code></a></li>
+		</ul>

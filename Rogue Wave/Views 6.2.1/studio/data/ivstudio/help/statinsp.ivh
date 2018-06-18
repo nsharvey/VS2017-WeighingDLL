@@ -1,0 +1,111 @@
+help "statinsp" {
+    title "States Inspector";
+    description "Inspecting States and their Requirements";
+}
+
+The State Inspector Panel is used to edit the 
+properties of the state that is currently selected in 
+the State Tree Panel.
+ 
+The name of the inspected state is displayed in the 
+title bar. The main part of the panel consists of a 
+table that is referred to as the Requirement Sheet.
+
+Initial
+The Initial toggle button lets you specify if the 
+inspected state is an initial state or not.
+ 
+Requirement Sheet
+ 
+The requirements of the state selected in the 
+State Tree Panel are displayed in the State 
+Inspector sheet. Each line of this sheet corresponds 
+to a state requirement. You can create a 
+new line by clicking New Requirement in the 
+tool bar or by typing the Insert key. To remove 
+the current line, click Remove Requirement in the 
+tool bar or type the Del key.
+
+Requirement target
+A state requirement is applicable to a panel, object or 
+menu item. The Panel and Object columns let you specify 
+the target of the state requirement. 
+
+The panel is referenced by its name, in the Panel 
+column. The Object column lets you specify the target 
+object or menu item. If the requirement target is the 
+panel itself, the Object item is left blank. 
+ 
+Objects are referenced by their names: therefore they 
+must have beeen named. To specify a requirement target, 
+the simplest way is to drag an object or the background 
+of a panel instance from the application buffer and 
+drop it at an empty line in the State Inspector sheet. 
+ 
+Note: 
+To drag a panel to the State Inspector, make sure the 
+mouse points to an empty location inside the panel 
+instance itself (avoid its frame and its objects). 
+
+Instead of the drag and drop mechanism from the 
+application buffer, you can also directly type the 
+panel and object names in the State Inspector sheet or 
+choose them from the combo box in the item cell. 
+
+When you right-click the Panel item, the names of the 
+panel instances of your application are displayed in 
+a string list. 
+
+When you right-click the Object item, the names of the 
+objects contained in the specified panel are displayed. 
+
+To specify a menu item target, first specify the 
+top-level menu and then double-click the Object name 
+item. A dialog box displays the whole menu hierarchy in 
+a tree and lets you select the required item. 
+
+Attribute
+The attribute column lets you specify the object
+attribute of the state requirement you edit. 
+When you right-click an item of that column, a string 
+list shows you all applicable requirements for the 
+specified target. 
+
+For a panel instance or for a menu item, possible 
+requirements are:
+ - x,
+ - y,
+ - width,
+ - height,
+ - visible,
+ - title,
+ - background.
+
+For a menu item, possible requirements are:
+ - label,
+ - bitmap,
+ - sensitive,
+ - readOnly,
+ - checked,
+ - callback.
+
+For a graphic object, the possible requirements 
+are determined by the IlvValue accessors 
+defined for the object class.
+
+If you click the Attribute item before specifying 
+the requirement target, the target specified 
+for a previous line is copied to the current line. 
+This feature lets you specify several 
+requirements for a same target without repeatedly 
+specifying the same target.
+
+Value
+The Value column lets you specify the value for the 
+edited requirement. When you right-click the Value 
+item, the State Inspector may provide you with a list 
+of predefined values or a specialized selector (color, 
+font selectors, etc.) according to the chosen 
+attribute. Nothing is activated if the selected 
+requirement has no predefined values or specialized 
+selector. 

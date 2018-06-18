@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>The OnLoad Function</title><link rel="Prev" href="scripting.15.09.html" title="Previous" /><link rel="Next" href="scripting.15.11.html" title="Next" /><link rel="StyleSheet" href="css/scripting.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/scripting_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/UserManuals/scripting.15.10.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pFDAYQTku82B0F1nU0ZvZYg" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/UserManuals/scripting.15.10.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/foundusrfrontcover.html#wwconnect_header">Foundation</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/scripting.15.01.html#wwconnect_header">Rogue Wave&nbsp;Script Programming </a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/scripting.15.09.html#wwconnect_header">Handling Panel Events </a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">The OnLoad Function </span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww492" class="Heading2"><span></span>The OnLoad Function </div><div id="ww494" class="Body">When an <span class="ClassName"><a href="../RefMan/refcppfoundation/classIlvContainer.html">IlvContainer</a></span> object is created, it looks for a Rogue Wave&nbsp;Script function <span class="code">OnLoad</span>  and invokes it, passing the container as its argument. If there are several <span class="code">OnLoad</span> functions, the container will look in the following modules in order and call the first <span class="code">OnLoad</span> function encountered:</div><div id="ww500" class="Numbered1"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span class="number">1.	</span></span>The inline script module</div><div id="ww502" class="Numbered"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span class="number">2.	</span></span>The default Rogue Wave&nbsp;Script module</div><div id="ww504" class="Numbered"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span class="number">3.	</span></span>Other Rogue Wave&nbsp;Script modules</div><div id="ww508" class="Body">The Rogue Wave&nbsp;Script function <span class="code">OnLoad</span> should have the following signature:</div><div id="ww512" class="NormalCode">function OnLoad(theContainer)</div><div id="ww4873" class="NormalCode">{</div><div id="ww4874" class="NormalCode">     // Initialization code</div><div id="ww4875" class="LastNormalCode">}  </div><div id="ww7359" class="Body">The <span class="code">OnLoad</span> function is generally used to perform initialization once the panels in the application have been created.</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

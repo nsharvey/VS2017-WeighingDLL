@@ -1,0 +1,38 @@
+// Ilv Version: 5.1
+// File generated: Thu Apr 17 12:39:51 2008
+// Creator class: IlvGadgetManagerOutput
+FileName "linkty"
+PathName "/nfs/visu/views/distrib5.2/samples/gantt/data/linkty.ilv"
+Palettes 2
+"defaultGadget" 0 F "gray" "black" "default" "fixed" 0 solid solid 0 0 0 65535 1
+"default" 1 F "gray" "black" "default" "fixed" 0 solid solid 0 0 0 65535 0
+IlvObjects 3
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvButton 43 121 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "Apply"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+0
+2 { 1 1 IlvReliefLine 0 109 136 109 1 } 0
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Selector" ]
+0 IlvSelector -1 4
+0 IlvToggle 16 8 102 16 F1 2 1 1 1 16 0 Y "End-Start" 
+0 IlvToggle 16 31 102 16 F1 2 1 1 1 16 0 Y "Start-Start" 
+0 IlvToggle 16 56 102 16 F1 2 1 1 1 16 0 Y "Start-End" 
+0 IlvToggle 16 80 102 16 F1 2 1 1 1 16 0 Y "End-End" 
+ } 32 "selector"
+0
+Size 136 151
+Background "lightgray"
+GeometryHandlers
+1 100 0 136 0 136 0
+3 3 43 0 43  0 0 73 0  0 0 20 0
+ 3 0 0 16  102 0 102 2  0 0 18 0
+ 3 0 0 0  136 0 136 1  0 0 0 0
+1 100 0 151 0 151 0
+3 3 121 0 121  0 0 23 0  0 0 7 0
+ 3 108 0 108  2 0 2 1  0 0 41 0
+ 3 0 0 8  88 0 88 2  0 0 55 0
+EOF

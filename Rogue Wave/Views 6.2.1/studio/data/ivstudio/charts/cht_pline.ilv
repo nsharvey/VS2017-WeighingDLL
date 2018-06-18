@@ -1,0 +1,14 @@
+// Ilv Version: 3.1
+// File generated: Mon Apr 26 11:37:38 1999
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 3
+1 { 0 0 IlvToggle 7 5 182 16 F1 2 1 2 0 0 0 Y "&visible" } 32 "ScatterLineVisibility"
+0
+1 { 1 0 IlvMessageLabel 7 26 182 22 F8 0 25 16 4 "&Palette"   } 0
+0
+1 { 2 0 IlvButton 7 50 182 23 F9 2 1 16 4 "button"   } 32 "ScatterLinePalette"
+0
+Size 193 77
+EOF

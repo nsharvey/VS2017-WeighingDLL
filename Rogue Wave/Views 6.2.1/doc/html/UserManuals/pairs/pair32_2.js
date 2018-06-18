@@ -1,0 +1,21 @@
+var pairs =
+{
+"removepanel":{"label":1}
+,"label":{"remove":1}
+,"remove":{"panel":1}
+,"panel":{"path":1,"instance":1}
+,"path":{"panel":1}
+,"instance":{"window":1,"application":1}
+,"window":{"application":1,"close":1}
+,"application":{"buffer":1,"action":1}
+,"buffer":{"window":1}
+,"close":{"(x)":1}
+,"(x)":{"button":1}
+,"button":{"menu":1}
+,"menu":{"category":1}
+,"category":{"application":1}
+,"action":{"removes":1}
+,"removes":{"selected":1}
+,"selected":{"panel":1}
+}
+;Search.control.loadWordPairs(pairs);

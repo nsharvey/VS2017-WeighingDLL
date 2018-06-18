@@ -1,0 +1,27 @@
+// Ilv Version: 3.1
+// File generated: Tue Apr 27 14:17:05 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "dbgamod"
+PathName "dbgamod.ilv"
+Palettes 2
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+1 "gray" "black" "small" "%arial-10-" 0 solid solid 0 0 0
+IlvObjects 3
+3 { 0 0 IlvGadget 2 2 281 256 2 } 32 "area"
+1008 1 2 1 2 1 2 1 2 2 2
+3 { 1 1 IliMemoryDataSource 35 13 24 24 1 14 19 0 IliMemoryTable 0 3 2 
+     8 "ID" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 -1 32 
+     16 0 0 0
+0
+ } 32 "MODEL_MS"
+0
+3 { 2 1 IliMemoryDataSource 161 16 24 24 1 14 19 0 IliMemoryTable 0 3 2 
+     8 "ID" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 -1 32 
+     16 0 0 0
+0
+ } 416 "DS_MS"
+0
+Size 285 260
+EOF

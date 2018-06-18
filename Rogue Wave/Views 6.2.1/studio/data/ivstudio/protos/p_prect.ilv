@@ -1,0 +1,14 @@
+// Ilv Version: 3.1
+// File generated: Thu Nov 12 09:38:20 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "p_prect"
+PathName "/nfs/views-work/work.lim/studio/data/ivprotos/p_prect.ilv"
+Palettes 1
+"IlvStText" 0 "defaultBg" "defaultFg" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 2
+7 { 2 0 IlvSCProtoManagerRectangle 0 1 168 59 YY } 64 "SCManager"
+0
+7 { 2 0 IlvSCProtoGrapherRectangle 0 84 168 59 YY } 64 "SCManager"
+0
+Size 184 325
+EOF

@@ -1,0 +1,87 @@
+/****************************************************************************
+                                 ilvgadgt_rc
+                    IlogViews resource for ilvadvgdt__lib
+*****************************************************************************/
+ilviews_asksel_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/asksel.ilv"
+ilviews_asksel_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_asklis_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/asklis.ilv"
+ilviews_asklis_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_askstr_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/askstr.ilv"
+ilviews_askstr_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_filesel_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/filesel.ilv"
+ilviews_filesel_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_filebit_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/filebit.ilv"
+ilviews_filebit_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_color_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/color.ilv"
+ilviews_color_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_fontch_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/fontch.ilv"
+ilviews_fontch_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icwinmin_xpm	ILOGViewsResource LOADONCALL DISCARDABLE "icwinmin.xpm"
+icwinmin_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icwinmax_xpm	ILOGViewsResource LOADONCALL DISCARDABLE "icwinmax.xpm"
+icwinmax_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icwinexit_xpm	ILOGViewsResource LOADONCALL DISCARDABLE "icwinexit.xpm"
+icwinexit_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ictitleb_xpm	ILOGViewsResource LOADONCALL DISCARDABLE "ictitleb.xpm"
+ictitleb_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icwinrst_xpm	ILOGViewsResource LOADONCALL DISCARDABLE "icwinrst.xpm"
+icwinrst_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icdockex_xpm	ILOGViewsResource LOADONCALL DISCARDABLE "icdockex.xpm"
+icdockex_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilvloadf_xbm	ILOGViewsResource LOADONCALL DISCARDABLE "ilvloadf.xbm"
+ilvloadf_sep	ILOGViewsResource
+BEGIN
+	0
+END

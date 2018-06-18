@@ -1,0 +1,22 @@
+var pairs =
+{
+"scroll":{"interactor":1,"displayed":1}
+,"interactor":{"scroll":1,"following":1}
+,"following":{"basic":1}
+,"basic":{"characteristics":1}
+,"characteristics":{"class":1}
+,"class":{"ilvchartscrollinteractor":1}
+,"ilvchartscrollinteractor":{"registered":1}
+,"registered":{"name":1}
+,"name":{"chartscroll":1}
+,"chartscroll":{"key":1}
+,"key":{"button":1}
+,"button":{"arrow":1}
+,"arrow":{"keys":1}
+,"keys":{"action":1}
+,"action":{"lets":1}
+,"lets":{"user":1}
+,"user":{"scroll":1}
+,"displayed":{"data":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<filters>
+  <filter id="BumpIn" x="0" y="0" width="100" height="100">
+      <desc>Applies a bump effect</desc>
+      <feColorMatrix in="SourceGraphic" type="luminanceToAlpha" 
+                     result="lumalpha"/>
+      <feComponentTransfer in="lumalpha" result="invertedalpha">
+        <feFuncA type="table" tableValues="1,0"/>
+      </feComponentTransfer>
+      <feDiffuseLighting in="invertedalpha" result="diffuse" surfaceScale="5">
+        <feDistantLight azimuth="135" elevation="60" r="0.6" g="0.6" b="0.6"/>
+      </feDiffuseLighting>
+      <feSpecularLighting in="invertedalpha" result="specular" 
+                          surfaceScale="5" specularExponent="6">
+        <feDistantLight azimuth="135" elevation="30"/>
+      </feSpecularLighting>
+      <feComposite in="diffuse" in2="specular" 
+                   operator="arithmetic" k2="1.0" k3="1.0"/>
+  </filter>
+  <filter id="BumpOut" x="0" y="0" width="100" height="100">
+      <desc>Applies a bump effect</desc>
+      <feColorMatrix in="SourceGraphic" type="luminanceToAlpha" 
+                     result="lumalpha"/>
+      <feDiffuseLighting in="lumalpha" result="diffuse" surfaceScale="5">
+        <feDistantLight azimuth="135" elevation="60" r="0.6" g="0.6" b="0.6"/>
+      </feDiffuseLighting>
+      <feSpecularLighting in="lumalpha" result="specular" surfaceScale="5" 
+                          specularExponent="6">
+        <feDistantLight azimuth="135" elevation="30"/>
+      </feSpecularLighting>
+      <feComposite in="diffuse" in2="specular" 
+                   operator="arithmetic" k2="1.0" k3="1.0"/>
+  </filter>
+  <filter id="Blur1" x="-5" y="-5" width="110" height="110">
+      <desc>Applies a gaussian blur effect with radius 1</desc>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+  </filter>
+  <filter id="Blur2" x="-15" y="-15" width="130" height="130">
+      <desc>Applies a gaussian blur effect with radius 2</desc>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+  </filter>
+  <filter id="Blur3" x="-15" y="-15" width="130" height="130">
+      <desc>Applies a gaussian blur effect with radius 3</desc>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+  </filter>
+  <filter id="Blur4" x="-15" y="-15" width="130" height="130">
+      <desc>Applies a gaussian blur effect with radius 4</desc>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+  </filter>
+  <filter id="Blur10" x="-20" y="-20" width="140" height="140">
+      <desc>Applies a gaussian blur effect with radius 10</desc>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+  </filter>
+  <filter id="DropShadow" x="-10" y="-10" width="125" height="125">
+       <desc>Applies a drop shadow effect</desc>
+       <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+       <feOffset dx="5" dy="5" result="offsetBlur"/>
+       <feComposite in="SourceGraphic" in2="offsetBlur" operator="over"/>
+  </filter>
+  <filter id="DropShadowLight" x="-10" y="-10" width="125" height="125">
+       <desc>Applies a light drop shadow effect</desc>
+       <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+     <feComponentTransfer in="blur" result="lessblur"> 
+        <feFuncA type="linear" slope="0.5"/>
+     </feComponentTransfer>
+       <feOffset in="lessblur" dx="5" dy="5" result="offsetBlur"/>
+       <feComposite in="SourceGraphic" in2="offsetBlur" operator="over"/>
+  </filter>
+  <filter id="DropShadow2" x="-10" y="-10" width="125" height="125">
+    <desc>Applies a drop shadow effect</desc>
+    <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+    <feOffset dx="2" dy="2" result="offsetBlur"/>
+    <feComposite in="SourceGraphic" in2="offsetBlur" operator="over"/>
+  </filter>
+  <filter id="ThinEmboss" x="-5" y="-5" width="110" height="110">
+    <desc>Applies an emboss effect</desc>
+    <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"/>
+    <feSpecularLighting in="blur" surfaceScale="8" specularConstant="1"
+		            specularExponent="12" result="specOut">
+      <fePointLight x="-5000" y="-10000" z="12000"/>
+     </feSpecularLighting>
+     <feComposite in="specOut" in2="SourceAlpha" operator="in" 
+                  result="specOut"/>
+     <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic"
+		  k1="0" k2="1" k3="1" k4="0"/>
+  </filter>
+  <filter id="Emboss" x="-5" y="-5" width="110" height="110">
+    <desc>Applies an emboss effect</desc>
+    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+    <feSpecularLighting in="blur" surfaceScale="8" specularConstant="1"
+		            specularExponent="12" result="specOut">
+      <fePointLight x="-5000" y="-10000" z="12000"/>
+     </feSpecularLighting>
+     <feComposite in="specOut" in2="SourceAlpha" operator="in" 
+                  result="specOut"/>
+     <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic"
+		  k1="0" k2="1" k3="1" k4="0"/>
+  </filter>
+  <filter id="LargeEmboss" x="-5" y="-5" width="110" height="110">
+    <desc>Applies an emboss effect using a large blur</desc>
+    <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+    <feSpecularLighting in="blur" surfaceScale="8" 
+                        specularConstant="1" specularExponent="12" 
+                        result="spec">
+	<fePointLight x="-5000" y="-10000" z="12000"/>
+    </feSpecularLighting>
+    <feComposite in="spec" in2="SourceGraphic" 
+                 operator="in" result="specOut"/>
+    <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic"
+                 k1="0" k2="1" k3="1" k4="0"/> 
+  </filter>
+  <filter id="ThinEmbossDropShadow" x="-5" y="-5" width="120" height="120">
+    <desc>Applies an emboss effect with a drop shadow</desc>
+    <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"/>
+    <feOffset in="blur" dx="6" dy="6" result="offsetBlur"/>
+    <feSpecularLighting in="blur" surfaceScale="8" specularConstant="1"
+		        specularExponent="12" result="specOut">
+       <fePointLight x="-5000" y="-10000" z="12000"/>
+    </feSpecularLighting>
+    <feComposite in="specOut" in2="SourceAlpha" operator="in" 
+                 result="specOut"/>
+    <feComposite in="SourceGraphic" in2="specOut" result="litPaint" 
+                 operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+    <feMerge>
+       <feMergeNode in="offsetBlur"/>
+       <feMergeNode in="litPaint"/>
+    </feMerge>
+  </filter>
+  <filter id="EmbossDropShadow" x="-5" y="-5" width="120" height="120">
+    <desc>Applies an emboss effect with a drop shadow</desc>
+    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+    <feOffset in="blur" dx="6" dy="6" result="offsetBlur"/>
+    <feSpecularLighting in="blur" surfaceScale="8" specularConstant="1"
+		        specularExponent="12" result="specOut">
+       <fePointLight x="-5000" y="-10000" z="12000"/>
+    </feSpecularLighting>
+    <feComposite in="specOut" in2="SourceAlpha" operator="in" 
+                 result="specOut"/>
+    <feComposite in="SourceGraphic" in2="specOut" result="litPaint" 
+                 operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+    <feMerge>
+       <feMergeNode in="offsetBlur"/>
+       <feMergeNode in="litPaint"/>
+    </feMerge>
+  </filter>
+  <filter id="LargeEmbossDropShadow" x="-20" y="-20" width="140" height="140">
+    <desc>Applies an emboss effect using a large blur with a drop shadow</desc>
+    <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+    <feOffset in="blur" dx="6" dy="6" result="offsetBlur"/>
+    <feSpecularLighting in="blur" surfaceScale="8" specularConstant="1" 
+                        specularExponent="12" result="spec">
+	<fePointLight x="-5000" y="-10000" z="12000"/>
+    </feSpecularLighting>
+    <feComposite in="spec" in2="SourceGraphic" 
+                 operator="in" result="specOut"/>
+    <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic"
+                 k1="0" k2="1" k3="1" k4="0" result="litPaint"/> 
+    <feMerge>
+       <feMergeNode in="offsetBlur"/>
+       <feMergeNode in="litPaint"/>
+    </feMerge>
+  </filter>
+  <filter id="ThinEmbossDropShadowLight" x="-5" y="-5" width="120" height="120">
+    <desc>Applies an emboss effect with a light drop shadow</desc>
+     <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"/>
+     <feComponentTransfer in="blur" result="lessblur"> 
+        <feFuncA type="linear" slope="0.5"/>
+     </feComponentTransfer>
+     <feOffset in="lessblur" dx="6" dy="6" result="offsetBlur"/>
+     <feSpecularLighting in="lessblur" surfaceScale="8" specularConstant="1"
+		         specularExponent="12" result="specOut">
+	<fePointLight x="-5000" y="-10000" z="12000"/>
+     </feSpecularLighting>
+     <feComposite in="specOut" in2="SourceAlpha" operator="in" 
+                  result="specOut"/>
+     <feComposite in="SourceGraphic" in2="specOut" result="litPaint" 
+                  operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+     <feMerge>
+        <feMergeNode in="offsetBlur"/>
+        <feMergeNode in="litPaint"/>
+     </feMerge>
+  </filter>
+  <filter id="EmbossDropShadowLight" x="-5" y="-5" width="120" height="120">
+    <desc>Applies an emboss effect with a light drop shadow</desc>
+     <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+     <feComponentTransfer in="blur" result="lessblur"> 
+        <feFuncA type="linear" slope="0.5"/>
+     </feComponentTransfer>
+     <feOffset in="lessblur" dx="6" dy="6" result="offsetBlur"/>
+     <feSpecularLighting in="lessblur" surfaceScale="8" specularConstant="1"
+		         specularExponent="12" result="specOut">
+	<fePointLight x="-5000" y="-10000" z="12000"/>
+     </feSpecularLighting>
+     <feComposite in="specOut" in2="SourceAlpha" operator="in" 
+                  result="specOut"/>
+     <feComposite in="SourceGraphic" in2="specOut" result="litPaint" 
+                  operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+     <feMerge>
+        <feMergeNode in="offsetBlur"/>
+        <feMergeNode in="litPaint"/>
+     </feMerge>
+  </filter>
+  <filter id="LargeEmbossDropShadowLight" 
+          x="-20" y="-20" width="140" height="140">
+    <desc>Applies an emboss effect using a large blur with a light drop shadow
+    </desc>
+    <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+     <feComponentTransfer in="blur" result="lessblur"> 
+        <feFuncA type="linear" slope="0.5"/>
+     </feComponentTransfer>
+    <feOffset in="lessblur" dx="6" dy="6" result="offsetBlur"/>
+    <feSpecularLighting in="blur" surfaceScale="8" specularConstant="1" 
+                        specularExponent="12" result="spec">
+	<fePointLight x="-5000" y="-10000" z="12000"/>
+    </feSpecularLighting>
+    <feComposite in="spec" in2="SourceGraphic" 
+                 operator="in" result="specOut"/>
+    <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic"
+                 k1="0" k2="1" k3="1" k4="0" result="litPaint"/> 
+    <feMerge>
+       <feMergeNode in="offsetBlur"/>
+       <feMergeNode in="litPaint"/>
+    </feMerge>
+  </filter>
+  <filter id="Fuzzy" x="-10" y="-10" width="120" height="120">
+     <desc>Applies a fuzzy effect</desc>
+     <feTurbulence type="fractal" baseFrequency="0.1" numOctaves="1" 
+                   result="turb2"/>
+     <feDisplacementMap in="SourceGraphic" in2="turb2" result="turb2" 
+                        scale="20" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="VeryFuzzy" x="-20" y="-20" width="140" height="140">
+    <desc>Applies a very fuzzy effect</desc>
+    <feTurbulence type="fractal" baseFrequency="0.1" numOctaves="1" 
+                  result="turb2"/>
+    <feDisplacementMap in="SourceGraphic" in2="turb2" result="turb2" 
+                       scale="35" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="Glow" x="-10" y="-10" width="120" height="120">
+    <desc>Applies a glow effect</desc>
+    <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+    <feComponentTransfer> 
+       <feFuncA type="linear" slope="10"/>
+    </feComponentTransfer>
+  </filter>
+  <filter id="Melting" x="-10" y="-10" width="120" height="120">
+    <desc>Applies a melting effect</desc>
+    <feTurbulence type="fractal" baseFrequency="0.05" numOctaves="2" 
+                  result="turb"/>
+    <feDisplacementMap result="bended" in="SourceGraphic" in2="turb" 
+                       scale="25" xChannelSelector="R" yChannelSelector="G"/>
+    <feGaussianBlur in="bended" stdDeviation="1" result="bb"/>
+    <feComponentTransfer in="bb" result="BendedSource">
+      <feFuncA type="linear" slope="10" intercept="-1"/>
+    </feComponentTransfer>
+    <feComponentTransfer in="BendedSource" result="BendedAlpha">
+       <feFuncR type="linear" slope="0" intercept="0"/>
+       <feFuncG type="linear" slope="0" intercept="0"/>
+       <feFuncB type="linear" slope="0" intercept="0"/>
+       <feFuncA type="linear" slope="1" intercept="0"/>
+    </feComponentTransfer>
+    <feGaussianBlur in="BendedAlpha" stdDeviation="1" result="blur"/>
+    <feSpecularLighting in="blur" surfaceScale="5" specularConstant="1" 
+                        specularExponent="10" result="specularOut">
+       <fePointLight x="-5000" y="-10000" z="20000" r="0.8" g="0.8" b="0.8"/>
+    </feSpecularLighting>
+    <feComposite in="specularOut" in2="BendedAlpha" operator="in" 
+                 result="specularOut"/>
+    <feComposite in="BendedSource" in2="specularOut" 
+                 operator="arithmetic" k1="0" k2="1" k3="1" k4="0" 
+                 result="litPaint"/>
+  </filter>
+  <filter id="Impressionist" x="0" y="0" width="100" height="100">
+    <desc>Applies an impressionist filter</desc>
+    <feMorphology in="SourceGraphic" operator="dilate" radius="2"/> 
+  </filter>
+     <filter id="Holes" x="0" y="0" width="100" height="100">
+    <desc>Creates holes</desc>
+	<feTurbulence type="fractal" baseFrequency="0.05" numOctaves="1" 
+                      result="texture"/>
+	<feComponentTransfer in="texture" result="holes"> 
+          <feFuncA type="discrete" tableValues="0,1"/>
+        </feComponentTransfer>
+	<feComposite in="SourceGraphic" in2="holes" operator="out"/>
+ </filter>
+     <filter id="HolesComplement" x="0" y="0" width="100" height="100">
+    <desc>Create complementary holes</desc>
+	<feTurbulence type="fractal" baseFrequency="0.05" numOctaves="1" 
+                      result="texture"/>
+	<feComponentTransfer in="texture" result="holes"> 
+          <feFuncA type="discrete" tableValues="1,0"/>
+        </feComponentTransfer>
+	<feComposite in="SourceGraphic" in2="holes" operator="out"/>
+ </filter>
+  <filter id="None" x="0" y="0" width="100" height="100">
+    <desc>Does nothing</desc>
+ </filter>
+</filters>

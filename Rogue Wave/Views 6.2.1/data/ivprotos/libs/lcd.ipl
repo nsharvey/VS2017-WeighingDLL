@@ -1,0 +1,313 @@
+// Rogue Wave Views Prototype Library File
+// Rogue Wave Views Version: 5.0
+// Date: Thu Jan 03 19:09:55 2002
+Library: lcd
+SingleFile: true
+lcd
+lcd2
+lcd3
+lcd4
+IlvProtoLibraryBlocks
+IlvProtoLibraryBlock lcd.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype lcd
+    accessors {
+        IlvCompositeAccessor (RP) Boolean vall {
+            s1.visible
+            s2.visible
+            s3.visible
+            s5.visible
+            s6.visible
+            s7.visible
+            s4.visible
+        }
+        IlvTriggerAccessor (RP) UInt v0 vall true
+        IlvTriggerAccessor (RP) UInt v0 s4.visible false
+        IlvTriggerAccessor (RP) UInt v1 vall false
+        IlvTriggerAccessor (RP) UInt v1 s3.visible true
+        IlvTriggerAccessor (RP) UInt v1 s6.visible true
+        IlvTriggerAccessor (RP) UInt v2 vall true
+        IlvTriggerAccessor (RP) UInt v2 s2.visible false
+        IlvTriggerAccessor (RP) UInt v2 s6.visible false
+        IlvTriggerAccessor (RP) UInt v3 vall true
+        IlvTriggerAccessor (RP) UInt v3 s2.visible false
+        IlvTriggerAccessor (RP) UInt v3 s5.visible false
+        IlvTriggerAccessor (RP) UInt v4 vall true
+        IlvTriggerAccessor (RP) UInt v4 s5.visible false
+        IlvTriggerAccessor (RP) UInt v4 s1.visible false
+        IlvTriggerAccessor (RP) UInt v4 s7.visible false
+        IlvTriggerAccessor (RP) UInt v5 vall true
+        IlvTriggerAccessor (RP) UInt v5 s5.visible false
+        IlvTriggerAccessor (RP) UInt v5 s3.visible false
+        IlvTriggerAccessor (RP) UInt v6 vall true
+        IlvTriggerAccessor (RP) UInt v6 s3.visible false
+        IlvTriggerAccessor (RP) UInt v7 vall false
+        IlvTriggerAccessor (RP) UInt v7 s3.visible true
+        IlvTriggerAccessor (RP) UInt v7 s6.visible true
+        IlvTriggerAccessor (RP) UInt v7 s1.visible true
+        IlvTriggerAccessor (RP) Boolean v8 vall true
+        IlvTriggerAccessor (RP) Boolean v9 vall true
+        IlvTriggerAccessor (RP) UInt v9 s5.visible false
+        IlvSwitchAccessor (RP) UInt newvalue value {
+            v0
+            v1
+            v2
+            v3
+            v4
+            v5
+            v6
+            v7
+            v8
+            v9
+            vE
+        }
+        IlvTriggerAccessor (RP) UInt newvalue currentValue value
+        IlvValueAccessor (P) UInt currentValue
+        IlvValueAccessor UInt value
+        IlvConditionAccessor UInt value != currentValue newvalue value "\"\""
+        IlvTriggerAccessor (RP) Boolean vE vall true
+        IlvTriggerAccessor (RP) UInt vE s3.visible false
+        IlvTriggerAccessor (RP) UInt vE s6.visible false
+    }
+    values {
+        String currentValue = 0
+        String value = 0
+    }
+    nodes {
+        IlvGraphicNode s5 "TN" 0 0 0.564516 0 0 0.506024 28.7419 13.8313
+        IlvGraphicNode s2 "TN" 0 1 0.564516 0 0 0.506024 28.7419 13.8313
+        IlvGraphicNode s3 "TN" 0 2 0.564516 0 0 0.506024 28.7419 13.8313
+        IlvGraphicNode s6 "TN" 0 3 0.564516 0 0 0.506024 28.7419 13.8313
+        IlvGraphicNode s1 "TN" 0 4 0.564516 0 0 0.506024 28.7419 13.8313
+        IlvGraphicNode s4 "TIN" 0 5 0.564516 0 0 0.506024 28.7419 13.8313
+        IlvGraphicNode s7 "TN" 0 6 0.564516 0 0 0.506024 28.7419 13.8313
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock lcd.ilv
+// Ilv Version: 5.0
+// File generated: Thu Jan 03 19:09:55 2002
+// Creator class: IlvGraphOutput
+Palettes 1
+0 F 48830 48830 48830 "black" "default" "%helvetica-12" 0 solid solid 0 0 0 65535 0
+IlvObjects 7
+1 0 { 0 0 IlvPolygon 6
+70 69 66 74 66 100 70 105 75 100 75 74 } 0
+1 0 { 1 0 IlvPolygon 6
+70 32 66 37 66 62 70 68 75 62 75 37 } 0
+1 0 { 2 0 IlvPolygon 6
+120 32 115 37 115 62 120 68 124 62 124 37 } 0
+1 0 { 3 0 IlvPolygon 6
+120 69 115 74 115 100 120 105 124 100 124 74 } 0
+1 0 { 4 0 IlvPolygon 6
+73 32 79 35 111 35 117 32 111 28 79 28 } 0
+1 0 { 5 0 IlvPolygon 6
+73 68 79 71 111 71 117 68 111 64 79 64 } 2
+1 0 { 6 0 IlvPolygon 6
+73 105 79 109 111 109 117 105 111 102 79 102 } 0
+Layers 2
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock lcd2.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype lcd2
+    accessors {
+        IlvValueAccessor UInt value
+        IlvTriggerAccessor Any value d0.value value%10
+        IlvTriggerAccessor Any value d1.value (value/10)%10
+    }
+    values {
+        String value = 0
+    }
+    nodes {
+        IlvGraphicNode d1 "" 0 0
+        IlvGraphicNode d0 "" 0 1
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock lcd3.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype lcd3
+    accessors {
+        IlvValueAccessor UInt value
+        IlvTriggerAccessor Any value d0.value value%10
+        IlvTriggerAccessor Any value d1.value (value/10)%10
+        IlvTriggerAccessor Any value d2.value (value/100)%10
+    }
+    values {
+        String value = 0
+    }
+    nodes {
+        IlvGraphicNode d0 "" 0 0
+        IlvGraphicNode d1 "" 0 1
+        IlvGraphicNode d2 "" 0 2
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock lcd4.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype lcd4
+    accessors {
+        IlvValueAccessor UInt value
+        IlvTriggerAccessor Any value d0.value value%10
+        IlvTriggerAccessor Any value d1.value (value/10)%10
+        IlvTriggerAccessor Any value d2.value (value/100)%10
+        IlvTriggerAccessor Any value d3.value (value/1000)%10
+    }
+    values {
+        String value = 0
+    }
+    nodes {
+        IlvSubGroupNode d3 
+        IlvProtoInstance lcd.lcd d3
+            values {
+                Int currentValue = 0
+                Int value = 0
+                Int x = 40
+                Int y = 25
+                Double scaleX = 0.911765
+                String name = d3
+            }
+            subscriptions {
+            }
+        ;
+        IlvSubGroupNode d2 
+        IlvProtoInstance lcd.lcd d2
+            values {
+                Int currentValue = 0
+                Int value = 0
+                Int x = 76
+                Int y = 25
+                Double scaleX = 0.911765
+                String name = d2
+            }
+            subscriptions {
+            }
+        ;
+        IlvSubGroupNode d1 
+        IlvProtoInstance lcd.lcd d1
+            values {
+                Int currentValue = 0
+                Int value = 0
+                Int x = 112
+                Int y = 25
+                Double scaleX = 0.911765
+                String name = d1
+            }
+            subscriptions {
+            }
+        ;
+        IlvSubGroupNode d0 
+        IlvProtoInstance lcd.lcd d0
+            values {
+                Int currentValue = 0
+                Int value = 0
+                Int x = 148
+                Int y = 25
+                Double scaleX = 0.911765
+                String name = d0
+            }
+            subscriptions {
+            }
+        ;
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock lcd2.ilv
+// Ilv Version: 5.0
+// File generated: Thu Jan 03 19:09:55 2002
+// Creator class: IlvGraphOutput
+Palettes 1
+"default" 0 F "gray" "black" "default" "%helvetica-12" 0 solid solid 0 0 0 65535 0
+IlvObjects 2
+1 2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+0 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance lcd.lcd d1
+    values {
+        Int value = 0
+        Int x = 32
+        Int y = 18
+        String name = d1
+    }
+    subscriptions {
+    }
+;
+ } 32 "d1"
+1 2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+0 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance lcd.lcd d0
+    values {
+        Int value = 0
+        Int x = 73
+        Int y = 18
+        String name = d0
+    }
+    subscriptions {
+    }
+;
+ } 32 "d0"
+Layers 2
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock lcd3.ilv
+// Ilv Version: 5.0
+// File generated: Thu Jan 03 19:09:55 2002
+// Creator class: IlvGraphOutput
+Palettes 1
+"default" 0 F "gray" "black" "default" "%helvetica-12" 0 solid solid 0 0 0 65535 0
+IlvObjects 3
+1 2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+0 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance lcd.lcd d0
+    values {
+        Int x = 97
+        Int y = 22
+        String name = d0
+    }
+    subscriptions {
+    }
+;
+ } 32 "d0"
+1 2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+0 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance lcd.lcd d1
+    values {
+        Int x = 59
+        Int y = 22
+        String name = d1
+    }
+    subscriptions {
+    }
+;
+ } 32 "d1"
+1 2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+0 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance lcd.lcd d2
+    values {
+        Int x = 20
+        Int y = 22
+        String name = d2
+    }
+    subscriptions {
+    }
+;
+ } 32 "d2"
+Layers 2
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryEnd

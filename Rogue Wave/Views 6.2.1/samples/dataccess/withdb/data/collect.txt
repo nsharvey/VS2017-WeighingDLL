@@ -1,0 +1,6 @@
+Note: Shows how to modify a collection in an informix9 table
+   - The create button creates needed informix9 tables
+   - The drop button deletes informix9 tables needed for this sample
+   - The first table gadget shows the first part of the table: authors list
+   - The second table gadget shows the collection part of the table: books 
+     title of the author selected in first table gadget.

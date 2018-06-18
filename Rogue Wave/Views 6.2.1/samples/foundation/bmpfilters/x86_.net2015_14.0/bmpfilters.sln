@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{EF60C8C2-1D63-11E8-96A2-F2B8772C9500}") = "displace", "displace.vcxproj", "{EF607A34-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{EF6A8D76-1D63-11E8-96A2-F2B8772C9500}") = "bmpfilters", "bmpfilters.vcxproj", "{EF607A34-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Global
+EndGlobal

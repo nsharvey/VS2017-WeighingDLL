@@ -1,0 +1,16 @@
+// Ilv Version: 3.1
+// File generated: Mon Nov 15 13:52:00 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "about"
+PathName "data\\about.ilv"
+Palettes 2
+"default" 0 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+"IlvStText" 1 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 2
+1 { 0 0 IlvIcon 20 20 "icons/rw.png" "" } 0
+0
+1 { 1 1 IlvMessageLabel 20 67 295 80 F8 0 25 16 4 "Version 1.0"   } 416 "versionMsgLabel"
+0
+Size 137 133
+Background "gray"
+EOF

@@ -1,0 +1,64 @@
+// Ilv Version: 3.1
+// File generated: Mon Feb  1 11:50:54 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "dynsel"
+PathName "dynsel.ilv"
+Palettes 4
+1 "gray" "black" "bold" "%helvetica-12-B" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+2 "white" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+3 "gray" "black" "button" "%helvetica-12-B" 0 solid solid 0 0 0
+IlvObjects 7
+1 { 0 0 IliMemoryDataSource 87 230 24 24 1 14 3 5 IliMemoryTable 0 3 2 
+     8 "CODE" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 -1 32 
+     16 0 0 5
+1 1 "Administration" 
+1 2 "Marketing" 
+1 3 "R & D" 
+1 4 "Documentation" 
+1 5 "Finance" 
+0
+ } 32 "DEPT_MS"
+0
+1 { 1 0 IliTableComboBox 15 25 230 20 F6 2 1 -1 0 "" 2995 "DEPT_MS" "CODE" "DEPT_MS" "CODE" "NAME" 10 Int 0 2 1  ""  } 544 "TCB"
+1
+1 "__ilvCallback" "@Select(EMP_DS)"
+0
+1 { 2 0 IliSQLDataSource 147 231 24 24 1 14 3 0 IliSQLTable 0 18 3 
+     72 "NAME" String 15 25 1 102 "Name" 32 33 "NAME" 
+     0 "DEPTNO" Int 16 -1 2 -1 32 33 "DEPTNO" 
+     105 "SALARY" Double 17 -1 2 102 "Currency" "Salary" 32 33 "SALARY" 
+     16 1 1 "department" Int  -1 Int 0 "DEPT_MS" "CODE" 1 31118 0 "oracle" "SELECT NAME,\n       DEPTNO,\n       SALARY\nFROM I_EMP\nWHERE DEPTNO = :department" 0 3 1 1 1 1 0 "I_EMP" "I_EMP" 0 2 160 15 130 140 0 0 0 0 2 1 0 1 "= :department" 0 1 0 1 0 6 5 
+     10 "EMPNO" Int 1 -1 2 -1 0 
+     8 "NAME" String 2 25 1 -1 0 
+     8 "STATUS" Int 3 -1 2 -1 0 
+     8 "DEPTNO" Int 4 -1 2 -1 0 
+     9 "SALARY" Double 5 -1 2 -1 0 
+     0 0 "I_EMP" 0 0 5 "Main" "null" "/" 7 0 CE00000000CE00  } 32 "EMP_DS"
+0
+1 { 3 1 IliTableGadget 15 80 230 150 2 2067 "EMP_DS" 725466719 1 0 0 0 17 18 21 4 0 0 0 1 1 "white" A"normal" "%helvetica-12-"  } 32 "TG"
+0
+1 { 4 3 IlvFrame 5 5 250 50 F8 0 25 16 4 "Department"   } 0
+0
+1 { 5 3 IlvFrame 5 60 250 180 F8 0 25 16 4 "Employees"   } 0
+0
+1 { 6 3 IlvButton 5 250 75 23 F9 2 1 16 4 "Select"   } 512
+1
+1 "__ilvCallback" "@Select(EMP_DS)"
+0
+Size 260 278
+GeometryHandlers
+1 100 0 260 0 260 0
+5 3 0 0 5  250 0 250 4  0 0 5 0
+ 3 0 0 15  230 0 230 1  0 0 15 0
+ 3 0 0 5  250 0 250 5  0 0 5 0
+ 3 0 0 15  230 0 230 3  0 0 15 0
+ 3 0 0 5  0 0 75 6  180 0 180 0
+1 100 0 278 0 278 0
+5 3 0 0 5  0 0 50 4  223 0 223 0
+ 3 0 0 25  0 0 20 1  233 0 233 0
+ 3 0 0 60  180 0 180 5  0 0 38 0
+ 3 0 0 80  150 0 150 3  0 0 48 0
+ 3 250 0 250  0 0 23 6  0 0 5 0
+EOF

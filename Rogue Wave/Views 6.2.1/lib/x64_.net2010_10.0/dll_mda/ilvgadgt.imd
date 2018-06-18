@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvgadgt -->
+<module name="ilvgadgt" version="6.2">
+<class name="IlvAbstractBar" rootClass="IlvGraphic"/>
+<class name="IlvAbstractMenu" rootClass="IlvGraphic"/>
+<class name="IlvButton" rootClass="IlvGraphic"/>
+<class name="IlvColoredToggle" rootClass="IlvGraphic"/>
+<class name="IlvComboBox" rootClass="IlvGraphic"/>
+<class name="IlvElasticTextField" rootClass="IlvGraphic"/>
+<class name="IlvFrame" rootClass="IlvGraphic"/>
+<class name="IlvGadgetContainer" rootClass="IlvAbstractView"/>
+<class name="IlvGadgetContainerRectangle" rootClass="IlvGraphic"/>
+<class name="IlvGadgetItemBitmapAnimator" rootClass="IlvNamedProperty"/>
+<class name="IlvMenuBar" rootClass="IlvGraphic"/>
+<class name="IlvMenuItem" rootClass="IlvGadgetItem"/>
+<class name="IlvMenuItemGroup" rootClass="IlvNamedProperty"/>
+<class name="IlvMenuItemHighlighter" rootClass="IlvNamedProperty"/>
+<class name="IlvMenuItemSelector" rootClass="IlvNamedProperty"/>
+<class name="IlvMessageItem" rootClass="IlvGadgetItem"/>
+<class name="IlvMessageItemAnimator" rootClass="IlvNamedProperty"/>
+<class name="IlvMessageLabel" rootClass="IlvGraphic"/>
+<class name="IlvNumberField" rootClass="IlvGraphic"/>
+<class name="IlvPasswordTextField" rootClass="IlvGraphic"/>
+<class name="IlvPopupMenu" rootClass="IlvGraphic"/>
+<class name="IlvSCGadgetContainerRectangle" rootClass="IlvGraphic"/>
+<class name="IlvSCViewRectangle" rootClass="IlvGraphic"/>
+<class name="IlvScrollBar" rootClass="IlvGraphic"/>
+<class name="IlvScrolledView" rootClass="IlvAbstractView"/>
+<class name="IlvSlider" rootClass="IlvGraphic"/>
+<class name="IlvTextField" rootClass="IlvGraphic"/>
+<class name="IlvToggle" rootClass="IlvGraphic"/>
+<class name="IlvToolBar" rootClass="IlvGraphic"/>
+</module>

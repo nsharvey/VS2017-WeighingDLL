@@ -1,0 +1,9 @@
+; DemoMFC.def : Declares the module parameters.
+
+LIBRARY      "DEMOMFC.OCX"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE

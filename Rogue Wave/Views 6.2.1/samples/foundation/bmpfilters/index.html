@@ -1,0 +1,108 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Foundations - Samples: bmpfilters</title>
+	</head>
+    <body>
+		<a name="displace"><h1>Sample: <code>displace</code></h1><h1 class="subtitle">Displacing Pixels</h1></a>
+		<p>Shows how to distort an image using turbulence.</p>
+		<img src="data/displace.png"/>
+		<p>This example shows how to create bitmap filters and change their parameters
+	to achieve visual effects.
+	<p>For demonstration purposes, this sample code uses portable GUI 
+        elements from the Gadgets package of the Rogue Wave Views suite. 
+        Feel free to use these elements in your application if you have 
+        a license for Rogue Wave Views or for Rogue Wave Views Controls. 
+        This information applies to the classes located in the library <code>ilvgadgt</code>, 
+        listed in the README file that you can find in the installation directory.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvRGBBitmapData</code></li>
+			<li><code>IlvFilterFlow</code></li>
+			<li><code>IlvBitmapFilter</code></li>
+			<li><code>IlvBitmap</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/displace.cpp"><code>src/displace.cpp</code></a></li>
+		</ul>
+		<a name="emboss"><h1>Sample: <code>emboss</code></h1><h1 class="subtitle">Creating an Emboss Effect</h1></a>
+		<p>Shows how to achieve an embossing effect.</p>
+		<img src="data/emboss.png"/>
+		<p>This example shows how to chain bitmap filters to create an embossing effect.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvRGBBitmapData</code></li>
+			<li><code>IlvFilterFlow</code></li>
+			<li><code>IlvBitmapFilter</code></li>
+			<li><code>IlvBitmap</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/emboss.cpp"><code>src/emboss.cpp</code></a></li>
+		</ul>
+		<a name="filtgraph"><h1>Sample: <code>filtgraph</code></h1><h1 class="subtitle">Using the IlvFilteredGraphic Class</h1></a>
+		<p>Shows how to use the the <code>IlvFilteredGraphic</code> class.</p>
+		<img src="data/filtgraph.png"/>
+		<p>This sample uses the <code>IlvFilteredGraphic</code> class to apply 
+        image processing effects to graphic objects.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvRGBBitmapData</code></li>
+			<li><code>IlvFilteredGraphic</code></li>
+			<li><code>IlvBitmap</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/filtgraph.cpp"><code>src/filtgraph.cpp</code></a></li>
+		</ul>
+		<a name="gold"><h1>Sample: <code>gold</code></h1><h1 class="subtitle">Creating a Gold Effect</h1></a>
+		<p>Shows how to use bitmap filters to create a gold effect.</p>
+		<img src="data/gold.png"/>
+		<p>This sample uses the Rogue Wave Views bitmap filters to create a gold effect on an image.<br/>
+	The filter uses a combination of two turbulences at various octaves and frequencies
+	to create the gold relief.<br/></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvRGBBitmapData</code></li>
+			<li><code>IlvFilterFlow</code></li>
+			<li><code>IlvBitmapFilter</code></li>
+			<li><code>IlvBitmap</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/gold.cpp"><code>src/gold.cpp</code></a></li>
+		</ul>
+		<a name="relief"><h1>Sample: <code>relief</code></h1><h1 class="subtitle">Creating a Relief Effect</h1></a>
+		<p>Shows how to use bitmap filters to create a relief effect.</p>
+		<img src="data/relief.png"/>
+		<p>This sample uses the Rogue Wave Views bitmap filters to create a relief effect on an image.<br/>
+	The filter blurs the input image, uses this as an height map, then applies lighting and
+        composes the result to the source image.
+	A drop shadow is also created.<br/></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvRGBBitmapData</code></li>
+			<li><code>IlvFilterFlow</code></li>
+			<li><code>IlvBitmapFilter</code></li>
+			<li><code>IlvBitmap</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/relief.cpp"><code>src/relief.cpp</code></a></li>
+		</ul>

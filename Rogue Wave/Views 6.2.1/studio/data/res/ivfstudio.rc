@@ -1,0 +1,19 @@
+/****************************************************************************
+                                 ivfstudio.rc
+              Rogue Wave Views Studio resources
+*****************************************************************************/
+
+
+ILVICON ICON DISCARDABLE "IVSTUDIO.ICO"
+
+
+///////////////////////////////////////////////////////////////////////////
+
+#include "winviews.rc"
+#include "ilvgadgt.rc"
+#include "ilvadvgdt.rc"
+#include "ilvedit.rc"
+#include "printing.rc"
+
+#include "foundation.rc"
+#include "script.rc"

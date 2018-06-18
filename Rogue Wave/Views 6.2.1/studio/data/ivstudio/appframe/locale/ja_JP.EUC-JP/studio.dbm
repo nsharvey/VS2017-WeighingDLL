@@ -1,0 +1,22 @@
+// IlvMessageDatabase 5 Fri May 12 01:33:27 GMT 2017
+// Language: ja_JP
+// Encoding: EUC-JP
+"&AppStuFormView" "ﾌｫｰﾑ ﾋﾞｭｰ"
+"&AppStuGrapherView" "ｸﾞﾗﾌｧｰ ﾋﾞｭｰ"
+"&AppStuHierView" "階層ﾋﾞｭｰ"
+"&AppStuListView" "ﾘｽﾄ ﾋﾞｭｰ"
+"&AppStuManagerView" "ﾏﾈｰｼﾞｬ ﾋﾞｭｰ"
+"&AppStuMatrixView" "ﾏﾄﾘｯｸｽ ﾋﾞｭｰ"
+"&AppStuProjectView" "ﾌﾟﾛｼﾞｪｸﾄ ﾋﾞｭｰ"
+"&AppStuSheetView" "ｼｰﾄ ﾋﾞｭｰ"
+"&AppStuTextView" "ﾃｷｽﾄ ﾋﾞｭｰ"
+"&AppStuTreeView" "ﾂﾘｰ ﾋﾞｭｰ"
+"&Appframe" "ｱﾌﾟﾘｹｰｼｮﾝ ﾌﾚｰﾑﾜｰｸ"
+"&Document" "文書"
+"&File" "ﾌｧｲﾙ"
+"&Folder1" "最初のﾌｫﾙﾀﾞ"
+"&Folder2" "2 番目のﾌｫﾙﾀﾞ"
+"&Project" "ﾌﾟﾛｼﾞｪｸﾄ"
+"&Title" "ﾀｲﾄﾙ"
+"&ViewOnThe" "ﾋﾞｭｰ"
+

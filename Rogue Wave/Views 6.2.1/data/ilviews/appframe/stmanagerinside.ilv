@@ -1,0 +1,17 @@
+// Ilv Version: 4.0
+// File generated: Wed Jan 02 15:49:15 2002
+// Creator class: IlvManagerOutput
+Palettes 3
+0 "gray" 32640 0 65025 "default" "fixed" 0 solid solid 0 0 0
+2 "gray" 0 32640 32640 "default" "fixed" 0 solid solid 2 0 0
+1 "gray" 65025 0 0 "default" "fixed" 0 solid solid 2 0 0
+IlvObjects 3
+1 { 0 0 IlvFilledEllipse 21 37 24 17 } 0
+1 { 1 1 IlvRectangle 11 25 19 26 } 0
+1 { 2 2 IlvEllipse 32 12 15 15 } 0
+Layers 2
+"" 4 0 
+"" 4 0 
+Views 1
+"v339" 1 0 0 1 0 0
+EOF

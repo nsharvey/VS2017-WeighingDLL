@@ -1,0 +1,76 @@
+// Ilv Version: 5.1
+// File generated: Tue Aug 28 10:22:37 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "tables"
+PathName "tables.ilv"
+Palettes 3
+"defaultGadget" 1 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+2 F "defaultBg" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 7
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 195 200 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&ok"  }   } 544 "ok"
+1
+1 "__ilvCallback" "apply"
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 280 200 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cancel"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+3 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliTreeSQLTablesGadget 5 30 150 162 F32 2 A A 0 0 0 0 20 1 1 1 1 1 0 V0 2
+{ IlvTreeGadgetItem 1 2 4 "root" 0
+ }  0   } 32 "treeSrc"
+0
+3 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvButton 160 70 40 25 F13 2 { IlvMessageItem 262145 4 16 4 "->"  }   } 544 "btnAdd"
+1
+1 "__ilvCallback" "bnAdd"
+0
+3 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvButton 160 115 40 25 F13 2 { IlvMessageItem 262145 4 16 4 "<-"  }   } 544 "btnDel"
+1
+1 "__ilvCallback" "bnDel"
+0
+3 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 205 30 155 162 F131 2 N N 0 0 0 0 0 4 0 0 V0 2 0 } 32 "listDest"
+0
+3 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IliDbOptionMenu 40 5 285 20 F1 2 3
+{ IlvMenuItem 65 2 4 "DbOptionMenu"  } 
+{ IlvMenuItem 1 2 4 "Option"  } 
+{ IlvMenuItem 1 2 4 "Menu"  }  0  18435 0  } 544 "owner"
+1
+1 "__ilvCallback" "onOwner"
+0
+Size 365 228
+GeometryHandlers
+1 100 0 365 0 365 0
+7 3 280 0 280  0 0 80 1  0 0 5 0
+ 3 195 0 195  0 0 80 0  0 0 90 0
+ 3 0 0 40  285 0 285 6  0 0 40 0
+ 3 0 0 5  0 0 150 2  210 0 210 0
+ 3 0 0 205  155 0 155 5  0 0 5 0
+ 3 0 0 160  0 0 40 3  165 0 165 0
+ 3 0 0 160  0 0 40 4  165 0 165 0
+1 100 0 228 0 228 0
+6 3 200 0 200  0 0 23 1  0 0 5 0
+ 3 200 0 200  0 0 23 0  0 0 5 0
+ 3 0 0 30  162 0 162 2  0 0 36 0
+ 3 0 0 30  162 0 162 5  0 0 36 0
+ 3 0 0 70  0 0 25 3  133 0 133 0
+ 3 0 0 115  0 0 25 4  88 0 88 0
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

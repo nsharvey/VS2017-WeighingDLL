@@ -1,0 +1,6 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{EF4DB034-1D63-11E8-96A2-F2B8772C9500}") = "gpath", "gpath.vcxproj", "{EF4D5F26-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Global
+EndGlobal

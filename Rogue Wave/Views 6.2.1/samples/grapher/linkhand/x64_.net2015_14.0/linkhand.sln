@@ -1,0 +1,6 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{2D8ED3DA-1D61-11E8-9326-21D9772C9500}") = "linkhand", "linkhand.vcxproj", "{2D8E94C4-1D61-11E8-9326-21D9772C9500}"
+EndProject
+Global
+EndGlobal

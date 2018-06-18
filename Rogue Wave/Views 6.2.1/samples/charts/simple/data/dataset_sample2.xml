@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE chartData SYSTEM 'file:///c://myapp/chartxml.dtd'> -->
+<chartData version="0.3">
+  <data>
+    <series id="DS_A" type="double">
+
+      <property name="period">6</property>
+      <valuesList>0.0,3.0,12.0,8.0,19.0,25.0,15.0,8.0,17.0,23.0</valuesList>
+
+    </series>
+    <series id="DS_B" type="double">
+      <valuesList>2.0,4.0,11.0,4.0,11.0,20.0,15.0,10.0,12.0,24.0</valuesList>
+    </series>
+    <series id="DS_C" type="double">
+      <valuesList>0.5,6.0,8.0,11.0,11.0,20.0,13.0,19.0,7.0,18.0</valuesList>
+    </series>
+  </data>
+  <data xSeries="X_DS_D">
+    <series id="X_DS_D" type="double">
+      <valuesList>0.0,2.0,4.0,6.0,8.0,10.0,12.0,14.0,16.0,18.0</valuesList>
+    </series>
+    <series id="DS_D" type="double">
+      <valuesList>15.0,12.0,6.0,3.0,11.0,16.0,9.0,28.0,19.0,7.0</valuesList>
+    </series>
+  </data>
+</chartData>

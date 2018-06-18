@@ -1,0 +1,32 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Gantt Chart - Samples: print</title>
+	</head>
+    <body>
+		<a name="print"><h1>Sample: <code>print</code></h1><h1 class="subtitle">Gantt Chart Printing</h1></a>
+		<p>Multiple Pages Gantt Chart Printing.</p>
+		<img src="data/print.png"/>
+		<p>This sample prints a gantt chart using Postcript or Windows printer. It uses a class called <code>GanttChartPrintingUtility</code>.<br/> Multiple pages printing is handled by this class. On each page, the gantt lines and scale are printed according to the part of the gantt chart which is supposed to be displayed.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvPSDevice</code></li>
+			<li><code>IlvWindowsDevice</code></li>
+			<li><code>IlvGanttChart</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/print.cpp"><code>src/print.cpp</code></a></li>
+			<li><a href="src/ganttprnt.cpp"><code>src/ganttprnt.cpp</code></a></li>
+			<li><a href="include/ganttprnt.h"><code>include/ganttprnt.h</code></a></li>
+		</ul>

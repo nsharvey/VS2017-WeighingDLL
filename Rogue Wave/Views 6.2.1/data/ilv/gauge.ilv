@@ -1,0 +1,23 @@
+// Ilv Version: 2.0
+// File generated: Tue Apr 26 17:59:44 1994
+//  IlvGadgetManagerOutput
+Palettes 4
+2  "defaultBg" "defaultFg" %helvetica-14-B 0 solid solid  0 0 0 
+1  "defaultBg" "defaultFg" %courier-12- 0 solid solid  0 0 0 
+3  "defaultBg" "defaultFg" %times-12- 0 solid solid  0 0 0 
+0  "defaultBg" "defaultFg" %helvetica-14- 0 solid solid  0 0 0 
+IlvObjects 13
+2 { 0 0 IlvLabel 10 83 "Min" } 0  0   
+2 { 1 0 IlvLabel 10 111 "Max" } 0  0   
+2 { 2 0 IlvLabel 10 139 "Value" } 0  0   
+2 { 3 1 IlvTextField 111 66 143 23 2 0 "" } 96 "min" "TextField"  320  1  5 2  
+2 { 4 1 IlvTextField 111 94 143 23 2 0 "" } 96 "max" "TextField"  320  1  5 2  
+2 { 5 1 IlvTextField 111 122 143 23 2 0 "" } 96 "value" "TextField"  320  1  5 2  
+2 { 6 1 IlvTextField 111 10 143 23 2 0 "" } 96 "name" "TextField"  320  1  5 2  
+2 { 7 1 IlvTextField 111 38 143 23 2 0 "" } 96 "callback" "TextField"  320  1  5 2  
+2 { 8 0 IlvLabel 10 55 "Callback" } 0  0   
+2 { 9 0 IlvLabel 10 27 "Name" } 0  0   
+2 { 10 2 IlvButton 7 279 60 30 2 Y "Apply"  } 64 "Button"  132 "apply" 1  5  
+2 { 11 2 IlvButton 194 279 60 30 2 Y "Close"  } 64 "Button"  196 "cancel" 1  5 1  5  
+2 { 12 3 IlvReliefLine 5 272 254 272 2 } 0  464  1  5 1  5 1  40 2  
+//Size 259 314

@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("7A02E67E-1D62-11E8-AB12-0BC9772C9500") = "radar", "radar.vcxproj", "7A02916A-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Global
+EndGlobal
+

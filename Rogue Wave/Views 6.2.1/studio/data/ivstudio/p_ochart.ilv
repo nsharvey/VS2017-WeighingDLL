@@ -1,0 +1,47 @@
+// Ilv Version: 3.1
+// File generated: Thu Nov 12 09:44:22 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "p_chart"
+PathName "/nfs/views-work/work.lim/studio/data/ivstudio/p_chart.ilv"
+Palettes 4
+3 "gray" "gold" "default" "fixed" 0 solid solid 0 0 0
+2 "gray" "blue" "default" "fixed" 0 solid solid 0 0 0
+1 "gray" "red" "default" "fixed" 0 solid solid 0 0 0
+0 "gray" "black" "default" "fixed" 0 solid solid 0 0 0
+IlvObjects 6
+3 { 0 0 IlvPolylineChart 3 49 4.51922 1.16708
+IlvChartDataYPoints 40
+30 15 4 21 34 19 32 25 6 7 28 21 26 11 8 1 6 39 12 29 2 35 32 1 38 15 4 21 26 35 32 1 22 15 20 5 2 19 24 25  } 64 "ChDragY"
+8
+3 { 1 1 IlvBarChart 4 64 7 101 18.473 5.125
+IlvChartDataYPoints 10
+6 5 0 7 8 7 6 3 0 5  } 64 "ChDragY"
+0
+3 { 2 1 IlvPolygonChart 3 255 4.52037 1.02564
+IlvChartDataYPoints 40
+6 39 4 13 34 11 32 25 14 7 12 37 26 27 8 25 22 23 20 5 34 35 16 33 22 39 36 21 34 3 16 1 38 39 4 13 10 11 8 9  } 64 "ChDragY"
+0
+3 { 3 2 IlvStairChart 3 204 4.51939 1
+IlvChartDataYPoints 40
+38 23 36 21 2 27 32 25 22 15 4 13 18 35 32 25 38 39 36 5 18 35 16 9 22 31 36 29 10 27 32 25 38 15 20 37 2 19 0 9  } 64 "ChDragY"
+0
+3 { 4 3 Ilv3dBarChart 8 8 13 151 17.2374 4.14682
+IlvChartDataYPoints 10
+0 5 6 5 8 5 2 3 8 7  } 64 "ChDragY"
+0
+3 { 5 2 IlvScatterChart 4 128 8 303 4.2439 0.864302
+IlvChartDataYPoints 40
+12 21 10 27 32 17 38 31 20 29 2 3 16 33 38 23 28 21 2 3 24 1 14 23 20 13 18 11 0 1 30 39 20 5 2 19 8 17 30 15  } 64 "ChDragY"
+0
+Size 184 312
+GeometryHandlers
+1 100 0 184 0 184 0
+6 3 0 0 3  176 0 176 0  0 0 5 0
+ 3 0 0 3  174 0 174 1  0 0 7 0
+ 3 0 0 5  171 0 171 4  0 0 8 0
+ 3 0 0 3  176 0 176 3  0 5 5 0
+ 3 0 0 3  176 0 176 2  0 0 5 0
+ 3 0 0 4  173 0 173 5  0 0 7 0
+1 100 0 312 0 312 0
+1 3 0 0 109  0 0 43 4  160 0 160 0
+EOF

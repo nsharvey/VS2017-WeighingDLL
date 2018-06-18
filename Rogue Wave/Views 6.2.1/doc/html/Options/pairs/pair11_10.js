@@ -1,0 +1,20 @@
+var pairs =
+{
+"creating":{"department":1}
+,"department":{"maximum":1,"finished":1}
+,"maximum":{"salary":1}
+,"salary":{"window":1,"department":1}
+,"window":{"going":1,"show":1,"look":1,"window":1,"data":1}
+,"going":{"create":1}
+,"create":{"department":1}
+,"show":{"maximum":1}
+,"finished":{"window":1}
+,"look":{"department":1}
+,"data":{"source":1}
+,"source":{"deptmaxsal_ds":1}
+,"deptmaxsal_ds":{"save":1}
+,"save":{"give":1}
+,"give":{"name":1}
+,"name":{"dpmaxsal.ilv":1}
+}
+;Search.control.loadWordPairs(pairs);

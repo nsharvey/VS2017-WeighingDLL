@@ -1,0 +1,75 @@
+/* This is the custom CSS file for the PV-WAVE documentation. */
+/*                         */
+
+/*   I changed the color definitions for links to match what we do on our
+       corporate website.  I had to add "a:visited:hover" to the default 
+       link definitions (Webworks didn't include it) to make sure the 
+       hover color was the same for both visited links and unvisited links.
+       This was proving quite difficult to diagnose as in my testing all of the
+       links were visited, so I wasn't seeing any change in color when I set
+       a color for "a:link:hover". */
+a:link:active  { color: rgb(0, 51, 102); text-decoration: none; }
+a:link:hover, a:visited:hover { color:red; text-decoration: underline; }
+a:link         { color: rgb(0, 51, 102); text-decoration: none;  }
+a:visited      { color: rgb(0, 51, 102); text-decoration: none; }
+
+
+td>pre.codetableL1
+{ 
+   font-size: small;
+   padding-left: 30px;
+   margin-left: 8px;
+} 
+
+
+.CellBody
+{
+   
+}
+
+div.CellListContL1>span.code
+{
+   font-size: small;
+}
+
+div.usage>span.Emphasis
+{
+   font-family: monospace;
+   font-style: italic;
+}
+
+div.pathUnix_inner
+{
+   font-family: monospace;
+}
+
+div.pathVMS_inner
+{
+   font-family: monospace;
+}
+
+div.pathWindows_inner
+{
+   font-family: monospace;
+}
+
+/* This is the customization for equation graphics. I use "lower" */
+/* instead of "EquationGraphic" because it was a legacy style and don't  */
+/*  have time to change all of them.                      */
+/*                         */
+
+img.lower
+{
+  vertical-align: middle;
+}
+
+table.Format_B div.CellHeading
+{
+   background-color: #FBE3CE;
+   margin-top: -0.4em;
+   margin-left: -0.6em;
+   margin-right: -0.6em;
+   margin-bottom: -0.4em;
+   padding-top: 0.4em;
+   padding-bottom: 0.4em;
+}

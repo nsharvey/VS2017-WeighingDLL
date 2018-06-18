@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Automatically Updating Scales</title><link rel="Prev" href="examples.76.05.html" title="Previous" /><link rel="Next" href="examples.76.07.html" title="Next" /><link rel="StyleSheet" href="css/examples.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/examples_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/UserManuals/examples.76.06.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="ppmpZZy5fHWtY2wQKbXsxwA" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/UserManuals/examples.76.06.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/ganttusrfrontcover.html#wwconnect_header">Gantt</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/examples.76.01.html#wwconnect_header">Using the Gantt Chart Through Examples</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Automatically Updating Scales</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww1008418" class="Heading1"><span></span>Automatically Updating Scales</div><div id="ww1008424" class="Body">To update a scale, use the virtual method <span class="MethodName"><a href="../RefMan/refcppgantt/classIlvGanttChart.html#a18d288f95e92d48b5f6feff79a944182">updateScale</a></span>. This member function is called when a new transformation is applied to a corresponding grapher view, that is, a zoom or a horizontal translation. You can set the <span class="code">redraw</span> parameter to <span class="code">IlFalse</span> to prevent the contents of the scale and grapher views from being refreshed.</div><div id="ww1005798" class="Body">In the <span class="code">month</span> example, the <span class="code">updateScale</span> method is redefined as follows:</div><div id="ww1006241" class="NormalCode">void</div><div id="ww1006242" class="NormalCode">MonthGanttChart::updateScale(IlvScale* scale, IlvBoolean redraw) const</div><div id="ww1006243" class="NormalCode">{</div><div id="ww1006244" class="NormalCode">    IlvContainer* container = getGadgetContainer();</div><div id="ww1006245" class="NormalCode">    IlvUShort count;</div><div id="ww1006246" class="NormalCode">&nbsp;</div><div id="ww1006247" class="NormalCode">    // Get index of the scale to be updated (0 if it is the left scale,</div><div id="ww1006248" class="NormalCode">    // 1 if it is the right scale)</div><div id="ww1006249" class="NormalCode">    IlvUShort hi = (IlvUShort)((scale == getScale(0)) ? 0 : 1);</div><div id="ww1006250" class="NormalCode">&nbsp;</div><div id="ww1006251" class="NormalCode">    // Get the labels to be displayed</div><div id="ww1006252" class="NormalCode">    char* labels[32];</div><div id="ww1006253" class="NormalCode">    computeScaleLabels(getShownStart(hi), getShownEnd(hi),</div><div id="ww1006254" class="NormalCode">                       getStep(hi), count, labels);</div><div id="ww1006255" class="NormalCode">&nbsp;</div><div id="ww1006256" class="NormalCode">    MONTHGANTTDATA arg;</div><div id="ww1006257" class="NormalCode">    arg.count  = count;</div><div id="ww1006258" class="NormalCode">    arg.labels = labels;</div><div id="ww1006259" class="NormalCode">    container-&gt;applyToObject(scale, SetScaleLabels, &amp;arg, redraw);</div><div id="ww1006260" class="NormalCode">&nbsp;</div><div id="ww1006261" class="NormalCode">    // Clean memory</div><div id="ww1006262" class="NormalCode">    for (IlvUShort i = 0; i &lt; count; ++i)</div><div id="ww1006263" class="NormalCode">        delete labels[i];</div><div id="ww1006239" class="LastNormalCode">}</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

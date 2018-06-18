@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("DC4CCEA4-1D61-11E8-866E-3591772C9500") = "base_feed", "base_feed.vcxproj", "DC4C8E44-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Global
+EndGlobal
+

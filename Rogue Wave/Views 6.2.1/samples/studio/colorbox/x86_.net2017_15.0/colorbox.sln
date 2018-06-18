@@ -1,0 +1,6 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{16F4B8F2-1D6F-11E8-9A26-E378772C9500}") = "colorbox", "colorbox.vcxproj", "{16F4614A-1D6F-11E8-9A26-E378772C9500}"
+EndProject
+Global
+EndGlobal

@@ -1,0 +1,11 @@
+panel "SQLApplicationProperties" {
+  visible false
+  commandName SQLApplicationProperties
+  x 300
+  y 250
+}
+ 
+panel "MainPanel" {
+  menuItem SQLApplicationProperties : "Data^Access";
+};
+

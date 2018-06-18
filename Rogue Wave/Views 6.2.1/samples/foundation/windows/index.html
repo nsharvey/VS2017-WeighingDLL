@@ -1,0 +1,100 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Foundations - Samples: windows</title>
+	</head>
+    <body>
+		<a name="ilvwin"><h1>Sample: <code>ilvwin</code></h1><h1 class="subtitle">Rogue Wave Views with Windows</h1></a>
+		<p>Integrate Windows components into a Rogue Wave Views application.</p>
+		<img src="data/ilvwin.png"/>
+		<p>This sample illustrates how to integrate Windows components into an
+	Rogue Wave Views application.<br/>
+	You can load files using the real Windows menus and change the 
+        zooming factor by moving the slider. The button lets you change the
+        view background.<br/>
+	You can drag and drop ILV files from the File Manager to the
+	Rogue Wave Views container window.</p>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/ilvwin.cpp"><code>src/ilvwin.cpp</code></a></li>
+		</ul>
+		<a name="winilv"><h1>Sample: <code>winilv</code></h1><h1 class="subtitle">Windows with Rogue Wave Views</h1></a>
+		<p>Integrate Rogue Wave Views components into a Windows application.</p>
+		<img src="data/winilv.png"/>
+		<p>This sample illustrates how to integrate Rogue Wave Views components in
+	a Windows application.
+	Here, the whole interface was built in a Windows Dialog.<br/>
+	You can load files using the real Windows menus and change the 
+        zooming factor by moving the slider. The button lets you change the
+        view background.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvContainer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/winilv.cpp"><code>src/winilv.cpp</code></a></li>
+		</ul>
+		<a name="metafile"><h1>Sample: <code>metafile</code></h1><h1 class="subtitle">Dumping a Metafile</h1></a>
+		<p>Convert Rogue Wave Views data files to a Windows metafile.</p>
+		<img src="data/metafile.png"/>
+		<p>This sample illustrates how to convert a Rogue Wave Views data file to a
+	Windows metafile.<br/>
+	The program is based on an extension of the
+	<code>IlvWindowsVirtualDevice</code> class.
+	To actually convert the graphic file, press the 'D' key when the 
+        focus is set in the container.
+	You may also use the following accelerators:
+	<ul>
+	    <li>'P' to dump into a placeable metafile.</li>
+	    <li>'E' to dump into an enhanced metafile
+		(only in 32 bits versions).</li>
+	    <li>'W' to dump into a Windows metafile.</li>
+	</ul></p>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/metafile.cpp"><code>src/metafile.cpp</code></a></li>
+		</ul>
+		<a name="ilvmdi"><h1>Sample: <code>ilvmdi</code></h1><h1 class="subtitle">IlvMDIChild Property</h1></a>
+		<p>Use of the <code>IlvMDIChild</code> property on Rogue Wave Views views.</p>
+		<img src="data/ilvmdi.png"/>
+		<p>This sample shows you how to use the <code>IlvMDIChild</code> property on
+	Rogue Wave Views views.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvView</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/ilvmdi.cpp"><code>src/ilvmdi.cpp</code></a></li>
+		</ul>
+		<a name="gdiplus"><h1>Sample: <code>gdiplus</code></h1><h1 class="subtitle">Using GDI+ Features</h1></a>
+		<p>This sample shows the GDI+ features used in Rogue Wave Views.</p>
+		<img src="data/gdiplus.png"/>
+		<p>This sample shows the GDI+ features used in Rogue Wave Views :
+	Transparency and Anti-aliasing. It allows you to change the
+	transparency of the displayed objects, as well as the
+	antialiasing mode used. Note that this sample use Rogue Wave Script
+	to perform the actions, and that the C++ part only load the
+	ILV file containing both the GUI and the script functions.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGadgetContainer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="data/guigdiplus.ilv"><code>data/guigdiplus.ilv</code></a></li>
+			<li><a href="data/gdiplus.ilv"><code>data/gdiplus.ilv</code></a></li>
+			<li><a href="src/gdiplus.cpp"><code>src/gdiplus.cpp</code></a></li>
+		</ul>

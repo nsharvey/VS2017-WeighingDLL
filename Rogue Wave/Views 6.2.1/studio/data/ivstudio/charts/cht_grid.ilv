@@ -1,0 +1,39 @@
+// Ilv Version: 3.1
+// File generated: Fri Oct 22 11:20:46 1999
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 9
+1 { 0 0 IlvToggle 12 54 256 19 F1 2 1 2 0 0 0 Y "&visible" } 32 "GridVisibility"
+0
+1 { 1 0 IlvMessageLabel 12 76 113 22 F8 0 25 16 4 "&MajorPalette"   } 32 "MajorPaletteMsg"
+0
+1 { 2 0 IlvMessageLabel 12 102 112 22 F8 0 25 16 4 "&MinorPalette"   } 32 "MinorPaletteMsg"
+0
+1 { 3 0 IlvButton 123 76 146 23 F9 2 1 16 4 "button"   } 32 "MajorPalette"
+0
+4 { 4 0 IlvFileSelectorField 123 102 146 23 F6 2 1 -1 0 "" } 96 "MinorPalette" "TextField"
+0
+4 { 5 0 IlvToggle 12 132 257 19 F1 2 1 2 0 0 0 Y "&DrawMajorStepsOnly" } 32 "DrawMajorStepsOnly"
+0
+4 { 6 0 IlvToggle 4 5 273 19 F1 2 1 2 0 0 0 Y "&UseGrid" } 32 "ScaleUseGrid"
+0
+4 { 7 0 IlvFrame 4 29 273 159 F8 0 25 16 4 "&GridDisplay"   } 32 "GridFrm"
+0
+4 { 8 0 IlvToggle 12 159 257 19 F1 2 1 2 0 0 0 Y "&DrawAbove" } 32 "GridDrawOrder"
+0
+Size 281 203
+GeometryHandlers
+1 100 0 281 0 281 0
+9 3 0 0 4  273 0 273 6  0 0 4 0
+ 3 0 0 12  256 0 256 0  0 0 13 0
+ 3 0 0 12  257 0 257 5  0 0 12 0
+ 3 0 0 12  112 0 112 2  0 0 157 0
+ 3 0 0 12  113 0 113 1  0 0 156 0
+ 3 123 0 123  0 0 146 3  0 0 12 0
+ 3 123 0 123  0 0 146 4  0 0 12 0
+ 3 0 0 4  273 0 273 7  0 0 4 0
+ 3 0 0 12  257 0 257 8  0 0 12 0
+1 100 0 203 0 203 0
+0
+EOF

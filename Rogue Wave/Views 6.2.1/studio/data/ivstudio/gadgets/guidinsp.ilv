@@ -1,0 +1,74 @@
+// Ilv Version: 5.1
+// File generated: Thu Sep 13 17:09:41 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "guidinsp"
+PathName "guidinsp.ilv"
+Palettes 2
+1 F "defaultBg" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 10
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 90 5 105 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647 } 32 "position"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 90 30 105 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647 } 32 "size"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 90 55 105 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647 } 32 "limit"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 90 80 105 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647 } 32 "weight"
+0
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvButton 25 110 85 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+0
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvButton 115 110 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 5 80 23 F268435469 0 { IlvMessageItem 262169 4 16 4 "&position"  }   } 0
+0
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 30 80 23 F268435469 0 { IlvMessageItem 262169 4 16 4 "&size"  }   } 0
+0
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 55 80 23 F268435469 0 { IlvMessageItem 262169 4 16 4 "&limit"  }   } 0
+0
+2 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 80 80 23 F268435469 0 { IlvMessageItem 262169 4 16 4 "&weight"  }   } 0
+0
+Size 200 138
+GeometryHandlers
+1 100 0 200 0 200 0
+6 3 0 0 90  105 0 105 0  0 0 5 0
+ 3 0 0 90  105 0 105 1  0 0 5 0
+ 3 0 0 90  105 0 105 2  0 0 5 0
+ 3 0 0 90  105 0 105 3  0 0 5 0
+ 3 115 0 115  0 0 80 5  0 0 5 0
+ 3 25 0 25  0 0 85 4  0 0 90 0
+1 100 0 138 0 138 0
+6 3 0 0 5  0 0 22 0  111 0 111 0
+ 3 0 0 30  0 0 22 1  86 0 86 0
+ 3 0 0 55  0 0 22 2  61 0 61 0
+ 3 0 0 80  0 0 22 3  36 0 36 0
+ 3 110 0 110  0 0 23 5  0 0 5 0
+ 3 110 0 110  0 0 23 4  0 0 5 0
+Layers 3
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

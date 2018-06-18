@@ -1,0 +1,4 @@
+Files: lens.cpp, lens.h
+This sample shows you how the IlvZoomCoordinateTransfomer class can be associated with a coordinate to 
+simulate a local zoom. In this sample, the transformer is associated with the abscissa coordinate of 
+a Cartesian chart.

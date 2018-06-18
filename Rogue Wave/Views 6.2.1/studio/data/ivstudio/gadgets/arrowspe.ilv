@@ -1,0 +1,53 @@
+// Ilv Version: 5.0
+// File generated: Fri Feb 08 14:26:06 2002
+// Creator class: IlvGadgetManagerOutput
+FileName "arrowspe"
+Palettes 1
+"IlvStToolBar" 0 F "defaultBg" "defaultFg" "normal" "%helvetica-12" 0 solid solid 0 0 0 65535 1
+IlvObjects 6
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 236 4 116 20 F1 2 4
+{ IlvMenuItem 65 2 4 "&right"  } 
+{ IlvMenuItem 1 2 4 "&left"  } 
+{ IlvMenuItem 1 2 4 "&top"  } 
+{ IlvMenuItem 1 2 4 "&bottom"  }  0  } 32 "ArrowDirection"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 6 3 231 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&alignment"  }   } 0
+0
+3 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 14 56 330 16 F1 2 1 2 0 0 0 Y "&autorepeat" } 32 "ButtonRepeat"
+6144 "ButtonPeriod" "position"
+3 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 14 79 217 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&period"  }   } 0
+0
+3 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 236 80 105 22 2 0 200 64 2 1
+0 IlvNumberField 236 80 93 22 F6 2 2 -1 0 "200" . , 6 0 50 10000  f 1 0 10 200 } 32 "ButtonPeriod"
+6144 "Button_1" "ButtonRepeat"
+3 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 4 30 348 83 F268435468 0 { IlvMessageItem 262169 4 16 4 "&autorepeat"  }   } 0
+0
+Size 355 117
+GeometryHandlers
+1 100 0 355 0 355 0
+6 3 236 0 236  0 0 105 4  0 0 14 0
+ 3 0 0 14  217 0 217 3  0 0 124 0
+ 3 236 0 236  0 0 116 0  0 0 3 0
+ 3 0 0 6  231 0 231 1  0 0 118 0
+ 3 0 0 4  348 0 348 5  0 0 3 0
+ 3 0 0 14  330 0 330 2  0 0 11 0
+1 100 0 117 0 117 0
+0
+Layers 4
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+EOF

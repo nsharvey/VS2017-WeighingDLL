@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Mechanism</title><link rel="Prev" href="styling.52.2.html" title="Previous" /><link rel="Next" href="styling.52.4.html" title="Next" /><link rel="StyleSheet" href="css/styling.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/styling_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/UserManuals/styling.52.3.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pN3vIaGUEp69tz1yfeZBCAoQ" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/UserManuals/styling.52.3.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/ctrusrfrontcover.html#wwconnect_header">Gadgets</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/ctrusrpart2.html#ww997005">Rogue Wave&nbsp;Views Gadgets</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/styling.52.1.html#wwconnect_header">Styling </a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Mechanism</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww113635" class="Heading1"><span></span>Mechanism</div><div id="ww113636" class="Body">The following steps describe how the styling of a Stylable object works:</div><div id="ww113637" class="Itemize"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span><img src="bullet.gif" alt="*" border="0" width="8" height="8" /></span></span>The application creates graphic objects by loading <span class="code">.ilv</span> files or by calling their constructors explicitly in C++ code. Both ways define the geometry and the graphical attributes of the objects.</div><div id="ww113638" class="Itemize"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span><img src="bullet.gif" alt="*" border="0" width="8" height="8" /></span></span>The application may create Style Sheets and attach them to Stylists.</div><div id="ww113639" class="Itemize"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span><img src="bullet.gif" alt="*" border="0" width="8" height="8" /></span></span>When a Stylable object is displayed, it applies a style by requesting graphical attributes to its Stylist and use them to draw itself, instead of its internal graphical attributes.</div><div id="ww114391" class="IndentedL1">The style of the object is built by looking in each Style Sheet of the Stylist, in turn. Then, if the Stylist has a parent, the same operation is performed at the upper level. This is recursively repeated until a Stylist has no parent anymore.</div><div id="ww113640" class="Body">Note that applying a style to a Stylable does not modify its internal graphical attributes. For instance, styling does not change the value returned by <span class="MethodName"><a href="../RefMan/refcppfoundation/classIlvSimpleGraphic.html#a092ba9302f398374a09ee36770d42b03">getBackground</a></span><span class="code">()</span>.</div><div id="ww113641" class="Body"><span class="bold">Limitation</span>:</div><div id="ww114039" class="Body">At the time of this writing, Rogue Wave Views does not allow you to modify the objects layout. Styling only allows you to customize graphical properties, not geometry.</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

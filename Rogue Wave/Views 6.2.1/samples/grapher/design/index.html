@@ -1,0 +1,52 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Grapher - Samples: design</title>
+	</head>
+    <body>
+		<a name="design"><h1>Sample: <code>design</code></h1><h1 class="subtitle">Small Electric Network Editor</h1></a>
+		<p>This sample shows how to subclass <code>IlvGrapherPin</code> to define connection
+	points on fixed-size graphic objects.</p>
+		<img src="data/design.png"/>
+		<p>
+	This sample implements a subclass of <code>IlvGrapherPin</code> that enables 
+	to define connection pins relatively to the bounding box of a graphic object.
+	Such connection pins are well suited for fixed-size graphic objects. In the 
+	context of this sample, we use these connection pins on small electric network 
+	elements that are represented by instances of the <code>IlvIcon</code> class. 
+	The GUI of this sample enables to switch between several editing modes:
+	</p>
+	<UL>
+	<LI> <b>Selection.</b> This mode is implemented by using the 
+	<code>IlvGraphSelectInteractor</code> class. </LI>
+	<LI> <b>Link creation.</b> This mode allows you to connect two elements with an instance
+	of the <code>IlvOneLinkImage</code> class.
+	</LI>
+	<LI> <b>Element Creation.</b> Once this mode is selected, you create elements by simply clicking
+	the working view.
+	</LI>
+	</UL></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGrapher</code></li>
+			<li><code>IlvIcon</code></li>
+			<li><code>IlvGrapherPin</code></li>
+			<li><code>IlvManagerViewInteractor</code></li>
+			<li><code>IlvGraphSelectInteractor</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/fixedpin.h"><code>include/fixedpin.h</code></a></li>
+			<li><a href="src/fixedpin.cpp"><code>src/fixedpin.cpp</code></a></li>
+			<li><a href="src/design.cpp"><code>src/design.cpp</code></a></li>
+		</ul>

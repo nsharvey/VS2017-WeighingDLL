@@ -1,0 +1,66 @@
+// Ilv Version: 3.1
+// File generated: Tue Dec 22 17:21:54 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "menuaspt"
+PathName "C:\\users\\noiret\\dev\\views.work\\studio\\data\\ivstudio\\inspectors\\menuaspt.ilv"
+Palettes 2
+1 "gray" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 13
+1 { 0 0 IlvOptionMenu 115 78 141 20 F1 2 3
+IlvMenuItem 65 2 4 "&left"  
+IlvMenuItem 1 2 4 "&center"  
+IlvMenuItem 1 2 4 "&right"   0  } 32 "AlignLabelItem"
+0
+1 { 1 1 IlvFrame 1 41 260 68 F8 0 25 16 4 "&Label"   } 0
+0
+1 { 2 0 IlvToggle 7 117 151 16 F1 2 1 2 0 0 0 Y "&Visible_label" } 32 "LabelItemVisible"
+0
+1 { 3 0 IlvMessageLabel 115 56 143 22 F8 0 25 16 4 "&alignment"   } 0
+0
+1 { 4 0 IlvNumberField 7 178 54 22 F6 2 2 -1 0 "1234543" . , 2 0 0 2147483647 } 32 "SpacingItem"
+0
+1 { 5 1 IlvFrame 161 111 100 95 F8 0 25 16 4 "&alignment"   } 0
+0
+1 { 6 0 IlvToggle 8 60 101 16 F1 2 1 2 0 0 0 Y "&opaque" } 32 "OpaqueLabelItem"
+0
+1 { 7 0 IlvToggle 7 138 151 16 F1 2 1 2 0 0 0 Y "&VisibleBitmap" } 32 "GaphicItemVisible"
+0
+1 { 8 0 IlvMessageLabel 7 155 80 22 F8 0 25 16 4 "&spacing"   } 0
+0
+2 { 9 0 IlvSelector -1 9
+0 IlvToggle 169 157 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 180 133 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 205 124 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 230 133 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 241 157 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 230 179 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 205 188 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 180 179 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 205 157 18 16 F1 2 1 2 1 0 0 B "noname" 
+ } 96 "AlignmentGadgetItem" "Selector"
+0
+2 { 10 0 IlvToggle 7 23 238 16 F1 2 1 2 0 0 0 Y "&checked" } 96 "MenuCheck" "Toggle"
+6144 "Button_3" "MenuRadio"
+3 { 11 0 IlvToggle 145 1 113 16 F1 2 1 2 0 0 0 Y "&radio" } 32 "MenuRadio"
+6144 "MenuCheck" "MenuToggle"
+3 { 12 0 IlvToggle 7 1 125 16 F1 2 1 2 0 0 0 Y "Toggle" } 32 "MenuToggle"
+6144 "MenuRadio" "sens"
+Size 266 207
+GeometryHandlers
+1 100 0 266 0 266 0
+12 3 0 0 115  141 0 141 0  0 0 10 0
+ 3 0 0 8  0 0 101 6  157 0 157 0
+ 3 161 0 161  0 0 100 5  0 0 5 0
+ 3 169 0 169  0 0 90 9  0 0 7 0
+ 3 0 0 7  0 0 54 4  205 0 205 0
+ 3 0 0 7  151 0 151 7  0 0 108 0
+ 3 0 0 7  151 0 151 2  0 0 108 0
+ 3 0 0 7  0 0 80 8  179 0 179 0
+ 3 0 0 1  260 0 260 1  0 0 5 0
+ 3 0 0 7  238 0 238 10  0 0 21 0
+ 3 0 0 145  113 0 113 11  0 0 8 0
+ 3 0 0 7  125 0 125 12  0 0 134 0
+1 100 0 207 0 207 0
+0
+EOF

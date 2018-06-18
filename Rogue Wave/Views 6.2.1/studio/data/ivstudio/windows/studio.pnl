@@ -1,0 +1,6 @@
+// Rogue Wave Views Studio Panel description file for Windows platforms
+
+panel "MainPanel" {
+    menuItem WindowsXPLook : "&mview", "&moptions" -before MotifLook;
+}
+

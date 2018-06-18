@@ -1,0 +1,14 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{2888BC2A-1D61-11E8-9326-21D9772C9500}") = "ivfstudio", "ivfstudio.vcxproj", "{28883A0C-1D61-11E8-9326-21D9772C9500}"
+EndProject
+Project("{28A968E4-1D61-11E8-9326-21D9772C9500}") = "ivstudio", "ivstudio.vcxproj", "{28883A0C-1D61-11E8-9326-21D9772C9500}"
+EndProject
+Project("{28CEAB9A-1D61-11E8-9326-21D9772C9500}") = "jsstudio", "jsstudio.vcxproj", "{28883A0C-1D61-11E8-9326-21D9772C9500}"
+EndProject
+Project("{28F4C528-1D61-11E8-9326-21D9772C9500}") = "prstudio", "prstudio.vcxproj", "{28883A0C-1D61-11E8-9326-21D9772C9500}"
+EndProject
+Project("{2920D8CA-1D61-11E8-9326-21D9772C9500}") = "chstudio", "chstudio.vcxproj", "{28883A0C-1D61-11E8-9326-21D9772C9500}"
+EndProject
+Global
+EndGlobal

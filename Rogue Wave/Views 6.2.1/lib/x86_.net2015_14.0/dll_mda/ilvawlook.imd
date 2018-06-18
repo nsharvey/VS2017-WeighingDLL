@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvawlook -->
+<module name="ilvawlook" version="6.2">
+<class name="IlvAbstractMatrix/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvArrowButton/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvFileSelectorField/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvHierarchicalSheet/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvMatrix/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvNotebook/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvOptionMenu/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvScrolledComboBox/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvScrolledGadget/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvSheet/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvSpinBox/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvStringList/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvText/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvTreeGadget/windows" rootClass="IlvObjectLFHandler"/>
+</module>

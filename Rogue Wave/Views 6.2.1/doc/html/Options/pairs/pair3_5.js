@@ -1,0 +1,25 @@
+var pairs =
+{
+"constructing":{"value":1}
+,"value":{"object":1,"specified":1,"ilivalue":1,"initial":1,"null":1}
+,"object":{"two":1}
+,"two":{"ways":1}
+,"ways":{"construct":1}
+,"construct":{"value":1}
+,"specified":{"initial":1}
+,"initial":{"value":1}
+,"ilivalue":{"initval":1,"stringval":1,"boolval":1}
+,"initval":{"ilivalue":1}
+,"stringval":{"good":1}
+,"good":{"morning":1}
+,"morning":{"constructed":1}
+,"constructed":{"specifying":1}
+,"specifying":{"data":1}
+,"data":{"type":1}
+,"type":{"explicitly":1}
+,"explicitly":{"ilivalue":1}
+,"boolval":{"(ilibooleantype)":1}
+,"(ilibooleantype)":{"case":1}
+,"case":{"value":1}
+}
+;Search.control.loadWordPairs(pairs);

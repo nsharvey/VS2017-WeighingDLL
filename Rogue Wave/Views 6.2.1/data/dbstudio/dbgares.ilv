@@ -1,0 +1,89 @@
+// Ilv Version: 5.1
+// File generated: Tue Sep 04 15:02:02 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "dbgares"
+PathName "C:\\ilog\\dataccess\\work\\data\\dbstudio\\dbgares.ilv"
+Palettes 5
+"defaultGadget" 4 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 0 F "gray" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+2 F "white" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+3 F "gray" "black" "small" "%arial-10-[Charset:0]" 0 solid solid 0 0 0 65535 1
+1 F "gray" "black" "bold" "%Tahoma-11-B[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 12
+0 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 121 115 22 F268435468 0 { IlvMessageItem 262153 4 16 4 "&insp_Name"  }   } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 5 115 22 F268435468 0 { IlvMessageItem 262153 4 16 4 "&dbchart_Ds"  }   } 0
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 53 115 22 F268435468 0 { IlvMessageItem 262153 4 16 4 "&insp_Identifier"  }   } 0
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 70 115 22 F268435468 0 { IlvMessageItem 262153 4 16 4 "&insp_Height"  }   } 0
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IliMemoryDataSource 49 49 24 24 1 14 3 0 IliMemoryTable 0 3 1 
+     8 "NAME" String 2 -1 1 -1 32 
+     16 0 8 0
+0
+ } 32 "%COLDSRES_MS"
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IliMemoryDataSource 55 24 24 24 1 14 3 -1 IliMemoryTable 0 4 1 
+     89 "COL" String 1 -1 1 213 "0" "&dbchart_Columns" 45 "%COLDSRES_MS" "NAME" "NAME" 
+     16 0 8 0
+0
+ } 32 "%COLRES_MS"
+0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliTableGadget 129 35 235 58 2 2067 "%COLRES_MS" 725466183 1 0 0 0 17 18 21 0 0 0 0 1 1 "white" A"normal" "%Tahoma-11-[Charset:0]"  } 32 "TGColRes"
+0
+1 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IliMemoryDataSource 29 5 24 24 1 14 3 0 IliMemoryTable 0 2 1 
+     8 "NAME" String 1 128 1 -1 32 
+     16 0 8 0
+0
+ } 32 "%DSRES_MS"
+0
+1 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliTableGadget 128 104 235 116 2 2067 "%COLDISP_MS" 1799208527 1 0 0 0 17 18 21 4 0 0 0 1 1 "white" A"normal" "%Tahoma-11-[Charset:0]"  } 32 "TGColDisp"
+0
+1 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IliMemoryDataSource 36 138 24 24 1 14 3 0 IliMemoryTable 0 2 1 
+     72 "NAME" String 1 -1 1 213 "&insp_DisplayedColumns" 45 "%COLDSRES_MS" "NAME" "NAME" 
+     16 0 8 0
+0
+ } 32 "%COLDISP_MS"
+0
+1 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 138 115 22 F268435468 0 { IlvMessageItem 262153 4 16 4 "&insp_Others"  }   } 0
+0
+1 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+4 IliScrolledComboBox 130 6 234 20 F806 2 1 -1 0 "" 0 4 0 19331 "%DSRES_MS" "NAME" "NAME" 0  } 32 "CBNDsRes"
+0
+Size 369 226
+GeometryHandlers
+1 100 0 369 0 369 0
+3 3 0 0 129  235 0 235 6  0 0 5 0
+ 3 0 0 128  235 0 235 8  0 0 6 0
+ 3 0 0 130  234 0 234 11  0 0 5 0
+1 100 0 226 0 226 0
+2 3 0 0 35  0 0 58 6  133 0 133 0
+ 3 0 0 104  116 0 116 8  0 0 6 0
+Layers 2
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

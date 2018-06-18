@@ -1,0 +1,28 @@
+/* XPM */
+static char *alheight_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 6 1",
+"+ c Black",
+"o c #FFFFFF",
+"  c None",
+"X c #FEFCFA",
+". c #000288",
+"O c #868986",
+/* pixels */
+" ...............",
+"  XXX  XXX  XXX ",
+"  oO+  oo+  oO+ ",
+"  oO+  oO+  oO+ ",
+"  oO+  oO   oO+ ",
+"  oO+   OO  oO+ ",
+"  oO+  O    o   ",
+"  oO+    O    O ",
+"  oO+  O    O   ",
+"  oO+    O    + ",
+"  oO+  OO+  oO+ ",
+"  oO+  oO+  oO+ ",
+"  oO+  oO+  oO+ ",
+"  oO+  oO+  oO+ ",
+"  o++  o++  o++ ",
+" ..............."
+};

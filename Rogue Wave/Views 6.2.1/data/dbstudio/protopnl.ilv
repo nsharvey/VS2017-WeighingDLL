@@ -1,0 +1,86 @@
+// Ilv Version: 3.0
+// File generated: Thu Nov 20 13:24:10 1997
+// Creator class: IlvGadgetManagerOutput
+FileName "protopnl"
+PathName "protopnl.ilv"
+Palettes 4
+3 "gray" "black" "button" "StockedDefaultGui" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+1 "gray" "black" "bold" "%MS Sans Serif-8-B" 0 solid solid 0 0 0
+2 "white" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+IlvObjects 13
+1 { 0 0 IlvSwTableComboBox 110 5 252 20 F7 2 1 -1 0 "" 3971 "DS_MS" "NAME" "NAME" 11 0 1  ""  } 32 "CBNds"
+0
+1 { 1 0 IlvSwTableComboBox 110 36 252 20 F7 2 1 -1 0 "" 3971 "COL_MS" "NAME" "NAME" 11 0 1  ""  } 32 "CBNkey"
+0
+1 { 2 0 IlvSwMemoryDataSource 147 199 24 24 1 14 3 0 IlvSwMemoryTable 0 3 2 
+     8 "NUM" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 -1 32 
+     0 0 0 0
+0
+ } 32 "COL_MS"
+0
+1 { 3 0 IlvSwMemoryDataSource 191 198 24 24 1 14 3 0 IlvSwMemoryTable 0 3 2 
+     8 "NUM" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 -1 32 
+     0 0 0 0
+0
+ } 32 "DS_MS"
+0
+1 { 4 0 IlvMessageLabel 5 5 100 22 0 "&hdr_DataSource" 1 } 0
+0
+1 { 5 0 IlvMessageLabel 5 35 100 22 0 "&dlg_ColumnKey" 1 } 32 "TXTkey"
+0
+1 { 6 0 IlvSwMemoryDataSource 105 197 24 24 1 14 3 0 IlvSwMemoryTable 0 5 4 
+     72 "KEY" String 1 -1 1 82 "&dlg_Key" 32 
+     72 "COL" String 2 -1 1 82 "&hdr_Column" 61 "COL_MS" "NAME" "NAME" 
+     72 "MODEL" String 3 -1 1 82 "&dlg_Prototype" 61 "MODEL_MS" "NAME" "NAME" 
+     72 "VAR" String 4 -1 1 85 "&dlg_Variable" 61 "VAR_MS" "NAME" "NAME" 
+     0 0 0 0
+0
+ } 32 "VARS_MS"
+0
+1 { 7 1 IlvSwTableGadget 5 85 357 130 2 2075 "VARS_MS"  6 1799208543 1 0 0 0 17 18 21 4 0 0 0 1 1 "white" A"normal" "%MS Sans Serif-8-"  } 32 "TG"
+0
+1 { 8 3 IlvButton 5 222 75 24 F1 2 16 Y "&apply" } 544 "&apply"
+1
+1 "__ilvCallback" "apply"
+0
+1 { 9 3 IlvButton 287 222 75 24 F1 2 16 Y "&close" } 544 "&close"
+1
+1 "__ilvCallback" "cancel"
+0
+1 { 10 0 IlvSwMemoryDataSource 222 201 24 24 1 14 3 0 IlvSwMemoryTable 0 3 2 
+     8 "NUM" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 -1 32 
+     0 0 0 0
+0
+ } 32 "MODEL_MS"
+0
+1 { 11 0 IlvSwMemoryDataSource 247 201 24 24 1 14 3 0 IlvSwMemoryTable 0 3 2 
+     8 "NUM" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 -1 32 
+     0 0 0 0
+0
+ } 32 "VAR_MS"
+0
+1 { 12 0 IlvSwDbToggle 110 63 252 16 F1 2 1 2 0 0 0 Y "&wrk_UsesCurrentRow" 2051 0  } 32 "CHKCurrentRow"
+0
+Size 367 251
+GeometryHandlers
+1 100 0 367 0 367 0
+6 3 0 0 110  252 0 252 0  0 0 5 0
+ 3 0 0 110  252 0 252 1  0 0 5 0
+ 3 0 0 5  357 0 357 7  0 0 5 0
+ 3 287 0 287  0 0 75 9  0 0 5 0
+ 3 0 0 5  0 0 75 8  287 0 287 0
+ 3 0 0 110  252 0 252 12  0 0 5 0
+1 100 0 251 0 251 0
+4 3 0 0 85  130 0 130 7  0 0 36 0
+ 3 222 0 222  0 0 24 9  0 0 5 0
+ 3 222 0 222  0 0 24 8  0 0 5 0
+ 3 0 0 63  0 0 16 12  172 0 172 0
+Script "JvScript" Inline ""
+
+ScriptEnd
+EOF

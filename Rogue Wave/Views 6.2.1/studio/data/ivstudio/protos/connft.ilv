@@ -1,0 +1,79 @@
+// Ilv Version: 5.2
+// File generated: Thu Apr 10 16:28:55 2008
+// Creator class: IlvGadgetManagerOutput
+FileName "connft"
+PathName "connft.ilv"
+Palettes 2
+1 F "defaultBg" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 9
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 10 288 222 22 F6 2 1 -1 0 "" } 32 "fromfield"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 236 288 215 22 F6 2 1 -1 0 "" } 32 "tofield"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 10 223 22 F268435468 0 { IlvMessageItem 262169 4 16 4 ""  }   } 32 "fromlabel"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvColoredToggle 10 318 343 16 F1 2 1 2 0 0 0 Y "&IlvMsgStProto207" 65535 0 0  } 544 "filter"
+1
+1 "__ilvCallback" "filtertype"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 238 10 218 22 F268435468 0 { IlvMessageItem 262169 4 16 4 ""  }   } 32 "tolabel"
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 281 337 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&ok"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 371 337 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cancel"  }   } 544 "cancel"
+1
+1 "__ilvCallback" "cancel"
+0
+1 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 10 38 222 245 F131 2 N N 0 0 0 0 0 4 0 0 V0 2 0 } 544 "fromlist"
+1
+1 "__ilvSCallback" "selectOut"
+0
+1 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 236 38 215 245 F131 2 N N 0 0 0 0 0 4 0 0 V0 2 0 } 544 "tolist"
+1
+1 "__ilvSCallback" "selectIn"
+0
+Size 462 370
+GeometryHandlers
+2 50 0 238 0 238 0
+ 50 0 223 238 223 238
+6 3 0 0 10  223 0 223 2  0 0 5 0
+ 3 0 0 10  222 0 222 0  0 0 6 0
+ 3 371 0 371  0 0 80 6  0 0 10 1
+ 3 281 0 281  0 0 80 5  0 0 100 1
+ 3 0 0 10  343 0 343 3  0 0 108 1
+ 3 0 0 10  222 0 222 7  0 1 6 0
+3 3 0 0 0  218 0 218 4  0 0 5 1
+ 3 0 -2 -2  215 0 215 1  0 4 10 1
+ 3 0 -2 -2  215 0 215 8  0 4 10 1
+1 100 0 370 0 370 0
+9 3 0 0 10  0 0 22 2  338 0 338 0
+ 3 0 0 10  0 0 22 4  338 0 338 0
+ 3 288 0 288  0 0 22 0  0 0 60 0
+ 3 288 0 288  0 0 22 1  0 0 60 0
+ 3 318 0 318  0 0 16 3  0 0 36 0
+ 3 337 0 337  0 0 23 6  0 0 10 0
+ 3 337 0 337  0 0 23 5  0 0 10 0
+ 3 0 0 38  245 0 245 7  0 0 87 0
+ 3 0 0 38  245 0 245 8  0 0 87 0
+EOF

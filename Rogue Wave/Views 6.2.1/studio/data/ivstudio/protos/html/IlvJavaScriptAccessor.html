@@ -1,0 +1,63 @@
+<html><head><title>JavaScript Behavior</title></head>
+<body bgcolor=#ffffff>
+<h3><FONT color=#b61840> Script </FONT></h3>
+The Script accessor (<a href="../../refman/html/IlvJavaScriptAccessor.html"><code>IlvJavaScriptAccessor</code></a>) class lets you program the behavior of your prototypes using the scripting language interpreter included in Prototypes Studio.<p>
+</a><a name="948419">
+A script accessor has two parameters that are the names of two script functions:<p>
+</a><ul><a name="948420">
+<li>The <code>set</code> function is called when the value of the accessor is changed. It must be of the form:
+</a><p></ul><p><pre><code>function SetX(obj, newval)
+</code><code>{
+</code><code>   ...
+</code><code>}
+</code>
+</pre><p><dl>
+<a name="948426">
+<dt><dd> The <code>obj</code> argument is the prototype associated with the accessor. The <code>newval</code> argument is the new value that has been assigned to the accessor.
+</a><p></dl>
+<ul><a name="948427">
+<li>The <code>get</code> function is called when the value of the accessor is queried. It must be of the form:
+</a><p></ul><p><pre><code>function GetX(obj)
+</code><code>{
+</code><code>   ...
+</code><code>   return(val);
+</code><code>}
+</code></pre><p><dl>
+<a name="948433">
+<dt><dd> The <code>obj</code> argument is the prototype associated with the accessor. The function must return a value, which becomes the new value of the accessor.
+</a><p></dl>
+<a name="948434">
+In the functions associated with a script accessor, you can access and modify any prototype attribute or a prototype node. Either one of the two function names of the script accessors can be none, in which case no function is called.<p>
+</a><a name="948435">
+The functions associated with a script accessor can be edited using the Prototype Studio Script Editor. They will be saved in a file with an <code>.ijs</code> suffix in the same directory and with the same file name as the prototype. Otherwise, they are saved in the prototype file or its library file.  <p>
+<b>Naming conflicts can occur if you load several prototype instances with the same function names in the same panel. Therefore, it is a good idea to prefix all the prototype script function names with the prototype name they belong to. For instance, in the samples.thermo prototype, if the Temp value has a Script accessor, its functions should be called SamplesThermoTempGet() and SamplesThermoTempSet().</b>
+<p><p>
+</a><a name="948439">
+<h4><FONT color=#b61840>Parameters</FONT></h4>
+</a><ul><a name="948440">
+<li>Script function (set): The name of the script function to execute when the value of this accessor is changed.
+</a><p><a name="948441">
+<li>Script function (get): The name of the script function to execute when the value of this accessor is queried.
+</a><p><a name="948442">
+<li>The type is determined by the value returned from the <code>set</code> function or taken as a parameter by the <code>get</code> function. It can, therefore, change dynamically.
+</a><p></ul><a name="948443">
+<h4><FONT color=#b61840> Examples</FONT></h4>
+</a><a name="948444">
+The following function can be used to perform an action similar to a Condition accessor:<p>
+</a><p><pre>function SetTemperature(obj, temperature)
+{
+    if(temperature &gt; obj. threshold) {
+         obj.gauge.foreground = "red";
+    } else {
+         obj.gauge.foreground = "blue";
+    }
+}
+function GetTemperature(obj)
+{
+    return obj.gauge.foreground;
+}
+</pre><p><a name="948471">
+</a>
+</body>
+</html>
+<hr><a href=displayb>Back</a>

@@ -1,0 +1,64 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Application Framework - Samples: manager</title>
+	</head>
+    <body>
+		<a name="manager"><h1>Sample: <code>manager</code></h1><h1 class="subtitle">Basic Views Manager Editor</h1></a>
+		<p>Example of a basic Views manager editor.</p>
+		<img src="data/manager.png"/>
+		<p>
+		This simple application shows you how to open and
+		edit Rogue Wave Views managers using the Application Framework
+		library. It allows you to move and reshape 
+		the graphic objects of a Views manager displayed in a 
+		manager view. 
+		It provides commands
+		that perform different kinds of alignments on selected objects,
+		or that give the size of the active selected object
+		to a group of selected objects.
+		</p>
+		<p>
+		The way the events that occur on the view are managed and
+		sent to the document is typical of Application Framework mechanisms.
+		<ul>
+		<li>the event is tracked on the manager view by 
+		     overriding a method of the select interactor
+		     (see <code>IlvSelectInteractor</code>).</li>
+		<li>a command specific to the event is built. This command 
+		    can undo or redo the changes.</li>
+		<li>the new command is given to the associated
+		    document that notifies the other views of the changes.
+		    The document stores the command so that it will be able
+		    to undo the changes or redo them later.</li>
+		</ul>
+		</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDvManagerDocument</code></li>
+			<li><code>IlvDvManagerView</code></li>
+			<li><code>IlvSelectInteractor</code></li>
+			<li><code>IlvDvCommand</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/ManagerDocument.h"><code>include/ManagerDocument.h</code></a></li>
+			<li><a href="include/ManagerView.h"><code>include/ManagerView.h</code></a></li>
+			<li><a href="include/mgercmd.h"><code>include/mgercmd.h</code></a></li>
+			<li><a href="include/selinter.h"><code>include/selinter.h</code></a></li>
+			<li><a href="src/manager.cpp"><code>src/manager.cpp</code></a></li>
+			<li><a href="src/ManagerDocument.cpp"><code>src/ManagerDocument.cpp</code></a></li>
+			<li><a href="src/ManagerView.cpp"><code>src/ManagerView.cpp</code></a></li>
+			<li><a href="src/mgercmd.cpp"><code>src/mgercmd.cpp</code></a></li>
+			<li><a href="src/selinter.cpp"><code>src/selinter.cpp</code></a></li>
+		</ul>

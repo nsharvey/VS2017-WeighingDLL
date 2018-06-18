@@ -1,0 +1,6 @@
+Files: cartesian.cpp, cartesian.h
+This sample shows how to create a simple Cartesian chart using the IlvCartesianChart 
+class. Once created, the chart is used to display three data sets using a standard 
+displayer: IlvPolylineChartDisplayer.
+
+

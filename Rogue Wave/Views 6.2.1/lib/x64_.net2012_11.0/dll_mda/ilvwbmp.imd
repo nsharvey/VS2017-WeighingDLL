@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Rogue Wave Views WBMP Dynamic Module Descriptor -->
+<module name="ilvwbmp" version="6.2">
+  <class name="IlvWBMPStreamer" rootClass="IlvBitmapStreamer" version="4.0">
+    <format description="WAP Bitmap">
+      <signature>0x00 0x00</signature>
+      <extension>wbmp</extension>
+    </format>
+  </class>
+</module>

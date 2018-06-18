@@ -1,0 +1,76 @@
+## ----------------------------------------------------------- -*- Makefile -*-
+##
+## This makefile compiles the RDBMS specific examples supplied with 
+## Rogue Wave DB Link
+##
+## It is included by dblink/$(SYSTEM)/Makefile
+## For more informations, take a look at that Makefile and to the
+## file $(EXSRCDIR)/Makefile.dbl
+##
+## ----------------------------------------------------------------------------
+
+# =============================================================================
+# Informix
+# =============================================================================
+# -----------------------------
+# SQL3 features of IUS
+inf9obj.$(OEXT): $(EXSRCDIR)/inf9obj.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/inf9obj.cpp
+
+inf9obj$(EEXT): inf9obj.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) inf9obj.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# =============================================================================
+# Oracle
+# =============================================================================
+# -----------------------------
+# Stored procedure call : parameter bindings
+oraproc.$(OEXT): $(EXSRCDIR)/oraproc.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/oraproc.cpp
+
+oraproc$(EEXT): oraproc.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) oraproc.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Object features
+ora8obj.$(OEXT): $(EXSRCDIR)/ora8obj.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/ora8obj.cpp
+
+ora8obj$(EEXT): ora8obj.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) ora8obj.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# ----------------------------
+# Stored procedure returning a cursor
+oracurs.$(OEXT): $(EXSRCDIR)/oracurs.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/oracurs.cpp
+
+oracurs$(EEXT): oracurs.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) oracurs.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# =============================================================================
+# Sybase
+# =============================================================================
+# -----------------------------
+# Compute clause : Transac SQL specific
+sybcomp.$(OEXT): $(EXSRCDIR)/sybcomp.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/sybcomp.cpp
+
+sybcomp$(EEXT): sybcomp.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) sybcomp.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Stored procedure call : parameter bindings
+sybproc.$(OEXT): $(EXSRCDIR)/sybproc.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/sybproc.cpp
+
+sybproc$(EEXT): sybproc.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) sybproc.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Trigger effect : print & raiserror
+sybtrig.$(OEXT): $(EXSRCDIR)/sybtrig.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/sybtrig.cpp
+
+sybtrig$(EEXT): sybtrig.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) ildutil.$(OEXT) sybtrig.$(OEXT) $(LDFLAGS)
+

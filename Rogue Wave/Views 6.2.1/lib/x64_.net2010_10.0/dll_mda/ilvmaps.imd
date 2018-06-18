@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<!-- Rogue Wave Views Maps Dynamic Module Descriptor -->
+<module name="ilvmaps" version="6.2">
+  <class name="IlvTiledLayer" 
+	 baseClass="IlvManagerLayer" version="2.0"/>
+  <class name="IlvTileLoader" 
+ 	 baseClass="" version="2.0"/>
+  <class name="IlvTileController" 
+	 baseClass="" version="2.0"/>
+  <class name="IlvTileCache" 
+	 baseClass="" version="2.0"/>
+  <class name="IlvMapText" 
+ 	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvMapPoint" 
+	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvMapMultiPoint"
+	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvMapGeometryCollection"
+	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvMapMultiCurve"
+	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvMapCircle"
+	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvMapArcSegment"
+	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvMapLinearSegment"
+	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvMapLineString"
+	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvMapCurveString"
+	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvMapArcString"
+	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvMapRaster"
+	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvMapPolygon"
+	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvMapMultiArea"
+	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvMapImage"
+	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvMapSegmentRing"
+	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvMapCircularRing"
+	 baseClass="IlvMapGeometry" version="2.0"/>
+  <class name="IlvIconPointRenderer"
+	 baseClass="IlvFeatureRenderer" version="2.0"/>
+  <class name="IlvDefaultTextRenderer"
+	 baseClass="IlvFeatureRenderer" version="2.0"/>
+  <class name="IlvDefaultRasterRenderer"
+	 baseClass="IlvFeatureRenderer" version="2.0"/>
+  <class name="IlvDefaultPointRenderer"
+	 baseClass="IlvFeatureRenderer" version="2.0"/>
+  <class name="IlvDefaultImageRenderer"
+	 baseClass="IlvFeatureRenderer" version="2.0"/>
+  <class name="IlvDefaultFeatureRenderer"
+	 baseClass="IlvFeatureRenderer" version="2.0"/>
+  <class name="IlvDefaultCurveRenderer"
+	 baseClass="IlvFeatureRenderer" version="2.0"/>
+  <class name="IlvDefaultAreaRenderer"
+	 baseClass="IlvFeatureRenderer" version="2.0"/>
+  <class name="IlvCADRGLayer"
+	 baseClass="IlvManagerLayer" version="2.0"/>
+  <class name="IlvDTEDLayer"
+	 baseClass="IlvManagerLayer" version="2.0"/>
+  <class name="IlvIntervalColorModel"
+	 baseClass="IlvMapColorModel" version="2.0"/>
+  <class name="IlvMapLineRenderingStyle"
+	 baseClass="IlvMapRenderingStyle" version="2.0"/>
+  <class name="IlvMapAreaRenderingStyle"
+	 baseClass="IlvMapRenderingStyle" version="2.0"/>
+ <class name="IlvMapDefaultNeedle"
+	 baseClass="IlvGraphic" version="2.0"/>
+ <class name="IlvMapCompass"
+	 baseClass="IlvGraphic" version="2.0"/>
+ <class name="IlvMapCoordViewer"
+	 baseClass="IlvGraphic" version="2.0"/>
+ <class name="IlvMapDefaultScaleBar"
+	 baseClass="IlvGraphic" version="2.0"/>
+ <class name="IlvMapScale"
+	 baseClass="IlvGraphic" version="2.0"/>
+<class name="IlvMapGeneralPath"
+	 baseClass="IlvGraphic" version="2.0"/>
+<class name="IlvMapLabel"
+	 baseClass="IlvGraphic" version="2.0"/>
+<class name="IlvAlbersEqualAreaProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvAzimuthalEquidistantProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvCassiniProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvCylindricalEqualAreaProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvEquidistantCylindricalProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvGeographicProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvGnomonicProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvLambertAzimuthalEqualAreaProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvLambertConformalConicProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvLambertEqualAreaConicProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvMercatorProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvMillerCylindricalProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvOrthographicProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvPolyconicProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvStereographicProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvTransverseMercatorProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvUniversalTransverseMercatorProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvUniversalPolarStereographicProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvFrenchLambertProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvUnknownProjection"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvHorizontalDatum"
+	baseClass="IlvProjection" version="2.0"/>
+<class name="IlvHorizontalShiftDatum"
+	baseClass="IlvProjection" version="2.0"/>
+
+<class name="IlvMapTileLoader"
+	baseClass="IlvTileLoader" version="2.0"/>
+
+<class name="IlvGeoTIFFLayer"
+	baseClass="IlvTiledLayer" version="2.0"/>
+<class name="IIlvGeoTIFFReader"
+	baseClass="IlvMapFeatureIterator" version="2.0"/>
+<class name="IlvGeoTIFFTileLoader"
+	baseClass="IlvMapTileLoader" version="2.0"/>
+
+<class name="IlvImageLayer"
+	baseClass="IlvTiledLayer" version="2.0"/>
+<class name="IlvImageReader"
+	baseClass="IlvMapFeatureIterator" version="2.0"/>
+<class name="IlvImageTileLoader"
+	baseClass="IlvMapTileLoader" version="2.0"/>
+
+<class name="IlvShapeFileIndex"
+	baseClass="" version="2.0"/>
+<class name="IlvShapeFileLayer"
+	baseClass="IlvTiledLayer" version="2.0"/>
+<class name="IlvShapeSpatialIndex"
+	baseClass="" version="2.0"/>
+<class name="IlvShapeFileTileLoader"
+	baseClass="IlvMapTileLoader" version="2.0"/>
+
+</module>
+
+

@@ -1,0 +1,127 @@
+// Ilv Version: 5.0
+// File generated: Fri Nov 30 16:21:48 2001
+// Creator class: IlvGadgetManagerOutput
+FileName "ginspjs"
+Palettes 2
+"IlvStToolBar" 0 F "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0 65535 1
+"IlvStText" 1 F "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0 65535 0
+IlvObjects 19
+6 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 2 19 41 20 F6 1 2 -1 0 "" __ __ 2 0 -2147483648 2147483647 } 544 "objX"
+1
+1 "__ilvCallback" "objX"
+4096 "objInt"
+6 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 48 19 41 20 F6 1 2 -1 0 "" __ __ 2 0 -2147483648 2147483647 } 544 "objY"
+1
+1 "__ilvCallback" "objY"
+0
+6 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 94 19 39 20 F6 1 2 -1 0 "" __ __ 2 0 -2147483648 2147483647 } 544 "objW"
+1
+1 "__ilvCallback" "objW"
+0
+6 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 138 19 39 20 F6 1 2 -1 0 "" __ __ 2 0 -2147483648 2147483647 } 544 "objH"
+1
+1 "__ilvCallback" "objH"
+0
+6 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 291 19 97 20 F6 1 1 -1 0 "" } 544 "objName"
+1
+1 "__ilvCallback" "objName"
+0
+6 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 394 19 92 20 F6 1 1 -1 0 "" } 544 "objCb"
+1
+1 "__ilvCallback" "objCb"
+0
+6 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 2 3 41 14 F268435468 0 { IlvMessageItem 262145 4 16 4 "&x"  }   } 0
+0
+6 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 48 3 41 14 F268435468 0 { IlvMessageItem 262145 4 16 4 "&y"  }   } 0
+0
+6 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 94 3 39 14 F268435468 0 { IlvMessageItem 262145 4 16 4 "&w"  }   } 0
+0
+6 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 138 3 39 14 F268435468 0 { IlvMessageItem 262145 4 16 4 "&h"  }   } 0
+0
+6 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 291 3 97 14 F268435468 0 { IlvMessageItem 262145 4 16 4 "&name"  }   } 0
+0
+6 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 394 3 92 14 F268435468 0 { IlvMessageItem 262145 4 16 4 "&callback"  }   } 0
+0
+6 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 182 3 49 14 F268435468 0 { IlvMessageItem 262145 4 16 4 "&right"  }   } 0
+0
+6 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 182 19 49 20 F6 1 2 -1 0 "" __ __ 2 0 -2147483648 2147483647 } 544 "objRight"
+1
+1 "__ilvCallback" "objRight"
+0
+6 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 236 3 49 14 F268435468 0 { IlvMessageItem 262145 4 16 4 "&bottom"  }   } 0
+0
+6 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 236 19 49 20 F6 1 2 -1 0 "" __ __ 2 0 -2147483648 2147483647 } 544 "objBottom"
+1
+1 "__ilvCallback" "objBottom"
+0
+6 { 16 1 IlvReliefLine 0 1 514 1 1 } 0
+0
+6 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 491 21 18 13 F1 2 1 16 0 0 0 B "noname" } 544 "jsCb"
+1
+1 "__ilvCallback" "jsCb"
+20480 "objCb"
+6 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 491 3 18 14 F268435468 0 { IlvMessageItem 262145 4 16 4 "&is"  }   } 0
+0
+Size 515 45
+GeometryHandlers
+3 0 0 288 0 288 0
+ 100 50 103 288 103 288
+ 100 70 123 391 123 391
+15 3 0 0 2  0 0 41 0  471 0 471 2
+ 3 0 0 2  0 0 41 6  471 0 471 2
+ 3 0 0 48  0 0 41 1  425 0 425 2
+ 3 0 0 48  0 0 41 7  425 0 425 2
+ 3 0 0 94  0 0 39 2  381 0 381 2
+ 3 0 0 94  0 0 39 8  381 0 381 2
+ 3 0 0 138  0 0 39 3  337 0 337 2
+ 3 0 0 182  0 0 49 13  283 0 283 2
+ 3 0 0 236  0 0 49 15  229 0 229 2
+ 3 0 0 236  0 0 49 14  229 0 229 2
+ 3 0 0 182  0 0 49 12  283 0 283 2
+ 3 0 0 138  0 0 39 9  337 0 337 2
+ 3 0 0 0  514 0 514 16  0 0 0 2
+ 3 491 0 491  0 0 18 17  0 0 5 2
+ 3 491 0 491  0 0 18 18  0 0 5 2
+2 3 0 0 3  97 0 97 4  0 3 3 1
+ 3 0 0 3  97 0 97 10  0 3 3 1
+2 3 0 0 3  92 0 92 5  0 0 28 2
+ 3 0 0 3  92 0 92 11  0 0 28 2
+1 100 0 45 0 45 0
+0
+EOF

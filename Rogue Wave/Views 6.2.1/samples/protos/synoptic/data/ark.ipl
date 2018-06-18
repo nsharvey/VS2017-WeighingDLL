@@ -1,0 +1,691 @@
+// Rogue Wave Views Prototype Library File
+// Rogue Wave Views Version: 3.10
+// Date: Thu Jan 21 18:29:53 1999
+Library: arkola
+SingleFile: true
+machine
+Container
+Producer
+Mixer
+Factory
+IlvProtoLibraryBlocks
+IlvProtoLibraryBlock producer.ivp
+// Ilog Views Group Version 1.0
+IlvPrototype producer
+    accessors {
+        IlvNodeAccessor String Name machine_2.Name
+        IlvNodeAccessor String Icon machine_2.Icon
+        IlvExportOutputAccessor Boolean doRepair machine_2.doRepair
+        IlvNodeAccessor Boolean Broken machine_2.Broken
+        IlvNodeAccessor Float Rate IlvSlider.value
+        IlvValueAccessor Float Level
+        IlvTriggerAccessor Float Level doLevel Level/Capacity
+        IlvFillAccessor (RP) Float doLevel fill filler 0
+        IlvValueAccessor Float Capacity
+        IlvCallbackAccessor Float doRefill refill Generic Capacity
+    }
+    values {
+        String Name = Machine
+        Boolean Broken = false
+        Float Capacity = 100
+        Float Level = 50
+        Float Rate = 1
+    }
+    nodes {
+        IlvGraphicNode IlvLine "T" 0 0
+        IlvGraphicNode IlvLine_2 "T" 0 1
+        IlvGraphicNode IlvSlider "T" 0 2
+        IlvGraphicNode fill "T" 0 3
+        IlvGraphicNode filler "T" 0 4
+        IlvSubGroupNode "" 
+        IlvProtoInstance machine machine_2
+            values {
+                Int x = 103
+                Int y = 201
+            }
+        ;
+        IlvGraphicNode refillButton "" 0 5
+        IlvGraphicNode IlvFilledRectangle "" 0 6
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock producer.ilv
+// Ilv Version: 3.1
+// File generated: Thu Jan 21 15:15:35 1999
+// Creator class: IlvGraphOutput
+Palettes 5
+3 "Grey40" "Navy Blue" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+4 "antiquewhite3" "Light Blue" "fixed" 0 solid solid 0 0 0
+"IlvStText" 1 "gray" "black" "normal" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+0 "Grey40" "light blue" "%MS Sans Serif-11-" 0 solid solid 2 0 0
+2 "Grey40" "Dim Gray" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 7
+1 2 { 0 0 IlvLine 104 176 104 6 } 0
+1 2 { 1 0 IlvLine 301 176 301 7 } 0
+2 2 { 2 1 IlvSlider 187 180 108 19 F1 2 0 100 1 10 1 10 } 0
+0 2 { 3 2 IlvPolygon 4
+104 10 105 175 300 175 301 9 } 0
+0 2 { 4 3 IlvPolygon 4
+105 175 300 175 300 92 104 92 } 0
+5 2 { 5 1 IlvButton 108 178 73 23 F9 2 1 16 4 "Refill"   } 0
+0 2 { 6 4 IlvFilledRectangle 103 171 199 80 } 0
+Layers 6
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+Views 0
+EOF
+IlvProtoLibraryBlock pipe.ivp
+// Ilog Views Group Version 1.0
+IlvPrototype pipe
+    accessors {
+        IlvValueAccessor Float Input
+        IlvOutputAccessor Float Input
+    }
+    nodes {
+        IlvGraphicNode IlvPolyline "" 0 0
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock pipe.ilv
+// Ilv Version: 3.1
+// File generated: Wed Jan 20 11:26:55 1999
+// Creator class: IlvGraphOutput
+Palettes 1
+0 "Grey40" "Pale Green" "%MS Sans Serif-11-" 0 solid solid 3 0 0
+IlvObjects 1
+1 2 { 0 0 IlvPolyline 3
+105 52 142 214 315 235 } 0
+Layers 2
+"" 0
+"" 0
+Views 0
+EOF
+IlvProtoLibraryBlock mixer.ivp
+// Ilog Views Group Version 1.0
+IlvPrototype mixer
+    accessors {
+        IlvValueAccessor Float Input1
+        IlvValueAccessor Float Output
+        IlvOutputAccessor Float Output
+    }
+    nodes {
+        IlvGraphicNode "" "" 0 0
+        IlvGraphicNode IlvPolygon_2 "" 0 1
+        IlvGraphicNode "" "" 0 2
+        IlvGraphicNode "" "" 0 3
+        IlvGraphicNode "" "" 0 4
+        IlvGraphicNode IlvLine_2 "" 0 5
+        IlvGraphicNode "" "" 0 6
+        IlvGraphicNode "" "" 0 7
+        IlvGraphicNode "" "" 0 8
+        IlvGraphicNode "" "" 0 9
+        IlvGraphicNode "" "" 0 10
+        IlvGraphicNode "" "" 0 11
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock mixer.ilv
+// Ilv Version: 3.1
+// File generated: Thu Jan 21 14:52:50 1999
+// Creator class: IlvGraphOutput
+Palettes 8
+7 48830 48830 48830 "Sea Green" "default" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+1 "Grey40" "Navy Blue" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+3 "antiquewhite3" "Light Blue" "fixed" 0 solid solid 0 0 0
+5 "gray" "Light Blue" "large" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+"IlvStText" 6 "gray" "black" "normal" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+4 "Grey40" "light blue" "%MS Sans Serif-11-" 0 solid solid 2 0 0
+2 "Grey40" "light blue" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+0 "Grey40" "Dim Gray" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 12
+1 2 { 0 0 IlvPolygon 4
+292 257 293 422 488 422 489 256 } 0
+1 2 { 1 1 IlvPolygon 4
+293 422 488 422 488 339 292 339 } 0
+1 2 { 2 2 IlvZoomableTransparentIcon 0 0 "ivstudio/icons/icztrans.pbm" F0.6875 0 0 0.546875 436 379 } 0
+1 2 { 3 3 IlvFilledRectangle 292 419 199 63 } 0
+1 2 { 4 4 IlvLine 292 480 292 253 } 0
+1 2 { 5 4 IlvLine 489 481 489 254 } 0
+2 2 { 6 5 IlvMessageLabel 299 390 115 22 F8 0 25 16 4 "Producer"   } 384
+2 2 { 7 6 IlvSlider 343 453 143 19 F1 2 0 100 1 10 1 10 } 0
+2 2 { 8 6 IlvToggle 295 454 49 17 F1 2 1 2 0 0 0 Y "On" } 0
+3 2 { 9 7 IlvFilledEllipse 455 423 25 24 } 0
+3 2 { 10 6 IlvButton 374 424 64 23 F9 2 1 16 4 "Repair"   } 0
+3 2 { 11 6 IlvButton 296 424 64 23 F9 2 1 16 4 "Refill"   } 0
+Layers 4
+"" 0
+"" 0
+"" 0
+"" 0
+Views 0
+EOF
+IlvProtoLibraryBlock mixer2.ivp
+// Ilog Views Group Version 1.0
+IlvPrototype mixer2
+    accessors {
+        IlvNodeAccessor String Name IlvMessageLabel.label
+        IlvNodeAccessor String Icon IlvZoomableTransparentIcon.bitmap
+        IlvValueAccessor Boolean Broken
+        IlvLoopbackAccessor Boolean Broken doRepair
+        IlvConditionAccessor Boolean Broken == true IlvFilledEllipse.foreground "\"Red\"" "\"Sea Green\""
+        IlvValueAccessor Boolean Running
+        IlvNodeAccessor Float Rate IlvSlider.value
+        IlvValueAccessor Float Level
+        IlvLoopbackAccessor Float Level doRefill
+        IlvTriggerAccessor Float Level doLevel Level/Capacity
+        IlvFillAccessor (RP) Float doLevel IlvPolygon IlvPolygon_2 0
+        IlvValueAccessor Float Capacity
+        IlvCallbackAccessor Float doRefill refill Generic Capacity
+        IlvCallbackAccessor Boolean doRepair repair Generic true
+        IlvValueAccessor Float Output
+        IlvOutputAccessor Float Output
+        IlvTriggerAccessor Float doOutput Level Level-Rate
+        IlvTriggerAccessor Float doOutput Output Rate
+    }
+    values {
+        String Name = Mixer
+        Boolean Broken = false
+        Float Capacity = 100
+        Float Level = 50
+        Float Rate = 1
+        String Icon = ivstudio/icons/icztrans.pbm
+    }
+    nodes {
+        IlvGraphicNode IlvZoomableTransparentIcon "" 0 0
+        IlvGraphicNode IlvFilledRectangle "" 0 1
+        IlvGraphicNode IlvMessageLabel "" 0 2
+        IlvGraphicNode IlvSlider "" 0 3
+        IlvGraphicNode IlvToggle "" 0 4
+        IlvGraphicNode IlvFilledEllipse "" 0 5
+        IlvGraphicNode repair "" 0 6
+        IlvGraphicNode IlvPolygon "" 0 7
+        IlvGraphicNode IlvPolygon_2 "" 0 8
+        IlvGraphicNode "" "" 0 9
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock mixer2.ilv
+// Ilv Version: 3.1
+// File generated: Thu Jan 21 14:27:27 1999
+// Creator class: IlvGraphOutput
+Palettes 8
+4 48830 48830 48830 "Sea Green" "default" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+6 "Grey40" "Navy Blue" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+1 "antiquewhite3" "Light Blue" "fixed" 0 solid solid 0 0 0
+7 48830 48830 48830 "Light Blue" "default" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+"IlvStText" 3 "gray" "black" "normal" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+2 "gray" "Black" "large" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+0 "Grey40" "Black" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+5 "Grey40" "Dim Gray" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 10
+4 2 { 0 0 IlvZoomableTransparentIcon 0 0 "ivstudio/icons/icztrans.pbm" F0.6875 0 0 0.546875 332 124 } 0
+0 2 { 1 1 IlvFilledRectangle 301 36 111 223 } 0
+2 2 { 2 2 IlvMessageLabel 310 74 96 22 F8 0 25 16 4 "Mixer"   } 384
+2 2 { 3 3 IlvSlider 307 198 101 19 F1 2 0 100 1 10 1 10 } 0
+2 2 { 4 3 IlvToggle 308 44 49 17 F1 2 1 2 0 0 0 Y "On" } 0
+3 2 { 5 4 IlvFilledEllipse 380 227 25 24 } 0
+3 2 { 6 3 IlvButton 308 227 64 23 F9 2 1 16 4 "Repair"   } 0
+0 2 { 7 5 IlvPolygon 4
+239 37 240 259 300 259 301 36 } 0
+0 2 { 8 6 IlvPolygon 4
+240 259 300 259 300 147 239 147 } 0
+4 2 { 9 7 IlvRectangle 236 35 64 223 } 0
+Layers 5
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+Views 0
+EOF
+IlvProtoLibraryBlock consumer.ivp
+// Ilog Views Group Version 1.0
+IlvPrototype consumer
+    accessors {
+        IlvNodeAccessor String Name IlvMessageLabel.label
+        IlvNodeAccessor String Icon IlvZoomableTransparentIcon.bitmap
+        IlvValueAccessor Boolean Broken
+        IlvLoopbackAccessor Boolean Broken doRepair
+        IlvConditionAccessor Boolean Broken == true IlvFilledEllipse.foreground "\"Red\"" "\"Sea Green\""
+        IlvValueAccessor Boolean Running
+        IlvNodeAccessor Float Rate IlvSlider.value
+        IlvValueAccessor Float Level
+        IlvLoopbackAccessor Float Level doRefill
+        IlvTriggerAccessor Float Level doLevel Level/Capacity
+        IlvFillAccessor (RP) Float doLevel IlvPolygon IlvPolygon_2 0
+        IlvValueAccessor Float Capacity
+        IlvCallbackAccessor Float doRefill refill Generic Capacity
+        IlvCallbackAccessor Boolean doRepair repair Generic true
+        IlvValueAccessor Float Output
+        IlvOutputAccessor Float Output
+        IlvTriggerAccessor Float doOutput Level Level-Rate
+        IlvTriggerAccessor Float doOutput Output Rate
+    }
+    values {
+        String Name = Consumer
+        Boolean Broken = false
+        Float Capacity = 100
+        Float Level = 50
+        Float Rate = 1
+        String Icon = ivstudio/icons/icztrans.pbm
+    }
+    nodes {
+        IlvGraphicNode IlvZoomableTransparentIcon "" 0 0
+        IlvGraphicNode IlvFilledRectangle "" 0 1
+        IlvGraphicNode IlvMessageLabel "" 0 2
+        IlvGraphicNode IlvSlider "" 0 3
+        IlvGraphicNode IlvToggle "" 0 4
+        IlvGraphicNode IlvPolygon "" 0 5
+        IlvGraphicNode IlvPolygon_2 "" 0 6
+        IlvGraphicNode IlvRectangle "" 0 7
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock consumer.ilv
+// Ilv Version: 3.1
+// File generated: Thu Jan 21 14:26:52 1999
+// Creator class: IlvGraphOutput
+Palettes 7
+5 "Grey40" "Navy Blue" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+1 "antiquewhite3" "Light Blue" "fixed" 0 solid solid 0 0 0
+6 48830 48830 48830 "Light Blue" "default" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+"IlvStText" 3 "gray" "black" "normal" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+2 "gray" "Black" "large" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+0 "Grey40" "Black" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+4 "Grey40" "Dim Gray" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 8
+4 2 { 0 0 IlvZoomableTransparentIcon 0 0 "ivstudio/icons/icztrans.pbm" F0.6875 0 0 0.546875 332 124 } 0
+0 2 { 1 1 IlvFilledRectangle 301 36 111 223 } 0
+2 2 { 2 2 IlvMessageLabel 310 74 96 22 F8 0 25 16 4 "Consumer"   } 384
+2 2 { 3 3 IlvSlider 307 198 101 19 F1 2 0 100 1 10 1 10 } 0
+2 2 { 4 3 IlvToggle 308 44 49 17 F1 2 1 2 0 0 0 Y "On" } 0
+0 2 { 5 4 IlvPolygon 4
+239 37 240 259 300 259 301 36 } 0
+0 2 { 6 5 IlvPolygon 4
+240 259 300 259 300 147 239 147 } 0
+4 2 { 7 6 IlvRectangle 236 35 64 223 } 0
+Layers 5
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+Views 0
+EOF
+IlvProtoLibraryBlock machine.ivp
+// Ilog Views Group Version 1.0
+IlvPrototype machine
+    accessors {
+        IlvNodeAccessor String Name title.label
+        IlvOutputAccessor String Name
+        IlvNodeAccessor String Icon icon.bitmap
+        IlvValueAccessor Boolean Broken
+        IlvOutputAccessor Boolean Broken
+        IlvConditionAccessor Boolean Broken == true onLabel.foreground "\"Red\"" "\"Sea Green\""
+        IlvLoopbackAccessor Boolean Running doRunning
+        IlvValueAccessor Boolean Running
+        IlvOutputAccessor Boolean Running
+        IlvCallbackAccessor (R) Boolean Repair repairButton Generic true
+        IlvCallbackAccessor (RP) Boolean doRunning onButton Generic onButton.state
+    }
+    values {
+        String Name = Machine
+        Boolean Broken = false
+        Float Capacity = 100
+        Float Level = 50
+        Float Rate = 1
+    }
+    nodes {
+        IlvGraphicNode icon "T" 0 0
+        IlvGraphicNode background "T" 0 1
+        IlvGraphicNode title "T" 0 2
+        IlvGraphicNode onButton "T" 0 3
+        IlvGraphicNode onLabel "T" 0 4
+        IlvGraphicNode repairButton "T" 0 5
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock machine.ilv
+// Ilv Version: 3.1
+// File generated: Thu Jan 21 18:29:53 1999
+// Creator class: IlvGraphOutput
+Palettes 5
+"IlvStText" 3 "gray" "black" "normal" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+4 48830 48830 48830 "Sea Green" "default" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+2 "lightgray" "black" "large" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid dashdot 0 0 0
+0 "Grey40" "Black" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+1 "antiquewhite3" "Light Blue" "fixed" 0 solid solid 0 0 0
+IlvObjects 6
+4 2 { 0 0 IlvZoomableTransparentIcon 0 0 "ivstudio/icons/icztrans.pbm" F0.6875 0 0 0.546875 248 159 } 0
+1 2 { 1 1 IlvFilledRectangle 104 154 199 80 } 0
+2 2 { 2 2 IlvMessageLabel 117 165 115 22 F8 0 25 16 4 "Machine"   } 384
+2 2 { 3 3 IlvToggle 114 206 49 17 F1 2 1 2 0 0 0 Y "On" } 0
+3 2 { 4 4 IlvFilledEllipse 267 203 25 24 } 0
+3 2 { 5 3 IlvButton 186 204 64 23 F9 2 1 16 4 "Repair"   } 0
+Layers 5
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+Views 0
+EOF
+IlvProtoLibraryBlock Container.ivp
+// Ilog Views Group Version 1.0
+IlvPrototype Container
+    accessors {
+        IlvPrototypeAccessor Float expMachine arkola.machine
+        IlvValueAccessor Float Level
+        IlvTriggerAccessor Float Level doLevel Level/Capacity
+        IlvOutputAccessor Float Level
+        IlvFillAccessor (RP) Float doLevel fill filler 0
+        IlvValueAccessor Float Capacity
+        IlvOutputAccessor Float Capacity
+        IlvValueAccessor Float Output
+        IlvOutputAccessor Float Output
+    }
+    values {
+        String Name = Container
+        Boolean Broken = false
+        Float Capacity = 100
+        Float Level = 10
+        Float Rate = 1
+        Float Output = 1
+    }
+    nodes {
+        IlvGraphicNode IlvLine "T" 0 0
+        IlvGraphicNode IlvLine_2 "T" 0 1
+        IlvGraphicNode fill "T" 0 2
+        IlvGraphicNode filler "T" 0 3
+        IlvGraphicNode background "T" 0 4
+        IlvGraphicNode title "T" 0 5
+        IlvGraphicNode onButton "T" 0 6
+        IlvGraphicNode onLabel "T" 0 7
+        IlvGraphicNode repairButton "T" 0 8
+        IlvGraphicNode icon "T" 0 9
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock Container.ilv
+// Ilv Version: 3.1
+// File generated: Thu Jan 21 18:29:53 1999
+// Creator class: IlvGraphOutput
+Palettes 8
+"IlvStText" 5 "gray" "black" "normal" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+0 "Grey40" "light blue" "%MS Sans Serif-11-" 0 solid solid 2 0 0
+6 48830 48830 48830 "Sea Green" "default" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+4 "lightgray" "black" "large" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid dashdot 0 0 0
+1 "Grey40" "Dim Gray" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+2 "Grey40" "Navy Blue" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+7 "Grey40" "Black" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+3 "antiquewhite3" "Light Blue" "fixed" 0 solid solid 0 0 0
+IlvObjects 10
+1 2 { 0 0 IlvLine 104 203 104 33 } 0
+1 2 { 1 0 IlvLine 301 203 301 34 } 0
+0 2 { 2 1 IlvPolygon 4
+104 37 105 202 300 202 301 36 } 0
+0 2 { 3 2 IlvPolygon 4
+105 202 300 202 300 185 104 185 } 0
+6 2 { 4 3 IlvFilledRectangle 103 201 199 80 } 0
+6 2 { 5 4 IlvMessageLabel 116 212 115 22 F8 0 25 16 4 "Container"   } 384
+6 2 { 6 5 IlvToggle 113 253 49 17 F1 2 1 2 0 0 0 Y "On" } 0
+6 2 { 7 6 IlvFilledEllipse 266 250 25 24 } 0
+6 2 { 8 5 IlvButton 185 251 64 23 F9 2 1 16 4 "Repair"   } 0
+6 2 { 9 7 IlvZoomableTransparentIcon 0 0 "ivstudio/icons/icztrans.pbm" F0.6875 0 0 0.546875 247 206 } 0
+Layers 7
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+Views 0
+EOF
+IlvProtoLibraryBlock Producer.ivp
+// Ilog Views Group Version 1.0
+IlvPrototype Producer
+    accessors {
+        IlvPrototypeAccessor Any expContainer arkola.Container
+        IlvLoopbackAccessor Float Rate Rate
+        IlvValueAccessor Float Rate
+        IlvCallbackAccessor Float Rate rateSlider Generic rateSlider.value
+        IlvValueAccessor Float Cost
+        IlvOutputAccessor Float Cost
+        IlvCallbackAccessor Boolean Refill refillButton Generic visible
+    }
+    values {
+        String Name = Producer
+        Float Level = 100
+        Float Rate = 3
+        Float Cost = 10
+    }
+    nodes {
+        IlvGraphicNode fill "T" 0 0
+        IlvGraphicNode filler "T" 0 1
+        IlvGraphicNode IlvLine "T" 0 2
+        IlvGraphicNode IlvLine_2 "T" 0 3
+        IlvGraphicNode background "T" 0 4
+        IlvGraphicNode title "T" 0 5
+        IlvGraphicNode onButton "T" 0 6
+        IlvGraphicNode onLabel "T" 0 7
+        IlvGraphicNode repairButton "T" 0 8
+        IlvGraphicNode icon "T" 0 9
+        IlvGraphicNode refillButton "" 0 10
+        IlvGraphicNode rateSlider "T" 0 11
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock Producer.ilv
+// Ilv Version: 3.1
+// File generated: Thu Jan 21 18:29:53 1999
+// Creator class: IlvGraphOutput
+Palettes 8
+"IlvStText" 5 "gray" "black" "normal" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+2 "Grey40" "light blue" "%MS Sans Serif-11-" 0 solid solid 2 0 0
+6 48830 48830 48830 "Sea Green" "default" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+4 "lightgray" "black" "large" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid dashdot 0 0 0
+0 "Grey40" "Dim Gray" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+1 "Grey40" "Navy Blue" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+7 "Grey40" "Black" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+3 "antiquewhite3" "Light Blue" "fixed" 0 solid solid 0 0 0
+IlvObjects 12
+1 2 { 0 0 IlvPolygon 4
+162 247 163 412 358 412 359 246 } 0
+1 2 { 1 1 IlvPolygon 4
+163 412 358 412 359 246 162 247 } 0
+1 2 { 2 2 IlvLine 162 413 162 243 } 0
+1 2 { 3 2 IlvLine 359 413 359 244 } 0
+6 2 { 4 3 IlvFilledRectangle 161 411 199 115 } 0
+6 2 { 5 4 IlvMessageLabel 174 422 115 22 F8 0 25 16 4 "Producer"   } 384
+6 2 { 6 5 IlvToggle 169 498 49 17 F1 2 1 2 0 0 0 Y "On" } 0
+6 2 { 7 6 IlvFilledEllipse 322 495 25 24 } 0
+6 2 { 8 5 IlvButton 241 496 64 23 F9 2 1 16 4 "Repair"   } 0
+6 2 { 9 7 IlvZoomableTransparentIcon 0 0 "ivstudio/icons/icztrans.pbm" F0.6875 0 0 0.546875 305 416 } 0
+7 2 { 10 5 IlvButton 167 460 73 23 F9 2 1 16 4 "Refill"   } 0
+7 2 { 11 5 IlvSlider 247 462 108 19 F1 2 0 100 13 10 1 10 } 0
+Layers 8
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+Views 0
+EOF
+IlvProtoLibraryBlock Mixer.ivp
+// Ilog Views Group Version 1.0
+IlvPrototype Mixer
+    accessors {
+        IlvPrototypeAccessor Any expContainer arkola.Container
+        IlvLoopbackAccessor Float Rate Rate
+        IlvValueAccessor Float Rate
+        IlvCallbackAccessor Float Rate rateSlider Generic rateSlider.value
+        IlvValueAccessor Float Production
+        IlvOutputAccessor Float Production
+    }
+    values {
+        String Name = Mixer
+        Float Level = 0
+        Float Rate = 3
+        Float Cost = 10
+        Float Production = 10
+        Float Capacity = 10
+    }
+    nodes {
+        IlvGraphicNode fill "T" 0 0
+        IlvGraphicNode filler "T" 0 1
+        IlvGraphicNode background "T" 0 2
+        IlvGraphicNode title "T" 0 3
+        IlvGraphicNode onButton "T" 0 4
+        IlvGraphicNode onLabel "T" 0 5
+        IlvGraphicNode repairButton "T" 0 6
+        IlvGraphicNode icon "T" 0 7
+        IlvGraphicNode rateSlider "T" 0 8
+        IlvGraphicNode "" "" 0 9
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock Mixer.ilv
+// Ilv Version: 3.1
+// File generated: Thu Jan 21 18:29:53 1999
+// Creator class: IlvGraphOutput
+Palettes 8
+"IlvStText" 4 "gray" "black" "normal" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+5 48830 48830 48830 "Sea Green" "default" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+7 48830 48830 48830 "Light Blue" "default" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 2 0 0
+3 "lightgray" "black" "large" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid dashdot 0 0 0
+0 "Grey40" "Dim Gray" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+1 "Grey40" "Navy Blue" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+6 "Grey40" "Black" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+2 "antiquewhite3" "Light Blue" "fixed" 0 solid solid 0 0 0
+IlvObjects 10
+1 2 { 0 0 IlvPolygon 4
+480 247 481 496 557 496 558 246 } 0
+1 2 { 1 1 IlvPolygon 4
+481 496 557 496 557 496 481 496 } 0
+6 2 { 2 2 IlvFilledRectangle 360 245 121 250 } 0
+6 2 { 3 3 IlvMessageLabel 363 251 115 22 F8 0 25 16 4 "Mixer"   } 384
+6 2 { 4 4 IlvToggle 370 428 49 17 F1 2 1 2 0 0 0 Y "On" } 0
+6 2 { 5 5 IlvFilledEllipse 448 464 25 24 } 0
+6 2 { 6 4 IlvButton 367 465 64 23 F9 2 1 16 4 "Repair"   } 0
+6 2 { 7 6 IlvZoomableTransparentIcon 0 0 "ivstudio/icons/icztrans.pbm" F0.6875 0 0 0.546875 425 286 } 0
+7 2 { 8 4 IlvSlider 366 393 108 19 F1 2 0 100 13 10 1 10 } 0
+7 2 { 9 7 IlvRectangle 481 246 79 249 } 0
+Layers 8
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+Views 0
+EOF
+IlvProtoLibraryBlock Factory.ivp
+// Ilog Views Group Version 1.0
+IlvPrototype Factory
+    accessors {
+        IlvPrototypeAccessor Any expContainer arkola.Container
+        IlvValueAccessor Int RandBreak
+        IlvOutputAccessor Int RandBreak
+        IlvExportOutputAccessor UInt Action clock_2.clock.seconds
+
+        IlvNodeAccessor String Level levelLabel.label
+        IlvNodeAccessor UInt Running clock_2.running
+    }
+    values {
+        String Name = Factory
+        Float Level = 1000
+        Float Rate = 3
+        Float Cost = 10
+        Float Capacity = 1e+06
+        Int RandBreak = 1
+        Boolean Running = false
+    }
+    nodes {
+        IlvGraphicNode fill "T" 0 0
+        IlvGraphicNode filler "T" 0 1
+        IlvGraphicNode IlvLine "T" 0 2
+        IlvGraphicNode IlvLine_2 "T" 0 3
+        IlvGraphicNode background "T" 0 4
+        IlvGraphicNode title "T" 0 5
+        IlvGraphicNode onButton "T" 0 6
+        IlvGraphicNode onLabel "TI" 0 7
+        IlvGraphicNode repairButton "TI" 0 8
+        IlvGraphicNode icon "T" 0 9
+        IlvGraphicNode levelLabel "" 0 10
+        IlvGraphicNode IlvLabel "" 0 11
+        IlvGraphicNode IlvLabel_2 "" 0 12
+        IlvSubGroupNode "" 
+        IlvProtoInstance sources.clock clock_2
+            values {
+                Float seconds = 4
+                Int x = 143
+                Int y = 254
+            }
+        ;
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock Factory.ilv
+// Ilv Version: 3.1
+// File generated: Thu Jan 21 18:29:53 1999
+// Creator class: IlvGraphOutput
+Palettes 10
+"IlvStText" 5 "gray" "black" "normal" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+2 "Grey40" "light blue" "%MS Sans Serif-11-" 0 solid solid 2 0 0
+6 48830 48830 48830 "Sea Green" "default" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+4 "lightgray" "black" "large" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid dashdot 0 0 0
+0 "Grey40" "Dim Gray" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+9 "Grey40" "Black" "6x13" 0 solid solid 0 0 0
+8 "Grey40" "Black" "large" "-misc-fixed-*-r-*--*-130-*-*-*-*-*-*" 0 solid solid 0 0 0
+1 "Grey40" "Navy Blue" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+7 "Grey40" "Black" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+3 "antiquewhite3" "Light Blue" "fixed" 0 solid solid 0 0 0
+IlvObjects 13
+0 2 { 0 0 IlvPolygon 4
+289 249 289 412 359 412 360 248 } 0
+1 2 { 1 1 IlvPolygon 4
+289 412 359 412 360 248 289 249 } 0
+1 2 { 2 2 IlvLine 291 416 291 246 } 0
+1 2 { 3 2 IlvLine 359 413 359 244 } 0
+6 2 { 4 3 IlvFilledRectangle 131 411 229 68 } 0
+6 2 { 5 4 IlvMessageLabel 141 422 115 22 F8 0 25 16 4 "Factory"   } 384
+6 2 { 6 5 IlvToggle 303 456 49 17 F1 2 1 2 0 0 0 Y "On" } 0
+6 2 { 7 6 IlvFilledEllipse 322 495 25 24 } 2
+6 2 { 8 5 IlvButton 241 496 64 23 F9 2 1 16 4 "Repair"   } 2
+6 2 { 9 7 IlvZoomableTransparentIcon 0 0 "ivstudio/icons/icztrans.pbm" F0.6875 0 0 0.546875 305 416 } 0
+7 2 { 10 8 IlvLabel 209 470 "1000" } 0
+8 2 { 11 9 IlvLabel 142 471 "Score" } 0
+8 2 { 12 9 IlvLabel 261 470 "$" } 0
+Layers 9
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+"" 0
+Views 0
+EOF
+IlvProtoLibraryEnd

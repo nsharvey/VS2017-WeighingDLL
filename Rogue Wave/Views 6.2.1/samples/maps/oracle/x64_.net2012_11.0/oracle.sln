@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("91BFB6FA-1D69-11E8-91B2-87BE772C9500") = "sdosample", "sdosample.vcxproj", "91BF54E4-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

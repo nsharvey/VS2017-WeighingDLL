@@ -1,0 +1,5 @@
+help "respanel" {
+title "リソース･パネル";
+description "リソース･パレットの編集";
+}
+

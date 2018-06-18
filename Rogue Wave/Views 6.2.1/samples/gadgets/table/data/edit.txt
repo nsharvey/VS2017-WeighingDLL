@@ -1,0 +1,4 @@
+Files: edit.cpp, edit.h
+This sample shows how to create a subclass of the IlvAbstractMatrixItem class.
+It also shows how to create specific matrix item editors.
+

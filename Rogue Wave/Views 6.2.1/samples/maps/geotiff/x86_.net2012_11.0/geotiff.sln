@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("7A8690DC-1D62-11E8-AB12-0BC9772C9500") = "geotiff", "geotiff.vcxproj", "7A863786-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Global
+EndGlobal
+

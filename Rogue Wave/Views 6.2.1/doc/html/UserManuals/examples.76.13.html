@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Registering Name Property Hooks</title><link rel="Prev" href="examples.76.12.html" title="Previous" /><link rel="Next" href="examples.76.14.html" title="Next" /><link rel="StyleSheet" href="css/examples.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/examples_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/UserManuals/examples.76.13.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pw4QKzgFgYKK10xT5o32scg" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/UserManuals/examples.76.13.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/ganttusrfrontcover.html#wwconnect_header">Gantt</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/examples.76.01.html#wwconnect_header">Using the Gantt Chart Through Examples</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/examples.76.10.html#wwconnect_header">Registering Gantt Data Change Hooks</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Registering Name Property Hooks</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww1006033" class="Heading2"><span></span>Registering Name Property Hooks</div><div id="ww1006034" class="Body">After have defined the hook function, it must be registered before being called by the Gantt chart object. The registration is based on the Rogue Wave®&nbsp;Views class property feature, in which a property is registered at the class level.</div><div id="ww1006038" class="Body">In the Gantt library, the key for allowing the property value to be retrieved is an <span class="code">IlSymbol</span> defined in the <span class="ClassName"><a href="../RefMan/refcppgantt/classIlvGanttChart.html">IlvGanttChart</a></span> class:</div><div id="ww1006039" class="LastNormalCode">IlSymbol* IlvGanttChart::nameProperty() const;</div><div id="ww1006040" class="Body">where <span class="code">IlSymbol</span> is defined as <span class="code">GanttName</span>. Here is an example of registering the hook function we defined above. You can find this function in <span class="code">&lt;ILVHOME&gt;/samples/gantt/common/src/utils.cpp</span>:</div><div id="ww1006041" class="NormalCode">// --------------------------------------------------------------------------</div><div id="ww1006042" class="NormalCode">void RegisterGanttNameProperty(IlvGraphic* graphic) </div><div id="ww1006043" class="NormalCode">{</div><div id="ww1006044" class="NormalCode">    <span style="color: #007f00">// Test if the Gantt name property is added to the IlvGraphic.</span></div><div id="ww1006045" class="NormalCode">    IlvGanttSetGraphicName function =</div><div id="ww1006046" class="NormalCode">        IL_FPTRTOANYCAST(IlvGanttSetGraphicName)</div><div id="ww1006047" class="NormalCode">        (graphic-&gt;getClassProperty(IlvGanttChart::nameProperty(), IlTrue));</div><div id="ww1006048" class="NormalCode">    if (function)</div><div id="ww1006049" class="NormalCode">        return;</div><div id="ww1006050" class="NormalCode">&nbsp;</div><div id="ww1006051" class="NormalCode">    graphic-&gt;AddProperty(IlvGanttChart::nameProperty(), (IlAny)</div><div id="ww1006052" class="NormalCode">        IL_FPTRTOANYCAST(IlvGanttSetGraphicName)(OnGanttObjectNameChanged));</div><div id="ww1006053" class="LastNormalCode">}</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

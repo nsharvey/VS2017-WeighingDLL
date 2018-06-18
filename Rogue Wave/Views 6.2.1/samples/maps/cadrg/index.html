@@ -1,0 +1,83 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Maps - Samples: cadrg</title>
+	</head>
+    <body>
+		<a name="cadrgview"><h1>Sample: <code>cadrgview</code></h1><h1 class="subtitle">CADRG Viewer</h1></a>
+		<p>CADRG Viewer with Load-On-Demand implementation.</p>
+		<img src="data/cadrgview.png"/>
+		<p>
+			This CADRG Viewer shows the Load-On-Demand 
+			implementation for the CADRG format in Rogue Wave Views Maps.
+			<h2> Running the Sample </h2>
+			To run the sample, you must have a CADRG database.
+			Sample data can be retrieved from the US National Imagery and 
+			Mapping Agency (NIMA) web site, using the 
+			<a href="http://geoengine.nima.mil">Geospatial Engine</a>.
+			You can use this search engine to retrieve CADRG data from many 
+			places in the world (the JOG-A products are in CADRG format).</p>
+			If you download the CADRG files at this URL, make
+			sure that you download the three coverages (scale 1:1M,
+			scale 1:250K, scale 1:50K) and that you expand the
+			archive in the same directory.
+			<br/>
+			When you launch the sample, you must specify a 
+			table of content file as parameter. This file is 
+			named <code>A.TOC</code> and is placed 
+			in the main directory of a CADRG database, which 
+			is called <code>rpf</code>.
+			<br/>
+			You can select three coverages of different scale 
+			(from the smaller scale to the higher one).
+			<br/>
+			This viewer lets you see various ungeoreferenced 
+			frames of the CADRG database, such as the boundaries
+			of the CADRG base and the legends of the various maps.
+
+			<h2>About the CADRG Format </h2>
+			The CADRG format (Compressed ARC Digitized Raster Graphics) 
+			is a map format for raster data published by the US National 
+			Imagery and Mapping Agency(NIMA).
+			<p>The specifications of the CADRG format are public, and can be 
+			downloaded from the following URL:
+			<a href="http://earth-info.nga.mil/publications/specs">
+			http://earth-info.nga.mil/publications/specs</a><br/>
+			Full samples of CADRG databases can be downloaded from the  
+			 <a href="http://geoengine.nima.mil">Geospatial Engine</a>.
+			</p>
+			<p>
+			 Basically, a CADRG database covers an area with scanned maps of
+			 various scales. It is composed of a main directory that includes a table of
+			 contents file, called <code>A.TOC</code>, which can be read with an
+			 <code>IlvCADRGTocReader</code>. This main directory is divided into subdirectories,
+			 each one corresponding to a specific coverage. These subdirectories contain the
+			 CADRG frames that make up the coverage. These frames can be read
+			 with an <code>IlvCADRGFrameReader</code>. 
+			 <br/>
+			 To automatically read a CADRG coverage using the Rogue Wave Views
+			 load-on-demand mechanism, you can use an <code>IlvCADRGLayer</code>.
+			 </p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvCADRGLayer</code></li>
+			<li><code>IlvCADRGFrameReader</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/covchoose.cpp"><code>src/covchoose.cpp</code></a></li>
+			<li><a href="src/viewer.cpp"><code>src/viewer.cpp</code></a></li>
+			<li><a href="src/main.cpp"><code>src/main.cpp</code></a></li>
+			<li><a href="include/covchoose.h"><code>include/covchoose.h</code></a></li>
+			<li><a href="include/viewer.h"><code>include/viewer.h</code></a></li>
+		</ul>

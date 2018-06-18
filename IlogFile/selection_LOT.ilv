@@ -1,0 +1,160 @@
+// Ilv Version: 5.3
+// File generated: Wed Feb 02 09:04:46 2011
+// Creator class: IlvGadgetManagerOutput
+FileName "selection_LOT"
+PathName "C:\\Développement ILOG\\V5.x - Révisions extraites\\centrale 150 sartorius + modif SMO\\IlogFile\\selection_LOT.ilv"
+Palettes 3
+"default" 2 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+1 F "darkslateblue" "white" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+0 F "gray" "black" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 17
+0 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMatrix 0 -8 736 376 F43352 2 N N 0 0 0 0 1 1 91 46 1 1 0 1 1 1 8 8 V0 2 8 0 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&Lot"  }  
+1 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&SousLot"  }  
+2 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&Emp"  }  
+3 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&QuantiteDisponible"  }  
+4 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&Alloue"  }  
+5 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&Peremp"  }  
+6 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&Titre"  }  
+7 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&Statut"  }  
+0 N 0 0 0 1 0  } 32 "listeSelectionLot"
+0
+0 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMatrix 0 0 736 374 F43352 2 N N 0 0 0 0 1 1 81 46 1 1 0 0 1 1 9 8 V0 2 9 0 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&Cuve"  }  
+1 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&Vanne"  }  
+2 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&Lot"  }  
+3 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&SousLot"  }  
+4 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&QuantiteDisponible"  }  
+5 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&Alloue"  }  
+6 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&Peremp"  }  
+7 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&Titre"  }  
+8 0 448 IlvGadgetItemMatrixItem { IlvGadgetItem 1 2 4 "&Statut"  }  
+0 N 0 0 0 0 0  } 32 "listeSelectionCuve"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 6 499 734 39 F12 0 { IlvMessageItem 262168 4 16 4  }   } 32 "message"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+2 IlvZoomableTransparentIcon 0 0 "default" F6.289333153394062 0 0 6.289299610133654 520 440 } 544 "descendre"
+1
+1 "__ilvCallback" "descendreCB"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+2 IlvZoomableTransparentIcon 0 0 "default" F6.289333153394062 0 0 6.289299610133654 576 440 } 544 "monter"
+1
+1 "__ilvCallback" "monterCB"
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+2 IlvZoomableTransparentIcon 0 0 "default" F6.24664982128191 0 0 6.289299610133654 464 440 } 544 "valider"
+1
+1 "__ilvCallback" "validerCB"
+0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+2 IlvZoomableTransparentIcon 0 0 "default" F6.289333445795377 0 0 6.289274610135204 688 440 } 544 "quitter"
+1
+1 "__ilvCallback" "quitterCB"
+0
+1 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+2 IlvZoomableTransparentIcon 0 0 "default" F6.289333153394062 0 0 6.289299610133654 632 440 } 544 "aide"
+1
+1 "__ilvCallback" "aideCB"
+0
+1 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+2 IlvZoomableTransparentIcon 0 0 "default" F6.220024822043658 0 0 6.289299610133654 296 440 } 544 "imprimer"
+1
+1 "__ilvCallback" "imprimerCB"
+0
+1 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+2 IlvZoomableTransparentIcon 0 0 "default" F6.287799820104599 0 0 6.288057943543957 352 440 } 544 "allouer"
+1
+1 "__ilvCallback" "allouerCB"
+0
+1 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 168 384 172 30 F14 2 1 -1 0 "" } 416 "AffComposant"
+0
+1 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 8 384 152 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&Composant"  }   } 0
+0
+1 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 352 384 152 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&ResteAPeser"  }   } 0
+0
+1 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 688 384 48 30 F268435468 0 { IlvMessageItem 262168 4 16 4  }   } 32 "AffUS"
+0
+1 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 512 384 172 30 F14 2 2 -1 0 "0" . , 6 16 -3.40282e+038 3.40282e+038 } 416 "AffQuantite"
+0
+1 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+2 IlvZoomableTransparentIcon 0 0 "default" F6.287799819070716 0 0 6.288057943543957 408 440 } 544 "desallouer"
+1
+1 "__ilvCallback" "desallouerCB"
+0
+1 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+2 IlvZoomableTransparentIcon 0 0 "default" F6.287799819070716 0 0 6.288057943543957 240 440 } 544 "consultationStockDetaille"
+1
+1 "__ilvCallback" "consultationStockDetailleCB"
+0
+Size 742 545
+Background "gray"
+GeometryHandlers
+2 100 0 55 0 55 0
+ 0 0 687 55 687 55
+17 3 520 0 520  50 0 50 3  172 0 172 1
+ 3 576 0 576  50 0 50 4  116 0 116 1
+ 3 464 0 464  50 0 50 5  228 0 228 1
+ 3 688 0 688  50 0 50 6  4 4 4 1
+ 3 632 0 632  50 0 50 7  60 0 60 1
+ 3 6 0 6  734 0 734 2  2 0 2 1
+ 3 0 0 0  736 0 736 0  6 6 6 1
+ 3 168 0 168  172 0 172 10  402 0 402 1
+ 3 8 0 8  152 0 152 11  582 0 582 1
+ 3 352 0 352  152 0 152 12  238 0 238 1
+ 3 688 0 688  48 0 48 13  6 0 6 1
+ 3 352 0 352  50 0 50 9  340 0 340 1
+ 3 296 0 296  50 0 50 8  396 0 396 1
+ 3 512 0 512  172 0 172 14  58 0 58 1
+ 3 0 0 0  736 0 736 1  6 6 6 1
+ 3 408 0 408  50 0 50 15  284 0 284 1
+ 3 240 0 240  50 0 50 16  452 0 452 1
+0
+2 100 0 442 0 442 0
+ 0 0 103 442 103 442
+17 3 440 0 440  50 0 50 3  55 0 55 1
+ 3 440 0 440  50 0 50 4  55 0 55 1
+ 3 440 0 440  50 0 50 5  55 0 55 1
+ 3 440 0 440  50 0 50 6  55 0 55 1
+ 3 440 0 440  50 0 50 7  55 0 55 1
+ 3 499 0 499  39 0 39 2  7 0 7 1
+ 3 0 -8 -8  376 0 376 0  177 61 177 1
+ 3 384 0 384  30 0 30 10  131 0 131 1
+ 3 384 0 384  30 0 30 11  131 0 131 1
+ 3 384 0 384  30 0 30 12  131 0 131 1
+ 3 384 0 384  30 0 30 13  131 0 131 1
+ 3 440 0 440  50 0 50 9  55 0 55 1
+ 3 440 0 440  50 0 50 8  55 0 55 1
+ 3 384 0 384  30 0 30 14  131 0 131 1
+ 3 0 0 0  374 0 374 1  171 3 171 1
+ 3 440 0 440  50 0 50 15  55 0 55 1
+ 3 440 0 440  50 0 50 16  55 0 55 1
+0
+Layers 2
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

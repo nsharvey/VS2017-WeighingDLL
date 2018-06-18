@@ -1,0 +1,30 @@
+// Ilv Version: 2.21
+// File generated: Thu Mar 14 17:06:01 1996
+// Creator class: IlvGadgetManagerOutput
+Palettes 3
+2 "defaultBg" "defaultFg" "button" %helvetica-12-B 0 solid solid 0 0 0
+0 "defaultBg" "defaultFg" "normal" %helvetica-12- 0 solid solid 0 0 0
+1 "defaultBg" "defaultFg" "bold" %helvetica-12-B 0 solid solid 0 0 0
+IlvObjects 21
+2 { 0 0 IlvTextField 180 28 47 23 F6 2 1 -1 0 "0" } 96 "oy" "TextField" 4 "doApply"
+2 { 1 0 IlvTextField 180 56 47 23 F6 2 1 -1 0 "5" } 96 "sy" "TextField" 4 "doApply"
+2 { 2 0 IlvTextField 180 84 47 23 F6 2 1 -1 0 "1" } 96 "ey" "TextField" 4 "doApply"
+2 { 3 0 IlvReliefLine 0 114 333 114 1 } 0 336 1 0 1 0 2
+2 { 4 0 IlvLabel 12 46 "Origin" } 0 0
+2 { 5 0 IlvLabel 12 74 "Spacing" } 0 0
+2 { 6 0 IlvLabel 113 53 "X:" } 0 0
+2 { 7 0 IlvTextField 110 28 47 23 F6 2 1 -1 0 "0" } 96 "ox" "TextField" 4 "doApply"
+2 { 8 0 IlvTextField 110 56 47 23 F6 2 1 -1 0 "5" } 96 "sx" "TextField" 4 "doApply"
+2 { 9 0 IlvTextField 110 84 47 23 F6 2 1 -1 0 "1" } 96 "ex" "TextField" 4 "doApply"
+2 { 10 0 IlvLabel 95 74 "x" } 0 0
+2 { 11 0 IlvLabel 165 74 "y" } 0 0
+2 { 12 0 IlvLabel 95 102 "x" } 0 0
+2 { 13 0 IlvLabel 164 102 "y" } 0 0
+2 { 14 0 IlvLabel 95 46 "x" } 0 0
+2 { 15 0 IlvLabel 165 46 "y" } 0 0
+2 { 16 1 IlvLabel 8 22 "Grid" } 0 0
+2 { 17 0 IlvLabel 12 102 "Show" } 0 0
+2 { 18 0 IlvToggle 240 58 74 17 F1 2 1 2 0 0 0 Y "Active" } 96 "act" "Toggle" 4 "doApply"
+2 { 19 0 IlvToggle 240 86 75 17 F1 2 1 2 0 0 0 Y "Visible" } 96 "vis" "Toggle" 4 "doApply"
+2 { 20 2 IlvButton 255 122 73 23 F1 2 16 Y "Close" } 64 "Button" 196 "cancel" 1 5 1 5
+Size 333 150

@@ -1,0 +1,21 @@
+// Ilv Version: 3.1
+// File generated: Thu Jan 14 17:29:18 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "roundrec"
+PathName "C:\\users\\noiret\\dev\\views.work\\studio\\data\\ivstudio\\inspectors\\roundrec.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 2
+1 { 0 0 IlvMessageLabel 8 2 118 22 F8 0 25 16 4 "&Radius"   } 0
+0
+1 { 1 0 IlvSpinBox 124 1 138 22 2 0 200 64 2 1
+0 IlvNumberField 124 1 123 22 F6 2 1 -1 0 "1" . , 6 0 -2147483648 2147483647  f 1 0 1 1 } 32 "RoundRectRadius"
+0
+Size 265 29
+GeometryHandlers
+1 100 0 265 0 265 0
+2 3 0 0 8  118 0 118 0  0 0 139 0
+ 3 124 0 124  0 0 138 1  0 0 3 0
+1 100 0 29 0 29 0
+0
+EOF

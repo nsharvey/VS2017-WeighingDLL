@@ -1,0 +1,136 @@
+<HTML>
+  <HEAD>
+    <TITLE>The DXF Reader</TITLE>
+    <META NAME="GENERATOR" CONTENT="Mozilla/3.0Gold (WinNT; I) [Netscape]">
+  </HEAD>
+  <BODY BGCOLOR="#FFFFFF">
+    
+      <H1><FONT SIZE=+2>The DXF Reader</FONT></H1>
+
+ <CENTER> <IMG SRC="data/dxf.jpg"> </CENTER>
+
+<P>
+
+
+<P>A Reader for the DXF format is provided with the source 
+ code in the Rogue Wave Views Maps add-on.
+
+ <P>A DXF Viewer, also provided with the source code, demonstrates
+ how to use this reader.
+
+ <P>The DXF reader is located in the directory
+ <code>&lt;installdir>/tools/readers/dxf</code>.
+
+ <P>To compile this reader, you will need the Rogue Wave Views Gadget and
+ Rogue Wave Views Manager packages.
+
+<P>
+      <h3> About the DXF format </h3>
+
+     The DXF format (Drawing Interchange Format) is the interchange format
+     of AutoCAD. This format supports vector graphics (polygons, arcs, lines,
+     points...) and layers. The DXF format is often used as an interchange 
+     format for vector maps.
+
+     The specifications of the DXF format can be found at 
+     the following URL <A HREF= "http://www.autodesk.com/techpubs/autocad/dxf/reference/">
+      http://www.autodesk.com/techpubs/autocad/dxf/reference/
+      </A>
+
+<P>     
+<H3>
+The Files
+</H3>
+      
+      <A HREF="include/dxfreader.h">
+         dxfreader.h
+      </A><BR>
+      <A HREF="src/dxfreader.cpp">
+         dxfreader.cpp
+      </A><BR>
+<P>
+      <A HREF="include/dxfbasic.h">
+         dxfbasic.h
+      </A><BR>
+      <A HREF="src/dxfbasic.cpp">
+         dxfbasic.cpp
+      </A><BR>
+<P>
+      <A HREF="include/dxffactory.h">
+         dxffactory.h
+      </A><BR>
+      <A HREF="src/dxffactory.cpp">
+         dxffactory.cpp
+      </A><BR>
+<P>
+      <A HREF="include/dxfviewer.h">
+         dxfviewer.h
+      </A><BR>
+      <A HREF="src/dxfviewer.cpp">
+         dxfviewer.cpp
+      </A><BR>
+      <P>
+      <UL>
+	<LI> 
+	  The <code>dxfreader.h</code> and <code> dxfreader.cpp</code>
+          files define the DXF Reader.
+	<LI> 
+	  The <code>dxfbasic.h</code> and <code> dxfbasic.cpp</code>
+          files define the basic entities used by the DXF Reader.
+	<LI> 
+	  The <code>dxffactory.h</code> and <code> dxffactory.cpp</code>
+          files define the graphic factory used by the DXF Reader to
+          create graphic objects.
+	<LI> 
+	  The <code>dxfviewer.h</code> and <code> dxfviewer.cpp</code>
+          files define a simple Viewer that demonstrates how the reader 
+          can be used.
+      </UL>
+      <h3> Using the DXFReader </h3>
+
+      The class <code>DXFReader</code> can be used in other 
+      applications. To read a DXF file, you should include the
+      <code>dxfreader.h</code> file and add the following 
+      line to your code:
+
+      <pre>
+      DXFFrameReader frameReader(fileName,
+                                 manager,
+                                 factory);
+      </pre>
+
+<UL>
+<LI><code>fileName</code> is the name of the DXF frame.
+<LI> <code>manager</code> is the instance of IlvManager where the reader 
+     will put the graphic objects.
+<LI> <code>factory</code> is an instance of DXFGraphicFactory. It willl be 
+     used by the reader to create the graphic objects from their DXF 
+     description.
+</UL>
+
+To create a DXFFactory, you can use the DXFDefaultGraphicFactory class 
+providied with this reader. 
+
+      <pre>
+       DXFDefaultGraphicFactory factory(display,
+	   			        mapInfo,
+				        sourceProjection);
+      </pre>
+
+<UL>
+<LI><code>display</code> is the Rogue Wave Views display.
+<LI><code>mapinfo</code> is an optional argument specifying the 
+                         georeferencement information of your manager. 
+                         If you don't
+                         provide a mapinfo, the dxf reader will create one
+                         with an unknown projection, that can be accessed
+                         with the <code>DXFReader::getMapInfo</code> 
+                         function.
+<LI><code>sourceProjection</code> is an optional argument specifying the
+                         projection of the data contained in the DXF file.
+                         If you pass this argument, the DXF reader will
+                         reproject the data to the mapinfo's projection.
+</UL>
+
+</BODY>
+</HTML>

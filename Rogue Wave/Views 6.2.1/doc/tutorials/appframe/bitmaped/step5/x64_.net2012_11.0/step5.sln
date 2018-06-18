@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("9C6461A0-1D69-11E8-91B2-87BE772C9500") = "bitmaped", "bitmaped.vcxproj", "9C63E93C-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

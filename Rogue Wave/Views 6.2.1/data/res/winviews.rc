@@ -1,0 +1,15 @@
+/****************************************************************************
+                                 winviews_rc
+                    IlogViews resource for winviews_lib
+*****************************************************************************/
+ilviews_views_dbm	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/views.dbm"
+ilviews_views_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+ilviews_locale_fr_FR_windows-1252_views_dbm	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/locale/fr_FR.windows-1252/views.dbm"
+ilviews_locale_fr_FR_windows-1252_views_sep	ILOGViewsResource
+BEGIN
+	0
+END

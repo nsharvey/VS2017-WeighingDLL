@@ -1,0 +1,40 @@
+// Ilv Version: 5.4
+// File generated: Tue Jun 15 10:09:14 2010
+// Creator class: IlvGadgetManagerOutput
+FileName "pan"
+PathName "pan.ilv"
+Palettes 2
+"IlvStToolBar" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+1 F "defaultBg" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 3
+1 { 0 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvPanelObjectReference IlvPanelObjectReference  "917865457.0" ]
+0 IlvNotebook 5 5 630 457 F1 2 0 2  1
+" { IlvNotebookPageItem 1 2 4 "Tab 1"  }  "gray" ""
+0 0 8 5 2 0 0 0 0  } 32 "NoteBook"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 5 572 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&quit"  }   } 512
+1
+1 "__ilvCallback" "@Quit()"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvText 5 467 630 100 F133 2 Y N 1 1 1 1 0 2
+"Text"
+"multi lines"
+0 0 0 0 } 32 "Legend"
+0
+Size 640 600
+GeometryHandlers
+1 100 0 640 0 640 0
+3 3 0 0 5  630 0 630 0  0 0 5 0
+ 3 0 0 5  630 0 630 2  0 0 5 0
+ 3 0 0 5  0 0 80 1  555 0 555 0
+1 100 0 600 0 600 0
+3 3 0 0 5  457 0 457 0  0 0 138 0
+ 3 467 0 467  0 0 100 2  0 0 33 0
+ 3 572 0 572  0 0 23 1  0 0 5 0
+EOF

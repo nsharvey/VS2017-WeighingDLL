@@ -1,0 +1,97 @@
+// Ilv Version: 3.1
+// File generated: Tue Dec 28 14:41:30 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "bars"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12" 0 solid solid 0 0 0
+IlvObjects 14
+1 { 0 0 IlvMessageLabel 6 1 219 22 F8 0 25 16 4 "&Bars"   } 0
+0
+1 { 1 0 IlvMessageLabel 243 1 168 22 F8 0 25 16 4 "&Categories"   } 0
+0
+1 { 2 0 IlvScrolledComboBox 243 24 168 20 F807 2 "" 0 4 0 } 544 "BarCategories"
+1
+1 "__ilvCallback" "BarCmdCategorySelected"
+0
+1 { 3 0 IlvMessageLabel 243 50 168 22 F8 0 25 16 4 "&Commands"   } 0
+0
+1 { 4 0 IlvStringList 243 73 168 134 F131 2 A A 0 0 0 0 0 4 0 0 2 0 } 544 "BarCommandsList"
+1
+1 "__ilvSCallback" "BarCommandSelected"
+0
+1 { 5 0 IlvTreeGadget 6 24 219 160 F36 2 A A 0 0 0 0 20 0 1 1 1 1 0 2
+IlvTreeGadgetItem 1 2 4 "root" 2
+IlvTreeGadgetItem 1 2 4 "First Root" 2
+IlvTreeGadgetItem 1 2 4 "Leaf 1" 0
+ IlvTreeGadgetItem 1 2 4 "Leaf 2" 0
+  IlvTreeGadgetItem 1 2 4 "Second Root" 0
+   } 544 "BarItems"
+1
+1 "__ilvSCallback" "BarSelectedItemChanged"
+0
+1 { 6 P 1
+[ IlvToolTip __ilvToolTip 2 "&AddToolBar" 4 4 ]
+0 IlvButton 27 187 26 23 F25 2 2 16 4 1 0 "ilviews/appframe/newbar.xpm"   } 544 "AddBar"
+1
+1 "__ilvCallback" "AddBarCB"
+0
+1 { 7 P 1
+[ IlvToolTip __ilvToolTip 2 "&RemoveToolBar" 4 4 ]
+0 IlvButton 51 187 26 23 F25 2 2 16 4 1 0 "ilviews/appframe/removbar.xpm"   } 544 "RemoveBar"
+1
+1 "__ilvCallback" "RemoveBarCB"
+0
+1 { 8 P 1
+[ IlvToolTip __ilvToolTip 2 "&NewAction" 4 4 ]
+0 IlvButton 91 187 26 23 F25 2 2 16 4 1 0 "ilviews/appframe/newitm.xpm"   } 32 "BarNewCmd"
+0
+1 { 9 P 1
+[ IlvToolTip __ilvToolTip 2 "&NewPopup" 4 4 ]
+0 IlvButton 115 186 26 23 F25 2 2 16 4 1 0 "ilviews/appframe/menu.xpm"   } 32 "BarNewPopup"
+0
+1 { 10 P 1
+[ IlvToolTip __ilvToolTip 2 "&NewSeparator" 4 4 ]
+0 IlvButton 140 187 20 23 F25 2 66 16 4 1 0 "ilviews/appframe/separator.xpm"   } 32 "BarNewSep"
+0
+1 { 11 P 1
+[ IlvToolTip __ilvToolTip 2 "&MoveUp" 4 4 ]
+0 IlvButton 190 187 18 23 F25 2 2 16 4 1 0 "ilviews/appframe/up.xpm"   } 544 "BarUpCmd"
+1
+1 "__ilvCallback" "BarUpCmdCB"
+0
+1 { 12 P 1
+[ IlvToolTip __ilvToolTip 2 "&MoveDown" 4 4 ]
+0 IlvButton 207 187 18 23 F25 2 2 16 4 1 0 "ilviews/appframe/down.xpm"   } 544 "BarDownCmd"
+1
+1 "__ilvCallback" "BarDownCmdCB"
+0
+1 { 13 P 1
+[ IlvToolTip __ilvToolTip 2 "&remove" 4 4 ]
+0 IlvButton 160 187 26 23 F25 2 2 16 4 1 0 "ilviews/appframe/removitm.xpm"   } 544 "BarRemoveCmd"
+1
+1 "__ilvCallback" "BarRemoveCmdCB"
+0
+Size 420 212
+GeometryHandlers
+2 100 0 231 0 231 0
+ 0 0 189 231 189 231
+4 3 0 0 6  219 0 219 5  0 0 6 0
+ 3 0 0 6  219 0 219 0  0 0 6 0
+ 3 207 0 207  0 0 18 12  0 0 6 0
+ 3 190 0 190  0 0 18 11  0 0 23 0
+4 3 0 0 12  168 0 168 1  0 0 9 1
+ 3 0 0 12  168 0 168 2  0 0 9 1
+ 3 0 0 12  168 0 168 3  0 0 9 1
+ 3 0 0 12  168 0 168 4  0 0 9 1
+1 100 0 210 0 210 0
+10 3 0 0 73  134 0 134 4  0 0 3 0
+ 3 0 0 24  160 0 160 5  0 0 26 0
+ 3 187 0 187  0 0 23 6  0 0 0 0
+ 3 187 0 187  0 0 23 7  0 0 0 0
+ 3 187 0 187  0 0 23 8  0 0 0 0
+ 3 186 0 186  0 0 23 9  0 0 1 0
+ 3 187 0 187  0 0 23 10  0 0 0 0
+ 3 187 0 187  0 0 23 11  0 0 0 0
+ 3 187 0 187  0 0 23 12  0 0 0 0
+ 3 187 0 187  0 0 23 13  0 0 0 0
+EOF

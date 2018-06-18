@@ -1,0 +1,163 @@
+// Ilv Version: 5.4
+// File generated: Thu Nov 25 16:38:20 2010
+// Creator class: IlvGadgetManagerOutput
+FileName "p_gadget"
+PathName "p_gadget.ilv"
+Palettes 3
+"defaultGadget" 0 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"default" 1 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+"IlvStToolBar" 2 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 24
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 256 80 29 F268435468 0 { IlvMessageItem 262169 4 16 4 "Frame"  }   } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTreeGadget 5 372 97 68 F32 2 A A 0 0 0 0 20 1 1 1 1 1 0 V0 2
+{ IlvTreeGadgetItem 1 2 4 "root" 2
+{ IlvTreeGadgetItem 1 2 4 "First Root" 2
+{ IlvTreeGadgetItem 1 2 4 "Leaf 1" 0
+ } { IlvTreeGadgetItem 1 2 4 "Leaf 2" 0
+ }  } { IlvTreeGadgetItem 1 2 4 "Second Root" 0
+ }  }  } 32 "tree"
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 5 71 80 20 F6 2 1 -1 0 "Text Field" } 0
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 5 38 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "Button"  }   } 0
+0
+2 { 4 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvPanelObjectReference IlvPanelObjectReference  "916330681.0" ]
+0 IlvNotebook 5 320 97 42 F1 2 0 2  2
+" { IlvNotebookPageItem 1 2 4 "Tab 1"  }  B ""
+" { IlvNotebookPageItem 1 2 4 "Tab 2"  }  B ""
+0 0 4 5 2 10 10 10 10  } 0
+0
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 8 8 80 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "MessageLabel"  }   } 0
+0
+2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 95 43 76 16 F1 2 1 2 0 0 0 Y "Toggle" } 0
+0
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 5 193 80 58 F131 2 A A 0 0 0 0 0 4 0 0 V0 2 3
+{ IlvGadgetItem 1 2 4 "item1"  } 
+{ IlvGadgetItem 1 2 4 "item2"  } 
+{ IlvGadgetItem 1 2 4 "item3"  }  } 0
+0
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 5 133 80 20 F806 2 1 -1 0 "SCCombo" 8
+{ IlvGadgetItem 1 2 4 "A"  } 
+{ IlvGadgetItem 1 2 4 "B"  } 
+{ IlvGadgetItem 1 2 4 "C"  } 
+{ IlvGadgetItem 1 2 4 "D"  } 
+{ IlvGadgetItem 1 2 4 "E"  } 
+{ IlvGadgetItem 1 2 4 "F"  } 
+{ IlvGadgetItem 1 2 4 "G"  } 
+{ IlvGadgetItem 1 2 4 "H"  }  4 0 } 0
+0
+2 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvText 95 193 80 58 F129 2 Y N 1 1 1 1 0 2
+"Text"
+"multi lines"
+0 0 0 0 } 0
+0
+2 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 5 163 80 20 2 0 200 64 2 1
+0 IlvTextField 5 163 64 20 F6 2 1 -1 0 "Monday"  f 0 1 7 0
+"Monday"
+"Tuesday"
+"Wednesday"
+"Thursday"
+"Friday"
+"Saturday"
+"Sunday" } 0
+0
+2 { 11 1 IlvReliefLine 5 297 85 297 1 } 0
+0
+2 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvColoredToggle 95 10 76 16 F1 2 1 2 0 0 0 Y "Colored" 0 0 0  } 0
+0
+2 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvNumberField 95 71 80 20 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038 } 0
+0
+2 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvDateField 5 101 80 22 F6 2 1 -1 0 "01/01/2000" / 3 1 7 } 0
+0
+2 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvPasswordTextField 95 101 80 22 F102 2 1 -1 0 "Rogue Wave Views Studio" 42 } 0
+0
+2 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvOptionMenu 95 133 80 20 F1 2 3
+{ IlvMenuItem 65 2 4 "item1"  } 
+{ IlvMenuItem 1 2 4 "item2"  } 
+{ IlvMenuItem 1 2 4 "item3"  }  0  } 0
+0
+2 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvComboBox 95 163 80 20 F38 2 1 -1 0 "ComboBox" 3
+{ IlvMenuItem 1 2 4 "item1"  } 
+{ IlvMenuItem 1 2 4 "item2"  } 
+{ IlvMenuItem 1 2 4 "item3"  }  } 0
+0
+2 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvSlider 95 264 80 19 F5 2 0 100 50 10 1 10 } 0
+0
+2 { 19 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvScrollBar 95 296 80 4294967279 F134217729 2 0 100 40 30 1 10 32 1 10 } 0
+0
+2 { 20 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvArrowButton 8 456 27 23 F13 2 { IlvMessageItem 262145 4 16 4 ""  }   2 0 } 0
+0
+2 { 21 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvGadget 40 456 135 23 2 } 0
+0
+2 { 22 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvSlider 120 320 18 120 F5 2 0 100 50 10 4 10 } 0
+0
+2 { 23 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvScrollBar 158 320 4294967279 120 F134217729 2 0 100 50 25 1 10 64 1 10 } 0
+0
+Size 180 484
+GeometryHandlers
+1 100 0 180 0 180 0
+11 3 0 0 5  80 0 80 2  0 8 95 0
+ 3 0 0 8  80 0 80 5  0 4 92 0
+ 3 0 0 5  0 0 80 3  95 1 95 0
+ 3 0 0 95  76 0 76 6  0 0 9 0
+ 3 0 0 5  80 0 80 0  0 2 95 0
+ 3 0 0 5  80 0 80 8  0 3 95 0
+ 3 0 0 5  0 0 80 7  95 0 95 0
+ 3 0 0 95  80 0 80 9  0 5 5 0
+ 3 0 0 5  97 0 97 1  0 2 78 0
+ 3 0 0 5  97 0 97 4  0 6 78 0
+ 3 0 0 5  80 0 80 11  0 0 95 0
+1 100 0 484 0 484 0
+0
+Layers 3
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

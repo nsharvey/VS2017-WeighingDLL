@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvwlook -->
+<module name="ilvwlook" version="6.2">
+<class name="IlvAbstractBar/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvAbstractMenu/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvButton/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvComboBox/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvFrame/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvGadget/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvMenuBar/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvMessageLabel/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvPopupMenu/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvScrollBar/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvSlider/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvTextField/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvToggle/windows" rootClass="IlvObjectLFHandler"/>
+<class name="IlvToolBar/windows" rootClass="IlvObjectLFHandler"/>
+</module>

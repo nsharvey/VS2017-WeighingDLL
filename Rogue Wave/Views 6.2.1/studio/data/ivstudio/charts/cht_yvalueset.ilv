@@ -1,0 +1,64 @@
+// Ilv Version: 4.0
+// File generated: Fri Jul 07 13:29:21 2000
+// Creator class: IlvGadgetManagerOutput
+Palettes 2
+1 "gray" "black" "button" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-13-[Charset:0]" 0 solid solid 0 0 0
+IlvObjects 7
+4 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSheet 4 4 244 180 F34937 2 Y N S 0 0 0 0 1 1 154 23 0 1 0 1 1 1 1 5 V0 2 224 
+2 0 0 66 IlvGadgetMatrixItem P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 9 8 218 15 F268435468 0 { IlvMessageItem 262145 4 4 16 "&Y"  }   1 
+0 2 0 IlvLabelMatrixItem ""  1 L N 1 2 0 1 0  } 32 "YValues"
+0
+4 { 1 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&insert" 4 4 ]
+1 IlvButton 77 190 23 24 F29 1 { IlvMessageItem 262147 4 4 16 "" 1 0 "ivstudio/icons/insert.png"  }   } 32 "InsertYValue"
+0
+4 { 2 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&add" 4 4 ]
+1 IlvButton 98 190 26 24 F29 1 { IlvMessageItem 262147 4 4 16 "" 1 0 "ivstudio/icons/add.png"  }   } 32 "AddYValue"
+0
+4 { 3 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&remove" 4 4 ]
+1 IlvButton 130 190 22 24 F29 1 { IlvMessageItem 262147 4 4 16 "" 1 0 "ivstudio/icons/removitm.png"  }   } 32 "RemoveYValue"
+0
+4 { 4 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&clean" 4 4 ]
+1 IlvButton 152 190 22 24 F29 1 { IlvMessageItem 262147 4 4 16 "" 1 0 "ivstudio/icons/clean.png"  }   } 32 "CleanYValues"
+0
+4 { 5 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&MoveUp" 4 4 ]
+0 IlvButton 179 190 18 24 F29 1 { IlvMessageItem 262147 4 4 16 "" 1 0 "ivstudio/icons/up.png"  }   } 32 "UpYValue"
+0
+4 { 6 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&MoveDown" 4 4 ]
+0 IlvButton 195 190 18 24 F29 1 { IlvMessageItem 262147 4 4 16 "" 1 0 "ivstudio/icons/down.png"  }   } 32 "DownYValue"
+0
+Size 252 216
+GeometryHandlers
+1 100 0 252 0 252 0
+7 3 0 0 4  244 0 244 0  0 0 4 0
+ 3 77 0 77  0 0 23 1  0 0 152 0
+ 3 98 0 98  0 0 26 2  0 0 128 0
+ 3 130 0 130  0 0 22 3  0 0 100 0
+ 3 152 0 152  0 0 22 4  0 0 78 0
+ 3 179 0 179  0 0 18 5  0 0 55 0
+ 3 195 0 195  0 0 18 6  0 0 39 0
+1 100 0 216 0 216 0
+7 3 0 0 4  180 0 180 0  0 0 32 0
+ 3 190 0 190  0 0 24 1  0 0 2 0
+ 3 190 0 190  0 0 24 2  0 0 2 0
+ 3 190 0 190  0 0 24 3  0 0 2 0
+ 3 190 0 190  0 0 24 4  0 0 2 0
+ 3 190 0 190  0 0 24 5  0 0 2 0
+ 3 190 0 190  0 0 24 6  0 0 2 0
+EOF

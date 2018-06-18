@@ -1,0 +1,20 @@
+var pairs =
+{
+"playersaveas":{"label":1}
+,"label":{"save":1}
+,"save":{"category":1,"events":1}
+,"category":{"player":1}
+,"player":{"action":1}
+,"action":{"saves":1}
+,"saves":{"recorded":1}
+,"recorded":{"events":1}
+,"events":{"file":1}
+,"file":{"command":1,"selector":1,"save":1}
+,"command":{"opens":1}
+,"opens":{"file":1}
+,"selector":{"panel":1}
+,"panel":{"lets":1}
+,"lets":{"enter":1}
+,"enter":{"file":1}
+}
+;Search.control.loadWordPairs(pairs);

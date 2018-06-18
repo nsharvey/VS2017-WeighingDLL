@@ -1,0 +1,64 @@
+// Ilv Version: 3.1
+// File generated: Fri Mar  3 10:14:18 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "hsheetsp"
+Palettes 1
+"IlvStText" 0 "defaultBg" "defaultFg" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 14
+2 { 0 0 IlvToggle 3 2 173 16 F1 2 1 2 0 0 0 Y "&editable" } 96 "MatrixAllowEdit" "Toggle"
+0
+2 { 1 0 IlvToggle 3 40 173 16 F1 2 1 2 0 0 0 Y "&EditOnDoubleClick" } 96 "MatrixEditDoubleClick" "Toggle"
+0
+2 { 2 0 IlvToggle 176 2 101 16 F1 2 1 2 0 0 0 Y "&grid" } 96 "MatrixGrid" "Toggle"
+0
+2 { 3 0 IlvMessageLabel 3 149 62 22 F8 0 25 16 4 "&selection"   } 0
+0
+2 { 4 0 IlvScrolledComboBox 70 150 208 20 F807 2 "" 4
+IlvGadgetItem 1 2 4 "&SingleSelection"  
+IlvGadgetItem 1 2 4 "&SingleBrowseSelection"  
+IlvGadgetItem 1 2 4 "&ExtendedSelection"  
+IlvGadgetItem 1 2 4 "&BrowseSelection"   5 1 } 32 "MatrixSelectionMode"
+0
+2 { 5 0 IlvToggle 3 59 198 16 F1 2 1 2 0 0 0 Y "&ShowTooltips" } 96 "GIHolderTooltips" "Toggle"
+0
+2 { 6 0 IlvScrolledComboBox 170 175 108 20 F807 2 "" 3
+IlvGadgetItem 1 2 4 "&None"  
+IlvGadgetItem 1 2 4 "&Line"  
+IlvGadgetItem 1 2 4 "&Column"   5 1 } 32 "AutomaticSelection"
+0
+2 { 7 0 IlvMessageLabel 3 174 169 22 F8 0 25 16 4 "&AutomatiqueSelection"   } 0
+0
+3 { 8 0 IlvToggle 3 78 267 16 F1 2 1 2 0 0 0 Y "&Show_lines" } 32 "ShowTreeLines"
+6144 "TreeLinesAsRoot" "TreeSample"
+3 { 9 0 IlvMessageLabel 3 96 160 22 F8 0 25 16 4 "&Indentation"   } 0
+0
+3 { 10 0 IlvSpinBox 169 96 109 24 2 0 200 64 2 1
+0 IlvNumberField 169 96 86 24 F6 2 2 -1 0 "1234543" . , 3 0 0 2147483647  f 1 1 1 1 } 32 "TreeIndent"
+0
+3 { 11 0 IlvToggle 3 21 173 16 F1 2 1 2 0 0 0 Y "&directEdit" } 32 "MatrixDirectEdit"
+0
+3 { 12 0 IlvMessageLabel 3 125 167 22 F8 0 25 16 4 "&editDirection"   } 0
+0
+3 { 13 0 IlvScrolledComboBox 169 125 109 20 F807 2 "Droite" 5
+IlvGadgetItem 1 2 4 "&right"  
+IlvGadgetItem 1 2 4 "&left"  
+IlvGadgetItem 1 2 4 "&top"  
+IlvGadgetItem 1 2 4 "&bottom"  
+IlvGadgetItem 1 2 4 "&none"   5 0 } 32 "MatrixEditDirection"
+0
+Size 280 200
+GeometryHandlers
+1 100 0 280 0 280 0
+10 3 0 0 3  267 0 267 8  0 10 10 0
+ 3 0 0 3  160 0 160 9  0 0 117 0
+ 3 169 0 169  0 0 109 10  0 0 2 0
+ 3 0 0 3  198 0 198 5  0 79 79 0
+ 3 0 0 3  167 0 167 12  0 0 110 0
+ 3 169 0 169  0 0 109 13  0 0 2 0
+ 3 70 0 70  0 0 208 4  0 0 2 0
+ 3 0 0 3  62 0 62 3  0 0 215 0
+ 3 0 0 3  169 0 169 7  0 0 108 0
+ 3 170 0 170  0 0 108 6  0 0 2 0
+1 100 0 200 0 200 0
+0
+EOF

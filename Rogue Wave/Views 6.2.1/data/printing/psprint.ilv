@@ -1,0 +1,145 @@
+// Ilv Version: 5.0
+// File generated: Mon Nov 15 14:50:25 2004
+// Creator class: IlvGadgetManagerOutput
+FileName "psprint"
+Palettes 2
+"IlvStToolBar" 0 F "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0 65535 1
+"default" 1 F "gray" "black" "default" "fixed" 0 solid solid 0 0 0 65535 0
+IlvObjects 27
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 206 321 110 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Number"  }   } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 190 296 183 106 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Copies"  }   } 0
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 206 369 98 16 F1 2 1 2 0 0 0 Y "&Collate" } 544 "collate"
+1
+1 "__ilvCallback" "collate"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 10 296 170 106 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Pagerange"  }   } 0
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 109 359 59 22 F6 2 1 -1 0 "1" . , 2 0 -2147483648 2147483647 } 544 "rangetf"
+1
+1 "__ilvFocusOut" "rangetf"
+0
+3 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFileSelectorField 29 31 331 22 F6 2 1 -1 0 "" } 544 "filename"
+1
+1 "__ilvFocusOut" "filename"
+0
+3 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 12 222 360 69 F268435468 0 { IlvMessageItem 262169 4 16 4 "Color"  }   } 0
+0
+3 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 11 65 360 153 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Paper"  }   } 0
+0
+3 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 30 94 329 20 F807 2 1 -1 0 "" 0 4 0 } 544 "papername"
+1
+1 "__ilvCallback" "papername"
+0
+3 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 100 130 15 22 F268435468 0 { IlvMessageItem 262145 4 16 4 "X"  }   } 0
+0
+3 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 200 130 61 22 F807 2 1 -1 0 "" 0 4 0 } 544 "unit"
+1
+1 "__ilvCallback" "unit"
+0
+3 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 32 130 62 22 F7 2 16 -1 0 "0" . , 3 16 -3.40282e+38 3.40282e+38 } 32 "paperwidth"
+0
+3 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 118 130 69 22 F7 2 16 -1 0 "0" . , 3 16 -3.40282e+38 3.40282e+38 } 32 "paperheight"
+0
+3 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 12 11 360 54 F268435468 0 { IlvMessageItem 262169 4 16 4 "&file"  }   } 0
+0
+3 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 271 130 86 23 F13 2 { IlvMessageItem 262145 4 16 4 "&Margins..."  }   } 512
+1
+1 "__ilvCallback" "margins"
+0
+3 { 15 1 IlvIcon 41 245 "printing/grayscale.png" } 0
+0
+3 { 16 1 IlvIcon 216 245 "printing/color.png" } 0
+0
+3 { 17 1 IlvIcon 41 167 "printing/portrait.png" } 0
+0
+3 { 18 1 IlvIcon 209 171 "printing/landscape.png" } 0
+0
+3 { 19 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 298 421 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cancel"  }   } 544 "cancel"
+1
+1 "__ilvCallback" "cancel"
+0
+3 { 20 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 218 421 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "&Print"  }   } 544 "print"
+1
+1 "__ilvCallback" "apply"
+0
+3 { 21 1 IlvTransparentIcon 272 363 "printing/nocollate.png" "" } 32 "collateno"
+0
+3 { 22 1 IlvTransparentIcon 276 360 "printing/collate.png" "" } 32 "collateyes"
+0
+3 { 23 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 287 323 67 20 2 0 200 64 2 1
+0 IlvNumberField 287 323 52 20 F6 2 1 -1 0 "1" . , 6 0 -2147483648 2147483647  f 1 0 1 1 } 544 "copiesnum"
+1
+1 "__ilvCallback" "copiesnum"
+0
+3 { 24 P 1
+[ IlvInteractorProperty __ilvInteractor "Selector" ]
+0 IlvSelector 0 2
+0 IlvToggle 90 179 108 16 F1 2 1 2 1 0 0 Y "&Portrait" 
+0 IlvToggle 271 179 107 16 F1 2 1 2 1 0 0 Y "&Landscape" 
+ } 544 "orientation"
+1
+1 "__ilvCallback" "orientation"
+0
+3 { 25 P 1
+[ IlvInteractorProperty __ilvInteractor "Selector" ]
+0 IlvSelector 1 2
+0 IlvToggle 90 253 120 16 F1 2 1 2 1 0 0 Y "&Grayscale" 
+0 IlvToggle 271 253 97 16 F1 2 1 2 1 0 0 Y "&color" 
+ } 544 "colormode"
+1
+1 "__ilvCallback" "colormode"
+0
+3 { 26 P 1
+[ IlvInteractorProperty __ilvInteractor "Selector" ]
+0 IlvSelector 0 2
+0 IlvToggle 30 326 89 16 F1 2 1 2 1 0 0 Y "&All" 
+0 IlvToggle 30 362 92 16 F1 2 1 2 1 0 0 Y "&Pages" 
+ } 544 "pagerange"
+1
+1 "__ilvCallback" "pagerange"
+0
+Size 386 456
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

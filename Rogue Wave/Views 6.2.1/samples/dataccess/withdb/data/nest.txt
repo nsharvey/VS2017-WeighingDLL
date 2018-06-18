@@ -1,0 +1,7 @@
+Note: Shows the two ways to manage an oracle9i nested table
+   - The create button creates needed oracle9i tables
+   - The drop button deletes oracle9i tables needed for this sample
+   - The table combo box lets you choose a product
+   - The table gadgets show you parts of the chosen product; the first one 
+     using a SQL table and the second one a memory table. Rows can be 
+     inserted, deleted or modified by one or the other.

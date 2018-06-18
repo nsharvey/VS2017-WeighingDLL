@@ -1,0 +1,31 @@
+// Ilv Version: 4.0
+// File generated: Wed Feb 09 14:18:34 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "fields2"
+PathName "fields2.ilv"
+Palettes 2
+"default" 0 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+"IlvStText" 1 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 2
+1 { 0 0 IliDbChart 10 10 154 137 2051  2  63  10 1 1 1 0 0 "IlvPolylineChart" "" 0 1 "###0.0"  0 1 0 0 1 1 0 0 2 2 4 "Gray" "Black" "White" "" "" "" 2 "Water" "Soda" 
+"Water" "Soda" 
+"IlvPolylineChart" "IlvPolylineChart" 
+"blue" "red" 
+0 0 
+12 "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" 1 2000 1 2200 1 1800 1 1900 1 2100 1 1700 1 4500 1 4000 1 2000 1 1800 1 3500 1 4000 1 4000 1 4200 1 3800 1 3900 1 4100 1 3700 1 6550 1 6000 1 4000 1 3800 1 4000 1 6000 1   } 0
+0
+1 { 1 P 1
+[ IliDbPieChartToolTip __ilvToolTip 2 "" 4 4 ]
+1 IliDbPieChart 6 160 154 154 2 2051  3 15  "Currency"  "IliFilterValueFirstModel" 0 360 0 "" 1 "SERIES" "VALUES" IliMemoryTable 0 3 2 
+     9 "SERIES" String 1 -1 1 -1 32 
+     9 "VALUES" Int 2 -1 2 -1 32 
+     16 0 8 3
+"a" 1 1 
+"b" 1 1 
+"c" 1 1 
+0
+ 0
+ } 64 "Gadget"
+0
+Size 200 328
+EOF

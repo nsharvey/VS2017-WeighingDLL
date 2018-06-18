@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+
+Project("8739244A-1D60-11E8-B125-30D7772C9500") = "interactive_feed", "interactive_feed.vcxproj", "8738D53A-1D60-11E8-B125-30D7772C9500"
+EndProject
+
+Global
+EndGlobal
+

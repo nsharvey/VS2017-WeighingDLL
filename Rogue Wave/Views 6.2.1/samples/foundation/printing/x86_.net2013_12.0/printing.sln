@@ -1,0 +1,26 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+
+Project("31592BA8-1D63-11E8-8E12-F080772C9500") = "headfoot", "headfoot.vcxproj", "3158EA8A-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Project("31659D0C-1D63-11E8-8E12-F080772C9500") = "photops", "photops.vcxproj", "3158EA8A-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Project("31712B7C-1D63-11E8-8E12-F080772C9500") = "photpspr", "photpspr.vcxproj", "3158EA8A-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Project("317E43D4-1D63-11E8-8E12-F080772C9500") = "photpsdlg", "photpsdlg.vcxproj", "3158EA8A-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Project("318B7E50-1D63-11E8-8E12-F080772C9500") = "photowin", "photowin.vcxproj", "3158EA8A-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Project("3195033A-1D63-11E8-8E12-F080772C9500") = "phowindc", "phowindc.vcxproj", "3158EA8A-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Project("319EA890-1D63-11E8-8E12-F080772C9500") = "phowinpr", "phowinpr.vcxproj", "3158EA8A-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Global
+EndGlobal
+

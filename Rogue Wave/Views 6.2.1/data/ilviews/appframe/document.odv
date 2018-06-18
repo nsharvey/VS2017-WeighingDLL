@@ -1,0 +1,184 @@
+; Description of RecentFileList class, used by 
+; By default, a document template does not process it self a recent file list (Count = 0)
+; But it can process one 
+
+class RecentFileListDesc
+{
+	int MaxFilesCount = 0
+	string Command = ""
+	string Name = ""
+}
+
+; ---------------------------------------------------------------------------
+; Description of FilterDoc class
+
+class Filter
+{
+    string Format
+    string Description
+}
+
+class MenuInsertion
+{
+	string Path = "&MainMenu/&MenuFile"
+        bool After = true
+	MenuItem[] items
+}
+
+class DynamicMenu
+{
+        MenuInsertion[] insertItems
+        string[] removeItems
+}
+
+; ---------------------------------------------------------------------------
+; Window View description class
+
+class ViewTemplate
+{
+    string[] ViewClasses
+    string ILVFrameTemplate = ""
+    string ShowInBar = ""
+    bool   AllowMultipleContainers = true
+    bool   FrameMaximized = false
+    bool   Visible = true
+    bool   CloseDocumentWhenClosed = false
+    string ShowHidePaneCommand = ""
+}
+
+; ---------------------------------------------------------------------------
+; Description of DocumentTemplate class
+; FrameMaximized field is ignored if ShowInBar is specified
+
+class DocumentTemplate
+{
+	string DefaultDocName = ""
+	string ShortName = ""
+	string Description = ""
+	string bitmap
+	Filter[] Filters
+	string DocumentClass = ""
+	ViewTemplate[] ViewTemplates
+	string[] ViewClasses
+	bool IsMDI = true
+	string ILVFrameTemplate = ""
+	string ShowInBar = ""
+	bool   FrameMaximized = false
+	bool   AllowMultipleContainers = true
+	DynamicMenu DocMenu 
+	Toolbar[] Toolbars 
+	bool AlwaysShowMenu = false
+	bool AppearsInLoadFileFilters = true
+	string OpenCommand = ""
+	string NewCommand = ""
+	string ShowHidePaneCommand = ""
+	RecentFileListDesc RecentOpenFiles 
+}
+
+; ---------------------------------------------------------------------------
+; Description of RecentFileList class
+
+class OpenedFileInfos
+{
+    string PathName
+    string ViewClassName
+}
+
+class RecentFileList
+{
+    int MaxFilesCount = 4
+    OpenedFileInfos[] Files
+}
+
+; ---------------------------------------------------------------------------
+; Application last opened file list, not dependent of a specifif document
+; template
+
+RecentFileList AppFileList
+{
+}
+
+; ---------------------------------------------------------------------------
+; Project last opened file list, dependent of document template of project type
+
+RecentFileList RecentProjects
+{
+}
+; ---------------------------------------------------------------------------
+; Description of ProjectGenData class
+
+class SuperClassNode
+{
+    string classname
+    string superclass
+}
+
+class ImplementationData
+{
+    string filename
+    string maskFile
+}
+
+class ImplementationFilesNode
+{
+    string classname
+    ImplementationData headerData
+    ImplementationData sourceData
+}
+
+class DialogGen
+{
+    string name
+    string classname
+    string subClassname
+    string ilvPathname
+    string resourceKey
+    string title
+    int    properties
+    Rect   boundingBox
+    Size   minSize
+    Size   maxSize
+    bool   generateSize
+    bool   noBorder
+    bool   noResizeBorder
+    bool   noTitleBar
+    bool   noSysMenu
+    bool   noMinBox
+    bool   noMaxBox
+    bool   iconified
+    bool   maximized
+    bool   mdiChild
+}
+
+class DataGen
+{
+    string name
+    string ilvPathname
+}
+
+class ProjectGenData
+{
+    SuperClassNode[] superclasses
+    bool   dll = false
+    bool   rc = true
+    bool   script = false
+    bool   alreadyEdited = false
+    string plateform = "default"
+    string projectName
+    string appName
+    string projectDirectory
+    string makefile
+    string dataDirectory = "data"
+    string sourceDirectory = "src"
+    string includeDirectory = "include"
+    string helpDirectory = "help"
+    string viewsDirectory = "$(ILVHOME)"
+    string docViewDir = "$(ILVHOME)"
+    string applicationClassName
+    ImplementationFilesNode[] implementations
+    ImplementationData mainImplementation
+    ImplementationData rcImplementation
+    DialogGen[] dialogNodes
+    string[] data
+    DataGen[] dataNodes
+}

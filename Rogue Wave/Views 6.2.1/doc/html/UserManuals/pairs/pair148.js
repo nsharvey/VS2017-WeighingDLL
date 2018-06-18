@@ -1,0 +1,20 @@
+var pairs =
+{
+"zoomout":{"label":1}
+,"label":{"zoom":1}
+,"zoom":{"path":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"view":1}
+,"view":{"menu":1,"state":1,"factor":1}
+,"menu":{"category":1}
+,"category":{"view":1}
+,"state":{"true":1}
+,"true":{"option":1}
+,"option":{"selected":1}
+,"selected":{"action":1}
+,"action":{"zooms":1}
+,"zooms":{"current":1}
+,"current":{"view":1}
+}
+;Search.control.loadWordPairs(pairs);

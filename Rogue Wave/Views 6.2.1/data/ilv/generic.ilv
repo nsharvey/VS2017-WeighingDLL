@@ -1,0 +1,67 @@
+// Ilv Version: 1.0
+// File generated: Tue Dec  7 01:04:08 1993
+//  IlvGadgetManagerOutput
+Palettes 3
+1 48830 48830 48830  0 0 0  fixed 0 solid solid  0 0 0 
+2 48830 48830 48830  0 0 0  %times-12- 0 solid solid  0 0 0 
+0 48830 48830 48830  0 0 0  %times-14-B 0 solid solid  0 0 0 
+IlvObjects 32
+2 { 0 0 IlvLabel 18 400 5 "width" } 0  0   
+2 { 1 1 IlvOptionMenu 83 384 116 27 2 2 0
+4 "None"
+7 "Elastic"
+ } 96 5 "width" 10 "OptionMenu"  0   
+2 { 2 2 IlvLabel 20 33 10 "Foreground" } 0  0   
+2 { 3 2 IlvTextField 92 15 103 22 2 0 5 "black" } 96 2 "Fg" 9 "TextField"  4 9 "PrintType"  
+2 { 4 2 IlvTextField 92 53 104 22 2 0 4 "gray" } 96 2 "Bg" 9 "TextField"  0   
+2 { 5 2 IlvLabel 18 67 10 "Background" } 0  0   
+2 { 6 0 IlvLabel 20 202 4 "left" } 0  0   
+2 { 7 0 IlvLabel 20 245 3 "top" } 0  0   
+2 { 8 0 IlvLabel 20 294 5 "right" } 0  0   
+2 { 9 0 IlvLabel 20 347 6 "bottom" } 0  0   
+2 { 10 2 IlvToggle 20 131 82 20 2 2 1 20 0 Y 9 "Sensitive"  } 96 4 "Sens" 6 "Toggle"  4 7 "SetSens"  
+2 { 11 2 IlvLabel 21 102 4 "Font" } 0  0   
+2 { 12 2 IlvTextField 91 89 104 22 2 0 10 "%times-12-" } 96 3 "Fnt" 9 "TextField"  0   
+2 { 13 1 IlvOptionMenu 83 278 116 27 2 4 0
+4 "None"
+3 "Fix"
+7 "Elastic"
+13 "FixAndElastic"
+ } 96 5 "right" 10 "OptionMenu"  0   
+2 { 14 1 IlvOptionMenu 83 327 116 27 2 4 0
+4 "None"
+3 "Fix"
+7 "Elastic"
+13 "FixAndElastic"
+ } 96 6 "bottom" 10 "OptionMenu"  0   
+2 { 15 1 IlvOptionMenu 83 185 116 27 2 4 0
+4 "None"
+3 "Fix"
+7 "Elastic"
+13 "FixAndElastic"
+ } 96 4 "left" 10 "OptionMenu"  4 9 "PrintType"  
+2 { 16 1 IlvOptionMenu 83 226 116 27 2 4 0
+4 "None"
+3 "Fix"
+7 "Elastic"
+13 "FixAndElastic"
+ } 96 3 "top" 10 "OptionMenu"  0   
+2 { 17 2 IlvTextField 225 331 84 25 2 0 0 "" } 96 7 "dbottom" 9 "TextField"  320  1  10 2  
+2 { 18 2 IlvTextField 223 282 86 25 2 0 0 "" } 96 6 "dright" 9 "TextField"  320  1  10 2  
+2 { 19 2 IlvTextField 223 230 86 25 2 0 0 "" } 96 4 "dtop" 9 "TextField"  320  1  10 2  
+2 { 20 2 IlvTextField 223 189 86 25 2 0 0 "" } 96 5 "dleft" 9 "TextField"  324 9 "PrintType" 1  10 2  
+2 { 21 2 IlvReliefLine 20 173 309 173 2 } 0  320  1  10 2  
+2 { 22 2 IlvButton 207 16 102 22 2 Y 3 "New"  } 64 6 "Button"  324 5 "NewFg" 1  10 2  
+2 { 23 2 IlvButton 208 54 101 22 2 Y 3 "New"  } 64 6 "Button"  324 5 "NewBg" 1  10 2  
+2 { 24 2 IlvButton 205 90 104 22 2 Y 3 "New"  } 64 6 "Button"  324 6 "NewFnt" 1  10 2  
+2 { 25 2 IlvButton 209 127 97 22 2 Y 5 "Apply"  } 64 6 "Button"  4 4 "SetR"  
+2 { 26 0 IlvLabel 18 443 6 "height" } 0  0   
+2 { 27 1 IlvOptionMenu 83 437 116 27 2 2 0
+4 "None"
+7 "Elastic"
+ } 96 6 "height" 10 "OptionMenu"  0   
+2 { 28 2 IlvReliefLine 21 493 309 494 2 } 0  320  1  10 2  
+2 { 29 2 IlvButton 216 516 93 26 2 Y 6 "Cancel"  } 64 6 "Button"  452 6 "cancel" 1  10 1  10 2  
+2 { 30 2 IlvButton 122 516 69 26 2 Y 5 "Reset"  } 64 6 "Button"  132 5 "reset" 1  10  
+2 { 31 2 IlvButton 20 516 68 26 2 Y 5 "Apply"  } 64 6 "Button"  132 5 "apply" 1  10  
+//Size 319 552

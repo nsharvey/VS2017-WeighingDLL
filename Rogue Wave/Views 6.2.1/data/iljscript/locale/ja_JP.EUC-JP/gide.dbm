@@ -1,0 +1,14 @@
+// IlvMessageDatabase 5 Fri May 12 01:33:27 GMT 2017
+// Language: ja_JP
+// Encoding: EUC-JP
+"&iljStep" "ｽﾃｯﾌﾟ実行"
+"&iljDebug" "ﾃﾞﾊﾞｯｸ"
+"&iljControl" "ｺﾝﾄﾛｰﾙ"
+"&iljStepOut" "ｶﾚﾝﾄﾌﾚｰﾑを実行"
+"&iljDebuggerName" "Rogue Wave Script ﾃﾞﾊﾞｯｶﾞｰ"
+"&iljStopNext" "次のｽﾃｰﾄﾒﾝﾄで停止"
+"&iljListener" "ﾘｽﾅｰ"
+"&iljContinue" "継続して実行"
+"&iljStopDebugging" "ﾃﾞﾊﾞｯｸﾓｰﾄﾞを終了"
+"&iljBacktrace" "ﾊﾞｯｸﾄﾚｰｽ"
+"&iljStepOver" "次のｽﾃｰﾄﾒﾝﾄを実行しない"

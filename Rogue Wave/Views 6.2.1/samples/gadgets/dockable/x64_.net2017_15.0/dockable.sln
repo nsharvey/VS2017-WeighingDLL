@@ -1,0 +1,6 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{CCB5CF72-1D6B-11E8-BAD0-7863772C9500}") = "dockable", "dockable.vcxproj", "{CCB57F68-1D6B-11E8-BAD0-7863772C9500}"
+EndProject
+Global
+EndGlobal

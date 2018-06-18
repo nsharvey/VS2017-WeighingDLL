@@ -1,0 +1,61 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Grapher - Samples: simple</title>
+	</head>
+    <body>
+		<a name="simple"><h1>Sample: <code>simple</code></h1><h1 class="subtitle">Simple Grapher Sample</h1></a>
+		<p>This sample shows how to create a simple grapher.</p>
+		<img src="data/simple.png"/>
+		<p>
+	This sample allows you to get acquainted with the <code>IlvGrapher</code> class.
+	It adds several objects to a grapher and provides the following interactions:
+	</p>
+	<UL>
+	<LI> <b>Double clicking</b> a graphic object prints its type (node, link,
+	 or ordinary graphic object). If the object is a node, all its connected links are 
+	 selected. </LI>
+	<LI> Pressing the <b>spaceBar</b> makes the graph <em>complete</em>. This means that links
+	are added so that each node of the graph is connected to each of the others. 
+	</LI>
+	<LI> Pressing the <b>'d'</b> key replaces changes links into instances of the 
+	<code>IlvDoubleLinkImage</code> class, which are drawn with two orthogonal bends. </LI>
+	<LI> All other interactions with the mouse are handled by the 
+	<code>IlvGraphSelectInteractor</code> interactor. With this interactor, you can select 
+	nodes and links and change their geometry or the way they are connected. </LI>
+	</UL>
+	<p>
+	You can also use the standard Grapher accelerators:
+	</p>
+	<UL>
+	<LI><b>'Z':</b> Zooms in (x2).</LI>
+	<LI><b>'U':</b> Zooms out (x0.5).</LI>
+	<LI><b>'F':</b> (Fits) Sets the zoom factor to display every graphic objects.</LI>
+	<LI><b>'i':</b> Reinitializes the view transformer to the identity.</LI>
+	<LI><b>'R':</b> Rotates the drawing with a 90 degrees angle.</LI>
+	<LI><b>Arrow keys:</b> Pans the view.</LI>
+	<LI><b>Ctrl-'n':</b> Transforms selected objects into nodes.</LI>
+	<LI><b>'H':</b> Performs a horizontal tree layout, using the selected node as root.</LI>
+	<LI><b>'V':</b> Performs a vertical tree layout, using the selected node as root.</LI>
+	</UL></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGrapher</code></li>
+			<li><code>IlvLinkImage</code></li>
+			<li><code>IlvDoubleLinkImage</code></li>
+			<li><code>IlvGraphSelectInteractor</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/simple.cpp"><code>src/simple.cpp</code></a></li>
+		</ul>

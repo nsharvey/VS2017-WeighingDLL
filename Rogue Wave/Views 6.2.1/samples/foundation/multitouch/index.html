@@ -1,0 +1,48 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Foundations - Samples: multitouch</title>
+	</head>
+    <body>
+		<a name="multitouch"><h1>Sample: <code>multitouch</code></h1><h1 class="subtitle">Using multitouch events</h1></a>
+		<p>Demonstrates how to use Views multitouch events</p>
+		<img src="data/multitouch.png"/>
+		<p>This example shows you how to use multitouch events in an interactor: <code>IlvTouchDown</code>, <code>IlvTouchMoved</code> and <code>IlvTouchUp</code>.	It assumes that the platform has a multitouch input device.</p>
+	<p>The example loads a world map (<code>[ILVHOME]/views/data/DCW/world.ilv</code>) that can be translated, zoomed and unzoomed with gestures.</p>
+	<p>We define a manager view interactor (subclass of <code>IlvManagerViewInteractor</code>) in order to handle events.
+	The interactor implements a set of simple gestures commonly used on most touch devices:</p>
+	<ul>
+		<li>pan (for translation)<br/>
+		<img src="data/pan.png"/>
+		</li>
+		<li>pinch (for unzomming)<br/>
+		<img src="data/pinch.png"/>
+		</li>
+		<li>unpinch (for zooming)<br/>
+		<img src="data/unpinch.png"/>
+		</li>
+	</ul>
+
+	<p>If only one touch point is active, the interactor is in &quot;pan&quot; mode (translation). As soon as a second touch point is active, the interactor enters in pinch/unpinch mode (zoom/unzoom).</p>
+	<p>In pan mode, we use an <code>IlvTimer</code> in order to manage the inertia: the translation does not stop at once when releasing the touch point, it continues and slows down until stop.</p>
+	<p><b>Note</b> that because this example uses a regular <code>IlvManager</code> and we are simulating the equivalent of the touch-screen navigation provided by Views out-of-the-box, we create the manager view using the <code>IlvNoTouchScreenNavigation</code> flag, to prevent the default multi-touch interactions to be installed.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvEvent</code></li>
+			<li><code>IlvManagerViewInteractor</code></li>
+			<li><code>IlvTimer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/mtouch.cpp"><code>src/mtouch.cpp</code></a></li>
+		</ul>

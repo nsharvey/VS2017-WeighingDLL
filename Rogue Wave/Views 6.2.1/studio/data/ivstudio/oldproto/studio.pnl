@@ -1,0 +1,8 @@
+panel "MainPanel" {
+    menuItem "-" : "&mfile", "&new";
+    menuItem NewPrototypeGrapherBuffer : "&mfile", "&new";
+    menuItem NewPrototypeManagerBuffer : "&mfile", "&new";
+    menuItem NewPrototypeGadgetManagerBuffer : "&mfile", "&new";
+
+    menuItem ConvertProtoBuffer : "&medit";
+}

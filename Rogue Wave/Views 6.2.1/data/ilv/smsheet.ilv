@@ -1,0 +1,122 @@
+// Ilv Version: 2.21
+// File generated: Wed Mar 13 20:20:53 1996
+// Creator class: IlvGadgetManagerOutput
+Palettes 2
+0 "defaultBg" "defaultFg" "normal" %helvetica-12- 0 solid solid 0 0 0
+1 "defaultBg" "defaultFg" "menu" %helvetica-12-B 0 solid solid 0 0 0
+IlvObjects 33
+2 { 0 0 IlvTextField 375 44 38 20 F6 1 1 -1 0 "" } 96 "tfColNo" "TextField" 0
+2 { 1 1 IlvMenuBar 0 0 506 29 F2 2 5
+258 "Sheet" 1 IlvPopupMenu 0 0 66 84 F2 2 6
+130 "Reset" "cbReset"
+0 
+130 "Refresh" "cbRefresh"
+130 "Deselect" "cbDeselect"
+0 
+130 "Quit" "cbQuit" 
+258 "Columns" 1 IlvPopupMenu 0 0 54 63 F2 2 4
+130 "Select" "cbColSelect"
+0 
+130 "Insert" "cbColInsert"
+130 "Remove" "cbColRemove" 
+258 "Row" 1 IlvPopupMenu 0 0 54 63 F2 2 4
+130 "Select" "cbRowSelect"
+0 
+130 "Insert" "cbRowInsert"
+130 "Remove" "cbRowRemove" 
+258 "Cells" 1 IlvPopupMenu 0 0 91 101 F2 2 6
+130 "Foreground" "cbCellForeground"
+130 "Background" "cbCellBackground"
+130 "Font" "cbCellFont"
+0 
+258 "New" 1 IlvPopupMenu 0 0 168 183 F2 2 13
+130 "IlvLabelMatrixItem" "cbLabelItem"
+130 "IlvFilledLabelMatrixItem" "cbFilledLabelItem"
+0 
+130 "IlvIntMatrixItem" "cbIntItem"
+130 "IlvFilledIntMatrixItem" "cbFilledIntItem"
+0 
+130 "IlvFloatMatrixItem" "cbFloatItem"
+130 "IlvFilledFloatMatrixItem" "cbFilledFloatItem"
+0 
+130 "IlvDoubleMatrixItem" "cbDoubleItem"
+130 "IlvFilledDoubleMatrixItem" "cbFilledDoubleItem"
+0 
+130 "IlvBitmapMatrixItem" "cbBitmapItem" 
+130 "Remove" "cbCellRemove" 
+2 "Help" } 0 368 1 0 1 0 1 0 2
+2 { 2 0 IlvTextField 375 69 126 20 F6 1 1 -1 0 "" } 96 "tfType" "TextField" 320 1 5 2
+2 { 3 0 IlvTextField 374 94 127 20 F6 1 1 -1 0 "" } 96 "tfLabel" "TextField" 324 "cbLabel" 1 5 2
+2 { 4 0 IlvSheet 5 193 480 160 2 1 1 1 60 20 1 0 1 1 1 0 1 30 30 24 
+44 
+64 
+84 
+104 
+124 
+144 
+164 
+184 
+204 224 
+244 
+264 
+284 
+304 
+324 
+344 
+364 
+384 
+404 424 
+444 
+464 
+484 
+504 
+524 
+544 
+564 
+584 
+604 52 0 1 64 2 1 0 2 64 2 2 0 3 64 2 3 0 4 64 2 4
+0 5 64 2 5 0 6 64 2 6 0 7 64 2 7 0 8 64 2 8
+0 9 64 2 9 0 10 64 2 10 0 11 64 2 11 0 12 64 2 12
+0 13 64 2 13 0 14 64 2 14 0 15 64 2 15 0 16 64 2 16
+0 17 64 2 17 0 18 64 2 18 0 19 64 2 19 0 20 64 2 20
+1 0 64 2 1 1 1 0 1 "Label" 1 2 0 1 "Label"
+2 0 64 2 2
+2 1 0 1 "Label" 2 2 0 1 "Label" 3 0 64 2 3 3 1 0 1 "Label" 3 2 0 1 "Label"
+4 0 64 2 4
+4 1 0 1 "Label" 4 2 0 1 "Label" 5 0 64 2 5 5 1 0 1 "Label" 5 2 0 1 "Label"
+6 0 64 2 6
+6 1 0 1 "Label" 6 2 0 1 "Label" 7 0 64 2 7 7 1 0 1 "Label" 7 2 0 1 "Label"
+8 0 64 2 8
+8 1 0 1 "Label" 9 0 64 2 9 9 1 0 1 "Label" 10 0 64 2 10
+10 1 0 1 "Label" 10 4 0 1 ""
+11 0 64 2 11 11 1 0 1 "Label" 12 0 64 2 12
+12 1 0 1 "Label" 1 N 10 4 1 1 } 96 "MySheet" "Sheet" 964 "MySheetCB" 1 5 1 4 2 2
+2 { 5 0 IlvLabel 5 59 "Columns" } 0 0
+2 { 6 0 IlvLabel 5 87 "xgrid" } 0 0
+2 { 7 0 IlvLabel 5 143 "Spacing" } 0 0
+2 { 8 0 IlvTextField 65 41 40 23 F6 1 1 -1 0 "" } 96 "tfColumns" "TextField" 4 "cbColumns"
+2 { 9 0 IlvLabel 115 59 "Rows" } 0 0
+2 { 10 0 IlvTextField 180 41 40 23 F6 1 1 -1 0 "" } 96 "tfRows" "TextField" 4 "cbRows"
+2 { 11 0 IlvTextField 65 69 40 23 F6 1 1 -1 0 "" } 96 "tfXgrid" "TextField" 4 "cbXgrid"
+2 { 12 0 IlvLabel 115 87 "ygrid" } 0 0
+2 { 13 0 IlvTextField 180 69 40 23 F6 1 1 -1 0 "" } 96 "tfYgrid" "TextField" 4 "cbYgrid"
+2 { 14 0 IlvLabel 5 115 "1rst Col." } 0 0
+2 { 15 0 IlvTextField 65 97 40 23 F6 1 1 -1 0 "" } 96 "tfFirstCol" "TextField" 4 "cbFirstCol"
+2 { 16 0 IlvLabel 115 115 "1rst Row" } 0 0
+2 { 17 0 IlvTextField 180 97 40 23 F6 1 1 -1 0 "" } 96 "tfFirstRow" "TextField" 4 "cbFirstRow"
+2 { 18 0 IlvTextField 65 125 40 23 F6 1 1 -1 0 "" } 96 "tfSpacing" "TextField" 4 "cbSpacing"
+2 { 19 0 IlvLabel 115 143 "Thickness" } 0 0
+2 { 20 0 IlvTextField 180 125 40 23 F6 1 1 -1 0 "" } 96 "tfThickness" "TextField" 4 "cbThickness"
+2 { 21 0 IlvToggle 231 36 103 17 F1 1 1 2 1 0 0 Y "Item Relief" } 96 "tgItemRelief" "Toggle" 4 "cbItemRelief"
+2 { 22 0 IlvToggle 231 58 103 17 F1 1 1 2 1 0 0 Y "Grid" } 96 "tgGrid" "Toggle" 4 "cbGrid"
+2 { 23 0 IlvToggle 231 80 103 17 F1 1 1 2 1 0 0 Y "Fit to Size" } 96 "tgFitToSize" "Toggle" 4 "cbFitToSize"
+2 { 24 0 IlvToggle 231 102 103 17 F1 1 1 2 1 0 0 Y "Allow Edit" } 96 "tgAllowEdit" "Toggle" 4 "cbAllowEdit"
+2 { 25 0 IlvToggle 231 124 103 17 F1 1 1 2 1 0 0 Y "Shadow" } 96 "tgShadow" "Toggle" 4 "cbShadow"
+2 { 26 0 IlvToggle 232 146 103 17 F1073741825 1 1 2 1 0 0 Y "Sensitive" } 96 "tgSensitive" "Toggle" 4 "cbSensitive"
+2 { 27 0 IlvToggle 231 168 103 17 F1 1 1 2 1 0 0 Y "Exclusive" } 96 "tgExclusive" "Toggle" 4 "cbExclusive"
+2 { 28 0 IlvLabel 362 61 "c" } 0 0
+2 { 29 0 IlvLabel 343 111 "label" } 0 0
+2 { 30 0 IlvLabel 344 86 "type" } 0 0
+2 { 31 0 IlvLabel 454 61 "r" } 0 64 1 48
+2 { 32 0 IlvTextField 463 44 38 20 F6 1 1 -1 0 "" } 96 "tfRowNo" "TextField" 64 1 5
+Size 506 373

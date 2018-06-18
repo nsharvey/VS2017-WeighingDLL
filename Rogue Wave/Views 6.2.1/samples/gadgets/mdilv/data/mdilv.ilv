@@ -1,0 +1,59 @@
+// Ilv Version: 3.1
+// File generated: Wed Oct 20 16:22:42 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "mdilv"
+PathName "mdilv.ilv"
+Palettes 3
+0 "gray" "black" "button" "%helvetica-12-B" 0 solid solid 0 0 0
+2 27252 27252 27252 "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+"IlvStText" 1 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 4
+1 { 0 0 IlvToolBar 0 0 552 25 F295 2 2 3
+IlvMenuItem 67108865 2 4 "^File"  0 IlvPopupMenu 0 0 114 86 F166 2 2 4
+IlvMenuItem 436207619 2 4 "New" 1 0 "icon/new.png"  "NewCB" "Ctrl+N" 14 
+IlvMenuItem 436207619 2 4 "&menu_open..." 1 0 "icon/open.png"  "OpenCB" "Ctrl+O" 15 
+IlvMenuItem 0 2 4  
+IlvMenuItem 436207617 2 4 "&menu_quit"  "QuitCB" "Ctrl+Q" 17  22   
+IlvMenuItem 67125249 2 4 "BUFFERS" "^Windows"  0 IlvPopupMenu 57 22 173 142 F38 2 2 10
+IlvMenuItem 973078529 2 4 "Close"  "CloseCB" "Ctrl+F4" 516 512 
+IlvMenuItem 33554433 2 4 "CloseAll"  "CloseAllCB" 
+IlvMenuItem 0 2 4  
+IlvMenuItem 973078529 2 4 "Next"  "NextCB" "Ctrl+F6" 518 512 
+IlvMenuItem 973078529 2 4 "Previous"  "PreviousCB" "Ctrl+Shift+F6" 518 768 
+IlvMenuItem 0 2 4  
+IlvMenuItem 33554433 2 4 "Cascade"  "CascadeCB" 
+IlvMenuItem 33554433 2 4 "Tile Horizontally"  "TileHorizontalCB" 
+IlvMenuItem 33554433 2 4 "Tile Vertically"  "TileVerticalCB" 
+IlvMenuItem 16384 2 4 "START_BUFFERS"    
+IlvMenuItem 67108865 2 4 "^Help"  0 IlvPopupMenu 218 127 44 22 F38 2 2 1
+IlvMenuItem 1 2 4 "About"     0 } 32 "MenuBar"
+0
+1 { 1 1 IlvToolBar 0 25 552 27 F295 2 2 5
+IlvMenuItem 1107296258 2 4 1 0 "icon/new.png"  "NewCB" "New (Ctrl+N)" 
+IlvMenuItem 0 2 4  
+IlvMenuItem 1107296258 2 4 1 0 "icon/open.png"  "OpenCB" "Open (Ctrl+O)" 
+IlvMenuItem 0 2 4  
+IlvMenuItem 16388 2 4 "BUFFERING" 1 IlvOptionMenu 58 28 166 20 F1 2 2
+IlvMenuItem 65 2 4 "Simple buffering"  
+IlvMenuItem 1 2 4 "Double buffering"   0    0 } 32 "ToolBar"
+0
+1 { 2 1 IlvToolBar 0 545 552 20 F536871207 0 2 1
+IlvMenuItem 1 2 4 "Ready"   0 } 32 "StatusBar"
+0
+1 { 3 P 1
+[ IlvPanelObjectReference IlvPanelObjectReference  "940415681.0" ]
+2 IlvGadgetContainerRectangle 0 54 552 487 "" } 32 "Desktop"
+0
+Size 552 568
+GeometryHandlers
+1 100 0 552 0 552 0
+4 3 0 0 0  552 0 552 0  0 0 0 0
+ 3 0 0 0  552 0 552 1  0 0 0 0
+ 3 0 0 0  552 0 552 2  0 0 0 0
+ 3 0 0 0  552 0 552 3  0 0 0 0
+1 100 0 568 0 568 0
+4 3 0 0 0  0 0 25 0  543 0 543 0
+ 3 0 0 25  0 0 27 1  516 0 516 0
+ 3 545 0 545  0 0 20 2  0 3 3 0
+ 3 0 0 54  487 0 487 3  0 0 27 0
+EOF

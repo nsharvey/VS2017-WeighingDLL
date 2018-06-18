@@ -1,0 +1,162 @@
+// Ilv Version: 5.0
+// File generated: Fri Feb 08 14:23:47 2002
+// Creator class: IlvGadgetManagerOutput
+FileName "datespec"
+Palettes 1
+"IlvStToolBar" 0 F "defaultBg" "defaultFg" "normal" "%helvetica-12" 0 solid solid 0 0 0 65535 1
+IlvObjects 24
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 6 126 140 134 F268435468 0 { IlvMessageItem 262145 4 16 4 "&value"  }   } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 150 126 203 134 F268435468 0 { IlvMessageItem 262169 4 16 4 "&format"  }   } 32 "Frame_1"
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 2 138 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Label"  }   } 0
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 28 138 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&alignment"  }   } 0
+0
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 140 28 216 20 F807 2 1 -1 0 "" 3
+{ IlvGadgetItem 1 2 4 "&right"  } 
+{ IlvGadgetItem 1 2 4 "&center"  } 
+{ IlvGadgetItem 1 2 4 "&left"  }  4 0 } 32 "TxtFdAlignment"
+0
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 54 138 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&nb chars"  }   } 0
+0
+2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 140 54 216 22 F6 2 2 -1 0 "1234543" . , 2 0 0 2147483647 } 32 "TxtFdNoChars"
+0
+2 { 7 P 2
+[ IlvAttachments _IlvAttachments 16  1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 5 80 350 16 F1 2 1 2 0 0 0 Y "&editable" } 32 "TxtFdEditable"
+0
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 145 63 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&day"  }   } 0
+0
+2 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 172 63 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&month"  }   } 0
+0
+2 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 199 63 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&year"  }   } 0
+0
+2 { 11 P 2
+[ IlvAttachments _IlvAttachments 16  1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 5 104 346 16 F1 2 1 2 0 0 0 Y "&ChangeFocusOnValidation" } 32 "TxtFdChangeFocus"
+0
+2 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 160 145 61 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&first"  }   } 0
+0
+2 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 160 172 61 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&middle"  }   } 0
+0
+2 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 160 199 61 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&last"  }   } 0
+0
+2 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 160 226 119 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&separator"  }   } 0
+0
+2 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 279 227 67 23 F6 2 1 1 0 "" } 32 "DateSeparator"
+4096 "DateLastFormat"
+3 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 82 200 57 23 F6 2 2 4 0 "1995" . , 6 0 -2147483648 2147483647 } 32 "DateYear"
+6144 "DateFirstFormat" "DateMonth"
+3 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 140 2 215 22 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038 } 32 "LabelName"
+0
+3 { 19 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 82 173 57 23 F6 2 2 4 0 "7" . , 6 0 1 12 } 32 "DateMonth"
+6144 "DateYear" "DateDay"
+3 { 20 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 82 146 57 23 F6 2 2 4 0 "15" . , 6 0 1 31 } 32 "DateDay"
+6144 "DateMonth" "thousandSeparator"
+3 { 21 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 218 147 128 20 F1 2 8
+{ IlvMenuItem 1 2 4 "df_day"  } 
+{ IlvMenuItem 1 2 4 "df_Day"  } 
+{ IlvMenuItem 1 2 4 "df_month"  } 
+{ IlvMenuItem 1 2 4 "df_Month"  } 
+{ IlvMenuItem 1 2 4 "df_month_text"  } 
+{ IlvMenuItem 65 2 4 "df_abbrevMonth"  } 
+{ IlvMenuItem 1 2 4 "df_year"  } 
+{ IlvMenuItem 1 2 4 "df_Year"  }  5  } 32 "DateFirstFormat"
+6144 "DateMiddleFormat" "DateYear"
+3 { 22 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 218 174 128 20 F1 2 8
+{ IlvMenuItem 1 2 4 "df_day"  } 
+{ IlvMenuItem 1 2 4 "df_Day"  } 
+{ IlvMenuItem 1 2 4 "df_month"  } 
+{ IlvMenuItem 1 2 4 "df_Month"  } 
+{ IlvMenuItem 1 2 4 "df_month_text"  } 
+{ IlvMenuItem 65 2 4 "df_abbrevMonth"  } 
+{ IlvMenuItem 1 2 4 "df_year"  } 
+{ IlvMenuItem 1 2 4 "df_Year"  }  5  } 32 "DateMiddleFormat"
+6144 "DateLastFormat" "DateFirstFormat"
+3 { 23 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 218 201 128 20 F1 2 8
+{ IlvMenuItem 1 2 4 "df_day"  } 
+{ IlvMenuItem 1 2 4 "df_Day"  } 
+{ IlvMenuItem 1 2 4 "df_month"  } 
+{ IlvMenuItem 1 2 4 "df_Month"  } 
+{ IlvMenuItem 1 2 4 "df_month_text"  } 
+{ IlvMenuItem 65 2 4 "df_abbrevMonth"  } 
+{ IlvMenuItem 1 2 4 "df_year"  } 
+{ IlvMenuItem 1 2 4 "df_Year"  }  5  } 32 "DateLastFormat"
+6144 "DateSeparator" "DateMiddleFormat"
+Size 358 262
+GeometryHandlers
+1 100 0 358 0 358 0
+19 3 0 0 140  216 0 216 4  0 0 2 0
+ 3 0 0 140  216 0 216 6  0 0 2 0
+ 3 0 0 140  215 0 215 18  0 0 3 0
+ 3 0 0 218  128 0 128 21  0 0 12 0
+ 3 0 0 218  128 0 128 22  0 0 12 0
+ 3 0 0 218  128 0 128 23  0 0 12 0
+ 3 0 0 279  67 0 67 16  0 0 12 0
+ 3 0 0 150  203 0 203 1  0 0 5 0
+ 3 0 0 6  0 0 140 0  212 0 212 0
+ 3 0 0 20  0 0 63 8  275 0 275 0
+ 3 0 0 82  0 0 57 20  219 0 219 0
+ 3 0 0 82  0 0 57 19  219 0 219 0
+ 3 0 0 82  0 0 57 17  219 0 219 0
+ 3 0 0 20  0 0 63 9  275 0 275 0
+ 3 0 0 20  0 0 63 10  275 0 275 0
+ 3 0 0 160  0 0 61 12  137 0 137 0
+ 3 0 0 160  0 0 61 13  137 0 137 0
+ 3 0 0 160  0 0 61 14  137 0 137 0
+ 3 0 0 160  0 0 119 15  79 0 79 0
+1 100 0 262 0 262 0
+0
+Layers 4
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+EOF

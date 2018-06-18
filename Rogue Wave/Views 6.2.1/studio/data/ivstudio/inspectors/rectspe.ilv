@@ -1,0 +1,19 @@
+// Ilv Version: 3.1
+// File generated: Tue Oct 20 16:42:14 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "rectspe"
+PathName "W:\\work.noiret\\studio\\data\\ivstudio\\inspectors\\rectspe.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+IlvObjects 2
+2 { 0 0 IlvMessageLabel 4 2 138 22 F8 0 25 16 4 "&file"   } 0
+0
+2 { 1 0 IlvFileSelectorField 140 2 160 23 F6 2 1 -1 0 "" } 96 "RectangleFilename" "TextField"
+6144 "GadItemBitmapState" "GadItemBitmapState"
+Size 303 33
+GeometryHandlers
+1 100 0 303 0 303 0
+1 3 0 0 140  160 0 160 1  0 0 3 0
+1 100 0 33 0 33 0
+0
+EOF

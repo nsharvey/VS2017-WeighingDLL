@@ -1,0 +1,40 @@
+// Ilv Version: 4.0
+// File generated: Thu Nov 08 20:51:04 2001
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 4
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 30 32 258 20 F806 2 1 -1 0 "SCCombo" 8
+{ IlvGadgetItem 1 2 4 "A"  } 
+{ IlvGadgetItem 1 2 4 "B"  } 
+{ IlvGadgetItem 1 2 4 "C"  } 
+{ IlvGadgetItem 1 2 4 "D"  } 
+{ IlvGadgetItem 1 2 4 "E"  } 
+{ IlvGadgetItem 1 2 4 "F"  } 
+{ IlvGadgetItem 1 2 4 "G"  } 
+{ IlvGadgetItem 1 2 4 "H"  }  4 0 } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 15 7 316 118 F268435468 0 { IlvMessageItem 262169 4 16 4 "&header"  }   } 0
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 16 155 316 118 F268435468 0 { IlvMessageItem 262169 4 16 4 "&footer"  }   } 0
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 31 180 258 20 F806 2 1 -1 0 "SCCombo" 8
+{ IlvGadgetItem 1 2 4 "A"  } 
+{ IlvGadgetItem 1 2 4 "B"  } 
+{ IlvGadgetItem 1 2 4 "C"  } 
+{ IlvGadgetItem 1 2 4 "D"  } 
+{ IlvGadgetItem 1 2 4 "E"  } 
+{ IlvGadgetItem 1 2 4 "F"  } 
+{ IlvGadgetItem 1 2 4 "G"  } 
+{ IlvGadgetItem 1 2 4 "H"  }  4 0 } 0
+0
+Size 380 300
+EOF

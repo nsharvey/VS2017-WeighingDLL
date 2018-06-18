@@ -1,0 +1,31 @@
+help "cbinsp" {
+    title "Callbacks inspector";
+    description "Inspecting object typed callbacks";
+}
+
+The Callbacks inspector lets you specify callbacks
+for the selected object. The applicable callback 
+types depend on the object class.
+
+For each typed callback, you can specify a callback 
+name and attach a value to that callback. 
+In your callback code, you can access this value by 
+calling the IlvGraphic::GetCurrentCallbackValue()
+function.
+
+----------------------------------------------------
+jsstudio
+
+In jsstudio, the Callback Inspector has a specific 
+column that lets you specify the callback language 
+and activate the Script Editor.
+
+You can specify the language of each callback 
+attached to the inspected object. If you want to 
+attach a Rogue Wave Script callback, check the Script toggle
+button on the corresponding line. In this case, you 
+can click the Script Editor icon to edit the 
+Script function in the Script Editor. If the 
+function is not yet defined in the script, a simple 
+skeleton of the callback is inserted in the Script 
+Editor.

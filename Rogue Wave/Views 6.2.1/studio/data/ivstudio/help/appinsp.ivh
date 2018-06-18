@@ -1,0 +1,180 @@
+help "appinsp" {
+    title "Application Inspector";
+    description "Inspecting Application Class";
+}
+The Application Inspector shows the properties of the 
+current application. You are able to view and edit 
+them as required. 
+ 
+The application properties are grouped into four 
+different notebook pages, General, Options, Header, 
+and Source. 
+ 
+General Page
+
+Class
+The generated application class name can be specified
+in the Class field. By default it is Testapp. The name
+that you specify in this field must be valid
+C++ class name. 
+ 
+Base Class 
+The base class of the application can be specified in 
+the Base Class field. By default it is IlvApplication. 
+The name that you specify in this field must be a valid 
+C++ class name.
+
+File Name 
+Shows the name of the .iva files containing the 
+application description.
+
+Data 
+The Data field displays the location where the 
+application data file is saved. This field cannot be
+edited here. To change the location of the application 
+data file, choose Save As... from the File menu of the 
+Application Editor panel and save it in the directory 
+of your choice.
+
+Header 
+Use the Header field to set the location where the 
+application header file is generated. By default, 
+the header file is generated in the directory where 
+the application data file is saved. This directory 
+is taken to be relative to the application data 
+file directory.
+
+Header File Scope
+The directory where header files are generated is
+obtained by appending an header file scope to the
+specified header directory. The option Header File
+Scope is used to specify a sub-directory that will
+be generated in the #include statements.
+
+  Assuming that the application file is in the
+  directory "/myappdir", the Header directory is 
+  "include", and the Header File Scope is "myapp/", 
+  header files will be generated in the directory
+  /myappdir/include/myapp. The generated #include
+  statements corresponding to the application header
+  files will be the following:
+
+                #include <myapp/file1.h>
+                #include <myapp/file2.h>
+  instead of 
+                #include <file1.h>
+                #include <file2.h>
+
+Source 
+Use the Source field to set the location where the 
+application source file is generated. By default, 
+the source file is generated in the directory where 
+the application data file is saved. This directory 
+is taken to be relative to the application data file 
+directory.
+
+Objects Use the Objects field to set the location 
+where the application make file is generated. By 
+default, the make file is generated in the directory 
+where the application data file is saved. This 
+directory is taken to be relative to the application 
+data file directory.
+
+System 
+Use this option menu to set the name of the platform 
+for which you want to generate the make file. The default 
+platform is the one for which Rogue Wave Views Studio 
+is running.
+
+Motif 
+This toggle button is only visible if the platform you 
+choose in the System option menu is an X11 platform. 
+If this toggle button is selected, the generated make 
+file chooses the Motif version of the Rogue Wave Views 
+libraries and links the libXt and libXm libraries to 
+your application.
+
+
+Options Page
+
+Exit
+An Exit button, in a separate panel, can be activated 
+when you run the generated application. This provides 
+you with a simple way to quit the application. Select 
+this toggle button if you want the Exit button set.
+
+ 
+main()
+ 
+Select this toggle button if you want Rogue Wave Views Studio
+to generate a simple main function in the application 
+source file. 
+ 
+Make
+Select this toggle button if you want a simple make file 
+to be generated.
+
+Panel Accessors 
+A panel accessor is a member function of the generated 
+application that lets you access a particular panel of 
+your application. If you check the Panel Accessors 
+toggle button, Rogue Wave Views Studio generates a member 
+function for each panel instance. 
+
+Include in Header 
+In the generated code of an application, the header 
+files generated for the panel classes of the 
+application must be included. The necessary 
+#include statements can be generated in the 
+application header file or in the application source 
+file. If you want to generate the panel accessors 
+(the Panel Accessors toggle button is checked), the 
+header of the panel classes needs to be included in 
+the application header file. In this case, the Include 
+In Header toggle button is inhibited, since you have 
+no choice. Otherwise, the #include statements can be 
+generated in the application source file instead of 
+the application header file. To minimize the 
+compilation dependencies of your whole application, 
+just switch off this toggle button. 
+
+Bitmap Readers. 
+The toggle buttons in the Bitmap Readers frame let 
+you register predefined bitmap readers in the 
+generated code. 
+
+Header Page
+The text you enter in this panel is inserted as typed 
+in the Application header buffer, after the generated 
+#include statements and before the declaration of the 
+generated class. If you want to subclass the generated 
+class from a class other than IlvApplication, you have 
+to insert here the #include statement to include the 
+file declaring your base class. Of course, instead of 
+inserting code, you can use this feature to comment 
+your application.
+
+Source Page
+The text you enter in this panel is inserted as typed 
+in the application source file just before defining 
+the generated member functions. You can use this text 
+to comment the generated file or to insert any C++ code.
+
+--------------------------------------------------------
+jsstudio
+
+Script page
+
+This page is only visible if you use jsstudio or an 
+extension of jsstudio.
+
+Use Rogue Wave Script
+Select this toggle button if you want to use 
+Rogue Wave Script in your application, so jsstudio generates 
+the necessary code to initialize the Rogue Wave Script 
+library.
+
+Script File
+When you launch the application, a script file can 
+be loaded. You can specify a script file name in 
+this field. 

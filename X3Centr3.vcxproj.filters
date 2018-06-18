@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Version">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cssrc\accueil.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\Adxaccueil.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxBalance.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxBasic.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxChoix_Balance.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\Adxchoix_OF.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\Adxclavier_tactile.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxComposant.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxCsvfiles.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxData.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxDate.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxEtalon.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxEtalonLigne.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxFicheISM.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxFicheISMRecipient.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxGadgetContainer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxInterface.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxLot.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxMeid5.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxMeid7.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxMepm.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\Adxmessage.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxMSICS.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxMultiCom.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxOrder.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxPesee_Etalon.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxPesee_OF.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxPhase.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\Adxphrase_Secu.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxPortCom.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxProfile.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxRecipient.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\Adxrecontrole_OF.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxSartorius.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\Adxselection_Balance.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\Adxselection_EtalonLigne.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxSelection_LOT.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\Adxselection_MWF.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\Adxselection_OF.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\Adxselection_phase.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\Adxselection_Recipient.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxUnit.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\AdxWeighingInterface.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\Choix_Balance.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\choix_OF.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\clavier_tactile.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\fexist.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\message.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\Pesee_Etalon.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\pesee_OF.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\phrase_Secu.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\recontrole_OF.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\selection_Balance.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\selection_EtalonLigne.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\selection_LOT.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\selection_MWF.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\selection_OF.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\selection_phase.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\selection_Recipient.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\StdAfx.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\Win unicode.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cssrc\x3centr1.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vrc\resource.rc">
+      <Filter>Source</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>Version</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cssrc\x3centr1.def">
+      <Filter>Source</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cssrc\accueil.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\Adxaccueil.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxBalance.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxBasic.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxChoix_Balance.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\Adxchoix_OF.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\Adxclavier_tactile.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxComposant.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxCsvfiles.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxData.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxDate.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxEtalon.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxEtalonLigne.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxFicheISM.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxFicheISMRecipient.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxGadgetContainer.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxInterface.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxLot.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxMeid5.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxMeid7.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxMepm.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\Adxmessage.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxMSICS.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxMultiCom.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxOrder.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxPesee_Etalon.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxPesee_OF.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxPhase.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\Adxphrase_Secu.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxPortCom.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxProfile.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxRecipient.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\Adxrecontrole_OF.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxSartorius.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\Adxselection_Balance.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\Adxselection_EtalonLigne.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxSelection_LOT.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\Adxselection_MWF.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\Adxselection_OF.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\Adxselection_phase.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\Adxselection_Recipient.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxUnit.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\AdxWeighingInterface.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\Choix_Balance.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\choix_OF.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\clavier_tactile.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\fexist.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\message.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\Pesee_Etalon.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\pesee_OF.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\phrase_Secu.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\recontrole_OF.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\selection_Balance.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\selection_EtalonLigne.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\selection_LOT.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\selection_MWF.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\selection_OF.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\selection_phase.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\selection_Recipient.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\StdAfx.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\Win unicode.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cssrc\x3centr1.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Source\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

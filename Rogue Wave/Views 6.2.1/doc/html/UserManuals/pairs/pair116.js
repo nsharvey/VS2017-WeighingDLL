@@ -1,0 +1,21 @@
+var pairs =
+{
+"settooltip":{"deprecated":1}
+,"deprecated":{"object":1}
+,"object":{"inspector":1}
+,"inspector":{"instead":1}
+,"instead":{"label":1}
+,"label":{"tooltip":1}
+,"tooltip":{"category":1}
+,"category":{"property":1}
+,"property":{"action":1}
+,"action":{"opens":1}
+,"opens":{"dialog":1}
+,"dialog":{"box":1}
+,"box":{"lets":1}
+,"lets":{"attach":1}
+,"attach":{"tool":1}
+,"tool":{"selected":1}
+,"selected":{"object":1}
+}
+;Search.control.loadWordPairs(pairs);

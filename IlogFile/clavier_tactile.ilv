@@ -1,0 +1,356 @@
+// Ilv Version: 6.2
+// File generated: Thu Jun 14 11:20:43 2018
+// Creator class: IlvGadgetManagerOutput
+FileName "clavier_tactile"
+PathName "C:\\GitHub\\Weighing2017\\IlogFile\\clavier_tactile.ilv"
+Palettes 3
+2 F "darkslateblue" "white" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+"default" 1 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+0 F "gray" "black" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 43
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 6 7 734 51 F14 8 1 -1 0 "" } 416 "champSaisie"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 512 64 } 544 "E"
+1
+1 "__ilvCallback" V"String""E" "toucheCB"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 512 144 } 544 "K"
+1
+1 "__ilvCallback" V"String""K" "toucheCB"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 512 224 } 544 "Q"
+1
+1 "__ilvCallback" V"String""Q" "toucheCB"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 512 304 } 544 "W"
+1
+1 "__ilvCallback" V"String""W" "toucheCB"
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 6 499 734 41 F12 0 { IlvMessageItem 262168 4 16 4  }   } 32 "champMessage"
+0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297499999998 8 224 } 544 "A5"
+1
+1 "__ilvCallback" V"String""5" "toucheCB"
+0
+1 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F9.060622913088109 0 0 8.950297974203824 272 64 } 544 "B"
+1
+1 "__ilvCallback" V"String""B" "toucheCB"
+0
+1 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F9.007120678629398 0 0 8.950297974203824 88 224 } 544 "A6"
+1
+1 "__ilvCallback" V"String""6" "toucheCB"
+0
+1 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 192 224 } 544 "M"
+1
+1 "__ilvCallback" V"String""M" "toucheCB"
+0
+1 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 272 144 } 544 "H"
+1
+1 "__ilvCallback" V"String""H" "toucheCB"
+0
+1 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 272 224 } 544 "N"
+1
+1 "__ilvCallback" V"String""N" "toucheCB"
+0
+1 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 272 304 } 544 "T"
+1
+1 "__ilvCallback" V"String""T" "toucheCB"
+0
+1 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 352 384 } 544 "toucheArriere"
+1
+1 "__ilvCallback" "arriereCB"
+0
+1 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 352 224 } 544 "O"
+1
+1 "__ilvCallback" V"String""O" "toucheCB"
+0
+1 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 432 224 } 544 "P"
+1
+1 "__ilvCallback" V"String""P" "toucheCB"
+0
+1 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 8 144 } 544 "A3"
+1
+1 "__ilvCallback" V"String""3" "toucheCB"
+0
+1 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.942833745682844 0 0 9.058665802406443 8 64 } 544 "A1"
+1
+1 "__ilvCallback" V"String""1" "toucheCB"
+0
+1 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.976206935322121 0 0 9.0586652474696 88 64 } 544 "A2"
+1
+1 "__ilvCallback" V"String""2" "toucheCB"
+0
+1 { 19 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 192 64 } 544 "A"
+1
+1 "__ilvCallback" V"String""A" "toucheCB"
+0
+1 { 20 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 88 144 } 544 "A4"
+1
+1 "__ilvCallback" V"String""4" "toucheCB"
+0
+1 { 21 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 192 144 } 544 "G"
+1
+1 "__ilvCallback" V"String""G" "toucheCB"
+0
+1 { 22 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 352 64 } 544 "C"
+1
+1 "__ilvCallback" V"String""C" "toucheCB"
+0
+1 { 23 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 432 64 } 544 "D"
+1
+1 "__ilvCallback" V"String""D" "toucheCB"
+0
+1 { 24 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 352 144 } 544 "I"
+1
+1 "__ilvCallback" V"String""I" "toucheCB"
+0
+1 { 25 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 432 144 } 544 "J"
+1
+1 "__ilvCallback" V"String""J" "toucheCB"
+0
+1 { 26 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297499999998 8 304 } 544 "A7"
+1
+1 "__ilvCallback" V"String""7" "toucheCB"
+0
+1 { 27 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297499999998 8 384 } 544 "A9"
+1
+1 "__ilvCallback" V"String""9" "toucheCB"
+0
+1 { 28 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 88 304 } 544 "A8"
+1
+1 "__ilvCallback" V"String""8" "toucheCB"
+0
+1 { 29 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 88 384 } 544 "A0"
+1
+1 "__ilvCallback" V"String""0" "toucheCB"
+0
+1 { 30 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 192 304 } 544 "S"
+1
+1 "__ilvCallback" V"String""S" "toucheCB"
+0
+1 { 31 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 192 384 } 544 "A11"
+1
+1 "__ilvCallback" V"String""." "toucheCB"
+0
+1 { 32 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 352 304 } 544 "U"
+1
+1 "__ilvCallback" V"String""U" "toucheCB"
+0
+1 { 33 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 432 384 } 544 "Y"
+1
+1 "__ilvCallback" V"String""Y" "toucheCB"
+0
+1 { 34 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 432 304 } 544 "V"
+1
+1 "__ilvCallback" V"String""V" "toucheCB"
+0
+1 { 35 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 512 384 } 544 "Z"
+1
+1 "__ilvCallback" V"String""Z" "toucheCB"
+0
+1 { 36 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F9.028607672801325 0 0 8.967813167611904 592 64 } 544 "F"
+1
+1 "__ilvCallback" V"String""F" "toucheCB"
+0
+1 { 37 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F9.028607672801325 0 0 9.0586652474696 592 144 } 544 "L"
+1
+1 "__ilvCallback" V"String""L" "toucheCB"
+0
+1 { 38 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F9.028607672801325 0 0 8.967812930045984 592 224 } 544 "R"
+1
+1 "__ilvCallback" V"String""R" "toucheCB"
+0
+1 { 39 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F9.025172376103679 0 0 8.967813167611904 592 304 } 544 "X"
+1
+1 "__ilvCallback" V"String""X" "toucheCB"
+0
+1 { 40 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F6.294187954849625 0 0 6.199098944911213 688 72 } 544 "validation"
+1
+1 "__ilvCallback" "validationCB"
+0
+1 { 41 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F6.207774725104287 0 0 5.790466790573961 688 440 } 544 "retour"
+1
+1 "__ilvCallback" "retourCB"
+0
+1 { 42 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F8.959467753264427 0 0 8.950297974203824 272 384 } 544 "tiret"
+1
+1 "__ilvCallback" V"String""-" "toucheCB"
+0
+Size 751 543
+Background "gray"
+GeometryHandlers
+1 100 0 751 0 751 0
+43 3 0 0 6  734 0 734 5  0 0 11 0
+ 3 0 0 6  734 0 734 0  0 0 11 0
+ 3 688 0 688  50 0 50 41  13 0 13 0
+ 3 688 0 688  50 0 50 40  13 1 13 0
+ 3 0 0 8  72 0 72 17  671 0 671 0
+ 3 0 0 8  72 0 72 16  671 0 671 0
+ 3 0 0 8  72 0 72 6  671 0 671 0
+ 3 0 0 8  72 0 72 26  671 0 671 0
+ 3 0 0 8  72 0 72 27  671 0 671 0
+ 3 88 0 88  72 0 72 18  591 0 591 0
+ 3 88 0 88  72 0 72 20  591 0 591 0
+ 3 88 0 88  72 0 72 8  591 0 591 0
+ 3 88 0 88  72 0 72 28  591 0 591 0
+ 3 88 0 88  72 0 72 29  591 0 591 0
+ 3 192 0 192  72 0 72 19  487 0 487 0
+ 3 192 0 192  72 0 72 21  487 0 487 0
+ 3 192 0 192  72 0 72 9  487 0 487 0
+ 3 192 0 192  72 0 72 30  487 0 487 0
+ 3 192 0 192  72 0 72 31  487 0 487 0
+ 3 272 0 272  72 0 72 7  407 0 407 0
+ 3 272 0 272  72 0 72 10  407 0 407 0
+ 3 272 0 272  72 0 72 11  407 0 407 0
+ 3 272 0 272  72 0 72 12  407 0 407 0
+ 3 352 0 352  72 0 72 13  327 0 327 0
+ 3 352 0 352  72 0 72 22  327 0 327 0
+ 3 352 0 352  72 0 72 24  327 0 327 0
+ 3 352 0 352  72 0 72 14  327 0 327 0
+ 3 352 0 352  72 0 72 32  327 0 327 0
+ 3 432 0 432  72 0 72 33  247 0 247 0
+ 3 432 0 432  72 0 72 23  247 0 247 0
+ 3 432 0 432  72 0 72 25  247 0 247 0
+ 3 432 0 432  72 0 72 15  247 0 247 0
+ 3 432 0 432  72 0 72 34  247 0 247 0
+ 3 512 0 512  72 0 72 35  167 0 167 0
+ 3 512 0 512  72 0 72 1  167 0 167 0
+ 3 512 0 512  72 0 72 2  167 0 167 0
+ 3 512 0 512  72 0 72 3  167 0 167 0
+ 3 512 0 512  72 0 72 4  167 0 167 0
+ 3 592 0 592  72 0 72 36  87 0 87 0
+ 3 592 0 592  72 0 72 37  87 0 87 0
+ 3 592 0 592  72 0 72 38  87 0 87 0
+ 3 592 0 592  72 0 72 39  87 0 87 0
+ 3 272 0 272  72 0 72 42  407 0 407 0
+1 100 0 543 0 543 0
+43 3 499 0 499  41 0 41 5  0 3 3 0
+ 3 0 0 7  51 0 51 0  485 0 485 0
+ 3 64 0 64  72 0 72 17  407 0 407 0
+ 3 144 0 144  72 0 72 16  327 0 327 0
+ 3 224 0 224  72 0 72 6  247 0 247 0
+ 3 304 0 304  72 0 72 26  167 0 167 0
+ 3 384 0 384  72 0 72 27  87 0 87 0
+ 3 72 0 72  50 0 50 40  421 9 421 0
+ 3 440 0 440  46 0 46 41  0 0 57 0
+ 3 64 0 64  72 0 72 18  407 0 407 0
+ 3 144 0 144  72 0 72 20  327 0 327 0
+ 3 224 0 224  72 0 72 8  247 0 247 0
+ 3 304 0 304  72 0 72 28  167 0 167 0
+ 3 384 0 384  72 0 72 29  87 0 87 0
+ 3 64 0 64  72 0 72 19  407 0 407 0
+ 3 144 0 144  72 0 72 21  327 0 327 0
+ 3 224 0 224  72 0 72 9  247 0 247 0
+ 3 304 0 304  72 0 72 30  167 0 167 0
+ 3 384 0 384  72 0 72 31  87 0 87 0
+ 3 64 0 64  72 0 72 7  407 0 407 0
+ 3 144 0 144  72 0 72 10  327 0 327 0
+ 3 224 0 224  72 0 72 11  247 0 247 0
+ 3 304 0 304  72 0 72 12  167 0 167 0
+ 3 384 0 384  72 0 72 13  87 0 87 0
+ 3 64 0 64  72 0 72 22  407 0 407 0
+ 3 144 0 144  72 0 72 24  327 0 327 0
+ 3 224 0 224  72 0 72 14  247 0 247 0
+ 3 304 0 304  72 0 72 32  167 0 167 0
+ 3 384 0 384  72 0 72 33  87 0 87 0
+ 3 64 0 64  72 0 72 23  407 0 407 0
+ 3 144 0 144  72 0 72 25  327 0 327 0
+ 3 224 0 224  72 0 72 15  247 0 247 0
+ 3 304 0 304  72 0 72 34  167 0 167 0
+ 3 384 0 384  72 0 72 35  87 0 87 0
+ 3 64 0 64  72 0 72 1  407 0 407 0
+ 3 144 0 144  72 0 72 2  327 0 327 0
+ 3 224 0 224  72 0 72 3  247 0 247 0
+ 3 304 0 304  72 0 72 4  167 0 167 0
+ 3 64 0 64  72 0 72 36  407 0 407 0
+ 3 144 0 144  72 0 72 37  327 0 327 0
+ 3 224 0 224  72 0 72 38  247 0 247 0
+ 3 304 0 304  72 0 72 39  167 0 167 0
+ 3 384 0 384  72 0 72 42  87 0 87 0
+EOF

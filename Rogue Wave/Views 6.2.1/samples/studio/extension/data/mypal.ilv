@@ -1,0 +1,17 @@
+// Ilv Version: 3.0
+// File generated: Wed Jan 28 18:04:18 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "mypal"
+PathName "C:\\Users\\Soyhy\\Dev\\Views\\samples\\studio\\data\\mypal.ilv"
+Palettes 1
+"default" 0 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 2
+1 { 0 0 MyClass 27 14 96 36 } 64 "MyInteractor"
+0
+1 { 1 0 IlvButton 50 68 73 23 F1 2 16 Y "Load" } 512
+1
+1 "__ilvCallback" "loadilv"
+0
+Size 173 103
+Background 48830 48830 48830
+EOF

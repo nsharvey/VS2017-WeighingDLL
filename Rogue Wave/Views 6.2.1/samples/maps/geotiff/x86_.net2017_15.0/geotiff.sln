@@ -1,0 +1,6 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{135D2FB2-1D6F-11E8-9A26-E378772C9500}") = "geotiff", "geotiff.vcxproj", "{135CAA6A-1D6F-11E8-9A26-E378772C9500}"
+EndProject
+Global
+EndGlobal

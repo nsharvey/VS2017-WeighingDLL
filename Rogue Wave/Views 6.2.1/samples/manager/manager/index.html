@@ -1,0 +1,69 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Manager - Samples: manager</title>
+	</head>
+    <body>
+		<a name="draw"><h1>Sample: <code>draw</code></h1><h1 class="subtitle">Basic Graphic Editor</h1></a>
+		<p>Example of a basic graphic editor.</p>
+		<img src="data/draw.png"/>
+		<p>
+		This simple application allows you to create graphic objects
+		and modify them.
+		The application is composed of a drawing area and a toolbar that enables
+		to switch between several editing modes. 
+		In the drawing area, the default manager accelerators are
+		available:
+		<ul>
+			<li>'Z':	zoom in</li>
+			<li>'U':	zoom out</li>
+			<li>'i':	set transformer to 'identity'</li>
+			<li>'f':	fit to size</li>
+			<li>'R':	rotate drawing</li>
+			<li>arrows:	pan in a given direction</li>
+		</ul>
+		Additional accelerators provided by the
+		<code>IlvSelectInteractor</code> in selection mode:
+		<ul>
+			<li>'&lt;Ctrl&gt;+A':	select all objects</li>
+			<li>'Del':	remove all selected objects</li>
+			<li>'&lt;Ctrl&gt;+G':	group the selected objects</li>
+			<li>'&lt;Ctrl&gt;+U':	ungroup the selected objects</li>
+			<li>'p':	raise the selected objects</li>
+			<li>(uppercase) 'P':	lower the selected objects</li>
+		</ul>
+		</p>
+            <p>
+            For demonstration purposes, this sample
+            code uses portable GUI elements from the Gadgets
+            package of the Rogue Wave Views suite. Feel free to use
+            these elements in your application if you have a
+            license for Rogue Wave Views or for Rogue Wave Views Controls.
+            This information applies to the classes located in the
+            library <code>ilvgadgt</code>, 
+            listed in the <a href="../../../readme.htm#libs:ilvgadgt">README</a> 
+            file that you can find in the installation directory.
+            </p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvManager</code></li>
+			<li><code>IlvManagerViewHook</code></li>
+			<li><code>IlvSelectInteractor</code></li>
+			<li><code>IlvResourcePanel</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/dragsq.h"><code>include/dragsq.h</code></a></li>
+			<li><a href="src/dragsq.cpp"><code>src/dragsq.cpp</code></a></li>
+			<li><a href="src/draw.cpp"><code>src/draw.cpp</code></a></li>
+		</ul>

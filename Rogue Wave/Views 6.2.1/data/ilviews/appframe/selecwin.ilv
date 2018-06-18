@@ -1,0 +1,42 @@
+// Ilv Version: 3.1
+// File generated: Fri Nov 19 10:53:09 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "selecwin"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12" 0 solid solid 0 0 0
+IlvObjects 6
+1 { 0 0 IlvMessageLabel 12 1 322 22 F8 0 25 16 4 "&SelectWindow"   } 384
+0
+1 { 1 0 IlvStringList 12 26 323 280 F131 2 A A 0 0 0 0 0 3 0 0 2 0 } 544 "WindowsList"
+2
+1 "__ilvCallback" "ActivateCB"
+1 "__ilvSCallback" "SelectWindow"
+0
+1 { 2 0 IlvButton 349 284 96 23 F9 2 1 16 4 "&Close"   } 32 "Close"
+0
+1 { 3 0 IlvButton 349 25 96 23 F9 2 1 16 4 "&MenuActivate"   } 544 "ActivateWindow"
+1
+1 "__ilvCallback" "ActivateCB"
+0
+1 { 4 0 IlvButton 349 54 96 23 F9 2 1 16 4 "&MenuSave"   } 544 "SaveWindow"
+1
+1 "__ilvCallback" "SaveCB"
+0
+1 { 5 0 IlvButton 349 85 96 23 F9 2 1 16 4 "&MenuClose"   } 544 "CloseWindow"
+1
+1 "__ilvCallback" "CloseWindowCB"
+0
+Size 451 312
+GeometryHandlers
+2 100 0 341 0 341 0
+ 0 0 110 341 110 341
+2 3 0 0 12  323 0 323 1  0 0 6 0
+ 3 0 0 12  322 0 322 0  0 0 7 0
+4 3 0 0 8  96 0 96 3  0 0 6 1
+ 3 0 0 8  96 0 96 4  0 0 6 1
+ 3 0 0 8  96 0 96 5  0 0 6 1
+ 3 0 0 8  96 0 96 2  0 0 6 1
+1 100 0 312 0 312 0
+2 3 0 0 26  280 0 280 1  0 0 6 0
+ 3 284 0 284  0 0 23 2  0 0 5 0
+EOF

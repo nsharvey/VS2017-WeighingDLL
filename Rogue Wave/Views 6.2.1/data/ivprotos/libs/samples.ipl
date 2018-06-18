@@ -1,0 +1,653 @@
+// Rogue Wave Views Prototype Library File
+// Rogue Wave Views Version: 5.0
+// Date: Tue Jul 27 10:29:38 2004
+Library: samples
+SingleFile: true
+bulb
+pump
+symbol
+field
+thermo
+display
+circGauge
+alert
+transformer
+vertGauge
+IlvProtoLibraryBlocks
+IlvProtoLibraryBlock pump.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype pump
+    accessors {
+        IlvValueAccessor UInt rotatePeriod
+        IlvTriggerAccessor UInt rotatePeriod rotate rotate
+        IlvValueAccessor UInt invertPeriod
+        IlvTriggerAccessor UInt invertPeriod invert invert
+        IlvValueAccessor Color rotorColor
+        IlvTriggerAccessor Color rotorColor rotor.foreground rotorColor
+        IlvValueAccessor (P) Color invertedColor
+        IlvRotateAccessor Boolean rotate rotor 20 IlvEllipse.centerX IlvEllipse.centerY rotatePeriod
+        IlvInvertAccessor Boolean invert rotorColor invertedColor invertPeriod
+        IlvGroupUserAccessor Int alpha
+    }
+    values {
+        UInt rotatePeriod = 250
+        UInt invertPeriod = 500
+        String rotorColor = blue
+        String invertedColor = red
+        Boolean rotate = false
+        Boolean invert = false
+        UInt alpha = 65535
+    }
+    nodes {
+        IlvGraphicNode rotor "T" 0 0
+        IlvGraphicNode IlvEllipse "N" 0 1
+        IlvGraphicNode IlvPolyline "" 0 2
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock pump.ilv
+// Ilv Version: 5.0
+// File generated: Tue Jul 27 10:29:38 2004
+// Creator class: IlvGraphOutput
+Palettes 3
+2 F "lightgrey" "black" "default" "StockedDefaultGui" 0 solid solid 1 0 0 65535 0
+1 F 48830 48830 48830 "black" "%helvetica-12-[Charset:0]" 0 solid solid 1 0 0 65535 0
+0 F "gray" "blue" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+IlvObjects 3
+1 2 { 0 0 IlvGraphicSet 2
+{ 0 IlvGraphicSet 2
+{ 0 IlvFilledSpline 4
+120 110 135 110 150 95 150 80 } 
+{ 0 IlvPolygon 4
+120 80 120 110 150 80 150 80 }  } 
+{ 0 IlvGraphicSet 2
+{ 0 IlvFilledSpline 4
+119 49 104 49 89 64 89 79 } 
+{ 0 IlvPolygon 4
+119 79 119 49 89 79 89 79 }  }  } 0
+1 0 { 1 1 IlvEllipse 88 48 64 64 } 0
+1 2 { 2 2 IlvPolyline 4
+99 103 90 129 150 129 143 103 } 0
+Layers 2
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock bulb.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype bulb
+    accessors {
+        IlvValueAccessor Color onColor
+        IlvValueAccessor Color offColor
+        IlvConditionAccessor Boolean on == true gaz.foreground onColor offColor
+        IlvValueAccessor Boolean on
+        IlvGroupUserAccessor Int alpha
+    }
+    values {
+        Color onColor = yellow
+        Color offColor = lightgrey
+        String on = true
+        UInt alpha = 65535
+    }
+    nodes {
+        IlvGraphicNode base "TN" 0 0
+        IlvGraphicNode gaz "T" 0 1
+        IlvGraphicNode bordertop "T" 0 2
+        IlvGraphicNode borderleft "T" 0 3
+        IlvGraphicNode borderright "T" 0 4
+        IlvGraphicNode borderbot "T" 0 5
+        IlvGraphicNode line1 "T" 0 6
+        IlvGraphicNode line2 "T" 0 7
+        IlvGraphicNode line3 "T" 0 8
+        IlvGraphicNode contact "T" 0 9
+        IlvGraphicNode wire "T" 0 10
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock bulb.ilv
+// Ilv Version: 5.0
+// File generated: Tue Jul 27 10:29:38 2004
+// Creator class: IlvGraphOutput
+Palettes 5
+1 F 48830 48830 48830 "yellow" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+3 F 54745 49390 47095 "black" "%helvetica-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+2 F 48830 48830 48830 "black" "default" "StockedDefaultGui" 0 solid solid 3 0 0 65535 0
+4 F "grey40" "blue" "%helvetica-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+0 F 48830 48830 48830 25700 25700 25700 "%helvetica-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+IlvObjects 11
+1 0 { 0 0 IlvFilledRoundRectangle 68 127 30 35 6 } 0
+1 2 { 1 0 IlvGraphicSet 2
+{ 1 IlvFilledArc 54 42 58 63 352.304 197.821 } 
+{ 1 IlvPolygon 4
+53 72 67 126 97 126 111 73 }  } 0
+2 2 { 2 2 IlvArc 53 42 60 60 345.379 203.974 } 0
+2 2 { 3 2 IlvLine 53 77 68 127 } 0
+2 2 { 4 2 IlvLine 112 78 98 127 } 0
+2 2 { 5 2 IlvLine 68 128 98 128 } 0
+2 2 { 6 2 IlvLine 68 132 98 137 } 0
+2 2 { 7 2 IlvLine 68 142 98 147 } 0
+2 2 { 8 2 IlvLine 68 152 97 157 } 0
+2 2 { 9 3 IlvFilledRectangle 75 161 16 6 } 0
+2 2 { 10 4 IlvPolyline 11
+62 80 66 68 70 80 74 68 78 80 82 68 86 80 90 68 94 80 98 68
+102 80 } 0
+Layers 3
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock display.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype display
+    accessors {
+        IlvValueAccessor Float minimum
+        IlvValueAccessor Float maximum
+        IlvValueAccessor Boolean notSignificant
+        IlvConditionAccessor Boolean notSignificant == true IlvNumberField.background notSignificantColor currentColor
+        IlvValueAccessor Color nominalColor
+        IlvValueAccessor Color minimumColor
+        IlvValueAccessor Color maximumColor
+        IlvValueAccessor Color notSignificantColor
+        IlvValueAccessor String format
+        IlvValueAccessor Int maxChars
+        IlvNodeAccessor Color textColor IlvNumberField.foreground
+        IlvValueAccessor Float value
+        IlvFormatAccessor Float value format maxChars IlvNumberField.label
+        IlvMinMaxAccessor Float value minimum maximum notSignificant IlvNumberField.background minimumColor nominalColor maximumColor
+        IlvMinMaxAccessor Float value minimum maximum notSignificant currentColor minimumColor nominalColor maximumColor
+        IlvValueAccessor (RP) Color currentColor
+        IlvNodeAccessor Boolean transparent IlvNumberField.transparent
+        IlvNodeAccessor Boolean border IlvRectangle.visible
+    }
+    values {
+        Float minimum = 0
+        Float maximum = 100
+        Boolean notSignificant = false
+        Color nominalColor = white
+        Color minimumColor = yellow
+        Color maximumColor = red
+        Color notSignificantColor = cyan
+        String format = %g
+        Int maxChars = 10
+        Color textColor = black
+        Float value = 0
+        Boolean transparent = false
+        Boolean border = true
+    }
+    nodes {
+        IlvGraphicNode IlvNumberField "" 0 0
+        IlvGraphicNode IlvRectangle "N" 0 1
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock display.ilv
+// Ilv Version: 5.0
+// File generated: Tue Jul 27 10:29:38 2004
+// Creator class: IlvGraphOutput
+Palettes 2
+0 F "white" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+1 F 48830 48830 48830 "black" "%helvetica-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+IlvObjects 2
+0 2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 105 60 100 20 F12 0 { IlvMessageItem 262145 4 16 4 "0"  }   } 0
+1 0 { 1 1 IlvRectangle 105 60 100 20 } 0
+Layers 2
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock circGauge.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype circGauge
+    accessors {
+        IlvNodeAccessor Float value IlvCircularGauge.value
+        IlvConditionAccessor Float value > 50 IlvFilledEllipse.visible "\"true\"" "\"false\""
+        IlvNodeAccessor Float minimum IlvCircularScale.min
+        IlvNodeAccessor Float minimum IlvCircularGauge.min
+        IlvNodeAccessor Float maximum IlvCircularScale.max
+        IlvNodeAccessor Float maximum IlvCircularGauge.max
+        IlvNodeAccessor String format IlvCircularScale.format
+        IlvNodeAccessor UInt steps IlvCircularScale.steps
+        IlvNodeAccessor UInt subSteps IlvCircularScale.subSteps
+        IlvNodeAccessor UInt stepSize IlvCircularScale.stepSize
+        IlvNodeAccessor UInt subStepSize IlvCircularScale.subStepSize
+    }
+    values {
+        Float value = 0
+        Float minimum = 0
+        Float maximum = 100
+        String format = %.0f
+        UInt steps = 6
+        UInt subSteps = 4
+        UInt stepSize = 10
+        UInt subStepSize = 5
+    }
+    nodes {
+        IlvGraphicNode IlvFilledArc "TN" 0 0
+        IlvGraphicNode IlvPolygon "TN" 0 1
+        IlvGraphicNode IlvCircularScale "TN" 0 2
+        IlvGraphicNode IlvCircularGauge "TN" 0 3
+        IlvGraphicNode IlvFilledEllipse "TIN" 0 4
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock circGauge.ilv
+// Ilv Version: 5.0
+// File generated: Tue Jul 27 10:29:38 2004
+// Creator class: IlvGraphOutput
+Palettes 4
+1 F 48830 48830 48830 "black" "%helvetica-12-[Charset:0]" 0 solid solid 2 0 0 65535 0
+0 F "lightgrey" "white" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+2 F 48830 48830 48830 "black" "%helvetica-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+3 F 48830 48830 48830 65025 0 0 "%helvetica-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+IlvObjects 5
+0 0 { 0 0 IlvFilledArc 54 56 126 133 329.036 240.161 } 0
+0 0 { 1 0 IlvPolygon 4
+64 156 67 116 166 114 172 156 } 0
+1 0 { 2 1 IlvCircularScale 54 57 127 135 6 4 10 5 m 0 100 "%.0f"
+"0" "20" "40" "60" "80" "100"  1 210 -240 } 0
+1 0 { 3 2 IlvCircularGauge 54 57 127 135 0 100 0 210 -240 } 0
+1 0 { 4 3 IlvFilledEllipse 110 134 15 17 } 2
+Layers 2
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock vertGauge.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype vertGauge
+    accessors {
+        IlvValueAccessor Float minThreshold
+        IlvValueAccessor Float maxThreshold
+        IlvValueAccessor Color minThresholdColor
+        IlvValueAccessor Color nominalColor
+        IlvValueAccessor Color notSignificantColor
+        IlvConditionAccessor Boolean notSignificant == true IlvRectangularGauge.background notSignificantColor "\"white\""
+        IlvValueAccessor Boolean notSignificant
+        IlvValueAccessor Color maxThresholdColor
+        IlvNodeAccessor Float value IlvRectangularGauge.value
+        IlvMinMaxAccessor Float value minThreshold maxThreshold notSignificant IlvRectangularGauge.foreground minThresholdColor nominalColor maxThresholdColor
+        IlvNodeAccessor Float minimum IlvRectangularGauge.min
+        IlvNodeAccessor Float minimum IlvRectangularScale.min
+        IlvNodeAccessor Float maximum IlvRectangularGauge.max
+        IlvNodeAccessor Float maximum IlvRectangularScale.max
+        IlvNodeAccessor Boolean scaleVisible IlvRectangularScale.visible
+        IlvNodeAccessor UInt steps IlvRectangularScale.steps
+    }
+    values {
+        Float minThreshold = 10
+        Float maxThreshold = 90
+        Color minThresholdColor = yellow
+        Color nominalColor = blue
+        Color notSignificantColor = grey
+        Boolean notSignificant = false
+        Color maxThresholdColor = red
+        Float value = 25
+        Float minimum = 0
+        Float maximum = 100
+        Boolean scaleVisible = true
+        UInt steps = 5
+    }
+    nodes {
+        IlvGraphicNode IlvRectangularGauge "T" 0 0
+        IlvGraphicNode IlvRectangularScale "T" 0 1
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock vertGauge.ilv
+// Ilv Version: 5.0
+// File generated: Tue Jul 27 10:29:38 2004
+// Creator class: IlvGraphOutput
+Palettes 2
+0 F "white" "blue" "%helvetica-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+1 F 48830 48830 48830 "black" "%helvetica-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+IlvObjects 2
+1 2 { 0 0 IlvRectangularGauge 70 37 19 128 0 100 25 8 1 } 0
+1 2 { 1 1 IlvRectangularScale 55 37 10 126 5 2 10 5 m 0 100 "%4.f"
+"   0" "  25" "  50" "  75" " 100"  65 163 126 8 1  } 0
+Layers 2
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock thermo.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype thermo
+    accessors {
+        IlvValueAccessor (R) Float threshold
+        IlvNodeAccessor Float temperature IlvRectangularGauge.value
+        IlvConditionAccessor Float temperature >= threshold color "\"red\"" "\"blue\""
+        IlvCompositeAccessor Float minimum {
+            IlvRectangularGauge.min
+            scale.min
+        }
+        IlvCompositeAccessor Float maximum {
+            IlvRectangularGauge.max
+            scale.max
+        }
+        IlvNodeAccessor UInt steps scale.steps
+        IlvCompositeAccessor (RP) Color color {
+            IlvRectangularGauge.foreground
+            IlvFilledEllipse.foreground
+        }
+        IlvGroupUserAccessor (R) Int lineWidth
+    }
+    values {
+        Float temperature = 20
+        Float minimum = -20
+        Float maximum = 50
+        UInt steps = 8
+    }
+    nodes {
+        IlvGraphicNode IlvEllipse "T" 0 0
+        IlvGraphicNode IlvFilledEllipse "TN" 0 1
+        IlvGraphicNode IlvRectangularGauge "T" 0 2
+        IlvGraphicNode scale "Tz" 0.5 3
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock thermo.ilv
+// Ilv Version: 5.0
+// File generated: Tue Jul 27 10:29:38 2004
+// Creator class: IlvGraphOutput
+Palettes 3
+0 F 48830 48830 48830 "black" "%helvetica-12-[Charset:0]" 0 solid solid 2 0 0 65535 0
+2 F 54745 49390 47095 "red" "%helvetica-12-[Charset:0]" 0 solid solid 2 0 0 65535 0
+1 F 48830 48830 48830 "red" "%helvetica-12-[Charset:0]" 0 solid solid 2 0 0 65535 0
+IlvObjects 4
+1 2 { 0 0 IlvEllipse 98 204 36 31 } 0
+2 0 { 1 1 IlvFilledEllipse 98 204 36 31 } 0
+2 2 { 2 2 IlvRectangularGauge 108 50 15 158 -20 50 20 8 1 } 0
+2 2 { 3 0 IlvRectangularScale 93 50 10 156 8 2 10 5 m -20 50 "%4.f"
+" -20" " -10" "   0" "  10" "  20" "  30" "  40" "  50"  103 206 156 8 1  } 0
+Layers 3
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock symbol.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype symbol
+    accessors {
+        IlvMultiRepAccessor Int state {
+            open
+            closed
+        }
+        IlvValueAccessor Int state
+    }
+    values {
+        Int state = 0
+    }
+    nodes {
+        IlvGraphicNode IlvLine "T" 0 0
+        IlvGraphicNode IlvFilledEllipse "T" 0 1
+        IlvGraphicNode IlvLine#1 "T" 0 2
+        IlvGraphicNode IlvFilledEllipse#1 "T" 0 3
+        IlvGraphicNode open "T" 0 4
+        IlvGraphicNode closed "TI" 0 5
+        IlvGraphicNode unknown "TI" 0 6
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock symbol.ilv
+// Ilv Version: 5.0
+// File generated: Tue Jul 27 10:29:38 2004
+// Creator class: IlvGraphOutput
+Palettes 3
+2 F 48830 48830 48830 "black" "large" "%Tahoma-17-B[Charset:0]" 0 solid solid 0 0 0 65535 0
+0 F 48830 48830 48830 "black" "default" "StockedDefaultGui" 0 solid solid 4 0 0 65535 0
+1 F 48830 48830 48830 "black" "%helvetica-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+IlvObjects 7
+1 2 { 0 0 IlvLine 50 65 90 65 } 0
+1 2 { 1 1 IlvFilledEllipse 85 60 10 10 } 0
+1 2 { 2 0 IlvLine 135 65 175 65 } 0
+1 2 { 3 1 IlvFilledEllipse 130 60 10 10 } 0
+1 2 { 4 0 IlvLine 90 65 130 35 } 512
+1
+1 "__ilvCallback" "GroupCallback"
+1 2 { 5 0 IlvLine 90 65 135 65 } 514
+1
+1 "__ilvCallback" "GroupCallback"
+1 2 { 6 2 IlvLabel 110 75 "?" } 2
+Layers 2
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock alert.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype alert
+    accessors {
+        IlvInvertAccessor (RP) UInt invert IlvMessageLabel.background IlvMessageLabel.foreground
+        IlvBlinkAccessor (RP) UInt blink IlvMessageLabel.visible
+        IlvValueAccessor UInt alert
+        IlvConditionAccessor UInt alert == 0 IlvMessageLabel.label "\"No Alert\"" "\"\""
+        IlvConditionAccessor UInt alert == 1 IlvMessageLabel.label "\"Alert Level 1\"" "\"\""
+        IlvConditionAccessor UInt alert == 2 IlvMessageLabel.label "\"Alert Level 2\"" "\"\""
+        IlvConditionAccessor UInt alert == 3 IlvMessageLabel.label "\"Alert Level 3\"" "\"\""
+        IlvConditionAccessor UInt alert > 3 IlvMessageLabel.label "\"Alert Level > 3\"" "\"\""
+        IlvConditionAccessor UInt alert == 3 invert 200 0
+        IlvConditionAccessor UInt alert >= 2 IlvMessageLabel.background "\"red\"" "\"blue\""
+        IlvConditionAccessor UInt alert >= 2 IlvMessageLabel.foreground "\"white\"" "\"black\""
+        IlvConditionAccessor UInt alert > 3 blink 200 0
+        IlvConditionAccessor UInt alert <= 3 visible "\"true\"" "\"\""
+    }
+    values {
+        UInt alert = 0
+    }
+    nodes {
+        IlvGraphicNode IlvMessageLabel "TN" 0 0
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock alert.ilv
+// Ilv Version: 5.0
+// File generated: Tue Jul 27 10:29:38 2004
+// Creator class: IlvGraphOutput
+Palettes 1
+0 F "blue" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 1
+1 0 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 45 42 151 22 F12 0 { IlvMessageItem 262145 4 16 4 "No Alert"  }   } 0
+Layers 2
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock field.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype field
+    accessors {
+        IlvNodeAccessor Int value IlvNumberField.label
+        IlvCallbackAccessor (O) Int value IlvNumberField Generic value
+        IlvNodeAccessor String label IlvLabel.label
+    }
+    values {
+        String value = 0
+        String label = Value:
+    }
+    nodes {
+        IlvGraphicNode IlvNumberField "N" 0 0
+        IlvGraphicNode IlvLabel "" 0 1
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock field.ilv
+// Ilv Version: 5.0
+// File generated: Tue Jul 27 10:29:38 2004
+// Creator class: IlvGraphOutput
+Palettes 2
+"IlvStText" 1 F "gray" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 0
+"IlvStToolBar" 0 F "gray" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 2
+0 0 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 209 78 95 22 F6 2 2 -1 0 "0" . , 2 16 -3.40282e+038 3.40282e+038 } 0
+0 2 { 1 1 IlvLabel 154 95 "Value:" } 0
+Layers 2
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryBlock transformer.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype transformer
+    accessors {
+        IlvValueAccessor Float Rotation
+        IlvOutputAccessor Float Rotation
+        IlvValueAccessor Float X_Scale
+        IlvOutputAccessor Float X_Scale
+        IlvValueAccessor Float Y_Scale
+        IlvOutputAccessor Float Y_Scale
+        IlvValueAccessor Float X_Translate
+        IlvOutputAccessor Float X_Translate
+        IlvValueAccessor Float Y_Translate
+        IlvOutputAccessor Float Y_Translate
+        IlvValueAccessor (RP) Float doX_Scale
+        IlvZoomXAccessor (RP) Float doX_Scale Transformer CenterHandle.centerX 
+        IlvValueAccessor (RP) Float doY_Scale
+        IlvZoomYAccessor (RP) Float doY_Scale Transformer CenterHandle.centerY 
+        IlvRotationAccessor (RP) Float doRotation Transformer CenterHandle.centerX CenterHandle.centerY 0 360 0 360 false
+        IlvLoopbackAccessor (RP) Float doXform Rotation
+        IlvLoopbackAccessor (RP) Float doXform X_Scale
+        IlvLoopbackAccessor (RP) Float doXform Y_Scale
+        IlvTriggerAccessor (RP) Float doXform doRotation 0
+        IlvTriggerAccessor (RP) Float doXform doX_Scale X_Scale
+        IlvTriggerAccessor (RP) Float doXform doY_Scale Y_Scale
+        IlvTriggerAccessor (RP) Float doXform doRotation Rotation
+        IlvLoopbackAccessor (RP) Float doX_Translate X_Translate
+        IlvTriggerAccessor (RP) Float doX_Translate TXFeedback.x CenterHandle.centerX+X_Translate/2
+        IlvLoopbackAccessor (RP) Float doY_Translate Y_Translate
+        IlvTriggerAccessor (RP) Float doY_Translate TYFeedback.y CenterHandle.centerY+Y_Translate/2
+        IlvCallbackAccessor (RP) Float Reset CenterHandle Generic 0
+        IlvLoopbackAccessor (RP) Float Reset Reset
+        IlvTriggerAccessor (RP) Float Reset Rotation 0
+        IlvTriggerAccessor (RP) Float Reset X_Scale 1
+        IlvTriggerAccessor (RP) Float Reset Y_Scale 1
+        IlvTriggerAccessor (RP) Float Reset X_Translate 0
+        IlvTriggerAccessor (RP) Float Reset Y_Translate 0
+        IlvEventAccessor (RP) Float StartScaleY ScaleYHandle ButtonDown LeftButton AnyModifier Y
+        IlvValueAccessor (RP) Float StartScaleY
+        IlvTriggerAccessor (RP) Color StartScaleY ScaleYHandle.foreground "\"Yellow\""
+        IlvEventAccessor (RP) Float EventScaleY ScaleYHandle ButtonDragged LeftButton AnyModifier Y
+        IlvValueAccessor (RP) Float EventScaleY
+        IlvTriggerAccessor (RP) Float EventScaleY Y_Scale (EventScaleY+0.0-CenterHandle.centerY)/(StartScaleY+0.0-CenterHandle.centerY)
+        IlvEventAccessor (RP) Float StartScaleX ScaleXHandle ButtonDown LeftButton AnyModifier X
+        IlvValueAccessor (RP) Float StartScaleX
+        IlvTriggerAccessor (RP) Color StartScaleX ScaleXHandle.foreground "\"Yellow\""
+        IlvEventAccessor (RP) Float EventScaleX ScaleXHandle ButtonDragged LeftButton AnyModifier X
+        IlvValueAccessor (RP) Float EventScaleX
+        IlvTriggerAccessor (RP) Float EventScaleX X_Scale (EventScaleX-CenterHandle.centerX)/(StartScaleX-CenterHandle.centerX)
+        IlvEventAccessor (RP) Float EventRotate RotationHandle ButtonDragged LeftButton AnyModifier X
+        IlvValueAccessor (RP) Float EventRotate
+        IlvTriggerAccessor (RP) Float EventRotate Rotation EventRotate-StartRotate+Rotation
+        IlvTriggerAccessor (RP) Float EventRotate StartRotate EventRotate
+        IlvEventAccessor (RP) Float StartRotate RotationHandle ButtonDown LeftButton AnyModifier X
+        IlvValueAccessor (RP) Float StartRotate
+        IlvTriggerAccessor (RP) Color StartRotate RotationHandle.foreground "\"Yellow\""
+        IlvEventAccessor (RP) Float StartTranslateX TXHandle ButtonDown LeftButton AnyModifier X
+        IlvValueAccessor (RP) Float StartTranslateX
+        IlvEventAccessor (RP) Float EventTX TXHandle ButtonDragged LeftButton AnyModifier X
+        IlvValueAccessor (RP) Float EventTX
+        IlvTriggerAccessor (RP) Float EventTX X_Translate EventTX-StartTranslateX+X_Translate
+        IlvTriggerAccessor (RP) Float EventTX StartTranslateX EventTX
+        IlvEventAccessor (RP) Float StartTranslateY TYHandle ButtonDown LeftButton AnyModifier Y
+        IlvValueAccessor (RP) Float StartTranslateY
+        IlvEventAccessor (RP) Float EventTY TYHandle ButtonDragged LeftButton AnyModifier Y
+        IlvValueAccessor (RP) Float EventTY
+        IlvTriggerAccessor (RP) Float EventTY Y_Translate EventTY-StartTranslateY+Y_Translate
+        IlvTriggerAccessor (RP) Float EventTY StartTranslateY EventTY
+        IlvEventAccessor (RP) Float StopScaleY ScaleYHandle ButtonUp LeftButton AnyModifier Y
+        IlvTriggerAccessor (RP) Color StopScaleY ScaleYHandle.foreground "\"Red\""
+        IlvEventAccessor (RP) Float StopScaleX ScaleXHandle ButtonUp LeftButton AnyModifier X
+        IlvTriggerAccessor (RP) Color StopScaleX ScaleXHandle.foreground "\"#000000009999\""
+        IlvEventAccessor (RP) Float StopRotate RotationHandle ButtonUp LeftButton AnyModifier Type
+        IlvTriggerAccessor (RP) Color StopRotate RotationHandle.foreground "\"Green\""
+    }
+    values {
+        Float Rotation = 0
+        String X_Scale = 1
+        String Y_Scale = 1
+        Float X_Translate = 0
+        Float Y_Translate = 0
+    }
+    nodes {
+        IlvGraphicNode Transformer "T" 0 0 0.961751 -7.0739e-016 2.71645e-016 0.978707 226.913 105.342
+        IlvGraphicNode ScaleYHandle "T" 0 1 1 0 0 1 225 104
+        IlvGraphicNode ScaleXHandle "T" 0 2 1 0 0 1 225 104
+        IlvGraphicNode TXHandle "T" 0 3 1 0 0 1 225 104
+        IlvGraphicNode TYHandle "T" 0 4 1 0 0 1 225 104
+        IlvGraphicNode RotationHandle "T" 0 5 1 0 0 1 225 104
+        IlvGraphicNode TXFeedback "T" 0 6 1 0 0 1 225 104
+        IlvGraphicNode TYFeedback "T" 0 7 1 0 0 1 225 104
+        IlvGraphicNode CenterHandle "" 0 8
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock transformer.ilv
+// Ilv Version: 5.0
+// File generated: Tue Jul 27 10:29:38 2004
+// Creator class: IlvGraphOutput
+Palettes 11
+9 F 48830 48830 48830 "white" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+1 F "grey40" "red" "%helvetica-12-[Charset:0]" 0 solid solid 1 0 0 65535 0
+6 F "grey40" "red" "%helvetica-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+10 F 48830 48830 48830 "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+2 F "grey40" "green" "%helvetica-12-[Charset:0]" 0 solid solid 1 0 0 65535 0
+7 F 48830 48830 48830 "green" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+4 F "antiquewhite3" 0 0 39321 "fixed" 0 solid solid 0 0 0 65535 0
+5 F "grey40" 0 0 39321 "%helvetica-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+8 F "grey40" "blue" "%helvetica-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+3 F "antiquewhite3" "red" "fixed" 0 solid solid 0 0 0 65535 0
+0 F "grey40" 0 0 39321 "%helvetica-12-[Charset:0]" 0 solid solid 1 0 0 65535 0
+IlvObjects 9
+1 2 { 0 0 IlvGraphicSet 3
+{ 0 IlvLine -40 59 140 59 } 
+{ 1 IlvLine 50 -32 50 150 } 
+{ 2 IlvClosedSpline 6
+-40 59 -37 -61 133 -61 140 59 129 179 -32 179 }  } 0
+1 2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "_EventAccessor" ]
+3 IlvFilledRectangle 40 -50 20 20 } 384
+1 2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "_EventAccessor" ]
+4 IlvFilledRectangle -60 50 20 20 } 384
+1 2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "_EventAccessor" ]
+5 IlvPolygon 3
+140 50 170 60 140 70 } 384
+1 2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "_EventAccessor" ]
+6 IlvPolygon 3
+40 150 60 150 50 180 } 384
+1 2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "_EventAccessor" ]
+7 IlvFilledEllipse 100 -20 20 20 } 0
+1 2 { 6 8 IlvLine 50 27 50 95 } 0
+1 2 { 7 6 IlvLine 18 60 89 60 } 0
+2 2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvGraphicSet 2
+{ 9 IlvFilledEllipse 255 144 40 40 } 
+{ 10 IlvEllipse 255 144 40 40 }  } 0
+Layers 3
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+Views 0
+EOF
+IlvProtoLibraryEnd

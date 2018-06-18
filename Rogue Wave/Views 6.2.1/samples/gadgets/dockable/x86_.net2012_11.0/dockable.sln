@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("7F2493E6-1D62-11E8-AB12-0BC9772C9500") = "dockable", "dockable.vcxproj", "7F243CB6-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Global
+EndGlobal
+

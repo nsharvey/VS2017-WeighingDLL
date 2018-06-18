@@ -1,0 +1,20 @@
+var pairs =
+{
+"ilidbpicture":{"ilidbpicture":1,"hierarchy":1,"class":1}
+,"hierarchy":{"example":1}
+,"example":{"gadget":1}
+,"gadget":{"ilidbpicture":1,"displays":1,"designed":1}
+,"class":{"defines":1}
+,"defines":{"gadget":1}
+,"displays":{"bitmaps":1}
+,"bitmaps":{"column":1}
+,"column":{"connected":1}
+,"connected":{"contain":1}
+,"contain":{"bitmap":1}
+,"bitmap":{"names":1}
+,"names":{"gadget":1}
+,"designed":{"used":1}
+,"used":{"foreign":1}
+,"foreign":{"table":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,91 @@
+// Ilv Version: 5.0
+// File generated: Mon Jan 07 16:29:57 2002
+// Creator class: IlvGadgetManagerOutput
+FileName "slidspec"
+Palettes 1
+"IlvStToolBar" 0 F "defaultBg" "defaultFg" "normal" "%helvetica-12-" 0 solid solid 0 0 0 65535 1
+IlvObjects 12
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 90 121 159 20 F1 2 4
+{ IlvMenuItem 65 2 4 "&left"  } 
+{ IlvMenuItem 1 2 4 "&top"  } 
+{ IlvMenuItem 1 2 4 "&right"  } 
+{ IlvMenuItem 1 2 4 "&bottom"  }  0  } 32 "SliderOrientation"
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 90 150 159 20 F1 2 5
+{ IlvMenuItem 1 2 4 "&center"  } 
+{ IlvMenuItem 65 2 4 "&left"  } 
+{ IlvMenuItem 1 2 4 "&top"  } 
+{ IlvMenuItem 1 2 4 "&right"  } 
+{ IlvMenuItem 1 2 4 "&bottom"  }  1  } 32 "ThumbOrientation"
+0
+3 { 2 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 90 75 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&value"  }   } 0
+0
+3 { 3 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 61 75 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&sliderSize"  }   } 0
+0
+3 { 4 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 10 75 14 F268435468 0 { IlvMessageItem 262169 4 16 4 "&min"  }   } 0
+0
+3 { 5 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 39 75 14 F268435468 0 { IlvMessageItem 262169 4 16 4 "&max"  }   } 0
+0
+3 { 6 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 125 75 14 F268435468 0 { IlvMessageItem 262169 4 16 4 "&orientation"  }   } 0
+0
+3 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 90 5 159 22 2 0 200 64 2 1
+0 IlvNumberField 90 5 147 22 F6 2 1 -1 0 "1" . , 6 0 -2147483648 2147483647  f 1 0 1 1 } 32 "SlideMin"
+0
+3 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 90 34 159 22 2 0 200 64 2 1
+0 IlvNumberField 90 34 147 22 F6 2 1 -1 0 "1" . , 6 0 -2147483648 2147483647  f 1 0 1 1 } 32 "SlideMax"
+0
+3 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 90 63 159 22 2 0 200 64 2 1
+0 IlvNumberField 90 63 147 22 F6 2 1 -1 0 "1" . , 6 0 -2147483648 2147483647  f 1 0 1 1 } 32 "SliderSize"
+0
+3 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 90 92 159 22 2 0 200 64 2 1
+0 IlvNumberField 90 92 147 22 F6 2 1 -1 0 "1" . , 6 0 -2147483648 2147483647  f 1 0 1 1 } 32 "SliderValue"
+0
+3 { 11 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+0 IlvMessageLabel 10 154 75 14 F268435468 0 { IlvMessageItem 262169 4 16 4 "&thumb"  }   } 0
+0
+Size 254 175
+GeometryHandlers
+1 100 0 254 0 254 0
+6 3 0 0 90  159 0 159 10  0 0 5 0
+ 3 0 0 90  159 0 159 9  0 0 5 0
+ 3 0 0 90  159 0 159 8  0 0 5 0
+ 3 0 0 90  159 0 159 7  0 0 5 0
+ 3 0 0 90  159 0 159 0  0 0 5 0
+ 3 0 0 90  159 0 159 1  0 0 5 0
+1 100 0 175 0 175 0
+0
+Layers 4
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+EOF

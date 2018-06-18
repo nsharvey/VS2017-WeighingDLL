@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>The IlvIndexedBitmapData Class</title><link rel="Prev" href="graphicformats.05.6.html" title="Previous" /><link rel="Next" href="graphicformats.05.8.html" title="Next" /><link rel="StyleSheet" href="css/graphicformats.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/graphicformats_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/UserManuals/graphicformats.05.7.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pVSRaD2tbEp_002blGhHVrokeFA" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/UserManuals/graphicformats.05.7.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/foundusrfrontcover.html#wwconnect_header">Foundation</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/graphicformats.05.1.html#wwconnect_header">Graphic Formats</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/graphicformats.05.5.html#wwconnect_header">IlvBitmapData: The Portable Bitmap Data Management Class </a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">The IlvIndexedBitmapData Class </span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww935566" class="Heading2"><span></span>The IlvIndexedBitmapData Class </div><div id="ww935567" class="Body">The <span class="ClassName"><a href="../RefMan/refcppfoundation/classIlvIndexedBitmapData.html">IlvIndexedBitmapData</a></span> class is dedicated to indexed color images, where raster data is described as indexes to a color map (8-bit values, meaning that you can have only 256 colors in an indexed bitmap data). </div><div id="ww935568" class="Heading3"><span></span>Creating an Indexed Bitmap Data of Dimensions 256 * 256 Pixels</div><div id="ww935569" class="Body">The first step is to create a colormap. We create a colormap with 256 entries. We then fill this colormap with grayscale values. Each component is described using 8 bits for each component. </div><div id="ww935570" class="NormalCode">IlvColorMap* cmap = new IlvColorMap(256);</div><div id="ww935571" class="NormalCode">for (IlUInt idx = 0; idx &lt; 256; ++idx) {</div><div id="ww935572" class="NormalCode">   // sets the red, green and blue components for a entry</div><div id="ww935573" class="NormalCode">   cmap-&gt;setEntry(idx, idx, idx, idx);</div><div id="ww935574" class="LastNormalCode">}</div><div id="ww935575" class="Body">We then create an indexed bitmap data of desired size:</div><div id="ww935576" class="LastNormalCode">IlvIndexedBitmapData* idata = new IlvIndexedBitmapData(256, 256, cmap);</div><div id="ww935577" class="Body">We then fill the bitmap data with a gradient of indexes:</div><div id="ww935578" class="NormalCode">for (IlUInt h = 0; h &lt; 256; ++h) </div><div id="ww935579" class="NormalCode">   for (IlUInt w = 0; w &lt; 256; ++w) </div><div id="ww935580" class="LastNormalCode">      idata-&gt;setPixel(w, h, h);</div><div id="ww935581" class="Body">To be able to display this bitmap data on the screen, you have to create an <span class="ClassName"><a href="../RefMan/refcppfoundation/classIlvBitmap.html">IlvBitmap</a></span> from it.</div><div id="ww935582" class="LastNormalCode">IlvBitmap* bitmap = new IlvBitmap(display, idata);</div><div id="ww935583" class="Body">You can then use the <span class="ClassName"><a href="../RefMan/refcppfoundation/classIlvIcon.html">IlvIcon</a></span> class to create a graphic object from this.</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

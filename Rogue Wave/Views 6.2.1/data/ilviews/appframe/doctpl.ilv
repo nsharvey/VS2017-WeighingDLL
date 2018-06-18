@@ -1,0 +1,181 @@
+// Ilv Version: 3.1
+// File generated: Fri Nov 19 12:02:24 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "doctpl"
+Palettes 2
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12" 0 solid solid 0 0 0
+1 "gray" "black" "button" "%helvetica-12-B" 0 solid solid 0 0 0
+IlvObjects 48
+1 { 0 0 IlvMessageLabel 9 7 122 22 F8 0 25 16 4 "&DocumentTemplates"   } 0
+0
+1 { 1 0 IlvStringList 9 32 166 157 F131 2 A A 0 0 0 0 0 4 0 0 2 0 } 32 "TemplateList"
+0
+1 { 2 P 1
+[ IlvToolTip __ilvToolTip 2 "&add" 4 4 ]
+1 IlvButton 129 7 26 23 F25 2 2 16 4 1 0 "ilviews/appframe/newitm.xpm"   } 32 "AddTpl"
+0
+1 { 3 P 1
+[ IlvToolTip __ilvToolTip 2 "&remove" 4 4 ]
+1 IlvButton 153 7 22 23 F25 2 2 16 4 1 0 "ilviews/appframe/removitm.xpm"   } 32 "RemoveTpl"
+0
+1 { 4 0 IlvMessageLabel 189 7 204 22 F8 0 25 16 4 "&EditSelectedTemplateProperties"   } 0
+0
+1 { 5 0 IlvScrolledComboBox 189 30 204 20 F807 2 "" 7
+IlvGadgetItem 1 2 4 "&TemplateName"  
+IlvGadgetItem 1 2 4 "&Document"  
+IlvGadgetItem 1 2 4 "&Views"  
+IlvGadgetItem 1 2 4 "&Description"  
+IlvGadgetItem 1 2 4 "&Filters"  
+IlvGadgetItem 1 2 4 "&ViewWindow"  
+IlvGadgetItem 1 2 4 "&MenuSpecific"   4 2 } 32 "SelectTplEdition"
+0
+1 { 6 0 IlvMessageLabel 9 195 153 22 F8 0 25 16 4 "&Description"   } 0
+0
+1 { 7 0 IlvText 9 214 369 25 F268435589 0 N N 1 1 1 1 0 2
+"Text"
+"multi lines ad ada ad dasd ad adadadada sda a dadadada"
+0 0 0 0 } 32 "TempateListDescMsg"
+0
+2 { 8 0 IlvMessageLabel 189 55 204 22 F8 0 25 16 4 "&name"   } 32 "TemplateNameMsg"
+0
+2 { 9 0 IlvTextField 189 81 204 22 F6 2 1 -1 0 "Text Field" } 32 "TemplateName"
+0
+2 { 10 0 IlvText 189 109 204 56 F805306501 0 N N 1 1 1 1 0 2
+"Text"
+"multi lines"
+0 0 0 0 } 32 "TemplateNameErrorMsg"
+0
+3 { 11 0 IlvMessageLabel 189 55 204 22 F8 0 25 16 4 "&DocumentClass"   } 32 "DocumentClassMsg"
+0
+3 { 12 0 IlvTextField 189 79 204 22 F6 2 1 -1 0 "Text Field" } 32 "DocumentClass"
+0
+3 { 13 0 IlvMessageLabel 189 107 204 22 F8 0 25 16 4 "&DerivedFrom"   } 0
+0
+3 { 14 0 IlvScrolledComboBox 189 129 204 20 F806 2 "&IlvDvDocument" 1
+IlvGadgetItem 1 2 4 "&IlvDvDocument"   4 0 } 0
+0
+3 { 15 0 IlvToggle 189 158 204 16 F1 2 1 2 0 0 0 Y "&IsMDI" } 32 "TpIIsMDI"
+0
+4 { 16 0 IlvMessageLabel 189 55 204 22 F8 0 25 16 4 "&ViewClasses"   } 32 "ViewClassesMsg"
+0
+4 { 17 0 IlvMessageLabel 189 101 204 22 F8 0 25 16 4 "&SelectedViewClass"   } 32 "SelectedViewClassMsg"
+0
+4 { 18 0 IlvMessageLabel 189 148 204 22 F8 0 25 16 4 "&DerivedFrom"   } 32 "ViewDerivedFromMsg"
+0
+4 { 19 0 IlvScrolledComboBox 189 77 204 20 F806 2 "" 0 4 0 } 32 "ViewClasses"
+0
+4 { 20 0 IlvTextField 189 124 204 22 F6 2 1 -1 0 "Text Field" } 32 "ViewClass"
+0
+4 { 21 0 IlvScrolledComboBox 189 170 204 20 F806 2 "" 0 4 0 } 32 "ViewDerivedFrom"
+0
+5 { 22 0 IlvMessageLabel 189 102 204 22 F8 0 25 16 4 "&UIName"   } 32 "TplUINameMsg"
+0
+5 { 23 0 IlvTextField 189 126 204 22 F6 2 1 6 0 "Text Field" } 544 "TplUIName"
+1
+1 "__ilvFocusOut" "ShortDescChanged"
+0
+5 { 24 0 IlvMessageLabel 189 55 204 22 F8 0 25 16 4 "&Description"   } 32 "TplDescriptionMsg"
+0
+5 { 25 0 IlvTextField 189 77 204 22 F6 2 1 -1 0 "Text Field" } 32 "TplDescription"
+0
+5 { 26 0 IlvMessageLabel 189 153 204 22 F8 0 25 16 4 "&DefaultDocumentName"   } 32 "DefautDocNameMsg"
+0
+5 { 27 0 IlvTextField 189 177 204 22 F6 2 1 6 0 "Text Field" } 544 "DefautDocName"
+1
+1 "__ilvFocusOut" "ShortDescChanged"
+0
+6 { 28 0 IlvMessageLabel 189 55 204 22 F8 0 25 16 4 "&Filters"   } 32 "FiltersMsg"
+0
+6 { 29 0 IlvScrolledComboBox 189 79 204 20 F807 2 "" 0 4 0 } 32 "FiltersList"
+0
+6 { 30 0 IlvFrame 189 99 204 81 F8 0 25 16 4 "&SelectedFilter"   } 32 "SelectedFilterMsg"
+0
+6 { 31 0 IlvToggle 189 188 204 16 F1 2 1 2 0 0 0 Y "&FiltersAppearsInOpenDialog" } 32 "FiltersAppearIn"
+0
+6 { 32 0 IlvMessageLabel 200 121 113 22 F8 0 25 16 4 "&Filter"   } 32 "FilterMsg"
+0
+6 { 33 0 IlvTextField 331 121 52 22 F6 2 1 -1 0 "*.h" } 32 "Filter"
+0
+6 { 34 0 IlvMessageLabel 200 149 82 22 F8 0 25 16 4 "&Description"   } 32 "FilterDescriptionMsg"
+0
+6 { 35 0 IlvTextField 277 149 106 22 F6 2 1 -1 0 "Header (*.h)" } 32 "FilterDescription"
+0
+7 { 36 0 IlvFileSelectorField 189 77 204 23 F6 2 1 -1 0 "" } 32 "ILVTemplate"
+6144 "GadItemBitmapState" "GadItemBitmapState"
+7 { 37 0 IlvToggle 189 158 204 16 F1 2 1 2 0 0 0 Y "&AllowMultipleWindow" } 32 "AllowMultipleWindow"
+0
+7 { 38 0 IlvToggle 211 132 182 16 F1 2 1 2 0 0 0 Y "&FrameMaximized" } 32 "FrameMaximized"
+0
+7 { 39 0 IlvToggle 189 108 204 16 F1 2 1 2 0 0 0 Y "&ShowInMDIChildFrame" } 32 "ShowInMDIChild"
+0
+7 { 40 0 IlvMessageLabel 189 55 204 22 F8 0 25 16 4 "&ILVTemplate"   } 32 "ILVTemplateMsg"
+0
+8 { 41 0 IlvToggle 189 55 204 16 F1 2 1 2 0 0 0 Y "&AlwaysShowMenu" } 32 "AlwaysShowMenu"
+0
+8 { 42 0 IlvMessageLabel 189 75 204 22 F8 0 25 16 4 "&UnopenedDocumentCommands"   } 32 "UnopenedDocumentCommandsMsg"
+0
+8 { 43 0 IlvMessageLabel 189 120 204 22 F8 0 25 16 4 "&CommandName"   } 32 "TplSpecCommandNameMsg"
+0
+8 { 44 0 IlvTextField 189 142 204 22 F6 2 1 -1 0 "" } 32 "TplSpecCommandName"
+0
+8 { 45 0 IlvMessageLabel 188 171 155 22 F8 0 25 16 4 "&MaxFiles"   } 32 "MaxFilesMsg"
+0
+8 { 46 0 IlvScrolledComboBox 189 98 204 20 F807 2 "" 3
+IlvGadgetItem 1 2 4 "&New"  
+IlvGadgetItem 1 2 4 "&Open"  
+IlvGadgetItem 1 2 4 "&RecentFileList"   4 0 } 32 "UnopenedDocumentCommands"
+0
+8 { 47 0 IlvNumberField 348 171 45 22 F6 2 2 -1 0 "1234543" . , 2 0 0 20 } 32 "MaxFiles"
+0
+Size 400 239
+GeometryHandlers
+2 100 0 182 0 182 0
+ 0 0 218 182 218 182
+5 3 0 0 9  122 0 122 0  0 0 51 0
+ 3 0 0 9  166 0 166 1  0 0 7 0
+ 3 129 0 129  0 0 26 2  0 0 27 0
+ 3 153 0 153  0 0 22 3  0 0 7 0
+ 3 348 0 348  0 0 45 47  0 0 7 1
+40 3 0 0 7  204 0 204 4  0 0 7 1
+ 3 0 0 7  204 0 204 5  0 0 7 1
+ 3 0 0 7  204 0 204 8  0 0 7 1
+ 3 0 0 7  204 0 204 9  0 0 7 1
+ 3 0 0 7  204 0 204 10  0 0 7 1
+ 3 0 0 7  204 0 204 11  0 0 7 1
+ 3 0 0 7  204 0 204 12  0 0 7 1
+ 3 0 0 7  204 0 204 16  0 0 7 1
+ 3 0 0 7  204 0 204 19  0 0 7 1
+ 3 0 0 7  204 0 204 17  0 0 7 1
+ 3 0 0 7  204 0 204 20  0 0 7 1
+ 3 0 0 7  204 0 204 18  0 0 7 1
+ 3 0 0 7  204 0 204 21  0 0 7 1
+ 3 0 0 7  204 0 204 13  0 0 7 1
+ 3 0 0 7  204 0 204 14  0 0 7 1
+ 3 0 0 7  204 0 204 24  0 0 7 1
+ 3 0 0 7  204 0 204 25  0 0 7 1
+ 3 0 0 7  204 0 204 22  0 0 7 1
+ 3 0 0 7  204 0 204 23  0 0 7 1
+ 3 0 0 7  204 0 204 26  0 0 7 1
+ 3 0 0 7  204 0 204 27  0 0 7 1
+ 3 0 0 7  204 0 204 28  0 0 7 1
+ 3 0 0 7  204 0 204 29  0 0 7 1
+ 3 0 0 7  204 0 204 30  0 0 7 1
+ 3 0 0 7  204 0 204 31  0 0 7 1
+ 3 0 0 18  0 0 113 32  87 0 87 1
+ 3 0 0 18  0 0 82 34  118 0 118 1
+ 3 0 0 149  52 0 52 33  0 0 17 1
+ 3 0 0 95  106 0 106 35  0 0 17 1
+ 3 0 0 7  204 0 204 40  0 0 7 1
+ 3 0 0 7  204 0 204 36  0 0 7 1
+ 3 0 0 7  204 0 204 39  0 0 7 1
+ 3 0 0 29  182 0 182 38  0 0 7 1
+ 3 0 0 7  204 0 204 37  0 0 7 1
+ 3 0 0 6  155 0 155 45  0 0 57 1
+ 3 0 0 7  204 0 204 44  0 0 7 1
+ 3 0 0 7  204 0 204 43  0 0 7 1
+ 3 0 0 7  204 0 204 46  0 0 7 1
+ 3 0 0 7  204 0 204 42  0 0 7 1
+ 3 0 0 7  204 0 204 41  0 0 7 1
+1 100 0 239 0 239 0
+1 3 0 0 32  157 0 157 1  0 0 50 0
+EOF

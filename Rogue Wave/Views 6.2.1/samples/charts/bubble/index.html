@@ -1,0 +1,77 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Charts - Samples: bubble</title>
+	</head>
+    <body>
+		<a name="bubble"><h1>Sample: <code>bubble</code></h1><h1 class="subtitle">Displaying a Bubble Chart</h1></a>
+		<p>Shows how to use a bubble displayer.</p>
+		<img src="data/bubble.png"/>
+		<p><P>
+   This sample shows you how to display data with a bubble displayer. Three data sets are
+   displayed by the two charts of this sample:
+   </P>
+   <UL>
+   <LI> <EM>inputSet</EM>, which represents the original input data. </LI>
+   <LI> <EM>logSet</EM>, which is used to log the maximal value of each data 
+   in <EM>inputSet</EM> across the last 20 measures.</LI>
+   <LI> <EM>avgSet</EM>, which holds the average value of each data in <EM>inputSet</EM> across
+   all measures.</LI>
+   </UL>
+   <P>
+   Both <EM>logSet</EM> and <EM>avgSet</EM> are updated by a listener positioned 
+   on <EM>inputSet</EM>.
+   </P>
+   <P>
+   The bottom-most chart is used to display <EM>inputSet</EM> (bar displayer) 
+   and <EM>logSet</EM> (step displayer). The steps are annotated with
+   an instance of the <CODE>IlvChartDataPointLabel</CODE> class that displays the values of
+   <EM>logSet</EM>.
+   </P>
+   <P>
+   The top-most chart uses a <B>Bubble Displayer</B> connected to the following data sets:
+   <UL>
+   <LI> <EM>logSet</EM>, which gives the y value of the bubble.</LI>
+   <LI> <EM>avgSet</EM>, which gives the size of the bubble.</LI>
+   </UL>
+   </P>
+   <P>
+   The visual effect rendered by the displayer is that the longer a bubble stays at a high 
+   y value, the bigger its size is. The bubbles are annotated with the values of <EM>avgSet</EM>.
+   </P>
+   <P>
+   The following interactions are available:
+   </P>
+   <UL>
+   <LI> Pressing the <B>'b'</B> key changes the graphic representation of the bubbles.</LI>
+   <LI> A timer is launched at the beginning of the program to simulate the measures stored in 
+   <EM>inputSet</EM>. You can suspend it with the <B>'s'</B> key, and resume it with the 
+   <B>'r'</B> key.</LI> 
+   <LI> Pressing the <B>space bar</B> changes the orientation of the Cartesian projector of the 
+   two charts.</LI>
+   </UL></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvCartesianChart</code></li>
+			<li><code>IlvPointInfoArray</code></li>
+			<li><code>IlvChartDataPointlabel</code></li>
+			<li><code>IlvBubbleChartDisplayer</code></li>
+			<li><code>IlvBarChartDisplayer</code></li>
+			<li><code>IlvFixedStepChartDisplayer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="../include/samputil.h"><code>../include/samputil.h</code></a></li>
+			<li><a href="../src/samputil.cpp"><code>../src/samputil.cpp</code></a></li>
+			<li><a href="src/bubble.cpp"><code>src/bubble.cpp</code></a></li>
+		</ul>

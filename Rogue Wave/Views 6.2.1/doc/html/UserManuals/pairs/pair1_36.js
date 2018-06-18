@@ -1,0 +1,19 @@
+var pairs =
+{
+"using":{"generated":1}
+,"generated":{"code":1}
+,"code":{"chapter":1,"find":1,"extending":1}
+,"chapter":{"uses":1}
+,"uses":{"example":1}
+,"example":{"explain":1}
+,"explain":{"generated":1}
+,"find":{"information":1}
+,"information":{"following":1}
+,"following":{"topics":1}
+,"topics":{"building":1}
+,"building":{"application":1}
+,"application":{"generating":1}
+,"generating":{"code":1}
+,"extending":{"generated":1}
+}
+;Search.control.loadWordPairs(pairs);

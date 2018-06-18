@@ -1,0 +1,36 @@
+// Ilv Version: 3.0
+// File generated: Fri Jul 31 17:30:40 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "extent"
+
+Palettes 2
+1 "gray" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+IlvObjects 10
+1 { 0 0 IlvNumberField 111 12 45 22 F6 2 2 -1 0 "0" . , 2 16 -180 180 } 32 "lomin"
+0
+1 { 1 0 IlvNumberField 111 41 45 22 F6 2 2 -1 0 "0" . , 2 16 -180 180 } 32 "lomax"
+0
+1 { 2 0 IlvNumberField 111 70 45 22 F6 2 2 -1 0 "0" . , 2 16 -90 90 } 32 "lamin"
+0
+1 { 3 0 IlvNumberField 111 99 45 22 F6 2 2 -1 0 "0" . , 2 16 -90 90 } 32 "lamax"
+0
+1 { 4 0 IlvLabel 20 30 "Longitude Min:" } 0
+0
+1 { 5 0 IlvLabel 20 59 "Longitude Max:" } 0
+0
+1 { 6 0 IlvLabel 20 88 "Latitude Min:" } 0
+0
+1 { 7 0 IlvLabel 20 117 "Latitude Max:" } 0
+0
+1 { 8 1 IlvButton 5 133 73 23 F1 2 16 Y "Apply" } 512
+1
+1 "__ilvCallback" "apply"
+0
+1 { 9 1 IlvButton 95 133 73 23 F1 2 16 Y "Cancel" } 512
+1
+1 "__ilvCallback" "cancel"
+0
+Size 180 166
+Background "gray"
+EOF

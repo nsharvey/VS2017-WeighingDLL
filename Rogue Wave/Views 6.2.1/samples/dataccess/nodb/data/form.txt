@@ -1,0 +1,15 @@
+Files: form.h form.cpp
+Note: shows how to customize a form containing a data-source along with 
+db-gadgets connected to it :
+  - gadgets are made read-only when they contain non-null data and read-write 
+    when the data is null.
+  - the color of a gadget depends on wether its value is positive or negative 
+  - the data-source checks some business rules on updated rows.
+  - shows how to define an entry-field which converts all characters to 
+    uppercase and which does not accept digits. 
+
+Note that Rogue Wave Views Data Access masks can be used to obtain the same result without 
+programming. However this sample is still interesting since it shows how the 
+entry-field class can be subclassed.
+
+

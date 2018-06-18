@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<filters>
+  <filter id="BoxBlur3" x="0" y="0" width="100" height="100">
+    <desc>Box blur 3x3</desc>
+    <feConvolveMatrix in="SourceGraphic" order="3" divisor="9" kernelMatrix="1,1,1,1,1,1,1,1,1"/>
+  </filter>
+  <filter id="BoxBlur5" x="0" y="0" width="100" height="100">
+    <desc>Box blur 5x5</desc>
+    <feConvolveMatrix in="SourceGraphic" order="5" divisor="25" 
+                      kernelMatrix="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"/>
+  </filter>
+  <filter id="VerticalEdges" x="0" y="0" width="100" height="100">
+    <desc>Finds vertical edges</desc>
+    <feConvolveMatrix in="SourceGraphic" result="kernel" 
+                      order="3"  divisor="1" kernelMatrix="-1 0 1 -1 0 1 -1 0 1"/>
+    <feComponentTransfer in="kernel">
+      <feFuncA type="table" tableValues="1,1"/>
+    </feComponentTransfer>
+  </filter>
+  <filter id="HorizontalEdges" x="0" y="0" width="100" height="100">
+    <desc>Finds horizontal edges</desc>
+    <feConvolveMatrix in="SourceGraphic" result="kernel" 
+                      order="3"  divisor="1" kernelMatrix="1 1 1 0 0 0 -1 -1 -1"/>
+    <feComponentTransfer in="kernel">
+      <feFuncA type="table" tableValues="1,1"/>
+    </feComponentTransfer>
+  </filter>
+  <filter id="AllEdges3x3" x="0" y="0" width="100" height="100">
+    <desc>Finds all edges using a 3x3 kernel</desc>
+    <feConvolveMatrix in="SourceGraphic" result="kernel" 
+                      order="3"  divisor="1" kernelMatrix="-1 -1 -1 -1 8 -1 -1 -1 -1"/>
+    <feComponentTransfer in="kernel">
+      <feFuncA type="table" tableValues="1,1"/>
+    </feComponentTransfer>
+  </filter>
+  <filter id="AllEdges5x5" x="0" y="0" width="100" height="100">
+    <desc>Finds all edges using a 5x5 kernel</desc>
+    <feConvolveMatrix in="SourceGraphic" result="kernel" 
+                      order="5"  divisor="1" 
+                      kernelMatrix="-3 -3 -3 -3 -3 -3 -1 -1 -1 -3 -1 -3 -1 57 -1 -3 -3 -1 -1 -1 -3 -3 -3 -3 -3 -3"/>
+    <feComponentTransfer in="kernel">
+      <feFuncA type="table" tableValues="1,1"/>
+    </feComponentTransfer>
+  </filter>
+  <filter id="EdgeEnhance" x="0" y="0" width="100" height="100">
+    <desc>Enhances edges</desc>
+    <feConvolveMatrix in="SourceGraphic" result="kernel" 
+                      order="3" divisor="-1" kernelMatrix="0 1 0 1 -5 1 0 1 0"/>
+    <feComponentTransfer in="kernel">
+      <feFuncA type="table" tableValues="1,1"/>
+    </feComponentTransfer>
+  </filter>
+  <filter id="Laplacian3x3" x="0" y="0" width="100" height="100">
+    <desc>Laplacian 3x3 convolution kernel</desc>
+    <feConvolveMatrix in="SourceGraphic" result="kernel" 
+                      order="3" divisor="1" kernelMatrix="0 -1 0 -1 4 -1 0 -1 0"/>
+    <feComponentTransfer in="kernel">
+      <feFuncA type="table" tableValues="1,1"/>
+    </feComponentTransfer>
+  </filter>
+</filters>

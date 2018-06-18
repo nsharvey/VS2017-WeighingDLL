@@ -1,0 +1,185 @@
+div.Body, caption.Body
+{
+  color: #000000;
+  direction: ltr;
+  font-family: Sans-Serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6.0pt;
+  margin-left: 1.35em;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: left;
+  text-indent: 0em;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 96%;
+}
+
+div.Chapternumber, caption.Chapternumber
+{
+  color: #000000;
+  direction: ltr;
+  font-family: Arial;
+  font-size: 30.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 42.0pt;
+  margin-left: 85.0393700787401pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: right;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 96%;
+}
+
+div.Chaptertitle, caption.Chaptertitle
+{
+  border-bottom-color: Black;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  color: #226099;
+  direction: ltr;
+  font-family: Sans-Serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 2em;
+  margin-left: 0em;
+  margin-right: 0pt;
+  margin-top: 0em;
+  padding-left: 0.5em;
+  text-align: left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 99%;
+}
+
+div.Heading1, caption.Heading1
+{
+  border-bottom-color: Black;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  color: #226099;
+  direction: ltr;
+  font-family: Sans-Serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 2em;
+  margin-left: 0em;
+  margin-right: 0pt;
+  margin-top: 0em;
+  padding-left: 0.5em;
+  text-align: left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 99%;
+}
+
+div.Itemize, caption.Itemize
+{
+  color: #000000;
+  direction: ltr;
+  font-family: Sans-Serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6.0pt;
+  margin-left: 3em;
+  margin-right: 0pt;
+  margin-top: 6.0pt;
+  text-align: left;
+  text-indent: -14.173228346456696pt;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 90%;
+}
+
+span.caption, abbreviation.caption, acronym.caption, citation.caption
+{
+  color: #000000;
+  font-family: Sans-Serif;
+  font-size: 13px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: bold;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.diamond, abbreviation.diamond, acronym.diamond, citation.diamond
+{
+  color: #000000;
+  font-family: ZapfDingbats;
+  font-size: 9.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.emphasis, abbreviation.emphasis, acronym.emphasis, citation.emphasis
+{
+  color: #000000;
+  font-style: italic;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.flag, abbreviation.flag, acronym.flag, citation.flag
+{
+  color: #858A8B;
+  font-family: Sans-Serif;
+  font-size: 10.0pt;
+  font-style: normal;
+  font-weight: bold;
+  vertical-align: baseline;
+}
+
+span.folionum, abbreviation.folionum, acronym.folionum, citation.folionum
+{
+  color: #000000;
+  font-family: Helvetica;
+  font-size: 10.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.mantitle, abbreviation.mantitle, acronym.mantitle, citation.mantitle
+{
+  color: #000000;
+  font-family: Helvetica;
+  font-size: 9.0pt;
+  font-style: normal;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+img.Default
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+video.Default
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+

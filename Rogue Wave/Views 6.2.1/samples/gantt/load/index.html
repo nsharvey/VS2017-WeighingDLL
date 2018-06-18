@@ -1,0 +1,40 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Gantt Chart - Samples: load</title>
+	</head>
+    <body>
+		<a name="load"><h1>Sample: <code>load</code></h1><h1 class="subtitle">Rogue Wave Views Gantt Chart With Load Information</h1></a>
+		<p>A customized Gantt chart shows the load information of the resources.</p>
+		<img src="data/load.png"/>
+		<p>This sample shows how to customize the grid of the Gantt chart in order to show the load information of the resources. </p>
+         <p>This information is a colored line:</p>
+         <ul>
+            <li>green means that the resource can still be used for more activities,</li>
+            <li>orange means the resource is just saturated,</li>
+            <li>red means that the resource is overloaded.</li>
+         </ul></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGanttChart</code></li>
+			<li><code>IlvGanttLine</code></li>
+			<li><code>IlvGanttNode</code></li>
+			<li><code>IlvGanttSubNode</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/load.h"><code>include/load.h</code></a></li>
+			<li><a href="include/loadgantt.h"><code>include/loadgantt.h</code></a></li>
+			<li><a href="src/load.cpp"><code>src/load.cpp</code></a></li>
+			<li><a href="src/loadgantt.cpp"><code>src/loadgantt.cpp</code></a></li>
+		</ul>

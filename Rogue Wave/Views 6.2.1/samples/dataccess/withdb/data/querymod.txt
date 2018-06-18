@@ -1,0 +1,11 @@
+Note: Shows how to use the Query Mode:
+   - The "Switch" button puts the table in Query Mode and the table gadget 
+shows either an empty row (if no query has been entered yet) either rows 
+containing the previous query
+   - The "Cancel" button cancels the Query Mode and initial rows (before 
+switching to Query Mode) are restored
+   - The "Apply" button applies the Query Mode and displays selected rows
+   - When in Query Mode, the current position and number of lines of the 
+navigator display "Q:.."
+   - The message label tells you if you are in Query Mode, if Apply succeeded 
+or not etc.

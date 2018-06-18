@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("7FC7F55E-1D62-11E8-AB12-0BC9772C9500") = "spring", "spring.vcxproj", "7FC78678-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Global
+EndGlobal
+

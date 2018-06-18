@@ -1,0 +1,6 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{19F322A0-1D6F-11E8-9A26-E378772C9500}") = "mystudio", "mystudio.vcxproj", "{19F2C382-1D6F-11E8-9A26-E378772C9500}"
+EndProject
+Global
+EndGlobal

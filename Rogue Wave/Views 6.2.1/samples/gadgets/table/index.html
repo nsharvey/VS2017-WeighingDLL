@@ -1,0 +1,88 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Gadgets - Samples: table</title>
+	</head>
+    <body>
+		<a name="matrix"><h1>Sample: <code>matrix</code></h1><h1 class="subtitle">Rogue Wave Views Gadgets Matrix Sample 1</h1></a>
+		<p>This sample shows how to subclass the <code>IlvAbstractMatrix</code> class to implement a matrix that has in infinite number of rows.</p>
+		<img src="data/matrix.png"/>
+		<p>When trying to reach the last row of the matrix using the scroll bar, new rows are added to the matrix.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvAbstractMatrix</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/matrix.cpp"><code>src/matrix.cpp</code></a></li>
+		</ul>
+		<a name="huge"><h1>Sample: <code>huge</code></h1><h1 class="subtitle">Rogue Wave Views Gadgets Matrix Sample 2</h1></a>
+		<p>This sample shows how to scroll in a large number of data items.</p>
+		<img src="data/hugetabl.png"/>
+		<p>The actual number of items is larger than an <code>IlvUShort</code>, which is the basic type for table indexes. This sample demonstrates how to handle an <code>IlvUInt</code> index, using logical scroll on a smaller table.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvAbstractMatrix</code></li>
+			<li><code>IlvScrolledGadget</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/hugetabl.cpp"><code>src/hugetabl.cpp</code></a></li>
+		</ul>
+		<a name="random"><h1>Sample: <code>random</code></h1><h1 class="subtitle">Rogue Wave Views Gadgets Matrix Sample 3</h1></a>
+		<p>This sample displays an animated <code>IlvAbstractMatrix</code> of 1000 rows and 3 columns.</p>
+		<img src="data/random.png"/>
+		<p>The first column shows the row index, from 0 to 999. The second column receives a random integer from 0 to 1000. The third column stores an <code>IlvRectangularGauge</code> that represents this value. Random numbers are modified periodically using a timer. The sample lets you edit a threshold. When the number becomes greater than this threshold the number turns red.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvAbstractMatrix</code></li>
+			<li><code>IlvTimer</code></li>
+			<li><code>IlvRectangularGauge</code></li>
+			<li><code>IlvFont</code></li>
+			<li><code>IlvNumberField</code></li>
+			<li><code>IlvToggle</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/random.cpp"><code>src/random.cpp</code></a></li>
+		</ul>
+		<a name="edit"><h1>Sample: <code>edit</code></h1><h1 class="subtitle">Rogue Wave Views Gadgets Matrix Sample 4</h1></a>
+		<p>This sample shows how to create a
+	subclass of the <code>IlvAbstractMatrixItem</code> class. It
+	also shows how to create specific matrix item editors.</p>
+		<img src="data/edit.png"/>
+		<p>The sample shows a matrix with several rows and 4
+	columns. The first column contains labels (<code>IlvLabelMatrixItem</code>
+	class). The second column contains integer values
+	(<code>IlvIntMatrixItem</code> class). The third column contains float
+	values (<code>IlvFloatMatrixItem</code> class). The fourth column also contains
+	float values, but here a subclass of <code>IlvFloatMatrixItem</code> is
+	used. This subclass allow the user to control the display format of the
+	float value.</p>
+	<p>A matrix item editor factory is set on the matrix to
+	control the edition of each cell. Two new editors classes are
+	created : An editor for float value that uses a spinbox, and
+	an editor for integer values that uses a slider.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvAbstractMatrixItem</code></li>
+			<li><code>IlvMatrix</code></li>
+			<li><code>IlvMatrixItemEditor</code></li>
+			<li><code>IlvSpinBox</code></li>
+			<li><code>IlvNumberField</code></li>
+			<li><code>IlvSlider</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/edit.cpp"><code>src/edit.cpp</code></a></li>
+		</ul>

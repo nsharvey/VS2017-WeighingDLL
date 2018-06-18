@@ -1,0 +1,437 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>Rogue Wave DB Link - Version 6.2.1</title>
+  </head>
+
+  <body bgcolor=#ffffff>
+    <div align=center><table align=center><td bgcolor=#6b9ece><h1><font color=#ffffff>&nbsp;Rogue Wave DB Link - Version 6.2.1&nbsp;</font></h1></td></table></div>
+         <h2 align=center><small>(March 2018)</small></h2>
+      <h1 align=center>README file</h1>
+
+<hr width="100%">
+<p>&nbsp;</p>
+
+<h1>Supported RDBMS</h1>
+
+This version supports:
+<ul>
+<li>On UNIX:
+	<ul>
+	<li>IBM DB2 9.x &amp; 10.x</li>
+	<li>Informix 5 to 11 (using client SDK3.5)</li>
+	<li>MySQL 5.6</li>
+	<li>Oracle 11 &amp; 12</li>
+	<li>Sybase 12.x/15.x</li>
+	</ul>
+<li>on PC :
+	<ul>
+	<li>IBM DB2 9.x &amp; 10.x</li>
+	<li>Informix 5 to 11 (using client SDK3.5)</li>
+	<li>MySQL 5.6</li>
+	<li>ODBC 3.5x</li>
+	<li>OLE-DB for MS SQL 2005 and above</li>
+	<li>Oracle 11 &amp; 12</li>
+	<li>Sybase 12.x &amp; 15.x</li>
+	</ul>
+</ul>
+<p>&nbsp;</p>
+<hr align=center width="50%">
+<h1>Compatibility</h1>
+
+<h2>Prior DB Link versions</h2>
+
+<p>This version is not binary compatible with the previous 5.x versions.</p>
+<p>The ICU (International Components for Unicode) libraries version 5.5.1 have been integrated in the product.</p>
+
+<h2>RDBMS versions</h2>
+
+<p>The MySQL port has been certified using MySQL 5.6 server and Connector 6.1 client library. For this release, only the Linux, Solaris, and Windows ports are supported. On Windows platforms, MySQL is not supported with Visual Studio 2015.</p>
+
+<h2>Platforms</h2>
+
+<h3>Solaris 11</h3>
+<p>Solaris 11 and Sun Studio 12 on SPARC and X86_64 platforms have been verified compatible with the existing Solaris 10/Sun Studio 11 ports. No specific ports for the Solaris 11 platforms have been added: the Solaris 10 ports should be used.</p>
+
+<h3>Visual Studio 2015</h3>
+<p>MS Visual Studio 2015 is now supported through two additional ports: <tt>x86_.net2015_14.0</tt> and <tt>x64_.net2015_14.0</tt>.</p>
+<p>&nbsp;</p>
+<hr align=center width="50%">
+<h1>Link an application with DB Link</h1>
+
+<p>Two link modes can be used: dynamic link mode or static link mode depending upon the way the database native driver is included in the application. In dynamic mode, the driver is loaded at runtime while in static mode the driver is linked in at build time.</p>
+
+<p>To link:</p>
+<ul>
+<li>in dynamic mode, use <tt>dbkernel</tt> + <tt>dblnkdyn</tt>, or use the library <tt>dblinkdm</tt> which includes the two;
+<li>in static mode, use <tt>dbkernel</tt> + <tt>dblnkst</tt><br>
++ for instance <tt>ctsyb.lib</tt> + <tt>dbora.lib</tt> to connect to Sybase and Oracle.
+</ul>
+
+<p>On UNIX platforms, the DB Link dynamic drivers for specific RDBMS must be rebuilt with the proper RDBMS client libraries. Refer to the User Manual for more information on that subject.</p>
+
+Under all UNIX ports, the dynamic load of drivers is POSIX compliant. This means it will make use of the contents of the environment variable <code>LD_LIBRARY_PATH</code>. Still some platforms may use a different environment variable to locate additonal libraries that need to loaded at runtime. Typeically HP platforms make use of the variable <code>SHLIB_PATH</code>. It is advised to add to this variable contents the contents of the varaible <code>LD_LIBRARY_PATH</code>.
+
+<p>&nbsp;</p>
+<hr align=center width="50%">
+<h1>Connection strings</h1>
+<p>The <code>IldAllocConnect</code> function takes two arguments where:</p>
+<ul>
+<li>The first one is the port name and MUST be one of:
+	<ul>
+	<li><i>db2,</i></li>
+	<li><i>db29x</i></li>
+	<li><i>informix9,</i></li>
+	<li><i>mysql</i></li>
+	<li><i>odbc,</i></li>
+	<li><i>oledb,</i></li>
+	<li><i>oracle,</i></li>
+	<li><i>sybase.</i></li>
+	</ul>
+<li>The second is called the authentication string. Its format and contents depend on the target RDBMS:
+	<ul>
+	<li>DB2: <i>&lt;user&gt;/&lt;password&gt;/&lt;database&gt;</i></li>
+	<li>Informix: <i>[&lt;user&gt;]/[&lt;password&gt;]/&lt;database name&gt;[@&lt;server&gt;]</i></li>
+	<li>MySQL:  <i>[&lt;user&gt;]/[&lt;password&gt;]/[&lt;database name&gt;]/[&lt;server&gt;]</i></li>
+	<li>ODBC: <i>&lt;data source name&gt;/[&lt;user&gt;]/[&lt;password&gt;]</i></li>
+	<li>OLE-DB: <i>&lt;user&gt;/&lt;password&gt;/&lt;database&gt;/&lt;server&gt;</i></li>
+	<li>Oracle: <i>[&lt;user&gt;]/[&lt;password&gt;[@&lt;service name&gt;]]</i></li>
+	<li>Sybase: <i>&lt;user&gt;/&lt;password&gt;/&lt;database name&gt;/&lt;server name&gt;</i></li>
+	</ul>
+</ul>
+<p>When enclosed in square brackets, a value is optional.</p>
+
+<h3>Notes:</h3>
+<ol>
+<li>With ODBC port, you can not pass the database name in the connection string. It can be set through the odbc.ini file.</li>
+<li>The slash signs are always mandatory.</li>
+</ol>
+
+<p>&nbsp;</p>
+<hr align=center width="50%">
+<h1>Compilation</h1>
+
+<h2>Libraries</h2>
+
+<p>Rogue Wave DB Link is delivered as a set of libraries stored in a directory that depends on the type of machine you are using, the operating system it is running, and the compiler you plan to use.</p>
+
+<p>It is important to note that while on PCs a DLL is de facto equivalent to a dynamically loadable driver, on UNIX the delivered shared libraries are not fully resolved with respect to the RDBMS client API. To be able to use the dynamic load feature on Unix, one needs to build the driver libraries using the delivered file <code>Makefile.drv</code> placed in the shared library directory.<p>
+This makefile uses several environment variables:
+<ul>
+<li><code>ILDHOME</code>: defines the root location of DB Link installation.
+<li><code>IL_HOME</code>: defines the root location of the ILOG Foundation Classes (usually it will point to the same location as <code>ILDHOME</code>
+<li><code>ICU_HOME</code>: defines the root location of the ICU installation (usually it will point to the same location as <code>ILDHOME</code>)
+<li>The variables defining the root location of the RDBMS client; e.g. <code>ORACLE_HOME</code>, <code>INFORMIXDIR</code>, etc.
+</ul>
+
+<h2>Modes</h2>
+
+<p>The libraries are delivered in different modes which correspond to different compilation and link time options.</p>
+
+On Unix: two of the following (one shared and one static)
+<ul>
+<li>static (full static version of the libraries)</li>
+<li>static_pic (static position independent code libraries)</li>
+<li>shared (shareable object libraries)</li>
+<li>static_mt (static version with multithreading enabled)</li>
+<li>static_pic_mt (static position independent code version with multithreading enabled)</li>
+<li>shared_mt (shareable object with multithreading enabled)</li>
+<li>static_pic_mt_AA (HP-UX specific: PIC mode with multithreading enabled, and new streams mode)</li>
+<li>shared_mt_AA (shareable object with multithreading and new streams mode)</li>
+</ul>
+<p>If specific compiler and linker flags you might need, like exceptions or multithread, were not used to build the delivered libraries, contact your sales representative or the customer support.</p>
+
+<p></p>
+
+On Windows:
+<ul>
+<li>stat_mta : static multi-threaded libraries, ANSI compliance</li>
+<li>stat_mda : static multi-threaded dynamic load RTL libraries, ANSI compliance</li>
+<li>dll_mda  : dynamic load multi-threaded, dynamic load RTL libraries, ANSI compliance</li>
+</ul>
+
+<h2>Library locations</h2>
+
+<p>Depending on the platform, the compiler and the mode to be used the library will be found in different directories.</p>
+
+<h3>Ports</h3>
+
+Hereunder is the list of all supported ports, starting with the port name followed in parenthesis by the mode names.
+<ul>
+<li><b>hp32_11_3.73</b>: (static_pic_mt_AA, shared_mt_AA)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>HP 9000</td>
+	    <td width=30%>HP UX 11.11</td>
+	    <td>HP aC++ A.03.73</td></tr>
+	</table>
+<li><b>hp64_11_3.73</b>: (static_mt_AA, shared_mt_AA)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>HP 9000</td>
+	    <td width=30%>HP UX 11.11</td>
+	    <td>HP aC++ A.03.73</td></tr>
+	</table>
+<li><b>ia64-32_hpux11_6.17</b>: (static_mt, shared_mt)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>Itanium</td>
+	    <td width=30%>HP UX 11.23 U</td>
+	    <td>HP aC++ A.06.17</td></tr>
+	</table>
+<li><b>ia64_hpux11_6.17</b>: (static_mt, shared_mt)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>Itanium</td>
+	    <td width=30%>HP UX 11.23 U</td>
+	    <td>HP aC++ A.06.17</td></tr>
+	</table>
+<li><b>power32_aix6.1_10.1</b>: (static_mt_stl, shared_mt_stl)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>PowerPC</td>
+	    <td width=30%>AIX 6.1</td>
+	    <td>C Set++ 10.1</td></tr>
+	</table>
+<li><b>power64_aix6.1_10.1</b>: (static_mt_stl, shared_mt_stl)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>PowerPC</td>
+	    <td width=30%>AIX 6.1</td>
+	    <td>C Set++ 10.1</td></tr>
+	</table>
+<li><b>ultrasparc32_10_11</b>: (static_pic_mt, shared_mt)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>Ultra Sparc</td>
+	    <td width=30%>Solaris 10 and above</td>
+	    <td>Sun Studio 11</td></tr>
+	</table>
+<li><b>ultrasparc64_10_11</b>: (static_pic_mt, shared_mt)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>Ultra Sparc</td>
+	    <td width=30%>Solaris 10 and above</td>
+	    <td>Sun Studio 11 (xarch=v9)</td></tr>
+	</table>
+<li><b>x86_solaris10_11</b>: (static_pic_mt, shared_mt)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>X86</td>
+	    <td width=30%>Solaris 10 and above</td>
+	    <td>Sun Studio 11</td></tr>
+	</table>
+<li><b>x64_solaris10_11</b>: (static_pic_mt, shared_mt)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>X64</td>
+	    <td width=30%>Solaris 10 and above</td>
+	    <td>Sun Studio 11</td></tr>
+	</table>
+<li><b>x86_sles10.0_4.1</b>: (shared, static_pic)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>X86</td>
+	    <td width=30%>Suse 10</td>
+	    <td>GCC 4.1</td></tr>
+	</table>
+<li><b>x64_sles10.0_4.1</b>: (shared, static_pic)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>X64</td>
+	    <td width=30%>SUSE 10</td>
+	    <td>GCC 4.1</td></tr>
+	</table>
+<li><b>x86_rhel5.0_4.1</b>: (shared, static_pic)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>X86</td>
+	    <td width=30%>Red Hat 5</td>
+	    <td>GCC 4.1</td></tr>
+	</table>
+<li><b>x64_rhel5.0_4.1</b>: (shared, static_pic)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>X64</td>
+	    <td width=30%>Red Hat 5</td>
+	    <td>GCC 4.1</td></tr>
+	</table>
+<li><b>x86_.net2010_10.0</b>: (dll_mda, stat_mda, stat_mta)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>X86</td>
+	    <td width=30%>Windows 7, Server 2003/2008/2012</td>
+	    <td>Microsoft Visual Studio 2010</td></tr>
+	</table>
+<li><b>x86_.net2012_11.0</b>: (dll_mda, stat_mda, stat_mta)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>X86</td>
+	    <td width=30%>Windows 7/8, Server 2008/2012</td>
+	    <td>Microsoft Visual Studio 2012</td></tr>
+	</table>
+<li><b>x86_.net2013_12.0</b>: (dll_mda, stat_mda, stat_mta)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>X86</td>
+	    <td width=30%>Windows 7/8, Server 2008/2012</td>
+	    <td>Microsoft Visual Studio 2013</td></tr>
+	</table>
+<li><b>x86_.net2015_14.0</b>: (dll_mda, stat_mda, stat_mta)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>X86</td>
+	    <td width=30%>Windows 7/8.1/10, Server 2008/2012</td>
+	    <td>Microsoft Visual Studio 2015</td></tr>
+	</table>
+<li><b>x64_.net2010_10.0</b>: (dll_mda, stat_mda, stat_mta)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>X64</td>
+	    <td width=30%>Windows 7/8, Server 2008/2012</td>
+	    <td>Microsoft Visual Studio 2010</td></tr>
+	</table>
+<li><b>x64_.net2012_11.0</b>: (dll_mda, stat_mda, stat_mta)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>X64</td>
+	    <td width=30%>Windows 7/8, Server 2008/2012</td>
+	    <td>Microsoft Visual Studio 2012</td></tr>
+	</table>
+<li><b>x64_.net2013_12.0</b>: (dll_mda, stat_mda, stat_mta)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>X64</td>
+	    <td width=30%>Windows 7/8, Server 2008/2012</td>
+	    <td>Microsoft Visual Studio 2013</td></tr>
+	</table>
+<li><b>x64_.net2015_14.0</b>: (dll_mda, stat_mda, stat_mta)
+	<table border=1 width=500>
+	<tr><th>Architecture</th><th>OS</th><th>Compiler</th></tr>
+	<tr><td width=20%>X64</td>
+	    <td width=30%>Windows 7/8.1/10, Server 2008/2012</td>
+	    <td>Microsoft Visual Studio 2015</td></tr>
+	</table>
+</ul>
+
+<p>The port name will be refered to as <code>&lt;SYSTEM&gt;</code> in the following text.</p>
+
+<h3>Deprecated ports</h3>
+No deprecated port in this version.
+
+<h3>Library names</h3>
+
+<p>Each port contains one library for each RDBMS:</p>
+
+<h4>On Unix:</h4>
+<ul>
+<li>libdbdb2.a for IBM DB2 8.x</li>
+<li>libdbdb29x.a for IBM DB2 9.x</li>
+<li>libdbinf9.a for Informix (versions from 5 to 11)</li>
+<li>libdbkernel.a for DBLink driver manager</li>
+<li>libdblnkdyn.a for DBLink dynamic driver manager</li>
+<li>libdblnkst.a for DBLink static driver manager</li>
+<li>libdbmysql.a for Oracle MySQL 5.6 and above</li>
+<li>libdbora.a for Oracle</li>
+<li>libctsyb.a for Sybase (Open Client Library)</li>
+</ul>
+
+<h4>On Windows:</h4>
+<ul>
+<li>dbdb2.lib for IBM DB2 8.x</li>
+<li>dbdb29x.lib for IBM DB2 9.x</li>
+<li>dbinf9.lib for Informix (version 5 to 11)</li>
+<li>dbkernel.lib for DBLink driver manager</li>
+<li>dblnkdyn.lib for DBLink dynamic driver manager</li>
+<li>dblnkst.lib for DBLink static driver manager</li>
+<li>dbmysql.lib for Oracle MySQL 5.1 and above</li>
+<li>dbodbc.lib for ODBC 3.5x</li>
+<li>dboledb.lib for OLE-DB</li>
+<li>dbora.lib for Oracle</li>
+<li>ctsyb.lib for Sybase 15.x</li>
+</ul>
+
+An additional library is present in the shared libraries directory: (lib)dblinkdm.(so, sl, dll).
+
+<h3>Flags</h3>
+
+<p>Compilers flags depend on the target RDBMS and the target system.</p>
+
+<h4>RDBMS specific:</h4>
+<ul>
+<li>DB2:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ILDDB2 or ILDDB29X
+<li>Informix:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ILDINFORMIX
+<li>MySQL:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ILDMYSQL
+<li>ODBC:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ILDODBC
+<li>OLE-DB:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ILDOLEDB
+<li>Oracle:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ILDORACLE
+<li>Sybase:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ILDSYBASE
+</ul>
+<p><u>Important</u>: None of these flags should be defined when linking with the driver manager library <code>libdblnkdyn</code> (<code>dblnkdyn</code>).</p>
+
+<h4>System specific:</h4>
+<p>No system specific flag is needed on the command line.</p>
+<p>They are computed from the environment hence you are strongly advised against removal of the default compiler flags, for example the <code>WIN32</code> default flag  of
+MSVC.</p>
+
+<h4>Portability:</h4>
+
+<p>As soon as the header file <code>macros.h</code> is included, that is whenever any DB Link include occurred, the following names are defined:</p>
+<ul>
+<li>under Windows: WINDOWS
+<li>under UNIX: none.
+</ul>
+
+<h4>Dynamic libraries on PC:</h4>
+<p>When using the DB Link dynamic libraries, you must add the path to DB Link drivers in the environment variable PATH.</p>
+
+<p>&nbsp;</p>
+<hr align=center width="50%">
+<h1>Examples</h1>
+
+<h3>On Unix:</h3>
+<p>You will find the source file of examples in the following directory: <code>examples/src</code></p>
+<p>If you move to</p>
+<p>     <code>examples/&lt;RDBMS&gt;/&lt;SYSTEM&gt;</code></p>
+<p>where <code>&lt;RDBMS&gt;</code> refers to the RDBMS (oracle, db2, sybase, informix, etc.), you will find a &quot;<code>makefile</code>&quot;.</p>
+<p>To build the demos:</p>
+<p>     <code>% make</code></p>
+
+<h3>On Windows:</h3>
+<p>In each directory <code>examples/&lt;RDBMS&gt;/&lt;SYSTEM&gt;</code>, you will find a global <code>makefile</code> for all examples.</p>
+<p>More informations concerning the sample files can be found in the <i>Rogue Wave DB Link User Manual</i>.</p>
+
+<h2>RDBMS Specifics</h2>
+
+<h4>Informix:</h4>
+<p>Blobs are only supported if the server you are connecting to is an OnLine Server, if that requirement is not met a &quot;<code>notImplemented</code>&quot; error will be raised at runtime.</p>
+<p>Samples:</p>
+<ul>
+<li>blob / clob: handling of Informix 9 BLOB anf CLOB datatype.
+<li>inf9obj: use of the SQL extensions of Informix Universal Server, named rows and collections.
+</ul>
+
+<h4>Oracle:</h4>
+<p>The examples makefiles are designed for all supported versions of Oracle ; depending upon your actual client version, you will have to change the makefile variables <code>DBLIB</code> and <code>DBMSLDFLAGS</code> by ucommenting the relevent values and commenting out the irrelevent ones.</p>
+
+<p>Samples:</p>
+<ul>
+<li>blob / clob: handling of Oracle BLOB and CLOB datatype.
+<li>ora8obj: use of the SQL extensions of Oracle, objects and varrays.
+<li>oraproc: calling a stored procedure with output parameters.
+<li>oracurs: using a cursor parameter to a stored procedure.
+</ul>
+
+<h4>Sybase:</h4>
+<p>Only the Client Library port is supported: <code>libctsyb.a</code> (<code>ctsyb.lib</code>) is based upon Open Client/Client Library.</p>
+
+<p>Samples:</p>
+<ul>
+<li>sybproc: calling a stored procedure with output parameters.
+<li>sybcomp: using compute clauses.
+<li>sybtrig: trigger action and TSQL print function.
+</ul>
+
+</body>
+
+</html>

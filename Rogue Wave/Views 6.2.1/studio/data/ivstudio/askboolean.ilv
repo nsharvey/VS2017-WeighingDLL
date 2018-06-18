@@ -1,0 +1,41 @@
+// Ilv Version: 5.2
+// File generated: Thu Apr 10 14:55:17 2008
+// Creator class: IlvGadgetManagerOutput
+FileName "askboolean"
+PathName "askboolean.ilv"
+Palettes 2
+0 F "defaultBg" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"defaultGadget" 1 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 3
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvButton 154 35 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cancel"  }   } 544 "cancel"
+1
+1 "__ilvCallback" "cancel"
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvButton 64 35 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+0
+3 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvToggle 5 10 224 16 F1 2 1 1 0 0 0 Y "Toggle" } 544 "string"
+1
+1 "__ilvCallback" "apply"
+0
+Size 244 68
+GeometryHandlers
+1 100 200 244 0 244 0
+2 3 154 0 154  0 0 80 0  0 0 10 0
+ 3 64 0 64  0 0 80 1  0 0 100 0
+1 100 120 120 0 120 0
+2 3 35 0 35  0 0 23 0  0 0 62 0
+ 3 35 0 35  0 0 23 1  0 0 62 0
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

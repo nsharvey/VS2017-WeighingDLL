@@ -1,0 +1,19 @@
+// Ilv Version: 5.3
+// File generated: Tue Aug 18 09:21:44 2009
+// Creator class: IlvGadgetManagerOutput
+FileName "xml_date"
+PathName "xml_date.ilv"
+Palettes 1
+"defaultGadget" 0 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 1
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 5 595 290 F268435468 0 { IlvMessageItem 262169 4 16 4 "Chart initialized from an xml file with dates"  }   } 0
+0
+Size 605 300
+GeometryHandlers
+1 100 0 605 0 605 0
+1 3 0 0 5  595 0 595 0  0 0 5 0
+1 100 0 300 0 300 0
+1 3 0 0 5  290 0 290 0  0 0 5 0
+EOF

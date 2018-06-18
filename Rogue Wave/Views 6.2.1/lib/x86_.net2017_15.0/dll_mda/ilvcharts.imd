@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvcharts -->
+<module name="ilvcharts" version="6.2">
+<class name="Ilv3dBarChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvAbstractChartFunction" rootClass="IlvChartDataSet"/>
+<class name="IlvAddChartDataSet" rootClass="IlvChartDataSet"/>
+<class name="IlvAffineChartTransformer" rootClass="IlvCoordinateTransformer"/>
+<class name="IlvAutoScaleStepsUpdater" rootClass="IlvNamedProperty"/>
+<class name="IlvBarChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvBubbleChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvCallbackChartFunction" rootClass="IlvChartDataSet"/>
+<class name="IlvCartesianChart" rootClass="IlvGraphic"/>
+<class name="IlvCartesianProjector" rootClass="IlvAbstractProjector"/>
+<class name="IlvChartCoordinateTransformer" rootClass="IlvCoordinateTransformer"/>
+<class name="IlvChartCrossHairInteractor" rootClass="IlvInteractor" sharedName="ChartCrossHair"/>
+<class name="IlvChartCyclicPointSet" rootClass="IlvChartDataSet"/>
+<class name="IlvChartDataGraphicInfo" rootClass="IlvChartDataPointInfo"/>
+<class name="IlvChartDataInteractor" rootClass="IlvInteractor"/>
+<class name="IlvChartDataPointLabel" rootClass="IlvChartDataPointInfo"/>
+<class name="IlvChartDragPointInteractor" rootClass="IlvInteractor" sharedName="ChartDragPoint"/>
+<class name="IlvChartDrawHook" rootClass="IlvNamedProperty"/>
+<class name="IlvChartGraphic" rootClass="IlvGraphic"/>
+<class name="IlvChartHighlightPointInteractor" rootClass="IlvInteractor" sharedName="ChartHighlightPoint"/>
+<class name="IlvChartInfoViewInteractor" rootClass="IlvInteractor" sharedName="ChartInfoView"/>
+<class name="IlvChartInteractor" rootClass="IlvInteractor"/>
+<class name="IlvChartInteractorDispatcher" rootClass="IlvInteractor" sharedName="Chart"/>
+<class name="IlvChartInteractorManager" rootClass="IlvNamedProperty"/>
+<class name="IlvChartLegend" rootClass="IlvGraphic"/>
+<class name="IlvChartLegendItem" rootClass="IlvGraphic"/>
+<class name="IlvChartPanInteractor" rootClass="IlvInteractor" sharedName="ChartPan"/>
+<class name="IlvChartPointSet" rootClass="IlvChartDataSet"/>
+<class name="IlvChartScrollInteractor" rootClass="IlvInteractor" sharedName="ChartScroll"/>
+<class name="IlvChartSelectInteractor" rootClass="IlvInteractor" sharedName="ChartSelect"/>
+<class name="IlvChartYValueSet" rootClass="IlvChartDataSet"/>
+<class name="IlvChartZoomInteractor" rootClass="IlvInteractor" sharedName="ChartZoom"/>
+<class name="IlvCircularChartCursor" rootClass="IlvAbstractChartCursor"/>
+<class name="IlvCircularGridDisplayer" rootClass="IlvAbstractGridDisplayer"/>
+<class name="IlvCircularScaleDisplayer" rootClass="IlvAbstractScaleDisplayer"/>
+<class name="IlvCombinedChartDataSet" rootClass="IlvChartDataSet"/>
+<class name="IlvCompositeChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvConstantScaleStepsUpdater" rootClass="IlvNamedProperty"/>
+<class name="IlvFixedStepChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvHiLoBarChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvHiLoChartDataSet" rootClass="IlvChartDataSet"/>
+<class name="IlvHiLoChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvHiLoOpenCloseChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvLogScaleStepsUpdater" rootClass="IlvNamedProperty"/>
+<class name="IlvMarkedPolylineChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvMemoryChartData" rootClass="IlvAbstractChartData"/>
+<class name="IlvMultiScaleDisplayer" rootClass="IlvAbstractScaleDisplayer"/>
+<class name="IlvPieChartDataSet" rootClass="IlvChartDataSet"/>
+<class name="IlvPieChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvPieChartGraphic" rootClass="IlvGraphic"/>
+<class name="IlvPieSliceInfo" rootClass="IlvChartDataPointInfo"/>
+<class name="IlvPointInfoArray" rootClass="IlvPointInfoCollection"/>
+<class name="IlvPointInfoCyclicArray" rootClass="IlvPointInfoCollection"/>
+<class name="IlvPointInfoMap" rootClass="IlvPointInfoCollection"/>
+<class name="IlvPointInfoSingleton" rootClass="IlvPointInfoCollection"/>
+<class name="IlvPolarChart" rootClass="IlvGraphic"/>
+<class name="IlvPolarProjector" rootClass="IlvAbstractProjector"/>
+<class name="IlvPolygonChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvPolylineChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvRadarChart" rootClass="IlvGraphic"/>
+<class name="IlvRadarGridDisplayer" rootClass="IlvAbstractGridDisplayer"/>
+<class name="IlvRadialChartCursor" rootClass="IlvAbstractChartCursor"/>
+<class name="IlvRadialGridDisplayer" rootClass="IlvAbstractGridDisplayer"/>
+<class name="IlvRectangularChartCursor" rootClass="IlvAbstractChartCursor"/>
+<class name="IlvRectangularGridDisplayer" rootClass="IlvAbstractGridDisplayer"/>
+<class name="IlvRectangularScaleDisplayer" rootClass="IlvAbstractScaleDisplayer"/>
+<class name="IlvScaleStepsUpdater" rootClass="IlvNamedProperty"/>
+<class name="IlvScatterChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvScriptChartFunction" rootClass="IlvChartDataSet"/>
+<class name="IlvSideBySideBarChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvSideBySideChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvSimpleChartTransformer" rootClass="IlvCoordinateTransformer"/>
+<class name="IlvSingleChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvSingleScaleDisplayer" rootClass="IlvAbstractScaleDisplayer"/>
+<class name="IlvStacked100ChartDataSet" rootClass="IlvChartDataSet"/>
+<class name="IlvStacked3dBarChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvStackedBarChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvStackedChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvStackedPolygonChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvStairChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvStepChartDisplayer" rootClass="IlvAbstractChartDisplayer"/>
+<class name="IlvZoomCoordinateTransformer" rootClass="IlvCoordinateTransformer"/>
+<class name="IlvZoomScaleStepsUpdater" rootClass="IlvNamedProperty"/>
+</module>

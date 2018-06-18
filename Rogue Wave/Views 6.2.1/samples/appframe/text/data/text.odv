@@ -1,0 +1,290 @@
+Command RecentProjects {
+	Description "&RecentFileDesc"
+	Categories {
+		 "&Project"
+	}
+}
+
+ProjectGenData projectGenData {
+	makefile "msvc6/Text.dsp"
+	alreadyEdited true
+	data {
+		 "bold.gif"
+		 "italic.gif"
+		 "underlin.gif"
+		 "combos.ilv"
+	}
+	projectName "Text"
+	projectDirectory "d:\\views\\work\\samples\\appframe\\Text\\"
+	implementations {
+		{
+			classname "TextDocument"
+			headerData {
+				filename "TextDocument.h"
+				maskFile "hdoc.txt"
+			}
+			sourceData {
+				filename "TextDocument.cpp"
+				maskFile "cppdoc.txt"
+			}
+		}
+		{
+			classname "TextView"
+			headerData {
+				filename "TextView.h"
+				maskFile "hview.txt"
+			}
+			sourceData {
+				filename "TextView.cpp"
+				maskFile "cppview.txt"
+			}
+		}
+	}
+	mainImplementation {
+		filename "text.cpp"
+		maskFile "main.txt"
+	}
+	rcImplementation {
+		filename "Text.rc"
+		maskFile "rc.txt"
+	}
+	superclasses {
+		{
+			classname "ProjectView"
+			superclass "IlvDvProjectView"
+		}
+		{
+			classname "TextView"
+			superclass "IlvDvTextView"
+		}
+		{
+			classname "ListView"
+			superclass "IlvDvListView"
+		}
+		{
+			classname "TreeView"
+			superclass "IlvDvTreeView"
+		}
+		{
+			classname "MatrixView"
+			superclass "IlvDvMatrixView"
+		}
+		{
+			classname "SheetView"
+			superclass "IlvDvSheetView"
+		}
+		{
+			classname "HierarchicalSheetView"
+			superclass "IlvDvHierarchicalSheetView"
+		}
+		{
+			classname "ManagerView"
+			superclass "IlvDvManagerView"
+		}
+		{
+			classname "ManagerDocument"
+			superclass "IlvDvManagerDocument"
+		}
+		{
+			classname "GrapherView"
+			superclass "IlvDvGrapherView"
+		}
+		{
+			classname "GrapherDocument"
+			superclass "IlvDvGrapherDocument"
+		}
+		{
+			classname "ProjectDocument"
+			superclass "IlvDvProjectDocument"
+		}
+		{
+			classname "TextDocument"
+			superclass "IlvDvTextDocument"
+		}
+		{
+			classname "FormView"
+			superclass "IlvDvFormView"
+		}
+	}
+}
+
+DocumentTemplate Text {
+	DefaultDocName "Text"
+	ShortName "Text"
+	Description "Text document"
+	Filters {
+		{
+			Format "*.txt"
+			Description "Text files (.txt)"
+		}
+	}
+	DocumentClass "TextDocument"
+	ViewClasses {
+		 "TextView"
+	}
+	DocMenu {
+		insertItems {
+			{
+				items {
+					{
+						label "&MenuEdit"
+						isPopup true
+						popupItems {
+							{
+								label "Cut"
+							}
+							{
+								label "Copy"
+							}
+							{
+								label "Paste"
+							}
+							{
+								label "SEPARATOR"
+							}
+							{
+								label "Undo"
+							}
+							{
+								label "Redo"
+							}
+						}
+					}
+					{
+						label "F^ormat"
+						isPopup true
+						popupItems {
+							{
+								label "Bold"
+							}
+							{
+								label "Italic"
+							}
+							{
+								label "Underline"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	Toolbars {
+		{
+			Name "TextCommands"
+			items {
+				{
+					label "Cut"
+				}
+				{
+					label "Copy"
+				}
+				{
+					label "Paste"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "Undo"
+				}
+				{
+					label "Redo"
+				}
+			}
+		}
+		{
+			Name "FormatActions"
+			IsUserBar true
+			items {
+				{
+					label "StyleCombo"
+				}
+				{
+					label "SizeCombo"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "Bold"
+				}
+				{
+					label "Italic"
+				}
+				{
+					label "Underline"
+				}
+			}
+		}
+	}
+}
+
+ApplicationConfig App {
+	name "Text"
+}
+
+; ---------------------------------------------------------------------------
+; Container informations
+
+ContainerConfiguration MainPanel {
+	title "Text Editor"
+	BoundingBox {
+		Left 221
+		Top 69
+		Width 653
+		Height 500
+	}
+}
+
+Command StyleCombo {
+	Tooltip "Font"
+	MenuDescription "^Font"
+	Description "Change the font of the active text view"
+}
+
+Command SizeCombo {
+	Tooltip "Size"
+	MenuDescription "^Size"
+	Description "Change the size of the font of the active text view"
+}
+
+Command Bold {
+	Accelerators {
+		 "Ctrl+B"
+	}
+	MenuDescription "^Bold"
+	Description "Set in bold the text"
+	Bitmap "bold.xpm"
+	Tooltip "Bold"
+	Categories {
+		 "Text"
+	}
+}
+
+Command Italic {
+	Accelerators {
+		 "Ctrl+I"
+	}
+	MenuDescription "^Italic"
+	Description "Set in italic the current text"
+	Bitmap "italic.xpm"
+	Tooltip "Italic"
+	Categories {
+		 "Text"
+	}
+}
+
+Command Underline {
+	Accelerators {
+		 "Ctrl+U"
+	}
+	MenuDescription "^Underline"
+	Description "Underline the current text"
+	Bitmap "underlin.xpm"
+	Tooltip "Underline"
+	Categories {
+		 "Text"
+	}
+}
+

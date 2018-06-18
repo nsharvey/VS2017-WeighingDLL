@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("99A4AC2C-1D69-11E8-91B2-87BE772C9500") = "projimg", "projimg.vcxproj", "99A4566E-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

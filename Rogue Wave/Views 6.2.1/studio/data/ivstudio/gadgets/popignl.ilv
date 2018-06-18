@@ -1,0 +1,124 @@
+// Ilv Version: 4.0
+// File generated: Fri May 05 11:26:13 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "popignl"
+Palettes 2
+"IlvStText" 0 "defaultBg" "defaultFg" "normal" "%MS Sans Serif13-" 0 solid solid 0 0 0
+1 "defaultBg" "defaultFg" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 21
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 5 97 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&label"  }   } 0
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 103 5 153 22 F6 2 1 -1 0 "Popup item" } 544 "labelItem"
+1
+1 "__ilvCallback" "labelItemCallback"
+16384
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 103 87 155 23 F6 2 1 -1 0 "" } 32 "MenuItemCallback"
+6144 "MenuAccText" "bitmap"
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 114 111 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&acceleratorKey"  }   } 0
+0
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 103 114 153 23 F6 2 1 -1 0 "" } 32 "MenuAccelKey"
+6144 "ro" "MenuAccText"
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 141 102 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&accelerator"  }   } 0
+0
+2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 103 141 153 23 F6 2 1 -1 0 "" } 32 "MenuAccText"
+6144 "MenuItemState" "MenuItemCallback"
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 103 87 103 23 F6 2 1 -1 0 "" } 32 "MenuItemJsCallback"
+0
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 32 148 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&GadgetItemPictureType"  }   } 0
+0
+2 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 4 58 105 20 F807 2 "SCCombo" 0 4 1 } 32 "GadItemBitmapState"
+6144 "GadItemBitmapPath" "GadItemBitmapPath"
+2 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFileSelectorField 112 56 144 23 F6 2 1 -1 0 "" } 32 "GadItemBitmapPath"
+6144 "GadItemBitmapState" "GadItemBitmapState"
+2 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 161 32 95 20 F807 2 "SCCombo" 3
+{ IlvGadgetItem 1 2 4 "&bitmap"  } 
+{ IlvGadgetItem 1 2 4 "&Graphic"  } 
+{ IlvGadgetItem 1 2 4 "&None"  }  4 0 } 32 "GraphicItemType"
+0
+2 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 103 231 153 23 F6 2 1 -1 0 "" } 32 "MenuItemName"
+0
+2 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 103 201 153 23 F6 2 1 -1 0 "" } 32 "MenuItemToolTip"
+6144 "MenuItemState" "MenuItemCallback"
+3 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 92 103 14 F268435468 0 { IlvMessageItem 262169 4 16 4 "&callback"  }   } 0
+0
+3 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 103 171 153 20 F807 2 "SCCombo" 3
+{ IlvGadgetItem 1 2 4 "&active"  } 
+{ IlvGadgetItem 1 2 4 "&NoneSelectionable"  } 
+{ IlvGadgetItem 1 2 4 "&grayed"  }  4 0 } 32 "MenuItemState"
+4096 "MenuAccText"
+3 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 211 90 18 18 F1 2 1 2 0 0 0 Y "Toggle" } 32 "MenuItemJsScript"
+0
+3 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 227 87 29 23 F13 2 { IlvMessageItem 262147 4 16 4 "" 1 0 "ivstudio/icons/icsced.png"  }   } 32 "MenuItemEdtSript"
+0
+3 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 171 99 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&state"  }   } 0
+0
+3 { 19 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 231 99 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&name"  }   } 0
+0
+3 { 20 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 201 99 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Tooltip"  }   } 0
+0
+Size 258 261
+GeometryHandlers
+1 100 0 258 0 258 0
+13 3 0 0 103  153 0 153 1  0 0 2 0
+ 3 0 103 103  155 0 155 2  0 0 0 0
+ 3 0 0 103  153 0 153 4  0 0 2 0
+ 3 0 0 103  153 0 153 6  0 0 2 0
+ 3 0 0 103  153 0 153 15  0 0 2 0
+ 3 0 0 103  103 0 103 7  0 0 52 0
+ 3 227 0 227  0 0 29 17  0 0 2 0
+ 3 211 0 211  0 0 18 16  0 0 29 0
+ 3 161 0 161  0 0 95 11  0 0 2 0
+ 3 0 0 112  144 0 144 10  0 0 2 0
+ 3 0 0 4  148 0 148 8  0 0 106 0
+ 3 0 0 103  153 0 153 12  0 0 2 0
+ 3 0 0 103  153 0 153 13  0 0 2 0
+1 100 0 261 0 261 0
+0
+Layers 4
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+EOF

@@ -1,0 +1,2 @@
+Files: emboss.cpp, emboss.h
+This example shows how to chain bitmap filters to create an embossing effect.

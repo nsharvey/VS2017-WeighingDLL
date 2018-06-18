@@ -1,0 +1,37 @@
+## ----------------------------------------------------------- -*- Makefile -*-
+##
+## This makefile compiles the RDBMS specific examples supplied with 
+## Rogue Wave DB Link.
+##
+## It is included by <RDBMS>/$(SYSTEM)/Makefile
+## For more informations, take a look at that Makefile and to the
+## file $(EXSRCDIR)/Makefile.dbl
+##
+## ----------------------------------------------------------------------------
+
+# -----------------------------------------------------------------------------
+# Could not be made generic : Sybase compute clause
+# -----------------------------------------------------------------------------
+sybcomp.$(OEXT): $(EXSRCDIR)/sybcomp.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/sybcomp.cpp
+
+sybcomp$(EEXT): sybcomp.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) sybcomp.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------------------------------------------------------
+# Stored procedure call : parameter bindings
+# -----------------------------------------------------------------------------
+sybproc.$(OEXT): $(EXSRCDIR)/sybproc.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/sybproc.cpp
+
+sybproc$(EEXT): sybproc.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) sybproc.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------------------------------------------------------
+# Testing trigger effect : print & raiserror
+# -----------------------------------------------------------------------------
+sybtrig.$(OEXT): $(EXSRCDIR)/sybtrig.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/sybtrig.cpp
+
+sybtrig$(EEXT): sybtrig.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) ildutil.$(OEXT) sybtrig.$(OEXT) $(LDFLAGS)

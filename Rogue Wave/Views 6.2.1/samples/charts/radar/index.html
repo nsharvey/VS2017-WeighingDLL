@@ -1,0 +1,65 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Charts - Samples: radar</title>
+	</head>
+    <body>
+		<a name="radar"><h1>Sample: <code>radar</code></h1><h1 class="subtitle">Example of a Radar Chart</h1></a>
+		<p>Shows you how to create a Radar Chart.</p>
+		<img src="data/radar.png"/>
+		<p>
+	This sample shows you how to use the <code>IlvRadarChart</code> class to
+	create a Radar Chart that displays the values of several data sets. 
+	These data sets are also displayed by a Cartesian chart, which 
+	demonstrates the ability to share data sets between several graphic 
+	representations. 
+	</p>
+	<P>
+	The following interactions are available on the chart:
+	</P>
+	<UL>
+	<LI>Radar chart: Clicking on a point selects the corresponding data set. 
+	Another click selects a specific point in the data set. 
+	Once a point is selected, it can be dragged to a new value.</LI>
+	<LI>Cartesian chart: You can directly drag a point to modify its value.</LI>
+	</UL>
+	<P>
+	Three buttons (labeled <EM>Standard</EM>, <EM>Stacked</EM> and
+	<EM>Stacked100</EM>) let you change the displayers used to display the data
+	sets. The Radar chart uses filled-area displayers 
+	(<CODE>IlvPolygonChartDisplayer</CODE> and 
+	<CODE>IlvStackedPolygonChartDisplayer</CODE>) whereas the Cartesian 
+	chart uses bar displayers (<CODE>IlvBarChartDisplayer</CODE> and 
+	<CODE>IlvStackedBarChartDisplayer</CODE>).
+	</P>
+	<P>
+	The <EM>Simulate</EM> button launches a timer that randomly changes values
+	in the data sets. Notice that both charts are automatically updated 
+	whenever a value changes.
+	</P></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvRadarChart</code></li>
+			<li><code>IlvChartInteractor</code></li>
+			<li><code>IlvPolylineChartDisplayer</code></li>
+			<li><code>IlvPolygonChartDisplayer</code></li>
+			<li><code>IlvStackedPolygonChartDisplayer</code></li>
+			<li><code>IlvBarChartDisplayer</code></li>
+			<li><code>IlvStackedBarChartDisplayer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="../include/samputil.h"><code>../include/samputil.h</code></a></li>
+			<li><a href="../src/samputil.cpp"><code>../src/samputil.cpp</code></a></li>
+			<li><a href="src/radar.cpp"><code>src/radar.cpp</code></a></li>
+		</ul>

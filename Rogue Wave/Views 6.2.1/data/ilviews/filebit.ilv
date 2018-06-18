@@ -1,0 +1,86 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:41:23 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "filebit"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\filebit.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 11
+1 { 0 P 2
+[ IlvAttachments _IlvAttachments 16  1 8 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 8 63 134 109 F131 2 A A 0 0 0 0 0 1 0 0 V0 2 1
+{ IlvGadgetItem 1 2 4 "item"  }  } 544 "dirlist"
+1
+1 "__ilvCallback" "SelectDir"
+0
+2 { 1 P 2
+[ IlvAttachments _IlvAttachments 336  1 8 1 8 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 8 29 282 22 F6 2 1 -1 0 "" } 544 "dirtext"
+1
+1 "__ilvCallback" "ChangeDir"
+0
+2 { 2 P 2
+[ IlvAttachments _IlvAttachments 336  1 10 1 10 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 10 235 278 22 F6 2 1 -1 0 "" } 544 "filetext"
+1
+1 "__ilvCallback" "InputFileFromChoice"
+0
+2 { 3 P 2
+[ IlvAttachments _IlvAttachments 144  1 15 1 12 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 15 413 70 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "ok"
+1
+1 "__ilvCallback" "apply"
+0
+2 { 4 P 2
+[ IlvAttachments _IlvAttachments 192  1 15 1 12 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 210 413 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cancel"  }   } 544 "cancel"
+1
+1 "__ilvCallback" "cancel"
+0
+2 { 5 P 2
+[ IlvAttachments _IlvAttachments 144  1 108 1 12 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 108 413 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&filter"  }   } 544 "reset"
+1
+1 "__ilvCallback" "reset"
+0
+2 { 6 P 2
+[ IlvPanelObjectReference IlvPanelObjectReference  "953139369.0" ]
+[ IlvAttachments _IlvAttachments 1008  1 10 1 266 1 10 1 75 2 2 ]
+0 IlvSCGadgetContainerRectangle 10 266 278 107 "" 0 } 32 "viewer"
+0
+2 { 7 P 2
+[ IlvAttachments _IlvAttachments 336  1 8 1 8 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 8 2 282 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&filter"  }   } 32 "dirtitle"
+0
+2 { 8 P 2
+[ IlvAttachments _IlvAttachments 336  1 8 1 8 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 8 208 282 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&choice"  }   } 32 "title"
+0
+2 { 9 P 2
+[ IlvAttachments _IlvAttachments 336  1 154 1 10 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 154 63 134 109 F131 2 A A 0 0 0 0 0 1 0 0 V0 2 1
+{ IlvGadgetItem 1 2 4 "item"  }  } 544 "filelist"
+2
+1 "__ilvCallback" "InputFile"
+1 "__ilvSCallback" "SelectFile"
+0
+3 { 10 P 1
+[ IlvAttachments _IlvAttachments 464  1 0 1 0 1 47 2 ]
+0 IlvReliefLine 1 401 298 400 1 } 32 "line"
+0
+Size 298 448
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

@@ -1,0 +1,29 @@
+<html><head><title>Prototypes</title></head>
+<body bgcolor=#ffffff>
+<a name="948992">
+<h3><FONT color=#b61840> Chart</FONT></h3>
+</a><a name="948993">
+The Chart accessor (class <a href="../../refman/html/IlvXYChartAccessor.html"><code>IlvXYChartAccessor</code></a>) defines two values that correspond to the points that are added to <a href="../../refman/html/IlvChart.html"><code>IlvChart</code></a> data. Changing these two values in a single call to <code>changeValues</code> on the prototype (or one of its instances) adds a point at the end of the chart. <p>
+</a><a name="948994">
+The prototype holding this accessor must contain an <a href="../../refman/html/IlvChart.html"><code>IlvChart</code></a> object and two <a href="../../refman/html/IlvRectangularScale.html"><code>IlvRectangularScale</code></a> objects (vertical and horizontal).<p>
+</a><a name="948995">
+If only the Y value is changed (and not the X value), the X value is assumed to be the previous X value incremented by 1.<p>
+</a><a name="948996">
+You can specify any name and type for this accessor since the actual values it defines are the values specified as the X Value name and Y Value name parameters.<p>
+</a><a name="948997">
+<h4><FONT color=#b61840> Parameters</FONT></h4>
+</a><ul><a name="948998">
+<li>Chart Node: Name of the node containing the <a href="../../refman/html/IlvChart.html"><code>IlvChart</code></a>.
+</a><p><a name="948999">
+<li>X Scale Node: Name of the node containing the horizontal scale. Must be an <a href="../../refman/html/IlvRectangularScale.html"><code>IlvRectangularScale</code></a> object.
+</a><p><a name="949000">
+<li>Y Scale Node: Name of the node containing the vertical scale. Must be an <a href="../../refman/html/IlvRectangularScale.html"><code>IlvRectangularScale</code></a> object.
+</a><p><a name="949001">
+<li>X Value Name: Value name of the X coordinate of the point to add.
+</a><p><a name="949002">
+<li>Y Value Name: Value name of the Y coordinate of the point to add.
+</a><p><a name="949003">
+<li>The type of this accessor is undefined and irrelevant because its value is not used.
+</a><p></ul><a name="949004">
+</body>
+</html><hr><a href=displayb>Back</a>

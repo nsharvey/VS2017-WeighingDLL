@@ -1,0 +1,19 @@
+var pairs =
+{
+"showprinterdialog":{"label":1}
+,"label":{"printer":1}
+,"printer":{"path":1,"settings":1}
+,"path":{"file":1}
+,"file":{"menu":1}
+,"menu":{"category":1}
+,"category":{"action":1}
+,"action":{"command":1}
+,"command":{"available":1}
+,"available":{"microsoft":1}
+,"microsoft":{"windows":1}
+,"windows":{"platforms":1}
+,"platforms":{"lets":1}
+,"lets":{"edit":1}
+,"edit":{"printer":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,45 @@
+// Ilv Version: 3.1
+// File generated: Fri Sep 24 17:30:05 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "execute"
+Palettes 2
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+"default" 1 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 8
+1 { 0 0 IlvSheet 3 22 290 144 F2142 2 1 1 1 142 139 1 1 1 1 0 1 1 2 1 2 2 0 0 194 IlvLabelMatrixItem "Parameter" 
+1 0 194 IlvLabelMatrixItem "Value"  1 N 0 0 1 1 0 0 0  } 32 "Parameters"
+0
+1 { 1 0 IlvMessageLabel 7 -1 279 22 F8 0 25 16 4 "Method Parameters"   } 384
+0
+1 { 2 0 IlvMessageLabel 3 200 203 22 F8 0 25 16 4 "Returned Value"   } 0
+0
+1 { 3 0 IlvTextField 211 200 82 22 F6 2 1 -1 0 "Text Field" } 32 "ReturnedValue"
+0
+1 { 4 0 IlvButton 3 170 290 23 F9 2 1 16 4 "Execute"   } 544 "Execute"
+1
+1 "__ilvCallback" "ExecuteCB"
+0
+1 { 5 1 IlvLabel 100 212 "" } 0
+0
+1 { 6 1 IlvReliefLine 0 230 293 230 1 } 0
+0
+1 { 7 0 IlvButton 220 237 73 23 F9 2 1 16 4 "&close"   } 32 "Close"
+0
+Size 297 263
+GeometryHandlers
+1 100 0 297 0 297 0
+7 3 0 0 3  290 0 290 0  0 0 4 0
+ 3 0 0 7  279 0 279 1  0 0 11 0
+ 3 0 0 3  290 0 290 4  0 0 4 0
+ 3 0 0 3  203 0 203 2  0 0 91 0
+ 3 211 0 211  0 0 82 3  0 0 4 0
+ 3 0 0 0  293 0 293 6  0 0 4 0
+ 3 220 0 220  0 0 73 7  0 0 4 0
+1 100 0 263 0 263 0
+6 3 0 0 22  144 0 144 0  0 0 97 0
+ 3 237 0 237  0 0 23 7  0 0 3 0
+ 3 200 0 200  0 0 22 2  0 0 41 0
+ 3 200 0 200  0 0 22 3  0 0 41 0
+ 3 170 0 170  0 0 23 4  0 0 70 0
+ 3 229 0 229  0 0 2 6  0 0 32 0
+EOF

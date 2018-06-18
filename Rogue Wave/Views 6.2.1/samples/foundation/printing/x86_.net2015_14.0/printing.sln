@@ -1,0 +1,18 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{EFC9A464-1D63-11E8-96A2-F2B8772C9500}") = "headfoot", "headfoot.vcxproj", "{EFC943F2-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{EFD7EC9A-1D63-11E8-96A2-F2B8772C9500}") = "photops", "photops.vcxproj", "{EFC943F2-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{EFE46E84-1D63-11E8-96A2-F2B8772C9500}") = "photpspr", "photpspr.vcxproj", "{EFC943F2-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{EFF147BC-1D63-11E8-96A2-F2B8772C9500}") = "photpsdlg", "photpsdlg.vcxproj", "{EFC943F2-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{EFFEE2D2-1D63-11E8-96A2-F2B8772C9500}") = "photowin", "photowin.vcxproj", "{EFC943F2-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{F008A2D6-1D63-11E8-96A2-F2B8772C9500}") = "phowindc", "phowindc.vcxproj", "{EFC943F2-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{F013A730-1D63-11E8-96A2-F2B8772C9500}") = "phowinpr", "phowinpr.vcxproj", "{EFC943F2-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Global
+EndGlobal

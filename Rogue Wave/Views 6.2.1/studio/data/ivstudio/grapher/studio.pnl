@@ -1,0 +1,8 @@
+// 
+//	    Rogue Wave Views Studio 4.0 Panel Description File
+//		Grapher Extension
+// 
+
+panel "MainPanel" {
+    menuItem NewGrapherBuffer : "&mfile", "&new" -after NewGadgetBuffer;;
+}

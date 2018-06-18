@@ -1,0 +1,7 @@
+/****************************************************************************
+                                 viewsico.rc
+              IlogViews applications default icon definition
+*****************************************************************************/
+
+
+ILVICON ICON DISCARDABLE "VIEWS.ICO"

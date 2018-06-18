@@ -1,0 +1,299 @@
+// Ilv Version: 4.0
+// File generated: Thu Mar 09 19:53:54 2000
+// Creator class: IlvGraphOutput
+FileName "flowers3"
+PathName "W:\\work.mathey\\samples\\grapher\\flowers3.ilv"
+Palettes 6
+3 "cornflowerblue" "cornflowerblue" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+4 "lightsteelblue" "blue" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+0 "blue" "blue" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+2 "lightblue" "cornflowerblue" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+1 "lightsteelblue" "lightsteelblue" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+5 "red" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 280
+1 0 { 0 0 IlvReliefRectangle 118 394 33 21 1 } 0
+1 0 { 1 0 IlvReliefRectangle 622 211 33 21 1 } 0
+0 1 { 2 0 IlvLinkImage 0 0 1 } 24
+1 0 { 3 1 IlvReliefRectangle 9 529 33 21 1 } 0
+1 0 { 4 1 IlvReliefRectangle 35 297 33 21 1 } 0
+0 1 { 5 1 IlvLinkImage 0 3 4 } 24
+1 0 { 6 4 IlvReliefRectangle 670 305 33 21 1 } 0
+1 0 { 7 4 IlvReliefRectangle 233 579 33 21 1 } 0
+0 1 { 8 1 IlvLinkImage 0 6 7 } 24
+1 0 { 9 4 IlvReliefRectangle 59 383 33 21 1 } 0
+1 0 { 10 1 IlvReliefRectangle 627 235 33 21 1 } 0
+0 1 { 11 1 IlvLinkImage 0 9 10 } 24
+1 0 { 12 1 IlvReliefRectangle 559 530 33 21 1 } 0
+1 0 { 13 1 IlvReliefRectangle 773 95 33 21 1 } 0
+0 1 { 14 1 IlvLinkImage 0 12 13 } 24
+1 0 { 15 1 IlvReliefRectangle 193 429 33 21 1 } 0
+0 1 { 16 1 IlvLinkImage 0 10 15 } 24
+0 1 { 17 1 IlvLinkImage 0 15 12 } 24
+1 0 { 18 4 IlvReliefRectangle 639 384 33 21 1 } 0
+0 1 { 19 1 IlvLinkImage 0 18 9 } 24
+1 0 { 20 3 IlvReliefRectangle 365 92 33 21 1 } 0
+1 0 { 21 3 IlvReliefRectangle 82 552 33 21 1 } 0
+0 1 { 22 2 IlvLinkImage 0 20 21 } 24
+1 0 { 23 1 IlvReliefRectangle 75 151 33 21 1 } 0
+1 0 { 24 5 IlvReliefRectangle 666 476 33 21 1 } 0
+0 1 { 25 1 IlvLinkImage 0 23 24 } 24
+0 1 { 26 2 IlvLinkImage 0 24 20 } 24
+1 0 { 27 0 IlvReliefRectangle 287 256 33 21 1 } 0
+0 1 { 28 0 IlvLinkImage 0 27 24 } 24
+1 0 { 29 3 IlvReliefRectangle 674 377 33 21 1 } 0
+1 0 { 30 3 IlvReliefRectangle 348 503 33 21 1 } 0
+0 1 { 31 2 IlvLinkImage 0 29 30 } 24
+1 0 { 32 3 IlvReliefRectangle 564 378 33 21 1 } 0
+0 1 { 33 2 IlvLinkImage 0 30 32 } 24
+1 0 { 34 3 IlvReliefRectangle 667 568 33 21 1 } 0
+0 1 { 35 2 IlvLinkImage 0 34 29 } 24
+1 0 { 36 3 IlvReliefRectangle 376 290 33 21 1 } 0
+0 1 { 37 2 IlvLinkImage 0 21 36 } 24
+1 0 { 38 3 IlvReliefRectangle 259 253 33 21 1 } 0
+0 1 { 39 2 IlvLinkImage 0 38 34 } 24
+1 0 { 40 5 IlvReliefRectangle 654 383 33 21 1 } 0
+1 0 { 41 4 IlvReliefRectangle 361 144 33 21 1 } 0
+0 1 { 42 1 IlvLinkImage 0 40 41 } 24
+1 0 { 43 1 IlvReliefRectangle 24 409 33 21 1 } 0
+0 1 { 44 1 IlvLinkImage 0 43 40 } 24
+1 0 { 45 0 IlvReliefRectangle 366 525 33 21 1 } 0
+1 0 { 46 5 IlvReliefRectangle 239 228 33 21 1 } 0
+0 1 { 47 0 IlvLinkImage 0 45 46 } 24
+1 0 { 48 4 IlvReliefRectangle 763 222 33 21 1 } 0
+1 0 { 49 1 IlvReliefRectangle 21 303 33 21 1 } 0
+0 1 { 50 1 IlvLinkImage 0 48 49 } 24
+1 0 { 51 3 IlvReliefRectangle 520 505 33 21 1 } 0
+0 1 { 52 2 IlvLinkImage 0 51 46 } 24
+1 0 { 53 1 IlvReliefRectangle 619 62 33 21 1 } 0
+1 0 { 54 1 IlvReliefRectangle 755 536 33 21 1 } 0
+0 1 { 55 1 IlvLinkImage 0 53 54 } 24
+1 0 { 56 1 IlvReliefRectangle 733 146 33 21 1 } 0
+0 1 { 57 1 IlvLinkImage 0 54 56 } 24
+1 0 { 58 1 IlvReliefRectangle 214 314 33 21 1 } 0
+0 1 { 59 1 IlvLinkImage 0 56 58 } 24
+1 0 { 60 1 IlvReliefRectangle 734 459 33 21 1 } 0
+0 1 { 61 1 IlvLinkImage 0 49 60 } 24
+1 0 { 62 4 IlvReliefRectangle 138 301 33 21 1 } 0
+0 1 { 63 1 IlvLinkImage 0 62 48 } 24
+1 0 { 64 0 IlvReliefRectangle 312 541 33 21 1 } 0
+1 0 { 65 0 IlvReliefRectangle 257 344 33 21 1 } 0
+0 1 { 66 0 IlvLinkImage 0 64 65 } 24
+1 0 { 67 0 IlvReliefRectangle 452 306 33 21 1 } 0
+0 1 { 68 0 IlvLinkImage 0 67 45 } 24
+1 0 { 69 0 IlvReliefRectangle 278 245 33 21 1 } 0
+1 0 { 70 0 IlvReliefRectangle 677 471 33 21 1 } 0
+0 1 { 71 0 IlvLinkImage 0 69 70 } 24
+1 0 { 72 0 IlvReliefRectangle 242 385 33 21 1 } 0
+0 1 { 73 0 IlvLinkImage 0 70 72 } 24
+1 0 { 74 0 IlvReliefRectangle 789 9 33 21 1 } 0
+0 1 { 75 0 IlvLinkImage 0 72 74 } 24
+1 0 { 76 0 IlvReliefRectangle 605 209 33 21 1 } 0
+1 0 { 77 0 IlvReliefRectangle 335 147 33 21 1 } 0
+0 1 { 78 0 IlvLinkImage 0 76 77 } 24
+1 0 { 79 0 IlvReliefRectangle 345 379 33 21 1 } 0
+0 1 { 80 0 IlvLinkImage 0 76 79 } 24
+1 0 { 81 3 IlvReliefRectangle 591 564 33 21 1 } 0
+1 0 { 82 3 IlvReliefRectangle 196 586 33 21 1 } 0
+0 1 { 83 2 IlvLinkImage 0 81 82 } 24
+1 0 { 84 5 IlvReliefRectangle 432 364 33 21 1 } 0
+0 1 { 85 2 IlvLinkImage 0 84 81 } 24
+1 0 { 86 0 IlvReliefRectangle 688 425 33 21 1 } 0
+0 1 { 87 0 IlvLinkImage 0 86 84 } 24
+1 0 { 88 4 IlvReliefRectangle 571 530 33 21 1 } 0
+0 1 { 89 1 IlvLinkImage 0 84 88 } 24
+0 1 { 90 1 IlvLinkImage 0 88 18 } 24
+1 0 { 91 3 IlvReliefRectangle 541 503 33 21 1 } 0
+1 0 { 92 3 IlvReliefRectangle 371 312 33 21 1 } 0
+0 1 { 93 2 IlvLinkImage 0 91 92 } 24
+1 0 { 94 1 IlvReliefRectangle 600 289 33 21 1 } 0
+1 0 { 95 1 IlvReliefRectangle 24 443 33 21 1 } 0
+0 1 { 96 1 IlvLinkImage 0 94 95 } 24
+1 0 { 97 0 IlvReliefRectangle 358 41 33 21 1 } 0
+1 0 { 98 0 IlvReliefRectangle 671 274 33 21 1 } 0
+0 1 { 99 0 IlvLinkImage 0 97 98 } 24
+1 0 { 100 0 IlvReliefRectangle 795 4 33 21 1 } 0
+1 0 { 101 0 IlvReliefRectangle 302 254 33 21 1 } 0
+0 1 { 102 0 IlvLinkImage 0 100 101 } 24
+1 0 { 103 3 IlvReliefRectangle 791 583 33 21 1 } 0
+0 1 { 104 2 IlvLinkImage 0 82 103 } 24
+1 0 { 105 3 IlvReliefRectangle 482 126 33 21 1 } 0
+0 1 { 106 2 IlvLinkImage 0 103 105 } 24
+1 0 { 107 3 IlvReliefRectangle 488 570 33 21 1 } 0
+0 1 { 108 2 IlvLinkImage 0 105 107 } 24
+1 0 { 109 0 IlvReliefRectangle 25 359 33 21 1 } 0
+1 0 { 110 0 IlvReliefRectangle 662 368 33 21 1 } 0
+0 1 { 111 0 IlvLinkImage 0 109 110 } 24
+1 0 { 112 0 IlvReliefRectangle 574 427 33 21 1 } 0
+0 1 { 113 0 IlvLinkImage 0 109 112 } 24
+1 0 { 114 3 IlvReliefRectangle 521 89 33 21 1 } 0
+0 1 { 115 2 IlvLinkImage 0 46 114 } 24
+1 0 { 116 3 IlvReliefRectangle 22 98 33 21 1 } 0
+0 1 { 117 2 IlvLinkImage 0 114 116 } 24
+1 0 { 118 0 IlvReliefRectangle 388 511 33 21 1 } 0
+0 1 { 119 0 IlvLinkImage 0 118 46 } 24
+1 0 { 120 3 IlvReliefRectangle 49 222 33 21 1 } 0
+0 1 { 121 2 IlvLinkImage 0 120 51 } 24
+1 0 { 122 0 IlvReliefRectangle 661 64 33 21 1 } 0
+0 1 { 123 0 IlvLinkImage 0 118 122 } 24
+1 0 { 124 3 IlvReliefRectangle 623 140 33 21 1 } 0
+0 1 { 125 2 IlvLinkImage 0 116 124 } 24
+1 0 { 126 3 IlvReliefRectangle 419 29 33 21 1 } 0
+0 1 { 127 2 IlvLinkImage 0 124 126 } 24
+1 0 { 128 0 IlvReliefRectangle 721 68 33 21 1 } 0
+1 0 { 129 0 IlvReliefRectangle 312 263 33 21 1 } 0
+0 1 { 130 0 IlvLinkImage 0 128 129 } 24
+1 0 { 131 0 IlvReliefRectangle 39 204 33 21 1 } 0
+0 1 { 132 0 IlvLinkImage 0 131 64 } 24
+1 0 { 133 0 IlvReliefRectangle 557 139 33 21 1 } 0
+1 0 { 134 5 IlvReliefRectangle 479 297 33 21 1 } 0
+0 1 { 135 0 IlvLinkImage 0 133 134 } 24
+1 0 { 136 4 IlvReliefRectangle 158 11 33 21 1 } 0
+1 0 { 137 1 IlvReliefRectangle 674 556 33 21 1 } 0
+0 1 { 138 1 IlvLinkImage 0 136 137 } 24
+1 0 { 139 3 IlvReliefRectangle 541 346 33 21 1 } 0
+0 1 { 140 2 IlvLinkImage 0 139 134 } 24
+1 0 { 141 3 IlvReliefRectangle 773 460 33 21 1 } 0
+1 0 { 142 3 IlvReliefRectangle 475 489 33 21 1 } 0
+0 1 { 143 2 IlvLinkImage 0 141 142 } 24
+1 0 { 144 3 IlvReliefRectangle 340 19 33 21 1 } 0
+0 1 { 145 2 IlvLinkImage 0 144 139 } 24
+1 0 { 146 1 IlvReliefRectangle 18 362 33 21 1 } 0
+1 0 { 147 1 IlvReliefRectangle 693 115 33 21 1 } 0
+0 1 { 148 1 IlvLinkImage 0 146 147 } 24
+1 0 { 149 1 IlvReliefRectangle 216 311 33 21 1 } 0
+0 1 { 150 1 IlvLinkImage 0 147 149 } 24
+1 0 { 151 1 IlvReliefRectangle 689 112 33 21 1 } 0
+0 1 { 152 1 IlvLinkImage 0 137 151 } 24
+1 0 { 153 1 IlvReliefRectangle 458 408 33 21 1 } 0
+0 1 { 154 1 IlvLinkImage 0 151 153 } 24
+1 0 { 155 4 IlvReliefRectangle 403 405 33 21 1 } 0
+1 0 { 156 4 IlvReliefRectangle 111 597 33 21 1 } 0
+0 1 { 157 1 IlvLinkImage 0 155 156 } 24
+0 1 { 158 1 IlvLinkImage 0 156 136 } 24
+1 0 { 159 0 IlvReliefRectangle 102 255 33 21 1 } 0
+0 1 { 160 0 IlvLinkImage 0 110 159 } 24
+1 0 { 161 0 IlvReliefRectangle 107 414 33 21 1 } 0
+1 0 { 162 0 IlvReliefRectangle 541 121 33 21 1 } 0
+0 1 { 163 0 IlvLinkImage 0 161 162 } 24
+1 0 { 164 0 IlvReliefRectangle 42 276 33 21 1 } 0
+0 1 { 165 0 IlvLinkImage 0 133 164 } 24
+1 0 { 166 0 IlvReliefRectangle 461 54 33 21 1 } 0
+0 1 { 167 0 IlvLinkImage 0 162 166 } 24
+1 0 { 168 0 IlvReliefRectangle 745 47 33 21 1 } 0
+0 1 { 169 0 IlvLinkImage 0 166 168 } 24
+1 0 { 170 0 IlvReliefRectangle 498 560 33 21 1 } 0
+0 1 { 171 0 IlvLinkImage 0 168 170 } 24
+1 0 { 172 0 IlvReliefRectangle 425 86 33 21 1 } 0
+0 1 { 173 0 IlvLinkImage 0 170 172 } 24
+1 0 { 174 0 IlvReliefRectangle 574 140 33 21 1 } 0
+0 1 { 175 0 IlvLinkImage 0 174 161 } 24
+0 1 { 176 0 IlvLinkImage 0 174 164 } 24
+1 0 { 177 3 IlvReliefRectangle 61 253 33 21 1 } 0
+0 1 { 178 2 IlvLinkImage 0 40 177 } 24
+1 0 { 179 0 IlvReliefRectangle 201 592 33 21 1 } 0
+1 0 { 180 0 IlvReliefRectangle 722 104 33 21 1 } 0
+0 1 { 181 0 IlvLinkImage 0 179 180 } 24
+1 0 { 182 0 IlvReliefRectangle 433 177 33 21 1 } 0
+0 1 { 183 0 IlvLinkImage 0 182 40 } 24
+1 0 { 184 3 IlvReliefRectangle 306 303 33 21 1 } 0
+0 1 { 185 2 IlvLinkImage 0 184 40 } 24
+1 0 { 186 3 IlvReliefRectangle 673 590 33 21 1 } 0
+1 0 { 187 3 IlvReliefRectangle 592 232 33 21 1 } 0
+0 1 { 188 2 IlvLinkImage 0 186 187 } 24
+0 1 { 189 2 IlvLinkImage 0 187 184 } 24
+1 0 { 190 0 IlvReliefRectangle 619 298 33 21 1 } 0
+0 1 { 191 0 IlvLinkImage 0 182 190 } 24
+1 0 { 192 0 IlvReliefRectangle 177 12 33 21 1 } 0
+0 1 { 193 0 IlvLinkImage 0 180 192 } 24
+1 0 { 194 3 IlvReliefRectangle 315 486 33 21 1 } 0
+0 1 { 195 2 IlvLinkImage 0 194 186 } 24
+1 0 { 196 3 IlvReliefRectangle 780 437 33 21 1 } 0
+0 1 { 197 2 IlvLinkImage 0 196 194 } 24
+1 0 { 198 0 IlvReliefRectangle 738 580 33 21 1 } 0
+0 1 { 199 0 IlvLinkImage 0 198 179 } 24
+0 1 { 200 0 IlvLinkImage 0 198 190 } 24
+1 0 { 201 3 IlvReliefRectangle 13 409 33 21 1 } 0
+1 0 { 202 3 IlvReliefRectangle 764 588 33 21 1 } 0
+0 1 { 203 2 IlvLinkImage 0 201 202 } 24
+1 0 { 204 3 IlvReliefRectangle 426 209 33 21 1 } 0
+0 1 { 205 2 IlvLinkImage 0 202 204 } 24
+0 1 { 206 2 IlvLinkImage 0 204 141 } 24
+1 0 { 207 4 IlvReliefRectangle 510 375 33 21 1 } 0
+0 1 { 208 1 IlvLinkImage 0 41 207 } 24
+1 0 { 209 4 IlvReliefRectangle 1 284 33 21 1 } 0
+0 1 { 210 1 IlvLinkImage 0 207 209 } 24
+1 0 { 211 0 IlvReliefRectangle 161 92 33 21 1 } 0
+0 1 { 212 0 IlvLinkImage 0 211 0 } 24
+1 0 { 213 1 IlvReliefRectangle 422 146 33 21 1 } 0
+0 1 { 214 1 IlvLinkImage 0 4 213 } 24
+1 0 { 215 1 IlvReliefRectangle 56 468 33 21 1 } 0
+0 1 { 216 1 IlvLinkImage 0 213 215 } 24
+0 1 { 217 1 IlvLinkImage 0 215 23 } 24
+1 0 { 218 1 IlvReliefRectangle 29 121 33 21 1 } 0
+0 1 { 219 1 IlvLinkImage 0 209 218 } 24
+1 0 { 220 1 IlvReliefRectangle 38 332 33 21 1 } 0
+1 0 { 221 1 IlvReliefRectangle 131 66 33 21 1 } 0
+0 1 { 222 1 IlvLinkImage 0 220 221 } 24
+1 0 { 223 1 IlvReliefRectangle 427 326 33 21 1 } 0
+0 1 { 224 1 IlvLinkImage 0 221 223 } 24
+0 1 { 225 1 IlvLinkImage 0 223 43 } 24
+1 0 { 226 1 IlvReliefRectangle 260 375 33 21 1 } 0
+0 1 { 227 1 IlvLinkImage 0 218 226 } 24
+0 1 { 228 1 IlvLinkImage 0 226 220 } 24
+1 0 { 229 4 IlvReliefRectangle 221 365 33 21 1 } 0
+0 1 { 230 1 IlvLinkImage 0 46 229 } 24
+0 1 { 231 1 IlvLinkImage 0 58 46 } 24
+1 0 { 232 0 IlvReliefRectangle 446 382 33 21 1 } 0
+0 1 { 233 0 IlvLinkImage 0 77 232 } 24
+0 1 { 234 0 IlvLinkImage 0 232 69 } 24
+1 0 { 235 3 IlvReliefRectangle 53 299 33 21 1 } 0
+0 1 { 236 2 IlvLinkImage 0 235 84 } 24
+0 1 { 237 2 IlvLinkImage 0 92 235 } 24
+0 1 { 238 1 IlvLinkImage 0 95 84 } 24
+1 0 { 239 3 IlvReliefRectangle 319 241 33 21 1 } 0
+0 1 { 240 2 IlvLinkImage 0 239 120 } 24
+0 1 { 241 0 IlvLinkImage 0 129 131 } 24
+1 0 { 242 3 IlvReliefRectangle 356 145 33 21 1 } 0
+0 1 { 243 2 IlvLinkImage 0 242 201 } 24
+0 1 { 244 0 IlvLinkImage 0 172 134 } 24
+0 1 { 245 2 IlvLinkImage 0 134 242 } 24
+0 1 { 246 2 IlvLinkImage 0 142 144 } 24
+0 1 { 247 1 IlvLinkImage 0 149 134 } 24
+0 1 { 248 1 IlvLinkImage 0 153 146 } 24
+0 1 { 249 0 IlvLinkImage 0 159 97 } 24
+1 0 { 250 3 IlvReliefRectangle 131 472 33 21 1 } 0
+1 0 { 251 3 IlvReliefRectangle 487 485 33 21 1 } 0
+0 1 { 252 2 IlvLinkImage 0 250 251 } 24
+0 1 { 253 0 IlvLinkImage 0 192 211 } 24
+1 0 { 254 3 IlvReliefRectangle 500 119 33 21 1 } 0
+0 1 { 255 2 IlvLinkImage 0 254 239 } 24
+0 1 { 256 2 IlvLinkImage 0 126 254 } 24
+0 1 { 257 1 IlvLinkImage 0 229 62 } 24
+0 1 { 258 2 IlvLinkImage 0 177 250 } 24
+0 1 { 259 2 IlvLinkImage 0 36 38 } 24
+0 1 { 260 0 IlvLinkImage 0 65 67 } 24
+0 1 { 261 0 IlvLinkImage 0 27 79 } 24
+0 1 { 262 0 IlvLinkImage 0 101 84 } 24
+0 1 { 263 1 IlvLinkImage 0 134 155 } 24
+0 1 { 264 2 IlvLinkImage 0 251 196 } 24
+0 1 { 265 0 IlvLinkImage 0 1 40 } 24
+1 0 { 266 4 IlvReliefRectangle 670 66 33 21 1 } 0
+0 1 { 267 1 IlvLinkImage 0 266 6 } 24
+0 1 { 268 1 IlvLinkImage 0 13 94 } 24
+0 1 { 269 0 IlvLinkImage 0 74 24 } 24
+0 1 { 270 1 IlvLinkImage 0 24 266 } 24
+0 1 { 271 1 IlvLinkImage 0 60 53 } 24
+0 1 { 272 0 IlvLinkImage 0 98 100 } 24
+0 1 { 273 0 IlvLinkImage 0 128 122 } 24
+0 1 { 274 2 IlvLinkImage 0 32 24 } 24
+0 1 { 275 0 IlvLinkImage 0 86 112 } 24
+1 0 { 276 1 IlvReliefRectangle 185 595 33 21 1 } 0
+0 1 { 277 1 IlvLinkImage 0 7 276 } 24
+0 1 { 278 1 IlvLinkImage 0 276 3 } 24
+0 1 { 279 2 IlvLinkImage 0 107 91 } 24
+Layers 2
+"" 4 0 
+"" 4 0 
+Views 1
+"v103" 1 0 0 1 0 0
+EOF

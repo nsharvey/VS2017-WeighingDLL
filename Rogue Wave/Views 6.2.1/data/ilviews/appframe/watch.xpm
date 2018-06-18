@@ -1,0 +1,31 @@
+/* XPM */
+static char *insp_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 9 1",
+"$ c #E4E8EC",
+"o c #324E6E",
+"+ c #D5F3FF",
+"@ c #EBFAFF",
+"  c None",
+"X c #A9B2C6",
+". c #556C87",
+"# c #FCFFFF",
+"O c #8B96AB",
+/* pixels */
+"                ",
+"                ",
+"                ",
+"     ..X        ",
+"    oX .    Xo.O",
+"   oX  o   Xo  .",
+"  .X      Xo   o",
+" XoooXoXoooO    ",
+" o+@@oXo+@@o    ",
+" o@##o o@##o    ",
+" o$#Xo o$#Xo    ",
+" XoooO XoooX    ",
+"                ",
+"                ",
+"                ",
+"                "
+};

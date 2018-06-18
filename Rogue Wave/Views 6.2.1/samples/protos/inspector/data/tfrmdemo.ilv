@@ -1,0 +1,35 @@
+// Ilv Version: 4.0
+// File generated: Mon Mar 13 17:52:49 2000
+// Creator class: IlvManagerOutput
+Palettes 3
+"IlvStText" 2 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+1 "Grey40" "white" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+"default" 0 "Grey40" "light blue" "default" "-*-courier-medium-r-normal-*-*-140-*-*-*-*-*-*" 0 solid solid 0 0 0
+IlvObjects 3
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+0 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.1
+IlvProtoInstance library.xform3 transformer
+    values {
+        Int x = 21
+        Int y = 26
+        String name = transformer
+    }
+    subscriptions {
+    }
+;
+ } 32 "transformer"
+2 { 1 1 IlvListLabel 35 300 1 2
+"Select any handle and drag it"
+"to change the viewpoint." } 0
+3 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "SCManager" ]
+2 IlvSCManagerRectangle 260 13 288 363 "../data/tfrmcont.ilv" YY } 32 "transformed"
+Layers 4
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+Views 1
+"v142" 1 0 0 1 0 0
+EOF

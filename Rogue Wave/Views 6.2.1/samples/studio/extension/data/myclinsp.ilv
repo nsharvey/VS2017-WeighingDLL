@@ -1,0 +1,19 @@
+// Ilv Version: 3.1
+// File generated: Wed Jan  6 18:56:11 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "myclinsp"
+PathName "/nfs/views-work/work.noiret/samples/studio/data/myclinsp.ilv"
+Palettes 1
+0 48830 48830 48830 "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 4
+2 { 0 0 IlvTextField 78 3 117 22 F6 2 1 -1 0 "" } 96 "xfield" "TextField"
+320 1 5 2
+2 { 1 0 IlvTextField 78 29 117 22 F6 2 1 -1 0 "" } 96 "yfield" "TextField"
+320 1 5 2
+2 { 2 0 IlvMessageLabel 9 2 43 26 F8 0 25 16 4 "X"   } 0
+0
+2 { 3 0 IlvMessageLabel 9 29 43 26 F8 0 25 16 4 "Y"   } 0
+0
+Size 200 57
+Background 48830 48830 48830
+EOF

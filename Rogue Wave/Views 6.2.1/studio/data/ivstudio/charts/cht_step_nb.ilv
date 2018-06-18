@@ -1,0 +1,17 @@
+// Ilv Version: 4.0
+// File generated: Wed May 31 14:23:59 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "cht_step_nb"
+PathName "/nfs/views-work/work.orti/studio/data/ivstudio/charts/cht_step_nb.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 1
+9 { 0 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvPanelObjectReference IlvPanelObjectReference  "940585468.0" ]
+0 IlvNotebook 0 0 240 200 F1 2 0 2  1
+" { IlvNotebookPageItem 1 2 4 "&General"  }  "gray" "ivstudio/charts/cht_gen.ilv"
+0 0 4 5 2 10 10 10 10  } 32 "StepRectangle"
+0
+Size 240 200
+EOF

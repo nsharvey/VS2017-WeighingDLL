@@ -1,0 +1,42 @@
+// Ilv Version: 3.1
+// File generated: Wed Feb 24 14:08:07 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "bidipage"
+PathName "/udd/pantin/views/bidi31/studio/data/ivstudio/inspectors/bidipage.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 8
+1 { 0 0 IlvToggle 97 98 216 17 F1073741825 2 1 2 0 0 0 Y "&Swapping" } 32 "bidiSwapping"
+0
+1 { 1 0 IlvToggle 97 127 216 17 F1 2 1 2 0 0 0 Y "&WordBreak" } 32 "bidiWordBreak"
+0
+1 { 2 0 IlvToggle 97 156 216 17 F1073741825 2 1 2 0 0 0 Y "&Shaping" } 32 "bidiShaping"
+0
+1 { 3 0 IlvOptionMenu 97 66 219 20 F1 2 3
+IlvMenuItem 65 2 4 "&LtoR"  
+IlvMenuItem 1 2 4 "&RtoL"  
+IlvMenuItem 1 2 4 "&Contextual"   0  } 32 "bidiLayoutDir"
+0
+1 { 4 0 IlvOptionMenu 97 34 219 20 F1 2 3
+IlvMenuItem 1 2 4 "&Nominal"  
+IlvMenuItem 1 2 4 "&National"  
+IlvMenuItem 65 2 4 "&Contextual"   2  } 32 "bidiNumerals"
+0
+1 { 5 0 IlvToggle 97 5 216 17 F1073741825 2 1 2 0 0 0 Y "&applyDefault" } 32 "bidiApplyDefaults"
+0
+1 { 6 0 IlvMessageLabel 8 33 87 22 F8 0 25 16 4 "&Numerals"   } 384
+0
+1 { 7 0 IlvMessageLabel 8 65 87 22 F8 0 25 16 4 "&Direction"   } 384
+0
+Size 319 178
+GeometryHandlers
+1 100 0 319 0 319 0
+6 3 0 0 97  219 0 219 4  0 3 3 0
+ 3 0 0 97  219 0 219 3  0 3 3 0
+ 3 0 0 97  216 0 216 2  0 0 6 0
+ 3 0 0 97  216 0 216 1  0 0 6 0
+ 3 0 0 97  216 0 216 0  0 0 6 0
+ 3 0 0 97  216 0 216 5  0 0 6 0
+1 100 0 178 0 178 0
+0
+EOF

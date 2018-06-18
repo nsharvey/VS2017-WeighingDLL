@@ -1,0 +1,142 @@
+// Ilv Version: 5.5
+// File generated: Wed Sep 28 02:27:44 2011
+// Creator class: IlvGadgetManagerOutput
+FileName "matitpa"
+PathName "C:\\Views\\Work\\views\\data\\ilviews\\matitpa.ilv"
+Palettes 2
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+1 F "gray" "gray50" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 25
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 13 107 149 22 F1 2 9
+{ IlvMenuItem 65 2 4 "&empty"  } 
+{ IlvMenuItem 1 2 4 "Label"  } 
+{ IlvMenuItem 1 2 4 "Int"  } 
+{ IlvMenuItem 1 2 4 "Float"  } 
+{ IlvMenuItem 1 2 4 "Double"  } 
+{ IlvMenuItem 1 2 4 "Bitmap"  } 
+{ IlvMenuItem 1 2 4 "Graphic"  } 
+{ IlvMenuItem 1 2 4 "Gadget"  } 
+{ IlvMenuItem 1 2 4 "Gadget Item"  }  0  } 544 "itemtype"
+1
+1 "__ilvCallback" "ItemCallLabel"
+6144 "itemlabel" "itemrow"
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 201 80 114 16 F1 2 1 2 0 0 0 Y "&sensitive" } 544 "itemsensitive"
+1
+1 "__ilvCallback" "ItemCallSensitive"
+6144 "itemgrayed" "itemreadonly0"
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 13 159 148 22 F6 2 1 -1 0 "" } 32 "itemlabel"
+6144 "itemrelief" "itemtype"
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 48 210 93 23 F13 2 { IlvMessageItem 262145 4 16 4 "&palette"  }   } 544 "palButton"
+1
+1 "__ilvCallback" "ItemCallPalette"
+4096 "itemalignment"
+2 { 4 P 2
+[ IlvAttachments _IlvAttachments 144  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 5 292 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 512
+1
+1 "__ilvCallback" "apply"
+0
+2 { 5 P 2
+[ IlvAttachments _IlvAttachments 192  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 308 292 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 201 56 114 16 F1 2 1 2 0 0 0 Y "&readonly" } 32 "itemreadonly"
+6144 "itemsensitive" "itemrelief"
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 201 32 114 16 F1 2 1 2 0 0 0 Y "&relief" } 32 "itemrelief"
+6144 "itemreadonly" "itemlabel"
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 270 152 91 22 F1 2 3
+{ IlvMenuItem 1 2 4 "&left"  } 
+{ IlvMenuItem 65 2 4 "&center"  } 
+{ IlvMenuItem 1 2 4 "&right"  }  1  } 32 "itemalignment"
+2048 "palButton"
+2 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 201 128 114 16 F1 2 1 2 0 0 0 Y "&interactive" } 32 "iteminteractive"
+4096 "itemgrayed"
+3 { 10 P 1
+[ IlvAttachments _IlvAttachments 464  1 0 1 0 1 35 2 ]
+0 IlvReliefLine 0 284 373 284 1 } 32 "line"
+0
+3 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 13 132 147 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&label"  }   } 0
+0
+3 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 13 26 71 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&column"  }   } 0
+0
+3 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 13 53 72 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&row"  }   } 0
+0
+3 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 197 150 70 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&alignment"  }   } 0
+0
+3 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 13 80 147 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&type"  }   } 0
+0
+3 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 56 241 125 16 F1 2 1 2 0 0 0 Y "&fillbackground" } 32 "itemfillbackground"
+0
+3 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 201 104 114 16 F1 2 1 2 0 0 0 Y "&grayed" } 32 "itemgrayed"
+6144 "iteminteractive" "itemsensitive"
+3 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 5 169 182 F268435468 0 { IlvMessageItem 262169 4 16 4 "&item"  }   } 0
+0
+3 { 19 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 183 5 186 182 F268435468 0 { IlvMessageItem 262169 4 16 4 "&state"  }   } 0
+0
+3 { 20 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 192 364 80 F268435468 0 { IlvMessageItem 262169 4 16 4 "&resources"  }   } 0
+0
+3 { 21 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 91 26 72 22 F806 2 1 -1 0 "" 1
+{ IlvGadgetItem 1 2 4 "*"  }  2 0 } 544 "itemcolumn"
+1
+1 "__ilvCallback" "ItemCallSet"
+2048 "itemrow"
+3 { 22 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 91 53 72 22 F806 2 1 -1 0 "" 1
+{ IlvGadgetItem 1 2 4 "*"  }  2 0 } 544 "itemrow"
+1
+1 "__ilvCallback" "ItemCallSet"
+6144 "itemtype" "itemcolumn"
+3 { 23 0 IlvFilledRectangle 200 208 152 48 } 32 "itembackground"
+0
+3 { 24 1 IlvFilledRectangle 208 216 136 32 } 32 "itemforeground"
+0
+Size 373 320
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

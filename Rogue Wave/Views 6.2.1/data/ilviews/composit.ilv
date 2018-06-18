@@ -1,0 +1,131 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:40:35 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "composit"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\composit.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 22
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 15 65 51 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&left"  }   } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 15 90 51 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&right"  }   } 0
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 140 65 51 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&top"  }   } 0
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 140 90 51 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&bottom"  }   } 0
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 40 265 80 F268435468 0 { IlvMessageItem 262169 4 16 4 "&mmargins"  }   } 0
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 10 245 135 16 F1 2 1 2 0 0 0 Y "&tabGroup" } 32 "tabGroup"
+4096 "Button_2"
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 105 10 165 20 F807 2 1 -1 0 "" 5
+{ IlvGadgetItem 1 2 4 "&none"  } 
+{ IlvGadgetItem 1 2 4 "&in"  } 
+{ IlvGadgetItem 1 2 4 "&out"  } 
+{ IlvGadgetItem 1 2 4 "&etchedIn"  } 
+{ IlvGadgetItem 1 2 4 "&etchedOut"  }  5 0 } 32 "shadowType"
+0
+1 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 10 90 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&shadow"  }   } 0
+0
+1 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 165 175 95 23 F13 2 { IlvMessageItem 262145 4 16 4 "&import..."  }   } 544 "Button_1"
+1
+1 "__ilvCallback" "load"
+6144 "Button_2" "ignoreBG"
+1 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 5 284 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 512
+1
+1 "__ilvCallback" "apply"
+0
+1 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 200 284 70 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+1 { 11 0 IlvReliefLine 0 275 275 275 1 } 0
+0
+1 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 70 60 60 22 F6 2 2 -1 0 "0" . , 6 0 -2147483648 2147483647 } 32 "leftm"
+2048 "rightm"
+1 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 70 85 60 22 F6 2 2 -1 0 "0" . , 6 0 -2147483648 2147483647 } 32 "rightm"
+6144 "topm" "leftm"
+1 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 200 60 60 22 F6 2 2 -1 0 "0" . , 6 0 -2147483648 2147483647 } 32 "topm"
+6144 "bottomm" "rightm"
+1 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 200 85 60 22 F6 2 2 -1 0 "0" . , 6 0 -2147483648 2147483647 } 32 "bottomm"
+6144 "ignoreSize" "topm"
+1 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 165 205 95 23 F13 2 { IlvMessageItem 262145 4 16 4 "&empty"  }   } 544 "Button_2"
+1
+1 "__ilvCallback" "empty"
+6144 "tabGroup" "Button_1"
+1 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 20 178 135 16 F1 2 1 2 0 0 0 Y "&ignoreSize" } 32 "ignoreSize"
+6144 "ignoreBG" "bottomm"
+1 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 20 208 139 16 F1 2 1 2 0 0 0 Y "&ignoreBG" } 32 "ignoreBG"
+6144 "Button_1" "ignoreSize"
+1 { 19 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 120 265 117 F268435468 0 { IlvMessageItem 262169 4 16 4 "&data"  }   } 0
+0
+1 { 20 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 15 140 87 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&fileName"  }   } 0
+0
+2 { 21 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFileSelectorField 110 140 150 22 F6 2 1 -1 0 "" } 32 "filename"
+6144 "position" "label"
+Size 275 312
+GeometryHandlers
+1 100 0 275 0 275 0
+12 3 200 0 200  0 0 70 10  0 0 5 0
+ 3 0 0 0  275 0 275 11  0 0 0 0
+ 3 0 0 105  165 0 165 6  0 0 5 0
+ 3 0 0 5  265 0 265 4  0 0 5 0
+ 3 200 0 200  0 0 60 14  0 0 15 0
+ 3 200 0 200  0 0 60 15  0 0 15 0
+ 3 165 0 165  0 0 95 8  0 0 15 0
+ 3 165 0 165  0 0 95 16  0 0 15 0
+ 3 0 0 5  265 0 265 19  0 0 5 0
+ 3 140 0 140  0 0 51 2  0 0 84 0
+ 3 140 0 140  0 0 51 3  0 0 84 0
+ 3 0 0 110  150 0 80 21  0 0 15 0
+1 100 0 312 0 312 0
+3 3 284 0 284  0 0 23 9  0 0 5 0
+ 3 284 0 284  0 0 23 10  0 0 5 0
+ 3 274 0 274  0 0 2 11  0 0 36 0
+Layers 3
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

@@ -1,0 +1,39 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:57:23 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "tree"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\tree.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 3
+3 { 0 P 2
+[ IlvPanelObjectReference IlvPanelObjectReference  "1137679028.0" ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNotebook 13 10 488 305 F1 2 0 2  2
+" { IlvNotebookPageItem 1 2 4 "&General"  }  "gray" "ilviews/treegnrl.ilv"
+" { IlvNotebookPageItem 1 2 4 "&Items"  }  "gray" "ilviews/treeitms.ilv"
+0 0 4 5 2 10 10 10 10  } 32 "Notebook"
+0
+3 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 13 323 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "ApplyButton"
+1
+1 "__ilvCallback" "ApplyCallback"
+0
+3 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 428 322 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 544 "CloseButton"
+1
+1 "__ilvCallback" "cancel"
+0
+Size 506 351
+GeometryHandlers
+1 100 0 506 0 506 0
+3 3 0 0 13  0 0 73 1  420 0 420 0
+ 3 428 0 428  0 0 73 2  0 0 5 0
+ 3 0 0 13  488 0 488 0  0 0 5 0
+1 100 0 351 0 351 0
+3 3 323 0 323  0 0 23 1  0 0 5 0
+ 3 322 0 322  0 0 23 2  0 0 6 0
+ 3 0 0 10  305 0 305 0  0 0 36 0
+EOF

@@ -1,0 +1,77 @@
+// Ilv Version: 4.0
+// File generated: Wed Jul 05 12:36:35 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "dbstchart"
+PathName "dbstchart.ilv"
+Palettes 1
+"default" 0 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 1
+1 { 0 0 IliChartGraphic 2 5 5 120 120
+[ IlvMemoryChartData -1 2
+[ IlvChartPointSet -1 N
+0 6 8 15 "Morning Temperatures" 7
+0.000000 10.000000 1.000000 8.000000 2.000000 12.000000 3.000000 15.000000 4.000000 14.000000 5.000000 14.000000
+6.000000 13.000000  ]
+[ IlvChartPointSet -1 N
+0 6 12 26 "Afternoon Temperatures" 7
+0.000000 16.000000 1.000000 12.000000 2.000000 20.000000 3.000000 25.000000 4.000000 22.000000 5.000000 24.000000
+6.000000 26.000000  ] ]
+IlvCartesianProjector 0
+IlvRectangularScaleDisplayer "" 1 1 0 0 0 N 0 0 65535
+"gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+ "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+ "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+[ IlvCoordinateInfo 0 0 6 1 0 0 0 6 0 6  N ]
+ "%.0f" 8  2 2 4 2 4 0 8 8 1 "" N 0
+# 1
+[ IlvConstantScaleStepsUpdater _ilvScaleUpdater  8 7 0 1 1 0 0 ]
+
+1
+IlvRectangularScaleDisplayer "" 1 1 0 0 0 N 0 0 65535
+"gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+ "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+ "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+[ IlvCoordinateInfo 1 8 26 1 0 0 8 26 8 26  N ]
+ "%.0f" 8  2 2 4 2 4 0 8 8 1 "" N 0
+# 1
+[ IlvConstantScaleStepsUpdater _ilvScaleUpdater  4 4 4 5 1 0 0 ]
+
+ 0 0.25 0 0 0 0 0 1
+ N
+3
+IlvPolylineChartDisplayer 1 F 0 @5
+1 1
+@1
+-1 0
+"" Y "gray" "blue" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+ 0 0 Y "" 0 P  N
+IlvPolylineChartDisplayer 1 F 0 @5
+1 1
+@2
+-1 0
+"" Y "gray" "red" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+ 0 0 Y "" 0 P  N
+IlvHiLoBarChartDisplayer 1 F 0 @5
+2 2
+@1
+@2
+-1 1
+[ IlvHiLoChartDataSet -1 N
+0 6 8 26 "" 14 2 2
+@1
+@2 ]
+"" Y "red" "white" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+ 1 0 Y "" 0 3
+IlvChartLayout 0 0 0 0 1 1 5 5 120 120 0 0 0 0 0 26 6 96 98 21 3 1 21 0 1
+ N N 0 "gray" IlvPolylineChartDisplayer 1 F 0 [ IlvCoordinateInfo 1 0 0 1 0 0 0 0 0 0  N ]
+1 0
+-1 0
+"" N 0 0 Y "" 0 P  N 0 0 
+"" 0
+"" 0
+0  0
+
+ } 0
+0
+Size 135 144
+EOF

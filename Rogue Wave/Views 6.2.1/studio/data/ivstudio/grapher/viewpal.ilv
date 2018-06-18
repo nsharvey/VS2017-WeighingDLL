@@ -1,0 +1,14 @@
+// Ilv Version: 4.0
+// File generated: Mon Mar 27 15:04:42 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "viewpal"
+PathName "/nfs/views-work/work.mathey/studio/data/ivstudio/grapher/viewpal.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 1
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "SCManager" ]
+0 IlvSCGrapherRectangle 3 3 150 65 YY } 0
+0
+Size 198 89
+EOF

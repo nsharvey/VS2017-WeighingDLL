@@ -1,0 +1,4 @@
+Files: relief.cpp, relief.h
+This sample uses the Rogue Wave Views bitmap filters to create a relief effect on an image.
+The filter blurs the input image, uses this as an height map, then applies lighting and 
+composes the result to the source image. A drop shadow is also created.

@@ -1,0 +1,47 @@
+// Ilv Version: 3.1
+// File generated: Mon Oct 25 17:57:36 1999
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 10
+1 { 0 0 IlvMessageLabel 13 20 314 22 F8 0 25 16 4 "&ElementaryTransformation"   } 0
+0
+1 { 1 0 IlvScrolledComboBox 13 44 170 20 F807 2 "" 3
+IlvGadgetItem 1 2 4 "&None"  
+IlvGadgetItem 1 2 4 "&Simple"  
+IlvGadgetItem 1 2 4 "&Affine"   4 0 } 32 "CoordInfoTransfoType"
+0
+1 { 2 0 IlvMessageLabel 13 68 217 22 F8 0 25 16 4 "&MultCoef"   } 32 "MultCoefMsg"
+0
+1 { 3 0 IlvSpinBox 235 68 94 22 2 0 200 64 2 1
+0 IlvNumberField 235 68 79 22 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038  f 1 1 1 1.23454e+006 } 32 "CoordInfoMultCoef"
+0
+1 { 4 0 IlvMessageLabel 13 94 217 22 F8 0 25 16 4 "&ConstCoef"   } 32 "CoordInfoConstCoefMsg"
+0
+1 { 5 0 IlvSpinBox 235 94 94 22 2 0 200 64 2 1
+0 IlvNumberField 235 94 79 22 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038  f 1 1 1 1.23454e+006 } 32 "CoordInfoConstCoef"
+0
+1 { 6 0 IlvFrame 3 1 332 181 F8 0 25 16 4 "&TransfoAppliedOnData"   } 0
+0
+1 { 7 0 IlvSpinBox 218 153 111 22 2 0 200 64 2 1
+0 IlvNumberField 218 153 96 22 F6 2 2 -1 0 "1234543" . , 2 0 1 2147483647  f 1 1 1 1.23454e+006 } 32 "CoordInfoLogBase"
+0
+1 { 8 0 IlvMessageLabel 39 154 181 22 F8 0 25 16 4 "&LogBase"   } 32 "CoordInfoLogBaseMsg"
+0
+1 { 9 0 IlvToggle 13 131 314 19 F1 2 1 2 0 0 0 Y "&LogarithmicTransfo" } 32 "CoordInfoLogBaseCheck"
+0
+Size 338 185
+GeometryHandlers
+1 100 0 338 0 338 0
+9 3 0 0 3  332 0 332 6  0 0 3 0
+ 3 0 0 13  314 0 314 0  0 0 11 0
+ 3 0 0 13  314 0 314 9  0 0 11 0
+ 3 0 0 39  181 0 181 8  0 0 118 0
+ 3 218 0 218  0 0 111 7  0 0 9 0
+ 3 235 0 235  0 0 94 5  0 0 9 0
+ 3 235 0 235  0 0 94 3  0 0 9 0
+ 3 0 0 13  217 0 217 2  0 0 108 0
+ 3 0 0 13  217 0 217 4  0 0 108 0
+1 100 0 185 0 185 0
+1 3 0 0 1  181 0 181 6  0 0 3 0
+EOF

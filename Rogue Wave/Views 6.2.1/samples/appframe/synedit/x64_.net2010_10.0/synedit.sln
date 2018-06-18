@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("D42F32D2-1D68-11E8-81D0-E787772C9500") = "synedit", "synedit.vcxproj", "D42EE2D2-1D68-11E8-81D0-E787772C9500"
+EndProject
+
+Global
+EndGlobal
+

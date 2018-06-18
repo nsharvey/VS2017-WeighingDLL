@@ -1,0 +1,173 @@
+// Ilv Version: 5.3
+// File generated: Tue May 11 11:33:39 2010
+// Creator class: IlvGadgetManagerOutput
+FileName "accueil"
+PathName "C:\\e\\MyDevelopment\\centrale sarto modif\\IlogFile\\accueil.ilv"
+Palettes 3
+"default" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+1 F "darkslateblue" "white" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+2 F "gray" "black" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 23
+0 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.19775452619344 0 0 6.257379628667235 632 328 } 544 "peserOF"
+1
+1 "__ilvCallback" "peserOFCB"
+6144 "peserArticle" "quitter"
+0 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.285070649823546 0 0 6.235576744675637 632 440 } 544 "peserFabrication"
+1
+1 "__ilvCallback" "peserFabricationCB"
+6144 "testerBalance" "peserArticle"
+0 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.289315932771563 0 0 6.232211360156536 688 328 } 544 "reconcilier"
+1
+1 "__ilvCallback" "reconcilierCB"
+6144 "aide" "testerBalance"
+0 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.245683858028055 0 0 6.311004909484089 688 384 } 544 "aide"
+1
+1 "__ilvCallback" "aideCB"
+6144 "quitter" "reconcilier"
+0 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.246367820280791 0 0 6.216057514464855 688 440 } 544 "quitter"
+1
+1 "__ilvCallback" "quitterCB"
+6144 "peserOF" "aide"
+0 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.295966876056791 0 0 6.238797898429632 632 384 } 544 "peseeArticle"
+1
+1 "__ilvCallback" "peserArticleCB"
+0
+0 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.289292347866297 0 0 6.232187321695686 688 272 } 544 "testerBalance"
+1
+1 "__ilvCallback" "testerBalanceCB"
+0
+0 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.232187024521837 0 0 6.21418411566349 632 272 } 544 "refresh"
+1
+1 "__ilvCallback" "refreshCB"
+0
+1 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 6 499 734 41 F12 0 { IlvMessageItem 262168 4 16 4  }   } 32 "message"
+0
+1 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 6 32 230 40 F268435468 0 { IlvMessageItem 262153 4 16 4 "&Utilisateur"  }   } 32 "LibUtilisateur"
+0
+1 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 248 32 170 40 F536870918 2 1 -1 0 "" } 32 "ChampUtilisateur"
+6144 "saisieBadge" "quitter"
+1 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 248 80 296 40 F536870918 2 1 -1 0 "" } 416 "ChampApplication"
+0
+1 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 6 128 230 40 F268435468 0 { IlvMessageItem 262153 4 16 4 "&Date"  }   } 32 "LibDate"
+0
+1 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 6 232 230 40 F268435468 0 { IlvMessageItem 262153 4 16 4 "&Lieu"  }   } 32 "LibLieu"
+0
+1 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 248 232 170 40 F536870918 2 1 -1 0 "" } 416 "ChampLieu"
+0
+1 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 6 280 230 40 F268435468 0 { IlvMessageItem 262153 4 16 4 "&Box"  }   } 32 "LibBox"
+0
+1 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 248 280 170 40 F536870918 2 1 -1 0 "" } 416 "ChampBox"
+0
+1 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 6 328 230 40 F268435468 0 { IlvMessageItem 262153 4 16 4 "&Balancesconnectees"  }   } 32 "LibConnection"
+0
+1 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 248 328 170 40 F536870918 2 1 -1 0 "" } 416 "ChampConnection"
+0
+1 { 19 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 6 376 230 40 F268435468 0 { IlvMessageItem 262153 4 16 4 "&BalancesAEtalonner"  }   } 32 "LibEtalonnage"
+0
+1 { 20 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 248 376 170 40 F536870918 2 1 -1 0 "" } 416 "ChampEtalonnage"
+0
+1 { 21 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvDateField 248 128 170 40 F15 2 1 0 0 "31/12/2000" / 1 3 7 } 416 "ChampDate"
+0
+1 { 22 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 6 80 230 40 F268435468 0 { IlvMessageItem 262153 4 16 4 "&Application"  }   } 32 "LibApplication"
+0
+Size 741 543
+Background "gray"
+GeometryHandlers
+1 100 0 741 0 741 0
+23 3 688 0 688  50 0 50 3  3 0 3 0
+ 3 0 0 6  734 0 734 8  0 0 1 0
+ 3 632 0 632  50 0 50 0  59 0 59 0
+ 3 688 0 688  50 0 50 4  0 0 3 0
+ 3 632 0 632  50 0 50 1  59 0 59 0
+ 3 6 0 6  230 0 230 9  505 0 505 0
+ 3 6 0 6  230 0 230 12  505 0 505 0
+ 3 248 0 248  170 0 170 10  323 0 323 0
+ 3 248 0 248  296 0 296 11  197 0 197 0
+ 3 6 0 6  230 0 230 13  505 0 505 0
+ 3 6 0 6  230 0 230 15  505 0 505 0
+ 3 6 0 6  230 0 230 17  505 0 505 0
+ 3 248 0 248  170 0 170 14  323 0 323 0
+ 3 248 0 248  170 0 170 16  323 0 323 0
+ 3 248 0 248  170 0 170 18  323 0 323 0
+ 3 6 0 6  230 0 230 19  505 0 505 0
+ 3 248 0 248  170 0 170 20  323 0 323 0
+ 3 248 0 248  170 0 170 21  323 0 323 0
+ 3 688 0 688  50 0 50 2  3 0 3 0
+ 3 6 0 6  230 0 230 22  505 0 505 0
+ 3 632 0 632  50 0 50 5  59 0 59 0
+ 3 688 0 688  50 0 50 6  3 0 3 0
+ 3 632 0 632  50 0 50 7  59 0 59 0
+1 100 0 543 0 543 0
+23 3 384 0 384  50 0 50 3  109 0 109 0
+ 3 440 0 440  50 0 50 4  53 0 53 0
+ 3 499 0 499  41 0 41 8  0 0 3 0
+ 3 328 0 328  50 0 50 0  165 0 165 0
+ 3 440 0 440  50 0 50 1  53 0 53 0
+ 3 32 0 32  40 0 40 9  471 0 471 0
+ 3 128 0 128  40 0 40 12  375 0 375 0
+ 3 32 0 32  40 0 40 10  471 0 471 0
+ 3 80 0 80  40 0 40 11  423 0 423 0
+ 3 232 0 232  40 0 40 13  271 0 271 0
+ 3 280 0 280  40 0 40 15  223 0 223 0
+ 3 328 0 328  40 0 40 17  175 0 175 0
+ 3 232 0 232  40 0 40 14  271 0 271 0
+ 3 280 0 280  40 0 40 16  223 0 223 0
+ 3 328 0 328  40 0 40 18  175 0 175 0
+ 3 376 0 376  40 0 40 19  127 0 127 0
+ 3 376 0 376  40 0 40 20  127 0 127 0
+ 3 128 0 128  40 0 40 21  375 0 375 0
+ 3 328 0 328  50 0 50 2  165 0 165 0
+ 3 80 0 80  40 0 40 22  423 0 423 0
+ 3 384 0 384  50 0 50 5  109 0 109 0
+ 3 272 0 272  50 0 50 6  221 0 221 0
+ 3 272 0 272  50 0 50 7  221 0 221 0
+Layers 2
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

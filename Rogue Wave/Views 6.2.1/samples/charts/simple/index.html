@@ -1,0 +1,104 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Charts - Samples: simple</title>
+	</head>
+    <body>
+		<a name="cartesian"><h1>Sample: <code>cartesian</code></h1><h1 class="subtitle">Displaying a Cartesian Chart</h1></a>
+		<p>Creation of a simple Cartesian chart with several displayers.</p>
+		<img src="data/cartesian.png"/>
+		<p>This sample shows how to create a simple Cartesian chart using the 
+   <code>IlvCartesianChart</code> class. Once created, the chart is used to display three 
+   data sets using a standard displayer: <code>IlvPolylineChartDisplayer</code>.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvCartesianChart</code></li>
+			<li><code>IlvChartPointSet</code></li>
+			<li><code>IlvPolylineChartDisplayer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="../include/samputil.h"><code>../include/samputil.h</code></a></li>
+			<li><a href="../src/samputil.cpp"><code>../src/samputil.cpp</code></a></li>
+			<li><a href="src/cartesian.cpp"><code>src/cartesian.cpp</code></a></li>
+		</ul>
+		<a name="polar"><h1>Sample: <code>polar</code></h1><h1 class="subtitle">Displaying a Polar Chart</h1></a>
+		<p>Creation of a simple polar chart with several displayers.</p>
+		<img src="data/polar.png"/>
+		<p>This sample shows how to create a chart using a polar projector. To do so, it 
+   uses the <code>IlvPolarChart</code> class.</p>
+   <p>Note the two different scale types: rectangular for the <em>rho</em> coordinate that is
+   displayed radially, and circular for the <em>theta</em> coordinate.</p>
+   <p>Two callback functions are used as input data and are rendered with two displayers:</p>
+   <ul>
+   <li>A polygon representation representing the function 
+   <code>y = abs(2*sin(2x))</code>.</li>
+   <li>A bar representation representing the function 
+   <code>y = abs(sin(3x))</code>.</li>
+   </ul></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvPolarChart</code></li>
+			<li><code>IlvCallbackChartFunction</code></li>
+			<li><code>IlvPolygonChartDisplayer</code></li>
+			<li><code>IlvBarChartDisplayer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="../include/samputil.h"><code>../include/samputil.h</code></a></li>
+			<li><a href="../src/samputil.cpp"><code>../src/samputil.cpp</code></a></li>
+			<li><a href="src/polar.cpp"><code>src/polar.cpp</code></a></li>
+		</ul>
+		<a name="xml"><h1>Sample: <code>xml</code></h1><h1 class="subtitle">Displaying a Chart from XML Data</h1></a>
+		<p>Creation of a simple Cartesian chart out of an XML data file.</p>
+		<img src="data/xml.png"/>
+		<p>This sample shows you how to create a simple
+   chart using the <code>IlvXMLChartData</code> class. You can load a
+   new dataset (either <code>dataset_sample.xml</code> or
+   <code>dataset_sample2.xml</code>) and try various kind of displayers.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvXMLChartData</code></li>
+			<li><code>IlvChartPointSet</code></li>
+			<li><code>IlvPolylineChartDisplayer</code></li>
+			<li><code>IlvBarChartDisplayer</code></li>
+			<li><code>IlvHiLoChartDisplayer</code></li>
+			<li><code>IlvHiLoBarChartDisplayer</code></li>
+			<li><code>IlvHiLoOpenCloseChartDisplayer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="../include/samputil.h"><code>../include/samputil.h</code></a></li>
+			<li><a href="../src/samputil.cpp"><code>../src/samputil.cpp</code></a></li>
+			<li><a href="src/xml.cpp"><code>src/xml.cpp</code></a></li>
+			<li><a href="data/dataset_sample.xml"><code>data/dataset_sample.xml</code></a></li>
+			<li><a href="data/dataset_sample2.xml"><code>data/dataset_sample2.xml</code></a></li>
+		</ul>
+		<a name="xml_date"><h1>Sample: <code>xml_date</code></h1><h1 class="subtitle">Displaying a Chart from XML Data defining dates</h1></a>
+		<p>Creation of a Cartesian chart out of an XML data file defining dates.</p>
+		<img src="data/xml_date.png"/>
+		<p>This sample shows you how to extract dates from an XML data file using the 
+   <code>IlvXMLChartData</code> class.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvXMLChartData</code></li>
+			<li><code>IlvChartPointSet</code></li>
+			<li><code>IlvPolylineChartDisplayer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="../include/samputil.h"><code>../include/samputil.h</code></a></li>
+			<li><a href="../src/samputil.cpp"><code>../src/samputil.cpp</code></a></li>
+			<li><a href="src/xml_date.cpp"><code>src/xml_date.cpp</code></a></li>
+			<li><a href="data/dataset_sample_date.xml"><code>data/dataset_sample_date.xml</code></a></li>
+		</ul>

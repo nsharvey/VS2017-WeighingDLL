@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvvxlook -->
+<module name="ilvvxlook" version="6.2">
+<class name="IlvAbstractBar/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvAbstractMenu/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvButton/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvComboBox/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvFrame/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvGadget/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvMessageLabel/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvPopupMenu/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvReliefLine/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvScrollBar/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvSlider/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvTextField/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvToggle/vx" rootClass="IlvObjectLFHandler"/>
+<class name="IlvToolBar/vx" rootClass="IlvObjectLFHandler"/>
+</module>

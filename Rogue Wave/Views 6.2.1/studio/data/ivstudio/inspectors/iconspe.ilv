@@ -1,0 +1,22 @@
+// Ilv Version: 4.0
+// File generated: Thu May 18 19:10:38 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "iconspe"
+Palettes 1
+"IlvStText" 0 "defaultBg" "defaultFg" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 2
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 2 138 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&file"  }   } 0
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFileSelectorField 140 2 160 23 F6 2 1 -1 0 "" } 32 "BitmapPath"
+6144 "GadItemBitmapState" "GadItemBitmapState"
+Size 303 103
+GeometryHandlers
+1 100 0 303 0 303 0
+1 3 0 0 140  160 0 160 1  0 0 3 0
+1 100 0 103 0 103 0
+0
+EOF

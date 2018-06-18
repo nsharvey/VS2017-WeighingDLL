@@ -1,0 +1,16 @@
+help "errpan" {
+    title "Errors panel";
+    description "Message history panel";
+}
+
+The Errors panel shows you the message history.
+
+The messages can be filtered by their types:
+
+    - Fatal error messages
+    - Warnings
+    - Information
+or  - All the messages
+
+The Clean button cleans the message history.
+

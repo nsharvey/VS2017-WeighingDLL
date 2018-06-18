@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("9B147470-1D69-11E8-91B2-87BE772C9500") = "layoutsample1", "layoutsample1.vcxproj", "9B142416-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

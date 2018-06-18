@@ -1,0 +1,19 @@
+var pairs =
+{
+"sted":{"tables":1}
+,"tables":{"chapter":1,"feature":1}
+,"chapter":{"supplement":1}
+,"supplement":{"tutorial":1}
+,"tutorial":{"users":1}
+,"users":{"interested":1}
+,"interested":{"nested":1}
+,"nested":{"tables":1}
+,"feature":{"data":1}
+,"data":{"access":1}
+,"access":{"note":1,"supported":1}
+,"note":{"currently":1}
+,"currently":{"nested":1}
+,"supported":{"oracle":1}
+,"oracle":{"later":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,19 @@
+var pairs =
+{
+"newapplication":{"label":1}
+,"label":{"application":1}
+,"application":{"path":1,"action":1,"edits":1,"edited":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"file":1}
+,"file":{"menu":1}
+,"menu":{"new":1}
+,"new":{"category":1,"application":1}
+,"category":{"application":1}
+,"action":{"discards":1}
+,"discards":{"current":1}
+,"current":{"application":1}
+,"edits":{"new":1}
+,"edited":{"time":1}
+}
+;Search.control.loadWordPairs(pairs);

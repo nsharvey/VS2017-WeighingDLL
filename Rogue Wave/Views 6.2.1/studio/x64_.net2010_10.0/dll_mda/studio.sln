@@ -1,0 +1,20 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("CAAAE224-1D68-11E8-81D0-E787772C9500") = "ivfstudio", "ivfstudio.vcxproj", "CAAA61BE-1D68-11E8-81D0-E787772C9500"
+EndProject
+
+Project("CAC2EC84-1D68-11E8-81D0-E787772C9500") = "ivstudio", "ivstudio.vcxproj", "CAAA61BE-1D68-11E8-81D0-E787772C9500"
+EndProject
+
+Project("CADBD618-1D68-11E8-81D0-E787772C9500") = "jsstudio", "jsstudio.vcxproj", "CAAA61BE-1D68-11E8-81D0-E787772C9500"
+EndProject
+
+Project("CAF872C8-1D68-11E8-81D0-E787772C9500") = "prstudio", "prstudio.vcxproj", "CAAA61BE-1D68-11E8-81D0-E787772C9500"
+EndProject
+
+Project("CB1AE38A-1D68-11E8-81D0-E787772C9500") = "chstudio", "chstudio.vcxproj", "CAAA61BE-1D68-11E8-81D0-E787772C9500"
+EndProject
+
+Global
+EndGlobal
+

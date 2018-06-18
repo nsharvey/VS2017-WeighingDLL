@@ -1,0 +1,21 @@
+File: notices.txt
+-----------------
+This file indicates, for every relevant file in this directory, its
+origin and under which licence it was pubshised
+
+File name: colors.png
+  Author: fdecomite
+  Original title: Hama
+  Origin: http://www.flickr.com/photos/fdecomite/2197855173/sizes/o/in/photostream/
+  License: Creative Common - Attribution 2.0 Generic
+  Copy date: 2012-09-18
+
+File name: mona_lisa.png
+  Author: monkeywing
+  Original title: behind the smile
+  Origin: http://www.flickr.com/photos/colinsite/3558452273/sizes/o/in/photostream/
+  License: Creative Common - Attribution 2.0 Generic
+  Copy date: 2012-09-18
+
+
+Rogue Wave Software

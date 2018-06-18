@@ -1,0 +1,503 @@
+// Rogue Wave Views Prototype Library File
+// Rogue Wave Views Version: 3.10
+// Date: Mon Dec  7 10:36:17 1998
+Library: script
+SingleFile: true
+colgauge
+animcol
+progress
+lcd_scr
+colorsel
+IlvProtoLibraryBlocks
+IlvProtoLibraryBlock animcol.ijs
+Script "JvScript" Inline ""
+function animcol_setValue(object, value) 
+{
+   var value_red1   = object.red1;
+   var value_green1 = object.green1;
+   var value_blue1  = object.blue1;
+   var value_red2   = object.red2;
+   var value_green2 = object.green2;
+   var value_blue2  = object.blue2;
+   var red_step     = 2 * (value_red2 - value_red1) / object.range;
+   var green_step   = 2 * (value_green2 - value_green1) / object.range;
+   var blue_step    = 2 * (value_blue2 - value_blue1) / object.range;
+   var middle = Math.floor(object.range / 2);
+   var current_index;
+   if (value >= middle) current_index = object.range - value;
+   else current_index = value;
+   var red   = Math.floor(value_red1 + (red_step * current_index));
+   var green = Math.floor(value_green1 + (green_step * current_index));
+   var blue  = Math.floor(value_blue1 + (blue_step * current_index));
+   object.rect.foreground = "#" + toHex(red) + toHex(green) + toHex(blue);
+}
+
+function toHex(value)
+{
+   var q = Math.floor(value / 16);
+   var r = value % 16;
+   var firstval = new String(q);
+   if      (q == 10) firstval = "A";
+   else if (q == 11) firstval = "B";
+   else if (q == 12) firstval = "C";
+   else if (q == 13) firstval = "D";
+   else if (q == 14) firstval = "E";
+   else if (q == 15) firstval = "F";
+   var secondval = new String(r);
+   if      (r == 10) secondval = "A";
+   else if (r == 11) secondval = "B";
+   else if (r == 12) secondval = "C";
+   else if (r == 13) secondval = "D";
+   else if (r == 14) secondval = "E";
+   else if (r == 15) secondval = "F";
+   return firstval + secondval;
+}  
+ScriptEnd
+IlvProtoLibraryBlock progress.ijs
+Script "JvScript" Inline ""
+function progress_setValue(object, value)
+{
+  var i = 0;
+  var limit = 10 * (value - object.min) / (object.max - object.min);
+  limit = Math.round(limit);
+  limit = Math.max(limit, 0);
+  limit = Math.min(limit, 10);
+  for (i = 0; i < limit; i++)
+    object.getObject("bar" + i).visible = true;
+  for (; i < 10; i++)
+    object.getObject("bar" + i).visible = false;
+}
+ScriptEnd
+IlvProtoLibraryBlock lcd_scr.ijs
+Script "JvScript" Inline ""
+leds0  = new Array(true,  true,  true,  false, true,  true,  true);  
+leds1  = new Array(false, false, true,  false, false, true,  false);
+leds2  = new Array(true,  false, true,  true,  true,  false, true);
+leds3  = new Array(true,  false, true,  true,  false, true,  true);
+leds4  = new Array(false, true,  true,  true,  false, true,  false);
+leds5  = new Array(true,  true,  false, true,  false, true,  true);
+leds6  = new Array(true,  true,  false, true,  true,  true,  true);
+leds7  = new Array(true,  false, true,  false, false, true,  false);
+leds8  = new Array(true,  true,  true,  true,  true,  true,  true);
+leds9  = new Array(true,  true,  true,  true,  false, true,  true);
+ledser = new Array(true,  true,  false, true,  true,  false, true);
+
+lcd_values = new Array(leds0, leds1, leds2, leds3, leds4, leds5, 
+                           leds6, leds7, leds8, leds9, ledser);
+
+function lcd_scr_setValue(object, value)
+{
+  var indexarray = Math.min(value, 10);
+  if (value < 0) indexarray = 10;
+  for (var i = 0; i < 7; i++) {
+    object.getObject("s" + i).visible = lcd_values[indexarray][i];
+  }
+}
+ScriptEnd
+IlvProtoLibraryBlock colorsel.ijs
+Script "JvScript" Inline ""
+function changcol_setValue(object, value) 
+{
+   var value_hexa_red = toHex(object.red);
+   var value_hexa_green = toHex(object.green);
+   var value_hexa_blue = toHex(object.blue);
+   object.color = "#" + value_hexa_red + value_hexa_green + value_hexa_blue;
+}
+
+function toHex(value)
+{
+   var q = Math.floor(value / 16);
+   var r = value % 16;
+   var firstval = new String(q);
+   if      (q == 10) firstval = "A";
+   else if (q == 11) firstval = "B";
+   else if (q == 12) firstval = "C";
+   else if (q == 13) firstval = "D";
+   else if (q == 14) firstval = "E";
+   else if (q == 15) firstval = "F";
+   var secondval = new String(r);
+   if      (r == 10) secondval = "A";
+   else if (r == 11) secondval = "B";
+   else if (r == 12) secondval = "C";
+   else if (r == 13) secondval = "D";
+   else if (r == 14) secondval = "E";
+   else if (r == 15) secondval = "F";
+   return firstval + secondval;
+}  
+ScriptEnd
+IlvProtoLibraryBlock colgauge.ijs
+Script "JvScript" Inline ""
+function colgauge_setValue(object, value) 
+{
+   var i = 0;
+   var limit = 20 * (value - object.minvalue) / (object.maxvalue - object.minvalue);
+   limit = Math.round(limit);
+   limit = Math.max(limit, 0);
+   limit = Math.min(limit, 20);
+   for (i = 0; i < limit; i++) {
+     	object.getObject("rectangle" + i).visible = true;
+   }
+   for (; i < 20; i++) {
+       object.getObject("rectangle" + i).visible = false;
+   } 
+}
+ScriptEnd
+IlvProtoLibraryBlock colgauge.ivp
+IlvPrototype colgauge
+    accessors {
+        IlvValueAccessor Float minvalue
+        IlvValueAccessor Float maxvalue
+        IlvJavaScriptAccessor Float value colgauge_setValue none
+        IlvValueAccessor Float value
+        IlvTriggerAccessor Float minvalue value value
+        IlvTriggerAccessor Float maxvalue value value
+    }
+    values {
+        Float maxvalue = 100
+        Float value = 100
+    }
+    nodes {
+        IlvGraphicNode rectangle18 "T" 0 0
+        IlvGraphicNode rectangle14 "T" 0 1
+        IlvGraphicNode rectangle9 "T" 0 2
+        IlvGraphicNode rectangle8 "T" 0 3
+        IlvGraphicNode rectangle16 "T" 0 4
+        IlvGraphicNode rectangle12 "T" 0 5
+        IlvGraphicNode rectangle5 "T" 0 6
+        IlvGraphicNode rectangle3 "T" 0 7
+        IlvGraphicNode rectangle17 "T" 0 8
+        IlvGraphicNode rectangle13 "T" 0 9
+        IlvGraphicNode rectangle7 "T" 0 10
+        IlvGraphicNode rectangle4 "T" 0 11
+        IlvGraphicNode rectangle15 "T" 0 12
+        IlvGraphicNode rectangle10 "T" 0 13
+        IlvGraphicNode rectangle6 "T" 0 14
+        IlvGraphicNode rectangle2 "T" 0 15
+        IlvGraphicNode rectangle1 "T" 0 16
+        IlvGraphicNode rectangle0 "T" 0 17
+        IlvGraphicNode rectangle11 "T" 0 18
+        IlvGraphicNode rectangle19 "T" 0 19
+        IlvSubGroupNode background 
+        IlvGroup background
+            nodes {
+                IlvGraphicNode IlvFilledRectangle "T" 0 20
+                IlvGraphicNode IlvFilledRectangle_1 "T" 0 21
+                IlvGraphicNode IlvFilledRectangle_2 "T" 0 22
+                IlvGraphicNode IlvFilledRectangle_3 "T" 0 23
+                IlvGraphicNode IlvFilledRectangle_4 "T" 0 24
+                IlvGraphicNode IlvFilledRectangle_5 "T" 0 25
+                IlvGraphicNode IlvFilledRectangle_6 "T" 0 26
+                IlvGraphicNode IlvFilledRectangle_7 "T" 0 27
+                IlvGraphicNode IlvFilledRectangle_8 "T" 0 28
+                IlvGraphicNode IlvFilledRectangle_9 "T" 0 29
+                IlvGraphicNode IlvFilledRectangle_10 "T" 0 30
+                IlvGraphicNode IlvFilledRectangle_11 "T" 0 31
+                IlvGraphicNode IlvFilledRectangle_12 "T" 0 32
+                IlvGraphicNode IlvFilledRectangle_13 "T" 0 33
+                IlvGraphicNode IlvFilledRectangle_14 "T" 0 34
+                IlvGraphicNode IlvFilledRectangle_15 "T" 0 35
+                IlvGraphicNode IlvFilledRectangle_16 "T" 0 36
+                IlvGraphicNode IlvFilledRectangle_17 "T" 0 37
+                IlvGraphicNode IlvFilledRectangle_18 "T" 0 38
+                IlvGraphicNode IlvFilledRectangle_19 "T" 0 39
+            }
+            subscriptions {
+            }
+        ;
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock colgauge.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:36:17 1998
+// Creator class: IlvGraphOutput
+Palettes 4
+0 52685 49344 45232 "Red" "fixed" 0 solid solid 0 0 0
+2 52685 49344 45232 "Forest Green" "fixed" 0 solid solid 0 0 0
+3 "Gray" "Gray" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+1 52685 49344 45232 "Orange" "fixed" 0 solid solid 0 0 0
+IlvObjects 40
+1 2 { 0 0 IlvFilledRectangle 35 32 22 3 } 0
+1 2 { 1 1 IlvFilledRectangle 35 48 22 3 } 0
+1 2 { 2 2 IlvFilledRectangle 35 68 22 3 } 0
+1 2 { 3 2 IlvFilledRectangle 35 72 22 3 } 0
+1 2 { 4 0 IlvFilledRectangle 35 40 22 3 } 0
+1 2 { 5 1 IlvFilledRectangle 35 56 22 3 } 0
+1 2 { 6 2 IlvFilledRectangle 35 84 22 3 } 0
+1 2 { 7 2 IlvFilledRectangle 35 92 22 3 } 0
+1 2 { 8 0 IlvFilledRectangle 35 36 22 3 } 0
+1 2 { 9 1 IlvFilledRectangle 35 52 22 3 } 0
+1 2 { 10 2 IlvFilledRectangle 35 76 22 3 } 0
+1 2 { 11 2 IlvFilledRectangle 35 88 22 3 } 0
+1 2 { 12 1 IlvFilledRectangle 35 44 22 3 } 0
+1 2 { 13 2 IlvFilledRectangle 35 64 22 3 } 0
+1 2 { 14 2 IlvFilledRectangle 35 80 22 3 } 0
+1 2 { 15 2 IlvFilledRectangle 35 96 22 3 } 0
+1 2 { 16 2 IlvFilledRectangle 35 100 22 3 } 0
+1 2 { 17 2 IlvFilledRectangle 35 104 22 3 } 0
+1 2 { 18 1 IlvFilledRectangle 35 60 22 3 } 0
+1 2 { 19 0 IlvFilledRectangle 35 28 22 3 } 0
+0 2 { 20 3 IlvFilledRectangle 35 96 22 3 } 0
+0 2 { 21 3 IlvFilledRectangle 35 32 22 3 } 0
+0 2 { 22 3 IlvFilledRectangle 35 48 22 3 } 0
+0 2 { 23 3 IlvFilledRectangle 35 40 22 3 } 0
+0 2 { 24 3 IlvFilledRectangle 35 56 22 3 } 0
+0 2 { 25 3 IlvFilledRectangle 35 36 22 3 } 0
+0 2 { 26 3 IlvFilledRectangle 35 52 22 3 } 0
+0 2 { 27 3 IlvFilledRectangle 35 44 22 3 } 0
+0 2 { 28 3 IlvFilledRectangle 35 28 22 3 } 0
+0 2 { 29 3 IlvFilledRectangle 35 68 22 3 } 0
+0 2 { 30 3 IlvFilledRectangle 35 72 22 3 } 0
+0 2 { 31 3 IlvFilledRectangle 35 84 22 3 } 0
+0 2 { 32 3 IlvFilledRectangle 35 92 22 3 } 0
+0 2 { 33 3 IlvFilledRectangle 35 76 22 3 } 0
+0 2 { 34 3 IlvFilledRectangle 35 88 22 3 } 0
+0 2 { 35 3 IlvFilledRectangle 35 64 22 3 } 0
+0 2 { 36 3 IlvFilledRectangle 35 80 22 3 } 0
+0 2 { 37 3 IlvFilledRectangle 35 60 22 3 } 0
+0 2 { 38 3 IlvFilledRectangle 35 100 22 3 } 0
+0 2 { 39 3 IlvFilledRectangle 35 104 22 3 } 0
+Layers 2
+0
+0
+Views 0
+EOF
+IlvProtoLibraryBlock animcol.ivp
+IlvPrototype animcol
+    accessors {
+        IlvValueAccessor UInt red1
+        IlvValueAccessor UInt green1
+        IlvValueAccessor UInt blue1
+        IlvValueAccessor UInt red2
+        IlvValueAccessor UInt green2
+        IlvValueAccessor UInt blue2
+        IlvValueAccessor UInt range
+        IlvValueAccessor (P) UInt value
+        IlvJavaScriptAccessor (P) UInt value animcol_setValue none
+        IlvCounterAccessor (P) UInt counter value range
+        IlvNodeAccessor ValueSourceState running __ILV1 Clock.state
+        IlvNodeAccessor UInt period __ILV1 Clock.period
+    }
+    values {
+        UInt red1 = 255
+        UInt green1 = 0
+        UInt blue1 = 0
+        UInt red2 = 255
+        UInt green2 = 255
+        UInt blue2 = 0
+        UInt range = 10
+        UInt value = 0
+        UInt counter = 0
+        ValueSourceState running = stopped
+        UInt period = 60
+    }
+    nodes {
+        IlvGraphicNode rect "T" 0 0
+        IlvValueSourceNode Clock IlvClockValueSource Clock 60 0
+        IlvGraphicNode IlvMessageLabel "T" 0 1
+    }
+    subscriptions {
+        animcol animcol Clock.milliseconds counter Any 17
+    }
+;
+IlvProtoLibraryBlock animcol.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:36:17 1998
+// Creator class: IlvGraphOutput
+Palettes 2
+0 52685 49344 45232 65535 13107 0 "fixed" 0 solid solid 0 0 0
+1 "gray" "black" "%helvetica-17-B" 0 solid solid 0 0 0
+IlvObjects 2
+1 2 { 0 0 IlvFilledRectangle 26 53 84 27 } 0
+1 2 { 1 1 IlvMessageLabel 28 57 79 18 F8 0 1 16 4 "WARNING"   } 384
+Layers 2
+0
+0
+Views 0
+EOF
+IlvProtoLibraryBlock progress.ivp
+IlvPrototype progress
+    accessors {
+        IlvValueAccessor Float min
+        IlvValueAccessor Float max
+        IlvTriggerAccessor Float min value value
+        IlvTriggerAccessor Float max value value
+        IlvValueAccessor Float value
+        IlvFormatAccessor Float value "%g%%" 10 IlvLabel.label
+        IlvJavaScriptAccessor Float value progress_setValue none
+    }
+    values {
+        Float max = 100
+        Float value = 100
+        String labelvalue = 10 %
+        Float min = 0
+    }
+    nodes {
+        IlvGraphicNode bar1 "T" 0 0
+        IlvGraphicNode bar4 "T" 0 1
+        IlvGraphicNode bar5 "T" 0 2
+        IlvGraphicNode bar2 "T" 0 3
+        IlvGraphicNode bar0 "T" 0 4
+        IlvGraphicNode bar9 "T" 0 5
+        IlvGraphicNode bar3 "T" 0 6
+        IlvGraphicNode bar8 "T" 0 7
+        IlvGraphicNode bar6 "T" 0 8
+        IlvGraphicNode bar7 "T" 0 9
+        IlvGraphicNode IlvTextField "T" 0 10
+        IlvGraphicNode IlvLabel "T" 0 11
+    }
+    subscriptions {
+        progress progress slider_2.sliderValue value Any 17
+    }
+;
+IlvProtoLibraryBlock progress.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:36:17 1998
+// Creator class: IlvGraphOutput
+Palettes 2
+0 52685 49344 45232 "Blue" "fixed" 0 solid solid 0 0 0
+"IlvStText" 1 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 12
+1 2 { 0 0 IlvFilledRectangle 57 18 9 11 } 0
+1 2 { 1 0 IlvFilledRectangle 90 18 9 11 } 0
+1 2 { 2 0 IlvFilledRectangle 101 18 9 11 } 0
+1 2 { 3 0 IlvFilledRectangle 68 18 9 11 } 0
+1 2 { 4 0 IlvFilledRectangle 46 18 9 11 } 0
+1 2 { 5 0 IlvFilledRectangle 145 18 9 11 } 0
+1 2 { 6 0 IlvFilledRectangle 79 18 9 11 } 0
+1 2 { 7 0 IlvFilledRectangle 134 18 9 11 } 0
+1 2 { 8 0 IlvFilledRectangle 112 18 9 11 } 0
+1 2 { 9 0 IlvFilledRectangle 123 18 9 11 } 0
+0 2 { 10 1 IlvTextField 43 15 114 17 F7 1 1 -1 0 "" } 0
+2 2 { 11 1 IlvLabel 9 31 "100%" } 0
+Layers 3
+0
+0
+0
+Views 0
+EOF
+IlvProtoLibraryBlock lcd_scr.ivp
+IlvPrototype lcd_scr
+    accessors {
+        IlvTriggerAccessor (RP) UInt newvalue currentValue value
+        IlvJavaScriptAccessor (RP) UInt newvalue lcd_scr_setValue none
+        IlvValueAccessor (RP) UInt currentValue
+        IlvValueAccessor UInt value
+        IlvConditionAccessor UInt value != currentValue newvalue value ""
+    }
+    values {
+        UInt value = 0
+        UInt currentValue = 0
+    }
+    nodes {
+        IlvGraphicNode s4 "TN" 0 0
+        IlvGraphicNode s1 "TN" 0 1
+        IlvGraphicNode s2 "TN" 0 2
+        IlvGraphicNode s5 "TN" 0 3
+        IlvGraphicNode s0 "TN" 0 4
+        IlvGraphicNode s3 "TIN" 0 5
+        IlvGraphicNode s6 "TN" 0 6
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock lcd_scr.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:36:17 1998
+// Creator class: IlvGraphOutput
+Palettes 1
+0 48830 48830 48830 0 0 0 "default" "8x13" 0 solid solid 0 0 0
+IlvObjects 7
+1 0 { 0 0 IlvPolygon 6
+68 49 66 51 66 64 68 67 71 64 71 51 } 0
+1 0 { 1 0 IlvPolygon 6
+68 30 66 33 66 45 68 48 71 45 71 33 } 0
+1 0 { 2 0 IlvPolygon 6
+96 30 94 33 94 45 96 48 99 45 99 33 } 0
+1 0 { 3 0 IlvPolygon 6
+96 49 94 51 94 64 96 67 99 64 99 51 } 0
+1 0 { 4 0 IlvPolygon 6
+70 30 73 32 91 32 95 30 91 28 73 28 } 0
+1 0 { 5 0 IlvPolygon 6
+70 48 73 50 91 50 95 48 91 46 73 46 } 2
+1 0 { 6 0 IlvPolygon 6
+70 67 73 69 91 69 95 67 91 65 73 65 } 0
+Layers 2
+0
+0
+Views 0
+EOF
+IlvProtoLibraryBlock colorsel.ivp
+IlvPrototype colorsel
+    accessors {
+        IlvValueAccessor (P) UInt value
+        IlvJavaScriptAccessor (P) UInt value changcol_setValue none
+        IlvValueAccessor UInt red
+        IlvTriggerAccessor UInt red value value
+        IlvValueAccessor UInt green
+        IlvTriggerAccessor UInt green value value
+        IlvValueAccessor UInt blue
+        IlvTriggerAccessor UInt blue value value
+        IlvNodeAccessor Color color __ILV1 rectangle.foreground
+        IlvOutputAccessor Color color
+    }
+    values {
+        UInt value = 0
+        UInt red = 0
+    }
+    nodes {
+        IlvGraphicNode rectangle "T" 0 0
+        IlvSubGroupNode redslider 
+        IlvProtoInstance output.slider redslider
+            values {
+                String sliderLabel = 0
+                String title = Red
+                Int sliderMax = 255
+                Int x = 115
+                Int y = 31
+                Float scaleX = 0.601266
+            }
+        ;
+        IlvSubGroupNode greenslider 
+        IlvProtoInstance output.slider greenslider
+            values {
+                String sliderLabel = 0
+                String title = Green
+                Int sliderMax = 255
+                Int x = 115
+                Int y = 100
+                Float scaleX = 0.601266
+            }
+        ;
+        IlvSubGroupNode blueslider 
+        IlvProtoInstance output.slider blueslider
+            values {
+                String sliderLabel = 0
+                String title = Blue
+                Int sliderMax = 255
+                Int x = 115
+                Int y = 171
+                Float scaleX = 0.601266
+            }
+        ;
+    }
+    subscriptions {
+        colorsel colorsel redslider.sliderValue red Any 17
+        colorsel colorsel greenslider.sliderValue green Any 17
+        colorsel colorsel blueslider.sliderValue blue Any 17
+    }
+;
+IlvProtoLibraryBlock colorsel.ilv
+// Ilv Version: 3.1
+// File generated: Mon Dec  7 10:36:17 1998
+// Creator class: IlvGraphOutput
+Palettes 1
+0 52685 49344 45232 0 0 0 "fixed" 0 solid solid 0 0 0
+IlvObjects 1
+1 2 { 0 0 IlvFilledRectangle 71 50 34 159 } 0
+Layers 2
+0
+0
+Views 0
+EOF

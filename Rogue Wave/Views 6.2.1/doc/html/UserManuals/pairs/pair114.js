@@ -1,0 +1,21 @@
+var pairs =
+{
+"setobjectinteractor":{"deprecated":1}
+,"deprecated":{"object":1}
+,"object":{"inspector":1,"interactor":1}
+,"inspector":{"instead":1}
+,"instead":{"label":1}
+,"label":{"interactor":1}
+,"interactor":{"category":1,"name":1}
+,"category":{"property":1}
+,"property":{"action":1}
+,"action":{"opens":1}
+,"opens":{"dialog":1}
+,"dialog":{"box":1}
+,"box":{"lets":1}
+,"lets":{"attach":1}
+,"attach":{"object":1}
+,"name":{"selected":1}
+,"selected":{"object":1}
+}
+;Search.control.loadWordPairs(pairs);

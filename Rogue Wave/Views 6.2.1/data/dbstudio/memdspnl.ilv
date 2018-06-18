@@ -1,0 +1,22 @@
+// Ilv Version: 3.1
+// File generated: Mon Dec 14 16:09:14 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "memdspnl"
+PathName "data/dbstudio/memdspnl.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+IlvObjects 3
+3 { 0 0 IlvNotebook 187 5 191 198 2 3
+"&page_Datatype" "" 1 "gray" ""
+"&page_Look" "" 1 "gray" ""
+"&page_Mapping" "" 1 "gray" ""
+0 0 8 0 0 5 2 10 10 10 10  } 544 "notebook"
+1
+1 "__ilvCallback" "onSelectorCB"
+1008 1 187 1 5 1 10 1 6 2 2
+3 { 1 0 IlvGadget 10 5 169 198 1 } 32 "tablearea"
+688 1 10 1 5 1 6 2
+3 { 2 0 IlvGadget 197 13 171 157 1 } 32 "inspectorarea"
+1008 1 197 1 13 1 20 1 39 2 2
+Size 388 209
+EOF

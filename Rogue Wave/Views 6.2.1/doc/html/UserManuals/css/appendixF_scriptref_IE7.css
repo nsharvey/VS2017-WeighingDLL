@@ -1,0 +1,30 @@
+.Insetitemize > span.WebWorks_Number
+{
+  text-indent: -9.921259842519688pt;
+}
+
+.Insetitemize > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.Itemize > span.WebWorks_Number
+{
+  text-indent: -14.173228346456696pt;
+}
+
+.Itemize > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.NoteItemized > span.WebWorks_Number
+{
+  text-indent: -14.17322834645666pt;
+}
+
+.NoteItemized > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+

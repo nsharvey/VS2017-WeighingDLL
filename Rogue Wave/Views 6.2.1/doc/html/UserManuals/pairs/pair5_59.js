@@ -1,0 +1,26 @@
+var pairs =
+{
+"compatibility":{"standard":1}
+,"standard":{"version":1}
+,"version":{"rogue":1,"ignored":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1}
+,"views":{"rogue":1,"bidi":1,"case":1,"data":1}
+,"bidi":{"read":1,"automatically":1,"version":1}
+,"read":{"data":1,"rogue":1}
+,"data":{"files":1,"required":1,"specific":1}
+,"files":{"generated":1,"produced":1}
+,"generated":{"rogue":1}
+,"case":{"data":1}
+,"required":{"handling":1}
+,"handling":{"character":1}
+,"character":{"strings":1}
+,"strings":{"rogue":1}
+,"automatically":{"default":1}
+,"default":{"values":1}
+,"values":{"conversely":1}
+,"conversely":{"data":1}
+,"produced":{"rogue":1}
+,"specific":{"rogue":1}
+}
+;Search.control.loadWordPairs(pairs);

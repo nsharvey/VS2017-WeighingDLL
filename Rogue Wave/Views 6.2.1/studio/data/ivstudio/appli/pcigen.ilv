@@ -1,0 +1,47 @@
+// Ilv Version: 2.4
+// File generated: Wed Mar 26 19:47:40 1997
+// Creator class: IlvGadgetManagerOutput
+Palettes 2
+"IlvStText" 0 "defaultBg" "defaultFg" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+1 "defaultBg" "defaultFg" "button" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 13
+2 { 0 0 IlvTextField 115 140 240 22 F6 2 1 -1 0 "" } 96 "headerDir" "TextField"
+0
+2 { 1 0 IlvTextField 115 165 240 22 F6 2 1 -1 0 "" } 96 "srcDir" "TextField"
+0
+2 { 2 0 IlvTextField 115 112 240 22 F7 2 1 -1 0 "" } 32 "dataDir"
+0
+2 { 3 0 IlvTextField 115 5 247 22 F6 2 1 -1 0 "" } 96 "className" "TextField"
+0
+2 { 4 0 IlvTextField 115 70 247 22 F7 2 1 -1 0 "" } 96 "filename" "TextField"
+0
+3 { 5 0 IlvMessageLabel 10 5 98 22 0 "&class" 1 } 0
+0
+3 { 6 0 IlvMessageLabel 10 30 98 22 0 "&baseClass" 1 } 0
+0
+3 { 7 0 IlvMessageLabel 15 115 61 22 0 "&data" 1 } 0
+0
+3 { 8 0 IlvMessageLabel 15 140 61 22 0 "&header" 1 } 0
+0
+3 { 9 0 IlvMessageLabel 15 165 61 22 0 "&source" 1 } 0
+0
+3 { 10 0 IlvScrolledComboBox 115 30 247 22 F6 2 2 "IlvGadgetContainer"
+"IlvGadgetContainer"
+"IlvDialog" 2 } 32 "baseClass"
+0
+3 { 11 1 IlvFrame 5 95 356 106 0 "&directories" 1 } 0
+0
+3 { 12 0 IlvMessageLabel 10 70 98 22 0 "&fileName" 1 } 0
+0
+Size 367 270
+GeometryHandlers
+1 100 0 367 0 367 0
+7 3 0 0 115  247 0 247 3  0 0 5 0
+ 3 0 0 115  240 0 240 2  0 7 12 0
+ 3 0 0 115  240 0 240 0  0 7 12 0
+ 3 0 0 115  240 0 240 1  0 7 12 0
+ 3 0 0 115  247 0 247 10  0 0 5 0
+ 3 0 0 5  356 0 356 11  0 0 6 0
+ 3 0 0 115  247 0 247 4  0 0 5 0
+1 100 0 270 0 270 0
+0

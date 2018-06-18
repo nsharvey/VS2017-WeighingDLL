@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{C7D4AD98-1D6B-11E8-BAD0-7863772C9500}") = "readbm", "readbm.vcxproj", "{C7D46CE8-1D6B-11E8-BAD0-7863772C9500}"
+EndProject
+Project("{C7DB9536-1D6B-11E8-BAD0-7863772C9500}") = "bitmaps", "bitmaps.vcxproj", "{C7D46CE8-1D6B-11E8-BAD0-7863772C9500}"
+EndProject
+Global
+EndGlobal

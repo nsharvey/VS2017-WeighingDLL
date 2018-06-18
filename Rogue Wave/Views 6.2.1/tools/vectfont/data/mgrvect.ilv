@@ -1,0 +1,29 @@
+// Ilv Version: 4.0
+// File generated: Wed Apr 12 18:51:44 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "mgrvect"
+Palettes 1
+"default" 0 "defaultBg" "defaultFg" "default" "fixed" 0 solid solid 0 0 0
+IlvObjects 2
+1 { 0 P 2
+[ IlvAttachments _IlvAttachments 336  1 0 1 0 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToolBar 0 0 712 30 F295 2 V0 2 6
+{ IlvMenuItem 1073741826 2 4 1 0 "icselect.png"  "Selection" } 
+{ IlvMenuItem 1073741826 2 4 1 0 "iczoomm.png"  "Zoom" } 
+{ IlvMenuItem 1073741826 2 4 1 0 "icuzoomm.png"  "Unzoom" } 
+{ IlvMenuItem 1073741826 2 4 1 0 "icrotm.png"  "Rotate" } 
+{ IlvMenuItem 1073741825 2 4 "Rectangle"  "Create Rectangle" } 
+{ IlvMenuItem 1073741826 2 4 1 0 "iclabel.png"  "Create Label" }  0 } 32 "toolbar"
+0
+2 { 1 P 2
+[ IlvAttachments _IlvAttachments 976  1 0 1 0 1 0 2 2 ]
+[ IlvInteractorProperty __ilvInteractor "SCManager" ]
+0 IlvSCManagerRectangle 0 32 695 399 YY } 32 "SCM"
+0
+Size 712 448
+Layers 3
+"" 4 0 
+"" 4 0 
+"" 4 0 
+EOF

@@ -1,0 +1,412 @@
+; ---------------------------------------------------------------------------
+; Template of script document
+
+DocumentTemplate Script {
+	DefaultDocName "ScpDoc"
+	ShortName "ScpDoc"
+	Description "Script document"
+	Filters {
+		{
+			Format "*.scp"
+			Description "Script files (.scp)"
+		}
+	}
+        AppearsInLoadFileFilters false
+	DocumentClass "IlvDvTextScriptDocument"
+	ViewClasses {
+		 "IlvDvTextScriptView"
+	}
+	DocMenu {
+		insertItems {
+                    {
+                        Path "&MainMenu/&MenuFile"
+                        items {
+			        {
+				        label "&MenuEdit"
+				        isPopup true
+				        popupItems {
+					        {
+						        label "Cut"
+					        }
+					        {
+						        label "Copy"
+					        }
+					        {
+						        label "Paste"
+					        }
+				        }
+			        }
+                                {
+				        label "&MenuRun"
+				        isPopup true
+				        popupItems {
+					        {
+						        label "Execute"
+					        }
+					        {
+						        label "Stop"
+					        }
+                                                {
+						        label "Pause"
+					        }
+                                                {
+						        label "SEPARATOR"
+					        }
+					        {
+						        label "StepInto"
+					        }
+					        {
+						        label "StepOver"
+					        }
+					        {
+						        label "StepOut"
+					        }
+                                                {
+						        label "RunToCursor"
+					        }
+				        }
+			        }
+                        }
+                    }
+		}
+	}
+	Toolbars {
+		{
+			Name "Text"
+			items {
+                                {
+					label "Cut"
+				}
+				{
+					label "Copy"
+				}
+                                {
+					label "Paste"
+				}
+                                {
+					label "SEPARATOR"
+				}
+                                {
+					label "Execute"
+				}
+				{
+					label "Stop"
+				}
+                                {
+					label "Pause"
+				}
+                                {
+					label "SEPARATOR"
+				}
+				{
+					label "StepInto"
+				}
+				{
+					label "StepOver"
+				}
+				{
+					label "StepOut"
+				}
+                                {
+					label "RunToCursor"
+				}
+			}
+		}
+	}
+}
+
+; ---------------------------------------------------------------------------
+; Script commands
+
+Command Compile {
+	MenuDescription "&MenuCompile"
+	Description "&CompileDesc"
+	Tooltip "&Compile"
+	Bitmap "ilviews/appframe/compile.gif"
+        BigBitmap "ilviews/appframe/bigicons/compile.gif"
+	Accelerators {
+                 "Ctrl+F7"
+        }
+	Categories {
+		 "&Script"
+	}
+}
+
+Command Execute {
+	MenuDescription "&MenuExecute"
+	Description "&ExecuteDesc"
+	Tooltip "&Execute"
+	Bitmap "ilviews/appframe/execute.gif"
+        BigBitmap "ilviews/appframe/bigicons/execute.gif"
+	Accelerators {
+                 "Ctrl+F5"
+        }
+	Categories {
+		 "&Script"
+	}
+}
+
+Command Stop {
+	MenuDescription "&MenuStop"
+	Description "&StopDesc"
+	Tooltip "&Stop"
+	Bitmap "ilviews/appframe/stop.gif"
+        BigBitmap "ilviews/appframe/bigicons/stop.gif"
+	Accelerators {
+                 "Ctrl+Break"
+        }
+	Categories {
+		 "&Script"
+	}
+}
+
+Command Pause {
+	MenuDescription "&MenuPause"
+	Description "&PauseDesc"
+	Tooltip "&Pause"
+	Bitmap "ilviews/appframe/pause.gif"
+        BigBitmap "ilviews/appframe/bigicons/pause.gif"
+	Categories {
+		 "&Script"
+	}
+}
+
+Command Go {
+	MenuDescription "&MenuGo"
+	Description "&GoDesc"
+	Tooltip "&Go"
+	Bitmap "ilviews/appframe/gopgm.gif"
+        BigBitmap "ilviews/appframe/bigicons/gopgm.gif"
+	Accelerators {
+                 "F5"
+        }
+	Categories {
+		 "&Script"
+	}
+}
+
+Command StepInto {
+	MenuDescription "&MenuStepInto"
+	Description "&StepIntoDesc"
+	Tooltip "&StepInto"
+	Bitmap "ilviews/appframe/stepinto.gif"
+        BigBitmap "ilviews/appframe/bigicons/stepinto.gif"
+	Accelerators {
+                 "F11"
+        }
+	Categories {
+		 "&Script"
+	}
+}
+
+Command StepOver {
+	MenuDescription "&MenuStepOver"
+	Description "&StepOverDesc"
+	Tooltip "&StepOver"
+	Bitmap "ilviews/appframe/stepover.gif"
+        BigBitmap "ilviews/appframe/bigicons/stepover.gif"
+	Accelerators {
+                 "F10"
+        }
+	Categories {
+		 "&Script"
+	}
+}
+
+Command StepOut {
+	MenuDescription "&MenuStepOut"
+	Description "&StepOutDesc"
+	Tooltip "&StepOut"
+	Bitmap "ilviews/appframe/stepout.gif"
+        BigBitmap "ilviews/appframe/bigicons/stepout.gif"
+	Accelerators {
+                 "Shift+F11"
+        }
+	Categories {
+		 "&Script"
+	}
+}
+
+Command RunToCursor {
+	MenuDescription "&MenuRunToCursor"
+	Description "&RunToCursorDesc"
+	Tooltip "&RunToCursor"
+	Bitmap "ilviews/appframe/runtocur.gif"
+        BigBitmap "ilviews/appframe/bigicons/runtocur.gif"
+	Accelerators {
+                 "Ctrl+F10"
+        }
+	Categories {
+		 "&Script"
+	}
+}
+
+; ---------------------------------------------------------------------------
+; Template of ScriptProject documents
+
+DocumentTemplate ScriptProject {
+	DefaultDocName "Scripp"
+	ShortName "Scripp"
+	Description "Script project document"
+        AppearsInLoadFileFilters false
+	Filters {
+		{
+			Format "*.spj"
+			Description "Script Project files (.spj)"
+		}
+	}
+	DocumentClass "IlvDvScriptProjectDocument"
+	ViewClasses {
+		 "IlvDvScriptProjectView"
+	}
+	IsMDI false
+	ShowInBar "Left"
+	DocMenu {
+                insertItems {
+                    {
+                        Path "&MainMenu/&MenuTools/Modules"
+                        items {
+                            {
+                                label "SEPARATOR"
+                            }
+                            {
+				label "&MenuScriptProject"
+				isPopup true
+				popupItems {
+					{
+						label "NewScriptProject"
+					}
+					{
+						label "OpenScriptProject"
+					}
+					{
+						label "CloseScriptProject"
+					}
+					{
+						label "SEPARATOR"
+					}
+					{
+						label "SaveScriptProject"
+					}
+					{
+						label "SaveAsScriptProject"
+					}
+					{
+						label "SEPARATOR"
+					}
+					{
+						label "InsertScriptFile"
+					}
+					{
+						label "InsertScriptFolder"
+					}
+					{
+						label "SEPARATOR"
+					}
+					{
+						label "Execute"
+					}
+					{
+						label "Stop"
+					}
+                                        {
+						label "Pause"
+					}
+                                        {
+                                                label "SEPARATOR"
+                                        }
+                                        {
+						label "RecentScriptProjects"
+					}
+				}
+			    }
+                        }
+                    }
+	        }
+        }
+	AlwaysShowMenu true
+	RecentOpenFiles {
+		MaxFilesCount 3
+		Command "RecentScriptProjects"
+		Name "RecentScriptProjects"
+	}
+	OpenCommand "OpenScriptProject"
+	NewCommand "NewScriptProject"
+	AllowMultipleContainers false
+}
+
+Command RecentScriptProjects {
+	Description "&RecentFileDesc"
+	Categories {
+		 "&Script"
+	}
+}
+
+Command NewScriptProject {
+	MenuDescription "&MenuNewProject"
+	Description "&NewProjectDesc"
+	Categories {
+		 "&Script"
+	}
+}
+
+Command OpenScriptProject {
+	MenuDescription "&MenuOpenProject"
+	Description "&OpenProjectDesc"
+	Categories {
+		 "&Script"
+	}
+}
+
+Command SaveScriptProject {
+	MenuDescription "&MenuSaveProject"
+	Description "&SaveProjectDesc"
+	Categories {
+		 "&Script"
+	}
+}
+
+Command SaveAsScriptProject {
+	MenuDescription "&MenuSaveAsProject"
+	Description "&SaveAsProjectDesc"
+	Categories {
+		 "&Script"
+	}
+}
+
+Command CloseScriptProject {
+	MenuDescription "&MenuCloseProject"
+	Description "&CloseProjectDesc"
+	Categories {
+		 "&Script"
+	}
+}
+
+Command InsertScriptFile {
+	MenuDescription "&MenuInsertFile"
+	Description "&InsertFileDesc"
+	Categories {
+		 "&Script"
+	}
+}
+
+Command InsertScriptFolder {
+	MenuDescription "&MenuInsertFolder"
+	Description "&InsertFolderDesc"
+	Categories {
+		 "&Script"
+	}
+}
+
+Command DeleteScriptFiles {
+	MenuDescription "&MenuDelete"
+	Description "Deletes the selection"
+	Bitmap "ilviews/appframe/delete.gif"
+        BigBitmap "ilviews/appframe/bigicons/delete.gif"
+	Accelerators {
+                    "Del"
+        }
+	Categories {
+		 "&Script"
+	}
+}

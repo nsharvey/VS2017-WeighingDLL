@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Rogue Wave Views PNG Dynamic Module Descriptor -->
+<module name="ilvpng" version="6.2">
+  <class name="IlvPNGStreamer" rootClass="IlvBitmapStreamer" version="4.0">
+    <format description="Portable Network Graphics">
+      <signature>0x89 0x50 0x4e 0x47 0x0d 0x0a 0x1a 0x0a</signature>
+      <extension>png</extension>
+    </format>
+  </class>
+</module>

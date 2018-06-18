@@ -1,0 +1,245 @@
+
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <TITLE>Introduction to the VPF reader classes</TITLE>
+</HEAD>
+ <BODY BGCOLOR="#FFFFFF">
+
+
+<H1>
+Introduction to the VPF reader classes
+</H1>
+
+<HR>
+
+<H2>
+The VpfDatabases class
+</H2>
+
+Opening a database means creating an instance of the VpfDatabase
+class. It synopsis summary follows: <P>
+Header file: <A HREF="../include/vpf/database.h">
+	vpf/database.h </A> <BR>
+<pre>
+
+    class VpfDatabase                              
+    {
+    public:
+        VpfDatabase(const char* path);
+        int isBad();
+        const char*  getName()       const;
+        const char*  getDescription() const;
+        const char*  getPath()       const;
+        VpfUInt      getNLibraries() const;
+        VpfLibrary*    getLibrary(VpfUInt i) const;
+        VpfLibrary*    getLibrary(const char*) const;
+    };
+</pre>
+
+<UL>
+<LI>VpfDatabase(const char* path);<BR>
+   Initializes an instance of VpfDatabase located in the <code> path </code>
+   directory.
+<LI> int isBad(); <BR>
+   The isBad member function returns a non-null value if there has
+   been a problem initializing the database.
+<LI> const char*  getName() const;<BR>
+   The getName member function returns the name of this database.
+
+<LI>const char*  getDescription() const;<BR>
+   The getDescription member function returns the description of 
+   this database.
+
+<LI>const char*  getPath() const;<BR>
+   The getPath member function returns the pathname where this
+   database is stored.
+
+<LI>VpfUInt getNLibraries() const;<BR>
+   The getNLibraries member function returns the number of libraries
+   stored in this database.
+
+<LI>VpfLibrary* getLibrary(VpfUInt i);<BR>
+   The getLibrary member function returns the ith library
+   of this database.
+
+<LI>VpfLibrary* getLibrary(const char* libname);<BR>
+   The getLibrary member function returns the library that has the
+   name <libname> in this database.
+</UL>
+
+<H2>
+The VpfLibrary Class
+</H2>
+
+All VPF libraries are handle by the VpfLibrary class. Its synopsis
+summary follows:<P>
+Header file: <A HREF="../include/vpf/library.h">
+	vpf/library.h </A> <BR>
+<PRE>
+    class VpfLibrary                         
+    {
+    public:
+        VpfLibrary(VpfDatabase* db, const char* name);
+        int  isBad();
+        const char*        getName()           const;
+        const char*        getDescription()    const;
+        const char*        getPath()           const;
+
+        VpfUInt getNCoverages() const;
+        VpfCoverage* getCoverage(VpfUInt i) const;
+        VpfCoverage* getCoverage(const char*) const;
+
+        const VpfExtent&   getExtent()         const;
+        int isTiled() const;
+        VpfUInt getNTiles() const;
+        VpfTile* getTile(VpfUInt i);
+        void tileSelect(const VpfExtent& extent);
+    };
+</PRE>
+ A library stores the coverages it handles.
+
+<UL>
+<LI> VpfLibrary(VpfDatabase* db, const char* name); <BR>
+   The constructor initializes a new VPF library that is read from the
+   <code>db</code> VPF database, and has the name <code>name</code>.
+   The destructor will also remove every contained structures
+   (coverages...).
+<LI> int isBad();<BR>
+   The isBad member function will return a non-null value if the
+   initialization of this library couldn't be successful. Error
+   messages are printed out.
+
+<LI> const char* getName() const;<BR>
+   The getName member function returns the name of this library.
+
+<LI> const char* getPath() const;<BR>
+   The getPath member function returns the full pathname where this
+   library is stored (such as /usr/local/data/DCW/browse).
+   
+<LI> VpfUInt getNCoverages() const;<BR>
+   The getNCoverages member function returns the number of coverages
+   stored in this library.
+
+<LI> VpfCoverage* getCoverage(VpfUInt index) const;<BR>
+   The getCoverage member function returns a pointer to the
+   <code>index</code>-th coverage loaded in this library.
+
+<LI> VpfCoverage* getCoverage(VpfUInt index) const;<BR>
+   The getCoverage member function returns a pointer to the
+   <code>index</code>-th coverage loaded in this library.
+
+<LI> VpfCoverage* getCoverage(const char* coveragename);<BR>
+   The getCoverage member function returns a pointer to the coverage
+   that has the name <code>coveragename</code>> in this library, or 
+   NULL if none matches this name.
+
+<LI> long getNTiles() const;
+   The getNTiles member function returns the number of VPF tiles
+   stored in this library.
+
+<LI> const VpfExtent& getExtent() const;<BR>
+   The geExtent member function returns a reference to the bounding
+   rectangle of all the objects stored in this library.
+
+<LI> int isTiled() const;<BR>
+   The hasTiles member function returns a non-null value if this
+   library actually stores this object it handles into tiles.
+</UL>
+
+<H2>
+The VpfCoverage Class
+</H2>
+
+
+Coverages are groups of informations that shared common properties or
+that adress the same semantic aspect. A library owns a given number of
+coverages. Objects to be loaded are located in coverages, and are
+designated by a specific feature class, which is handled by the
+VpfFeatureClass class.
+Geographic objects are stored with a set of attributes that can
+have several values (such as the elevation of a location, for instance).
+When an attribute's possible values are taken form a predefined set
+(such as the names of countries), then these features may be gathered
+in a theme (handled by the calss VpfTheme).
+A coverage is an instance of the VpfCoverage class. Here is its
+synopsis summary:<P>
+Header file: <A HREF="../include/vpf/coverage.h">
+	vpf/coverage.h </A> <BR>
+<PRE>
+    class VpfCoverage
+    {
+    public:
+        int isBad() const;
+        const char* getName()        const;
+        const char* getDescription() const;
+
+        VpfUInt getNFeatureClasses() const;
+        VpfFeatureClass* getFeatureClass(VpfUInt i) const;
+        VpfFeatureClass* getFeatureClass(const char*) const;
+
+        VpfUInt getNThemes() const;
+        VpfTheme* getTheme(VpfUInt i) const;
+    };
+</PRE>
+When a library is created, every coverage of this library is also
+created and initialized.
+<P>
+<UL>
+<LI> int isBad()<BR>
+   The isBad member function will return a non-null value if the
+   initialization of this coverage couldn't be successful. Error
+   messages are printed out.
+
+<LI>const char* getName() const;<BR>
+   The getName member function returns the name of this coverage. This
+   name is also the name of the directory this coverage is stored into.
+
+<LI> const char* getDescription() const;<BR>
+   The getDescription member function returns a string that briefly
+   describes this coverage.
+
+<LI> long getNThemes() const;<BR>
+   The getNThemes member function returns the number of themes that
+   are stored within this coverage.
+
+<LI> VpfTheme* getThemes(VpfUInt index) const;<BR>
+   The getThemes member function returns a pointer to the ith
+   theme of this coverage.
+</UL>
+
+<H2>
+The VpfTheme Class
+</H2>
+
+Themes precisely define what information is to be loaded, from which
+tiles, for a given criteria. They are managed by the VpfTheme class:
+<P>
+Header file: <A HREF="../include/vpf/theme.h">
+	vpf/theme.h </A> <BR>
+
+<PRE>
+    class VpfTheme
+    {
+    public:
+        int  isLoaded()      const;
+        void setLoaded(int flag = 1);
+    };
+</PRE>
+When a library is created, every descriptor of every coverage is
+also created, as well as every theme of each of these coverages.
+<P>
+</UL>
+<LI>int isLoaded() const;<BR>
+   The isLoaded member function returns a non-null value if this theme
+   has been loaded by a VpfReader instance.
+
+<LI>void setLoaded(int flag = 1);<BR>
+   The setLoaded member function modifies this theme's "loaded" state
+   to the one specified by the <flag> value.
+
+</UL>
+
+
+</BODY>
+</HTML>

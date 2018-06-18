@@ -1,0 +1,7 @@
+// JsStudio: Rogue Wave Script Edition options.
+panel "MainPanel" {
+    menuItem ShowScriptEditor : "&mtools" -before ShowPalettePanel;
+    menuItem ShowScriptErrorList : "&mtools" -before ShowPalettePanel;
+    menuItem ShowScriptDebugger : "&mtools" -before ShowPalettePanel;
+    menuItem - : "&mtools" -before ShowPalettePanel;
+}

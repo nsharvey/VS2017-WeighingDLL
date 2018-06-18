@@ -1,0 +1,44 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Charts - Samples: multiscale</title>
+	</head>
+    <body>
+		<a name="multiscale"><h1>Sample: <code>multiscale</code></h1><h1 class="subtitle">Displaying a Chart with Stacked Ordinate Scales</h1></a>
+		<p>Creation of a chart with several stacked scales for the ordinate.</p>
+		<img src="data/multiscale.png"/>
+		<p>This sample shows you how to define a chart with several
+   stacked scales along the ordinate.</p>
+   <p>It creates a chart using a Cartesian projector and another one using a
+   Polar projector. Both charts display three data sets. Each data set is displayed 
+   relatively to a different ordinate scale with a different displayer.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvChartGraphic</code></li>
+			<li><code>IlvCartesianProjector</code></li>
+			<li><code>IlvPolarProjector</code></li>
+			<li><code>IlvChartCoordinateInfo</code></li>
+			<li><code>IlvRectangularScaleDisplayer</code></li>
+			<li><code>IlvCircularScaleDisplayer</code></li>
+			<li><code>IlvRectangularGridDisplayer</code></li>
+			<li><code>IlvCircularGridDisplayer</code></li>
+			<li><code>IlvStairChartDisplayer</code></li>
+			<li><code>IlvPolylineChartDisplayer</code></li>
+			<li><code>IlvStepChartDisplayer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="../include/samputil.h"><code>../include/samputil.h</code></a></li>
+			<li><a href="../src/samputil.cpp"><code>../src/samputil.cpp</code></a></li>
+			<li><a href="src/multiscale.cpp"><code>src/multiscale.cpp</code></a></li>
+		</ul>

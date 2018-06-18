@@ -1,0 +1,135 @@
+// Ilv Version: 4.0
+// File generated: Tue Apr 11 20:05:51 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "page"
+Palettes 4
+1 48640 48640 48640 "black" "normal" "%helvetica-12" 0 solid solid 0 0 0
+"default" 2 "gray" "black" "default" "fixed" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12" 0 solid solid 0 0 0
+3 "cornflowerblue" 65025 65025 65025 "bold" "%helvetica-12-B" 0 solid solid 6 0 0
+IlvObjects 20
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 156 261 185 20 F805 2 "Default" 6
+{ IlvGadgetItem 1 2 4 "&default"  } 
+{ IlvGadgetItem 1 2 4 "&A4"  } 
+{ IlvGadgetItem 1 2 4 "&US_letter"  } 
+{ IlvGadgetItem 1 2 4 "&US_legal"  } 
+{ IlvGadgetItem 1 2 4 "&A3"  } 
+{ IlvGadgetItem 1 2 4 "&B5"  }  6 0 } 544 "PageFormat"
+1
+1 "__ilvCallback" "PageFormatCB"
+0
+3 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 47 166 19 20 F268435468 0 { IlvMessageItem 262153 4 16 4 "&x"  }   } 32 "pagexcmt"
+0
+3 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 180 167 19 20 F268435468 0 { IlvMessageItem 262153 4 16 4 "&y"  }   } 32 "pageycmt"
+0
+3 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 180 196 19 20 F268435468 0 { IlvMessageItem 262153 4 16 4 "&h"  }   } 32 "pagehcmt"
+0
+3 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 48 196 19 20 F268435468 0 { IlvMessageItem 262153 4 16 4 "&w"  }   } 32 "pagewcmt"
+0
+3 { 5 2 IlvTransparentIcon 182 25 "ilviews/appframe/landscap.xpm" "" } 0
+0
+3 { 6 2 IlvTransparentIcon 30 25 "ilviews/appframe/portrait.xpm" "" } 0
+0
+3 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Selector" ]
+0 IlvSelector 0 2
+0 IlvToggle 70 32 116 18 F1 2 1 2 1 0 0 Y "&Portrait" 
+0 IlvToggle 224 32 123 18 F1 2 1 2 1 0 0 Y "&Landscape" 
+ } 32 "Orient"
+0
+3 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 75 166 95 22 2 0 200 64 2 1
+0 IlvNumberField 75 166 80 22 F6 2 2 -1 0 "1" . , 6 0 -9000000 9000000  f 1 1 1 1 } 32 "pagex"
+0
+3 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 75 195 95 22 2 0 200 64 2 1
+0 IlvNumberField 75 195 80 22 F6 2 2 -1 0 "1" . , 6 0 -9000000 9000000  f 1 1 1 1 } 32 "pagew"
+0
+3 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 204 166 95 22 2 0 200 64 2 1
+0 IlvNumberField 204 166 80 22 F6 2 2 -1 0 "1" . , 6 0 -9000000 9000000  f 1 1 1 1 } 32 "pagey"
+0
+3 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 204 195 95 22 2 0 200 64 2 1
+0 IlvNumberField 204 195 80 22 F6 2 2 -1 0 "1" . , 6 0 -9000000 9000000  f 1 1 1 1 } 32 "pageh"
+0
+3 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 244 227 55 22 2 0 200 64 2 1
+0 IlvNumberField 244 227 40 22 F6 2 2 -1 0 "1" . , 6 0 1 9000000  f 1 1 1 1 } 32 "TallPages"
+0
+3 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 89 227 55 22 2 0 200 64 2 1
+0 IlvNumberField 89 227 40 22 F6 2 2 -1 0 "1" . , 6 0 1 9000000  f 1 1 1 1 } 32 "WidePages"
+6144 "Button_1" "ButtonRepeat"
+11 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 148 227 98 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&pageWideBy"  }   } 0
+0
+11 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 304 227 34 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&tall"  }   } 0
+0
+11 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Selector" ]
+0 IlvSelector 0 4
+0 IlvToggle 16 90 320 18 F1 2 1 2 1 0 0 Y "&keepFactor" 
+0 IlvToggle 16 115 320 18 F1 2 1 2 1 0 0 Y "&FitToWholePage" 
+0 IlvToggle 16 140 320 18 F1 2 1 2 1 0 0 Y "&FitToPageArea" 
+0 IlvToggle 16 229 64 18 F1 2 1 2 1 0 0 Y "&FitTo" 
+ } 544 "ScalingMode"
+1
+1 "__ilvCallback" "ScalingCB"
+0
+11 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvTextField 3 260 151 20 F536870919 0 1 -1 0 "&pageFormat" } 0
+0
+11 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvTextField 3 64 341 20 F536870919 0 1 -1 0 "&Scaling" } 0
+0
+11 { 19 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvTextField 3 2 341 20 F536870919 0 1 -1 0 "&orientation" } 0
+0
+Size 346 284
+GeometryHandlers
+1 100 320 346 0 346 0
+6 3 0 0 3  341 0 341 19  0 0 2 0
+ 3 0 0 3  341 0 341 18  0 0 2 0
+ 3 0 0 156  185 0 185 0  0 0 5 0
+ 3 244 0 244  0 0 55 12  0 0 47 0
+ 3 304 0 304  0 0 34 15  0 0 8 0
+ 3 0 0 148  98 0 98 14  0 0 100 0
+1 100 274 284 0 284 0
+0
+Layers 12
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+EOF

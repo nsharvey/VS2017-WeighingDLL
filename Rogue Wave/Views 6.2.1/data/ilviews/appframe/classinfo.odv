@@ -1,0 +1,486 @@
+class ClassInfo
+{
+    string name = "&MainMenu/&MenuFile"
+    string headerFile = ""
+    string headerSymbol = ""
+}
+
+class AllClassInfo
+{
+    ClassInfo[] classInfos
+}
+
+AllClassInfo ViewsClassInfo {
+    classInfos {
+	{
+	    name "Ilv3dBarChart"
+	    headerFile "<ilviews/oldchart/chart.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvArc"
+	    headerFile "<ilviews/graphics/arc.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvArrowButton"
+	    headerFile "<ilviews/gadgets/arrowb.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvArrowLine"
+	    headerFile "<ilviews/graphics/line.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvArrowPolyline"
+	    headerFile "<ilviews/graphics/polyline.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvBarChart"
+	    headerFile "<ilviews/oldchart/chart.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvButton"
+	    headerFile "<ilviews/gadgets/button.h>"
+	    headerSymbol "__Ilv_Gadgets_Button_H"
+	}
+	{
+	    name "IlvHiddenButton"
+	    headerFile "<ilviews/gadgets/button.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvChart"
+	    headerFile "<ilviews/oldchart/chart.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvCircularGauge"
+	    headerFile "<ilviews/graphics/cirgauge.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvCircularScale"
+	    headerFile "<ilviews/graphics/cirscale.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvClosedSpline"
+	    headerFile "<ilviews/graphics/spline.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvColoredToggle"
+	    headerFile "<ilviews/gadgets/ctoggle.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvComboBox"
+	    headerFile "<ilviews/gadgets/combo.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvDateField"
+	    headerFile "<ilviews/gadgets/datfield.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvEllipse"
+	    headerFile "<ilviews/graphics/ellipse.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvFilledArc"
+	    headerFile "<ilviews/graphics/arc.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvFilledEllipse"
+	    headerFile "<ilviews/graphics/ellipse.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvFilledLabel"
+	    headerFile "<ilviews/graphics/label.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvFilledRectangle"
+	    headerFile "<ilviews/graphics/rectangl.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvFilledRoundRectangle"
+	    headerFile "<ilviews/graphics/roundrec.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvFilledSpline"
+	    headerFile "<ilviews/graphics/spline.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvFrame"
+	    headerFile "<ilviews/gadgets/frame.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvGadget"
+	    headerFile "<ilviews/base/gadget.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvGadgetContainerRectangle"
+	    headerFile "<ilviews/gadgets/rectgadc.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvGauge"
+	    headerFile "<ilviews/graphics/gauge.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvGraphicSet"
+	    headerFile "<ilviews/graphics/set.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvIcon"
+	    headerFile "<ilviews/graphics/icon.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvLabel"
+	    headerFile "<ilviews/graphics/label.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvLine"
+	    headerFile "<ilviews/graphics/line.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvListLabel"
+	    headerFile "<ilviews/graphics/lablist.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvManagerRectangle"
+	    headerFile "<ilviews/manager/rectangl.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvMarker"
+	    headerFile "<ilviews/graphics/marker.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvMatrix"
+	    headerFile "<ilviews/gadgets/matrix.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvMenuBar"
+	    headerFile "<ilviews/gadgets/menubar.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvMessageLabel"
+	    headerFile "<ilviews/gadgets/msglabel.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvNotebook"
+	    headerFile "<ilviews/gadgets/notebook.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvNumberField"
+	    headerFile "<ilviews/gadgets/numfield.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvOptionMenu"
+	    headerFile "<ilviews/gadgets/optmenu.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvOutlinePolygon"
+	    headerFile "<ilviews/graphics/outpoly.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvPasswordTextField"
+	    headerFile "<ilviews/gadgets/passwded.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvPolygon"
+	    headerFile "<ilviews/graphics/polyline.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvPolygonChart"
+	    headerFile "<ilviews/oldchart/chart.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvPolyline"
+	    headerFile "<ilviews/graphics/polyline.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvPolylineChart"
+	    headerFile "<ilviews/oldchart/chart.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvRectangle"
+	    headerFile "<ilviews/graphics/rectangl.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvRectangularGauge"
+	    headerFile "<ilviews/graphics/gauge.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvRectangularScale"
+	    headerFile "<ilviews/graphics/scale.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvReliefCircularGauge"
+	    headerFile "<ilviews/graphics/cirgauge.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvReliefDiamond"
+	    headerFile "<ilviews/graphics/relfrect.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvReliefGauge"
+	    headerFile "<ilviews/graphics/gauge.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvReliefLabel"
+	    headerFile "<ilviews/graphics/relflab.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvReliefLine"
+	    headerFile "<ilviews/graphics/relfline.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvReliefRectangle"
+	    headerFile "<ilviews/graphics/relfrect.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvRoundRectangle"
+	    headerFile "<ilviews/graphics/roundrec.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvSCGadgetContainerRectangle"
+	    headerFile "<ilviews/gadgets/rectscgc.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvSCGrapherRectangle"
+	    headerFile "<ilviews/gadgraph/rectscgr.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvSCManagerRectangle"
+	    headerFile "<ilviews/gadmgr/rectscmg.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvSCViewRectangle"
+	    headerFile "<ilviews/gadgets/rectscvi.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvScale"
+	    headerFile "<ilviews/graphics/scale.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvScatterChart"
+	    headerFile "<ilviews/oldchart/chart.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvScrollBar"
+	    headerFile "<ilviews/gadgets/scrollb.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvScrolledComboBox"
+	    headerFile "<ilviews/gadgets/scombo.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvScrolledMatrix"
+	    headerFile "<ilviews/gadgets/scmatrix.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvScrolledStringList"
+	    headerFile "<ilviews/gadgets/sclist.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvSelector"
+	    headerFile "<ilviews/graphics/selector.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvShadowLabel"
+	    headerFile "<ilviews/graphics/shadlab.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvShadowRectangle"
+	    headerFile "<ilviews/graphics/shadrect.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvSheet"
+	    headerFile "<ilviews/gadgets/sheet.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvSlider"
+	    headerFile "<ilviews/gadgets/slider.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvSliderGauge"
+	    headerFile "<ilviews/graphics/gauge.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvSpinBox"
+	    headerFile "<ilviews/gadgets/spinbox.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvSpline"
+	    headerFile "<ilviews/graphics/spline.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvStairChart"
+	    headerFile "<ilviews/oldchart/chart.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvStringList"
+	    headerFile "<ilviews/gadgets/slist.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvText"
+	    headerFile "<ilviews/gadgets/text.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvTextField"
+	    headerFile "<ilviews/gadgets/textfd.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvToggle"
+	    headerFile "<ilviews/gadgets/toggle.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvTransparentIcon"
+	    headerFile "<ilviews/graphics/icon.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvTreeGadget"
+	    headerFile "<ilviews/gadgets/tree.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvViewRectangle"
+	    headerFile "<ilviews/graphics/rectview.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvZoomableIcon"
+	    headerFile "<ilviews/graphics/zicon.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvZoomableTransparentIcon"
+	    headerFile "<ilviews/graphics/zicon.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvToolTip"
+	    headerFile "<ilviews/graphics/tooltip.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvManagerNotebookPage"
+	    headerFile "<ilviews/gadmgr/mgrnbpg.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvFilledCircularGauge"
+	    headerFile "<ilviews/graphics/cirgauge.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvLinkImage"
+	    headerFile "<ilviews/grapher/links.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvOneLinkImage"
+	    headerFile "<ilviews/grapher/links.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvOneSplineLinkImage"
+	    headerFile "<ilviews/grapher/links.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvDoubleLinkImage"
+	    headerFile "<ilviews/grapher/links.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvDoubleSplineLinkImage"
+	    headerFile "<ilviews/grapher/links.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvToolBar"
+	    headerFile "<ilviews/gadgets/toolbar.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvHierarchicalSheet"
+	    headerFile "<ilviews/gadgets/hsheet.h>"
+	    headerSymbol ""
+	}
+	{
+	    name "IlvGridRectangle"
+	    headerFile "<ilviews/graphics/gridrect.h>"
+	    headerSymbol ""
+	}
+    }
+}

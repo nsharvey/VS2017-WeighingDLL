@@ -1,0 +1,20 @@
+var pairs =
+{
+"setname":{"deprecated":1}
+,"deprecated":{"object":1}
+,"object":{"inspector":1}
+,"inspector":{"instead":1}
+,"instead":{"label":1}
+,"label":{"name":1}
+,"name":{"category":1,"selected":1}
+,"category":{"property":1}
+,"property":{"action":1}
+,"action":{"opens":1}
+,"opens":{"dialog":1}
+,"dialog":{"box":1}
+,"box":{"lets":1}
+,"lets":{"give":1}
+,"give":{"name":1}
+,"selected":{"object":1}
+}
+;Search.control.loadWordPairs(pairs);

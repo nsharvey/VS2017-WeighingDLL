@@ -1,0 +1,566 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>Rogue Wave Views - Version 6.2.1</title>
+  </head>
+
+  <body bgcolor=#ffffff>
+    <div align=center><table align=center><td bgcolor=#6b9ece><h1><font color=#ffffff>&nbsp;Rogue Wave Views - Version 6.2.1&nbsp;</font></h1></td></table></div>
+         <h2 align=center><small>(March 2018)</small></h2>
+      <h1 align=center>README file</h1>
+
+<hr width="100%">
+
+<h2>Migration from previous releases</h2>
+All known incompatibilities of this version of Rogue Wave Views with
+previous versions are described in the file <a href="COMPAT.TXT">COMPAT.TXT</a>.<br>
+Please read it if you have any problems migrating your existing applications.
+
+<h2>Getting assistance</h2>
+If you have problems using the Rogue Wave Views libraries please contact
+Rogue Wave customer support at
+<a href="mailto:support@roguewave.com">support@roguewave.com</a>.
+Information may be found in the product documentation.
+
+<h2>Legal information</h2>
+The directory <tt>license</tt> contains the following files:
+<ul>
+<li>Software License Agreement; <tt>license_agreement</tt> (plain text and PDF versions).
+<li>Notices for third-party software; <tt>notices</tt>.
+</ul>
+
+<p>Some directories containing images (both bitmap and vectorial) may also
+contain a file called <code>notices.txt</code> indicating, when it is relevant,
+the license information for these images.</p>
+
+<p>The use of ILM (ex-ILOG License Manager), related files (access.ilm) and
+API, is deprecated since Views 5.4.</p>
+
+<h2>Documentation</h2>
+If you have installed the Rogue Wave Views documentation set, you can
+directly access it by loading these files in a web browser:
+<ul>
+  <li><a href="doc/html/views.html">English version</a></li>
+  <li><a href="doc/html_ja/views.html">Japanese version</a></li>
+</ul>
+The documentation is also available <a href="http://www.roguewave.com/support/product-documentation.aspx">online</a>.
+
+
+<h2>Compilation</h2>
+Rogue Wave Views is delivered with a set of libraries that are stored in a
+directory that depends on the type of machine you are using, the
+operating system it runs on and the compiler you plan to use.<br>
+
+This directory can be one of:
+
+<table border>
+      <tr><th align=left>System name</th>
+	<th align=left>Hardware</th>
+	<th align=left>Operating System</th>
+	<th align=left>Compiler</th></tr>
+
+      <tr><th align=left><tt>hp32_11_3.73</tt></th>
+	<td>HP 9700</td>
+	<td>HP-UX 11.11 or higher</td>
+	<td>HP ANSI C++ A.03.73 or higher using -mt -AA options</td></tr>
+
+      <tr><th align=left><tt>hp64_11_3.73</tt></th>
+	<td>HP 9700</td>
+	<td>HP-UX 11.11 or higher</td>
+	<td>HP ANSI C++ A.03.73 or higher in 64bit mode (+DA2.0W) using -mt -AA options</td></tr>
+
+      <tr><th align=left><tt>ia64_hpux11_6.17</tt></th>
+	<td>ia64 (Itanium 2)</td>
+	<td>HP-UX 11.11 or higher</td>
+	<td>HP ANSI C++ A.06.17 or higher in 64bit mode (+DD64)</td></tr>
+
+      <tr><th align=left><tt>ia64-32_hpux11_6.17</tt></th>
+	<td>ia64 (Itanium 2)</td>
+	<td>HP-UX 11.11 or higher</td>
+	<td>HP ANSI C++ A.06.17 or higher in 32bit mode</td></tr>
+
+      <tr><th align=left><tt>x86_sles10.0_4.1</tt></th>
+	<td>x86</td>
+	<td>SUSE Linux Enterprise Server 10 (linux 2.6, glibc 2.4)</br>
+	    SUSE Linux Enterprise Server 11 (linux 2.6, glibc 2.11)</br>
+	    SUSE Linux Enterprise Server 12 (linux 3.12, glibc 2.19)</td>
+	<td>gcc4.1</br>gcc4.3</br>gcc4.8</td></tr>
+
+      <tr><th align=left><tt>x64_sles10.0_4.1</tt></th>
+	<td>x64 (x86-64)</td>
+	<td>SUSE Linux Enterprise Server 10 (linux 2.6, glibc 2.4)</br>
+	    SUSE Linux Enterprise Server 11 (linux 2.6, glibc 2.11)</br>
+	    SUSE Linux Enterprise Server 12 (linux 3.12, glibc 2.19)</td>
+	<td>gcc4.1</br>gcc4.3</br>gcc4.8</td></tr>
+
+      <tr><th align=left><tt>x86_rhel5.0_4.1</tt></th>
+	<td>x86</td>
+	<td>RedHat Enterprise Linux 5.0 (linux 2.6, glibc 2.5)</br>
+            RedHat Enterprise Linux 6.0 (linux 2.6, glibc 2.12)</br>
+            RedHat Enterprise Linux 7.2 (linux 3.10, glibc 2.19)</td>
+	<td>gcc4.1</br>gcc4.3</br>gcc4.8</td></tr>
+
+      <tr><th align=left><tt>x64_rhel5.0_4.1</tt></th>
+	<td>x64 (x86-64)</td>
+	<td>RedHat Enterprise Linux 5.0 (linux 2.6, glibc 2.5)</br>
+            RedHat Enterprise Linux 6.0 (linux 2.6, glibc 2.12)</br>
+            RedHat Enterprise Linux 7.2 (linux 3.10, glibc 2.19)</td>
+	<td>gcc4.1</br>gcc4.3</br>gcc4.8</td></tr>
+
+      <tr><th align=left><tt>x86_.net2010_10.0</tt></th>
+	<td>x86</td>
+	<td>Windows 7, Server 2003/2008/2012</td>
+	<td>Microsoft Visual C++ .NET 2010 (10.0)</td></tr>
+
+      <tr><th align=left><tt>x64_.net2010_10.0</tt></th>
+	<td>x64 (x86-64)</td>
+	<td>x64 Windows 7, Server 2003/2008/2012</td>
+	<td>Microsoft Visual C++ .NET 2010 (10.0 - 64 bits)</td></tr>
+
+      <tr><th align=left><tt>x86_.net2012_11.0</tt></th>
+	<td>x86</td>
+	<td>Windows 7/8, Server 2003/2008/2012</td>
+	<td>Microsoft Visual C++ .NET 2012 (11.0)</td></tr>
+
+      <tr><th align=left><tt>x64_.net2012_11.0</tt></th>
+	<td>x64 (x86-64)</td>
+	<td>x64 Windows 7/8 Server, 2003/2008/2012</td>
+	<td>Microsoft Visual C++ .NET 2012 (11.0 - 64 bits)</td></tr>
+
+      <tr><th align=left><tt>x86_.net2013_12.0</tt></th>
+	<td>x86</td>
+	<td>Windows 7/8, Server 2003/2008/2012</td>
+	<td>Microsoft Visual C++ .NET 2013 (12.0)</td></tr>
+
+      <tr><th align=left><tt>x64_.net2013_12.0</tt></th>
+	<td>x64 (x86-64)</td>
+	<td>x64 Windows 7/8, Server 2003/2008/2012</td>
+	<td>Microsoft Visual C++ .NET 2013 (12.0 - 64 bits)</td></tr>
+
+      <tr><th align=left><tt>x86_.net2015_14.0</tt></th>
+	<td>x86</td>
+	<td>Windows 7/8/10, Server 2003/2008/2012</td>
+	<td>Microsoft Visual C++ .NET 2015 (14.0)</td></tr>
+
+      <tr><th align=left><tt>x64_.net2015_14.0</tt></th>
+	<td>x64 (x86-64)</td>
+	<td>x64 Windows 7/8/10, Server 2003/2008/2012</td>
+	<td>Microsoft Visual C++ .NET 2015 (14.0 - 64 bits)</td></tr>
+
+      <tr><th align=left><tt>x86_.net2017_15.0</tt></th>
+	<td>x86</td>
+	<td>Windows 7/8/10, Server 2008/2012/2016</td>
+	<td>Microsoft Visual C++ .NET 2017 (15.0)</td></tr>
+
+      <tr><th align=left><tt>x64_.net2017_15.0</tt></th>
+	<td>x64 (x86-64)</td>
+	<td>x64 Windows 7/8/10, Server 2008/2012/2016</td>
+	<td>Microsoft Visual C++ .NET 2017 (15.0 - 64 bits)</td></tr>
+
+      <tr><th align=left><tt>power32_aix6.1_10.1</tt></th>
+	<td>PowerPC</td>
+	<td>AIX 6.1 or higher</td>
+	<td>Visual Age 10.1</td></tr>
+
+      <tr><th align=left><tt>power64_aix6.1_10.1</tt></th>
+	<td>PowerPC</td>
+	<td>AIX 6.1 or higher</td>
+	<td>Visual Age 10.1 in 64bit mode (-q64)</td></tr>
+
+      <tr><th align=left><tt>ultrasparc32_10_11</tt></th>
+	<td>Sun Ultra Sparc</td>
+	<td>Solaris 2.10 or higher</td>
+	<td>SunStudio 11 or higher</td></tr>
+
+      <tr><th align=left><tt>ultrasparc64_10_11</tt></th>
+	<td>Sun Ultra Sparc</td>
+	<td>Solaris 2.10 or higher</td>
+	<td>SunStudio 11 or higher in 64bit mode (-xtarget=ultra -xarch=v9)</td></tr>
+
+      <tr><th align=left><tt>x86_solaris10_11</tt></th>
+	<td>x86</td>
+	<td>Solaris 2.10 or higher</td>
+	<td>SunStudio 11 or higher</td></tr>
+
+      <tr><th align=left><tt>x64_solaris10_11</tt></th>
+	<td>x64 (x86-64)</td>
+	<td>Solaris 2.10 or higher</td>
+	<td>SunStudio 11 or higher in 64bit mode (-xarch=amd64)</td></tr>
+
+    </table>
+
+	It will be referred to as &lt;<tt>system</tt>&gt; in the following text.<br>
+
+	You may need to change the provided makefiles to match your
+	own installation requirements:</br>
+<ul>
+	  <li><tt>VIEWSDIR</tt> must be set to the directory where you unpacked
+	  the product (usually <tt>/usr/local/roguewave/viewsXY</tt> on Unix or
+	  <tt>C:\Program Files\Rogue Wave\Views X.Y</tt> on Windows, where
+	  <tt>X.Y</tt> indicates the current version of Rogue Wave Views);
+	  <li><tt>XINC</tt> and <tt>XLIBS</tt> should be set to the directory
+	  where your X11 include and lib directories are located (only on
+	  Unix platforms);
+	  <li><tt>MINC</tt> and <tt>MLIBS</tt> should be set to the directory
+	  where your Motif include and lib directories are located (only on
+	  Unix platforms);
+</ul>
+
+<h2>Platforms no longer supported</h2>
+No deprecated platform in this version.
+
+<h2>Execution requirements</h2>
+You need to set the environment variable <tt>ILVHOME</tt> to the directory where the
+product has been installed to ensure that every provided binary works
+properly. Usually, you will set:<br>
+
+<h3>(csh/tcsh):</h3>
+<pre>
+        % setenv ILVHOME /usr/local/roguewave/viewsXY</tt>
+</pre>
+<h3>(sh/bash):</h3>
+<pre>
+	$ ILVHOME=/usr/local/roguewave/viewsXY
+	$ export ILVHOME
+</pre>
+<h3>(Windows platforms):</h3>
+<pre>
+	C:\> set ILVHOME=C:\Program Files\Rogue Wave\Views X.Y
+</pre>
+
+Please check with your system administrator the exact location where
+Rogue Wave Views is installed.
+
+<h2>Library build information: (Unix platforms only)</h2>
+If a problem occurs while running your applications, you can retrieve the
+information on the platform that was used to build the library by using the
+shell script called ilvversion.sh, located in the Rogue Wave Views root
+directory.<br>
+
+Go into the specific static subplatform subdirectory of <tt>'lib'</tt> and
+type:
+<pre>
+		../../../ilvversion.sh
+</pre>
+
+Two lines that have the following form will be printed out (these lines may
+be swapped):
+<pre>
+	IlvVersion: X.Y
+        IlvBuild: OS - platform - compiler - display revision
+</pre>
+
+The shell script just locates the strings <tt>'IlvBuild'</tt> and
+<tt>'IlvVersion'</tt> in the library file <tt>libxviews.a</tt> and prints
+ out the result.<br>
+
+If you have installed multiple platforms in the directory <tt>ILVHOME</tt>,
+you can check each of the platforms:
+<pre>
+	$ cd $ILVHOME
+	$ ./ilvversion.sh platform
+</pre>
+where platform is the system identifier of the Rogue Wave Views library (that is,
+the <tt>&lt;system&gt;</tt>, one of <tt>hp32_11_3.73</tt>,
+<tt>power32_aix6.1_10.1</tt> ...).
+
+<h2>Contents</h2>
+
+<h3>Rogue Wave Views Studio</h3>
+        a GUI builder that will help you create and generate Rogue Wave Views
+	applications.
+	<ul>
+	<li>On Unix platforms, the executable file is called <tt>ivfstudio</tt>
+	and is located in the directory <tt>studio/&lt;system&gt;</tt>.
+	<li>On Windows platforms, the executable file is called
+	<tt>ivfstudio_&lt;system&gt;.exe</tt> and is located in the directory
+	<tt>studio\&lt;system&gt;\dll_mda</tt>.
+	</ul>
+<h3>Directories</h3>
+<ul>
+        <li><tt>data/ilviews</tt>: contains the data files used by the
+	library (inspector panels, message databases, and so on).
+        <li><tt>data/images</tt>: Contains image data files.
+        <li><tt>data/icon</tt>  : Contains some icons.
+        <li><tt>data/DCW</tt>   : Contains some DCW-generated files.
+
+        <li><tt>bin</tt>: Contains binary files, along with source code.
+                The <tt>README</tt> file in the bin directory explains how to
+                build these binary files.
+		Two useful programs can be built in
+		 <tt>&lt;ILVHOME&gt;/bin/&lt;system&gt;</tt>:
+			<tt>ilv2data</tt>, which can build a "resource file"
+				that can be linked with your application in
+				order to make it environment-independent.
+			<tt>splitdbm</tt>, which converts pre-3.0 message
+				databases into the new format, including the
+				new language definition and encoding.
+
+        <li><tt>samples</tt> : Contains sample files. You can read the
+		README file by clicking <a href="samples/index.html">here</a>.
+                For each sample, you need to go to the platform directory
+                and run the make utility to build it.
+
+        <li><tt>tools</tt>:  Contains more specific solutions to common
+		problems.
+</ul>
+
+
+<h2>Various versions</h2>
+The libraries are stored in subdirectories of the directory
+<tt>lib/&lt;system&gt;</tt>.<br>
+
+<a name="libs"></a>There are several library files (static and shared
+equivalent):
+
+<ul>
+<li>   Unix platforms:
+	<ul><li><tt>libxviews</tt>: Pure Xlib code of Rogue Wave Views.
+	<li><tt>libmviews</tt>: Motif-dependent code of Rogue Wave Views.
+	</ul>
+
+<li>   Windows platforms:
+	<ul><li><tt>winviews.lib</tt>: Windows-dependent code of
+	Rogue Wave Views.
+	</ul>
+
+<li>   For all platforms (the name should be prefixed with 'lib' on Unix
+   platforms, and have the '.lib' extension on Windows platforms):
+	<ul>
+        <li>Foundation Package</li>
+	<ul>
+        <li><tt>ilog</tt>: Rogue Wave utility classes (arrays, lists, ...).</li>
+        <li><tt>views</tt>: Core library. Includes Standard 2D graphics.</li>
+        <li><a name="libs:ilvgadgt"></a><tt>ilvgadgt</tt>: Core Gadgets Library.
+           <p>This library is provided with the Foundation Package,
+              but can be used and deployed only if you have the "Rogue Wave
+              Views" or "Rogue Wave Views Controls" license. This library
+              contains the following classes:
+              <code>IlvMessageLabel</code>, <code>IlvFrame</code>,
+              <code>IlvButton</code>, <code>IlvToggle</code>,
+              <code>IlvColoredToggle</code>, <code>IlvComboBox</code>,
+              <code>IlvTextField</code>, <code>IlvNumberField</code>,
+              <code>IlvPasswordField</code>,
+              <code>IlvPopupMenu</code>, <code>IlvToolBar</code>,
+              <code>IlvMenuBar</code>, <code>IlvScrollBar</code>,
+              <code>IlvSlider</code>, <code>IlvGadgetItem</code>,
+              <code>IlvMenuItem</code>,
+              <code>IlvGadgetContainer</code>,
+              <code>IlvScrolledView</code>, <code>IlvDialog</code>,
+              <code>IlvIMessageDialog</code>,
+              <code>IlvIInformationDialog</code>,
+              <code>IlvIErrorDialog</code>, <code>IlvIWarner</code>,
+              <code>IlvIQuestionDialog</code>,
+              <code>IlvGadgetContainerRectangle</code>,
+              <code>IlvSCGadgetContainerRectangle</code>,
+              and <code>IlvSCViewRectangle</code>.</p></li>
+	<li><tt>ilvcss</tt>: Base classes for CSS styling. Used by gadgets.</li>
+	<li><tt>ilvvxlook</tt>: Views X (VX) Look and Feel Library.</li>
+	<li><tt>ilvmlook</tt>: Motif Look and Feel Library.</li>
+	<li><tt>ilvwlook</tt>: Windows 3.11 Look and Feel Library.</li>
+	<li><tt>ilvw95look</tt>: Windows 95 Look and Feel Library.</li>
+	<li><tt>ilvwxplook</tt>: Windows XP Look and Feel Library
+		Windows only).</li>
+        <li><tt>ilvprint</tt>: Printing support Library.</li>
+        <li><tt>ilvbmpflt</tt>: Bitmap Filters Library.</li>
+        <li><tt>ilvbmp</tt>: BMP bitmap streamer.</li>
+        <li><tt>ilvwbmp</tt>: WBMP bitmap streamer.</li>
+        <li><tt>ilvpng</tt>: PNG bitmap streamer.</li>
+        <li><tt>ilvjpg</tt>: JPG bitmap streamer.</li>
+        <li><tt>ilvppm</tt>: PBM-PPM bitmap streamer.</li>
+        <li><tt>ilvtiff</tt>: TIFF bitmap streamer.</li>
+        <li><tt>ilvrgb</tt>: SGI RGB bitmap streamer.</li>
+        <li><tt>iljs</tt>: Rogue Wave Script library.</li>
+        <li><tt>ilvjs</tt>: Rogue Wave Views Script implementation.</li>
+        <li><tt>iljsgide</tt>: Rogue Wave Script debugger interface.</li>
+        <li><tt>ilvbuild</tt>: Resource-handling classes for binaries.</li>
+	</ul>
+        <li>Gadgets Package (Controls)</li>
+	<ul>
+        <li><tt>ilvadvgdt</tt>: Advanced Gadgets Library (IlvMatrix,
+		IlvTreeGadget, ...).</li>
+        <li><tt>ilvadvgadmgr</tt>: Manager classes using advanced gadgets.</li>
+        <li><tt>ilvatext</tt>: IlvAnnotext and related classes.</li>
+        <li><tt>ilvedit</tt>: Inspector classes (Color chooser,
+		Font chooser, ...).</li>
+        <li><tt>ilvstates</tt>: States library.</li>
+	<li><tt>ilvavxlook</tt>: Advanced Views X (VX) Look and Feel Library.</li>
+	<li><tt>ilvamlook</tt>: Advanced Motif Look and Feel Library.</li>
+	<li><tt>ilvawlook</tt>: Advanced Windows 3.11 Look and Feel Library.</li>
+	<li><tt>ilvaw95look</tt>: Advanced Windows 95 Look and Feel Library.</li>
+	<li><tt>ilvawxplook</tt>: Advanced Windows XP Look and Feel Library (Windows only).</li>
+        <li><tt>ilvprtdlg</tt>: Printing dialogs Library.</li>
+	</ul>
+	<li>Application Framework Package (Controls)</li>
+	<ul>
+        <li><tt>ilvappframe</tt>: Application Framework Library.</li>
+        <li><tt>ilvappmgr</tt>: Application Framework classes using the
+		Manager package (IlvDvManagerDocument, ...).</li>
+        <li><tt>ilvappgrapher</tt>: Application Framework classes using the
+		Grapher package (IlvDvGrapherDocument, ...).</li>
+        <li><tt>ilvappwizard</tt>: Application Framework Library
+		for dvwizard.</li>
+	</ul>
+        <li>Manager Package (2D Standard)</li>
+	<ul>
+        <li><tt>ilvmgr</tt>: Manager Library (IlvManager and related
+		classes).</li>
+        <li><tt>ilvgadmgr</tt>: Manager classes using gadgets
+		(IlvGadgetManager, ...).</li>
+        <li><tt>ilvmgrprint</tt>: Manager Printing support Library.</li>
+	</ul>
+        <li>Data Access Add-On</li>
+	<ul>
+        <li><tt>dataccess</tt>: Core Data Access libraries (was 'inform'
+		in Rogue Wave InForm 3.0).</li>
+        <li><tt>dbaccess</tt>: Relational databases libraries (was 'dbinform'
+		in Rogue Wave InForm 3.0).</li>
+        <li><tt>dbchart</tt>: Charts-based Data Access classes library.</li>
+        <li><tt>dbgadget</tt>: Gadgets-based Data Access classes library.</li>
+        <li><tt>dbgantt</tt>: Gantt Chart-based Data Access classes library.</li>
+        <li><tt>dbgraphe</tt>: Grapher-based Data Access classes library.</li>
+        <li><tt>dbsqlgad</tt>: Relational Databases Gadgets classes library.</li>
+	</ul>
+        <li>Grapher Package (Advanced 2D)</li>
+	<ul>
+        <li><tt>ilvgrapher</tt>: Grapher Library (IlvGrapher and related
+		classes).</li>
+        <li><tt>ilvgadgraph</tt>: Grapher classes using gadgets
+		(IlvSCGrapherRectangle).</li>
+	</ul>
+	<li>Prototypes Package (Advanced 2D)</li>
+	<ul>
+        <li><tt>ilvproto</tt>: Prototypes Base Library.</li>
+        <li><tt>ilvgdpro</tt>: Prototype classes using gadgets.</li>
+	</ul>
+	<li>Charts Add-On</li>
+	<ul>
+        <li><tt>ilvcharts</tt>: Charts Library (IlvChartGraphic and related
+		classes).</li>
+	</ul>
+	<li>Graph Layout Add-On</li>
+	<ul>
+        <li><tt>ilvlayout</tt>: Core Graph Layout library.</li>
+        <li><tt>ilvbus</tt>: Bus layout library.</li>
+        <li><tt>ilvhierarchical</tt>: Hierarchical layout library.</li>
+        <li><tt>ilvorthlink</tt>: Orthogonal Link layout.</li>
+        <li><tt>ilvrandom</tt>: Random layout library.</li>
+        <li><tt>ilvtree</tt>: Tree layout library.</li>
+	</ul>
+	<li>Gantt Add-On</li>
+	<ul>
+        <li><tt>ilvgantt</tt>: Gantt Chart Library (IlvGanttChart and
+		related classes).</li>
+	</ul>
+	<li>Maps Add-On</li>
+	<ul>
+        <li><tt>ilvmaps</tt>: Core Maps Library.</li>
+        <li><tt>ilvdbmaps</tt>: Database-based maps library.</li>
+	</ul>
+	</ul>
+</ul>
+
+<h2>Using shared libraries</h2>
+	Rogue Wave Views libraries are provided in both static and shared
+	mode on all platforms (please see the next section for Unix users
+        and Motif-based libraries).<br>
+
+	If you use shared libraries on a Unix platform, make sure the
+	dynamic loader can find the Rogue Wave Views libraries. You do that
+	by setting the environment variable <tt>LD_LIBRARY_PATH</tt>
+	(or <tt>SHLIB_PATH</tt> on HP platforms or <tt>LIBPATH</tt>
+	on AIX platforms)
+	to <tt>$ILVHOME/lib/&lt;system&gt;/&lt;shareDir&gt;</tt>.<br>
+        To run Rogue Wave Views Studio (<tt>ivfstudio</tt>), you must also add
+        <tt>$ILVHOME/studio/&lt;system&gt;/&lt;shareDir&gt;</tt> directory to this
+	library path.<br>
+
+	If you use shared libraries on a Windows platform, make sure
+	that the system will actually access the Rogue Wave Views
+	DLLs. Check the system documentation for more information.
+
+<h2>Note for Unix users</h2>
+	On Unix platforms, when you plan to link your application with
+	Rogue Wave Views, you have to decide whether or not it will include pure
+	Motif code. If this is the case, then you need to link with
+	<tt>libmviews</tt>.<br>
+	If you need your application to be a pure Xlib application, then you
+	need to link with <tt>libxviews</tt>.<br>
+	Never link with both, and always link with one of these two.
+	The library <tt>"views"</tt> is likely to be necessary for every
+	application.
+<h3>Important note about Motif and shared libraries</h3>
+            The use of <tt>libmviews</tt> (Motif based) is deprecated in shared
+            library format.<br>
+            Since version 4.0, all shared libraries provided by Rogue Wave Views
+            are built using <tt>libxviews</tt> and are incompatible with
+	    <tt>libmviews</tt>.
+            <tt>libmviews</tt> is only provided as a static library and can
+            only be used with the static version of other Rogue Wave Views
+	    libraries.
+
+<h2>Note for Windows users</h2>
+    On Windows, Rogue Wave Views libraries are provided in several formats
+    due to different versions of the run-time system libraries.
+    Each format has its own subdirectory in
+    <tt>lib\&lt;system&gt\&lt;format&gt;</tt>.
+    Each format needs specific compiler flags as described below:
+
+<ul>
+	<li><tt>stat_mta</tt>: Static library in multithread with static run-time
+		  library.
+		 Flags: <tt>/EHsc /GR /MT</tt> (Multithreaded).
+	<li><tt>stat_mda</tt>: Static library in multithread with dynamic run-time
+		  library using new IOStreams.
+		 Flags: <tt>/EHsc /GR /MD </tt>(Multithreaded  DLL).
+	<li><tt>dll_mda</tt>:  Dynamic library in multithread with dynamic run-time
+		  library using new IOStreams.
+		 Flags: <tt>/EHsc /GR /MD /DILVDLL</tt> (Multithreaded DLL).
+</ul>
+
+        <em>Note:</em> You must link with the system libraries
+        <tt>wsock32.lib</tt> and <tt>imm32.lib</tt>.</br>
+        <em>Note:</em> You must also use the compilation flag
+        <tt>/DILJSTDH</tt> if you want to use Rogue Wave Script in these modes.
+
+
+<h2>Note for Microsoft Visual C++ users</h2>
+<ul>
+    <li>For all your projects, make sure that <tt>wsock32.lib</tt> and
+	<tt>imm32.lib</tt> are specified in the link command line.
+    <li>To debug your program more easily, add the following lines to the
+	section <tt>[AutoExpand]</tt> of the file
+	<tt>%INSTALLDIR%\Common7\Packages\Debugger\autoexp.dat</tt>
+<pre>
+; from Rogue Wave Views
+IlvRect =x = &lt;_orig._x,d&gt; y = &lt;_orig._y,d&gt; width = &lt;_w,u&gt; height = &lt;_h,u&gt;
+IlvPoint =x = &lt;_x,d&gt; y = &lt;_y,d&gt;
+IlvTransformer =x11 = &lt;_x11,g&gt; x12 = &lt;_x12,g&gt; x21 = &lt;_x21,g&gt; x22 = &lt;_x22,g&gt; x0 = &lt;_x0,g&gt; y0 = &lt;_y0,g&gt;
+</pre>
+	These lines let you to visualize the values of the objects
+	that these classes define (instead of their address) in the
+	tooltip that appears when the mouse is positioned over a
+	variable.
+
+    <li>You may get a series of link errors when using the Visual C++
+	integrated development environments to build your project in
+	Debug mode.<br>
+	In Debug mode, to be able to link your application with
+	Visual C++ and the libraries provided in Rogue Wave Views, follow
+	these instructions:
+	<ul>
+		    <li>In Microsoft Visual Studio, select your projects
+			in the <tt>"Solution Explorer"</tt> window
+		    <li>right-click on the selection and choose the
+			<tt>"Properties"</tt> item
+		    <li>In the <tt>"Property Pages"</tt> window, select
+			<tt>"Configuration Properties" -&gt; "C/C++" -&gt; "Preprocessor"</tt>
+		    <li>In the <tt>"Preprocessor Definitions"</tt> field,
+			remove "_DEBUG"
+		    <li>Recompile and relink the application.
+	</ul>
+</ul>
+
+
+</body>
+</html>

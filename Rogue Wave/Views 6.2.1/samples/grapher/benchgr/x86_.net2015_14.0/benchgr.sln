@@ -1,0 +1,6 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{F0FEDFCA-1D63-11E8-96A2-F2B8772C9500}") = "benchgr", "benchgr.vcxproj", "{F0FE8DA4-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Global
+EndGlobal

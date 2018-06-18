@@ -1,0 +1,120 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:55:17 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "toggle"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\toggle.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 17
+2 { 0 P 2
+[ IlvAttachments _IlvAttachments 144  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 5 264 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 512
+1
+1 "__ilvCallback" "apply"
+0
+2 { 1 P 2
+[ IlvAttachments _IlvAttachments 336  1 91 1 5 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 91 5 122 22 F6 2 1 -1 0 "0" } 32 "label"
+0
+2 { 2 P 2
+[ IlvAttachments _IlvAttachments 336  1 91 1 5 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFileSelectorField 91 37 122 22 F6 2 1 -1 0 "0" } 32 "bitmap"
+0
+2 { 3 P 2
+[ IlvAttachments _IlvAttachments 336  1 91 1 5 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 91 68 122 20 F1 2 2
+{ IlvMenuItem 1 2 4 "&left"  } 
+{ IlvMenuItem 65 2 4 "&right"  }  1  } 544 "position"
+1
+1 "__ilvCallback" "PrintType"
+0
+2 { 4 P 2
+[ IlvAttachments _IlvAttachments 336  1 91 1 5 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 91 99 122 22 F6 2 1 -1 0 "0" } 544 "size"
+1
+1 "__ilvCallback" "PrintType"
+0
+2 { 5 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 10 193 83 16 F5 2 1 2 0 0 0 Y "&state" } 544 "state"
+1
+1 "__ilvCallback" "PrintType"
+0
+2 { 6 P 2
+[ IlvAttachments _IlvAttachments 192  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 153 264 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+2 { 7 P 2
+[ IlvAttachments _IlvAttachments 336  1 91 1 5 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 91 130 122 20 F1 2 2
+{ IlvMenuItem 65 2 4 "&radio"  } 
+{ IlvMenuItem 1 2 4 "&checkbox"  }  0  } 544 "type"
+1
+1 "__ilvCallback" "setShape"
+0
+2 { 8 P 2
+[ IlvAttachments _IlvAttachments 336  1 91 1 5 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 91 161 122 20 F1 2 3
+{ IlvMenuItem 1 2 4 "&left"  } 
+{ IlvMenuItem 1 2 4 "&right"  } 
+{ IlvMenuItem 65 2 4 "&center"  }  2  } 32 "text position"
+0
+2 { 9 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 161 76 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&alignment"  }   } 0
+0
+3 { 10 P 1
+[ IlvAttachments _IlvAttachments 464  1 0 1 0 1 35 2 ]
+0 IlvReliefLine 0 256 218 256 1 } 32 "line"
+0
+3 { 11 P 2
+[ IlvAttachments _IlvAttachments 48  1 10 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 5 71 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&label"  }   } 0
+0
+3 { 12 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 37 70 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&bitmap"  }   } 0
+0
+3 { 13 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 68 73 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&position"  }   } 0
+0
+3 { 14 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 99 73 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&size"  }   } 0
+0
+3 { 15 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 130 72 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&shape"  }   } 0
+0
+3 { 16 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 10 217 196 16 F1 2 1 2 0 0 0 Y "&indeterminateMode" } 544 "indeterminate"
+1
+1 "__ilvCallback" "SetIndeterminate"
+0
+Size 218 292
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

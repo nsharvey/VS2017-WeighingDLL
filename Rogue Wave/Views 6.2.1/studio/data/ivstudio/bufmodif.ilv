@@ -1,0 +1,61 @@
+// Ilv Version: 5.2
+// File generated: Thu Apr 10 15:14:30 2008
+// Creator class: IlvGadgetManagerOutput
+FileName "bufmodif"
+PathName "bufmodif.ilv"
+Palettes 3
+0 F "defaultBg" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"default" 1 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+"IlvStToolBar" 2 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 7
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 100 237 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&^ignore"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+6144 "cancel" "save"
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 206 237 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&^cancel"  }   } 544 "cancel"
+1
+1 "__ilvCallback" "cancel"
+4096 "apply"
+2 { 2 1 IlvTransparentIcon 8 13 "default" "" } 32 "bitmap"
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 10 237 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&msave"  }   } 32 "save"
+10240 "apply"
+3 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvText 82 65 204 163 F133 2 Y N 1 1 1 1 0 1
+""
+0 0 0 0 } 32 "text"
+2048 "save"
+3 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 48 37 242 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&buffersModified"  }   } 32 "title2"
+0
+3 { 6 P 2
+[ IlvAttachments _IlvAttachments 48  1 47 1 14 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 47 10 188 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "Title"  }   } 32 "title"
+0
+Size 296 270
+GeometryHandlers
+1 100 0 296 0 296 0
+4 3 206 0 206  0 0 80 1  0 0 10 0
+ 3 0 0 82  204 0 204 4  0 0 10 0
+ 3 0 0 10  0 0 80 3  206 0 206 0
+ 3 0 0 100  0 0 80 0  116 0 116 0
+1 100 0 270 0 270 0
+4 3 237 0 237  0 0 23 0  0 0 10 0
+ 3 237 0 237  0 0 23 3  0 0 10 0
+ 3 237 0 237  0 0 23 1  0 0 10 0
+ 3 0 0 65  163 0 163 4  0 0 42 0
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

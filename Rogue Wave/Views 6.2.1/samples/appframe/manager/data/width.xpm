@@ -1,0 +1,29 @@
+/* XPM */
+static char *alwidth_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 7 1",
+"@ c Black",
+"o c #FFFFFF",
+"  c None",
+"X c #FEFCFA",
+". c #000288",
+"+ c #868986",
+"O c #FEFEFE",
+/* pixels */
+"                ",
+".              .",
+".Xooooooooooooo.",
+".O++++++++++++@.",
+".o@@@@@@@@@@@@@.",
+".              .",
+".              .",
+".Oooo + + +oooO.",
+".o+++     ++++@.",
+".O@@ + + +@@@@@.",
+".              .",
+".              .",
+".oooooo + ooooX.",
+".o++++    +++++.",
+".X@@@@ + @@@@@@.",
+".              ."
+};

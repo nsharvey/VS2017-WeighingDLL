@@ -1,0 +1,1 @@
+0 6 5 104 "NAME" String 1 -1 1 75 ">@<" "Name" 32 104 "BUY" Double 2 -1 2 75 "###,##0.00" "Buy" 32 72 "QUANTITY" Int 3 -1 2 75 "Quantity" 32 104 "PRICE" Double 4 -1 2 75 "###,##0.00" "Last Price" 32 125 "PROFITS" Double 5 -1 2 74 "0.00" "###,##0.00" "Profits" 32 0 0 5 "Milk" 375 100 375 "Wine" 242.5 350 242.5 "Water" 565 1000 565 "Beef" 114.5 550 114.5 "Orange" 378.1 800 378.1 

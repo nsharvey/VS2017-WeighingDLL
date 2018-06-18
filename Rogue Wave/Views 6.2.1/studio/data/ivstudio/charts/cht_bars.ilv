@@ -1,0 +1,23 @@
+// Ilv Version: 4.0
+// File generated: Mon Jun 19 11:48:01 2000
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 2
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 1 114 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Width"  }   } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 119 1 107 22 2 0 200 64 2 1
+0 IlvNumberField 119 1 84 22 F6 2 1 -1 0 "1" . , 6 0 1 2147483647  f 1 0 1 1 } 32 "ItemWidth"
+0
+Size 228 28
+GeometryHandlers
+1 100 0 228 0 228 0
+2 3 0 0 5  114 0 114 0  0 0 109 0
+ 3 119 0 119  0 0 107 1  0 0 2 0
+1 100 0 28 0 28 0
+0
+EOF

@@ -1,0 +1,35 @@
+HKCR
+{
+	DemoATL.DemoATLCtrl.1 = s 'DemoATLCtrl Class'
+	{
+		CLSID = s '{3B10417D-3E6C-11D3-B74F-00C04F68A89D}'
+		'Insertable'
+	}
+	DemoATL.DemoATLCtrl = s 'DemoATLCtrl Class'
+	{
+		CLSID = s '{3B10417D-3E6C-11D3-B74F-00C04F68A89D}'
+		CurVer = s 'DemoATL.DemoATLCtrl.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {3B10417D-3E6C-11D3-B74F-00C04F68A89D} = s 'DemoATLCtrl Class'
+		{
+			ProgID = s 'DemoATL.DemoATLCtrl.1'
+			VersionIndependentProgID = s 'DemoATL.DemoATLCtrl'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'Insertable'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{3B10416F-3E6C-11D3-B74F-00C04F68A89D}'
+			'Version' = s '1.0'
+		}
+	}
+}

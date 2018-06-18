@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvgadmgr -->
+<module name="ilvgadmgr" version="6.2">
+<class name="IlvSCManagerInteractor" rootClass="IlvInteractor" sharedName="SCManager"/>
+<class name="IlvSCManagerRectangle" rootClass="IlvGraphic"/>
+</module>

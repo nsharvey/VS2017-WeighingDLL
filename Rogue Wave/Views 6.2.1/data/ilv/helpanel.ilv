@@ -1,0 +1,11 @@
+// Ilv Version: 2.21
+// File generated: Thu Mar 14 17:16:07 1996
+// Creator class: IlvGadgetManagerOutput
+Palettes 2
+1 "defaultBg" "defaultFg" "button" %helvetica-12-B 0 solid solid 0 0 0
+"default" 0 "defaultBg" "defaultFg" "default" 6x13 0 solid solid 0 0 0
+IlvObjects 3
+2 { 0 0 IlvSCGadgetContainerRectangle 5 5 258 203 "" 1 } 32 "WorkSpace" 1008 1 5 1 5 1 5 1 43 2 2
+2 { 1 0 IlvReliefLine 0 214 268 214 1 } 0 464 1 0 1 0 1 35 2
+2 { 2 1 IlvButton 190 223 73 23 F1 2 16 Y "Close" } 64 "Button" 196 "close" 1 5 1 5
+Size 268 251

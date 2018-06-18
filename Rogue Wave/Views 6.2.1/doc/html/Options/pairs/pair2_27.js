@@ -1,0 +1,26 @@
+var pairs =
+{
+"example":{"representing":1,"represent":1}
+,"representing":{"values":1}
+,"values":{"expressed":1}
+,"expressed":{"radians":1}
+,"radians":{"example":1,"polar":1,"degrees":1,"along":1}
+,"represent":{"data":1}
+,"data":{"form":1}
+,"form":{"expressed":1}
+,"polar":{"chart":1}
+,"chart":{"case":1}
+,"case":{"apply":1,"starting":1}
+,"apply":{"transformation":1}
+,"transformation":{"abscissa":1}
+,"abscissa":{"scale":1}
+,"scale":{"convert":1}
+,"convert":{"radians":1}
+,"degrees":{"case":1}
+,"starting":{"angle":1}
+,"angle":{"range":1}
+,"range":{"map":1}
+,"map":{"radians":1}
+,"along":{"abscissa":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,32 @@
+// Ilv Version: 2.0
+// File generated: Thu Mar 24 18:07:19 1994
+//  IlvGadgetManagerOutput
+Palettes 4
+1 "defaultBg" "defaultFg"  %helvetica-14- 0 solid solid  0 0 0 
+3 "defaultBg" "defaultFg"  %times-12- 0 solid solid  0 0 0 
+0 "defaultBg" "defaultFg"  %courier-12- 0 solid solid  0 0 0 
+2 "defaultBg" "defaultFg"  %helvetica-14-B 0 solid solid  0 0 0 
+IlvObjects 22
+2 { 0 0 IlvTextField 90 37 120 23 2 0 "" } 32 "class"  336  1  90 1  5 2  
+2 { 1 0 IlvTextField 90 153 120 23 2 0 "" } 96 "x" "TextField"  336  1  90 1  5 2  
+2 { 2 0 IlvTextField 90 8 120 23 2 0 "" } 96 "name" "TextField"  336  1  90 1  5 2  
+2 { 3 1 IlvLabel 9 53 "Class" } 0  0   
+2 { 4 1 IlvLabel 9 25 "Name" } 0  0   
+2 { 5 1 IlvLabel 9 170 "X" } 0  0   
+2 { 6 1 IlvLabel 9 81 "Interactor" } 0  0   
+2 { 7 0 IlvTextField 90 66 120 23 2 0 "" } 96 "inter" "TextField"  336  1  90 1  5 2  
+2 { 8 2 IlvButton 75 280 65 30 2 Y "Reset"  } 64 "Button"  132 "reset" 1  5  
+2 { 9 1 IlvLabel 9 199 "Y" } 0  0   
+2 { 10 1 IlvLabel 9 228 "W" } 0  0   
+2 { 11 1 IlvLabel 9 257 "H" } 0  0   
+2 { 12 0 IlvTextField 90 182 120 23 2 0 "" } 96 "y" "TextField"  336  1  90 1  5 2  
+2 { 13 0 IlvTextField 90 211 120 23 2 0 "" } 96 "w" "TextField"  336  1  90 1  5 2  
+2 { 14 0 IlvTextField 90 240 120 23 2 0 "" } 96 "h" "TextField"  336  1  90 1  5 2  
+2 { 15 1 IlvLabel 9 109 "Callback" } 0  0   
+2 { 16 0 IlvTextField 90 95 120 23 2 0 "" } 96 "callb" "TextField"  336  1  90 1  5 2  
+2 { 17 3 IlvReliefLine 6 273 210 273 2 } 0  448  1  5 1  40 2  
+2 { 18 2 IlvButton 145 280 65 30 2 Y "Close"  } 64 "Button"  196 "cancel" 1  5 1  5  
+2 { 19 2 IlvButton 5 280 65 30 2 Y "Apply"  } 64 "Button"  132 "apply" 1  5  
+2 { 20 1 IlvLabel 9 143 "Layer" } 0  0   
+2 { 21 0 IlvTextField 90 124 120 23 2 0 "" } 96 "layer" "TextField"  336  1  90 1  5 2  
+//Size 215 315

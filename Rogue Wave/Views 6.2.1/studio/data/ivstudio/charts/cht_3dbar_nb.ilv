@@ -1,0 +1,16 @@
+// Ilv Version: 4.0
+// File generated: Fri Jul 07 12:58:47 2000
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-13-[Charset:0]" 0 solid solid 0 0 0
+IlvObjects 1
+13 { 0 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvPanelObjectReference IlvPanelObjectReference  "922702866.0" ]
+0 IlvNotebook 0 0 240 200 F1 2 0 2  2
+" { IlvNotebookPageItem 1 2 4 "&General"  }  "gray" "ivstudio/charts/cht_gen.ilv"
+" { IlvNotebookPageItem 1 2 4 "&Specific"  }  "gray" "ivstudio/charts/cht_bar3s.ilv"
+0 0 4 5 2 10 10 10 10  } 32 "Bar3DRectangle"
+0
+Size 240 200
+EOF

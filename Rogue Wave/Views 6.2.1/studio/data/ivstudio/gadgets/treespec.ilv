@@ -1,0 +1,136 @@
+// Ilv Version: 5.0
+// File generated: Mon Feb 04 23:07:01 2002
+// Creator class: IlvGadgetManagerOutput
+FileName "treespec"
+PathName "treespec.ilv"
+Palettes 2
+1 F "gray" "black" "button" "%Microsoft Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 0 F "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0 65535 1
+IlvObjects 18
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 9 119 209 16 F1 2 1 2 0 0 0 Y "&Visible_label" } 32 "TreeLabelItemVisible"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 9 140 210 16 F1 2 1 2 0 0 0 Y "&Image" } 32 "TreeGaphicItemVisible"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFrame 120 158 100 106 F268435468 0 { IlvMessageItem 262169 4 16 4 "&alignment"  }   } 0
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Selector" ]
+0 IlvSelector -1 9
+0 IlvToggle 129 210 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 140 187 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 165 180 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 190 187 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 201 210 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 190 233 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 165 241 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 140 233 18 16 F1 2 1 2 1 0 0 B "noname" 
+0 IlvToggle 165 210 18 16 F1 2 1 2 1 0 0 B "noname" 
+ } 32 "GenAlignmentTreeItems"
+0
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 239 260 205 16 F1 2 1 2 0 0 0 Y "&DragAndDrop" } 32 "TreeDragAndDrop"
+0
+3 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 9 22 203 16 F1 2 1 2 0 0 0 Y "&Show_lines" } 32 "ShowTreeLines"
+6144 "TreeLinesAsRoot" "TreeSample"
+3 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTreeGadget 239 28 197 143 F32 2 A A 0 0 0 0 20 1 1 1 1 1 0 V0 2
+{ IlvTreeGadgetItem 1 2 4 "root" 2
+{ IlvTreeGadgetItem 3 2 4 "First Root" 1 0 "default" 2
+{ IlvTreeGadgetItem 1 2 4 "Leaf 1" 0
+ } { IlvTreeGadgetItem 1 2 4 "Leaf 2" 0
+ }  } { IlvTreeGadgetItem 3 2 4 "Second Root" 1 0 "default" 0
+ }  }  } 32 "TreeSample"
+6144 "ShowTreeLines" "TreeItemsEditable"
+3 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 9 42 201 16 F1 2 1 2 0 0 0 Y "&Lines_as_root" } 32 "TreeLinesAsRoot"
+6144 "TreeShowButtons" "ShowTreeLines"
+3 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 9 62 201 16 F1 2 1 2 0 0 0 Y "&Show_buttons" } 32 "TreeShowButtons"
+6144 "TreeShowToolTips" "TreeLinesAsRoot"
+3 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 9 100 199 16 F1 2 1 2 0 0 0 Y "&Tool_tips" } 32 "TreeShowToolTips"
+6144 "Indent" "TreeShowButtons"
+3 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 239 210 159 20 F1 2 2
+{ IlvMenuItem 65 2 4 "&SingleSelection"  } 
+{ IlvMenuItem 1 2 4 "&ExtendedSelection"  }  0  } 32 "TreeModeSelection"
+6144 "SelectionCallback" "Indent"
+3 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 239 186 120 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Sel_mode"  }   } 0
+0
+3 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFrame 2 0 225 284 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Appearance"  }   } 0
+0
+3 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFrame 232 0 214 182 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Sample"  }   } 0
+0
+3 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 8 158 116 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Indentation"  }   } 0
+0
+3 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 8 185 109 24 2 0 200 64 2 1
+0 IlvNumberField 8 185 97 24 F6 2 2 -1 0 "1234543" . , 3 0 0 2147483647  f 1 1 1 1 } 32 "TreeIndent"
+0
+3 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 239 238 205 16 F1 2 1 2 0 0 0 Y "&Itms_editable" } 32 "TreeItemsEditable"
+6144 "TreeSample" "SelectionCallback"
+3 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 9 82 201 16 F1 2 1 2 0 0 0 Y "&LinkRoots" } 32 "TreeLinkRoots"
+6144 "TreeShowToolTips" "TreeLinesAsRoot"
+Size 453 285
+GeometryHandlers
+2 100 0 230 0 230 0
+ 0 0 223 230 223 230
+12 3 0 0 2  225 0 225 12  0 0 3 0
+ 3 0 0 9  203 0 203 5  0 0 18 0
+ 3 0 0 9  201 0 201 7  20 0 20 0
+ 3 0 0 9  201 0 201 8  0 0 20 0
+ 3 0 0 9  201 0 201 17  0 0 20 0
+ 3 0 0 9  199 0 199 9  0 0 22 0
+ 3 0 0 9  209 0 209 0  0 0 12 0
+ 3 0 0 9  210 0 210 1  0 0 11 0
+ 3 0 0 8  116 0 116 14  0 0 106 0
+ 3 0 0 8  109 0 109 15  0 0 113 0
+ 3 120 0 120  0 0 100 2  0 0 10 0
+ 3 129 0 129  0 0 90 3  0 0 11 0
+6 3 0 0 2  214 0 214 13  0 0 7 1
+ 3 0 0 9  197 0 197 6  0 0 17 1
+ 3 0 0 9  120 0 120 11  0 0 94 1
+ 3 0 0 9  159 0 159 10  0 0 55 1
+ 3 0 0 9  205 0 205 16  0 0 9 1
+ 3 0 0 9  205 0 205 4  0 0 9 1
+1 100 0 285 0 285 0
+7 3 0 0 0  284 0 284 12  0 0 1 0
+ 3 238 0 238  0 0 16 16  0 0 31 0
+ 3 210 0 210  0 0 20 10  0 0 55 0
+ 3 186 0 186  0 0 22 11  0 0 77 0
+ 3 0 0 0  182 0 182 13  0 0 103 0
+ 3 0 0 28  143 0 143 6  0 0 114 0
+ 3 260 0 260  0 0 16 4  0 0 9 0
+Layers 4
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+EOF

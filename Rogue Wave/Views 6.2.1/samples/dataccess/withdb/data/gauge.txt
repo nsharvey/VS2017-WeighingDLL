@@ -1,0 +1,2 @@
+Files: gauge.h gauge.cpp
+Note: Connects a circular gauge to a column in an sql-data-source.

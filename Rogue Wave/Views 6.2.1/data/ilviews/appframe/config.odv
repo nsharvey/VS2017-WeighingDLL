@@ -1,0 +1,224 @@
+; Description of configurations
+; A configuration save the position of all docked panes
+
+class Rect
+{
+	int Left = 0
+	int Top = 0
+	int Width = 0
+	int Height = 0
+}
+
+class Size
+{
+	int Cx = 0
+	int Cy = 0
+}
+
+class Point
+{
+	int X = 0
+	int Y = 0
+}
+
+class PaneLocation
+{
+	string Name = ""
+	string RelativeName = "Main Workspace Area"
+	string RelativePosition = "Top"
+	string DockedState = "DockedHorizontally"
+	bool   Visible = true
+	Rect   UndockedRect
+	Rect   HorizontalRect 
+	Rect   VerticalRect 
+}
+
+class Configuration
+{
+	PaneLocation[] Locations 
+}
+
+class ContainerHandlerConfig
+{
+	string       Type = "MDIChild"
+	PaneLocation PaneConfig
+	bool         MaximizeMDIChild = false
+	bool		 Resizable = true
+	int			 MinimalHSize = 50
+	int			 MinimalVSize = 50
+	string		 DockingConstraint
+	bool         AllowToggleBarFrame = true
+	bool         CreateNewViewsForBarFrame
+}
+
+ContainerHandlerConfig DefaultContainerHandler
+{
+	PaneConfig {
+		RelativePosition "Left"
+		HorizontalRect {
+			Width  150
+			Height 150
+		}
+		VerticalRect {
+			Width  150
+			Height 100
+		}
+	}
+}
+
+; ---------------------------------------------------------------------------
+; Configuration Variables
+; ---------------------------------------------------------------------------
+
+Configuration Default {
+	Locations {
+		{
+			HorizontalRect {
+				Width 653
+				Height 25
+			}
+			UndockedRect {
+				Left 812
+				Top 226
+				Width 244
+				Height 52
+			}
+			VerticalRect {
+				Width 55
+				Height 450
+			}
+			Name "&MainMenu"
+		}
+		{
+			UndockedRect {
+				Width 0
+				Height 0
+			}
+			HorizontalRect {
+				Left 323
+				Width 330
+				Height 25
+			}
+			VerticalRect {
+				Width 28
+				Height 498
+			}
+			Name "&Standard"
+		}
+	}
+}
+
+; ---------------------------------------------------------------------------
+; Application class
+
+class ApplicationConfig
+{
+    bool showStarterDialog = true
+    bool showTipsOfTheDay = true
+    string name
+    string superClass = "IlvDvApplication"
+    string classname
+}
+
+ApplicationConfig App {
+}
+
+; ---------------------------------------------------------------------------
+; Container classes
+
+class ContainerConfiguration
+{
+	Rect BoundingBox 
+    bool FrameMaximizing = false
+    bool BigIcons = false
+    bool ShowTooltips = true
+    bool WithShortcuts = true
+	bool ShowStatusBar = true
+    string icon
+    string title = "AppFrame Application"
+	bool SortOpenedWindow = true
+}
+
+; ---------------------------------------------------------------------------
+; Container informations
+
+ContainerConfiguration MainPanel {
+	BoundingBox {
+		Left 221
+		Top 69
+		Width 653
+		Height 500
+	}
+}
+
+; ---------------------------------------------------------------------------
+; Module informations
+
+class Module
+{
+    string Path
+    string Name
+    bool   ToBeLoaded
+}
+
+class Modules {
+    Module[] ModulesList
+    Rect     DlgRect
+}
+
+; ---------------------------------------------------------------------------
+; Dialog informations
+
+class Dialog {
+    Rect     DlgRect
+    int      lastSelectedTab = 0
+    int[]    splitters
+}
+
+; ---------------------------------------------------------------------------
+; Application modules
+
+Modules AppModules {
+    ModulesList {
+    }
+}
+
+; ---------------------------------------------------------------------------
+; Transformer class
+; ---------------------------------------------------------------------------
+class Transformer
+{
+    double x11 = 0
+    double x12 = 0
+    double x21 = 0
+    double x22 = 0
+    double x0  = 0
+    double y0  = 0
+}
+
+; ---------------------------------------------------------------------------
+; Printing classes
+; ---------------------------------------------------------------------------
+class PrinterInfo
+{
+    bool	Portrait = true
+    Rect	PageArea
+    Rect	SourceSelection
+    string      PrinterDescription
+    Rect        Margins { Left 20
+			  Top  20
+			  Width 20
+			  Height 20 }
+    int         DumpPartMode = 0
+    int         ScalingMode = 0
+    int         PaperFormat = 0
+    int         FitWidePages = 1
+    int         FitTallPages = 1
+    bool        UseColor = false
+}
+
+PrinterInfo Default {
+}
+
+PrinterInfo PostScript {
+}

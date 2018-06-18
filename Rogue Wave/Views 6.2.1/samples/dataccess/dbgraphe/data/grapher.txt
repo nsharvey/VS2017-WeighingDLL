@@ -1,0 +1,14 @@
+Files: grapher.h grapher.cpp 
+Commands: 
+  - To refresh the grapher, you should: Click into the grapher then Press the F9 key
+  - To zoom: Press <Shift> Z
+  - To unzoom: Press <Shift> U
+  - To fit to contents: Press <Shift> F
+Note: Shows how to customize a IliDbGrapher :
+  - Add several types of links and of nodes
+  - Use the double click to modify a node or a link
+  - Add a map into the background
+  - Add a dialog to edit the parameters of one node
+  - Add a dialog to edit the parameter of one link
+
+

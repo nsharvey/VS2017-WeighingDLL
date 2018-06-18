@@ -1,0 +1,38 @@
+/****************************************************************************
+
+
+windows.rc
+
+
+*****************************************************************************/
+#if !defined(WS_POPUP)
+#include <windows.h>
+#endif
+
+MAINMENU MENU 
+{
+ POPUP "Main Menu"
+ {
+  MENUITEM "Quit", 1001
+ }
+
+ POPUP "Image"
+ {
+  MENUITEM "Tiger", 1010
+  MENUITEM "Elefante", 1011
+ }
+
+}
+
+TOPVIEW DIALOG 3, 15, 292, 208
+STYLE WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX | WS_MAXIMIZEBOX
+CAPTION "Rogue Wave Views"
+MENU MAINMENU
+{
+ PUSHBUTTON "Change Background", 1002, 180, 190, 108, 14
+ LTEXT "Image:", -1, 4, 3, 40, 8
+ CONTROL "", 1000, "IlogViewsWndClass", 0 | WS_CHILD | WS_VISIBLE, 5, 16, 266, 169
+ CONTROL "Zoom", 1003, "SCROLLBAR", SBS_VERT | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 276, 18, 10, 165
+}
+
+ILVICON ICON DISCARDABLE "VIEWS.ICO"

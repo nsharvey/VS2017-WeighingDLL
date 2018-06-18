@@ -1,0 +1,42 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Gadgets - Samples: dockable</title>
+	</head>
+    <body>
+		<a name="dockable"><h1>Sample: <code>dockable</code></h1><h1 class="subtitle">Rogue Wave Views Gadgets Dockable Sample</h1></a>
+		<p>This sample shows how to create a basic application using the dockable windows. It also shows how to save and restore a docking configuration.</p>
+		<img src="data/dockable.png"/>
+		<p>This sample implements the <code>DockableApplication</code> class, a possible base class for a standard dockable application. This class is declared in the <code>dockapp.h</code> file and defined in the <code>dockapp.cpp</code> file.</p><p>To illustrate the use of the <code>DockableApplication</code> class, a small application has been written in the <code>dockable.h</code> and <code>dockable.cpp</code> files. The application sets up a few panes, and displays them in the main window of the application. When leaving the application, the current docking configuration is saved, and will be used the next time the application will be launched.</p><p>A window whose title is &quot;Pane Visibility&quot; is also created to let the user change the visibility of each pane. Each toggle button handles the visibility of a pane of the application, as shown below:</p><img src="data/visipane.png"/><p>In addition, you can save and restore docking configurations:</p>
+<ul>
+<li>Shitf + S: Save the current docking configuration in memory.</li>
+<li>Shift + R: Restore the docking configuration saved by the last Shift + S.</li>
+</ul>
+<p>Note that these accelerators are only active when the &quot;Pane Visibility&quot; window has the keyboard focus.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvPane</code></li>
+			<li><code>IlvDockable</code></li>
+			<li><code>IlvDockableContainer</code></li>
+			<li><code>IlvDockableMainWindow</code></li>
+			<li><code>IlvDockingPaneLocation</code></li>
+			<li><code>IlvDockingConfiguration</code></li>
+			<li><code>IlvDockingConfigurationHandler</code></li>
+			<li><code>IlvToggle</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/dockapp.h"><code>include/dockapp.h</code></a></li>
+			<li><a href="src/dockapp.cpp"><code>src/dockapp.cpp</code></a></li>
+			<li><a href="src/dockable.cpp"><code>src/dockable.cpp</code></a></li>
+		</ul>

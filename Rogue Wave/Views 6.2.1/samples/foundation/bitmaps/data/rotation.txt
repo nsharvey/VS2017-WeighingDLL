@@ -1,0 +1,6 @@
+Files: animbm.cpp, animbm.h
+This sample shows how to use the bitmap data to perform a rotation
+of a bitmap.
+This sample also shows how to apply a Blur effect on a picture.
+You can use the 'space' shortcut (or to click on the picture) to
+turn on/off the Blur effect.

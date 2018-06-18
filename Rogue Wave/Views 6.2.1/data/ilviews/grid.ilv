@@ -1,0 +1,174 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:42:27 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "grid"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\grid.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 32
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 5 411 119 F268435468 0 { IlvMessageItem 262169 4 16 4 "&grid"  }   } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 124 411 134 F268435468 0 { IlvMessageItem 262169 4 16 4 "&window"  }   } 0
+0
+2 { 2 0 IlvReliefLine 0 265 421 265 1 } 32 "line"
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 187 28 40 22 F6 2 1 -1 0 "0" } 544 "oy"
+1
+1 "__ilvCallback" "doApply"
+0
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 188 89 40 22 F6 2 1 -1 0 "1" } 544 "ey"
+1
+1 "__ilvCallback" "doApply"
+0
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvGadget 169 202 122 23 2 } 32 "bgBox"
+0
+2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSlider 143 151 262 16 F5 2 0 2400 500 10 1 10 } 544 "sldWidth"
+1
+1 "__ilvCallback" "sldResize"
+0
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSlider 143 176 262 16 F5 2 0 2400 500 10 1 10 } 544 "sldHeight"
+1
+1 "__ilvCallback" "sldResize"
+0
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 187 59 40 22 F6 2 1 -1 0 "5" } 544 "sy"
+1
+1 "__ilvCallback" "doApply"
+0
+2 { 9 0 IlvLabel 104 46 "x" } 0
+0
+2 { 10 0 IlvLabel 175 46 "y" } 0
+0
+2 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 82 148 47 22 F6 2 1 -1 0 "" } 544 "tfWidth"
+1
+1 "__ilvCallback" "tfResize"
+0
+2 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 82 173 47 22 F6 2 1 -1 0 "" } 544 "tfHeight"
+1
+1 "__ilvCallback" "tfResize"
+0
+2 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 117 28 40 22 F6 2 1 -1 0 "0" } 544 "ox"
+1
+1 "__ilvCallback" "doApply"
+0
+2 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 117 59 40 22 F6 2 1 -1 0 "5" } 544 "sx"
+1
+1 "__ilvCallback" "doApply"
+0
+2 { 15 0 IlvLabel 104 78 "x" } 0
+0
+2 { 16 0 IlvLabel 175 78 "y" } 0
+0
+2 { 17 0 IlvLabel 175 108 "y" } 0
+0
+2 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 117 89 40 22 F6 2 1 -1 0 "1" } 544 "ex"
+1
+1 "__ilvCallback" "doApply"
+0
+2 { 19 0 IlvLabel 103 108 "x" } 0
+0
+2 { 20 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 240 29 75 16 F1 2 1 2 0 0 0 Y "&active" } 544 "act"
+1
+1 "__ilvCallback" "doApply"
+0
+2 { 21 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 240 60 77 16 F1 2 1 2 0 0 0 Y "&visible" } 544 "vis"
+1
+1 "__ilvCallback" "doApply"
+0
+2 { 22 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 298 202 107 23 F13 2 { IlvMessageItem 262145 4 16 4 "&select"  }   } 512
+1
+1 "__ilvCallback" "selectBG"
+0
+2 { 23 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 343 273 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+3 { 24 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 16 170 59 29 F268435468 0 { IlvMessageItem 262169 4 16 4 "&height"  }   } 0
+0
+3 { 25 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 16 146 60 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&width"  }   } 0
+0
+3 { 26 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 18 26 69 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&origin"  }   } 0
+0
+3 { 27 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 18 57 85 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&spacing"  }   } 0
+0
+3 { 28 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 18 87 73 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&show"  }   } 0
+0
+3 { 29 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 16 201 140 25 F268435468 0 { IlvMessageItem 262169 4 16 4 "&background"  }   } 0
+0
+3 { 30 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 16 228 140 21 F268435468 0 { IlvMessageItem 262169 4 16 4 "&backgroundBitmap"  }   } 0
+0
+3 { 31 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFileSelectorField 169 228 236 22 F6 2 1 -1 0 "" } 544 "bgBitmap"
+2
+1 "__ilvCallback" "selBgBitmap"
+1 "__ilvFocusOut" "selBgBitmap"
+0
+Size 421 301
+GeometryHandlers
+1 100 350 421 0 421 0
+9 3 0 0 5  411 0 411 0  0 0 5 0
+ 3 0 0 5  411 0 411 1  0 0 5 0
+ 3 0 0 143  262 0 262 6  0 0 16 0
+ 3 0 0 143  262 0 262 7  0 0 16 0
+ 3 0 0 169  236 0 236 31  0 0 16 0
+ 3 0 0 0  421 0 421 2  0 0 0 0
+ 3 0 0 169  122 0 122 5  0 0 130 0
+ 3 298 0 298  0 0 107 22  0 0 16 0
+ 3 343 0 343  0 0 73 23  0 0 5 0
+1 100 300 301 0 301 0
+2 3 264 0 264  0 0 2 2  0 0 35 0
+ 3 273 0 273  0 0 23 23  0 0 5 0
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

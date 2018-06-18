@@ -1,0 +1,13 @@
+## ----------------------------------------------------------- -*- Makefile -*-
+##
+## This makefile declares the target of the RDBMS specific examples supplied
+## with Rogue Wave DB Link.
+##
+## It is included by <RDBMS>/$(SYSTEM)/Makefile
+## For more informations, see that Makefile and the file
+## $(EXSRCDIR)/makefile.dbl
+##
+## ----------------------------------------------------------------------------
+
+# -----------------------------
+# Nothing specific yet

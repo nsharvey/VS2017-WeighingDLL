@@ -1,0 +1,48 @@
+// Ilv Version: 3.1
+// File generated: Sun Jan 17 15:16:03 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "sqldspn2"
+PathName "dbstudio/sqldspn2.ilv"
+Palettes 4
+3 "gray" "black" "small" "%arial-10-" 0 solid solid 0 0 0
+2 "lightgrey" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+"IlvStMenu" 0 "gray" "black" "menu" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+1 48640 48640 48640 "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 4
+2 { 0 0 IlvMenuBar 2 2 458 26 F295 2 2 1
+IlvMenuItem 67108865 2 4 "&menu_Query"  0 IlvPopupMenu 0 0 230 249 F166 2 2 15
+IlvMenuItem 33554433 2 4 "&menu_AddTable"  "onAddTable" 
+IlvMenuItem 33554433 2 4 "&menu_EditTable"  "onEditTable" 
+IlvMenuItem 33554433 2 4 "&menu_RemoveTable"  "onRemoveTable" 
+IlvMenuItem 0 2 4  
+IlvMenuItem 33554433 2 4 "&menu_SyncroTable"  "onSyncroTable" 
+IlvMenuItem 33554433 2 4 "&menu_SyncroAll"  "onSyncroAllTables" 
+IlvMenuItem 0 2 4  
+IlvMenuItem 33554433 2 4 "&menu_AppendColumn"  "onAppendColumn" 
+IlvMenuItem 33554433 2 4 "&menu_InsertColumn"  "onInsertColumn" 
+IlvMenuItem 33554433 2 4 "&menu_DeleteColumn"  "onDeleteColumn" 
+IlvMenuItem 0 2 4  
+IlvMenuItem 33554433 2 4 "&menu_EditJoin"  "onEditJoin" 
+IlvMenuItem 33554433 2 4 "&menu_DeleteJoin"  "onDeleteJoin" 
+IlvMenuItem 0 2 4  
+IlvMenuItem 33554433 2 4 "&menu_ViewSource"  "onViewSource"  16    0 } 32 "menubar"
+368 1 0 1 0 1 0 2
+2 { 1 1 IlvLabel 204 -86 "Remove Table ..." } 0
+0
+3 { 2 2 IlvSCGrapherRectangle 5 31 438 120 YY } 96 "grapher" "SCManager"
+0
+3 { 3 P 1
+[ IlvPanelObjectReference IlvPanelObjectReference  "916503894.0" ]
+3 IlvNotebook 2 184 458 169 2 6
+"&page_Select" "" 1 "gray" ""
+"&page_Having" "" 1 "gray" ""
+"&page_Datatype" "" 1 "gray" ""
+"&page_Look" "" 1 "gray" ""
+"&page_Mapping" "" 1 "gray" ""
+"&page_Parameters" "" 1 "gray" ""
+0 0 8 0 0 5 2 10 10 10 10  } 544 "notebook"
+1
+1 "__ilvCallback" "onSelectPart"
+0
+Size 458 368
+EOF

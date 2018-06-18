@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvgadgraph -->
+<module name="ilvgadgraph" version="6.2">
+<class name="IlvSCGrapherRectangle" rootClass="IlvGraphic"/>
+</module>

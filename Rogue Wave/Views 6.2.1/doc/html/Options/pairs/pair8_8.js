@@ -1,0 +1,24 @@
+var pairs =
+{
+"dialog":{"boxes":1,"box":1}
+,"boxes":{"common":1,"called":1}
+,"common":{"data":1}
+,"data":{"access":1}
+,"access":{"gadgets":1}
+,"gadgets":{"inspectors":1}
+,"inspectors":{"dialog":1,"described":1}
+,"called":{"various":1}
+,"various":{"data":1}
+,"described":{"section":1}
+,"section":{"find":1}
+,"find":{"information":1}
+,"information":{"following":1}
+,"following":{"topics":1}
+,"topics":{"font":1}
+,"font":{"chooser":1}
+,"chooser":{"dialog":1}
+,"box":{"color":1,"file":1}
+,"color":{"chooser":1}
+,"file":{"chooser":1}
+}
+;Search.control.loadWordPairs(pairs);

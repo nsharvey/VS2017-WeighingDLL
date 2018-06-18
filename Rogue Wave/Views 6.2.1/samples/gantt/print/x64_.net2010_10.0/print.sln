@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("CF1A10C8-1D68-11E8-81D0-E787772C9500") = "print", "print.vcxproj", "CF19BF6A-1D68-11E8-81D0-E787772C9500"
+EndProject
+
+Global
+EndGlobal
+

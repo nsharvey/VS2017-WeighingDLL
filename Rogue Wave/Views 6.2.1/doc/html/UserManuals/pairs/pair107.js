@@ -1,0 +1,22 @@
+var pairs =
+{
+"selecttranslatemode":{"label":1}
+,"label":{"translate":1}
+,"translate":{"path":1,"view":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"editing":1}
+,"editing":{"modes":1,"graphics":1}
+,"modes":{"toolbar":1}
+,"toolbar":{"(when":1}
+,"(when":{"editing":1}
+,"graphics":{"grapher":1}
+,"grapher":{"buffers)":1}
+,"buffers)":{"category":1}
+,"category":{"mode":1}
+,"mode":{"action":1}
+,"action":{"selects":1}
+,"selects":{"translate":1}
+,"view":{"mode":1}
+}
+;Search.control.loadWordPairs(pairs);

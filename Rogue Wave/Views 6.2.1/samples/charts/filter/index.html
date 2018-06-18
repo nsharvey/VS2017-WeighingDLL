@@ -1,0 +1,60 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Charts - Samples: filter</title>
+	</head>
+    <body>
+		<a name="chfilter"><h1>Sample: <code>chfilter</code></h1><h1 class="subtitle">Using Filter to Display Huge Data Sets</h1></a>
+		<p>Shows how to use a predefined filter to display a large number of points.</p>
+		<img src="data/filter.png"/>
+		<p><P>
+   This sample shows you how the <CODE>IlvChartPointsFilter</CODE> class can be associated 
+   with displayers that are connected to huge data sets. The predefined 
+   <CODE>IlvChartPointsFilterFactory</CODE> class is used to set the 
+   filtering mechanism on the displayers. You can invoke the sample program with three
+   optional parameters:
+   </P>
+   <UL>
+   <LI> The first parameter gives the <EM>number of points</EM> of each displayers.</LI>
+   <LI> The second parameter gives the <EM>number of displayers</EM>.</LI>
+   <LI> The third parameter gives the <EM>cluster size</EM> of the filter. This value,
+   expressed in screen pixels, gives the size of the area where points are pruned 
+   by the filter.</LI>
+   </UL>
+   <P>
+   If no parameter is given, the sample creates three displayers with <B>500000</B> points 
+   each. The cluster default size is 5.
+   </P>
+   <P>
+   The following interactions are available:
+   <UL>
+   <LI><EM>Zooming</EM> (Drag with the left button to zoom, shift key + drag with the left button to unzoom).</LI>
+   <LI><EM>Panning</EM> (Drag with the right button).</LI>
+   <LI><EM>Scrolling</EM> (With the arrow keys).</LI>
+   </UL>
+   </P></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvCartesianChart</code></li>
+			<li><code>IlvPolylineChartDisplayer</code></li>
+			<li><code>IlvChartPointsFilter</code></li>
+			<li><code>IlvChartPointsFilterFactory</code></li>
+			<li><code>IlvChartInteractorManager</code></li>
+			<li><code>IlvChartInteractor</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="../include/samputil.h"><code>../include/samputil.h</code></a></li>
+			<li><a href="../src/samputil.cpp"><code>../src/samputil.cpp</code></a></li>
+			<li><a href="src/chfilter.cpp"><code>src/chfilter.cpp</code></a></li>
+		</ul>

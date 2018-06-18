@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <STYLE type="text/css">
+    H1 {border-width: 0; border: solid; text-align: center;
+        font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+    H1.subtitle {text-align: center; border: none;
+        font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+    Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+    P  {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+    </STYLE>
+  <title>Rogue Wave Views 6.2 - Data Access Samples Tables</title>
+  </head>
+  <p>The Data Access samples use two database tables. You can use your
+      own database system tools to create the two tables, using the
+      SQL statement below as a model. These statements are based on
+      the SQL2 standard.
+<br>Alternatively, you can use the 'SQL Schema Editor' option in
+      'dbstudio' program with file 'samples/dataccess/samples.ilx'.
+  <body>
+        <h1>Data Access Sample Database Schema</a></h1>
+            <h1 class="subtitle">Table I_EMP</h1>
+            <pre>   CREATE TABLE I_EMP (
+	   EMPNO   INTEGER         NOT NULL,
+	   NAME    VARCHAR(25)     NOT NULL,
+	   STATUS  INTEGER         NOT NULL,
+	   DEPTNO  INTEGER         NOT NULL,
+	   SALARY  REAL            NULL,
+	   PRIMARY KEY (EMPNO))</pre>
+            <p><strong>Sample data</strong></p>
+            <table border>
+                <tr><th>EMPNO</th>
+                    <th>NAME</th>
+                    <th>STATUS</th>
+                    <th>DEPTNO</th>
+                    <th>SALARY</th></tr>
+                <tr><td align=right>1</td>
+                    <td>Rochette</td>
+                    <td align=right>2</td>
+                    <td align=right>1</td>
+                    <td align=right>6000</td></tr>
+                <tr><td align=right>2</td>
+                    <td>Fernandez</td>
+                    <td align=right>1</td>
+                    <td align=right>1</td>
+                    <td align=right>7500</td></tr>
+                <tr><td align=right>3</td>
+                    <td>Goodman</td>
+                    <td align=right>2</td>
+                    <td align=right>4</td>
+                    <td align=right>6300</td></tr>
+                <tr><td align=right>4</td>
+                    <td>Thomasson</td>
+                    <td align=right>1</td>
+                    <td align=right>2</td>
+                    <td align=right>8000</td></tr>
+                <tr><td align=right>5</td>
+                    <td>Williams</td>
+                    <td align=right>2</td>
+                    <td align=right>2</td>
+                    <td align=right>4000</td></tr>
+                <tr><td align=right>6</td>
+                    <td>Wong</td>
+                    <td align=right>2</td>
+                    <td align=right>3</td>
+                    <td align=right>7700</td></tr>
+                <tr><td align=right>7</td>
+                    <td>Bornstein</td>
+                    <td align=right>1</td>
+                    <td align=right>3</td>
+                    <td align=right>8600</td></tr>
+                <tr><td align=right>8</td>
+                    <td>Harrison</td>
+                    <td align=right>2</td>
+                    <td align=right>2</td>
+                    <td align=right>4575</td></tr>
+                <tr><td align=right>9</td>
+                    <td>Horner</td>
+                    <td align=right>1</td>
+                    <td align=right>4</td>
+                    <td align=right>6375</td></tr>
+                <tr><td align=right>10</td>
+                    <td>Tanaka</td>
+                    <td align=right>1</td>
+                    <td align=right>5</td>
+                    <td align=right>9000</td></tr>
+        </table>
+            <h1 class="subtitle">Table I_DEPT</h1>
+            <pre>   CREATE TABLE I_DEPT (
+	   DEPTNO  INTEGER         NOT NULL,
+	   NAME    VARCHAR(25)     NOT NULL,
+	   MANAGER VARCHAR(25)     NOT NULL,
+	   PRIMARY KEY (DEPTNO))</pre>
+            <p><strong>Sample data</strong></p>
+            <table border>
+                <tr><th>DEPTNO</th>
+                    <th>NAME</th>
+                    <th>MANAGER</th></tr>
+                <tr><td align=right>1</td>
+                    <td>Administration</td>
+                    <td>Fernandez</td></tr>
+                <tr><td align=right>2</td>
+                    <td>Marketing</td>
+                    <td>Thomasson</td></tr>
+                <tr><td align=right>3</td>
+                    <td>R & D</td>
+                    <td>Bornstein</td></tr>
+                <tr><td align=right>4</td>
+                    <td>Documentation</td>
+                    <td>Horner</td></tr>
+                <tr><td align=right>5</td>
+                    <td>Finance</td>
+                    <td>Tanaka</td></tr>
+        </table>
+    </body>
+</html>

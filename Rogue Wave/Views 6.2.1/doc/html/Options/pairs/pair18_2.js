@@ -1,0 +1,21 @@
+var pairs =
+{
+"ilitoggleselector":{"ilitoggleselector":1,"hierarchy":1,"class":1}
+,"hierarchy":{"example":1}
+,"example":{"gadget":1}
+,"gadget":{"ilitoggleselector":1,"contains":1,"corresponds":1,"checked":1}
+,"class":{"defines":1}
+,"defines":{"gadget":1}
+,"contains":{"toggle":1}
+,"toggle":{"gadgets":1,"gadget":1}
+,"gadgets":{"toggle":1,"gadget":1}
+,"corresponds":{"row":1}
+,"row":{"foreign":1}
+,"foreign":{"table":1}
+,"table":{"within":1}
+,"within":{"toggle":1}
+,"checked":{"particular":1}
+,"particular":{"time":1}
+,"time":{"ilitoggleselectorstyle":1}
+}
+;Search.control.loadWordPairs(pairs);

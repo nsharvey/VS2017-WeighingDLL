@@ -1,0 +1,24 @@
+// Ilv Version: 4.0
+// File generated: Thu Mar  2 20:01:21 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "groupedit"
+PathName "/nfs/views-work/work.baudel/studio/data/ivstudio/protos/groupedit.ilv"
+Palettes 1
+"IlvStText" 0 "Grey" "black" "default" "fixed" 0 solid solid 0 0 0
+IlvObjects 1
+1 { 0 P 1
+[ IlvPanelObjectReference IlvPanelObjectReference  "925211794.0" ]
+0 IlvNotebook 0 0 354 448 F1 2 0 2  4
+" { IlvNotebookPageItem 1 2 4 "&interface"  }  B "ivstudio/protos/interface.ilv"
+" { IlvNotebookPageItem 1 2 4 "&graphics"  }  B "ivstudio/protos/graphics.ilv"
+" { IlvNotebookPageItem 1 2 4 "&displayb"  }  B "ivstudio/protos/displayb.ilv"
+" { IlvNotebookPageItem 1 2 4 "&interaction"  }  B "ivstudio/protos/interaction.ilv"
+0 0 4 3 3 2 2 2 2  } 96 "notebook" "Gadget"
+0
+Size 354 448
+GeometryHandlers
+1 100 0 354 0 354 0
+1 3 0 0 0  354 0 354 0  0 0 0 0
+1 100 0 448 0 448 0
+1 3 0 0 0  448 0 448 0  0 0 0 0
+EOF

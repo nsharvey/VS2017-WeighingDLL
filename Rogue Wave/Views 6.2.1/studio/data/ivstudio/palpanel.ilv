@@ -1,0 +1,36 @@
+// Ilv Version: 5.2
+// File generated: Thu Apr 10 15:46:39 2008
+// Creator class: IlvGadgetManagerOutput
+FileName "palpanel"
+PathName "palpanel.ilv"
+Palettes 2
+1 F "defaultBg" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"default" 0 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+IlvObjects 3
+6 { 0 P 1
+[ IlvPanelObjectReference IlvPanelObjectReference  "1193124483.0" ]
+0 IlvSCGadgetContainerRectangle 10 10 233 556 "" 3 } 32 "scgadrect"
+0
+6 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 10 576 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&help"  }   } 512
+1
+1 "__ilvCallback" "help"
+0
+6 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 163 576 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 512
+1
+1 "__ilvCallback" "close"
+0
+Size 253 609
+GeometryHandlers
+1 100 200 253 0 253 0
+3 3 0 0 10  0 0 80 1  163 0 163 0
+ 3 0 0 10  233 0 233 0  0 0 10 0
+ 3 163 0 163  0 0 80 2  0 0 10 0
+1 100 200 609 0 609 0
+3 3 576 0 576  0 0 23 1  0 0 10 0
+ 3 0 0 10  556 0 556 0  0 0 43 0
+ 3 576 0 576  0 0 23 2  0 0 10 0
+EOF

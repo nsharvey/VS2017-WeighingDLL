@@ -1,0 +1,134 @@
+// Ilv Version: 3.1
+// File generated: Thu Nov  5 19:48:19 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "resource"
+PathName "/nfs/home/baudel/Work/data/ilv/resource.ilv"
+Palettes 8
+7 "defaultBg" "defaultFg" "-*-courier-medium-r-normal-*-*-140-*-*-*-*-*-*" 0 solid solid 0 0 0
+1 52685 49344 45232 0 0 0 "fixed" 0 solid solid 0 0 0
+"IlvStText" 6 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+0 "defaultBg" "defaultFg" "%helvetica-14-" 0 solid solid 0 0 0
+2 52685 49344 45232 65535 0 0 "fixed" 0 solid solid 0 0 0
+5 "defaultBg" "defaultFg" "%helvetica-14-B" 0 solid solid 0 0 0
+3 "defaultBg" "defaultFg" "%times-12-" 0 solid solid 0 0 0
+4 "defaultBg" "defaultFg" "fixed" 0 solid solid 0 0 0
+IlvObjects 26
+2 { 0 0 IlvButton 9 10 95 26 F9 2 1 16 4 "Foreground"   } 576 "Button"
+1
+1 "__ilvCallback" "SetFg"
+0
+2 { 1 1 IlvFilledRectangle 115 14 137 17 } 32 "fg"
+320 1 60 2
+2 { 2 0 IlvButton 262 10 45 26 F9 2 1 16 4 "New"   } 576 "Button"
+1
+1 "__ilvCallback" "NFg"
+64 1 5
+2 { 3 0 IlvButton 9 39 95 26 F9 2 1 16 4 "Background"   } 576 "Button"
+1
+1 "__ilvCallback" "SetBg"
+0
+2 { 4 2 IlvFilledRectangle 115 43 137 17 } 32 "bg"
+320 1 60 2
+2 { 5 0 IlvButton 262 39 45 26 F9 2 1 16 4 "New"   } 576 "Button"
+1
+1 "__ilvCallback" "NBg"
+64 1 5
+2 { 6 0 IlvButton 9 68 95 26 F9 2 1 16 4 "Font"   } 576 "Button"
+1
+1 "__ilvCallback" "SetFnt"
+0
+2 { 7 1 IlvFilledRectangle 111 99 71 21 } 32 "pattern"
+0
+2 { 8 0 IlvButton 9 97 95 26 F9 2 1 16 4 "Pattern"   } 576 "Button"
+1
+1 "__ilvCallback" "SetP"
+0
+2 { 9 3 IlvComboBox 190 98 117 23 F32 2 "solid" 12
+IlvMenuItem 1 2 4 "solid"  
+IlvMenuItem 1 2 4 "clear"  
+IlvMenuItem 1 2 4 "gray"  
+IlvMenuItem 1 2 4 "cross"  
+IlvMenuItem 1 2 4 "dark1"  
+IlvMenuItem 1 2 4 "dark2"  
+IlvMenuItem 1 2 4 "dark3"  
+IlvMenuItem 1 2 4 "dark4"  
+IlvMenuItem 1 2 4 "light1"  
+IlvMenuItem 1 2 4 "light2"  
+IlvMenuItem 1 2 4 "light3"  
+IlvMenuItem 1 2 4 "light4"   } 608 "patternc" "ComboBox"
+1
+1 "__ilvCallback" "Pattern"
+320 1 5 2
+2 { 10 0 IlvButton 9 126 95 26 F9 2 1 16 4 "Line Style"   } 576 "Button"
+1
+1 "__ilvCallback" "SetL"
+0
+2 { 11 1 IlvLine 111 138 182 138 } 32 "ls"
+0
+2 { 12 3 IlvComboBox 190 127 117 23 F32 2 "solid" 8
+IlvMenuItem 1 2 4 "solid"  
+IlvMenuItem 1 2 4 "dash"  
+IlvMenuItem 1 2 4 "dot"  
+IlvMenuItem 1 2 4 "dashdot"  
+IlvMenuItem 1 2 4 "dashdoubledot"  
+IlvMenuItem 1 2 4 "alternate"  
+IlvMenuItem 1 2 4 "doubledot"  
+IlvMenuItem 1 2 4 "longdash"   } 608 "lsc" "ComboBox"
+1
+1 "__ilvCallback" "LS"
+320 1 5 2
+2 { 13 0 IlvButton 9 155 95 26 F9 2 1 16 4 "Line Width"   } 576 "Button"
+1
+1 "__ilvCallback" "SetW"
+0
+2 { 14 1 IlvLine 111 167 182 167 } 32 "lw"
+0
+2 { 15 3 IlvComboBox 190 156 117 23 F32 2 "0" 7
+IlvMenuItem 1 2 4 "0"  
+IlvMenuItem 1 2 4 "1"  
+IlvMenuItem 1 2 4 "2"  
+IlvMenuItem 1 2 4 "3"  
+IlvMenuItem 1 2 4 "4"  
+IlvMenuItem 1 2 4 "5"  
+IlvMenuItem 1 2 4 "6"   } 608 "lwc" "ComboBox"
+1
+1 "__ilvCallback" "LW"
+320 1 5 2
+2 { 16 4 IlvReliefLine 5 217 307 217 2 } 0
+448 1 5 1 40 2
+2 { 17 5 IlvButton 5 224 60 30 F9 2 1 16 4 "Apply"   } 608 "apply" "Button"
+1
+1 "__ilvCallback" "apply"
+128 1 5
+2 { 18 5 IlvButton 70 224 60 30 F9 2 1 16 4 "Reset"   } 608 "reset" "Button"
+1
+1 "__ilvCallback" "reset"
+128 1 5
+2 { 19 5 IlvButton 247 224 60 30 F9 2 1 16 4 "Close"   } 608 "cancel" "Button"
+1
+1 "__ilvCallback" "cancel"
+192 1 5 1 5
+2 { 20 3 IlvRectangle 111 39 146 26 } 0
+320 1 55 2
+2 { 21 3 IlvRectangle 110 10 147 26 } 0
+320 1 55 2
+2 { 22 3 IlvComboBox 111 68 146 26 F32 2 "Default" 3
+IlvMenuItem 1 2 4 "Default"  
+IlvMenuItem 1 2 4 "bold"  
+IlvMenuItem 1 2 4 "large"   } 608 "fnt" "ComboBox"
+1
+1 "__ilvCallback" "selectFont"
+320 1 55 2
+2 { 23 0 IlvButton 262 67 45 26 F9 2 1 16 4 "New"   } 576 "Button"
+1
+1 "__ilvCallback" "NFnt"
+64 1 5
+2 { 24 6 IlvMessageLabel 14 187 88 22 F8 0 25 16 4 "Arc Mode"   } 0
+0
+2 { 25 7 IlvFilledArc 123 184 30 27 312.709 265.601 } 608 "am" "Button"
+1
+1 "__ilvCallback" "AM"
+0
+Size 312 259
+Background "defaultBg"
+EOF

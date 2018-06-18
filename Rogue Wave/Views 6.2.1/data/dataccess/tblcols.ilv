@@ -1,0 +1,46 @@
+// Ilv Version: 5.1
+// File generated: Tue Oct 30 08:19:15 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "tblcols"
+PathName "tblcols.ilv"
+Palettes 3
+0 F "defaultBg" "black" "button" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+2 F "defaultBg" "black" "bold" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 1 F "defaultBg" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 4
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 170 170 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&ok"  }   } 544 "ok"
+1
+1 "__ilvCallback" "apply"
+6144 "Button_1" "keepPwd"
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 255 170 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cancel"  }   } 544 "Button_1"
+1
+1 "__ilvCallback" "cancel"
+6144 "name" "ok"
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliMemoryDataSource 90 152 24 24 1 14 3 -1 IliMemoryTable 0 3 2 
+     72 "DISPLAY" Bool 1 -1 1 -1 "&dbchart_Display" 45 "%boolmap" "Value" "Label" 
+     76 "NAME" String 2 -1 1 238 "&dbchart_Columns" 32 
+     16 0 8 0
+0
+ } 32 "TBLCOL_MS"
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IliTableGadget 5 5 330 157 2 2067 "TBLCOL_MS" 725466183 2 0 0 0 17 18 21 0 0 0 0 1 1 "white" A"normal" "%Tahoma-11-[Charset:0]"  } 32 "TBLCols"
+0
+Size 340 198
+GeometryHandlers
+1 100 0 340 0 340 0
+3 3 0 0 5  330 0 330 3  0 0 5 0
+ 3 255 0 255  0 0 80 1  0 0 5 0
+ 3 170 0 170  0 0 80 0  0 0 90 0
+1 100 0 198 0 198 0
+3 3 0 0 5  157 0 157 3  0 0 36 0
+ 3 170 0 170  0 0 23 1  0 0 5 0
+ 3 170 0 170  0 0 23 0  0 0 5 0
+EOF

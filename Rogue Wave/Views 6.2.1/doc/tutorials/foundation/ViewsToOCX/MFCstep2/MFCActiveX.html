@@ -1,0 +1,815 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Generator" content="Microsoft Word 97">
+   <meta name="Template" content="D:\Program Files\Microsoft Office\Templates\Web Pages\Web Page Wizard.wiz">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (WinNT; I) [Netscape]">
+   <title>ActiveX</title>
+</head>
+<body link="#0000FF" vlink="#800080">
+
+<center>
+<h1>
+How to create an ActiveX with the MFC and Rogue Wave Views</h1></center>
+
+<h2>
+
+<hr WIDTH="100%"></h2>
+
+<h2>
+WARNING</h2>
+
+<blockquote>It seems there is a problem sometimes when you build the ActiveX.
+For a mysterious reason, some symbols (<b>_DllMain</b>, <b>new</b> and
+<b>delete</b>)
+are multiple defined during the link. These symbols are not defined in
+the code of this example nor in the Rogue Wave Views libraries, and the conflict
+is between the files <b>nafxcw.lib</b> (used by the MFC),
+<b>libcmt.lib</b>
+(the C runtime library), and <b>libpcmt.lib</b> (the C++ runtime library).
+<br>However there is a workaround:
+<ol>
+<li>
+Commenting all the lines that refer to class <b>DemoCtrl</b> in the files
+<b>DemoMFC.cpp</b>
+and <b>DemoMFCCtl.cpp</b>.</li>
+
+<li>
+Setting inactive the files <b>ctrlc.pp</b> and <b>DemoCtrl.cpp</b> in the
+project.</li>
+
+<li>
+Build the ActiveX.</li>
+
+<li>
+Uncomment the lines previoulsy commented.</li>
+
+<li>
+Set active the two files previously unactivated.</li>
+
+<li>
+Buil again the ActiveX.</li>
+</ol>
+There are no more errors. In order to simplify a little this workaround,
+in the source files we deliver with this tutorial, the lines to be commented
+are surrounded by:
+<pre><tt>#if defined(USE_VIEWS)</tt></pre>
+
+<pre><tt>#endif</tt></pre>
+This macro is defined in the file <b>ctrl.h</b>. You may just comment and
+uncomment the line that defines this macro.
+<p>We try to identify precisely the problem in order to contact Microsoft.</blockquote>
+
+<h2>
+Introduction</h2>
+
+<blockquote>This document is intended to show how to create an ActiveX
+that includes some Rogue Wave Views code. The ActiveX will be created using the
+wizards provided by Microsoft Visual C++ 6.0 and the MFC. The reader is
+supposed to already know Rogue Wave Views, C++, Visual C++ 6.0, COM, and the
+MFC.
+<br>The example is built above a sample provided with Rogue Wave Views (<a href="../manager/manager.cpp">samples/manager/manager.cpp</a>).
+The idea is to show how to convert an existing program built with Rogue Wave Views
+into an ActiveX. All along the document, this application will evolve
+in order to provide more functionalities through the COM interface. Of
+course, it is possible to build an ActiveX from scratch. The principles
+are the same.
+<br>Note: All the lines modified or added for Rogue Wave Views in the files generated
+by the wizards are surrounded by two comments:</blockquote>
+
+<pre><tt><font size=+1>// Added for Rogue Wave Views.
+// End Added for Rogue Wave Views.</font></tt></pre>
+
+<h2>
+Preparing the program</h2>
+
+<blockquote>As the original program was not written with the intention
+of building a control, we have to modify it. This is explained in <a href="Preparing.html">Preparing
+the program.</a></blockquote>
+
+<h2>
+Creating an ActiveX.</h2>
+
+<dir>In the second step, we will just create an ActiveX using the <b>Ctrl</b>
+class we defined in the previous step. This first version has a minimal
+interface.</dir>
+
+<ol>
+<li>
+Create a new project in Visual Studio by selecting <b>MFC ActiveX Control
+Wizard</b>. You can keep the default values for the options. Name it <b>DemoMFC</b>
+for example. In the dialog that pops up then, in the first page, keep the
+default values and click <b>Next</b>. In the next page, keep the name (<b>DemoMFC</b>),
+set the properties <b>Activates when visible</b>, <b>Available in "Insert
+Object" dialog</b>. The property <b>Has an "About" box</b> may be set ot
+not. The other properties are not set. The window must not be a subclass
+of any control. In the <b>Advanced</b> dialog, check that the <b>Windowless
+activation</b> is not set.</li>
+
+<li>
+Add the file <a href="step1/ctrl.cpp">ctrl.cpp</a> to your project.</li>
+
+<li>
+Create and add the file <a href="MFCstep2/democtrl.h">DemoCtrl.h</a> in
+which the class <b>DemoCtrl</b> will be declared. The purpose of this class
+is to initialize the control and to be the interface between the code generated
+by the Wizard and the Rogue Wave Views code and/or the class <b>Ctrl</b>. Here
+is the declaration of the class:</li>
+
+<pre>class DemoCtrl : public Ctrl
+{
+public:
+&nbsp;&nbsp;&nbsp; DemoCtrl(HWND parent);
+&nbsp;&nbsp;&nbsp; ~DemoCtrl();
+&nbsp;&nbsp;&nbsp; static IlvDisplay* getDisplay()throw() { return _Display; }
+&nbsp;&nbsp;&nbsp; static bool InitDisplay(HINSTANCE hInstance) throw();
+&nbsp;&nbsp;&nbsp; static void CleanDisplay();
+
+private:
+&nbsp;&nbsp;&nbsp; DemoCtrl(const DemoCtrl&amp;); // Not defined to avoid default copy constructor.
+&nbsp;&nbsp;&nbsp; static lvDisplay* _display;
+};</pre>
+
+<li>
+Create and add the file <a href="MFCstep2/DemoCtrl.cpp">DemoCtrl.cpp</a>
+in which the non-inlined member functions of the class <b>DemoCtrl</b>
+will be defined (the static class variable <b>_Display </b>is also defined
+in this file):</li>
+
+<ul>
+<li>
+The constructor <b>DemoCtrl(HWND parent)</b> just calls the corresponding
+constructor of the class <b>Ctrl</b>:</li>
+</ul>
+
+<pre><font face="Arial,Helvetica">DemoCtrl::DemoCtrl(HWND hWnd)
+
+: Ctrl(_Display, reinterpret_cast&lt;IlvSystemView>(hWnd))
+{
+}</font></pre>
+
+<ul>
+<li>
+The static function <b>InitDisplay</b> just creates an instance of <b>IlvDisplay</b>
+and stores it into <b>_Display</b>.</li>
+</ul>
+
+<pre><font face="Arial,Helvetica">bool
+DemoCtrl::InitDisplay(HINSTANCE hInstance) throw ()
+{
+&nbsp;&nbsp;&nbsp; try {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Display = new IlvDisplay(hInstance, "MFC Views Sample");
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (!_Display || _Display->isBad()) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IlvFatalError("Can't initialize IlvDisplay.");
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (_Display) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; delete _Display;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Display = 0;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; catch(...) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CleanDisplay();
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; return _Display ? true : false;
+}</font></pre>
+
+<ul>
+<li>
+<tt>The static function <b>CleanDisplay</b> just releases the instance
+of <b>IlvDisplay</b> stored in <b>_Display</b>.</tt></li>
+</ul>
+
+<pre><tt>void
+DemoCtrl::CleanDisplay()
+{
+&nbsp;&nbsp;&nbsp; if (_Display) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; delete _Display;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Display = 0;
+&nbsp;&nbsp;&nbsp; }
+}</tt></pre>
+
+<li>
+Modify the file, generated by the wizard, <a href="MFCstep2/DemoMFC.cpp">DemoMFC.cpp</a>
+in order to create and delete an instance of the <b>IlvDisplay </b>class.
+This is done through static functions of the class <b>DemoCtrl</b>.</li>
+
+<ul>
+<li>
+Include the header file <a href="MFCstep2/democtrl.h">DemoCtrl.h</a>.</li>
+
+<li>
+In the <b>CDemoMFCApp::InitInstance</b> function, inside the test on <b>bInit</b>,
+add the following line:</li>
+</ul>
+
+<dir>
+<dir>
+<pre>bInit = DemoCtrl::InitDisplay(AfxGetInstanceHandle());</pre>
+</dir>
+</dir>
+
+<ul>
+<li>
+In the <b>CDemoMFCApp::ExitInstance</b> function, at the beginning, add
+the following line:</li>
+</ul>
+
+<dir>
+<dir>
+<pre>DemoCtrl::CleanDisplay();</pre>
+</dir>
+</dir>
+
+<li>
+Add a new <b>Windows Message Handler</b> for <b>WM_CREATE</b> in the class
+<b>CDemoMFCCtrl</b>.
+You can do it by clicking right on <b>CDemoMFCCtrl</b> in the <b>ClassView</b>
+panel of Visual Studio, and selecting <b>Add Windows Message Handler…</b></li>
+
+<li>
+Add into the class <b>CDemoMFCCtrl</b> a new private <b>member variable</b>
+of type <b>DemoCtrl*</b> and named
+<b>m_Ctrl</b>. You can do it by clicking
+right on <b>CDemoMFCCtrl</b> in the
+<b>ClassView</b> panel of Visual Studio,
+and selecting
+<b>Add member variable…</b></li>
+
+<li>
+Modify the file, generated by the wizard, <a href="MFCstep2/DemoMFCCtl.h">DemoMFCCtl.h</a>
+in order to add a forward declaration of the class <b>DemoCtrl</b>.</li>
+
+<li>
+Modify the file, generated by the wizard, <a href="MFCstep2/DemoMFCCtl.cpp">DemoMFCCtl.cpp</a>
+in order to create the instance of the class <b>DemoCtrl</b> used by the
+application.</li>
+
+<ul>
+<li>
+Include the header file <a href="MFCstep2/democtrl.h">DemoCtrl.h</a> into
+the file <a href="MFCstep2/DemoMFCCtl.cpp">DemoMFCCtl.cpp</a>.</li>
+
+<li>
+Add the initialization of the variable <b>m_Ctrl</b> to 0 in the constructor
+(file <a href="MFCstep2/DemoMFCCtl.cpp">DemoMFCCtl.cpp</a>):</li>
+</ul>
+
+<pre>CDemoMFCCtrl()
+// Added for Rogue Wave Views.
+: m_Ctrl(0)
+// End Added for Rogue Wave Views.
+{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; InitializeIIDs(&amp;IID_DDemoMFC, &amp;IID_DDemoMFCEvents);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // TODO: Initialize your control's instance data here.
+}</pre>
+
+<ul>
+<li>
+Add the following lines into the function <b>CDemoMFCCtrl::OnCreate</b>
+(file <a href="MFCstep2/DemoMFCCtl.cpp">DemoMFCCtl.cpp</a>):</li>
+</ul>
+
+<pre><tt>try {
+&nbsp;&nbsp;&nbsp; m_Ctrl = new DemoCtrl(m_hWnd);
+} catch (...) {
+&nbsp;&nbsp;&nbsp; if (m_Ctrl) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; delete m_Ctrl;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m_Ctrl = 0;
+&nbsp;&nbsp;&nbsp; }
+}</tt></pre>
+
+<li>
+Modify the file <a href="MFCstep2/DemoMFC.rc">DemoMFC.rc</a> by adding
+the following line at the end of the file:</li>
+
+<pre><tt>#include "viewsdata.rc"</tt></pre>
+
+<li>
+Modify the flags of the project (<a href="MFCstep2/DemoMFC.dsp">DemoMFC.dsp</a>),
+with the panel <b>Project Settings</b>:</li>
+
+<ul>
+<li>
+For <b>All configurations</b>, in the <b>General</b> tab, select <b>Use
+MFC in a Static Library</b> in the combobox <b>Microsoft Foundation Classes</b>.</li>
+
+<li>
+For <b>Win32 Debug</b>, in the <b>C++</b> tab, category <b>general</b>
+or <b>preprocessor</b>, replace the preprocessor definition <b>_DEBUG</b>
+by <b>NDEBUG</b>.</li>
+
+<li>
+For <b>All configurations</b>, in the <b>C++</b> tab, category <b>general</b>
+or <b>preprocessor</b>, define the preprocessor definition <b>ILVSTD</b>.</li>
+
+<li>
+For <b>All configurations</b>, in the <b>C++</b> tab, category <b>C++ language</b>,
+select <b>Enable Exception handling</b> and <b>Enable Run-Time Type Information
+(RTTI)</b> toggles.</li>
+
+<li>
+For <b>All configurations</b>, in the <b>C++</b> tab, category <b>Code
+Generation</b>, select <b>multithreaded</b> in the combobox <b>Use run-time
+library</b>.</li>
+
+<li>
+For <b>All configurations</b>, in the <b>C++</b> tab, category <b>preprocessor</b>,
+add the following directories (we presume you installed Rogue Wave Views into
+<b>c:\ilog\views</b>.
+Modify the following text accordingly to the actual directory) "<b>., c:\ilog\views\include</b>",
+in the text box <b>Additional include directories</b>.</li>
+
+<li>
+For <b>All configurations</b>, in the <b>C++</b> tab, category <b>Precompiled
+Headers</b>, for the two files <b>ctrl.cpp</b> and <b>DemoCtrl.cpp</b>,
+select the option
+<b>Not using precompiled headers</b>. This is because
+of some initialization mechanism used in Rogue Wave Views, most of the Rogue Wave Views
+headers can't be precompiled.</li>
+
+<li>
+For <b>All configurations</b>, in the <b>Link</b> tab, category <b>Input</b>,
+add the Rogue Wave Views libraries path (by default it is <b>c:\ilog\views\lib\msvc6\stat_mta</b>)
+into the text box <b>Additional library path</b>.</li>
+
+<li>
+For <b>All configurations</b>, in the <b>Link</b> tab, category <b>general</b>
+or <b>Input</b>, add the Rogue Wave Views libraries (<b>winviews.lib</b>,
+<b>views.lib</b>,
+and <b>ilvgadgt.lib</b>),
+<b>wsock32.lib</b>, and <b>imm32.lib</b>.</li>
+</ul>
+
+<li>
+It is now possible to build the ActiveX, and to test it. Create a html
+file, for example <a href="MFCstep2/test.htm">test.htm</a>:</li>
+
+<pre><tt>&lt;HTML>
+&lt;HEAD>
+&lt;TITLE>Test page for object DemoATLCtrl&lt;/TITLE>
+&lt;/HEAD>
+
+&lt;BODY>
+
+&lt;OBJECT WIDTH=400 HEIGHT=400 ID="DemoATLCtrl" CLASSID="CLSID:3D31E7B8-400B-11D3-B74F-00C04F68A89D">&lt;/OBJECT>
+
+&lt;/BODY>
+
+&lt;/HTML></tt></pre>
+</ol>
+
+<h2>
+Adding custom properties to the ActiveX.</h2>
+
+<ol>In this third step, we are adding some properties to our control. The
+first one is the file that is read by the manager. By default, this file
+is <a href="step1/data/browse.ilv">data/browse.ilv</a> that was included
+in the <b>rc</b> file in a previous step. The second one is the background
+color of the
+<b>IlvManagerView</b>.
+<li>
+Add a new property named <b>FileName</b>. You can do it by clicking right
+on <b>_DDemoMFCCtl</b> in the <b>ClassView</b> tab of the workspace. Select
+the <b>Get/Set</b> <b>methods</b> radio button in the frame <b>Implementation</b>.
+Give it the type <b>BSTR</b>. There is no parameter.</li>
+
+<li>
+Add a new property named <b>Background</b>. You can do it by clicking right
+on <b>_DDemoMFCCtl</b> in the <b>ClassView</b> tab of the workspace. Select
+the <b>Get/Set</b> <b>methods</b> radio button in the frame <b>Implementation</b>.
+Give it the type <b>OLE_COLOR</b>. There is no parameter.</li>
+
+<li>
+Add a new private
+<b>member variable</b> of type <b>CString</b> and named
+<b>m_FileName</b>
+into the class <b>CDemoMFCCtrl</b>. You can do it by clicking right on
+<b>CDemoMFCCtrl</b>
+in the <b>ClassView</b> panel of Visual Studio, and selecting
+<b>Add member
+variable…</b></li>
+
+<li>
+Add a new private
+<b>member variable</b> of type <b>OLE_COLOR</b> and named
+<b>m_Background</b>
+into the class
+<b>CDemoMFCCtrl</b>. You can do it by clicking right on
+<b>CDemoMFCCtrl</b>
+in the <b>ClassView</b> panel of Visual Studio, and selecting
+<b>Add member
+variable…</b></li>
+
+<li>
+Modify the constructor of <b>CDemoMFCCtrl</b> (file <a href="MFCstep3/DemoMFCCtl.cpp">DemoMFCCtl.cpp</a>)
+in order to initialize <b>m_FileName</b> and <b>m_Background</b>:</li>
+
+<pre><tt>&nbsp;CDemoMFCCtrl()
+&nbsp;// Added for Rogue Wave Views.
+&nbsp;: m_Ctrl(0), m_FileName(), m_Background(-1)
+&nbsp;// End Added for Rogue Wave Views.
+&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; InitializeIIDs(&amp;IID_DDemoMFC, &amp;IID_DDemoMFCEvents);
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // TODO: Initialize your control's instance data here.
+&nbsp;}</tt></pre>
+
+<li>
+Add the member function <b>setFileName</b> into the class <b>DemoCtrl</b>.
+This function has one parameter of type <b>const char*</b> that is the
+new filename. Its purpose is to load the corresponding file.</li>
+
+<ul>
+<li>
+In the file <a href="MFCstep3/democtrl.h">DemoCtrl.h</a>, add the declaration
+of <b>DemoCtrl::setFileName</b>:</li>
+</ul>
+
+<pre><tt>void setFileName(const char*);</tt></pre>
+
+<ul>
+<li>
+In the file <a href="MFCstep3/DemoCtrl.cpp">DemoCtrl.cpp</a>, add the definition
+of <b>DemoCtrl::setFileName</b>:</li>
+</ul>
+
+<pre><tt>void
+DemoCtrl::setFileName(const char* filename)
+{
+&nbsp;&nbsp;&nbsp; if (!filename || !*filename)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return;
+&nbsp;&nbsp;&nbsp; IlvManager* manager = getManager();
+&nbsp;&nbsp;&nbsp; if (!manager)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return;
+&nbsp;&nbsp;&nbsp; manager->initReDraws();
+&nbsp;&nbsp;&nbsp; manager->deleteAll(IlvTrue, IlvFalse);
+&nbsp;&nbsp;&nbsp; manager->read(filename);
+&nbsp;&nbsp;&nbsp; manager->fitTransformerToContents(getManagerView());
+&nbsp;&nbsp;&nbsp; manager->reDrawViews();
+}</tt></pre>
+
+<li>
+Add the member function <b>setBackground</b> into the class <b>DemoCtrl</b>.
+This function has one parameter of type <b>OLE_COLOR</b> that is the new
+color. Its purpose is to convert the <b>OLE_COLOR</b> into in a <b>IlvColor*</b>
+that is understandable by Rogue Wave Views, and&nbsp; to redraw the view.</li>
+
+<ul>
+<li>
+In the file <a href="MFCstep3/democtrl.h">DemoCtrl.h</a>, add the declaration
+of <b>DemoCtrl::setBackground</b>:</li>
+</ul>
+
+<pre><tt>void setBackground(OLE_COLOR);</tt></pre>
+
+<ul>
+<li>
+In the file <a href="MFCstep3/DemoCtrl.cpp">DemoCtrl.cpp</a>, add the definition
+of <b>DemoCtrl::setBackground</b>:</li>
+</ul>
+
+<pre><tt>void
+DemoCtrl::setBackground(OLE_COLOR oleColor)
+{
+&nbsp;&nbsp;&nbsp; if (oleColor == -1)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return;
+&nbsp;&nbsp;&nbsp; IlvManager* manager = getManager();
+&nbsp;&nbsp;&nbsp; if (!manager)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return;
+&nbsp;&nbsp;&nbsp; COLORREF colRef;
+&nbsp;&nbsp;&nbsp; HPALETTE hPal = NULL;
+&nbsp;&nbsp;&nbsp; if (getDisplay()->screenDepth() &lt;= 8)
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hPal = HPALETTE(getDisplay()->getPaletteHandle());
+&nbsp;&nbsp;&nbsp; if (S_OK != OleTranslateColor(oleColor, hPal, &amp;colRef))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return;
+&nbsp;&nbsp;&nbsp; IlvIntensity red, blue, green;
+&nbsp;&nbsp;&nbsp; getDisplay()->pixelToRGB((unsigned long)(colRef), red, blue, green);
+&nbsp;&nbsp;&nbsp; IlvColor* color = getDisplay()->getColor(red, blue, green);
+&nbsp;&nbsp;&nbsp; manager->initReDraws();
+&nbsp;&nbsp;&nbsp; manager->setBackground(getManagerView(), color);
+&nbsp;&nbsp;&nbsp; manager->reDraw();
+&nbsp;&nbsp;&nbsp; manager->reDrawViews();
+}</tt></pre>
+
+<li>
+Modify the functions <b>CDemoMFCCtrl::SetFileName</b> and <b>CDemoMFCCtrl::GetFileName</b>
+generated by the Wizard (in the file <a href="MFCstep3/DemoMFCCtl.cpp">DemoMFCCtl.cpp</a>):</li>
+
+<ul>
+<li>
+The function <b>CDemoMFCCtrl::SetFileName</b>:</li>
+</ul>
+
+<pre><tt>void CDemoMFCCtrl::SetFilename(LPCTSTR lpszNewValue)&nbsp;
+{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // TODO: Add your property handler here
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Added for Rogue Wave Views.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (!lpszNewValue || !*lpszNewValue)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (m_FileName != lpszNewValue) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m_FileName = lpszNewValue;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (m_Ctrl &amp;&amp; m_FileName.GetLength())
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m_Ctrl->setFileName(lpszNewValue);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // End Added for Rogue Wave Views.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetModifiedFlag();
+}</tt></pre>
+
+<ul>
+<li>
+The function <b>CDemoMFCCtrl::GetFileName</b>:</li>
+</ul>
+
+<pre>BSTR CDemoMFCCtrl::GetFilename()
+<tt>{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CString strResult;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // TODO: Add your property handler here
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; strResult = m_FileName;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return strResult.AllocSysString();
+}</tt></pre>
+
+<li>
+Modify the functions <b>CDemoMFCCtrl::SetBackground</b> and <b>CDemoMFCCtrl::GetBackground</b>
+generated by the Wizard (in the file <a href="MFCstep3/DemoMFCCtl.cpp">DemoMFCCtl.cpp</a>):</li>
+
+<ul>
+<li>
+The function <b>CDemoMFCCtrl::SetBackground</b>:</li>
+</ul>
+
+<pre><tt>void CDemoMFCCtrl::SetBackground(OLE_COLOR nNewValue)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // TODO: Add your property handler here
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (m_Background != nNewValue) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m_Background = nNewValue;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (m_Ctrl &amp;&amp; (m_Background != -1))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m_Ctrl->setBackground(m_Background);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SetModifiedFlag();
+}</tt></pre>
+
+<ul>
+<li>
+The function <b>CDemoMFCCtrl::GetBackground</b>:</li>
+</ul>
+
+<pre>OLE_COLOR CDemoMFCCtrl::GetBackground()
+{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // TODO: Add your property handler here
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return m_Background;
+<tt>}</tt></pre>
+
+<li>
+Modifiy <b>CDemoMFCCtrl::OnCreate</b> (file <a href="MFCstep3/DemoMFCCtl.h">DemoMFCCtl.h</a>)in
+order to set the file name and/or the background color when the corresponding
+properties are set:</li>
+
+<pre><tt>LRESULT OnCreate(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL&amp; bHandled)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // TODO : Add Code for message handler. Call DefWindowProc if necessary.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Added for Rogue Wave Views.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; try {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m_Ctrl = new DemoCtrl(m_hWnd);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Added for the FileName property.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m_Ctrl->setFileName(m_FileName);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Added for the Background property.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m_Ctrl->setBackground(m_Background);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } catch (...) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (m_Ctrl) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; delete m_Ctrl;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m_Ctrl = 0;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // End Added for Rogue Wave Views.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;
+}</tt></pre>
+
+<li>
+To test the properties, you may use Internet Explorer or Visual Basic,
+for example.</li>
+
+<ul>
+<li>
+With Internet Explorer, you can modify the file <a href="MFCstep3/DemoMFCCtl.htm">DemoMFCCtl.html</a>
+and use the Javascript language (you have an example with VBScript in the
+following step). We use a combobox that has three predefined choices&nbsp;
+to test the <b>FileName</b> property (note that this example supposes that
+the data files of Rogue Wave Views are installed and in the ILVHOME or ILVPATH
+paths):</li>
+</ul>
+
+<pre><tt>&lt;HTML>
+&lt;HEAD>
+&lt;TITLE>Test page for object DemoMFCCtl&lt;/TITLE>
+&lt;/HEAD>
+
+&lt;SCRIPT LANGUAGE = JavaScript>
+
+function load(value)
+{
+&nbsp;&nbsp;&nbsp; DemoMFCCtrl.FileName = value;
+}
+
+&lt;/SCRIPT>
+&lt;BODY>
+
+&lt;SELECT NAME=Files onchange = "load(value)" >
+&lt;OPTION Value="bunny.ilv">bunny
+&lt;OPTION Selected Value="data/browse.ilv">browser
+&lt;OPTION Value="buttrfly.ilv">butterfly
+&lt;/SELECT>
+&lt;P>
+
+&lt;OBJECT WIDTH=400 HEIGHT=400 ID="DemoMFCCtrl" CLASSID="CLSID:3D31E7B8-400B-11D3-B74F-00C04F68A89D">&lt;/OBJECT>
+&lt;/BODY>
+&lt;/HTML></tt></pre>
+
+<ul>
+<li>
+<font face="Arial,Helvetica">With Visual Basic, see the project </font><a href="MFCstep3/VB/testMFC.vbp">VB/testMFC.vbp</a><font face="Arial,Helvetica">
+for more information. It lets you to modify the </font><tt>FileName</tt><font face="Arial,Helvetica">
+and the </font><tt>Background</tt><font face="Arial,Helvetica"> properties
+dynamically either with the properties tab or by running a little program.</font></li>
+</ul>
+</ol>
+
+<h2>
+Adding a custom event to the ActiveX.</h2>
+
+<ol>In this fourth step, we are adding a custom event (<b>PointerPosition</b>)
+to our control. This event will be sent to the container every time the
+mouse pointer is moved, by a view interactor whose the member function
+<b>handleEvent</b>
+will fire the event.. This event have three parameters: a <b>BSTR</b> that
+is the name of the object that is under the mouse, if any, a <b>OLE_XPOS_PIXELS</b>
+and a <b>OLE_YPOS_PIXELS</b> that represent the position of the mouse relatively
+to the <b>IlvManagerView</b>.
+<br>&nbsp;
+<li>
+Define the new custom event. To do this, select the <b>ClassView</b> tab
+in the <b>workspace</b> window, then click right on the interface
+<b>_DDemoMFCEvents</b>.
+Select
+<b>Add Event...</b> in the menu that popped up. In the dialog, enter
+the following values: <b>PointerPosition</b> for the <b>External Name</b>.
+The parameters are <b>BSTR* name, OLE_XPOS_PIXELS x, OLE_YPOS_PIXELS y</b>.</li>
+
+<li>
+Compile the file <a href="MFCstep4/DemoMFC.idl">DemoMFC.idl</a> or rebuild
+your project.</li>
+
+<li>
+&nbsp;Modify the constructor of the class <b>DemoCtrl</b> so that it accepts
+a reference to the class <b>CDemoMFCCtrl</b> as second parameter. Think
+to add a forward declaration of the class <b>CDemoMFCCtrl</b> into the
+file <a href="MFCstep4/DemoCtrl.h">DemoCtrl.h</a> and to include the files
+<a href="MFCstep4/StdAfx.h">stdafx.h</a>,
+<a href="MFCstep4/DemoMFC.h">DemoMFC.h</a>,
+and <a href="MFCstep4/DemoMFCCtl.h">DemoMFCCtl.h</a> into the file <a href="MFCstep4/DemoCtrl.cpp">DemoCtrl.cpp</a>.
+Note that you must include these files before the Rogue Wave Views header files.</li>
+
+<li>
+Add <b>*this</b> as second parameter in the call to the constructor of
+<b>DemoCtrl</b>
+in the function <b>CDemoMFCCtrl::OnCreate</b> (file <a href="MFCstep4/DemoMFCCtl.cpp">DemoMFCCtl.cpp</a>).</li>
+
+<li>
+In the file <a href="MFCstep4/DemoCtrl.cpp">DemoCtrl.cpp</a>, define a
+new class <b>TrackInteractor</b> that is as subclass of <b>IlvViewManagerInteractor</b>:</li>
+
+<pre>class TrackInteractor : public IlvManagerViewInteractor
+{
+public:
+&nbsp;&nbsp;&nbsp; TrackInteractor(IlvManager* m, IlvView* v, CDemoMFCCtrl&amp; MFCCtrl)
+&nbsp;&nbsp;&nbsp; : IlvManagerViewInteractor(m, v), m_MFCCtrl(MFCCtrl)
+&nbsp;&nbsp;&nbsp; {
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; ~TrackInteractor() {}
+&nbsp;&nbsp;&nbsp; void handleEvent(IlvEvent&amp; event)
+&nbsp;&nbsp;&nbsp; {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (event.getType() == IlvPointerMoved) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IlvGraphic* obj =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; getManager()->lastContains(IlvPoint(event.x(), event.y()),&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; getView());
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CString mfcName;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (obj) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const char* name = getManager()->getObjectName(obj);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mfcName = name;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BSTR bstrName = mfcName.AllocSysString();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m_MFCCtrl.FirePointerPosition(&amp;bstrName,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OLE_XPOS_PIXELS(event.x()),
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OLE_XPOS_PIXELS(event.y()));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ::SysFreeString(bstrName);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (!getManager()->dispatchToObjects(event, getView()))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; getManager()->shortCut(event, getView());
+&nbsp;&nbsp;&nbsp; }
+private:
+&nbsp;&nbsp;&nbsp; CDemoMFCCtrl&amp; m_MFCCtrl;
+};</pre>
+
+<li>
+Add the private variable <b>m_Inter</b>, whose type is <b>TrackInteractor*</b>,
+into the class <b>DemoCtrl</b>. You may use the wizard as explained in
+the step 3, <b>Adding custom properties to the ActiveX</b>. Don't forget
+to use a forward declaration for <b>TrackInteractor</b> in the file <a href="MFCstep4/DemoCtrl.h">DemoCtrl.h</a>.</li>
+
+<li>
+Declare the class <b>TrackInteractor</b> as friend of the class <b>CDemoMFCCtrl</b>
+(in the file <a href="MFCstep4/DemoMFCCtl.h">DemoMFCCtl.h</a>).</li>
+
+<li>
+Add the initialization of <b>m_Inter</b> into the constructor of <b>DemoCtrl</b>
+and attach it to the view through the manager.</li>
+
+<pre><font face="Arial,Helvetica">DemoCtrl::DemoCtrl(HWND hWnd, CDemoMFCCtrl&amp; MFCCtrl)
+: Ctrl(_Display, reinterpret_cast&lt;IlvSystemView>(hWnd)), m_Inter(0)
+{
+&nbsp;&nbsp;&nbsp; m_Inter = new TrackInteractor(getManager(), getManagerView(), MFCCtrl);
+&nbsp;&nbsp;&nbsp; getManager()->setInteractor(m_Inter, getManagerView());
+}</font></pre>
+
+<li>
+Modify the destructor in order to delete the interactor stored into <b>m_Inter</b>:</li>
+
+<pre><font face="Arial,Helvetica">DemoCtrl::~DemoCtrl()
+{
+&nbsp;&nbsp;&nbsp; if (m_Inter) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; getManager()->setInteractor(0, getManagerView());
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; delete m_Inter;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m_Inter = 0;
+&nbsp;&nbsp;&nbsp; }
+}</font></pre>
+
+<li>
+To test the properties, you may use Internet Explorer or Visual Basic for
+example.</li>
+
+<ul>
+<li>
+With Internet Explorer, you can modify the file <a href="MFCstep4/DemoMFCCtl.htm">DemoMFCCtl.html</a>
+in order to use VBScript language. The function <b>DemoMFCCtl_PointerPosition</b>
+is called every time a <b>PointerPosition</b> event is fired. It displays
+the coordinates and the name (if any) of the object (if any) above which
+the mouse is:</li>
+</ul>
+
+<pre><tt>&lt;HTML>
+&lt;HEAD>
+&lt;TITLE>Test page for object DemoMFCCtl&lt;/TITLE>
+&lt;/HEAD>
+
+&lt;SCRIPT LANGUAGE = "javascript">
+
+&lt;!--
+function load(value)
+{
+&nbsp;&nbsp;&nbsp; DemoMFCCtrl.FileName = value;
+}
+
+-->
+&lt;/SCRIPT>
+
+&lt;SCRIPT LANGUAGE = "VBScript">
+
+&lt;!--
+Sub DemoMFCCtrl_PointerPosition(name, x, y)
+&nbsp;&nbsp;&nbsp; text1.innerText = name &amp; " (" &amp; x &amp; ", " &amp; y &amp; ")"
+End Sub
+
+-->
+&lt;/SCRIPT>
+
+&lt;BODY>
+
+&lt;SELECT NAME=Files onchange = "load(value)" >
+&lt;OPTION Value="bunny.ilv">bunny
+&lt;OPTION Selected Value="data/browse.ilv">browser
+&lt;OPTION Value="buttrfly.ilv">butterfly
+&lt;/SELECT>
+
+&lt;P>
+&lt;OBJECT WIDTH=400 HEIGHT=400 ID="DemoMFCCtrl" CLASSID="CLSID:3D31E7B8-400B-11D3-B74F-00C04F68A89D">&lt;/OBJECT>
+&lt;P>
+
+&lt;INPUT id=text1 name=text1>
+&lt;/P>
+
+&lt;/BODY>
+
+&lt;/HTML></tt></pre>
+
+<ul>
+<li>
+With Visual Basic, see the project <a href="MFCstep3/VB/testMFC.vbp">VB/testMFC.vbp</a>
+for more information. The function <b>DemoMFCCtl1_PointerPosition</b> is
+called every time a <b>PointerPosition</b> is fired.</li>
+</ul>
+</ol>
+
+</body>
+</html>

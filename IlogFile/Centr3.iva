@@ -1,0 +1,232 @@
+application "Centr3" {
+    properties "Dbms Support" {
+        "Count" "1";
+        "Dbms1" "default";
+    }
+    creator        "Rogue Wave Views Studio"; 
+    version        6.21; 
+    iref           4.01; 
+    ViewsVersion   6.21; 
+    system         "x86_.net2017_15.0"; 
+    date           "Thu Jun 14 11:11:11 2018"; 
+    fileBase       "Centr3"; 
+    class          "Testapp"; 
+    baseClass      "IlvApplication"; 
+    dataDir        "C:\\GitHub\\Weighing2017\\IlogFile\\"; 
+    JvScript       true; 
+    targetPlatform "x86_.net2017_15.0 (MDA)"; 
+    srcDir         "../cssrc/"; 
+    headerDir      "../cssrc/"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    sourceCode "#ifdef ILVNOSTATICDATA";
+    sourceCode "#undef ILVNOSTATICDATA";
+    sourceCode "#endif";
+    sourceCode "#include \"AdxGadgetContainer.h\"";
+    panelClass "clavier_tactile" {
+        folder    ""; 
+        class     "Clavier_tactile"; 
+        fileBase  "clavier_tactile"; 
+        dataDir   "./"; 
+        baseClass "AdxGadgetContainer"; 
+        headerDir "../cssrc/"; 
+        srcDir    "../cssrc/"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    }
+    panelClass "accueil" {
+        folder    ""; 
+        class     "Accueil"; 
+        fileBase  "accueil"; 
+        dataDir   "./"; 
+        baseClass "IlvGadgetContainer"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    }
+    panelClass "selection_phase" {
+        folder    ""; 
+        class     "Selection_phase"; 
+        fileBase  "selection_phase"; 
+        dataDir   "./"; 
+        baseClass "AdxGadgetContainer"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    }
+    panelClass "selection_OF" {
+        folder    ""; 
+        class     "Selection_OF"; 
+        fileBase  "selection_OF"; 
+        dataDir   "./"; 
+        baseClass "AdxGadgetContainer"; 
+        headerDir "../cssrc/"; 
+        srcDir    "../cssrc/"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    }
+    panelClass "pesee_OF" {
+        folder    ""; 
+        class     "Pesee_OF"; 
+        fileBase  "pesee_OF"; 
+        dataDir   "./"; 
+        baseClass "AdxGadgetContainer"; 
+        headerDir "../cssrc/"; 
+        srcDir    "../cssrc/"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    }
+    panelClass "Pesee_Etalon" {
+        folder    ""; 
+        class     "Pesee_Etalon"; 
+        fileBase  "Pesee_Etalon"; 
+        dataDir   "./"; 
+        baseClass "AdxGadgetContainer"; 
+        headerDir "../cssrc/"; 
+        srcDir    "../cssrc/"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    }
+    panelClass "selection_Balance" {
+        folder    ""; 
+        class     "Selection_Balance"; 
+        fileBase  "selection_Balance"; 
+        dataDir   "./"; 
+        baseClass "AdxGadgetContainer"; 
+        headerDir "../cssrc/"; 
+        srcDir    "../cssrc/"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    }
+    panelClass "selection_EtalonLigne" {
+        folder    ""; 
+        class     "Selection_EtalonLigne"; 
+        fileBase  "selection_EtalonLigne"; 
+        dataDir   "./"; 
+        baseClass "AdxGadgetContainer"; 
+        headerDir "../cssrc/"; 
+        srcDir    "../cssrc/"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    }
+    panelClass "selection_LOT" {
+        folder    ""; 
+        class     "Selection_LOT"; 
+        fileBase  "selection_LOT"; 
+        dataDir   "./"; 
+        baseClass "AdxGadgetContainer"; 
+        headerDir "../cssrc/"; 
+        srcDir    "../cssrc/"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    }
+    panelClass "selection_MWF" {
+        folder    ""; 
+        class     "Selection_MWF"; 
+        fileBase  "selection_MWF"; 
+        dataDir   "./"; 
+        baseClass "AdxGadgetContainer"; 
+        headerDir "../cssrc/"; 
+        srcDir    "../cssrc/"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    }
+    panelClass "selection_Recipient" {
+        folder    ""; 
+        class     "Selection_Recipient"; 
+        fileBase  "selection_Recipient"; 
+        dataDir   "./"; 
+        baseClass "AdxGadgetContainer"; 
+        headerDir "../cssrc/"; 
+        srcDir    "../cssrc/"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    }
+    panelClass "Choix_Balance" {
+        folder    ""; 
+        class     "Choix_Balance"; 
+        fileBase  "Choix_Balance"; 
+        dataDir   "./"; 
+        baseClass "AdxGadgetContainer"; 
+        headerDir "../cssrc/"; 
+        srcDir    "../cssrc/"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    }
+    panelClass "choix_OF" {
+        folder    ""; 
+        class     "Choix_OF"; 
+        fileBase  "choix_OF"; 
+        dataDir   "./"; 
+        baseClass "IlvGadgetContainer"; 
+        headerDir "../cssrc/"; 
+        srcDir    "../cssrc/"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    }
+    panelClass "message" {
+        folder    ""; 
+        class     "Message"; 
+        fileBase  "message"; 
+        dataDir   "./"; 
+        baseClass "IlvGadgetContainer"; 
+        headerDir "../cssrc/"; 
+        srcDir    "../cssrc/"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    }
+    panelClass "phrase_Secu" {
+        folder    ""; 
+        class     "Phrase_Secu"; 
+        fileBase  "phrase_Secu"; 
+        dataDir   "./"; 
+        baseClass "AdxGadgetContainer"; 
+        headerDir "../cssrc/"; 
+        srcDir    "../cssrc/"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    }
+    panelClass "recontrole_OF" {
+        folder    ""; 
+        class     "Recontrole_OF"; 
+        fileBase  "recontrole_OF"; 
+        dataDir   "./"; 
+        baseClass "IlvGadgetContainer"; 
+        headerDir "../cssrc/"; 
+        srcDir    "../cssrc/"; 
+    headerCode "#ifdef ILVNOSTATICDATA";
+    headerCode "#undef ILVNOSTATICDATA";
+    headerCode "#endif";
+    headerCode "#include \"AdxGadgetContainer.h\"";
+    }
+}

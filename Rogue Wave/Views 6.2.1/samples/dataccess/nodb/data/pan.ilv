@@ -1,0 +1,35 @@
+// Ilv Version: 3.1
+// File generated: Mon Feb  1 11:37:39 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "pan"
+PathName "pan.ilv"
+Palettes 2
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+1 "gray" "black" "button" "%helvetica-12-B" 0 solid solid 0 0 0
+IlvObjects 3
+1 { 0 P 1
+[ IlvPanelObjectReference IlvPanelObjectReference  "917865457.0" ]
+0 IlvNotebook 5 5 480 280 2 1
+"Tab 1" "" 1 "gray" ""
+0 0 8 0 0 5 2 0 0 0 0  } 32 "NoteBook"
+0
+1 { 1 1 IlvButton 5 395 80 23 F9 2 1 16 4 "Quit"   } 512
+1
+1 "__ilvCallback" "@Quit()"
+0
+1 { 2 0 IlvText 5 290 480 100 F133 2 Y N 1 1 1 1 0 2
+"Text"
+"multi lines"
+0 0 0 0 } 32 "Legend"
+0
+Size 490 423
+GeometryHandlers
+1 100 0 490 0 490 0
+3 3 0 0 5  480 0 480 0  0 0 5 0
+ 3 0 0 5  480 0 480 2  0 0 5 0
+ 3 0 0 5  0 0 80 1  405 0 405 0
+1 100 0 423 0 423 0
+3 3 0 0 5  280 0 280 0  0 0 138 0
+ 3 290 0 290  0 0 100 2  0 0 33 0
+ 3 395 0 395  0 0 23 1  0 0 5 0
+EOF

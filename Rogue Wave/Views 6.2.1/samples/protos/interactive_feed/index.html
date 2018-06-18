@@ -1,0 +1,37 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Prototypes - Samples: interactive_feed</title>
+	</head>
+    <body>
+		<a name="Interactive Value Feed"><h1>Sample: <code>Interactive Value Feed</code></h1><h1 class="subtitle">Interactive Value Feed</h1></a>
+		<p>Shows how to feed and interact with values from an application to a displayed panel.</p>
+		<img src="data/inter_feed.png"/>
+		<p>This is a basic example of how to connect your application data to
+prototypes in a panel. The panel contains an <code>IlvGroup</code> that serves as the
+main feed. This group is named &quot;MainGroup&quot; and is invisible when the application runs.
+This group is connected to various prototype instances. The application sends values 
+at regular intervals to this group, which dispatches them in turn to the prototype instances.
+It is recommended to open the file <code>data.ilv</code> in Studio, and observe that all values
+that are fed by the application (speed) have been added to the main group object as
+specific attributes of this group. In addition, a slider-like group lets you set the acceleration.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGroupMediator</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="interactive_feed.cpp"><code>interactive_feed.cpp</code></a></li>
+			<li><a href="data.ilv"><code>data.ilv</code></a></li>
+			<li><a href="gadgets.ipl"><code>gadgets.ipl</code></a></li>
+		</ul>

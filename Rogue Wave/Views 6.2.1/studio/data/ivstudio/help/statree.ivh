@@ -1,0 +1,42 @@
+help "statree" {
+    title "State Tree";
+    description "Editing the State Tree";
+}
+
+The state tree panel enables you to manage the complete
+state heirarchy of the application.
+ 
+There are two kinds of nodes in the State Tree: 
+state nodes and subset nodes. They are represented 
+by two different icons. 
+
+The first level node of the tree displays the root 
+state. There is only one root state per application. 
+All the child states of a state node are subset 
+nodes and all the child states of a subset node 
+are state nodes.
+ 
+Nodes that have child nodes can be expanded or closed 
+using the +/- button next to each node.
+
+Selecting a state node in this panel results in the
+state requirement being shown in the State Inspector.
+ 
+The contents of the tool bar change according to 
+the type of the selected node:
+ 
+State Node Selected
+ 
+New Subset - Creates a subset for the selected state.
+ 
+Remove - Removes the selected state and all its subsets.
+ 
+Rename - Renames the selected state.
+
+Subset Node Selected
+
+New State - Creates a substate in the selected subset.
+ 
+Remove - Removes the selected subset.
+ 
+Rename - Renames the selected subset.

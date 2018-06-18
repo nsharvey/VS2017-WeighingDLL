@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>A Shortcut C++ Definition</title><link rel="Prev" href="sqltables.10.05.html" title="Previous" /><link rel="Next" href="sqltables.10.07.html" title="Next" /><link rel="StyleSheet" href="css/sqltables.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/sqltables_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/Options/sqltables.10.06.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pdK8eOb8OHpXin60cjSlv4A" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/Options/sqltables.10.06.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../Options/dausrfrontcover.html#wwconnect_header">Data Access User Manual</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/dausrpart2.html#ww144909">Data Access and SQL</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/sqltables.10.01.html#wwconnect_header">SQL Tables</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/sqltables.10.03.html#wwconnect_header">Structural Definition</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">A Shortcut C++ Definition</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww999363" class="Heading2"><span></span>A Shortcut C++ Definition</div><div id="ww999364" class="Body">The <span class="MethodName"><a href="../RefMan/refcppdataccess/classIliSQLTable.html#a45eeda02564099bfa7e6fb684659ef84">setQueryFrom</a></span> member function allows you to define an <span class="code">IliSQLTable</span> that has only one database table. Here is an example:</div><div id="ww999365" class="NormalCode">IlvDisplay* display;</div><div id="ww1001797" class="NormalCode">...</div><div id="ww1001798" class="NormalCode">// Create the IliSQLTable object.</div><div id="ww1001799" class="NormalCode">IliSQLTable* sqlTbl = new IliSQLTable(display);</div><div id="ww1001963" class="NormalCode">sqlTbl-&gt;lock();</div><div id="ww1001800" class="NormalCode">&nbsp;</div><div id="ww1001801" class="NormalCode">// Define its session.</div><div id="ww1001802" class="NormalCode">IliSQLSession* session;</div><div id="ww1001803" class="NormalCode">session  = new IliSQLSession(“oracle”, “scott/tiger@orasrv”);</div><div id="ww1001804" class="NormalCode">sqlTbl-&gt;setSQLSession(session);</div><div id="ww1001805" class="NormalCode">&nbsp;</div><div id="ww1001806" class="NormalCode">// Define the IliSQLTable object.</div><div id="ww1001807" class="NormalCode">IliSQLTableRef tblRef(“EMP”, “SCOTT”);</div><div id="ww1001808" class="LastNormalCode">sqlTbl-&gt;setQueryFrom(tblRef);</div><div id="ww999366" class="Body">The <span class="code">setQueryFrom</span> member function reads the schema of the given database table and defines the <span class="ClassName"><a href="../RefMan/refcppdataccess/classIliSQLTable.html">IliSQLTable</a></span> object accordingly.</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

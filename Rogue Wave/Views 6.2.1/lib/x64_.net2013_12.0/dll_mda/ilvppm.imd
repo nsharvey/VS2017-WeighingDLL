@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- Rogue Wave Views PPM Dynamic Module Descriptor -->
+<module name="ilvppm" version="6.2">
+  <class name="IlvPPMStreamer" rootClass="IlvBitmapStreamer" version="4.0">
+    <format description="Ascii Portable Bitmap">
+      <signature>0x50 0x31</signature>
+      <extension>pbm</extension>
+    </format>
+    <format description="Ascii Portable Greymap">
+      <signature>0x50 0x32</signature>
+      <extension>pgm</extension>
+    </format>
+    <format description="Ascii Portable Pixmap">
+      <signature>0x50 0x33</signature>
+      <extension>ppm</extension>
+    </format>
+    <format description="Binary Portable Bitmap">
+      <signature>0x50 0x34</signature>
+      <extension>pbm</extension>
+    </format>
+    <format description="Binary Portable Greymap">
+      <signature>0x50 0x35</signature>
+      <extension>pgm</extension>
+    </format>
+    <format description="Binary Portable Pixmap">
+      <signature>0x50 0x36</signature>
+      <extension>ppm</extension>
+    </format>
+  </class>
+</module>

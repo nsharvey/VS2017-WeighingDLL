@@ -1,0 +1,132 @@
+// Ilv Version: 4.0
+// File generated: Thu Aug 23 16:04:47 2001
+// Creator class: IlvGadgetManagerOutput
+FileName "optbar"
+PathName "optbar.ilv"
+Palettes 2
+1 "gray" "black" "button" "%helvetica-12-" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 17
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 16 263 239 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&ToolbarSize"  }   } 32 "ToolbarSizeLabel"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 260 263 81 22 F6 2 2 -1 0 "1234543" . , 2 0 -2147483648 2147483647 } 32 "ToolbarHeight"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 367 263 81 22 F6 2 2 -1 0 "1234543" . , 2 0 -2147483648 2147483647 } 32 "ToolbarWidth"
+0
+3 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 245 44 193 22 F6 2 1 -1 0 "Text Field" } 32 "ToolbarName"
+0
+3 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFrame 147 20 302 233 F268435468 0 { IlvMessageItem 262169 4 16 4 "&SelectedToolbar"  }   } 32 "editCmdFrame"
+0
+3 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 303 117 57 19 F13 2 { IlvMessageItem 262145 4 16 4 "&InsertList"  }   } 32 "TbCmdInsert"
+0
+3 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 369 117 57 19 F13 2 { IlvMessageItem 262145 4 16 4 "&DeleteList"  }   } 32 "TbCmdDelete"
+0
+3 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFrame 157 66 281 180 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Commands"  }   } 32 "TbCmdsFrame"
+0
+3 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 8 230 62 23 F13 2 { IlvMessageItem 262145 4 16 4 "&InsertList"  }   } 32 "ToolbarsInsert"
+0
+3 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 83 230 57 23 F13 2 { IlvMessageItem 262145 4 16 4 "&DeleteList"  }   } 32 "ToolbarsDelete"
+0
+3 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 156 44 83 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Name"  }   } 32 "ToolbarNameLabel"
+0
+3 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 174 140 202 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&SelectedCommand"  }   } 0
+0
+4 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 8 4 151 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Toolbars"  }   } 32 "ToolbarsLabel"
+0
+4 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 171 162 255 76 F131 2 A A 0 0 0 0 0 1 0 0 V0 2 3
+{ IlvGadgetItem 1 2 4 "item1"  } 
+{ IlvGadgetItem 1 2 4 "item2"  } 
+{ IlvGadgetItem 1 2 4 "item3"  }  } 32 "tbCmdChoiceName"
+0
+4 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 171 91 255 20 F806 2 1 -1 0 "SCCombo" 8
+{ IlvGadgetItem 1 2 4 "A"  } 
+{ IlvGadgetItem 1 2 4 "B"  } 
+{ IlvGadgetItem 1 2 4 "C"  } 
+{ IlvGadgetItem 1 2 4 "D"  } 
+{ IlvGadgetItem 1 2 4 "E"  } 
+{ IlvGadgetItem 1 2 4 "F"  } 
+{ IlvGadgetItem 1 2 4 "G"  } 
+{ IlvGadgetItem 1 2 4 "H"  }  4 0 } 32 "TbCmdList"
+0
+4 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 8 26 132 197 F131 2 A A 0 0 0 0 0 4 0 0 V0 2 0 } 32 "ToolbarsList"
+0
+4 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 350 268 13 13 F268435468 0 { IlvMessageItem 262169 4 16 4 "&x"  }   } 0
+0
+Size 454 290
+GeometryHandlers
+2 100 0 144 0 144 0
+ 0 0 310 144 310 144
+7 3 0 0 8  0 0 151 12  295 0 295 1
+ 3 0 0 8  0 0 62 8  384 0 384 1
+ 3 0 0 83  57 0 57 9  0 0 4 0
+ 3 0 0 16  0 0 239 0  199 0 199 1
+ 3 369 0 369  0 0 57 6  0 0 28 1
+ 3 303 0 303  0 0 57 5  0 0 94 1
+ 3 0 0 8  132 0 132 15  0 0 4 0
+9 3 0 0 116  0 0 81 1  113 0 113 1
+ 3 0 0 223  81 0 81 2  0 0 6 1
+ 3 0 0 3  302 0 302 4  0 0 5 1
+ 3 0 0 12  83 0 83 10  0 0 215 1
+ 3 0 0 13  281 0 281 7  0 0 16 1
+ 3 0 0 27  255 0 255 14  0 0 28 1
+ 3 0 0 27  255 0 255 13  0 0 28 1
+ 3 0 0 30  202 0 202 11  0 0 78 1
+ 3 0 0 101  193 0 193 3  0 0 16 1
+1 100 0 290 0 290 0
+16 3 0 0 4  0 0 22 12  264 0 264 0
+ 3 230 0 230  0 0 23 8  0 0 37 0
+ 3 230 0 230  0 0 23 9  0 0 37 0
+ 3 263 0 263  0 0 22 0  0 0 5 0
+ 3 263 0 263  0 0 22 1  0 0 5 0
+ 3 263 0 263  0 0 22 2  0 0 5 0
+ 3 0 0 20  233 0 233 4  0 0 37 0
+ 3 0 0 44  0 0 22 10  224 0 224 0
+ 3 0 0 44  0 0 22 3  224 0 224 0
+ 3 0 0 66  180 0 180 7  0 0 44 0
+ 3 0 0 91  0 0 20 14  179 0 179 0
+ 3 0 0 117  0 0 19 6  154 0 154 0
+ 3 0 0 117  0 0 19 5  154 0 154 0
+ 3 0 0 140  0 0 22 11  128 0 128 0
+ 3 0 0 162  76 0 76 13  0 0 52 0
+ 3 0 0 26  197 0 197 15  0 0 67 0
+Layers 5
+"" 20 30 65535  0 
+"" 20 30 65535  0 
+"" 20 30 65535  0 
+"" 20 30 65535  0 
+"" 20 30 65535  0 
+EOF

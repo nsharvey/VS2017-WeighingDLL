@@ -1,0 +1,14 @@
+// Ilv Version: 2.4
+// File generated: Fri Jul 25 16:50:22 1997
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "defaultBg" "defaultFg" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 1
+1 { 0 0 IlvSCManagerRectangle 0 0 216 378 YY } 96 "managerRectangle" "SCManager"
+0
+Size 232 394
+GeometryHandlers
+1 100 0 232 0 232 0
+1 3 0 0 0  232 0 232 0  0 0 0 0
+1 100 0 394 0 394 0
+1 3 0 0 0  394 0 394 0  0 0 0 0

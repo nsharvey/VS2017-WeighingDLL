@@ -1,0 +1,74 @@
+// Ilv Version: 5.0
+// File generated: Thu Jan 24 13:05:38 2002
+// Creator class: IlvGadgetManagerOutput
+FileName "spigen"
+PathName "E:\\Users\\dupuy\\Views\\work\\studio\\data\\ivstudio\\appli\\spigen.ilv"
+Palettes 1
+"IlvStToolBar" 0 F "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 11
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 130 55 220 22 F6 2 1 -1 0 "" } 32 "userClass"
+6144 "title" "name"
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 130 5 220 22 F6 2 1 -1 0 "" } 32 "name"
+2048 "userClass"
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 130 30 220 22 F7 2 1 -1 0 "" } 32 "class"
+6144 "userClass" "name"
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFileSelectorField 130 80 220 22 F6 2 1 -1 0 "" } 32 "bitmap"
+6144 "visible" "destroyCb"
+3 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 5 118 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&name"  }   } 0
+0
+3 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 30 118 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&class"  }   } 0
+0
+3 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 55 118 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&userClass"  }   } 0
+0
+3 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 130 110 219 16 F1073741825 2 1 2 0 14 0 Y "&visible" } 32 "visible"
+6144 "panelX" "bitmap"
+3 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 130 135 219 16 F1 2 1 2 0 14 0 Y "&accelerators" } 32 "accelerators"
+0
+3 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 130 160 219 16 F1 2 1 2 0 14 0 Y "&doubleBuffering" } 32 "doubleBuffering"
+0
+3 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 80 118 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&bitmap"  }   } 32 "bitmapLabel"
+0
+Size 356 271
+GeometryHandlers
+1 100 356 356 0 356 0
+11 3 0 0 130  220 0 220 1  0 0 6 0
+ 3 0 0 130  220 0 220 2  0 0 6 0
+ 3 0 0 130  220 0 220 0  0 0 6 0
+ 3 0 0 10  0 0 118 4  228 0 228 0
+ 3 0 0 10  0 0 118 5  228 0 228 0
+ 3 0 0 10  0 0 118 6  228 0 228 0
+ 3 0 0 130  219 0 219 7  0 0 7 0
+ 3 0 0 130  219 0 219 8  0 0 7 0
+ 3 0 0 130  219 0 219 9  0 0 7 0
+ 3 0 0 10  0 0 118 10  228 0 228 0
+ 3 0 0 130  220 0 220 3  0 0 6 0
+1 100 250 271 0 271 0
+0
+Layers 4
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+EOF

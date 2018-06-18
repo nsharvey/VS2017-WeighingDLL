@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Extending Rogue Wave&nbsp;Views Studio: An Example</title><link rel="Prev" href="extensions.38.13.html" title="Previous" /><link rel="Next" href="extensions.38.15.html" title="Next" /><link rel="StyleSheet" href="css/extensions.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/extensions_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/UserManuals/extensions.38.14.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pHIXzcgZ0ifK5zsK7WEYZdg" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/UserManuals/extensions.38.14.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/ctrusrfrontcover.html#wwconnect_header">Gadgets</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/ctrusrpart1.html#ww144909">Creating GUI Applications with Rogue Wave&nbsp;Views Studio</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/extensions.38.01.html#wwconnect_header">Extending Rogue Wave&nbsp;Views Studio</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Extending Rogue Wave&nbsp;Views Studio: An Example</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww1024661" class="Heading1"><span></span>Extending Rogue Wave&nbsp;Views Studio: An Example</div><div id="ww1024662" class="Body">The example in this section shows how to create an editor that associates predefined callbacks with any graphic object. <span class="code">loadilv</span> is a predefined callback that takes the name of the file to be loaded as a parameter. This name is stored in graphic objects as a property.</div><div id="ww1024663" class="Body">The first task is to derive a class from <span class="ClassName"><a href="../RefMan/refcppmanager/classIlvGadgetManager.html">IlvGadgetManager</a></span> to redefine <span class="code">read</span> and <span class="code">write</span> for storing and restoring the new property. This part is not described here. We assume that you have a class <span class="code">MyManager</span> that saves objects with the descriptor <span class="code">MyGadgetManagerOutput</span> and a class <span class="code">MyContainer</span> restoring objects saved by <span class="code">MyManager</span>.</div><div id="ww1024664" class="Body">Follow these steps to extend the editor:</div><div id="ww1024668" class="Numbered1"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span class="number">1.	</span></span><a href="../UserManuals/extensions.38.06.html#ww1024156" title="Defining a New Buffer">Defining a New Buffer</a> associated with the new manager and container.</div><div id="ww1024672" class="Numbered"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span class="number">2.	</span></span><a href="../UserManuals/extensions.38.16.html#ww1024749" title="Defining a New Command">Defining a New Command</a> to create a buffer of the new type.</div><div id="ww1024676" class="Numbered"><span class="WebWorks_Number" style="width: 14.173228346456696pt"><span class="number">3.	</span></span><a href="../UserManuals/extensions.38.17.html#ww1024798" title="Defining a New Panel">Defining a New Panel</a> to associate the file name with objects.</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

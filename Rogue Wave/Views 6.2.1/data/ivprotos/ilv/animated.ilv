@@ -1,0 +1,26 @@
+// Ilv Version: 3.0
+// File generated: Mon Jan 19 13:29:21 1998
+// Creator class: IlvProtoGadgetManagerOutput
+Palettes 0
+IlvObjects 0
+Size 424 170
+Instances 2
+IlvProtoInstance samples.pump pump#0
+    values {
+        Boolean rotate = true
+        Boolean invert = true
+        Int x = 89
+        Int y = 48
+    }
+;
+IlvProtoInstance samples.alert label#0
+    values {
+        UInt alert = 3
+        Int x = 243
+        Int y = 79
+    }
+;
+ValueSources 0
+Subscriptions {
+}
+EOF

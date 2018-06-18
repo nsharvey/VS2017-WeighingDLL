@@ -1,0 +1,19 @@
+var pairs =
+{
+"using":{"matrices":1}
+,"matrices":{"matrix":1}
+,"matrix":{"mode":1}
+,"mode":{"change":1,"icon":1}
+,"change":{"items":1}
+,"items":{"ilvmatrix":1}
+,"ilvmatrix":{"ilvsheet":1}
+,"ilvsheet":{"objects":1}
+,"objects":{"respective":1}
+,"respective":{"inspector":1}
+,"inspector":{"panels":1}
+,"panels":{"edit":1}
+,"edit":{"general":1}
+,"general":{"properties":1}
+,"properties":{"matrix":1}
+}
+;Search.control.loadWordPairs(pairs);

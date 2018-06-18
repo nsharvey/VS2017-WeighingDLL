@@ -1,0 +1,57 @@
+// DemoATL.idl : IDL source for DemoATL.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (DemoATL.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+	
+
+	[
+		object,
+		uuid(3B10417C-3E6C-11D3-B74F-00C04F68A89D),
+		dual,
+		helpstring("IDemoATLCtrl Interface"),
+		pointer_default(unique)
+	]
+	interface IDemoATLCtrl : IDispatch
+	{
+		[propget, id(1), helpstring("property FileName")] HRESULT FileName([out, retval] BSTR *pVal);
+		[propput, id(1), helpstring("property FileName")] HRESULT FileName([in] BSTR newVal);
+		[propget, id(2), helpstring("property Background")] HRESULT Background([out, retval] OLE_COLOR *pVal);
+		[propput, id(2), helpstring("property Background")] HRESULT Background([in] OLE_COLOR newVal);
+	};
+
+[
+	uuid(3B10416F-3E6C-11D3-B74F-00C04F68A89D),
+	version(1.0),
+	helpstring("DemoATL 1.0 Type Library")
+]
+library DEMOATLLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(3B10417E-3E6C-11D3-B74F-00C04F68A89D),
+		helpstring("_IDemoATLCtrlEvents Interface")
+	]
+	dispinterface _IDemoATLCtrlEvents
+	{
+		properties:
+		methods:
+		[id(1), helpstring("method PointerPosition")] HRESULT PointerPosition(BSTR name, OLE_XPOS_PIXELS x, OLE_YPOS_PIXELS y);
+	};
+
+	[
+		uuid(3B10417D-3E6C-11D3-B74F-00C04F68A89D),
+		helpstring("DemoATLCtrl Class")
+	]
+	coclass DemoATLCtrl
+	{
+		[default] interface IDemoATLCtrl;
+		[default, source] dispinterface _IDemoATLCtrlEvents;
+	};
+};

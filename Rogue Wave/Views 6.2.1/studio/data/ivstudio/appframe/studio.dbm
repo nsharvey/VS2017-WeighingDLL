@@ -1,0 +1,21 @@
+// IlvMessageDatabase 6.2 2017-04-12 01:33:25
+// Language: en_US
+// Encoding: US-ASCII
+"&AppStuFormView" "Form View"
+"&AppStuGrapherView" "Grapher View"
+"&AppStuHierView" "Hierarchical View"
+"&AppStuListView" "List View"
+"&AppStuManagerView" "Manager View"
+"&AppStuMatrixView" "Matrix View"
+"&AppStuProjectView" "Project View"
+"&AppStuSheetView" "Sheet View"
+"&AppStuTextView" "Text View"
+"&AppStuTreeView" "Tree View"
+"&Appframe" "Application Framework"
+"&Document" "Document"
+"&File" "File"
+"&Folder1" "First folder"
+"&Folder2" "Second folder"
+"&Project" "Project"
+"&Title" "Title"
+"&ViewOnThe" "View on the"

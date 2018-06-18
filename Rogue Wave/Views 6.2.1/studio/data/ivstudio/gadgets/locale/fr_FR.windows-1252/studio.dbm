@@ -1,0 +1,23 @@
+// IlvMessageDatabase 6.2 2017-04-12 01:33:26
+// Language: fr_FR
+// Encoding: ISO-8859-1
+"&ErrNbVisItemGT0" "Le nombre d'éléments visibles doit être compris entre 0 et 50"
+"&attachmentMode" "Attachements"
+"&attachmentModeP" "Mode d'édition des attachements"
+"&focusMode" "Focus"
+"&focusModeP" "Mode d'enchaînement de focus"
+"&matrixMode" "Matri^ce"
+"&matrixModePrompt" "Mode d'édition de matrice"
+"&menuMode" "^Menu"
+"&menuModePrompt" "Mode d'édition de menu"
+"&newGadgetBuffer" "Gadgets"
+"&newGadgetBufferP" "Créer un nouveau tampon pour gadgets"
+"&removeAllAttachments" "Retirer tous les attachements"
+"&removeAllAttachmentsP" "Retirer tous les attachements du tampon courant"
+"&removeAttachments" "Retirer attachements"
+"&removeAttachmentsP" "Retirer les attachements des objets sélectionnés"
+"&scMgrPrompt" "Créer un SCManagerRectangle"
+"&spinBoxMode" "SpinBox"
+"&spinBoxModePrompt" "Mode d'édition de SpinBox"
+"&ttmatrixMode" "Matrice"
+"&ttmenuMode" "Menu"

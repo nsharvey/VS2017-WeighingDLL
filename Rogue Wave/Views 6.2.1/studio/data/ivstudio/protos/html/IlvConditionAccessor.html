@@ -1,0 +1,26 @@
+<html><head><title>Prototypes</title></head>
+<body bgcolor=#ffffff>
+<h3><FONT color=#b61840> Condition </FONT></h3>
+</a><a name="948508">
+The Condition accessor (class <a href="../../refman/html/IlvConditionAccessor.html"><code>IlvConditionAccessor</code></a>) is used to test a condition on a property when the value is changed. <p>
+</a><a name="948509">
+The first parameter defines a condition operator that is applied to the new value specified in the call to <code>changeValue</code> and to the value specified in the operand parameter. For example, if the value is changed to <code>10</code>, the operator parameter is <code>&gt;</code><code>,</code> and the operand is 5, the condition tested is <code>10 &gt; 5</code>. If the operator is <code>[</code><code>Operand_value</code><code>]</code>, the condition tested is only the value of the operand parameter (that is, the new value passed to <code>changeValue</code> is ignored).<p>
+</a><a name="948510">
+Depending on the test result, the accessor specified by the Accessor parameter is set to one of two values: Value if True or Value if False. The parameters Operand, Value if True, and Value if False can be either immediate values (such as <code>1</code> or <code>"red"</code>) or the names of other accessors that will be queried to get the actual values used.<p>
+</a><a name="948511">
+<h4><FONT color=#b61840> Parameters</FONT></h4>
+</a><ul><a name="948512">
+<li>Operator: The operator used to test the conditions. Can be one of the following: <code>==</code>, <code>!=</code>, <code>&gt;=</code>, <code>&lt;</code>, <code>&lt;=</code>, or <code>[Operand_value]</code>.
+</a><p><a name="948513">
+<li>Operand: The operand value.
+</a><p><a name="948514">
+<li>Value if True: Value to which the output is set if the condition is true (or non <code>0</code>).
+</a><p><a name="948515">
+<li>Value if False: Value to which the output is set if the condition is false (or <code>0</code>).
+</a><p><a name="948516">
+<li>Accessor: Prototype value or node attribute that will be set to true or false, depending on the condition.
+</a><p><a name="948517">
+<li>The type of the accessor is undetermined and irrelevant. However, it needs to be compatible with the operand type.
+</a><p></ul><a name="948518">
+</body>
+</html><hr><a href=displayb>Back</a>

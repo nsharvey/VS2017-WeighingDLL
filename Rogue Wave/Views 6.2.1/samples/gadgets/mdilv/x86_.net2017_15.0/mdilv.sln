@@ -1,0 +1,6 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{1C3132C8-1D6F-11E8-9A26-E378772C9500}") = "mdilv", "mdilv.vcxproj", "{1C30BB0E-1D6F-11E8-9A26-E378772C9500}"
+EndProject
+Global
+EndGlobal

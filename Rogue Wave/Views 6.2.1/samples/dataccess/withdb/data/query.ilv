@@ -1,0 +1,62 @@
+// Ilv Version: 3.1
+// File generated: Mon Feb  1 11:51:27 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "query"
+PathName "query.ilv"
+Palettes 5
+1 "gray" "black" "bold" "%helvetica-12-B" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+2 "white" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+3 "gray" "black" "button" "%helvetica-12-B" 0 solid solid 0 0 0
+4 "gray" "black" "large" "%helvetica-18-B" 0 solid solid 0 0 0
+IlvObjects 10
+1 { 0 0 IliSQLDataSource 290 7 24 24 1 14 3 0 IliSQLTable 0 19 4 
+     74 "EMPNO" Int 15 -1 2 103 "Identifier" 32 37 "EMPNO" 1 
+     72 "I_EMP.NAME" String 16 25 1 103 "Name" 32 33 "NAME" 
+     72 "I_DEPT.NAME" String 17 25 1 103 "Department" 32 33 "NAME" 
+     72 "MANAGER" String 18 25 1 105 "Manager" 32 33 "MANAGER" 
+     16 0 1 31662 0 "oracle" "SELECT I_EMP.EMPNO,\n       I_EMP.NAME,\n       I_DEPT.NAME,\n       I_DEPT.MANAGER\nFROM I_EMP,\n     I_DEPT\nWHERE I_EMP.DEPTNO = I_DEPT.DEPTNO\nORDER BY 1" 500 0 5 3 1 2 1 0 "I_EMP" "I_EMP" 0 3 11 13 130 160 1 0 "I_DEPT" "I_DEPT" 1 4 176 17 130 154 0 0 1 1 1 1 2 0 "DEPTNO" 1 "DEPTNO" 0 1 0 1 0 2 0 6 5 
+     10 "EMPNO" Int 1 -1 2 -1 0 
+     8 "NAME" String 2 25 1 -1 0 
+     8 "STATUS" Int 3 -1 2 -1 0 
+     8 "DEPTNO" Int 4 -1 2 -1 0 
+     9 "SALARY" Double 5 -1 2 -1 0 
+     0 0 "I_EMP" 0 0 0 4 3 
+     10 "DEPTNO" Int 1 -1 2 -1 0 
+     8 "NAME" String 2 25 1 -1 0 
+     8 "MANAGER" String 3 25 1 -1 0 
+     0 0 "I_DEPT" 0 0 6 "Main" "null" "/"  } 32 "EMP_DS"
+0
+1 { 1 1 IliTableGadget 10 105 440 155 2 2067 "EMP_DS" 725466719 1 0 0 0 17 18 21 4 0 0 0 1 1 "white" A"normal" "%helvetica-12-"  } 32 "TG"
+0
+1 { 2 0 IliEntryField 10 73 140 22 F6 2 1 -1 0 "" 2051 3  } 32 "EDTEmployee"
+0
+1 { 3 0 IlvMessageLabel 10 50 140 22 F8 0 25 16 4 "Employees"   } 0
+0
+1 { 4 0 IlvMessageLabel 160 50 140 22 F8 0 25 16 4 "Department"   } 0
+0
+1 { 5 0 IlvMessageLabel 310 50 140 22 F8 0 25 16 4 "Manager"   } 0
+0
+1 { 6 0 IliEntryField 310 73 140 22 F6 2 1 -1 0 "" 2051 3  } 32 "EDTManager"
+0
+1 { 7 0 IliEntryField 160 73 140 22 F6 2 1 -1 0 "" 2051 3  } 32 "EDTDept"
+0
+1 { 8 3 IlvButton 380 10 70 25 F9 2 1 16 4 "Select"   } 544 "BNSelect"
+1
+1 "__ilvCallback" "bnClickedSelect"
+0
+1 { 9 4 IlvMessageLabel 10 10 243 25 F8 0 25 16 4 "Selected Employees"   } 0
+0
+Size 460 270
+GeometryHandlers
+1 100 0 460 0 460 0
+4 3 0 0 10  440 0 440 1  0 0 10 0
+ 3 380 0 380  0 0 70 8  0 0 10 0
+ 3 0 0 310  140 0 140 6  0 0 10 0
+ 3 0 0 310  140 0 140 5  0 0 10 0
+1 100 0 270 0 270 0
+4 3 0 0 105  155 0 155 1  0 0 10 0
+ 3 0 0 10  0 0 25 8  235 0 235 0
+ 3 0 0 73  0 0 22 6  175 0 175 0
+ 3 0 0 50  0 0 22 5  198 0 198 0
+EOF

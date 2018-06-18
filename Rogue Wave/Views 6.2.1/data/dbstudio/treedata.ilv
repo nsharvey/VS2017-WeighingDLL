@@ -1,0 +1,90 @@
+// Ilv Version: 5.1
+// File generated: Thu Aug 30 16:20:55 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "treedata"
+PathName "C:\\ilog\\dataccess\\work\\data\\dbstudio\\treedata.ilv"
+Palettes 5
+"defaultGadget" 4 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 0 F "gray" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+3 F "white" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+1 F "gray" "black" "small" "%arial-10-[Charset:0]" 0 solid solid 0 0 0 65535 1
+2 F "gray" "black" "bold" "%Tahoma-11-B[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 8
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 5 80 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&insp_Model"  }   } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliMemoryDataSource 38 7 24 24 1 14 3 0 IliMemoryTable 0 2 1 
+     8 "NAME" String 1 -1 1 -1 32 
+     16 0 8 0
+0
+ } 32 "%DS_MS"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliMemoryDataSource 133 15 24 24 1 14 3 6 IliMemoryTable 0 3 2 
+     8 "ID" Int 1 -1 2 -1 32 
+     8 "LABEL" String 2 -1 1 96 32 
+     16 0 8 6
+1 0 "Equal" 
+1 1 "Not equal" 
+1 2 "Less" 
+1 3 "Great" 
+1 4 "Included" 
+1 5 "Excluded" 
+0
+ } 32 "%MODEL_MS"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliMemoryDataSource 219 15 24 24 1 14 3 0 IliMemoryTable 0 10 6 
+     72 "DS" String 1 -1 1 72 "&hdr_DataSource" 61 "%DS_MS" "NAME" "NAME" 
+     72 "ID" String 2 -1 1 72 "&insp_Identifier_" 32 
+     73 "LABEL" String 3 -1 1 72 "&insp_Label_" 32 
+     73 "PARENT" String 7 -1 1 72 "&insp_Parent" 32 
+     73 "BITMAP" String 8 -1 1 72 "&insp_Bitmap_" 32 
+     73 "FORMAT" String 9 -1 1 77 "&insp_Format_" 45 "FMT_MS" "DEF" "DEF" 
+     16 0 8 0
+0
+ } 32 "%CHOIX_MS"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliMemoryDataSource 86 13 24 24 1 14 3 0 IliMemoryTable 0 2 1 
+     8 "NAME" String 1 -1 1 -1 32 
+     16 0 8 0
+0
+ } 32 "%COL_MS"
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliMemoryDataSource 324 19 24 24 1 14 19 0 IliMemoryTable 0 2 1 
+     8 "DEF" String 1 -1 1 -1 32 
+     16 0 8 0
+0
+ } 32 "FMT_MS"
+0
+1 { 6 P 2
+[ IlvAttachments _IlvAttachments 1008  1 5 1 30 1 5 1 5 2 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IliTableGadget 5 30 459 170 2 2067 "%CHOIX_MS" 1799208527 1 0 0 0 17 18 21 4 0 0 0 1 1 "white" A"normal" "%Tahoma-11-[Charset:0]"  } 32 "TGDs"
+0
+1 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+4 IliScrolledComboBox 90 5 374 20 F806 2 1 -1 0 "" 6
+{ IlvGadgetItem 1 2 4 "Equal"  } 
+{ IlvGadgetItem 1 2 4 "Not equal"  } 
+{ IlvGadgetItem 1 2 4 "Less"  } 
+{ IlvGadgetItem 1 2 4 "Great"  } 
+{ IlvGadgetItem 1 2 4 "Included"  } 
+{ IlvGadgetItem 1 2 4 "Excluded"  }  4 0 19331 "%MODEL_MS" "ID" "LABEL" 0  } 32 "CBNModel"
+0
+Size 469 205
+GeometryHandlers
+1 100 0 469 0 469 0
+1 3 0 0 90  374 0 374 7  0 0 5 0
+1 100 0 205 0 205 0
+0
+EOF

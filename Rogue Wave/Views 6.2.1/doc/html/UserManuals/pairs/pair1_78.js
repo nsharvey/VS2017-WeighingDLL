@@ -1,0 +1,27 @@
+var pairs =
+{
+"bidi":{"guide":1,"version":1,"support":1}
+,"guide":{"describes":1}
+,"describes":{"rogue":1,"target":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1}
+,"views":{"bidi":1,"specifically":1}
+,"version":{"rogue":1,"6.2.1":1}
+,"specifically":{"designed":1}
+,"designed":{"supporting":1}
+,"supporting":{"contextual":1}
+,"contextual":{"bidirectional":1,"languages":1}
+,"bidirectional":{"languages":1,"contextual":1}
+,"languages":{"section":1,"describes":1}
+,"section":{"contains":1}
+,"contains":{"following":1}
+,"following":{"topics":1}
+,"topics":{"introduction":1}
+,"introduction":{"describes":1}
+,"target":{"systems":1}
+,"systems":{"limitations":1}
+,"limitations":{"compatibility":1}
+,"compatibility":{"rogue":1}
+,"support":{"bidirectional":1}
+}
+;Search.control.loadWordPairs(pairs);

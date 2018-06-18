@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("7AEFF20C-1D62-11E8-AB12-0BC9772C9500") = "nodb", "nodb.vcxproj", "7AEF9C12-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Global
+EndGlobal
+

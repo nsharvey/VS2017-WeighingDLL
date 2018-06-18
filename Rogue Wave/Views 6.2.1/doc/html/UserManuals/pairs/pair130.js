@@ -1,0 +1,20 @@
+var pairs =
+{
+"show":{"propertiespanel":1}
+,"propertiespanel":{"label":1}
+,"label":{"property":1}
+,"property":{"sheet":1}
+,"sheet":{"path":1}
+,"path":{"tools":1}
+,"tools":{"enu":1}
+,"enu":{"category":1}
+,"category":{"studio":1}
+,"studio":{"panel":1}
+,"panel":{"action":1}
+,"action":{"shows":1}
+,"shows":{"(or":1}
+,"(or":{"hides)":1}
+,"hides)":{"properties":1}
+,"properties":{"panel":1}
+}
+;Search.control.loadWordPairs(pairs);

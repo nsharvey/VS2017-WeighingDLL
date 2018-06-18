@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvgadgt31 -->
+<module name="ilvgadgt31" version="6.2">
+<class name="IlvScrolledMatrix" rootClass="IlvGraphic"/>
+<class name="IlvChartContainerRectangle" rootClass="IlvGraphic"/>
+<class name="IlvScrolledStringList" rootClass="IlvGraphic"/>
+</module>

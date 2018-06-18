@@ -1,0 +1,53 @@
+// Ilv Version: 4.0
+// File generated: Wed Apr 12 15:54:00 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "pagedlg"
+Palettes 3
+"default" 1 "gray" "black" "default" "fixed" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12" 0 solid solid 0 0 0
+2 48640 48640 48640 "black" "button" "%helvetica-12-B" 0 solid solid 0 0 0
+IlvObjects 5
+1 { 0 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvPanelObjectReference IlvPanelObjectReference  "943040869.0" ]
+0 IlvNotebook 5 2 356 320 F1 2 0 2  3
+" { IlvNotebookPageItem 1 2 4 "&Page"  }  B "ilviews/appframe/page.ilv"
+" { IlvNotebookPageItem 1 2 4 "&Margins"  }  B "ilviews/appframe/margins.ilv"
+" { IlvNotebookPageItem 1 2 4 "&DocumentArea"  }  B "ilviews/appframe/dumparea.ilv"
+0 0 4 5 2 2 2 2 2  } 32 "CzNBook"
+0
+1 { 1 1 IlvReliefLine 4 329 364 329 1 } 0
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvButton 94 340 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&ok"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+4096 "Orient"
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvButton 282 340 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cancel"  }   } 32 "Close"
+2048 "File"
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvButton 194 340 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&reset"  }   } 32 "Reset"
+4096 "Orient"
+Size 365 370
+GeometryHandlers
+1 100 0 365 0 365 0
+5 3 0 0 5  356 0 356 0  0 0 4 0
+ 3 94 0 94  0 0 80 2  0 0 191 0
+ 3 282 0 282  0 0 80 3  0 0 3 0
+ 3 0 0 4  360 0 360 1  0 0 1 0
+ 3 194 0 194  0 0 80 4  0 0 91 0
+1 100 0 370 0 370 0
+5 3 0 2 2  320 0 320 0  0 0 48 0
+ 3 328 0 328  0 0 2 1  0 0 40 0
+ 3 340 0 340  0 0 23 3  0 7 7 0
+ 3 340 0 340  0 0 23 2  0 7 7 0
+ 3 340 0 340  0 0 23 4  0 0 7 0
+Layers 3
+"" 4 0 
+"" 4 0 
+"" 4 0 
+EOF

@@ -1,0 +1,32 @@
+// Ilv Version: 4.0
+// File generated: Thu Jul 27 15:41:08 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "combos"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0
+IlvObjects 2
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 10 7 170 20 F807 2 "" 2
+{ IlvGadgetItem 1 2 4 "Times New Roman"  } 
+{ IlvGadgetItem 1 2 4 "Courrier New"  }  4 0 } 32 "StyleComboBox"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 9 46 55 20 F807 2 "" 13
+{ IlvGadgetItem 1 2 4 "5"  } 
+{ IlvGadgetItem 1 2 4 "6"  } 
+{ IlvGadgetItem 1 2 4 "8"  } 
+{ IlvGadgetItem 1 2 4 "10"  } 
+{ IlvGadgetItem 1 2 4 "11"  } 
+{ IlvGadgetItem 1 2 4 "12"  } 
+{ IlvGadgetItem 1 2 4 "14"  } 
+{ IlvGadgetItem 1 2 4 "16"  } 
+{ IlvGadgetItem 1 2 4 "18"  } 
+{ IlvGadgetItem 1 2 4 "20"  } 
+{ IlvGadgetItem 1 2 4 "26"  } 
+{ IlvGadgetItem 1 2 4 "32"  } 
+{ IlvGadgetItem 1 2 4 "48"  }  4 0 } 32 "SizeComboBox"
+0
+Size 400 300
+EOF

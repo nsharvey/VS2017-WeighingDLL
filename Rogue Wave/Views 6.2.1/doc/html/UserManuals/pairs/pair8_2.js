@@ -1,0 +1,24 @@
+var pairs =
+{
+"grouping":{"objects":1}
+,"objects":{"ilvgraphicset":1,"implements":1,"contains":1,"contained":1}
+,"ilvgraphicset":{"ilvgraphicset":1,"object":1,"calls":1}
+,"object":{"organizes":1}
+,"organizes":{"ilvgraphic":1}
+,"ilvgraphic":{"objects":1}
+,"implements":{"geometric":1}
+,"geometric":{"graphic":1}
+,"graphic":{"member":1,"set)":1}
+,"member":{"functions":1}
+,"functions":{"means":1,"objects":1}
+,"means":{"calls":1}
+,"calls":{"member":1,"draw":1}
+,"contains":{"(for":1}
+,"(for":{"example":1}
+,"example":{"draw":1}
+,"draw":{"method":1,"methods":1}
+,"method":{"ilvgraphicset":1}
+,"methods":{"objects":1}
+,"contained":{"graphic":1}
+}
+;Search.control.loadWordPairs(pairs);

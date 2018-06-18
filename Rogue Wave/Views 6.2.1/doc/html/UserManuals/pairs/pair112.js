@@ -1,0 +1,22 @@
+var pairs =
+{
+"setlayer":{"label":1}
+,"label":{"layer":1}
+,"layer":{"path":1,"number":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"draw":1}
+,"draw":{"menu":1}
+,"menu":{"category":1}
+,"category":{"edit":1}
+,"edit":{"action":1}
+,"action":{"opens":1}
+,"opens":{"dialog":1}
+,"dialog":{"box":1}
+,"box":{"lets":1}
+,"lets":{"change":1}
+,"change":{"layer":1}
+,"number":{"selected":1}
+,"selected":{"objects":1}
+}
+;Search.control.loadWordPairs(pairs);

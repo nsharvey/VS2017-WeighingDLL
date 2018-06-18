@@ -1,0 +1,26 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{ECEE817E-1D63-11E8-96A2-F2B8772C9500}") = "loadOnDemand", "loadOnDemand.vcxproj", "{ECEE3228-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{ECF78F76-1D63-11E8-96A2-F2B8772C9500}") = "mainpol", "mainpol.vcxproj", "{ECEE3228-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{ED016104-1D63-11E8-96A2-F2B8772C9500}") = "useviews", "useviews.vcxproj", "{ECEE3228-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{ED0C740E-1D63-11E8-96A2-F2B8772C9500}") = "useproj", "useproj.vcxproj", "{ECEE3228-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{ED157FA4-1D63-11E8-96A2-F2B8772C9500}") = "proj_step1", "proj_step1.vcxproj", "{ECEE3228-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{ED1E7E1A-1D63-11E8-96A2-F2B8772C9500}") = "proj_step2", "proj_step2.vcxproj", "{ECEE3228-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{ED27B624-1D63-11E8-96A2-F2B8772C9500}") = "proj_step3", "proj_step3.vcxproj", "{ECEE3228-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{ED30BE54-1D63-11E8-96A2-F2B8772C9500}") = "shapeLOD", "shapeLOD.vcxproj", "{ECEE3228-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{ED39DC82-1D63-11E8-96A2-F2B8772C9500}") = "imageReader", "imageReader.vcxproj", "{ECEE3228-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{ED44081A-1D63-11E8-96A2-F2B8772C9500}") = "tiff", "tiff.vcxproj", "{ECEE3228-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{ED4D3138-1D63-11E8-96A2-F2B8772C9500}") = "maptileloader", "maptileloader.vcxproj", "{ECEE3228-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Global
+EndGlobal

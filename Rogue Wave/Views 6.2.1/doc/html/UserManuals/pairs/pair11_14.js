@@ -1,0 +1,26 @@
+var pairs =
+{
+"testing":{"generated":1}
+,"generated":{"application":1,"file":1}
+,"application":{"test":1,"run":1,"object":1,"close":1}
+,"test":{"generated":1}
+,"run":{"utility":1}
+,"utility":{"application":1}
+,"object":{"directory":1}
+,"directory":{"using":1,"\u002Ftmp\u002Ftest":1}
+,"using":{"generated":1}
+,"file":{"launch":1}
+,"launch":{"myappli":1}
+,"myappli":{"following":1,"end":1}
+,"following":{"example":1}
+,"example":{"commands":1}
+,"commands":{"object":1}
+,"\u002Ftmp\u002Ftest":{"\u002Ftmp\u002Ftest":1,"myappli.mak":1}
+,"myappli.mak":{"myappli":1}
+,"end":{"application":1}
+,"close":{"result":1}
+,"result":{"panel":1}
+,"panel":{"window":1}
+,"window":{"manager":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,20 @@
+var pairs =
+{
+"newgadgetbuffer":{"label":1}
+,"label":{"gadgets":1}
+,"gadgets":{"path":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"file":1}
+,"file":{"menu":1}
+,"menu":{"new":1}
+,"new":{"category":1,"gadget":1}
+,"category":{"buffer":1}
+,"buffer":{"action":1,"buffer":1,"becomes":1}
+,"action":{"creates":1}
+,"creates":{"new":1}
+,"gadget":{"buffer":1}
+,"becomes":{"current":1}
+,"current":{"buffer":1}
+}
+;Search.control.loadWordPairs(pairs);

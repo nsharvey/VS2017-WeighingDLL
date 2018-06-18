@@ -1,0 +1,61 @@
+// Ilv Version: 5.3
+// File generated: Tue May 11 15:37:12 2010
+// Creator class: IlvGadgetManagerOutput
+FileName "phrase_Secu"
+PathName "C:\\e\\MyDevelopment\\centrale sarto modif\\IlogFile\\phrase_Secu.ilv"
+Palettes 3
+"default" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+2 F "gray" "black" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+1 F "gray" "black" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 0
+IlvObjects 6
+1 { 0 0 IlvZoomableTransparentIcon 0 0 "default" F9.368497267142852 0 0 9.32937961027622 8 16 } 32 "secu"
+2
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.189338183646255 0 0 6.239918359243871 424 360 } 544 "Descendre"
+1
+1 "__ilvCallback" "descendreCB"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.189338183646255 0 0 6.239918359243871 480 360 } 544 "Monter"
+1
+1 "__ilvCallback" "monterCB"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+0 IlvZoomableTransparentIcon 0 0 "default" F6.189338183646255 0 0 6.239918359243871 536 360 } 544 "Aide"
+1
+1 "__ilvCallback" "aideCB"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F6.189338183646255 0 0 6.239891185331345 592 360 } 544 "Quitter"
+1
+1 "__ilvCallback" "quitterCB"
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvText 88 16 556 313 F129 2 N N 3 3 2 2 0 2
+"Text"
+"multi lines"
+0 0 0 0 } 32 "PhraseSecu"
+0
+Size 655 424
+Background "gray"
+GeometryHandlers
+1 100 0 655 0 655 0
+6 3 8 0 8  75 0 75 0  572 0 572 0
+ 3 88 0 88  556 0 556 5  11 0 11 0
+ 3 424 0 424  50 0 50 1  181 0 181 0
+ 3 480 0 480  50 0 50 2  125 0 125 0
+ 3 536 0 536  50 0 50 3  69 0 69 0
+ 3 592 0 592  50 0 50 4  13 0 13 0
+1 100 0 424 0 424 0
+6 3 16 0 16  75 0 75 0  333 0 333 0
+ 3 16 0 16  313 0 313 5  95 0 95 0
+ 3 360 0 360  50 0 50 1  14 0 14 0
+ 3 360 0 360  50 0 50 2  14 0 14 0
+ 3 360 0 360  50 0 50 3  14 0 14 0
+ 3 360 0 360  50 0 50 4  14 0 14 0
+EOF

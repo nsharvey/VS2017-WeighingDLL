@@ -1,0 +1,145 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:53:49 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "sheet"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\sheet.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 30
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 6 118 259 134 F268435468 0 { IlvMessageItem 262169 4 16 4 "&state"  }   } 32 "Frame_1"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 6 255 259 70 F268435468 0 { IlvMessageItem 262169 4 16 4 "&scrollbars"  }   } 0
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 138 140 101 16 F1 2 1 2 0 0 0 Y "&exclusive" } 32 "excl"
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 138 184 101 16 F1 2 1 2 0 0 0 Y "&sensitive" } 32 "sens"
+0
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 138 206 101 16 F1 2 1 2 0 0 0 Y "&shadow" } 32 "shadow"
+0
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 80 5 46 23 F6 2 1 -1 0 "" } 32 "columns"
+0
+2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 80 34 46 23 F6 2 1 -1 0 "" } 32 "xsize"
+0
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 80 63 46 23 F6 2 1 -1 0 "" } 32 "frow"
+0
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 80 92 46 23 F6 2 1 -1 0 "" } 32 "spacing"
+0
+2 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 19 140 111 16 F1 2 1 2 0 0 0 Y "&background" } 32 "bg"
+0
+2 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 19 162 117 16 F1 2 1 2 0 0 0 Y "&fitToSize" } 544 "fito"
+1
+1 "__ilvCallback" "CallFitToSize"
+0
+2 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 19 184 101 16 F1 2 1 2 0 0 0 Y "&grid" } 32 "grid"
+0
+2 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 19 206 101 16 F1 2 1 2 0 0 0 Y "&editable" } 32 "allowEdit"
+0
+2 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 223 5 46 23 F6 2 1 -1 0 "" } 32 "rows"
+0
+2 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 222 34 46 23 F6 2 1 -1 0 "" } 32 "ysize"
+0
+2 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 222 63 46 23 F6 2 1 -1 0 "" } 32 "fcol"
+0
+2 { 16 P 2
+[ IlvAttachments _IlvAttachments 128  1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 5 340 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 512
+1
+1 "__ilvCallback" "apply"
+0
+2 { 17 P 2
+[ IlvAttachments _IlvAttachments 192  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 207 340 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+2 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 19 275 163 16 F1 2 1 2 0 0 0 Y "&verticalScrollBar" } 32 "vsbar"
+0
+2 { 19 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 19 298 163 16 F1 2 1 2 0 0 0 Y "&horizontalScrollBar" } 32 "hsbar"
+0
+2 { 20 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 138 162 124 16 F1 2 1 2 0 0 0 Y "&adjustLast" } 544 "alast"
+1
+1 "__ilvCallback" "CallAdjustLast"
+0
+3 { 21 P 1
+[ IlvAttachments _IlvAttachments 464  1 0 1 0 1 35 2 ]
+0 IlvReliefLine 0 332 272 332 1 } 32 "line"
+0
+3 { 22 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 4 59 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&column"  }   } 0
+0
+3 { 23 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 137 5 55 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&row"  }   } 0
+0
+3 { 24 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 91 62 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&spacing"  }   } 0
+0
+3 { 25 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 62 62 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&firstRow"  }   } 0
+0
+3 { 26 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 137 62 83 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&firstColumn"  }   } 0
+0
+3 { 27 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 33 58 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&width"  }   } 0
+0
+3 { 28 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 137 33 75 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&height"  }   } 0
+0
+3 { 29 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 19 228 78 16 F1 2 1 2 0 0 0 Y "&Browse" } 32 "browse"
+0
+Size 272 368
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

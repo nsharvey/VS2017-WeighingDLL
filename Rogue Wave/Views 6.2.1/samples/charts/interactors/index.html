@@ -1,0 +1,87 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Charts - Samples: interactors</title>
+	</head>
+    <body>
+		<a name="stock"><h1>Sample: <code>stock</code></h1><h1 class="subtitle">Using Interactors to Interact with Charts</h1></a>
+		<p>Association of different behaviors with a chart.</p>
+		<img src="data/stock.png"/>
+		<p>This sample shows you how to associate several behaviors 
+   with a chart object. To do this, it uses an instance of the 
+   <code>IlvChartInteractorManager</code> class to register several
+   predefined chart interactors (instances of subclasses of 
+   <code>IlvChartInteractor</code>).</p>
+   <p>This sample defines the following behaviors:</p>
+   <ul>
+    <li>Left drag: Zooms in the displayed data.</li>
+    <li>Shift key + left drag: Zooms out the displayed data.</li>
+    <li>Right drag: Translates the displayed data.</li>
+    <li>Arrow keys: Translate the displayed data.</li>
+    <li>'i': Toggle the InfoView interactor.</li>
+    <li>'s': Toggle the picking mode of the InfoView interactor, between &quot;nearest point&quot; and &quot;item&quot;.</li>
+    <li>'m': Toggle the 'follow mouse' mode of the InfoView interactor.</li>
+   </ul>
+   <p>NOTE: If you use a mouse with two buttons, add the following line in
+   the file views.ini in order to make the pan interactor work with the
+   second button of your mouse:</p>
+   <p><code>UseRightButton = true</code></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvCartesianChart</code></li>
+			<li><code>IlvMemoryChartData</code></li>
+			<li><code>IlvChartYValueSet</code></li>
+			<li><code>IlvChartCoordinateInfo</code></li>
+			<li><code>IlvRectangularScaleDisplayer</code></li>
+			<li><code>IlvBarChartDisplayer</code></li>
+			<li><code>IlvHiLoOpenCloseChartDisplayer</code></li>
+			<li><code>IlvChartLegend</code></li>
+			<li><code>IlvChartInteractorManager</code></li>
+			<li><code>IlvChartZoomInteractor</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="../include/samputil.h"><code>../include/samputil.h</code></a></li>
+			<li><a href="../src/samputil.cpp"><code>../src/samputil.cpp</code></a></li>
+			<li><a href="src/stock.cpp"><code>src/stock.cpp</code></a></li>
+			<li><a href="data/stock.dat"><code>data/stock.dat</code></a></li>
+		</ul>
+		<a name="lens"><h1>Sample: <code>lens</code></h1><h1 class="subtitle">Local Zoom in Charts</h1></a>
+		<p>Shows how to set a local zoom on a coordinate.</p>
+		<img src="data/lens.png"/>
+		<p><P>
+   This sample shows you how the <CODE>IlvZoomCoordinateTransfomer</CODE> class can be associated 
+   with a coordinate to simulate a local zoom. In this sample, the transformer is associated 
+   with the abscissa coordinate of a Cartesian chart. Several accelerators allow you to modify
+   the properties of the transformer:
+   </P>
+   <UL>
+   <LI> The <EM>right</EM> and <EM>left</EM> keys let you translate the zoom window.</LI>
+   <LI> The <EM>up</EM> and <EM>down</EM> keys let you expand or shrink the zoom window.</LI>
+   <LI> The <EM>'+'</EM> and <EM>'-'</EM> keys let you increase or decrease the zoom factor.</LI>
+   <LI> The <EM>'c'</EM> key lets you toggle the continuous mode of the zoom.</LI>
+   <LI> The <EM>'p'</EM> key lets you toggle between a Polar and a Cartesian projector.</LI>
+   </UL></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvCartesianChart</code></li>
+			<li><code>IlvMarkedPolylineChartDisplayer</code></li>
+			<li><code>IlvZoomCoordinateTransfomer</code></li>
+			<li><code>IlvZoomScaleStepsUpdater</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="../include/samputil.h"><code>../include/samputil.h</code></a></li>
+			<li><a href="../src/samputil.cpp"><code>../src/samputil.cpp</code></a></li>
+			<li><a href="src/lens.cpp"><code>src/lens.cpp</code></a></li>
+		</ul>

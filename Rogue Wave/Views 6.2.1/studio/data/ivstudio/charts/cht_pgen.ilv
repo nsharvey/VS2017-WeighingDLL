@@ -1,0 +1,33 @@
+// Ilv Version: 4.0
+// File generated: Wed Jun  7 13:51:28 2000
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 5
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 4 6 182 17 F1 2 1 2 0 0 0 Y "&visible" } 32 "DisplayerVisible"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 30 182 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&OrdinateScale"  }   } 0
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 4 60 182 20 F807 2 "" 0 4 0 } 32 "DisplayerAxis"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 4 94 85 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Legend"  }   } 0
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 88 95 97 22 F6 2 1 -1 0 "" } 32 "DisplayerLegend"
+0
+Size 190 127
+GeometryHandlers
+1 100 0 190 0 190 0
+1 3 0 0 88  97 0 97 4  0 0 5 0
+1 100 0 127 0 127 0
+0
+EOF

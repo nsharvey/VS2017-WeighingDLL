@@ -1,0 +1,196 @@
+Agency responsible for production,AGENCY,1
+Beacon shape,BCNSHP,2
+Building shape,BUISHP,3
+Buoy shape,BOYSHP,4
+Buried depth,BURDEP,5
+Call sign,CALSGN,6
+Category of airport/airfield,CATAIR,7
+Category of anchorage,CATACH,8
+Category of bridge,CATBRG,9
+Category of built-up area,CATBUA,10
+Category of cable,CATCBL,11
+Category of canal,CATCAN,12
+Category of cardinal mark,CATCAM,13
+Category of checkpoint,CATCHP,14
+Category of coastline,CATCOA,15
+Category of control point,CATCTR,16
+Category of conveyor,CATCON,17
+Category of coverage,CATCOV,18
+Category of crane,CATCRN,19
+Category of dam,CATDAM,20
+Category of distance mark,CATDIS,21
+Category of dock,CATDOC,22
+Category of dumping ground,CATDPG,23
+Category of fenceline,CATFNC,24
+Category of ferry,CATFRY,25
+Category of fishing facility,CATFIF,26
+Category of fog signal,CATFOG,27
+Category of fortified structure,CATFOR,28
+Category of gate,CATGAT,29
+Category of harbour facility,CATHAF,30
+Category of hulk,CATHLK,31
+Category of ice,CATICE,32
+Category of installation buoy,CATINB,33
+Category of land region,CATLND,34
+Category of landmark,CATLMK,35
+Category of lateral mark,CATLAM,36
+Category of light,CATLIT,37
+Category of marine farm/culture,CATMFA,38
+Category of military practice area,CATMPA,39
+Category of mooring/warping facility,CATMOR,40
+Category of navigation line,CATNAV,41
+Category of obstruction,CATOBS,42
+Category of offshore platform,CATOFP,43
+Category of oil barrier,CATOLB,44
+Category of pile,CATPLE,45
+Category of pilot boarding place,CATPIL,46
+Category of pipeline/pipe,CATPIP,47
+Category of production area,CATPRA,48
+Category of pylon,CATPYL,49
+Category of quality of data,CATQUA,50
+Category of radar station,CATRAS,51
+Category of radar transponder beacon,CATRTB,52
+Category of radio station,CATROS,53
+Category of recommended track,CATTRK,54
+Category of rescue station,CATRSC,55
+Category of restricted area,CATREA,56
+Category of road,CATROD,57
+Category of runway,CATRUN,58
+Category of sea area,CATSEA,59
+Category of shoreline construction,CATSLC,60
+Category of signal station(traffic),CATSIT,61
+Category of signal station(warning),CATSIW,62
+Category of silo/tank,CATSIL,63
+Category of slope,CATSLO,64
+Category of small craft facility,CATSCF,65
+Category of special purpose mark,CATSPM,66
+Category of Traffic Separation Scheme,CATTSS,67
+Category of vegetation,CATVEG,68
+Category of water turbulence,CATWAT,69
+Category of weed/kelp,CATWED,70
+Category of wreck,CATWRK,71
+Category of zone of confidence in data,CATZOC,72
+Character spacing,$SPACE,73
+Character specification,$CHARS,74
+Colour,COLOUR,75
+Colour pattern,COLPAT,76
+Communication channel,COMCHA,77
+Compass size,$CSIZE,78
+Compilation date,CPDATE,79
+Compilation scale,CSCALE,80
+Condition,CONDTN,81
+Conspicuous (radar),CONRAD,82
+Conspicuous (visually),CONVIS,83
+Current velocity,CURVEL,84
+Date end,DATEND,85
+Date start,DATSTA,86
+Depth range value 1,DRVAL1,87
+Depth range value 2,DRVAL2,88
+Depth units,DUNITS,89
+Elevation,ELEVAT,90
+Estimated range of transmission,ESTRNG,91
+Exhibition condition of light,EXCLIT,92
+Exposition of sounding,EXPSOU,93
+Function,FUNCTN,94
+Height,HEIGHT,95
+Height/length units,HUNITS,96
+Horizontal accuracy,HORACC,97
+Horizontal clearance,HORCLR,98
+Horizontal length,HORLEN,99
+Horizontal width,HORWID,100
+Ice factor,ICEFAC,101
+Information,INFORM,102
+Jurisdiction,JRSDTN,103
+Justification - horizontal,$JUSTH,104
+Justification - vertical,$JUSTV,105
+Lifting capacity,LIFCAP,106
+Light characteristic,LITCHR,107
+Light visibility,LITVIS,108
+Marks navigational - System of,MARSYS,109
+Multiplicity of lights,MLTYLT,110
+Nationality,NATION,111
+Nature of construction,NATCON,112
+Nature of surface,NATSUR,113
+Nature of surface - qualifying terms,NATQUA,114
+Notice to Mariners date,NMDATE,115
+Object name,OBJNAM,116
+Orientation,ORIENT,117
+Periodic date end,PEREND,118
+Periodic date start,PERSTA,119
+Pictorial representation,PICREP,120
+Pilot district,PILDST,121
+Pilot district,PILDST,121
+Producing country,PRCTRY,122
+Product,PRODCT,123
+Publication reference,PUBREF,124
+Quality of sounding measurement,QUASOU,125
+Radar wave length,RADWAL,126
+Radius,RADIUS,127
+Recording date,RECDAT,128
+Recording indication,RECIND,129
+Reference year for magnetic variation,RYRMGV,130
+Restriction,RESTRN,131
+Scale maximum,SCAMAX,132
+Scale minimum,SCAMIN,133
+Scale value one,SCVAL1,134
+Scale value two,SCVAL2,135
+Sector limit one,SECTR1,136
+Sector limit two,SECTR2,137
+Shift parameters,SHIPAM,138
+Signal frequency,SIGFRQ,139
+Signal generation,SIGGEN,140
+Signal group,SIGGRP,141
+Signal period,SIGPER,142
+Signal sequence,SIGSEQ,143
+Sounding accuracy,SOUACC,144
+Sounding distance - maximum,SDISMX,145
+Sounding distance - minimum,SDISMN,146
+Source date,SORDAT,147
+Source indication,SORIND,148
+Status,STATUS,149
+Survey authority,SURATH,150
+Survey date - end,SUREND,151
+Survey date - start,SURSTA,152
+Survey type,SURTYP,153
+Symbol scaling factor,$SCALE,154
+Symbolization code,$SCODE,155
+Technique of sounding measurement,TECSOU,156
+Text string,$TXSTR,157
+Textual description,TXTDSC,158
+Tidal stream - panel values,TS_TSP,159
+Tidal stream - time series values,TS_TSV,160
+Tide - accuracy of water level,T_ACWL,161
+Tide - high and low water values,T_HWLW,162
+Tide - method of tidal prediction,T_MTOD,163
+Tide - time and height differences,T_THDF,164
+Tide - time series values,T_TSVL,166
+Tide - value of harmonic constituents,T_VAHC,167
+Tide - time interval of values,T_TINT,165
+Time end,TIMEND,168
+Time start,TIMSTA,169
+Topmark/daymark shape,TOPSHP,171
+Traffic flow,TRAFIC,172
+Value of annual change in magnetic variation,VALACM,173
+Value of depth contour,VALDCO,174
+Value of local magnetic anomaly,VALLMA,175
+Value of magnetic variation,VALMAG,176
+Value of maximum range,VALMXR,177
+Value of nominal range,VALNMR,178
+Value of sounding,VALSOU,179
+Vertical accuracy,VERACC,180
+Vertical clearance,VERCLR,181
+Vertical clearance(closed),VERCCL,182
+Vertical clearance(open),VERCOP,183
+Vertical clearance(safe),VERCSA,184
+Vertical datum,VERDAT,185
+Vertical length,VERLEN,186
+Water level effect,WATLEV,187
+Category of Tidal stream,CAT_TS,188
+Information in national language,NINFOM,300
+Object name in national language,NOBJNM,301
+Pilot district in national language,NPLDST,302
+Text string in national language,$NTXST,303
+Textual description in national language,NTXTDS,304
+Horizontal datum,HORDAT,400
+Positional Accuracy,POSACC,401
+Quality of position,QUAPOS,402

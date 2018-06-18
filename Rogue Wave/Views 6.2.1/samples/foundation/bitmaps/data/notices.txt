@@ -1,0 +1,42 @@
+File: notices.txt
+-----------------
+This file indicates, for every relevant file in this directory, its
+origin and under which licence it was pubshised
+
+File name: biplane_shadow.png
+  Author: Free Wallpapers
+  Original title: 1935 Waco Bi Plane
+  Origin: http://wallpapersdepo.net/free-aircrafts-wallpapers/1935-waco-bi-plane-wallpaper-3058
+  License: Free
+  Copy date: 2012-09-18
+
+File name: cat.png
+  Author: Alexiane Lelaquais
+  Original title: Cabisse
+  Origin: Rogue Wave Software Inc. internal image library
+  License: Free
+  Copy date: 2012-09-19
+
+File name: colors.png
+  Author: fdecomite
+  Original title: Hama
+  Origin: http://www.flickr.com/photos/fdecomite/2197855173/sizes/o/in/photostream/
+  License: Creative Common - Attribution 2.0 Generic
+  Copy date: 2012-09-18
+
+File name: sea.png
+  Author: Leon Brooks
+  Original title: Sea sky clouds
+  Origin: http://www.public-domain-image.com/full-image/nature-landscapes-public-domain-images-pictures/sea-public-domain-images-pictures/sea-sky-clouds.jpg-royalty-free-stock-image.html
+  License: Free
+  Copy date: 2012-09-18
+
+File name: tajmahal.png
+  Author: Nilay Khandelwal
+  Original title: The Taj Mahal
+  Origin: http://www.flickr.com/photos/nilayk/1093856112/sizes/l/in/photostream/
+  License: Creative Common - Attribution 2.0 Generic
+  Copy date: 2012-09-18
+
+
+Rogue Wave Software

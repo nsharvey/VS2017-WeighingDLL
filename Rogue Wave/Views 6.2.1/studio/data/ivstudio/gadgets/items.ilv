@@ -1,0 +1,71 @@
+// Ilv Version: 3.1
+// File generated: Wed Dec 16 10:47:58 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "items"
+PathName "items.ilv"
+Palettes 2
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+1 "gray" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 10
+1 { 0 0 IlvStringList 9 23 135 207 F131 2 A A 0 0 0 0 0 4 0 0 2 3
+IlvGadgetItem 1 2 4 "item1"  
+IlvGadgetItem 1 2 4 "item2"  
+IlvGadgetItem 1 2 4 "item3"   } 32 "GadgetItemsList"
+16384
+1 { 1 1 IlvFrame 161 -1 255 264 F8 0 25 16 4 "&SelectedGadgetItem"   } 0
+0
+1 { 2 P1
+IlvPanelObjectReference IlvPanelObjectReference  "913208345.0"
+0 IlvGadgetContainerRectangle 165 17 245 241 "ivstudio/gadgets/gaditem.ilv" } 0
+0
+1 { 3 P1
+IlvToolTip __ilvToolTip 2 "&insert" 4 4
+1 IlvButton 8 234 23 23 F25 1 3 16 4 "" 1 0 "ivstudio/icons/insert.png"   } 32 "InsertGadgetItem"
+0
+1 { 4 P1
+IlvToolTip __ilvToolTip 2 "&remove" 4 4
+1 IlvButton 61 234 22 23 F25 1 3 16 4 "" 1 0 "ivstudio/icons/removitm.png"   } 32 "RemoveGadgetItem"
+0
+1 { 5 P1
+IlvToolTip __ilvToolTip 2 "&clean" 4 4
+1 IlvButton 83 234 22 23 F25 1 3 16 4 "" 1 0 "ivstudio/icons/clean.png"   } 32 "CleanGadgetItems"
+0
+1 { 6 P1
+IlvToolTip __ilvToolTip 2 "&add" 4 4
+1 IlvButton 29 234 26 23 F25 1 3 16 4 "" 1 0 "ivstudio/icons/add.png"   } 32 "AddGadgetItem"
+0
+1 { 7 P1
+IlvToolTip __ilvToolTip 2 "&MoveUp" 4 4
+0 IlvButton 110 234 18 23 F25 1 3 16 4 "" 1 0 "ivstudio/icons/up.png"   } 32 "UpGadgetItem"
+0
+1 { 8 P1
+IlvToolTip __ilvToolTip 2 "&MoveDown" 4 4
+0 IlvButton 126 234 18 23 F25 1 3 16 4 "" 1 0 "ivstudio/icons/down.png"   } 32 "DownGadgetItem"
+0
+1 { 9 0 IlvFrame 1 -1 149 264 F8 0 25 16 4 "&items"   } 0
+0
+Size 422 265
+GeometryHandlers
+2 100 155 155 0 155 0
+ 0 267 267 155 267 155
+8 3 0 3 9  135 0 135 0  0 0 11 0
+ 3 0 0 83  0 0 22 5  50 5 50 0
+ 3 0 0 8  0 0 23 3  124 8 124 0
+ 3 0 0 61  0 0 22 4  72 4 72 0
+ 3 0 0 29  0 0 26 6  100 0 100 0
+ 3 126 0 126  0 0 18 8  0 0 11 0
+ 3 110 0 110  0 0 18 7  0 0 27 0
+ 3 0 0 1  149 0 149 9  0 0 5 0
+2 3 0 0 6  255 0 255 1  0 0 6 1
+ 3 0 0 10  245 0 245 2  0 0 12 1
+1 100 0 265 0 265 0
+9 3 0 -1 -1  264 0 264 1  0 0 2 0
+ 3 0 0 23  207 0 207 0  0 0 35 0
+ 3 234 0 234  0 0 23 5  0 0 8 0
+ 3 234 0 234  0 0 23 3  0 1 8 0
+ 3 234 0 234  0 0 23 4  0 1 8 0
+ 3 234 0 234  0 0 23 6  0 0 8 0
+ 3 234 0 234  0 0 23 7  0 0 8 0
+ 3 234 0 234  0 0 23 8  0 0 8 0
+ 3 0 -1 -1  264 0 264 9  0 0 2 0
+EOF

@@ -1,0 +1,65 @@
+// Ilv Version: 2.4
+// File generated: Wed Nov 26 15:20:28 1997
+// Creator class: IlvGadgetManagerOutput
+Palettes 2
+0 "gray" "black" "button" "StockedDefaultGui" 0 solid solid 0 0 0
+"IlvStText" 1 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+IlvObjects 13
+1 { 0 0 IlvButton 305 460 73 23 F1 2 16 Y "&close" } 32 "Close"
+0
+1 { 1 1 IlvText 15 120 341 305 F3 2 0 2
+"<<This object must be replaced by an IljListener at runtime>>"
+"" } 32 "ProtoListener"
+0
+1 { 2 0 IlvFrame 7 98 372 352 0 "&iljListener" 1 } 0
+0
+1 { 3 0 IlvFrame 7 1 372 49 0 "&iljControl" 1 } 0
+0
+1 { 4 1 IlvScrolledComboBox 15 69 357 20 F7 2 0 "Global environment" 10 } 96 "Backtrace" "SComboBox"
+2
+1 { 5 0 IlvFrame 7 50 372 47 0 "&iljBacktrace" 1 } 32 "BacktraceFrame"
+2
+1 { 6 P1
+IlvToolTip __ilvToolTip 2 "&iljContinue" 4 4
+0 IlvButton 15 20 25 24 F1 2 16 Y "" } 96 "Continue" "Button"
+0
+1 { 7 P1
+IlvToolTip __ilvToolTip 2 "&iljStopDebugging" 4 4
+0 IlvButton 115 20 25 24 F1 2 16 Y "" } 96 "End" "Button"
+0
+1 { 8 P1
+IlvToolTip __ilvToolTip 2 "&iljStep" 4 4
+0 IlvButton 40 20 25 24 F1 2 16 Y "" } 96 "StepIn" "Button"
+0
+1 { 9 P1
+IlvToolTip __ilvToolTip 2 "&iljStepOut" 4 4
+0 IlvButton 90 20 25 24 F1 2 16 Y "" } 96 "StepOut" "Button"
+0
+1 { 10 P1
+IlvToolTip __ilvToolTip 2 "&iljStepOver" 4 4
+0 IlvButton 65 20 25 24 F1 2 16 Y "" } 96 "StepOver" "Button"
+0
+1 { 11 P1
+IlvToolTip __ilvToolTip 2 "&iljStopNext" 4 4
+0 IlvButton 162 20 25 24 F1 2 16 Y "" } 96 "Stop" "Toggle"
+0
+1 { 12 0 IlvButton 7 460 73 23 F1 2 16 Y "&clear" } 32 "Clear"
+0
+Size 381 488
+GeometryHandlers
+1 100 0 381 0 381 0
+7 3 305 0 305  0 0 73 0  0 0 3 0
+ 3 0 0 15  357 0 357 1  0 9 9 0
+ 3 0 0 7  372 0 372 2  0 0 2 0
+ 3 0 0 7  372 0 372 3  0 0 2 0
+ 3 0 0 7  372 0 372 5  0 0 2 0
+ 3 0 0 15  357 0 357 4  0 0 9 0
+ 3 0 0 7  0 0 73 12  301 0 301 0
+1 100 0 488 0 488 0
+7 3 460 0 460  0 0 23 0  0 0 5 0
+ 3 0 0 120  321 0 321 1  0 0 47 0
+ 3 0 0 98  352 0 352 2  0 0 38 0
+ 3 0 0 1  0 0 49 3  438 0 438 0
+ 3 0 0 50  0 0 47 5  391 0 391 0
+ 3 0 0 69  0 0 20 4  399 0 399 0
+ 3 460 0 460  0 0 23 12  0 0 5 0

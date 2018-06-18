@@ -1,0 +1,145 @@
+help "messagep" {
+    title "Message Editor";
+    description "Editing multilingual messages";
+}
+
+The Message Editor panel lets you edit multilingual 
+messages and save them to database files. 
+
+Access to Panel 
+
+The panel is accessed by: 
+
+    - Choosing Messages Editor from the Tools menu. 
+    or 
+    - Selecting the command ShowMessagePanel in 
+      the Commands panel and clicking Apply. 
+
+Message Editor Panel Elements 
+
+You use the table that appears in this panel to edit 
+the messages of the database file. The first column 
+(the Name column) contains the messages identifiers. 
+The definitions for each language are edited in 
+another column. Except for the first line that 
+displays the column headers, each row of the table 
+corresponds to a message. 
+
+Editing a Table Cell 
+
+To edit a cell of the table in the message editor: 
+
+    1. Double-click the cell. 
+    2. Type the string of characters required 
+       for the message. 
+    3. Press Enter to validate the new string. 
+
+Using Panel Menus 
+
+At the top of the Messages Editor panel are the 
+various menus that you use to manage message 
+database files. 
+
+File Menu 
+
+Use the File menu for file maintenance tasks for 
+your message database files. 
+
+Menu Item Description  
+
+New  
+    Empties the panel and creates a new database 
+    for editing.  
+
+Open  
+    Opens a dialog box that lets you select and 
+    load a message database file previously saved 
+    by the message editor.  
+
+Insert  
+    Opens a dialog box that lets you select and 
+    insert a file previously saved by the message 
+    editor. The messages of this file are appended 
+    to the current database.  
+
+Save  
+    Saves the current database to a file. 
+    If the database has no associated file name, 
+    a dialog box opens for providing a filename.  
+
+Save 
+    As  Opens a dialog box that lets you save 
+    the current database in a new file.  
+
+Quit
+    Closes the Messages panel.   
+
+Message Menu 
+
+Use the Message menu to add, remove, search and sort 
+messages for the database being edited. 
+
+New Message  
+    Inserts a new line in the table for defining a 
+    new message in the current database. If a cell is 
+    selected, the new line is inserted into it. 
+    Otherwise, it is appended to the end of the table.  
+
+New Messages  
+    Opens a dialog box for you to enter the number 
+    of new messages to be inserted.  
+
+Remove  
+    If a cell is selected, removes the message 
+    corresponding to the selected cell.  
+
+Search  
+    Opens a dialog box where a string is typed 
+    for which the Message editor searches the next 
+    occurrence. You can specify the column where the 
+    Message editor searches for the string.  
+
+Sort by name  
+    Sorts the database by name.  
+
+Sort by definition  
+    Displays a submenu for choosing a language column 
+    to sort the database.   
+
+
+Language Menu 
+
+Use this menu to add or remove languages. 
+
+New Language  
+    Opens a dialog box to enter a new language for 
+    the database. When you validate the language, the 
+    Message editor appends an empty column to the table 
+    for entering the message definitions for the new 
+    language.  
+
+Remove Language  
+    If a cell is selected, removes the language 
+    corresponding to the column containing that cell. 
+    This operation removes all the message definitions 
+    for that language from the database.  
+
+
+Display Menu 
+
+Use this menu to modify the display's database. 
+
+Reset  
+    Clears the display's database and reloads 
+    the default databases.  
+
+Append  
+    Appends the edited messages to the display's 
+    database so your new messages are known by 
+    the display.  
+
+Choose Language  
+    Displays a submenu for choosing the current 
+    language for the display.  
+
+

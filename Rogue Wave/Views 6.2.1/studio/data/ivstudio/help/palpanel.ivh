@@ -1,0 +1,10 @@
+help "palpanel" {
+    title "Object palette";
+    description "Drag & Drop objects";
+}
+
+This window lets you insert objects into the current
+buffer. It only works if the current mode is the
+Selection mode and if the current buffer is not the 
+application buffer.
+

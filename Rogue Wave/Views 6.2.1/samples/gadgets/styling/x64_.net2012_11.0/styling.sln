@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("9AA63514-1D69-11E8-91B2-87BE772C9500") = "pick", "pick.vcxproj", "9AA5E2B2-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

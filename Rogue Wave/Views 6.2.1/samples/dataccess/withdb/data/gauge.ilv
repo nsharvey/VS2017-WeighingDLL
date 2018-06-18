@@ -1,0 +1,70 @@
+// Ilv Version: 3.1
+// File generated: Mon Feb  1 11:50:59 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "gauge"
+PathName "gauge.ilv"
+Palettes 5
+3 "gray" "black" "bold" "%helvetica-12-B" 0 solid solid 0 0 0
+"default" 1 44544 45568 49920 0 0 0 "default" "fixed" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+2 "gray" "black" "large" "%helvetica-18-B" 0 solid solid 0 0 0
+4 48830 48830 48830 "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 15
+1 { 0 0 IliSQLDataSource 317 70 24 24 1 14 3 0 IliSQLTable 0 10 5 
+     74 "EMPNO" Int 7 -1 2 -1 "Identifier" 32 33 "EMPNO" 
+     72 "NAME" String 2 25 1 -1 "Name" 32 33 "NAME" 
+     72 "STATUS" Int 3 -1 2 -1 "Status" 32 33 "STATUS" 
+     72 "DEPTNO" Int 9 -1 2 -1 "Department" 32 33 "DEPTNO" 
+     73 "SALARY" Double 4 -1 2 -1 "Salary" 32 33 "SALARY" 
+     16 0 1 31662 0 "oracle" "SELECT EMPNO,\n       NAME,\n       STATUS,\n       DEPTNO,\n       SALARY\nFROM I_EMP" 500 0 2 1 1 1 3 0 "I_EMP" "I_EMP" 0 1 15 15 130 224 0 0 0 0 0 0 1 0 1 0 1 0 6 5 
+     10 "EMPNO" Int 1 -1 2 -1 0 
+     8 "NAME" String 2 25 1 -1 0 
+     8 "STATUS" Int 3 -1 2 -1 0 
+     8 "DEPTNO" Int 4 -1 2 -1 0 
+     9 "SALARY" Double 5 -1 2 -1 0 
+     0 0 "I_EMP" 0 0 6 "Main" "null" "/"  } 32 "EMP_DS"
+0
+1 { 1 1 IlvGadget 0 0 370 43 2 } 0
+0
+1 { 2 2 IlvMessageLabel 10 10 104 23 F8 0 25 16 4 "Employee"   } 0
+0
+1 { 3 P 1
+[ IliGadgetSetToolTip __ilvToolTip 0 4 4 ]
+3 IliDbNavigator 110 10 88 23 2 1  2067 "EMP_DS" 131 -1  } 32 "DBNavigator"
+2
+1 { 4 P 1
+[ IliGadgetSetToolTip __ilvToolTip 0 4 4 ]
+3 IliDbNavigator 208 10 44 23 2 1  2067 "EMP_DS" 145 -1  } 0
+2
+1 { 5 P 1
+[ IliGadgetSetToolTip __ilvToolTip 0 4 4 ]
+3 IliDbNavigator 262 10 44 23 2 1  2067 "EMP_DS" 141 -1  } 0
+0
+1 { 6 P 1
+[ IliGadgetSetToolTip __ilvToolTip 0 4 4 ]
+3 IliDbNavigator 316 10 44 23 2 1  2067 "EMP_DS" 225 -1  } 0
+0
+1 { 7 0 IliDbField 10 119 100 22 2 2099 "EMP_DS" "NAME" 50 0 25 "%helvetica-12-" "Name" 10 100 0 IliEntryField 10 119 100 22 F6 2 1 25 0 "" 2049 43 25    } 0
+0
+1 { 8 0 IliDbField 10 169 100 22 2 2099 "EMP_DS" "STATUS" 52 0 2 "%helvetica-12-" "Status" 10 150 0 IliEntryField 10 169 100 22 F6 2 2 -1 0 "" 2049 10 Int 0    } 0
+0
+1 { 9 4 IlvCircularGauge 160 100 120 119 3000 10000 4000 0 270 } 32 "GRCircGauge"
+0
+1 { 10 4 IlvCircularScale 150 90 139 139 8 5 10 5 M 3000 10000 "%4.f"
+"3000" "4000" "5000" "6000" "7000" "8000" "9000" "10000"  1 0 270 } 32 "GRCircScale"
+0
+1 { 11 0 IliDbField 10 269 100 22 2 2099 "EMP_DS" "SALARY" 52 0 2 "%helvetica-12-" "Salary" 10 250 0 IliEntryField 10 269 100 22 F6 2 2 -1 0 "" 2049 10 Double 0    } 32 "EDTSalary"
+0
+1 { 12 0 IliDbField 10 69 100 22 2 2099 "EMP_DS" "EMPNO" 50 0 25 "%helvetica-12-" "Identifier" 10 50 0 IliEntryField 10 69 100 22 F6 2 1 25 0 "" 2049 42 25 Int 0    } 0
+0
+1 { 13 0 IliDbField 10 219 100 22 2 2099 "EMP_DS" "DEPTNO" 50 0 25 "%helvetica-12-" "Department" 10 200 0 IliEntryField 10 219 100 22 F6 2 1 25 0 "" 2049 42 25 Int 0    } 0
+0
+1 { 14 2 IlvFrame 140 58 160 182 F8 0 25 16 4 "Salary"   } 0
+0
+Size 370 301
+GeometryHandlers
+1 100 0 370 0 370 0
+1 3 0 0 0  370 0 370 1  0 0 0 0
+1 100 0 301 0 301 0
+0
+EOF

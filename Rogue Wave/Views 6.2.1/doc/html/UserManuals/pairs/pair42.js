@@ -1,0 +1,20 @@
+var pairs =
+{
+"motiflook":{"label":1}
+,"label":{"motif":1}
+,"motif":{"look":1}
+,"look":{"path":1,"studio":1,"motif":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"view":1}
+,"view":{"menu":1}
+,"menu":{"options":1}
+,"options":{"category":1}
+,"category":{"look":1}
+,"studio":{"action":1}
+,"action":{"sets":1}
+,"sets":{"display":1}
+,"display":{"urrent":1}
+,"urrent":{"look":1}
+}
+;Search.control.loadWordPairs(pairs);

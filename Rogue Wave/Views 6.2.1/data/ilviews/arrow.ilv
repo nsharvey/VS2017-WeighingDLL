@@ -1,0 +1,73 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:30:49 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "arrow"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\arrow.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 10
+2 { 0 P 1
+[ IlvAttachments _IlvAttachments 464  1 0 1 0 1 35 2 ]
+0 IlvReliefLine 0 144 300 144 1 } 32 "line"
+0
+2 { 1 P 2
+[ IlvAttachments _IlvAttachments 144  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 5 152 62 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "Button_1"
+1
+1 "__ilvCallback" "apply"
+6144 "Button_2" "period"
+2 { 2 P 2
+[ IlvAttachments _IlvAttachments 192  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 231 152 64 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 544 "Button_2"
+1
+1 "__ilvCallback" "cancel"
+4096 "Button_1"
+2 { 3 P 2
+[ IlvAttachments _IlvAttachments 336  1 15 1 180 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 15 35 105 23 F268435469 0 { IlvMessageItem 262169 4 16 4 "&direction"  }   } 0
+0
+2 { 4 P 2
+[ IlvAttachments _IlvAttachments 336  1 26 1 169 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvComboBox 26 66 105 20 F39 2 1 -1 0 "&left" 4
+{ IlvMenuItem 1 2 4 "&left"  } 
+{ IlvMenuItem 1 2 4 "&right"  } 
+{ IlvMenuItem 1 2 4 "&top"  } 
+{ IlvMenuItem 1 2 4 "&bottom"  }  } 32 "direction"
+10240 "repeat"
+3 { 5 P 2
+[ IlvAttachments _IlvAttachments 1008  1 5 1 5 1 152 1 43 2 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 5 143 132 F268435468 0 { IlvMessageItem 262169 4 16 4 "&arrow"  }   } 32 "Frame_1"
+2048 "label"
+3 { 6 P 2
+[ IlvAttachments _IlvAttachments 736  1 5 1 5 1 43 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 153 5 142 132 F268435468 0 { IlvMessageItem 262169 4 16 4 "&autorepeat"  }   } 0
+0
+3 { 7 P 2
+[ IlvAttachments _IlvAttachments 64  1 23 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 172 37 105 16 F1 2 1 2 0 0 0 Y "&autorepeat" } 32 "repeat"
+6144 "period" "position"
+3 { 8 P 2
+[ IlvAttachments _IlvAttachments 64  1 20 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 172 102 108 22 2 0 200 32 2 1
+0 IlvNumberField 172 102 90 22 F6 2 2 -1 0 "200" . , 6 0 50 10000  f 1 0 10 200 } 32 "period"
+6144 "Button_1" "repeat"
+3 { 9 P 2
+[ IlvAttachments _IlvAttachments 64  1 17 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 172 76 111 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&period"  }   } 0
+0
+Size 300 180
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

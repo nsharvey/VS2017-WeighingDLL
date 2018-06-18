@@ -1,0 +1,15 @@
+// IlvMessageDatabase 6.2 2017-04-12 01:33:25
+// Language: en_US
+// Encoding: US-ASCII
+"&Contextual" "Contextual"
+"&Direction" "Direction"
+"&LtoR" "Left to right"
+"&National" "National"
+"&Nominal" "Nominal"
+"&Numerals" "Numerals"
+"&RtoL" "Right to left"
+"&Shaping" "Shaping"
+"&ShowBidiTestPanel" "Test configuration..."
+"&Swapping" "Swapping"
+"&WordBreak" "Word break"
+"&applyDefault" "Default attributes"

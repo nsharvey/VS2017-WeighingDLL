@@ -1,0 +1,79 @@
+// Ilv Version: 5.0
+// File generated: Wed Feb 27 17:05:47 2002
+// Creator class: IlvGadgetManagerOutput
+FileName "displace"
+Palettes 1
+"IlvStToolBar" 0 F "gray" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 15
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 345 242 324 163 F268435468 0 { IlvMessageItem 262169 4 16 4 "Turbulence Controls"  }   } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 609 267 48 22 F7 2 16 -1 0 "0" . , 3 16 0 100 } 32 "xnum"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 609 433 48 22 F7 2 16 -1 0 "0" . , 0 16 -100 100 } 32 "scnum"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 609 303 48 22 F7 2 16 -1 0 "0" . , 3 16 0 100 } 32 "ynum"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSlider 438 268 164 19 F5 2 10 500 50 10 1 10 } 544 "xfreq"
+1
+1 "__ilvCallback" "ChangeTurbulence"
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSlider 438 304 164 19 F5 2 10 500 50 10 1 10 } 544 "yfreq"
+1
+1 "__ilvCallback" "ChangeTurbulence"
+0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSlider 438 434 164 19 F5 2 0 200 100 10 1 10 } 544 "scale"
+1
+1 "__ilvCallback" "ChangeTurbulence"
+0
+1 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSlider 438 340 164 19 F5 2 1 5 1 4 1 4 } 544 "octaves"
+1
+1 "__ilvCallback" "ChangeTurbulence"
+0
+1 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 609 339 48 22 F7 2 16 -1 0 "0" . , 0 16 0 10 } 32 "onum"
+0
+1 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 345 405 324 74 F268435468 0 { IlvMessageItem 262169 4 16 4 "Displace Controls"  }   } 0
+0
+1 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 358 375 296 16 F1073741825 2 1 1 0 0 0 Y "Turbulence" } 544 "turb"
+1
+1 "__ilvCallback" "ChangeDisplace"
+0
+1 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 356 266 82 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "X Frequency"  }   } 0
+0
+1 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 356 301 82 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "Y Frequency"  }   } 0
+0
+1 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 356 337 82 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "Octaves"  }   } 0
+0
+1 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 356 432 82 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "Scale"  }   } 0
+0
+Size 680 484
+EOF

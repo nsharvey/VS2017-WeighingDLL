@@ -1,0 +1,27 @@
+<html><head><title>Prototypes</title></head>
+<body bgcolor=#ffffff>
+<a name="949456">
+<h3><FONT color=#b61840> Rotate</FONT></h3>
+</a><a name="949457">
+The Rotate accessor (class <a href="../../refman/html/IlvRotateAccessor.html"><code>IlvRotateAccessor</code></a>) defines a value that, when set to <code>IlvTrue</code>, makes an object rotate periodically.<p>
+</a><a name="949458">
+The Angle parameter specifies the number of degrees by which the object rotates at every timer tick. The Center X and Center Y parameters define the rotation center. You should not use the center of the rotating node itself for these parameters, since rotating an object might move it slightly due to round-off problems. Instead, you should use the center of another fixed object of the prototype. You can make this reference object invisible if necessary.<p>
+</a><a name="949459">
+<h4><FONT color=#b61840> Parameters</FONT></h4>
+</a><ul><a name="949460">
+<li>Graphic Node: Name of the node to rotate. Can be a graphic node or a subgroup node.
+</a><p><a name="949461">
+<li>Angle: Angle in degrees by which the object is rotated at each step. It can be Float or Integer.
+</a><p><a name="949462">
+<li>Center X: X coordinate of the rotation center. You can use the centerX accessor for this parameter). It can be Float or Integer.
+</a><p><a name="949463">
+<li>Center Y: Y coordinate of the rotation center. You can use the centerY accessor for this parameter. It can be Float or Integer.
+</a><p><a name="949464">
+<li>Period (ms): The interval in milliseconds at which the object rotates. It must be an Integer.
+</a><p></ul><a name="949465">
+<h4><FONT color=#b61840> Example</FONT></h4>
+</a><a name="949466">
+An example is presented in the <code>pump</code> prototype of the <code>samples</code> library. When the rotate accessor is set to true, the nodes will turn by 20 degrees every 10 ms.<p>
+</a><a name="949507">
+</body>
+</html><hr><a href=displayb>Back</a>

@@ -1,0 +1,91 @@
+// Ilv Version: 4.0
+// File generated: Thu Jun 15 15:56:56 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "aciopt"
+PathName "D:\\ViewsWork\\studio\\data\\ivstudio\\aciopt.ilv"
+Palettes 2
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-13-[Charset:0]" 0 solid solid 0 0 0
+1 "gray" "black" "button" "%MS Sans Serif-13-[Charset:0]" 0 solid solid 0 0 0
+IlvObjects 14
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 35 50 92 19 F1073741825 2 1 2 0 14 0 Y "&exit" } 32 "exitPanel"
+10240 "main"
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 35 75 92 19 F1073741825 2 1 2 0 14 0 Y "&main()" } 32 "main"
+6144 "makefile" "exitPanel"
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 35 100 92 19 F1073741825 2 1 2 0 14 0 Y "&make" } 32 "makefile"
+6144 "panelAccessors" "main"
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 35 195 70 19 F1 2 1 2 0 14 0 Y "bmp" } 32 "bmpReader"
+6144 "dibReader" "includeInHeader"
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 35 220 70 19 F1 2 1 2 0 14 0 Y "dib" } 32 "dibReader"
+6144 "pngReader" "bmpReader"
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 35 245 70 19 F1 2 1 2 0 14 0 Y "png" } 32 "pngReader"
+6144 "pbmReader" "dibReader"
+2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 176 195 70 19 F1 2 1 2 0 14 0 Y "pbm" } 32 "pbmReader"
+6144 "pgmReader" "pngReader"
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 176 220 70 19 F1 2 1 2 0 14 0 Y "pgm" } 32 "pgmReader"
+6144 "ppmReader" "pbmReader"
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 176 245 70 19 F1 2 1 2 0 14 0 Y "ppm" } 32 "ppmReader"
+4096 "pgmReader"
+2 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 180 50 200 19 F1073741825 2 1 2 0 14 0 Y "&panelAccessors" } 544 "panelAccessors"
+1
+1 "__ilvCallback" "panelAccessorsCb"
+6144 "includeInHeader" "makefile"
+2 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 180 75 200 19 F1073741825 2 1 2 0 14 0 Y "&includeInHeader" } 32 "includeInHeader"
+6144 "bmpReader" "panelAccessors"
+2 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 317 195 70 19 F1 2 1 2 0 14 0 Y "jpg" } 32 "jpgReader"
+4096 "pgmReader"
+3 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFrame 5 5 387 135 F268435468 0 { IlvMessageItem 262169 4 16 4 "&generate"  }   } 0
+0
+3 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFrame 5 165 387 115 F268435468 0 { IlvMessageItem 262169 4 16 4 "&bitmapReaders"  }   } 0
+0
+Size 397 305
+GeometryHandlers
+1 100 0 397 0 397 0
+13 3 0 0 35  0 0 92 0  270 0 270 0
+ 3 0 0 35  0 0 92 1  270 0 270 0
+ 3 0 0 35  0 0 70 3  292 0 292 0
+ 3 0 0 35  0 0 92 2  270 0 270 0
+ 3 0 0 35  0 0 70 4  292 0 292 0
+ 3 0 0 35  0 0 70 5  292 0 292 0
+ 3 0 0 176  0 0 70 6  151 0 151 0
+ 3 0 0 176  0 0 70 7  151 0 151 0
+ 3 0 0 176  0 0 70 8  151 0 151 0
+ 3 0 0 5  387 0 387 12  0 0 5 0
+ 3 0 0 5  387 0 387 13  0 0 5 0
+ 3 0 0 180  200 0 200 10  0 0 17 0
+ 3 0 0 180  200 0 200 9  0 17 17 0
+1 100 0 305 0 305 0
+0
+Layers 4
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+EOF

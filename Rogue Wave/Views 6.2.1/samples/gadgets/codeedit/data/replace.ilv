@@ -1,0 +1,60 @@
+// Ilv Version: 3.1
+// File generated: Wed Dec 15 18:12:50 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "replace"
+PathName "replace.ilv"
+Palettes 2
+1 "gray" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 11
+1 { 0 P 1
+[ IlvToolTip __ilvToolTip 2 "Pattern to find" 4 4 ]
+0 IlvTextField 84 10 226 22 F6 2 1 -1 0 "" } 32 "TextF"
+10240 "ReplaceTextF"
+1 { 1 P 1
+[ IlvToolTip __ilvToolTip 2 "Find the first or the next occurence of the text pattern in the current buffer" 4 4 ]
+1 IlvButton 320 9 73 23 F9 2 1 16 4 "^Find Next"   } 544 "FindB"
+1
+1 "__ilvCallback" "apply"
+6144 "cancel" "ReplaceTextF"
+1 { 2 P 1
+[ IlvToolTip __ilvToolTip 2 "Hide the find dialog box" 4 4 ]
+1 IlvButton 320 91 73 23 F9 2 1 16 4 "&cancel"   } 544 "cancel"
+1
+1 "__ilvCallback" "cancel"
+6144 "DirectionS" "FindB"
+1 { 3 P 1
+[ IlvToolTip __ilvToolTip 2 "Case sensitivity for the search" 4 4 ]
+0 IlvToggle 10 99 150 16 F1 2 1 2 0 0 0 Y "Match ^case" } 32 "MatchCaseB"
+2048 "TextF"
+1 { 4 0 IlvToggle 10 81 150 16 F1 2 1 2 0 0 0 Y "Match ^whole word only" } 32 "MatchWordB"
+2048 "TextF"
+1 { 5 0 IlvMessageLabel 5 12 71 22 F8 0 25 16 4 "Fi^nd what:"   } 384
+0
+1 { 6 0 IlvMessageLabel 5 40 74 22 F8 0 25 16 4 "Re^place with:"   } 384
+0
+1 { 7 P 1
+[ IlvToolTip __ilvToolTip 2 "String of characters to replace the pattern found" 4 4 ]
+0 IlvTextField 84 38 226 22 F6 2 1 -1 0 "" } 32 "ReplaceTextF"
+6144 "FindB" "TextF"
+1 { 8 P 1
+[ IlvToolTip __ilvToolTip 2 "Replace the current occurence of the text pattern" 4 4 ]
+1 IlvButton 320 36 73 23 F9 2 1 16 4 "^Replace"   } 544 "ReplaceB"
+1
+1 "__ilvCallback" "replaceCB"
+6144 "cancel" "FindB"
+1 { 9 P 1
+[ IlvToolTip __ilvToolTip 2 "Replace all the occurences of the text pattern in the current buffer" 4 4 ]
+1 IlvButton 320 63 73 23 F9 2 1 16 4 "Replace ^All"   } 544 "ReplaceAll"
+1
+1 "__ilvCallback" "replaceAllCB"
+6144 "cancel" "DirectionS"
+1 { 10 P 1
+[ IlvToolTip __ilvToolTip 2 "Limit replace to selection" 4 4 ]
+0 IlvToggle 10 117 150 16 F1 2 1 2 0 0 0 Y "In ^selection" } 544 "LimitedToSelectionB"
+1
+1 "__ilvCallback" "ReplaceInSelectionCB"
+2048 "TextF"
+Size 401 142
+Background "gray"
+EOF

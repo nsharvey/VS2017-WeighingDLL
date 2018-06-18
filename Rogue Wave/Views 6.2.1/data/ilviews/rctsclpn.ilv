@@ -1,0 +1,209 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:48:56 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "rctsclpn"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\rctsclpn.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 33
+1 { 0 P 2
+[ IlvAttachments _IlvAttachments 1008  1 247 1 5 1 10 1 51 2 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 247 5 169 277 F268435468 0 { IlvMessageItem 262169 4 16 4 "&labels"  }   } 32 "Frame_1"
+2048 "Button_1"
+1 { 1 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 10 126 229 78 F268435468 0 { IlvMessageItem 262169 4 16 4 "&scale"  }   } 0
+0
+1 { 2 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 10 205 229 82 F268435468 0 { IlvMessageItem 262169 4 16 4 "&range"  }   } 0
+0
+1 { 3 P 2
+[ IlvAttachments _IlvAttachments 48  1 10 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 10 5 229 118 F268435468 0 { IlvMessageItem 262169 4 16 4 "&divisions"  }   } 0
+0
+2 { 4 P 2
+[ IlvAttachments _IlvAttachments 464  1 255 1 15 1 112 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 255 199 156 22 F6 2 1 -1 0 "" } 544 "text"
+1
+1 "__ilvCallback" "add"
+6144 "Button_5" "list2"
+2 { 5 P 2
+[ IlvAttachments _IlvAttachments 192  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 361 305 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 544 "Button_6"
+1
+1 "__ilvCallback" "cancel"
+4096 "Button_5"
+2 { 6 P 2
+[ IlvAttachments _IlvAttachments 16  1 256 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 256 36 79 23 F13 2 { IlvMessageItem 262145 4 16 4 "&clean"  }   } 544 "Button_1"
+1
+1 "__ilvCallback" "clean"
+6144 "Button_3" "format"
+2 { 7 P 2
+[ IlvAttachments _IlvAttachments 16  1 256 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 256 94 79 23 F13 2 { IlvMessageItem 262145 4 16 4 "&replace"  }   } 544 "Button_2"
+1
+1 "__ilvCallback" "replace"
+6144 "Button_4" "Button_3"
+2 { 8 P 2
+[ IlvAttachments _IlvAttachments 16  1 256 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 256 123 79 23 F13 2 { IlvMessageItem 262145 4 16 4 "&remove"  }   } 544 "Button_4"
+1
+1 "__ilvCallback" "remove"
+6144 "list2" "Button_2"
+2 { 9 P 2
+[ IlvAttachments _IlvAttachments 16  1 256 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 256 65 79 23 F13 2 { IlvMessageItem 262145 4 16 4 "&add"  }   } 544 "Button_3"
+1
+1 "__ilvCallback" "add"
+6144 "Button_2" "Button_1"
+2 { 10 P 2
+[ IlvAttachments _IlvAttachments 16  1 63 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 63 29 43 22 F6 2 1 -1 0 "" } 32 "steps"
+2048 "stepSize"
+2 { 11 P 2
+[ IlvAttachments _IlvAttachments 144  1 7 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 7 305 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "Button_5"
+1
+1 "__ilvCallback" "apply"
+6144 "Button_6" "text"
+2 { 12 P 2
+[ IlvAttachments _IlvAttachments 16  1 54 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 54 225 60 22 F6 2 1 -1 0 "0" } 32 "min"
+6144 "max" "position"
+2 { 13 P 2
+[ IlvAttachments _IlvAttachments 16  1 162 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 162 225 60 22 F6 2 1 -1 0 "100" } 32 "max"
+6144 "format" "min"
+2 { 14 P 2
+[ IlvAttachments _IlvAttachments 16  1 78 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 78 258 134 22 F6 2 1 -1 0 "%4.f" } 32 "format"
+6144 "Button_1" "max"
+2 { 15 P 2
+[ IlvAttachments _IlvAttachments 16  1 94 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 94 145 129 20 F1 2 4
+{ IlvMenuItem 65 2 4 "&bottom to Top"  } 
+{ IlvMenuItem 1 2 4 "&left to Right"  } 
+{ IlvMenuItem 1 2 4 "&top to Bottom"  } 
+{ IlvMenuItem 1 2 4 "&right to Left"  }  0  } 544 "direction"
+1
+1 "__ilvCallback" "dirSelect"
+6144 "position" "divisionStyle"
+2 { 16 P 2
+[ IlvAttachments _IlvAttachments 16  1 94 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 94 173 129 20 F1 2 2
+{ IlvMenuItem 65 2 4 "&left"  } 
+{ IlvMenuItem 1 2 4 "&right"  }  0  } 32 "position"
+6144 "min" "direction"
+2 { 17 P 2
+[ IlvAttachments _IlvAttachments 16  1 111 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 111 95 108 20 F1 2 2
+{ IlvMenuItem 65 2 4 "&labels"  } 
+{ IlvMenuItem 1 2 4 "&range"  }  0  } 544 "divisionStyle"
+1
+1 "__ilvCallback" "divisionStyle"
+6144 "direction" "subStepSize"
+2 { 18 P 2
+[ IlvAttachments _IlvAttachments 16  1 63 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 63 64 43 22 F6 2 1 -1 0 "" } 32 "subSteps"
+6144 "subStepSize" "stepSize"
+2 { 19 P 2
+[ IlvAttachments _IlvAttachments 16  1 185 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 185 64 43 22 F6 2 1 -1 0 "" } 32 "subStepSize"
+6144 "divisionStyle" "subSteps"
+2 { 20 P 2
+[ IlvAttachments _IlvAttachments 16  1 185 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 185 29 43 22 F6 2 1 -1 0 "" } 32 "stepSize"
+6144 "subSteps" "steps"
+2 { 21 P 2
+[ IlvAttachments _IlvAttachments 1008  1 340 1 36 1 15 1 152 2 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 340 36 71 145 F131 2 A A 0 0 0 0 0 1 0 0 V0 2 1
+{ IlvGadgetItem 1 2 4 "0"  }  } 544 "list"
+2
+1 "__ilvCallback" "labelSelected"
+1 "__ilvSCallback" "labelSelected"
+0
+3 { 22 P 1
+[ IlvAttachments _IlvAttachments 464  1 0 1 0 1 35 2 ]
+0 IlvReliefLine 0 297 426 297 1 } 32 "line"
+0
+3 { 23 P 2
+[ IlvAttachments _IlvAttachments 16  1 20 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 92 95 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&divisionStyle"  }   } 0
+0
+3 { 24 P 2
+[ IlvAttachments _IlvAttachments 16  1 20 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 27 36 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&steps"  }   } 0
+0
+3 { 25 P 2
+[ IlvAttachments _IlvAttachments 16  1 116 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 116 27 69 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&stepSize"  }   } 0
+0
+3 { 26 P 2
+[ IlvAttachments _IlvAttachments 16  1 116 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 116 62 67 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&subSize"  }   } 0
+0
+3 { 27 P 2
+[ IlvAttachments _IlvAttachments 16  1 20 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 62 41 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&sub"  }   } 0
+0
+3 { 28 P 2
+[ IlvAttachments _IlvAttachments 16  1 20 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 223 28 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&min"  }   } 0
+0
+3 { 29 P 2
+[ IlvAttachments _IlvAttachments 16  1 129 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 129 223 32 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&max"  }   } 0
+0
+3 { 30 P 2
+[ IlvAttachments _IlvAttachments 16  1 20 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 256 53 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&format"  }   } 0
+0
+3 { 31 P 2
+[ IlvAttachments _IlvAttachments 16  1 20 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 142 66 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&direction"  }   } 0
+0
+3 { 32 P 2
+[ IlvAttachments _IlvAttachments 16  1 20 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 20 170 71 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&position"  }   } 0
+0
+Size 426 333
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

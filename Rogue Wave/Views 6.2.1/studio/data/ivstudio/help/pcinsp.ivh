@@ -1,0 +1,124 @@
+help "pcinsp" {
+    title "Panel Class Inspector";
+    description "Inspecting Panel Class";
+}
+
+The Panel Class Inspector shows the properties of the 
+panel class which is being inspected. You are 
+able to view and edit them as required.  
+ 
+The panel class properties are grouped into four 
+different notebook pages, General, Options, 
+Header and Source.
+ 
+General Page
+
+Class
+Use this field to name the C++ panel class. The 
+class name must be a valid C++ class name. By 
+default, Rogue Wave Views Studio names this class by 
+capitalizing the first letter ofthe corresponding 
+buffer name. 
+ 
+Base Class
+Use this toggle button to specify the base class 
+for the class generated. By default, Rogue Wave Views 
+Studio derives the generated class from 
+IlvGadgetContainer. 
+
+File Name
+This field shows the name of the file that contains 
+the selected panel class. It cannot be edited. 
+ 
+Data
+This field displays the location where the panel data 
+file (.ilv file) is saved. 
+
+Header
+Use this field to set the location where the panel 
+class header file is generated. If this field is empty, 
+the header file is generated in the same directory as 
+the application header file.
+
+Source
+Use this field to set the location where the panel 
+class source file is generated. If this field is 
+empty, the source file is generated in the same 
+directory as the application source file.
+
+Options Page
+ 
+Data
+Turn on this toggle button to have Rogue Wave Views Studio 
+generate the data string in the C++ panel class code 
+so that its constructor does not need to read the 
+data file at run time. The code generated with data 
+is used only on the UNIX platforms. On MS/Windows the 
+string data generated is not used. 
+ 
+Names
+Turn on this toggle button to have Rogue Wave Views Studio 
+generate member functions that return the named objects 
+in your panel. 
+
+Callback Declarations
+Rogue Wave Views Studio provides you with a simple way to 
+deal with callbacks. When the Callback Declarations 
+toggle button is checked, it generates an 
+IlvGraphicCallback function and declares a default 
+virtual member function. The generated 
+IlvGraphicCallback invokes the corresponding virtual 
+member function which has the same name as the callback 
+you specified in Rogue Wave Views Studio. Therefore, the 
+names you use for callbacks must be valid C++ function 
+names. 
+
+The Callback Declarations toggle button must be 
+checked in order for the Callback Definitions toggle 
+button to have any effect.
+
+Callback Definitions
+The default definition code (the body function) for 
+these callback virtual member functions can be 
+generated, letting you test your application before 
+defining the real callbacks. By checking the Callbacks 
+toggle button you redefine your own versions of the 
+callbacks in your derived classes. If you do not 
+want these function definitions to be generated, 
+uncheck the Callback Definition toggle button. This 
+is useful if you do not want to derive a class from the 
+generated class. In this case, you can write your 
+own definition of these member functions in a separate 
+file which will not be erased by future code 
+generations.
+
+The callback registering task is generated in the C++ 
+code so that you only have to define the callback 
+methods.
+
+System View 
+Check this toggle button if you want to create a panel 
+by using an existing system view.
+
+System View Child 
+Check this toggle button if you want to create your 
+panel as a child window of an existing system view.
+ 
+Header Page
+
+The text you enter in this panel is inserted as 
+typed in the panel class header file, after the 
+generated #include statements and before the 
+declaration of the generated class. If you want to 
+subclass the generated class from a class other than 
+IlvGadgetContainer, you have to insert here the 
+#include statement to include the file declaring your 
+base class. Of course, instead of inserting code, you 
+can use this feature to comment your panel class.
+
+Source Page
+
+The text you enter in this panel is inserted as typed 
+in the panel class source file just before defining the 
+generated member functions. You can use this text to 
+comment the generated file or to insert any C++ code.

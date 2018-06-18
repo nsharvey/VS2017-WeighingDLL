@@ -1,0 +1,41 @@
+// Ilv Version: 3.1
+// File generated: Wed Aug 25 13:13:27 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "barshow"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12" 0 solid solid 0 0 0
+IlvObjects 5
+1 { 0 0 IlvToggle 198 181 131 16 F1 2 1 2 0 0 0 Y "&LargeBitmaps" } 544 "LargeBitmaps"
+1
+1 "__ilvCallback" "LargeBitmapsCB"
+0
+1 { 1 0 IlvMessageLabel 6 1 170 22 F8 0 25 16 4 "&Bars"   } 0
+0
+1 { 2 0 IlvStringList 8 27 170 176 F131 2 N N 0 0 0 0 0 4 0 0 2 3
+IlvGadgetItem 1 2 4 "item1"  
+IlvGadgetItem 1 2 4 "item2"  
+IlvGadgetItem 1 2 4 "item3"   } 32 "ShowBarList"
+0
+1 { 3 0 IlvToggle 197 155 131 16 F1 2 1 2 0 0 0 Y "&WithShortKeys" } 544 "WithShortKeys"
+1
+1 "__ilvCallback" "WithShortKeysCB"
+0
+1 { 4 0 IlvToggle 197 129 131 16 F1 2 1 2 0 0 0 Y "&ShowTooltips" } 544 "ShowTooltips"
+1
+1 "__ilvCallback" "ShowTooltipsCB"
+0
+Size 334 212
+GeometryHandlers
+2 100 0 186 0 186 0
+ 0 0 148 186 148 186
+2 3 0 0 8  170 0 170 2  0 0 8 0
+ 3 0 0 6  170 0 170 1  0 0 10 0
+3 3 0 0 11  131 0 131 4  0 0 6 1
+ 3 0 0 11  131 0 131 3  0 0 6 1
+ 3 0 0 12  131 0 131 0  0 0 5 1
+1 100 0 212 0 212 0
+4 3 181 0 181  0 0 16 0  0 0 15 0
+ 3 0 0 27  176 0 176 2  0 0 9 0
+ 3 155 0 155  0 0 16 3  0 0 41 0
+ 3 130 0 130  0 0 16 4  0 0 66 0
+EOF

@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("D770B4FE-1D61-11E8-866E-3591772C9500") = "load", "load.vcxproj", "D77068DC-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Global
+EndGlobal
+

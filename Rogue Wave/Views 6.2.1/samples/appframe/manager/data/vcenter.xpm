@@ -1,0 +1,27 @@
+/* XPM */
+static char *alvcenter_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 5 1",
+"o c Black",
+". c #FFFFFF",
+"  c None",
+"O c #000288",
+"X c #868986",
+/* pixels */
+"                ",
+"                ",
+"                ",
+"  ...           ",
+"  .Xo           ",
+"  .Xo       ... ",
+"  .Xo  ...  .Xo ",
+"  .Xo  .Xo  .Xo ",
+"OO.XoOO.XoOO.XoO",
+"  .Xo  .Xo  .Xo ",
+"  .Xo  .oo  .Xo ",
+"  .Xo       .oo ",
+"  .Xo           ",
+"  .oo           ",
+"                ",
+"                "
+};

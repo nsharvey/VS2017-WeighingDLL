@@ -1,0 +1,14 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("CD2858EC-1D68-11E8-81D0-E787772C9500") = "ilvread", "ilvread.vcxproj", "CD2815E4-1D68-11E8-81D0-E787772C9500"
+EndProject
+
+Project("CD320522-1D68-11E8-81D0-E787772C9500") = "inter", "inter.vcxproj", "CD2815E4-1D68-11E8-81D0-E787772C9500"
+EndProject
+
+Project("CD3A844A-1D68-11E8-81D0-E787772C9500") = "hull", "hull.vcxproj", "CD2815E4-1D68-11E8-81D0-E787772C9500"
+EndProject
+
+Global
+EndGlobal
+

@@ -1,0 +1,34 @@
+// Ilv Version: 3.1
+// File generated: Mon Feb  1 11:37:49 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "sintoggl"
+PathName "sintoggl.ilv"
+Palettes 4
+0 "gray" "blue" "large" "%helvetica-18-B" 0 solid solid 0 0 0
+2 "gray" "black" "bold" "%helvetica-12-B" 0 solid solid 0 0 0
+"IlvStText" 1 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+3 "white" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 3
+1 { 0 0 IlvMessageLabel 10 10 120 23 F8 0 25 16 4 "Options' Car"   } 0
+0
+1 { 1 1 IliMemoryDataSource 195 11 24 24 1 14 3 4 IliMemoryTable 0 4 3 
+     72 "NAME" String 1 -1 1 134 "Name" 32 
+     72 "SELL" Bool 2 -1 1 134 "Sell" 45 "%boolmap" "Value" "Label" 
+     104 "PRICE" Double 3 -1 2 136 "Currency" "Price" 32 
+     16 0 0 4
+"Air Conditioning" 1 0 1 1400.0 
+"A.B.S." 1 0 1 1000.0 
+"Air Bag" 1 1 1 2000.0 
+"Sequential gear box" 1 0 1 3000.0 
+0
+ } 32 "OPT_MS"
+0
+1 { 2 2 IliTableGadget 5 40 430 265 2 2067 "OPT_MS" 1799208543 1 0 0 0 17 18 21 4 4 0 0 1 1 "white" A"normal" "%helvetica-12-"  } 32 "TBLOptions"
+0
+Size 440 310
+GeometryHandlers
+1 100 0 440 0 440 0
+1 3 0 0 5  430 0 430 2  0 0 5 0
+1 100 0 310 0 310 0
+1 3 0 0 40  265 0 265 2  0 0 5 0
+EOF

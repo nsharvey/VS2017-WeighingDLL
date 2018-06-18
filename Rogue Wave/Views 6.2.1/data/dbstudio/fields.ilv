@@ -1,0 +1,120 @@
+// Ilv Version: 5.0
+// File generated: Tue Dec 07 16:01:50 2004
+// Creator class: IlvGadgetManagerOutput
+FileName "fields"
+PathName "C:\\ilog\\dataccess\\work\\data\\dbstudio\\fields.ilv"
+Palettes 5
+0 F "gray" "black" "bold" "%Tahoma-11-B[Charset:0]" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 1 F "gray" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+2 F "gray" "black" "button" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+3 F "gray" "black" "small" "%arial-10-[Charset:0]" 0 solid solid 0 0 0 65535 1
+"defaultGadget" 4 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 17
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IliTableGadget 5 5 180 80 2 18435 1799339615 0 0 0 0 17 19 21 0 0 0 0 1 1 "white" A"normal" "%Tahoma-11-[Charset:0]" IliMemoryTable 0 4 3 
+     9 "Column1" String 1 -1 1 -1 32 
+     9 "Column2" String 2 -1 1 -1 32 
+     9 "Column3" String 3 -1 1 -1 32 
+     20 0 0 8 0
+0
+ } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliDbField 5 111 154 20 2 18435 32 0 "^DbField" 5 93 1 IliEntryField 5 111 154 20 F6 2 1 -1 0 "" 18433 11    } 0
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliEntryField 5 139 154 22 F6 2 1 -1 0 "EntryField" 18435 11  } 0
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliTableComboBox 5 664 154 20 F6 2 1 -1 0 "" 18435 11 2 1  ""  } 0
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliDbText 5 197 124 32 F128 2 Y N 1 1 1 1 0 1
+"DbText"
+0 0 0 0 18435 1  } 0
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliDbToggle 5 237 100 16 F5 2 1 2 1 0 0 Y "^DbToggle " 18435 2  } 0
+0
+1 { 6 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IliGadgetSetToolTip __ilvToolTip 0 4 4 ]
+1 IliToggleSelector 5 261 104 62 2 0  18435 2 -1 "^Selector" 2 "Choice 1" "Choice 2"  } 0
+0
+1 { 7 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IliGadgetSetToolTip __ilvToolTip 2 "&DbNav_Next" 4 4 ]
+2 IliDbNavigator 5 331 230 23 2 1  18435 255 -1  } 0
+0
+1 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IliMemoryDataSource 5 362 24 24 1 14 19 0 IliMemoryTable 0 1 0 
+     16 0 8 0
+0
+ } 0
+0
+1 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+4 IliDbTimer 33 362 24 24 1 14  0  0  } 0
+0
+1 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+4 IliHTMLReporter 61 362 24 24 1 14  1  1  "" "" "IliHTMLModelTableClassic" 0  2 
+"" "" ""
+"Table of contents" ""
+"Contents of table" ""
+  } 0
+0
+1 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+4 IliXML 89 362 24 24 1 14  0 0 
+"" 0
+"" 0
+"" 0
+0  "" 1 "" 
+
+ } 0
+0
+1 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliDbPicture 5 394 128 67 2 18435  4  16 "dataccess/logon.xpm" "c:\\ilog\\dataccess\\work\\data\\dataccess\\logon.xpm" } 0
+0
+1 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliDbOptionMenu 5 469 154 20 F1 2 3
+{ IlvMenuItem 65 2 4 "DbOptionMenu"  } 
+{ IlvMenuItem 1 2 4 "Option"  } 
+{ IlvMenuItem 1 2 4 "Menu"  }  0  18435 0  } 0
+0
+1 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliDbStringList 5 497 104 55 F131 2 A A 0 0 0 0 0 1 0 0 V0 2 5
+{ IlvGadgetItem 1 2 4 "Item1"  } 
+{ IlvGadgetItem 1 2 4 "Item2"  } 
+{ IlvGadgetItem 1 2 4 "Item3"  } 
+{ IlvGadgetItem 1 2 4 "Item4"  } 
+{ IlvGadgetItem 1 2 4 "Item5"  }  1 18435 0  ""  } 0
+0
+1 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliDbTreeGadget 5 560 200 100 F32 2 A A 0 0 0 0 20 1 1 1 1 1 0 V0 2
+{ IlvTreeGadgetItem 1 2 4 "root" 0
+ }  7 0  "IliDbTreeInternalModel" 1 ""  
+0  1 4
+"" "" "" "" "" 
+
+1 0 0 0 0 1 1 0 "IliDbTreeItemDialogModel" "IliDbTreePopupMenuModel"
+ } 0
+0
+1 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+4 IliScrolledComboBox 5 168 154 20 F806 2 1 -1 0 "" 0 4 0 18435 0  } 0
+0
+Size 240 726
+EOF

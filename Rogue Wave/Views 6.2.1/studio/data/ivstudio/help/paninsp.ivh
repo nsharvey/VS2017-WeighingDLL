@@ -1,0 +1,92 @@
+help "paninsp" {
+    title "Panel Inspector";
+    description "Inspecting Panel Instance";
+}
+
+The Panel Inspector shows the properties of the 
+panel instance which is being inspected. You are 
+able to view and edit them as required.  
+ 
+The panel properties are grouped into three different 
+notebook pages, General Properties and Sizes.
+ 
+Note that the Test button in this inspector enables 
+you to test just this panel. Unlike the global test 
+for the application, only the inspected panel is 
+shown by this action. The options entered but not yet 
+validated with the Apply button are used to create 
+the test panel. Even if the panel is configured to be 
+not visible, it can be tested.
+ 
+General Page
+ 
+Name
+Use this field to name your panel.
+ 
+Class
+This text field displays the name of the generated 
+class of your panel. You cannot edit this field.
+ 
+User Class
+If you use a class which is derived from the generated 
+class displayed in the Class field, type its name in 
+this field.
+ 
+Title
+Use this field to set the title of your panel.
+ 
+Transient
+This is a link between two panels. One panel is 
+subservient to the other. As a result the dominant 
+panel will always be displayed in front of the second. 
+To display this second screen you must call it. 
+ 
+Destroy Callback
+This is the callback called when the panel is closed 
+by the window manager. Use the option menu to choose a 
+default destroy callback for your panel.
+ 
+Bitmap
+Specify a background bitmap for the panel in this field.
+ 
+Visible
+If you do not want the panel displayed when launching 
+the application, turn off the Visible toggle button. 
+By default, the panel is visible.
+ 
+Accelerators
+If checked, the panel instance is created with the 
+default container accelerators. This means the panel 
+constructor is called with useacc parameter which is 
+set to IlvTrue.
+ 
+Double Buffering
+If checked, the inspected panel uses the double 
+buffering mechanism.
+
+Properties Page
+
+The toggle buttons in the Properties page let you 
+specify the window frame properties. In the generated 
+code, the checked options are combined to set the 
+properties parameter in the call to the panel 
+constructor. Each option corresponds to a predefined 
+property.
+ 
+Sizes Page
+
+The Sizes page of the Panel Inspector has three 
+sections: Bounding Box, Maximum Size and Minimum Size. 
+
+x, y, Width, Height
+Use these fields to specify the initial position of 
+the panel. The panel size defaults to the size of the 
+buffer. If you want to assign a new size to your 
+panel, turn on the toggle button Generate Size and 
+enter desired values in the Width and Height fields. 
+ 
+Maximum Size and Minimum Size  
+Use these fields to specify the Maximum or Minimum 
+field sizes for the panel by entering the desired 
+values in the Width and Height fields.
+

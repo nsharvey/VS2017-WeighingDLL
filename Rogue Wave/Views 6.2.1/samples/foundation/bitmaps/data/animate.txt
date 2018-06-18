@@ -1,0 +1,3 @@
+Files: animate.cpp, animate.h
+This sample shows how to read a bitmap and how to animate a set of bitmaps
+which have the same size with the IlvBitmapAnimationHandler class.

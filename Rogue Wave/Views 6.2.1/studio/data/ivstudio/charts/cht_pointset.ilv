@@ -1,0 +1,68 @@
+// Ilv Version: 4.0
+// File generated: Fri Jul 07 13:25:17 2000
+// Creator class: IlvGadgetManagerOutput
+Palettes 2
+1 "gray" "black" "button" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-13-[Charset:0]" 0 solid solid 0 0 0
+IlvObjects 7
+3 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSheet 4 4 241 180 F34937 2 Y N S 0 0 0 0 1 1 77 23 0 1 0 1 1 1 2 4 V0 2 104 
+221 
+4 0 0 195 IlvGadgetMatrixItem P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 9 8 98 15 F268435468 0 { IlvMessageItem 262145 4 4 16 "&X"  }   1 
+0 2 0 IlvLabelMatrixItem ""  1 0 192 IlvGadgetMatrixItem P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 113 8 111 15 F268435468 0 { IlvMessageItem 262145 4 4 16 "&Y"  }   1 
+1 2 0 IlvLabelMatrixItem ""  1 L N 1 2 0 1 0  } 32 "DataSetPoints"
+0
+3 { 1 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&insert" 4 4 ]
+1 IlvButton 82 190 23 24 F29 1 { IlvMessageItem 262147 4 4 16 "" 1 0 "ivstudio/icons/insert.png"  }   } 32 "InsertPoint"
+0
+3 { 2 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&add" 4 4 ]
+1 IlvButton 103 190 26 24 F29 1 { IlvMessageItem 262147 4 4 16 "" 1 0 "ivstudio/icons/add.png"  }   } 32 "AddPoint"
+0
+3 { 3 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&remove" 4 4 ]
+1 IlvButton 135 190 22 24 F29 1 { IlvMessageItem 262147 4 4 16 "" 1 0 "ivstudio/icons/removitm.png"  }   } 32 "RemovePoint"
+0
+3 { 4 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&clean" 4 4 ]
+1 IlvButton 157 190 22 24 F29 1 { IlvMessageItem 262147 4 4 16 "" 1 0 "ivstudio/icons/clean.png"  }   } 32 "CleanPoints"
+0
+3 { 5 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&MoveUp" 4 4 ]
+0 IlvButton 184 190 18 24 F29 1 { IlvMessageItem 262147 4 4 16 "" 1 0 "ivstudio/icons/up.png"  }   } 32 "UpPoint"
+0
+3 { 6 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvToolTip __ilvToolTip 2 "&MoveDown" 4 4 ]
+0 IlvButton 200 190 18 24 F29 1 { IlvMessageItem 262147 4 4 16 "" 1 0 "ivstudio/icons/down.png"  }   } 32 "DownPoint"
+0
+Size 249 216
+GeometryHandlers
+1 100 0 249 0 249 0
+7 3 0 0 4  241 0 241 0  0 0 4 0
+ 3 82 0 82  0 0 23 1  0 0 144 0
+ 3 103 0 103  0 0 26 2  0 0 120 0
+ 3 135 0 135  0 0 22 3  0 0 92 0
+ 3 157 0 157  0 0 22 4  0 0 70 0
+ 3 184 0 184  0 0 18 5  0 0 47 0
+ 3 200 0 200  0 0 18 6  0 0 31 0
+1 100 0 216 0 216 0
+7 3 0 0 4  180 0 180 0  0 0 32 0
+ 3 190 0 190  0 0 24 1  0 0 2 0
+ 3 190 0 190  0 0 24 2  0 0 2 0
+ 3 190 0 190  0 0 24 3  0 0 2 0
+ 3 190 0 190  0 0 24 4  0 0 2 0
+ 3 190 0 190  0 0 24 5  0 0 2 0
+ 3 190 0 190  0 0 24 6  0 0 2 0
+EOF

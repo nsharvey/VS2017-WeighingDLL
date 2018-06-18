@@ -1,0 +1,24 @@
+<html>
+<head><title>Attribute flags</title></head>
+<body>
+<h1>Attribute Flags</h1>
+Several properties can be set on an attribute:
+<P>
+<ul>
+<li><em>Public</em> (button "P" in the editor): The attribute
+is visible by outside objects. Attributes are public by default,
+but you can hide the attributes that are used only to perform internal
+computations.
+<li><em>Persistent</em> (button "R" in the editor): The attribute value
+will be stored when the group is saved, allowing it to be restored to the last
+value set by the user. By default, attributes are persistent. To optimize 
+reading and writing, or to always restore them to the original state
+of the prototype when a file is read, you can set them to non-persistent.
+<li><em>Notifying</em> (button "N" in the editor): When the attribute is set,
+it can notify other attributes that it has changed its value, and therefore
+allow updates of other attributes. See the 
+<a href="IlvOutputAccessor">Notify</a> behavior documentation.
+</ul>
+<hr>
+<a href="interface">Back</a>
+</body></html>

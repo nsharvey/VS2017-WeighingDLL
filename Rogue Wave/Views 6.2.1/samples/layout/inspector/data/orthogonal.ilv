@@ -1,0 +1,38 @@
+// Ilv Version: 3.1
+// File generated: Thu Dec 16 08:08:06 1999
+// Creator class: IlvGraphOutput
+FileName "orthogonal"
+PathName "orthogonal.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 24
+1 0 { 0 0 IlvButton 135 12 31 23 F9 2 1 16 4 "13"   } 0
+1 0 { 1 0 IlvButton 48 335 31 23 F9 2 1 16 4 "12"   } 0
+1 0 { 2 0 IlvButton 150 378 31 23 F9 2 1 16 4 "10"   } 0
+1 0 { 3 0 IlvButton 102 275 31 23 F9 2 1 16 4 "11"   } 0
+1 0 { 4 0 IlvButton 177 191 31 23 F9 2 1 16 4 "8"   } 0
+1 0 { 5 0 IlvButton 201 440 31 23 F9 2 1 16 4 "2"   } 0
+1 0 { 6 0 IlvButton 230 378 84 23 F9 2 1 16 4 "3"   } 0
+1 0 { 7 0 IlvButton 229 304 31 23 F9 2 1 16 4 "4"   } 0
+1 0 { 8 0 IlvButton 221 259 31 23 F9 2 1 16 4 "5"   } 0
+1 0 { 9 0 IlvButton 99 384 31 23 F9 2 1 16 4 "1"   } 0
+1 0 { 10 0 IlvLabel 318 330 "Label" } 0
+1 0 { 11 0 IlvLabel 257 453 "Label" } 0
+1 0 { 12 0 IlvButton 88 406 93 90 F9 2 1 16 4 "button"   } 0
+1 1 { 13 0 IlvLinkImage 1 2 11 } 24
+1 1 { 14 0 IlvLinkImage 0 10 2 } 24
+1 1 { 15 0 IlvLinkImage 0 9 2 } 24
+1 1 { 16 0 IlvLinkImage 0 2 5 } 24
+1 1 { 17 0 IlvLinkImage 0 2 6 } 24
+1 1 { 18 0 IlvLinkImage 0 2 7 } 24
+1 1 { 19 0 IlvLinkImage 0 2 8 } 24
+1 1 { 20 0 IlvLinkImage 0 4 2 } 24
+1 1 { 21 0 IlvLinkImage 0 3 0 } 24
+1 1 { 22 0 IlvLinkImage 0 2 3 } 24
+1 1 { 23 0 IlvLinkImage 0 2 1 } 24
+Layers 2
+"" 0
+"" 0
+Views 1
+"v51" 1 0 0 1 0 0
+EOF

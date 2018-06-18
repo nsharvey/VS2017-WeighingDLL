@@ -1,0 +1,38 @@
+.doctitle  {font-weight: bold; font-size: 12px; text-align: center;
+   background-color: #858a8b; color: #ffffff; width: 100%}
+
+.toctable {margin-left: 7px;}
+
+.subgroup {font-weight: bold; font-size: 12px; color: #858a8b;
+  padding-top: 4px;}
+
+.line {padding-top: 4px;}
+.blankline {padding-bottom: 1px;}
+.bullet {vertical-align: baseline;}
+.mantitle {font-size: 12px; vertical-align: baseline; 
+   padding-left: 4px; padding-top: 1px;}
+
+a.bluelink:active {color: #cc9900; text-decoration: none;}
+a.bluelink:hover {color: #cc9900; text-decoration: none;}
+a.bluelink {color: #005da0; text-decoration: none;}
+a.bluelink:visited {color: #704d90; text-decoration: none;}
+
+.legalpart  a.bluelink:active {color: #cc9900; text-decoration: none;}
+.legalpart  a.bluelink:hover {color: #cc9900; text-decoration: none;}
+.legalpart  a.bluelink {color: #005da0; text-decoration: none;}
+.legalpart  a.bluelink:visited {color: #704d90; text-decoration: none;}
+
+body {font-family: Arial, Verdana, Helvetica, sans-serif; font-style: normal;
+      font-size: 13px;}
+
+.group {font-weight: bold; font-size: 14px; 
+   text-align: left; margin-bottom: -16px; color: #858a8b;}
+
+.topframetitle {font-size: 40px; font-weight: bold; color: #005da0;}
+
+.bottomlist {font-size: 10px; font-weight: normal; color: #858a8b;}
+
+.legalpart {font-size: 10px; font-weight: normal; color: #858a8b;}
+
+.homebutton {float: left; margin-left: 65px;}
+

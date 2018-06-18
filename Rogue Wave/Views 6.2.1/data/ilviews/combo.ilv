@@ -1,0 +1,119 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 17:06:57 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "combo"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\combo.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 17
+1 { 0 P 2
+[ IlvAttachments _IlvAttachments 1008  1 5 1 81 1 5 1 47 2 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 81 214 223 F268435468 0 { IlvMessageItem 262169 4 16 4 "&items"  }   } 32 "Frame_1"
+0
+2 { 1 P 2
+[ IlvAttachments _IlvAttachments 16  1 15 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 15 236 84 22 F13 2 { IlvMessageItem 262145 4 16 4 "&add"  }   } 512
+1
+1 "__ilvCallback" "add"
+0
+2 { 2 P 2
+[ IlvAttachments _IlvAttachments 16  1 15 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 15 210 84 22 F13 2 { IlvMessageItem 262145 4 16 4 "&replace"  }   } 512
+1
+1 "__ilvCallback" "replace"
+0
+2 { 3 P 2
+[ IlvAttachments _IlvAttachments 144  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 5 323 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 512
+1
+1 "__ilvCallback" "apply"
+0
+2 { 4 P 2
+[ IlvAttachments _IlvAttachments 192  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 159 323 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+2 { 5 P 2
+[ IlvAttachments _IlvAttachments 16  1 15 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 15 183 84 22 F13 2 { IlvMessageItem 262145 4 16 4 "&remove"  }   } 544 "Button_2"
+1
+1 "__ilvCallback" "remove"
+4096 "Button_1"
+2 { 6 P 2
+[ IlvAttachments _IlvAttachments 464  1 15 1 15 1 54 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 15 275 194 22 F6 2 1 -1 0 "" } 544 "text"
+1
+1 "__ilvCallback" "add"
+0
+2 { 7 P 2
+[ IlvAttachments _IlvAttachments 368  1 81 1 5 1 5 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 81 5 138 22 F6 2 1 -1 0 "" } 32 "string"
+0
+2 { 8 P 2
+[ IlvAttachments _IlvAttachments 16  1 15 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 15 154 84 22 F13 2 { IlvMessageItem 262145 4 16 4 "&clean"  }   } 544 "Button_1"
+1
+1 "__ilvCallback" "clean"
+6144 "Button_2" "list"
+2 { 9 P 2
+[ IlvAttachments _IlvAttachments 336  1 151 1 7 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 151 53 66 22 F6 2 2 -1 0 "" } 544 "vitems"
+1
+1 "__ilvCallback" "ChangeVItems"
+2048 "list"
+2 { 10 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 53 127 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&visibleItems"  }   } 32 "vitemsLabel"
+0
+2 { 11 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 10 33 207 16 F1 2 1 2 0 0 0 Y "&editable" } 32 "editable"
+0
+2 { 12 P 2
+[ IlvAttachments _IlvAttachments 976  1 108 1 17 1 93 2 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 108 153 99 105 F131 2 A A 0 0 0 0 0 1 0 0 V0 2 1
+{ IlvGadgetItem 1 2 4 "item"  }  } 544 "list"
+1
+1 "__ilvCallback" "select"
+0
+3 { 13 P 1
+[ IlvAttachments _IlvAttachments 464  1 0 1 0 1 35 2 ]
+0 IlvReliefLine 0 315 224 315 1 } 32 "line"
+0
+3 { 14 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 4 65 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&string"  }   } 0
+0
+3 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 8 96 203 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&EnableLargeList"  }   } 32 "enableLargeListLabel"
+0
+3 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 8 120 207 20 F1 2 3
+{ IlvMenuItem 65 2 4 "&None"  } 
+{ IlvMenuItem 1 2 4 "&Left"  } 
+{ IlvMenuItem 1 2 4 "&Right"  }  0  } 32 "enableLargeListCB"
+0
+Size 224 351
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

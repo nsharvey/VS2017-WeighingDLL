@@ -1,0 +1,26 @@
+var pairs =
+{
+"running":{"rogue":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1}
+,"views":{"map":1}
+,"map":{"builder":1}
+,"builder":{"launch":1,"unix":1,"following":1,"main":1}
+,"launch":{"rogue":1}
+,"unix":{"systems":1}
+,"systems":{"mapbuilder":1,"mapbuilder.exe":1}
+,"mapbuilder":{"executable":1}
+,"executable":{"<installdir>\u002Fbin":1}
+,"<installdir>\u002Fbin":{"directory":1}
+,"directory":{"microsoft":1}
+,"microsoft":{"windows":1}
+,"windows":{"systems":1}
+,"mapbuilder.exe":{"file":1}
+,"file":{"launching":1}
+,"launching":{"rogue":1}
+,"following":{"main":1}
+,"main":{"window":1}
+,"window":{"appears":1}
+,"appears":{"rogue":1}
+}
+;Search.control.loadWordPairs(pairs);

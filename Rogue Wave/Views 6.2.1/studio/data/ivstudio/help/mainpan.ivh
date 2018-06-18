@@ -1,0 +1,108 @@
+help "mainpan" {
+    title "Main Panel";
+    description "Studio Main Panel";
+}
+ 
+The Rogue Wave Views Studio main panel contains the following
+areas:
+ 
+The Menu Bar
+Use these menus to choose various commands, such as 
+Save in the File menu, and to select options by 
+displaying panels through such commands as Resources 
+in the Tools menu. Some menu commands have their own
+button just below the menu bar, in the Tool Bar
+ 
+The Tool Bar
+These buttons are provided for often-used commands. 
+Some commands are the same as in the menu bar and others
+are unique.
+ 
+The Buffer Work Space
+The Buffer Work Space enables you to edit any of the 
+different types of buffer that can be created in Studio:
+ - 2D Graphics
+ - Gadgets (with the GUI Application plug-in)
+ - Grapher (with the Grapher plug-in)
+ - Application (with the GUI Application plug-in)
+
+When creating a panel buffer this large rectangular 
+area can be used to edit gadgets and graphic objects 
+for your panel. When editing an application, the work 
+space can be used to create instances of panel classes 
+in your application.
+ 
+The Editing Modes
+This set of buttons enable you to choose a particular 
+editing mode. The set of editing modes that are 
+available depend on the current buffer. For example,
+when editing a panel buffer you are able to select 
+modes such as "selecting", "attachment editing", or 
+"menu editing".
+ 
+The Generic Inspector
+Use this area below the work space to display or 
+edit a selected object's general properties. 
+The properties of the item you select in the work
+space are immediately displayed in the fields, but 
+only if you select one object:
+ x, y: upper left corner of the object
+ w, h: width and height of the object.
+ Right, Bottom: bottom right corner of the object
+ Name: name of the object.
+ Callback: callback name for the object.
+ 
+The Message Area
+ - This area displays two types of information:
+ - The C++ class of the object you select in the 
+   work space.
+ - Procedural information such as error messages.
+ 
+The Scroll Bars
+The scroll bars allow you to scroll the buffer in 
+the work space.
+ 
+The Buffer Type
+This area shows the type of buffer that is currently 
+being edited. It may be any of the following:
+ - Gadgets
+ - 2D Graphics
+ - Grapher
+ - Application
+ 
+The Selected Editing Mode
+This area shows which editing mode is active.
+ 
+-----------------------------------------------------
+Rogue Wave Script in Rogue Wave Views Studio
+
+The following features are specific to the use
+of Rogue Wave Script for Rogue Wave Views.
+
+The Generic Inspector 
+The Generic Inspector provides you with a JS toggle 
+button to the right of the Callback field that lets 
+you specify the callback language for the Generic 
+callback you attach to the selected object. If you 
+want to attach a Rogue Wave Script callback, check the 
+toggle button. See also the Callback Inspector.
+
+The Script Editor
+You can have a script attached to each buffer. Your 
+source code is directly saved in the .ilv file, and 
+it is evaluated when the .ilv file is read. You can 
+edit the script attached to the current buffer in 
+the Script Editor. The Script Editor icon of the 
+tool bar lets you show or hide the editor.
+
+The Script Error List
+When you test your application or the current 
+buffer, the script attached to the concerned 
+buffers are evaluated. If your scripts contain 
+syntax errors, they are displayed in the Script 
+Error List, in a pane above the Generic Inspector. 
+You can double-click the error to edit the source 
+code in the script editor. (Note: the buffer 
+corresponding to the script is selected.) You can 
+show or hide the Script Error List by using the 
+Script Error List icon in the tool bar.

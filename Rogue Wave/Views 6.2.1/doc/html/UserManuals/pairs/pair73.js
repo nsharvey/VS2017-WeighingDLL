@@ -1,0 +1,19 @@
+var pairs =
+{
+"rotatem90":{"label":1}
+,"label":{"rotate":1}
+,"rotate":{"left":1,"selected":1}
+,"left":{"path":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"draw":1}
+,"draw":{"transform":1}
+,"transform":{"category":1}
+,"category":{"edit":1}
+,"edit":{"action":1}
+,"action":{"rotate":1}
+,"selected":{"object":1}
+,"object":{"degrees":1}
+,"degrees":{"counterclockwise":1}
+}
+;Search.control.loadWordPairs(pairs);

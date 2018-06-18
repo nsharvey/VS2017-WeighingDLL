@@ -1,0 +1,20 @@
+var pairs =
+{
+"application":{"framework":1,"based":1,"shows":1}
+,"framework":{"tutorial":1,"package":1}
+,"tutorial":{"shows":1,"contains":1}
+,"shows":{"create":1}
+,"create":{"bitmap":1}
+,"bitmap":{"editor":1}
+,"editor":{"application":1}
+,"based":{"application":1}
+,"package":{"rogue":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1}
+,"views":{"tutorial":1,"version":1}
+,"contains":{"following":1}
+,"following":{"topic":1}
+,"topic":{"bitmap":1}
+,"version":{"6.2.1":1}
+}
+;Search.control.loadWordPairs(pairs);

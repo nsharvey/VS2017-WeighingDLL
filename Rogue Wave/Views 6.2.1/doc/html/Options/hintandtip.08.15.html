@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Avoiding Common Names in Foreign Tables</title><link rel="Prev" href="hintandtip.08.14.html" title="Previous" /><link rel="Next" href="hintandtip.08.16.html" title="Next" /><link rel="StyleSheet" href="css/hintandtip.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/hintandtip_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/Options/hintandtip.08.15.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pOmoWaQu4qHjQNeZ7nNDOqQ" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/Options/hintandtip.08.15.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../Options/dausrfrontcover.html#wwconnect_header">Data Access User Manual</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/dausrpart1.html#ww144909">Rogue Wave&nbsp;Views Data Access Common Framework</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/hintandtip.08.01.html#wwconnect_header">Hints and Tips for Using Data Access</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/hintandtip.08.14.html#wwconnect_header">Troubleshooting</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Avoiding Common Names in Foreign Tables</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww998137" class="Heading2"><span></span>Avoiding Common Names in Foreign Tables</div><div id="ww998138" class="Body">When a gadget is tied to a table column and has a foreign table, you must ensure that the Data Source and Column gadget values are never the same as its Foreign Data Source and Foreign Value Column/Foreign Display Column.</div><div class="ww_skin_page_overflow"><div id="ww1004243" class="Startfigure"> <img class="Default" src="../Options/images/hintandtip.08.15.1.png" width="100%" style="display: block; left: 0.0pt; max-height: 260px; max-width: 598px; top: 0.0pt" alt="" />   </div></div><div id="ww998151" class="Caption">A DbField with the Same Data Source and Foreign Data Source</div><div id="ww998152" class="Body">You can be tempted to set up a combo box this way so that you can select the current row based on values in one of the columns. This step has a more disturbing result.</div><div id="ww998153" class="Body">Data Source and Column are used to specify the data source column to which the gadget is tied. This means that values from this column can be displayed and edited via the gadget. Foreign Data Source and Foreign Value Column/Foreign Display Column specify the foreign table of a gadget.</div><div id="ww998154" class="Body">Take the case of a gadget that is tied to a column displaying values from that column and that also has a combo box. The combo box menu will contain the set of possible values that the column can take, which will be the same set of values. If you then select a new value for a row, you will end up with a column that starts to have repeating values.</div><div id="ww998155" class="Body">To successfully set up a combo box that enables you to select the current row in a form, you must use a parameter. See <a href="../Options/sqldatasources.11.3.html#ww999608" title="Parameters">Parameters</a>.</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

@@ -1,0 +1,67 @@
+// Ilv Version: 4.0
+// File generated: Tue Jun 27 19:03:09 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "bmpsize"
+Palettes 2
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+"default" 1 "gray" "black" "default" "fixed" 0 solid solid 0 0 0
+IlvObjects 7
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 87 26 98 20 F22 2 1 -1 0 "128" } 32 "Width"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 87 59 98 20 F22 2 1 -1 0 "128" } 32 "Height"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 0 190 125 F268435468 0 { IlvMessageItem 262169 4 16 4 "Bitmap Settings"  }   } 32 "frame1"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 26 25 46 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "Width:"  }   } 0
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 26 58 48 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "Height:"  }   } 0
+0
+1 { 5 1 IlvReliefLine 10 87 192 87 1 } 0
+0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 112 94 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "OK"  }   } 512
+1
+1 "__ilvCallback" "apply"
+0
+Size 201 129
+GeometryHandlers
+1 100 0 201 0 201 0
+7 3 0 0 87  0 0 98 0  0 0 16 0
+ 3 0 0 87  0 0 98 1  0 0 16 0
+ 3 0 0 5  0 0 190 2  0 0 6 0
+ 3 0 0 26  0 0 48 4  0 0 127 0
+ 3 0 0 26  0 0 46 3  0 0 129 0
+ 3 0 0 10  0 0 182 5  0 0 9 0
+ 3 0 0 112  0 0 73 6  0 0 16 0
+1 100 0 129 0 129 0
+6 3 0 0 26  0 0 20 0  0 0 83 0
+ 3 0 0 59  0 0 20 1  0 0 50 0
+ 3 0 0 0  0 0 125 2  0 0 4 0
+ 3 0 0 58  0 0 22 4  0 0 49 0
+ 3 0 0 25  0 0 22 3  0 0 82 0
+ 3 0 0 94  0 0 23 6  0 0 12 0
+Script "JvScript" Inline ""
+
+static function paletteCB(obj)
+{
+ 
+}
+
+static function ChangeColor(obj)
+{
+  obj.container.FilledRect.foreground = IlvCommonDialog.getColor(obj.container);
+}
+
+ScriptEnd
+EOF

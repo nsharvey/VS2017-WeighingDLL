@@ -1,0 +1,6 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{2EBB7F6A-1D61-11E8-9326-21D9772C9500}") = "dtedview", "dtedview.vcxproj", "{2EBB3604-1D61-11E8-9326-21D9772C9500}"
+EndProject
+Global
+EndGlobal

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvmlook -->
+<module name="ilvmlook" version="6.2">
+<class name="IlvAbstractBar/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvAbstractMenu/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvButton/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvComboBox/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvFrame/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvGadget/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvMenuBar/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvPopupMenu/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvScrollBar/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvSlider/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvTextField/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvToggle/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvToolBar/motif" rootClass="IlvObjectLFHandler"/>
+</module>

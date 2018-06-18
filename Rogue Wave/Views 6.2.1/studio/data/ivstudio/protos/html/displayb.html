@@ -1,0 +1,45 @@
+<html>
+<head><title>Behavior Page</title></head>
+<body>
+<h1>Defining the Graphic Behavior</h1>
+
+Next, you should define the graphic behaviors of your prototype, 
+that is, how the modification of each attribute affects 
+the visual aspect of your prototype. For each attribute, 
+you can add behaviors, that is, instructions that will be performed each 
+time the value is modified.
+<P><P>
+To add a behavior, <b>select an attribute</b> in the list. Then, 
+in the <b>Control menu</b> or the <b>Display menu</b>, 
+select a behavior to add. 
+<P>
+<ul>
+<li><em>Control</em> behaviors allow a change of an attribute
+to trigger other changes of other attributes, conditionally or not.
+For instance, if you want a thermometer to appear red when the 
+temperature is above a given threshold, add a <a href="IlvConditionAccessor">
+Condition accessor</a> on the temperature attribute that assigns red to the
+foreground value of the gauge.
+<li><em>Display</em> behaviors allow you to change graphic
+properties of the objects, such as rotation, zoom, and visibility, or perform
+animations of objects.
+</ul>
+<P>
+In addition, you can have attributes notify others of their changes,
+so that the graphic appearance of the group or prototype can be fully
+adjusted when one attribute changes its value. The <a href="IlvOutputAccessor">
+notify</a> behavior can tell other attributes watching it that they 
+should execute their behavior, while the <a href="IlvConnectAccessor"> 
+watch</a> behavior allows one attribute to indicate that it observes another attribute.
+<P><P>
+Finally, you can:
+<ul>
+<li> Add intermediate or hidden attributes that will be used
+in intermediate states of the computation. Select <em>Edit->New Attribute</em>
+to add an attribute.
+<li>Delete selected attributes, behaviors, or parameters with <em>Edit->Delete</em>
+<li>Move behaviors up or down. Behaviors are triggered from the top to the bottom.
+You can decide in which order they are triggered.
+</ul>
+<hr>
+</body></html>

@@ -1,0 +1,63 @@
+// Ilv Version: 4.0
+// File generated: Thu Feb 17 17:04:02 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "matrispe"
+Palettes 1
+"IlvStText" 0 "defaultBg" "defaultFg" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 11
+2 { 0 0 IlvToggle 7 37 160 15 F1 2 1 2 0 0 0 Y "&EditOnDoubleClick" } 96 "MatrixEditDoubleClick" "Toggle"
+0
+2 { 1 0 IlvToggle 180 1 101 15 F1 2 1 2 0 0 0 Y "&grid" } 96 "MatrixGrid" "Toggle"
+0
+2 { 2 0 IlvToggle 8 1 159 15 F1 2 1 2 0 0 0 Y "&editable" } 96 "MatrixAllowEdit" "Toggle"
+0
+2 { 3 0 IlvMessageLabel 7 102 68 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&selection"  }   } 64 "Gadget"
+0
+2 { 4 0 IlvScrolledComboBox 105 103 177 20 F807 2 "" 4
+{ IlvGadgetItem 1 2 4 "&SingleSelection"  } 
+{ IlvGadgetItem 1 2 4 "&SingleBrowseSelection"  } 
+{ IlvGadgetItem 1 2 4 "&ExtendedSelection"  } 
+{ IlvGadgetItem 1 2 4 "&BrowseSelection"  }  5 1 } 96 "MatrixSelectionMode" "Gadget"
+0
+2 { 5 0 IlvToggle 7 56 198 15 F1 2 1 2 0 0 0 Y "&ShowTooltips" } 96 "GIHolderTooltips" "Toggle"
+0
+2 { 6 0 IlvMessageLabel 8 127 169 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&AutomatiqueSelection"  }   } 64 "Gadget"
+0
+2 { 7 0 IlvScrolledComboBox 174 128 108 20 F807 2 "" 3
+{ IlvGadgetItem 1 2 4 "&None"  } 
+{ IlvGadgetItem 1 2 4 "&Line"  } 
+{ IlvGadgetItem 1 2 4 "&Column"  }  5 1 } 96 "AutomaticSelection" "Gadget"
+0
+3 { 8 0 IlvToggle 7 19 160 15 F1 2 1 2 0 0 0 Y "&directEdit" } 96 "MatrixDirectEdit" "Gadget"
+0
+3 { 9 0 IlvMessageLabel 7 78 167 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&editDirection"  }   } 64 "Gadget"
+0
+3 { 10 0 IlvScrolledComboBox 174 78 108 20 F807 2 "Droite" 5
+{ IlvGadgetItem 1 2 4 "&right"  } 
+{ IlvGadgetItem 1 2 4 "&left"  } 
+{ IlvGadgetItem 1 2 4 "&top"  } 
+{ IlvGadgetItem 1 2 4 "&bottom"  } 
+{ IlvGadgetItem 1 2 4 "&none"  }  5 0 } 96 "MatrixEditDirection" "Gadget"
+0
+Size 285 156
+GeometryHandlers
+1 100 285 285 0 285 0
+11 3 174 0 174  0 0 108 10  0 0 3 0
+ 3 0 0 7  167 0 167 9  0 0 111 0
+ 3 105 0 105  0 0 177 4  0 3 3 0
+ 3 180 0 180  0 0 101 1  0 0 4 0
+ 3 0 0 8  159 0 159 2  0 0 118 0
+ 3 0 0 7  160 0 160 8  0 0 118 0
+ 3 0 0 7  160 0 160 0  0 0 118 0
+ 3 174 0 174  0 0 108 7  0 0 3 0
+ 3 0 0 8  169 0 169 6  0 0 108 0
+ 3 0 0 7  68 0 68 3  0 0 210 0
+ 3 0 0 7  198 0 198 5  0 0 80 0
+1 100 0 156 0 156 0
+0
+Layers 4
+"" 0 0 
+"" 0 0 
+"" 0 0 
+"" 0 0 
+EOF

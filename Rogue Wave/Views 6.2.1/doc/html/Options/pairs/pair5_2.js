@@ -1,0 +1,21 @@
+var pairs =
+{
+"schemas":{"section":1}
+,"section":{"describes":1}
+,"describes":{"properties":1}
+,"properties":{"table":1,"defined":1,"defining":1}
+,"table":{"relate":1,"object":1}
+,"relate":{"columns":1}
+,"columns":{"properties":1}
+,"defined":{"ilischema":1}
+,"ilischema":{"ilitable":1}
+,"ilitable":{"objects":1}
+,"objects":{"find":1}
+,"find":{"information":1}
+,"information":{"following":1}
+,"following":{"topics":1}
+,"topics":{"schema":1}
+,"schema":{"properties":1,"table":1}
+,"defining":{"schema":1}
+}
+;Search.control.loadWordPairs(pairs);

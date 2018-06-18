@@ -1,0 +1,524 @@
+<?xml version="1.0"?>
+<colors>
+  <color name="alice blue" r="240" g="248" b="255"/>
+  <color name="antique white" r="250" g="235" b="215"/>
+  <color name="antique white 1" r="255" g="239" b="219"/>
+  <color name="antique white 2" r="238" g="223" b="204"/>
+  <color name="antique white 3" r="205" g="192" b="176"/>
+  <color name="antique white 4" r="139" g="131" b="120"/>
+  <color name="aquamarine" r="127" g="255" b="212"/>
+  <color name="aquamarine 2" r="118" g="238" b="198"/>
+  <color name="aquamarine 3" r="102" g="205" b="170"/>
+  <color name="aquamarine 4" r="69" g="139" b="116"/>
+  <color name="azure" r="240" g="255" b="255"/>
+  <color name="azure 2" r="224" g="238" b="238"/>
+  <color name="azure 3" r="193" g="205" b="205"/>
+  <color name="azure 4" r="131" g="139" b="139"/>
+  <color name="beige" r="245" g="245" b="220"/>
+  <color name="bisque" r="255" g="228" b="196"/>
+  <color name="bisque 2" r="238" g="213" b="183"/>
+  <color name="bisque 3" r="205" g="183" b="158"/>
+  <color name="bisque 4" r="139" g="125" b="107"/>
+  <color name="black" r="0" g="0" b="0"/>
+  <color name="blanched almond" r="255" g="235" b="205"/>
+  <color name="blue" r="0" g="0" b="255"/>
+  <color name="blue 2" r="0" g="0" b="238"/>
+  <color name="blue 3" r="0" g="0" b="205"/>
+  <color name="blue 4" r="0" g="0" b="139"/>
+  <color name="blue violet" r="138" g="43" b="226"/>
+  <color name="brown" r="165" g="42" b="42"/>
+  <color name="brown 1" r="255" g="64" b="64"/>
+  <color name="brown 2" r="238" g="59" b="59"/>
+  <color name="brown 3" r="205" g="51" b="51"/>
+  <color name="brown 4" r="139" g="35" b="35"/>
+  <color name="burly wood" r="222" g="184" b="135"/>
+  <color name="burlywood 1" r="255" g="211" b="155"/>
+  <color name="burlywood 2" r="238" g="197" b="145"/>
+  <color name="burlywood 3" r="205" g="170" b="125"/>
+  <color name="burlywood 4" r="139" g="115" b="85"/>
+  <color name="cadet blue" r="95" g="158" b="160"/>
+  <color name="cadet blue 1" r="152" g="245" b="255"/>
+  <color name="cadet blue 2" r="142" g="229" b="238"/>
+  <color name="cadet blue 3" r="122" g="197" b="205"/>
+  <color name="cadet blue 4" r="83" g="134" b="139"/>
+  <color name="chartreuse" r="127" g="255" b="0"/>
+  <color name="chartreuse 2" r="118" g="238" b="0"/>
+  <color name="chartreuse 3" r="102" g="205" b="0"/>
+  <color name="chartreuse 4" r="69" g="139" b="0"/>
+  <color name="chocolate" r="210" g="105" b="30"/>
+  <color name="chocolate 1" r="255" g="127" b="36"/>
+  <color name="chocolate 2" r="238" g="118" b="33"/>
+  <color name="chocolate 3" r="205" g="102" b="29"/>
+  <color name="chocolate 4" r="139" g="69" b="19"/>
+  <color name="coral" r="255" g="127" b="80"/>
+  <color name="coral 1" r="255" g="114" b="86"/>
+  <color name="coral 2" r="238" g="106" b="80"/>
+  <color name="coral 3" r="205" g="91" b="69"/>
+  <color name="coral 4" r="139" g="62" b="47"/>
+  <color name="cornflower blue" r="100" g="149" b="237"/>
+  <color name="cornsilk" r="255" g="248" b="220"/>
+  <color name="cornsilk 2" r="238" g="232" b="205"/>
+  <color name="cornsilk 3" r="205" g="200" b="177"/>
+  <color name="cornsilk 4" r="139" g="136" b="120"/>
+  <color name="crimson" r="220" g="20" b="60"/>
+  <color name="cyan" r="0" g="255" b="255"/>
+  <color name="cyan 2" r="0" g="238" b="238"/>
+  <color name="cyan 3" r="0" g="205" b="205"/>
+  <color name="cyan 4" r="0" g="139" b="139"/>
+  <color name="dark blue" r="0" g="0" b="139"/>
+  <color name="dark cyan" r="0" g="139" b="139"/>
+  <color name="dark goldenrod" r="184" g="134" b="11"/>
+  <color name="dark goldenrod 1" r="255" g="185" b="15"/>
+  <color name="dark goldenrod 2" r="238" g="173" b="14"/>
+  <color name="dark goldenrod 3" r="205" g="149" b="12"/>
+  <color name="dark goldenrod 4" r="139" g="101" b="8"/>
+  <color name="dark gray" r="169" g="169" b="169"/>
+  <color name="dark green" r="0" g="100" b="0"/>
+  <color name="dark khaki" r="189" g="183" b="107"/>
+  <color name="dark magenta" r="139" g="0" b="139"/>
+  <color name="dark olive green" r="85" g="107" b="47"/>
+  <color name="dark olive green 1" r="202" g="255" b="112"/>
+  <color name="dark olive green 2" r="188" g="238" b="104"/>
+  <color name="dark olive green 3" r="162" g="205" b="90"/>
+  <color name="dark olive green 4" r="110" g="139" b="61"/>
+  <color name="dark orange" r="255" g="140" b="0"/>
+  <color name="dark orange 1" r="255" g="127" b="0"/>
+  <color name="dark orange 2" r="238" g="118" b="0"/>
+  <color name="dark orange 3" r="205" g="102" b="0"/>
+  <color name="dark orange 4" r="139" g="69" b="0"/>
+  <color name="dark orchid" r="153" g="50" b="204"/>
+  <color name="dark orchid 1" r="191" g="62" b="255"/>
+  <color name="dark orchid 2" r="178" g="58" b="238"/>
+  <color name="dark orchid 3" r="154" g="50" b="205"/>
+  <color name="dark orchid 4" r="104" g="34" b="139"/>
+  <color name="dark red" r="139" g="0" b="0"/>
+  <color name="dark salmon" r="233" g="150" b="122"/>
+  <color name="dark sea green" r="143" g="188" b="143"/>
+  <color name="dark sea green 1" r="193" g="255" b="193"/>
+  <color name="dark sea green 2" r="180" g="238" b="180"/>
+  <color name="dark sea green 3" r="155" g="205" b="155"/>
+  <color name="dark sea green 4" r="105" g="139" b="105"/>
+  <color name="dark slate blue" r="72" g="61" b="139"/>
+  <color name="dark slate gray" r="47" g="79" b="79"/>
+  <color name="dark slate gray 1" r="151" g="255" b="255"/>
+  <color name="dark slate gray 2" r="141" g="238" b="238"/>
+  <color name="dark slate gray 3" r="121" g="205" b="205"/>
+  <color name="dark slate gray 4" r="82" g="139" b="139"/>
+  <color name="dark turquoise" r="0" g="206" b="209"/>
+  <color name="dark violet" r="148" g="0" b="211"/>
+  <color name="deep pink" r="255" g="20" b="147"/>
+  <color name="deep pink 2" r="238" g="18" b="137"/>
+  <color name="deep pink 3" r="205" g="16" b="118"/>
+  <color name="deep pink 4" r="139" g="10" b="80"/>
+  <color name="deep sky blue" r="0" g="191" b="255"/>
+  <color name="deep sky blue 1" r="0" g="191" b="255"/>
+  <color name="deep sky blue 2" r="0" g="178" b="238"/>
+  <color name="deep sky blue 3" r="0" g="154" b="205"/>
+  <color name="deep sky blue 4" r="0" g="104" b="139"/>
+  <color name="dim gray" r="105" g="105" b="105"/>
+  <color name="dodger blue" r="30" g="144" b="255"/>
+  <color name="dodger blue 2" r="28" g="134" b="238"/>
+  <color name="dodger blue 3" r="24" g="116" b="205"/>
+  <color name="dodger blue 4" r="16" g="78" b="139"/>
+  <color name="firebrick" r="178" g="34" b="34"/>
+  <color name="firebrick 1" r="255" g="48" b="48"/>
+  <color name="firebrick 2" r="238" g="44" b="44"/>
+  <color name="firebrick 3" r="205" g="38" b="38"/>
+  <color name="firebrick 4" r="139" g="26" b="26"/>
+  <color name="floral white" r="255" g="250" b="240"/>
+  <color name="forest green" r="34" g="139" b="34"/>
+  <color name="gainsboro" r="220" g="220" b="220"/>
+  <color name="ghost white" r="248" g="248" b="255"/>
+  <color name="gold" r="255" g="215" b="0"/>
+  <color name="gold 2" r="238" g="201" b="0"/>
+  <color name="gold 3" r="205" g="173" b="0"/>
+  <color name="gold 4" r="139" g="117" b="0"/>
+  <color name="goldenrod" r="218" g="165" b="32"/>
+  <color name="goldenrod 1" r="255" g="193" b="37"/>
+  <color name="goldenrod 2" r="238" g="180" b="34"/>
+  <color name="goldenrod 3" r="205" g="155" b="29"/>
+  <color name="goldenrod 4" r="139" g="105" b="20"/>
+  <color name="gray" r="190" g="190" b="190"/>
+  <color name="gray 0" r="0" g="0" b="0"/>
+  <color name="gray 1" r="3" g="3" b="3"/>
+  <color name="gray 2" r="5" g="5" b="5"/>
+  <color name="gray 3" r="8" g="8" b="8"/>
+  <color name="gray 4" r="10" g="10" b="10"/>
+  <color name="gray 5" r="13" g="13" b="13"/>
+  <color name="gray 6" r="15" g="15" b="15"/>
+  <color name="gray 7" r="18" g="18" b="18"/>
+  <color name="gray 8" r="20" g="20" b="20"/>
+  <color name="gray 9" r="23" g="23" b="23"/>
+  <color name="gray 10" r="26" g="26" b="26"/>
+  <color name="gray 11" r="28" g="28" b="28"/>
+  <color name="gray 12" r="31" g="31" b="31"/>
+  <color name="gray 13" r="33" g="33" b="33"/>
+  <color name="gray 14" r="36" g="36" b="36"/>
+  <color name="gray 15" r="38" g="38" b="38"/>
+  <color name="gray 16" r="41" g="41" b="41"/>
+  <color name="gray 17" r="43" g="43" b="43"/>
+  <color name="gray 18" r="46" g="46" b="46"/>
+  <color name="gray 19" r="48" g="48" b="48"/>
+  <color name="gray 20" r="51" g="51" b="51"/>
+  <color name="gray 21" r="54" g="54" b="54"/>
+  <color name="gray 22" r="56" g="56" b="56"/>
+  <color name="gray 23" r="59" g="59" b="59"/>
+  <color name="gray 24" r="61" g="61" b="61"/>
+  <color name="gray 25" r="64" g="64" b="64"/>
+  <color name="gray 26" r="66" g="66" b="66"/>
+  <color name="gray 27" r="69" g="69" b="69"/>
+  <color name="gray 28" r="71" g="71" b="71"/>
+  <color name="gray 29" r="74" g="74" b="74"/>
+  <color name="gray 30" r="77" g="77" b="77"/>
+  <color name="gray 31" r="79" g="79" b="79"/>
+  <color name="gray 32" r="82" g="82" b="82"/>
+  <color name="gray 33" r="84" g="84" b="84"/>
+  <color name="gray 34" r="87" g="87" b="87"/>
+  <color name="gray 35" r="89" g="89" b="89"/>
+  <color name="gray 36" r="92" g="92" b="92"/>
+  <color name="gray 37" r="94" g="94" b="94"/>
+  <color name="gray 38" r="97" g="97" b="97"/>
+  <color name="gray 39" r="99" g="99" b="99"/>
+  <color name="gray 40" r="102" g="102" b="102"/>
+  <color name="gray 41" r="105" g="105" b="105"/>
+  <color name="gray 42" r="107" g="107" b="107"/>
+  <color name="gray 43" r="110" g="110" b="110"/>
+  <color name="gray 44" r="112" g="112" b="112"/>
+  <color name="gray 45" r="115" g="115" b="115"/>
+  <color name="gray 46" r="117" g="117" b="117"/>
+  <color name="gray 47" r="120" g="120" b="120"/>
+  <color name="gray 48" r="122" g="122" b="122"/>
+  <color name="gray 49" r="125" g="125" b="125"/>
+  <color name="gray 50" r="127" g="127" b="127"/>
+  <color name="gray 51" r="130" g="130" b="130"/>
+  <color name="gray 52" r="133" g="133" b="133"/>
+  <color name="gray 53" r="135" g="135" b="135"/>
+  <color name="gray 54" r="138" g="138" b="138"/>
+  <color name="gray 55" r="140" g="140" b="140"/>
+  <color name="gray 56" r="143" g="143" b="143"/>
+  <color name="gray 57" r="145" g="145" b="145"/>
+  <color name="gray 58" r="148" g="148" b="148"/>
+  <color name="gray 59" r="150" g="150" b="150"/>
+  <color name="gray 60" r="153" g="153" b="153"/>
+  <color name="gray 61" r="156" g="156" b="156"/>
+  <color name="gray 62" r="158" g="158" b="158"/>
+  <color name="gray 63" r="161" g="161" b="161"/>
+  <color name="gray 64" r="163" g="163" b="163"/>
+  <color name="gray 65" r="166" g="166" b="166"/>
+  <color name="gray 66" r="168" g="168" b="168"/>
+  <color name="gray 67" r="171" g="171" b="171"/>
+  <color name="gray 68" r="173" g="173" b="173"/>
+  <color name="gray 69" r="176" g="176" b="176"/>
+  <color name="gray 70" r="179" g="179" b="179"/>
+  <color name="gray 71" r="181" g="181" b="181"/>
+  <color name="gray 72" r="184" g="184" b="184"/>
+  <color name="gray 73" r="186" g="186" b="186"/>
+  <color name="gray 74" r="189" g="189" b="189"/>
+  <color name="gray 75" r="191" g="191" b="191"/>
+  <color name="gray 76" r="194" g="194" b="194"/>
+  <color name="gray 77" r="196" g="196" b="196"/>
+  <color name="gray 78" r="199" g="199" b="199"/>
+  <color name="gray 79" r="201" g="201" b="201"/>
+  <color name="gray 80" r="204" g="204" b="204"/>
+  <color name="gray 81" r="207" g="207" b="207"/>
+  <color name="gray 82" r="209" g="209" b="209"/>
+  <color name="gray 83" r="212" g="212" b="212"/>
+  <color name="gray 84" r="214" g="214" b="214"/>
+  <color name="gray 85" r="217" g="217" b="217"/>
+  <color name="gray 86" r="219" g="219" b="219"/>
+  <color name="gray 87" r="222" g="222" b="222"/>
+  <color name="gray 88" r="224" g="224" b="224"/>
+  <color name="gray 89" r="227" g="227" b="227"/>
+  <color name="gray 90" r="229" g="229" b="229"/>
+  <color name="gray 91" r="232" g="232" b="232"/>
+  <color name="gray 92" r="235" g="235" b="235"/>
+  <color name="gray 93" r="237" g="237" b="237"/>
+  <color name="gray 94" r="240" g="240" b="240"/>
+  <color name="gray 95" r="242" g="242" b="242"/>
+  <color name="gray 96" r="245" g="245" b="245"/>
+  <color name="gray 97" r="247" g="247" b="247"/>
+  <color name="gray 98" r="250" g="250" b="250"/>
+  <color name="gray 99" r="252" g="252" b="252"/>
+  <color name="gray 100" r="255" g="255" b="255"/>
+  <color name="green" r="0" g="255" b="0"/>
+  <color name="green 2" r="0" g="238" b="0"/>
+  <color name="green 3" r="0" g="205" b="0"/>
+  <color name="green 4" r="0" g="139" b="0"/>
+  <color name="green yellow" r="173" g="255" b="47"/>
+  <color name="honeydew" r="240" g="255" b="240"/>
+  <color name="honeydew 2" r="224" g="238" b="224"/>
+  <color name="honeydew 3" r="193" g="205" b="193"/>
+  <color name="honeydew 4" r="131" g="139" b="131"/>
+  <color name="hot pink" r="255" g="105" b="180"/>
+  <color name="hot pink 1" r="255" g="110" b="180"/>
+  <color name="hot pink 2" r="238" g="106" b="167"/>
+  <color name="hot pink 3" r="205" g="96" b="144"/>
+  <color name="hot pink 4" r="139" g="58" b="98"/>
+  <color name="indian red" r="205" g="92" b="92"/>
+  <color name="indian red 1" r="255" g="106" b="106"/>
+  <color name="indian red 2" r="238" g="99" b="99"/>
+  <color name="indian red 3" r="205" g="85" b="85"/>
+  <color name="indian red 4" r="139" g="58" b="58"/>
+  <color name="indigo" r="75" g="0" b="130"/>
+  <color name="indigo 2" r="33" g="136" b="104"/>
+  <color name="ivory" r="255" g="255" b="240"/>
+  <color name="ivory 2" r="238" g="238" b="224"/>
+  <color name="ivory 3" r="205" g="205" b="193"/>
+  <color name="ivory 4" r="139" g="139" b="131"/>
+  <color name="khaki" r="240" g="230" b="140"/>
+  <color name="khaki 1" r="255" g="246" b="143"/>
+  <color name="khaki 2" r="238" g="230" b="133"/>
+  <color name="khaki 3" r="205" g="198" b="115"/>
+  <color name="khaki 4" r="139" g="134" b="78"/>
+  <color name="lavender" r="230" g="230" b="250"/>
+  <color name="lavender blush" r="255" g="240" b="245"/>
+  <color name="lavender blush 2" r="238" g="224" b="229"/>
+  <color name="lavender blush 3" r="205" g="193" b="197"/>
+  <color name="lavender blush 4" r="139" g="131" b="134"/>
+  <color name="lawn green" r="124" g="252" b="0"/>
+  <color name="lemon chiffon" r="255" g="250" b="205"/>
+  <color name="lemon chiffon 2" r="238" g="233" b="191"/>
+  <color name="lemon chiffon 3" r="205" g="201" b="165"/>
+  <color name="lemon chiffon 4" r="139" g="137" b="112"/>
+  <color name="light blue" r="173" g="216" b="230"/>
+  <color name="light blue 1" r="191" g="239" b="255"/>
+  <color name="light blue 2" r="178" g="223" b="238"/>
+  <color name="light blue 3" r="154" g="192" b="205"/>
+  <color name="light blue 4" r="104" g="131" b="139"/>
+  <color name="light coral" r="240" g="128" b="128"/>
+  <color name="light cyan" r="224" g="255" b="255"/>
+  <color name="light cyan 2" r="209" g="238" b="238"/>
+  <color name="light cyan 3" r="180" g="205" b="205"/>
+  <color name="light cyan 4" r="122" g="139" b="139"/>
+  <color name="light goldenrod yellow" r="250" g="250" b="210"/>
+  <color name="light goldenrod" r="238" g="221" b="130"/>
+  <color name="light goldenrod 1" r="255" g="236" b="139"/>
+  <color name="light goldenrod 2" r="238" g="220" b="130"/>
+  <color name="light goldenrod 3" r="205" g="190" b="112"/>
+  <color name="light goldenrod 4" r="139" g="129" b="76"/>
+  <color name="light gray" r="211" g="211" b="211"/>
+  <color name="light green" r="144" g="238" b="144"/>
+  <color name="light pink" r="255" g="182" b="193"/>
+  <color name="light pink 1" r="255" g="174" b="185"/>
+  <color name="light pink 2" r="238" g="162" b="173"/>
+  <color name="light pink 3" r="205" g="140" b="149"/>
+  <color name="light pink 4" r="139" g="95" b="101"/>
+  <color name="light salmon" r="255" g="160" b="122"/>
+  <color name="light salmon 2" r="238" g="149" b="114"/>
+  <color name="light salmon 3" r="205" g="129" b="98"/>
+  <color name="light salmon 4" r="139" g="87" b="66"/>
+  <color name="light sea green" r="32" g="178" b="170"/>
+  <color name="light sky blue" r="135" g="206" b="250"/>
+  <color name="light sky blue 1" r="176" g="226" b="255"/>
+  <color name="light sky blue 2" r="164" g="211" b="238"/>
+  <color name="light sky blue 3" r="141" g="182" b="205"/>
+  <color name="light sky blue 4" r="96" g="123" b="139"/>
+  <color name="light slate blue" r="132" g="112" b="255"/>
+  <color name="light slate gray" r="119" g="136" b="153"/>
+  <color name="light steel blue" r="176" g="196" b="222"/>
+  <color name="light steel blue 1" r="202" g="225" b="255"/>
+  <color name="light steel blue 2" r="188" g="210" b="238"/>
+  <color name="light steel blue 3" r="162" g="181" b="205"/>
+  <color name="light steel blue 4" r="110" g="123" b="139"/>
+  <color name="light yellow" r="255" g="255" b="224"/>
+  <color name="light yellow 2" r="238" g="238" b="209"/>
+  <color name="light yellow 3" r="205" g="205" b="180"/>
+  <color name="light yellow 4" r="139" g="139" b="122"/>
+  <color name="lime green" r="50" g="205" b="50"/>
+  <color name="linen" r="250" g="240" b="230"/>
+  <color name="magenta" r="255" g="0" b="255"/>
+  <color name="magenta 2" r="238" g="0" b="238"/>
+  <color name="magenta 3" r="205" g="0" b="205"/>
+  <color name="magenta 4" r="139" g="0" b="139"/>
+  <color name="maroon" r="176" g="48" b="96"/>
+  <color name="maroon 1" r="255" g="52" b="179"/>
+  <color name="maroon 2" r="238" g="48" b="167"/>
+  <color name="maroon 3" r="205" g="41" b="144"/>
+  <color name="maroon 4" r="139" g="28" b="98"/>
+  <color name="medium aquamarine" r="102" g="205" b="170"/>
+  <color name="medium blue" r="0" g="0" b="205"/>
+  <color name="medium orchid" r="186" g="85" b="211"/>
+  <color name="medium orchid 1" r="224" g="102" b="255"/>
+  <color name="medium orchid 2" r="209" g="95" b="238"/>
+  <color name="medium orchid 3" r="180" g="82" b="205"/>
+  <color name="medium orchid 4" r="122" g="55" b="139"/>
+  <color name="medium purple" r="147" g="112" b="219"/>
+  <color name="medium purple 1" r="171" g="130" b="255"/>
+  <color name="medium purple 2" r="159" g="121" b="238"/>
+  <color name="medium purple 3" r="137" g="104" b="205"/>
+  <color name="medium purple 4" r="93" g="71" b="139"/>
+  <color name="medium sea green" r="60" g="179" b="113"/>
+  <color name="medium slate blue" r="123" g="104" b="238"/>
+  <color name="medium spring green" r="0" g="250" b="154"/>
+  <color name="medium turquoise" r="72" g="209" b="204"/>
+  <color name="medium violet red" r="199" g="21" b="133"/>
+  <color name="midnight blue" r="25" g="25" b="112"/>
+  <color name="mint cream" r="245" g="255" b="250"/>
+  <color name="misty rose" r="255" g="228" b="225"/>
+  <color name="misty rose 2" r="238" g="213" b="210"/>
+  <color name="misty rose 3" r="205" g="183" b="181"/>
+  <color name="misty rose 4" r="139" g="125" b="123"/>
+  <color name="moccasin" r="255" g="228" b="181"/>
+  <color name="navajo white" r="255" g="222" b="173"/>
+  <color name="navajo white 2" r="238" g="207" b="161"/>
+  <color name="navajo white 3" r="205" g="179" b="139"/>
+  <color name="navajo white 4" r="139" g="121" b="94"/>
+  <color name="navy blue" r="0" g="0" b="128"/>
+  <color name="old lace" r="253" g="245" b="230"/>
+  <color name="olive drab" r="107" g="142" b="35"/>
+  <color name="olive drab 1" r="192" g="255" b="62"/>
+  <color name="olive drab 2" r="179" g="238" b="58"/>
+  <color name="olive drab 3" r="154" g="205" b="50"/>
+  <color name="olive drab 4" r="105" g="139" b="34"/>
+  <color name="orange" r="255" g="165" b="0"/>
+  <color name="orange 2" r="238" g="154" b="0"/>
+  <color name="orange 3" r="205" g="133" b="0"/>
+  <color name="orange 4" r="139" g="90" b="0"/>
+  <color name="orange red" r="255" g="69" b="0"/>
+  <color name="orange red 2" r="238" g="64" b="0"/>
+  <color name="orange red 3" r="205" g="55" b="0"/>
+  <color name="orange red 4" r="139" g="37" b="0"/>
+  <color name="orchid" r="218" g="112" b="214"/>
+  <color name="orchid 1" r="255" g="131" b="250"/>
+  <color name="orchid 2" r="238" g="122" b="233"/>
+  <color name="orchid 3" r="205" g="105" b="201"/>
+  <color name="orchid 4" r="139" g="71" b="137"/>
+  <color name="pale goldenrod" r="238" g="232" b="170"/>
+  <color name="pale green" r="152" g="251" b="152"/>
+  <color name="pale green 1" r="154" g="255" b="154"/>
+  <color name="pale green 2" r="144" g="238" b="144"/>
+  <color name="pale green 3" r="124" g="205" b="124"/>
+  <color name="pale green 4" r="84" g="139" b="84"/>
+  <color name="pale turquoise" r="175" g="238" b="238"/>
+  <color name="pale turquoise 1" r="187" g="255" b="255"/>
+  <color name="pale turquoise 2" r="174" g="238" b="238"/>
+  <color name="pale turquoise 3" r="150" g="205" b="205"/>
+  <color name="pale turquoise 4" r="102" g="139" b="139"/>
+  <color name="pale violet red" r="219" g="112" b="147"/>
+  <color name="pale violet red 1" r="255" g="130" b="171"/>
+  <color name="pale violet red 2" r="238" g="121" b="159"/>
+  <color name="pale violet red 3" r="205" g="104" b="137"/>
+  <color name="pale violet red 4" r="139" g="71" b="93"/>
+  <color name="papaya whip" r="255" g="239" b="213"/>
+  <color name="peach puff" r="255" g="218" b="185"/>
+  <color name="peach puff 2" r="238" g="203" b="173"/>
+  <color name="peach puff 3" r="205" g="175" b="149"/>
+  <color name="peach puff 4" r="139" g="119" b="101"/>
+  <color name="peru" r="205" g="133" b="63"/>
+  <color name="pink" r="255" g="192" b="203"/>
+  <color name="pink 1" r="255" g="181" b="197"/>
+  <color name="pink 2" r="238" g="169" b="184"/>
+  <color name="pink 3" r="205" g="145" b="158"/>
+  <color name="pink 4" r="139" g="99" b="108"/>
+  <color name="plum" r="221" g="160" b="221"/>
+  <color name="plum 1" r="255" g="187" b="255"/>
+  <color name="plum 2" r="238" g="174" b="238"/>
+  <color name="plum 3" r="205" g="150" b="205"/>
+  <color name="plum 4" r="139" g="102" b="139"/>
+  <color name="powder blue" r="176" g="224" b="230"/>
+  <color name="purple" r="160" g="32" b="240"/>
+  <color name="purple 1" r="155" g="48" b="255"/>
+  <color name="purple 2" r="145" g="44" b="238"/>
+  <color name="purple 3" r="125" g="38" b="205"/>
+  <color name="purple 4" r="85" g="26" b="139"/>
+  <color name="red" r="255" g="0" b="0"/>
+  <color name="red 2" r="238" g="0" b="0"/>
+  <color name="red 3" r="205" g="0" b="0"/>
+  <color name="red 4" r="139" g="0" b="0"/>
+  <color name="rosy brown" r="188" g="143" b="143"/>
+  <color name="rosy brown 1" r="255" g="193" b="193"/>
+  <color name="rosy brown 2" r="238" g="180" b="180"/>
+  <color name="rosy brown 3" r="205" g="155" b="155"/>
+  <color name="rosy brown 4" r="139" g="105" b="105"/>
+  <color name="royal blue" r="65" g="105" b="225"/>
+  <color name="royal blue 1" r="72" g="118" b="255"/>
+  <color name="royal blue 2" r="67" g="110" b="238"/>
+  <color name="royal blue 3" r="58" g="95" b="205"/>
+  <color name="royal blue 4" r="39" g="64" b="139"/>
+  <color name="saddle brown" r="139" g="69" b="19"/>
+  <color name="salmon" r="250" g="128" b="114"/>
+  <color name="salmon 1" r="255" g="140" b="105"/>
+  <color name="salmon 2" r="238" g="130" b="98"/>
+  <color name="salmon 3" r="205" g="112" b="84"/>
+  <color name="salmon 4" r="139" g="76" b="57"/>
+  <color name="sandy brown" r="244" g="164" b="96"/>
+  <color name="sea green" r="46" g="139" b="87"/>
+  <color name="sea green 1" r="84" g="255" b="159"/>
+  <color name="sea green 2" r="78" g="238" b="148"/>
+  <color name="sea green 3" r="67" g="205" b="128"/>
+  <color name="sea green 4" r="46" g="139" b="87"/>
+  <color name="seashell" r="255" g="245" b="238"/>
+  <color name="seashell 2" r="238" g="229" b="222"/>
+  <color name="seashell 3" r="205" g="197" b="191"/>
+  <color name="seashell 4" r="139" g="134" b="130"/>
+  <color name="sienna" r="160" g="82" b="45"/>
+  <color name="sienna 1" r="255" g="130" b="71"/>
+  <color name="sienna 2" r="238" g="121" b="66"/>
+  <color name="sienna 3" r="205" g="104" b="57"/>
+  <color name="sienna 4" r="139" g="71" b="38"/>
+  <color name="sky blue" r="135" g="206" b="235"/>
+  <color name="sky blue 1" r="135" g="206" b="255"/>
+  <color name="sky blue 2" r="126" g="192" b="238"/>
+  <color name="sky blue 3" r="108" g="166" b="205"/>
+  <color name="sky blue 4" r="74" g="112" b="139"/>
+  <color name="slate blue" r="106" g="90" b="205"/>
+  <color name="slate blue 1" r="131" g="111" b="255"/>
+  <color name="slate blue 2" r="122" g="103" b="238"/>
+  <color name="slate blue 3" r="105" g="89" b="205"/>
+  <color name="slate blue 4" r="71" g="60" b="139"/>
+  <color name="slate gray" r="112" g="128" b="144"/>
+  <color name="slate gray 1" r="198" g="226" b="255"/>
+  <color name="slate gray 2" r="185" g="211" b="238"/>
+  <color name="slate gray 3" r="159" g="182" b="205"/>
+  <color name="slate gray 4" r="108" g="123" b="139"/>
+  <color name="snow" r="255" g="250" b="250"/>
+  <color name="snow 2" r="238" g="233" b="233"/>
+  <color name="snow 3" r="205" g="201" b="201"/>
+  <color name="snow 4" r="139" g="137" b="137"/>
+  <color name="spring green" r="0" g="255" b="127"/>
+  <color name="spring green 2" r="0" g="238" b="118"/>
+  <color name="spring green 3" r="0" g="205" b="102"/>
+  <color name="spring green 4" r="0" g="139" b="69"/>
+  <color name="steel blue" r="70" g="130" b="180"/>
+  <color name="steel blue 1" r="99" g="184" b="255"/>
+  <color name="steel blue 2" r="92" g="172" b="238"/>
+  <color name="steel blue 3" r="79" g="148" b="205"/>
+  <color name="steel blue 4" r="54" g="100" b="139"/>
+  <color name="tan" r="210" g="180" b="140"/>
+  <color name="tan 1" r="255" g="165" b="79"/>
+  <color name="tan 2" r="238" g="154" b="73"/>
+  <color name="tan 3" r="205" g="133" b="63"/>
+  <color name="tan 4" r="139" g="90" b="43"/>
+  <color name="thistle" r="216" g="191" b="216"/>
+  <color name="thistle 1" r="255" g="225" b="255"/>
+  <color name="thistle 2" r="238" g="210" b="238"/>
+  <color name="thistle 3" r="205" g="181" b="205"/>
+  <color name="thistle 4" r="139" g="123" b="139"/>
+  <color name="tomato" r="255" g="99" b="71"/>
+  <color name="tomato 2" r="238" g="92" b="66"/>
+  <color name="tomato 3" r="205" g="79" b="57"/>
+  <color name="tomato 4" r="139" g="54" b="38"/>
+  <color name="turquoise" r="64" g="224" b="208"/>
+  <color name="turquoise 1" r="0" g="245" b="255"/>
+  <color name="turquoise 2" r="0" g="229" b="238"/>
+  <color name="turquoise 3" r="0" g="197" b="205"/>
+  <color name="turquoise 4" r="0" g="134" b="139"/>
+  <color name="violet" r="238" g="130" b="238"/>
+  <color name="violet red" r="208" g="32" b="144"/>
+  <color name="violet red 1" r="255" g="62" b="150"/>
+  <color name="violet red 2" r="238" g="58" b="140"/>
+  <color name="violet red 3" r="205" g="50" b="120"/>
+  <color name="violet red 4" r="139" g="34" b="82"/>
+  <color name="wheat" r="245" g="222" b="179"/>
+  <color name="wheat 1" r="255" g="231" b="186"/>
+  <color name="wheat 2" r="238" g="216" b="174"/>
+  <color name="wheat 3" r="205" g="186" b="150"/>
+  <color name="wheat 4" r="139" g="126" b="102"/>
+  <color name="white" r="255" g="255" b="255"/>
+  <color name="white smoke" r="245" g="245" b="245"/>
+  <color name="yellow" r="255" g="255" b="0"/>
+  <color name="yellow 2" r="238" g="238" b="0"/>
+  <color name="yellow 3" r="205" g="205" b="0"/>
+  <color name="yellow 4" r="139" g="139" b="0"/>
+  <color name="yellow green" r="154" g="205" b="50"/>
+</colors>

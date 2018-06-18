@@ -1,0 +1,62 @@
+! File: tools/annotext/data/html.slt
+!
+! Each line beginning with a '"' describes an HTML style that can be used by
+! the IlvAnnoText HTML reader. The '"' must be the first character on the line.
+!
+! An HTML style is the association of a style name (an HTML tag) and an
+! IlvATPalette, which is the gathering of an IlvPalette and a few parameters that
+! define a paragraph style.
+!
+! The format is:
+!
+! "styleName" bgcolor(r g b) fgcolor(r g b) ["fontAlias"] fontName
+!             fillStyle patternName lineStyleName lineWidth fillRule arcMode
+!
+!             lineSpacing rightMargin leftMargin firstLineOffset
+!	      spaceAfter spaceBefore
+!             verticalOffset visibilityFlag
+!             drawBackgroundFlag wrappingFlag
+!             interactor-type image-alignment
+
+! The default style is used when the style is not recognized:
+"default"	"white"       "black"		%lucida-12-	   0 solid solid  0 0 0
+	1 0  4   0  1  1 0 1 0 1 0 0 0
+! Title 1
+"h1"		"white"       "black"		%helvetica-14-B        0 solid solid  0 0 0
+	1  0  4   0 6 6 0 1 0 1 0 0 0
+! Title 2
+"h2"		"white"       "black"		%helvetica-12-B        0 solid solid  0 0 0
+	1  0  4   0 3 3 0 1 0 1 0 0 0
+! Title 3
+"h3"		"white"       "black"		%helvetica-12-B        0 solid solid  0 0 0
+	1  0  4   0 3 3 0 1 0 1 0 0 0
+! Title 4
+"h4"		"white"           0 38000 30000	%lucida-12-B        0 solid solid  0 0 0
+	1  0  4   0 6 8 0 1 0 1 0 0 0
+! Title 5
+"h5"		"white"           0 38000 30000	%lucida-12-B        0 solid solid  0 0 0
+	1  0  4   0 4 6 0 1 0 1 0 0 0
+! Title 6
+"h6"		"white"           0 38000 65000	%lucida-12-I        0 solid solid  0 0 0
+	1  0  4   0   4 6  0 1  0 1 0 0 0
+! Lists   long value is -12 in unsigned form
+"ul"		"white"      "black"		%lucida-12-         0 solid solid  0 0 0
+	1  0  24 4294967284 1 1  0 1  0 1  0 0 0
+! Numbered Lists long value is -24 in unsigned long form
+"ol"		"white"      "black"		%lucida-12-         0 solid solid  0 0 0
+	2  0  36 4294967272 0 0 0 1 0 1 0 0 0
+! Interactive
+"a"		"white"       "dark blue"	%lucida-12-         0 solid solid  0 0 0
+	1  0  4   0  0  0 0 1 0 1 1 0 0
+! Pre
+"pre"		"white"      "grey25"		%courrier-12-      0 solid solid  0 0 0
+	1  0  4   0  0  0 0 1 0 2 0 0 0
+
+! Code
+"code"		"white"      "grey25"		%courrier-12-      0 solid solid  0 0 0
+	1  0  4   0  0  0 0 1 0 2 0 0 0
+
+! Xmp
+"xmp"		"white"      "black"		%courrier-12-      0 solid solid  0 0 0
+	1  0  4   0  0  0 0 1 0 2 0 0 0
+

@@ -1,0 +1,93 @@
+// Ilv Version: 5.3
+// File generated: Tue May 11 15:05:30 2010
+// Creator class: IlvGadgetManagerOutput
+FileName "selection_Recipient"
+PathName "C:\\e\\MyDevelopment\\centrale sarto modif\\IlogFile\\selection_Recipient.ilv"
+Palettes 3
+"default" 2 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+1 F "darkslateblue" "white" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+0 F "gray" "black" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 7
+0 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMatrix 0 0 736 376 F43352 2 N N 0 0 0 0 1 1 146 37 1 0 0 1 1 1 5 10 V0 2 38 
+75 
+112 
+149 
+186 
+219 
+256 
+297 
+333 
+371 5 0 0 480 IlvGadgetMatrixItem P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 6 6 139 31 F268435468 0 { IlvMessageItem 262145 4 16 4 "&NoRecipient"  }   1 
+1 0 480 IlvGadgetMatrixItem P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 152 6 139 31 F268435468 0 { IlvMessageItem 262145 4 16 4 "&DesRecipient"  }   1  2 0 480 IlvGadgetMatrixItem P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 298 6 139 31 F268435468 0 { IlvMessageItem 262145 4 16 4 "&TypeRecipient"  }   1 
+3 0 480 IlvGadgetMatrixItem P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 444 6 139 31 F268435468 0 { IlvMessageItem 262145 4 16 4 "&TareTheo"  }   1  4 0 480 IlvGadgetMatrixItem P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 590 6 139 31 F268435468 0 { IlvMessageItem 262145 4 16 4 "&UnitePoids"  }   1 
+0 N 0 0 0 1 0  } 32 "listeSelectionRecipient"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 6 499 734 41 F12 0 { IlvMessageItem 262169 4 16 4 "SelectionnezRecipient"  }   } 32 "message"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+2 IlvZoomableTransparentIcon 0 0 "default" F6.249999940395355 0 0 6.249999940395355 520 440 } 544 "descendre"
+1
+1 "__ilvCallback" "descendreCB"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+2 IlvZoomableTransparentIcon 0 0 "default" F6.249999761581421 0 0 6.249999940395355 576 440 } 544 "monter"
+1
+1 "__ilvCallback" "monterCB"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+2 IlvZoomableTransparentIcon 0 0 "default" F6.24999988079071 0 0 6.249999895691872 464 440 } 544 "valider"
+1
+1 "__ilvCallback" "validerCB"
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+2 IlvZoomableTransparentIcon 0 0 "default" F6.249999940395355 0 0 6.249999895691872 688 440 } 544 "quitter"
+1
+1 "__ilvCallback" "quitterCB"
+0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+2 IlvZoomableTransparentIcon 0 0 "default" F6.249999761581421 0 0 6.249999940395355 632 440 } 544 "aide"
+1
+1 "__ilvCallback" "aideCB"
+0
+Size 742 545
+Background "gray"
+GeometryHandlers
+1 100 0 742 0 742 0
+7 3 520 0 520  50 0 50 2  172 0 172 0
+ 3 576 0 576  50 0 50 3  116 0 116 0
+ 3 464 0 464  50 0 50 4  228 0 228 0
+ 3 688 0 688  50 0 50 5  4 0 4 0
+ 3 632 0 632  50 0 50 6  60 0 60 0
+ 3 6 0 6  734 0 734 1  2 0 2 0
+ 3 0 0 0  736 0 736 0  6 6 6 0
+1 100 0 545 0 545 0
+7 3 440 0 440  50 0 50 2  55 0 55 0
+ 3 440 0 440  50 0 50 3  55 0 55 0
+ 3 440 0 440  50 0 50 4  55 0 55 0
+ 3 440 0 440  50 0 50 5  55 0 55 0
+ 3 440 0 440  50 0 50 6  55 0 55 0
+ 3 499 0 499  41 0 41 1  5 0 5 0
+ 3 0 0 0  376 0 376 0  169 0 169 0
+Layers 2
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

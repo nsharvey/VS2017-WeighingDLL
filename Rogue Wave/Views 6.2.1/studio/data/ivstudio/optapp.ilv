@@ -1,0 +1,37 @@
+// Ilv Version: 3.1
+// File generated: Fri Sep 04 14:54:19 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "optapp"
+PathName "W:\\work.noiret\\studio\\data\\ivstudio\\optapp.ilv"
+Palettes 2
+1 "gray" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+IlvObjects 7
+1 { 0 0 IlvMessageLabel 10 9 282 22 F8 0 25 16 4 "&DefApplicationName"   } 0
+0
+1 { 1 0 IlvTextField 298 9 154 22 F6 2 1 -1 0 "Text Field" } 544 "defaultAppName"
+1
+1 "__ilvCallback" "defaultAppNameCallback"
+0
+1 { 2 0 IlvMessageLabel 10 36 285 22 F8 0 25 16 4 "&BufferBackg"   } 0
+0
+1 { 3 0 IlvMessageLabel 10 65 284 22 F8 0 25 16 4 "&FilesExtensions"   } 0
+0
+1 { 4 0 IlvTextField 298 65 154 22 F6 2 1 -1 0 "Text Field" } 32 "fileExtensions"
+0
+1 { 5 0 IlvToggle 10 96 442 16 F1 2 1 2 0 0 0 Y "&NoPanelContents" } 32 "noPanelContents"
+0
+1 { 6 1 IlvButton 298 38 154 23 F9 2 1 16 4 "Select..."   } 544 "SelectBufferBackg"
+1
+1 "__ilvCallback" "SelectBufferBackgCallback"
+0
+Size 493 856
+GeometryHandlers
+1 100 0 493 0 493 0
+4 3 0 0 298  154 0 154 1  0 0 41 0
+ 3 0 0 298  154 0 154 6  0 0 41 0
+ 3 0 0 298  154 0 154 4  0 0 41 0
+ 3 0 0 10  442 0 442 5  0 0 41 0
+1 100 0 856 0 856 0
+0
+EOF

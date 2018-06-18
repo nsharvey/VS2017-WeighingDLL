@@ -1,0 +1,45 @@
+// Ilv Version: 3.1
+// File generated: Wed Aug 25 13:13:46 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "cmdaccel"
+Palettes 2
+1 "gray" "black" "button" "%helvetica-12-B" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12" 0 solid solid 0 0 0
+IlvObjects 7
+4 { 0 0 IlvText 2 115 204 35 F268435589 0 N N 1 1 1 1 0 2
+"Text"
+"multi lines"
+0 0 0 0 } 32 "CmdAcceleratorErrorMsg"
+0
+4 { 1 0 IlvTextField 2 90 204 22 F6 2 1 -1 0 "Text Field" } 32 "CmdSelectedAccel"
+0
+4 { 2 0 IlvMessageLabel 2 66 204 22 F8 0 25 16 4 "&SelectedAccelerator"   } 32 "CmdSelectedAccelMsg"
+0
+4 { 3 0 IlvStringList 2 28 204 34 F131 2 A A 0 0 0 0 0 4 0 0 2 0 } 32 "CmdAcceleratorsList"
+0
+4 { 4 0 IlvMessageLabel 2 5 149 22 F8 0 25 16 4 "&AcceleratorsList"   } 32 "CmdAcceleratorsListMsg"
+0
+1 { 5 P 1
+[ IlvToolTip __ilvToolTip 2 "&add" 4 4 ]
+1 IlvButton 158 5 26 23 F25 2 2 16 4 1 0 "ilviews/appframe/newitm.xpm"   } 32 "AddCmdAccel"
+0
+1 { 6 P 1
+[ IlvToolTip __ilvToolTip 2 "&remove" 4 4 ]
+1 IlvButton 180 5 26 23 F25 2 2 16 4 1 0 "ilviews/appframe/removitm.xpm"   } 32 "RemoveCmdAccel"
+0
+Size 206 150
+GeometryHandlers
+1 100 0 206 0 206 0
+7 3 0 0 2  149 0 149 4  0 0 55 0
+ 3 0 0 2  204 0 204 3  0 0 0 0
+ 3 0 0 2  204 0 204 2  0 0 0 0
+ 3 0 0 2  204 0 204 1  0 0 0 0
+ 3 0 0 2  204 0 204 0  0 0 0 0
+ 3 158 0 158  0 0 26 5  0 0 22 0
+ 3 180 0 180  0 0 26 6  0 0 0 0
+1 100 0 150 0 150 0
+4 3 0 0 28  34 0 34 3  0 0 88 0
+ 3 66 0 66  0 0 22 2  0 0 62 0
+ 3 90 0 90  0 0 22 1  0 0 38 0
+ 3 115 0 115  0 0 35 0  0 0 0 0
+EOF

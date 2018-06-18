@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Defining Columns</title><link rel="Prev" href="sqldatasources.11.6.html" title="Previous" /><link rel="Next" href="sqldatasources.11.8.html" title="Next" /><link rel="StyleSheet" href="css/sqldatasources.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/sqldatasources_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/Options/sqldatasources.11.7.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pN6ZBjQ09tkD5LYDzVX06CnQ" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/Options/sqldatasources.11.7.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../Options/dausrfrontcover.html#wwconnect_header">Data Access User Manual</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/dausrpart2.html#ww144909">Data Access and SQL</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/sqldatasources.11.1.html#wwconnect_header">SQL Data Sources </a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/sqldatasources.11.6.html#wwconnect_header">Working with an SQL Data Source</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Defining Columns</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww998039" class="Heading2"><span></span>Defining Columns</div><div id="ww998040" class="Body">When you add a database table to a data source, you can tie the columns of the table to the columns of the data source table. This can either be done graphically or manually in the data source inspector. </div><div id="ww998044" class="Body">The graphical method is described in the Rogue Wave&nbsp;Views<span class="emphasis"> Data Access Getting Started Manual</span>. To specify the column that should be selected from a database manually, you can type directly in the Select and From cells in the appropriate column in the SQL Data Source inspector. </div><div id="ww998045" class="Body">If you just want to select a particular column from a database, enter the name of the column in the Select field and the name of the database table in the From field. If you have entered the column and database table name correctly, the data source table will then be updated accordingly. </div><div id="ww998047" class="Body">It is also possible to specify a column in the data source table that is the result of a calculation carried out on data from other table columns. This is possible within the limits of the formulas that are accepted by the database. See your database documentation for more information on the formulas that can be used. </div><div class="ww_skin_page_overflow"><div id="ww1000142" class="Startfigure"><img class="Default" src="../Options/images/sqldatasources.11.7.1.png" width="100%" style="display: block; left: 0.0pt; max-height: 116px; max-width: 492px; top: 0.0pt" alt="" /></div></div><div id="ww998057" class="Caption">Specifying a Computed Column</div><div id="ww998058" class="Body">To set up a column like this, click in the Select cell and enter the formula that you require. The From cell must remain empty. If there is a database table name in the From cell, Data Access tries to locate a column that has the name specified in the Select cell. </div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

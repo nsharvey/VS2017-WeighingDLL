@@ -1,0 +1,70 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Foundations - Samples: gpath</title>
+	</head>
+    <body>
+		<a name="gpath"><h1>Sample: <code>gpath</code></h1><h1 class="subtitle">Rogue Wave Views Foundation: IlvGraphicPath</h1></a>
+		<p>Using the capabilities of the <code>IlvGraphicPath</code>
+	object: <b>disconnected polylines</b>, <b>polygons with
+	holes</b> and <b>drawing along a path</b>.</p>
+		<img src="data/gpath.png"/>
+		<p>A data file that contains two instances of the class
+	<code>IlvGraphicPath</code> is read into an
+	<code>IlvContainer</code>.</p>
+
+	<p>You can animate the objects by pressing the SPACEBAR, and
+	use the regular accelerators of the <code>IlvContainer</code>
+	class:
+       <table>
+       <tr><td><b>Arrow Keys</b></td><td>Pan</td></tr>
+       <tr><td><b>i</b></td><td>Initialize transformer to identity</td></tr>
+       <tr><td><b>Z</b></td><td>Zoom in (x 2)</td></tr>
+       <tr><td><b>U</b></td><td>Zoom out (/ 2)</td></tr>
+       <tr><td><b>f</b></td><td>&quot;fit&quot;: set zoom factor to display every graphic objects</td></tr>
+       <tr><td><b>R</b></td><td>Rotate</td></tr>
+       </table></p>
+
+	<p>The <code>IlvGraphicPath</code> class has additional
+	features that can be turned into account:
+	<UL>
+	<LI><B>Disconnected polylines</B>: This is often the case when
+		an entity is represented as several vectors in the
+		cartographic file. This could be when a long road is
+		cut into small pieces, or when the road is actually
+		interrupted locally. Then it is convenient to have a
+		graphic object that can be built from several disjoint
+		vectors. The <code>IlvGraphicPath</code> enables this
+		functionality.</LI>
+	<LI><B>Polygons with holes</B>: Some applications need to
+		represent polygons with holes. This is easily done
+		with <code>IlvGraphicPath</code> objects, by providing
+		several vectors for the inside and the outside
+		polygons.</LI>
+	<LI><B>Drawing along a path</B>: Even more attractive, the
+		<code>IlvGraphicPath</code> offers the capacity to
+		draw along the polyline or the polygon. It is possible
+		to repeat a drawing - without memory allocation -
+		along an object, by specifying the drawing method and
+		the spacing between each drawing.</LI>
+	</UL></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGraphicPath</code></li>
+			<li><code>IlvTransformedGraphic</code></li>
+			<li><code>IlvTimer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/gpath.cpp"><code>src/gpath.cpp</code></a></li>
+		</ul>

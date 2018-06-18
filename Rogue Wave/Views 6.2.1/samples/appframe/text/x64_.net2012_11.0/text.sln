@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("9A8EB7D6-1D69-11E8-91B2-87BE772C9500") = "text", "text.vcxproj", "9A8E5FD4-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

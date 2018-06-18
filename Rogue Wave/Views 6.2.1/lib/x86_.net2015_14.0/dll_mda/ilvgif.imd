@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Rogue Wave Views GIF Dynamic Module Descriptor -->
+<module name="ilvgif" version="6.2">
+  <class name="IlvGIFStreamer" rootClass="IlvBitmapStreamer" version="4.0">
+    <format description="Compuserve GIF">
+      <signature>0x47 0x49 0x46</signature>
+      <extension>gif</extension>
+    </format>
+  </class>
+</module>

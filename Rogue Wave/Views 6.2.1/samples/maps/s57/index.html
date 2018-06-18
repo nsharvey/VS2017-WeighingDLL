@@ -1,0 +1,40 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Maps - Samples: s57</title>
+	</head>
+    <body>
+		<a name="s57viewer"><h1>Sample: <code>s57viewer</code></h1><h1 class="subtitle">Rogue Wave Views Maps S57 Sample</h1></a>
+		<p>This sample shows how to load S57 data.</p>
+		<img src="data/s57view.png"/>
+		<p>	
+	Data are read from the <tt>.000</tt> file.
+	</p>
+	<P>
+	<br/><img SRC="data/select.png" align="CENTER"/> : Activates the tooltip interactor allowing you to
+	show the attributes of a geometry (if any) by clicking it.
+	<br/><img SRC="data/del.png" align="CENTER"/> : Empties the manager.
+	<br/><img SRC="data/load.png" align="CENTER"/> : Loads an <code>.000</code> S57 file. 
+	</P></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvS57Reader</code></li>
+			<li><code>IlvS57Loader</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/s57viewer.h"><code>include/s57viewer.h</code></a></li>
+			<li><a href="include/gui.h"><code>include/gui.h</code></a></li>
+			<li><a href="src/s57viewer.cpp"><code>src/s57viewer.cpp</code></a></li>
+			<li><a href="src/gui.cpp"><code>src/gui.cpp</code></a></li>
+		</ul>

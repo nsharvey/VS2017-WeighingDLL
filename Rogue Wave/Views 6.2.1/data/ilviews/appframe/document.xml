@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<Options>
+<!--Description of RecentFileList class, used by -->
+<!--By default, a document template does not process it self a recent file list (Count = 0)-->
+<!--But it can process one -->
+  <Class AF_Name="RecentFileListDesc">
+    <MaxFilesCount AF_Class="int" AF_Value="0"/>
+    <Command AF_Class="string" AF_Value=""/>
+    <Name AF_Class="string" AF_Value=""/>
+  </Class>
+<!--***************************************************************************-->
+<!--Description of FilterDoc class-->
+  <Class AF_Name="Filter">
+    <Format AF_Class="string" AF_Value=""/>
+    <Description AF_Class="string" AF_Value=""/>
+  </Class>
+  <Class AF_Name="MenuInsertion">
+    <Path AF_Class="string" AF_Value="&amp;MainMenu/&amp;MenuFile"/>
+    <After AF_Class="bool" AF_Value="true"/>
+    <items AF_Class="MenuItem" AF_IsArray="1"/>
+  </Class>
+  <Class AF_Name="DynamicMenu">
+    <insertItems AF_Class="MenuInsertion" AF_IsArray="1"/>
+    <removeItems AF_Class="string" AF_IsArray="1"/>
+  </Class>
+<!--***************************************************************************-->
+<!--Window View description class-->
+  <Class AF_Name="ViewTemplate">
+    <ViewClasses AF_Class="string" AF_IsArray="1"/>
+    <ILVFrameTemplate AF_Class="string" AF_Value=""/>
+    <ShowInBar AF_Class="string" AF_Value=""/>
+    <AllowMultipleContainers AF_Class="bool" AF_Value="true"/>
+    <FrameMaximized AF_Class="bool" AF_Value="false"/>
+    <Visible AF_Class="bool" AF_Value="true"/>
+    <CloseDocumentWhenClosed AF_Class="bool" AF_Value="false"/>
+    <ShowHidePaneCommand AF_Class="string" AF_Value=""/>
+  </Class>
+<!--***************************************************************************-->
+<!--Description of DocumentTemplate class-->
+<!--FrameMaximized field is ignored if ShowInBar is specified-->
+  <Class AF_Name="DocumentTemplate">
+    <DefaultDocName AF_Class="string" AF_Value=""/>
+    <ShortName AF_Class="string" AF_Value=""/>
+    <Description AF_Class="string" AF_Value=""/>
+    <bitmap AF_Class="string" AF_Value=""/>
+    <Filters AF_Class="Filter" AF_IsArray="1"/>
+    <DocumentClass AF_Class="string" AF_Value=""/>
+    <ViewTemplates AF_Class="ViewTemplate" AF_IsArray="1"/>
+    <ViewClasses AF_Class="string" AF_IsArray="1"/>
+    <IsMDI AF_Class="bool" AF_Value="true"/>
+    <ILVFrameTemplate AF_Class="string" AF_Value=""/>
+    <ShowInBar AF_Class="string" AF_Value=""/>
+    <FrameMaximized AF_Class="bool" AF_Value="false"/>
+    <AllowMultipleContainers AF_Class="bool" AF_Value="true"/>
+    <DocMenu AF_Class="DynamicMenu">
+      <insertItems/>
+      <removeItems/>
+    </DocMenu>
+    <Toolbars AF_Class="Toolbar" AF_IsArray="1"/>
+    <AlwaysShowMenu AF_Class="bool" AF_Value="false"/>
+    <AppearsInLoadFileFilters AF_Class="bool" AF_Value="true"/>
+    <OpenCommand AF_Class="string" AF_Value=""/>
+    <NewCommand AF_Class="string" AF_Value=""/>
+    <ShowHidePaneCommand AF_Class="string" AF_Value=""/>
+    <RecentOpenFiles AF_Class="RecentFileListDesc" MaxFilesCount="0" Command="" Name=""/>
+  </Class>
+<!--***************************************************************************-->
+<!--Description of RecentFileList class-->
+  <Class AF_Name="OpenedFileInfos">
+    <PathName AF_Class="string" AF_Value=""/>
+    <ViewClassName AF_Class="string" AF_Value=""/>
+  </Class>
+  <Class AF_Name="RecentFileList">
+    <MaxFilesCount AF_Class="int" AF_Value="4"/>
+    <Files AF_Class="OpenedFileInfos" AF_IsArray="1"/>
+  </Class>
+<!--***************************************************************************-->
+<!--Application last opened file list, not dependent of a specifif document-->
+<!--template-->
+  <RecentFileList AF_Name="AppFileList" MaxFilesCount="4">
+    <Files/>
+  </RecentFileList>
+<!--***************************************************************************-->
+<!--Project last opened file list, dependent of document template of project type-->
+  <RecentFileList AF_Name="RecentProjects" MaxFilesCount="4">
+    <Files/>
+  </RecentFileList>
+<!--***************************************************************************-->
+<!--Description of ProjectGenData class-->
+  <Class AF_Name="SuperClassNode">
+    <classname AF_Class="string" AF_Value=""/>
+    <superclass AF_Class="string" AF_Value=""/>
+  </Class>
+  <Class AF_Name="ImplementationData">
+    <filename AF_Class="string" AF_Value=""/>
+    <maskFile AF_Class="string" AF_Value=""/>
+  </Class>
+  <Class AF_Name="ImplementationFilesNode">
+    <classname AF_Class="string" AF_Value=""/>
+    <headerData AF_Class="ImplementationData" filename="" maskFile=""/>
+    <sourceData AF_Class="ImplementationData" filename="" maskFile=""/>
+  </Class>
+  <Class AF_Name="DialogGen">
+    <name AF_Class="string" AF_Value=""/>
+    <classname AF_Class="string" AF_Value=""/>
+    <ilvPathname AF_Class="string" AF_Value=""/>
+    <title AF_Class="string" AF_Value=""/>
+  </Class>
+  <Class AF_Name="ProjectGenData">
+    <superclasses AF_Class="SuperClassNode" AF_IsArray="1"/>
+    <dll AF_Class="bool" AF_Value="false"/>
+    <rc AF_Class="bool" AF_Value="true"/>
+    <script AF_Class="bool" AF_Value="false"/>
+    <alreadyEdited AF_Class="bool" AF_Value="false"/>
+    <plateform AF_Class="string" AF_Value="&amp;msvc6"/>
+    <projectName AF_Class="string" AF_Value=""/>
+    <appName AF_Class="string" AF_Value=""/>
+    <projectDirectory AF_Class="string" AF_Value=""/>
+    <makefile AF_Class="string" AF_Value=""/>
+    <dataDirectory AF_Class="string" AF_Value="data"/>
+    <sourceDirectory AF_Class="string" AF_Value="src"/>
+    <includeDirectory AF_Class="string" AF_Value="include"/>
+    <helpDirectory AF_Class="string" AF_Value="help"/>
+    <viewsDirectory AF_Class="string" AF_Value="$(ILVHOME)"/>
+    <docViewDir AF_Class="string" AF_Value="$(ILVHOME)"/>
+    <implementations AF_Class="ImplementationFilesNode" AF_IsArray="1"/>
+    <mainImplementation AF_Class="ImplementationData" filename="" maskFile=""/>
+    <rcImplementation AF_Class="ImplementationData" filename="" maskFile=""/>
+    <dialogNodes AF_Class="DialogGen" AF_IsArray="1"/>
+    <data AF_Class="string" AF_IsArray="1"/>
+  </Class>
+</Options>

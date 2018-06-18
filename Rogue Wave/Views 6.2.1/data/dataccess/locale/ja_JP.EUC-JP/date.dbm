@@ -1,0 +1,25 @@
+// IlvMessageDatabase 5 Fri May 12 01:33:27 GMT 2017
+// Language: ja_JP
+// Encoding: EUC-JP
+"&Day0" "日曜日"
+"&Day1" "月曜日"
+"&Day2" "火曜日"
+"&Day3" "水曜日"
+"&Day4" "木曜日"
+"&Day5" "金曜日"
+"&Day6" "土曜日"
+"&Month0" "1 月"
+"&Month1" "2 月"
+"&Month10" "11 月"
+"&Month11" "12 月"
+"&Month2" "3 月"
+"&Month3" "4 月"
+"&Month4" "5 月"
+"&Month5" "6 月"
+"&Month6" "7 月"
+"&Month7" "8 月"
+"&Month8" "9 月"
+"&Month9" "10 月"
+"&date_AM" "午前"
+"&date_PM" "午後"
+

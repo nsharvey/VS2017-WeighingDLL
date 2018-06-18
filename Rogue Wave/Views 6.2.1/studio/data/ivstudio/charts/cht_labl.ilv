@@ -1,0 +1,19 @@
+// Ilv Version: 5.2
+// File generated: Tue May 19 17:22:46 2009
+// Creator class: IlvGadgetManagerOutput
+FileName "cht_labl"
+PathName "cht_labl.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 3
+1 { 0 0 IlvStringList 2 2 146 107 F131 2 N N 0 0 0 0 0 4 0 0 V0 2 3
+{ IlvGadgetItem 1 2 4 "item1"  } 
+{ IlvGadgetItem 1 2 4 "item2"  } 
+{ IlvGadgetItem 1 2 4 "item3"  }  } 32 "LegendLabels"
+0
+1 { 1 0 IlvMessageLabel 162 2 170 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&SelectedLegendLabel"  }   } 0
+0
+1 { 2 0 IlvTextField 162 26 170 22 F6 2 1 -1 0 "Text Field" } 32 "LegendLabel"
+0
+Size 338 111
+EOF

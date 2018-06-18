@@ -1,0 +1,50 @@
+// Ilv Version: 5.1
+// File generated: Tue Oct 30 08:30:22 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "yesnocan"
+PathName "yesnocan.ilv"
+Palettes 2
+0 F "defaultBg" "black" "button" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+"IlvStText" 1 F "defaultBg" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 0
+IlvObjects 5
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 5 65 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&lab_Yes"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+10240 "Button_1"
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 175 65 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&^cancel"  }   } 544 "cancel"
+1
+1 "__ilvCallback" "cancel"
+4096 "Button_1"
+2 { 2 1 IlvTransparentIcon 8 13 "default" "" } 32 "bitmap"
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 90 65 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&lab_No"  }   } 544 "Button_1"
+1
+1 "__ilvCallback" "onNo"
+6144 "cancel" "apply"
+3 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 45 14 210 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "MessageLabel"  }   } 32 "title"
+0
+Size 260 93
+GeometryHandlers
+1 100 0 260 0 260 0
+4 3 175 0 175  0 0 80 1  0 0 5 0
+ 3 90 0 90  0 0 80 3  0 0 90 0
+ 3 5 0 5  0 0 80 0  0 0 175 0
+ 3 0 0 45  210 0 210 4  0 0 5 0
+1 100 0 93 0 93 0
+3 3 65 0 65  0 0 23 1  0 0 5 0
+ 3 65 0 65  0 0 23 3  0 0 5 0
+ 3 65 0 65  0 0 23 0  0 0 5 0
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

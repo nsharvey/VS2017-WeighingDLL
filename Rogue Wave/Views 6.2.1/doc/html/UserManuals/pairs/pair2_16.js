@@ -1,0 +1,19 @@
+var pairs =
+{
+"launching":{"ilv2data":1}
+,"ilv2data":{"launch":1,"directory":1,"uses":1,"following":1}
+,"launch":{"ilv2data":1,"executable":1}
+,"directory":{"<ilvhome>\u002Fbin\u002F<system>":1}
+,"<ilvhome>\u002Fbin\u002F<system>":{"compile":1}
+,"compile":{"executable":1}
+,"executable":{"already":1,"typing":1}
+,"already":{"(note":1}
+,"(note":{"ilv2data":1}
+,"uses":{"gadgets":1}
+,"gadgets":{"package)":1}
+,"package)":{"launch":1}
+,"typing":{"ilv2data":1}
+,"following":{"panel":1}
+,"panel":{"appears":1}
+}
+;Search.control.loadWordPairs(pairs);

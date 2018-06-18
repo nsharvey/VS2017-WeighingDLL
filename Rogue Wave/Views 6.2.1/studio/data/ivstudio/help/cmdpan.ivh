@@ -1,0 +1,61 @@
+help "cmdpan" {
+    title "Commands panel";
+    description "Studio commands";
+}
+
+This panel is used to execute a command. Since the 
+standard menus and tool bars do not contain all the 
+commands, you need this panel to execute those 
+commands that are not part of any tool bar or menu. 
+ 
+To find a command quickly in the list, make sure that 
+the commands list owns the keyboard focus, and type in 
+just the capitalized letters of the required command. 
+For example to find the MakeDefaultApplication command 
+you need to type the characters: m, d, and a.
+ 
+To activate a command select it in the list, 
+and click on the Apply button.
+ 
+Category
+Studio commands are listed by category. The category 
+combo box enables you to select the category of 
+commands that are displayed. Choose the "all" option 
+to show all the available commands.
+ 
+Name
+The Name field shows the name of the currently 
+selected command. This property cannot be modified 
+in this panel.
+ 
+Label
+The Label field shows the information label of the 
+currently selected command. This property cannot be 
+modified in this panel.
+ 
+Acc.
+The Acc. field shows the keyboard accelerator that 
+can be used to activate the currently selected command.
+This property cannot be modified in this panel.
+ 
+Key
+The Key field shows the actual keys that make up the 
+keyboard accelerator for the currently selected 
+command. This property cannot be modified in this 
+panel.
+ 
+State
+The State toggle button shows whether the boolean 
+state of a command (if it has one). 
+For example, the command DoubleBuffering. This 
+property cannot be modified in this panel.
+
+Icon
+If the selected command has an associated icon, the 
+icon is shown in the icon area of the panel. This 
+property cannot be modified in this panel.
+ 
+Prompt field
+This field contains some text that gives you more 
+information on the currently 
+selected command.

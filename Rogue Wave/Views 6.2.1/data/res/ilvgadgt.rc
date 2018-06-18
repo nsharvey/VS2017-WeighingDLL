@@ -1,0 +1,105 @@
+/****************************************************************************
+                                 ilvgadgt_rc
+                    IlogViews resource for ilvgadgt__lib
+*****************************************************************************/
+ilviews_message_ilv	ILOGViewsResource LOADONCALL DISCARDABLE "ilviews/message.ilv"
+ilviews_message_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icon_motif_error	ILOGViewsResource LOADONCALL DISCARDABLE "icon/motif/error"
+icon_motif_error_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icon_motif_info	ILOGViewsResource LOADONCALL DISCARDABLE "icon/motif/info"
+icon_motif_info_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icon_motif_question	ILOGViewsResource LOADONCALL DISCARDABLE "icon/motif/question"
+icon_motif_question_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icon_motif_warning	ILOGViewsResource LOADONCALL DISCARDABLE "icon/motif/warning"
+icon_motif_warning_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icon_windows_error	ILOGViewsResource LOADONCALL DISCARDABLE "icon/windows/error"
+icon_windows_error_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icon_windows_info	ILOGViewsResource LOADONCALL DISCARDABLE "icon/windows/info"
+icon_windows_info_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icon_windows_question	ILOGViewsResource LOADONCALL DISCARDABLE "icon/windows/question"
+icon_windows_question_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icon_windows_warning	ILOGViewsResource LOADONCALL DISCARDABLE "icon/windows/warning"
+icon_windows_warning_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icon_win95_error	ILOGViewsResource LOADONCALL DISCARDABLE "icon/win95/error"
+icon_win95_error_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icon_win95_info	ILOGViewsResource LOADONCALL DISCARDABLE "icon/win95/info"
+icon_win95_info_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icon_win95_question	ILOGViewsResource LOADONCALL DISCARDABLE "icon/win95/question"
+icon_win95_question_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icon_win95_warning	ILOGViewsResource LOADONCALL DISCARDABLE "icon/win95/warning"
+icon_win95_warning_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icon_winxp_error	ILOGViewsResource LOADONCALL DISCARDABLE "icon/winxp/error"
+icon_winxp_error_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icon_winxp_info	ILOGViewsResource LOADONCALL DISCARDABLE "icon/winxp/info"
+icon_winxp_info_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icon_winxp_question	ILOGViewsResource LOADONCALL DISCARDABLE "icon/winxp/question"
+icon_winxp_question_sep	ILOGViewsResource
+BEGIN
+	0
+END
+
+icon_winxp_warning	ILOGViewsResource LOADONCALL DISCARDABLE "icon/winxp/warning"
+icon_winxp_warning_sep	ILOGViewsResource
+BEGIN
+	0
+END

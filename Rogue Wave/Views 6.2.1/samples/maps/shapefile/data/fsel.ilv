@@ -1,0 +1,16 @@
+// Ilv Version: 4.0
+// Creator class: IlvGadgetManagerOutput
+FileName "fsel"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 4
+1 { 0 0 IlvTextField 6 29 294 25 F6 2 1 -1 0 "" } 96 "filename" "Gadget"
+0
+1 { 1 0 IlvLabel 6 19 "File Name:" } 0
+0
+1 { 2 0 IlvButton 33 89 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "OK"  }   } 96 "ok" "Gadget"
+0
+1 { 3 0 IlvButton 197 89 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "Cancel"  }   } 96 "cancel" "Gadget"
+0
+Size 306 128
+EOF

@@ -1,0 +1,65 @@
+help "alignmnt" {
+    title "Alignment panel";
+    description "Aligning objects";
+}
+
+This panel is used to align selected objects. Each of 
+the alignments applies to the selected objects. When 
+at least two objects are selected, the first object 
+selected is used as a reference for the other objects. 
+If only one object is selected it is aligned with 
+reference to the whole panel or to any guides that 
+the object may be attached to. 
+
+The different possible alignments are:
+ 
+Left Alignment
+Moves the selected objects horizontally so that their 
+left borders are vertically aligned. Object dimensions 
+are not changed.
+ 
+Right Alignment
+Moves the selected objects horizontally so that their 
+right borders are vertically aligned. Object dimensions
+are not changed.
+ 
+Vertically Centered
+Moves selected objects horizontally so that their 
+centers are vertically aligned. Object dimensions 
+are not changed.
+ 
+Same Width
+Resizes the selected objects so that they have the 
+same width. Objects are not moved. 
+ 
+Horizontal Spaces
+Creates an equal amount of horizontal space between 
+the selected objects. The space between two objects 
+is at least equal to a predefined value. Object
+dimensions are not changed. You must select at least
+two objects.
+ 
+Top Alignment
+Moves the selected objects vertically so their top 
+borders are horizontally aligned. Object dimensions 
+are not changed.
+ 
+Bottom Alignment
+Moves the selected objects vertically so their bottom 
+borders are horizontally aligned. Object dimensions 
+are not changed. 
+ 
+Horizontally Centered
+Moves selected objects vertically so their centers 
+are horizontally aligned. Object dimensions are not 
+changed. 
+ 
+Same Height
+Resizes the selected objects so they have the same 
+height. Objects are not moved. 
+ 
+Vertical Spaces
+Creates an equal amount of vertical space between the 
+selected objects. The space between two objects is at 
+least equal to a predefined value. Object dimensions 
+are not changed. You must select at least two objects.

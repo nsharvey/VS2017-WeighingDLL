@@ -1,0 +1,19 @@
+var pairs =
+{
+"testdocument":{"label":1}
+,"label":{"test":1}
+,"test":{"application":1}
+,"application":{"path":1,"action":1,"current":1,"tests":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"toolbar":1}
+,"toolbar":{"category":1}
+,"category":{"application":1}
+,"action":{"tests":1}
+,"tests":{"application":1,"panel":1}
+,"current":{"buffer":1}
+,"buffer":{"application":1,"panel":1}
+,"panel":{"data":1,"buffer":1}
+,"data":{"current":1}
+}
+;Search.control.loadWordPairs(pairs);

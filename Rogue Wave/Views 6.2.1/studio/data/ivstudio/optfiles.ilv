@@ -1,0 +1,55 @@
+// Ilv Version: 3.1
+// File generated: Fri Sep 04 15:31:45 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "optfiles"
+PathName "W:\\work.noiret\\studio\\data\\ivstudio\\optfiles.ilv"
+Palettes 2
+1 "gray" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+IlvObjects 12
+1 { 0 0 IlvMessageLabel 10 7 283 22 F8 0 25 16 4 "&DataFileExtension"   } 32 "DataFileExtensionLabel"
+0
+1 { 1 0 IlvTextField 296 7 154 22 F6 2 1 -1 0 "Text Field" } 32 "DataFileExtension"
+6144 "IgnoringSize" "FileBrowserTypeDelete"
+1 { 2 0 IlvToggle 10 36 408 16 F1 2 1 2 0 0 0 Y "&IgnoringSize" } 32 "IgnoringSize"
+6144 "IgnoringBackground" "DataFileExtension"
+1 { 3 0 IlvToggle 11 60 408 16 F1 2 1 2 0 0 0 Y "&IgnoringBackground" } 32 "IgnoringBackground"
+6144 "FileBrowserTypeList" "IgnoringSize"
+4 { 4 1 IlvFrame 11 89 439 122 F8 0 25 16 4 "&FileBrowserType"   } 32 "FileBrowserTypeLabel"
+0
+4 { 5 1 IlvButton 22 179 72 23 F9 2 1 16 4 "&InsertList"   } 32 "FileBrowserTypeInsert"
+6144 "FileBrowserTypeDelete" "FileBrowserMessage"
+4 { 6 1 IlvButton 101 179 72 23 F9 2 1 16 4 "&DeleteList"   } 32 "FileBrowserTypeDelete"
+6144 "DataFileExtension" "FileBrowserTypeInsert"
+4 { 7 0 IlvMessageLabel 189 106 254 22 F8 0 25 16 4 "&Filter"   } 32 "FilterLabel"
+0
+4 { 8 0 IlvTextField 189 131 251 22 F6 2 1 -1 0 "Text Field" } 32 "FileBrowserFilter"
+6144 "FileBrowserMessage" "FileBrowserTypeList"
+4 { 9 0 IlvMessageLabel 189 155 254 22 F8 0 25 16 4 "&Message"   } 32 "MessageLabel"
+0
+4 { 10 0 IlvStringList 22 110 150 63 F129 2 Y N 0 0 0 0 0 1 0 0 2 0 } 32 "FileBrowserTypeList"
+6144 "FileBrowserFilter" "IgnoringBackground"
+4 { 11 0 IlvTextField 189 179 251 22 F6 2 1 -1 0 "Text Field" } 32 "FileBrowserMessage"
+6144 "FileBrowserTypeInsert" "FileBrowserFilter"
+Size 455 216
+GeometryHandlers
+2 100 0 181 0 181 0
+ 0 0 274 181 274 181
+7 3 0 0 10  0 0 283 0  0 0 -112 0
+ 3 0 0 10  408 0 408 2  0 0 37 1
+ 3 0 0 11  408 0 408 3  0 0 36 1
+ 3 0 0 11  439 0 439 4  0 0 5 1
+ 3 0 0 22  150 0 150 10  0 0 9 0
+ 3 0 0 101  72 0 72 6  0 0 8 0
+ 3 0 0 296  154 0 154 1  0 0 5 1
+4 3 0 0 8  254 0 254 7  0 0 12 1
+ 3 0 0 8  251 0 251 8  0 0 15 1
+ 3 0 0 8  251 0 251 11  0 0 15 1
+ 3 0 0 8  254 0 254 9  0 0 12 1
+1 100 0 216 0 216 0
+5 3 0 0 7  22 0 22 0  187 0 187 0
+ 3 0 0 89  122 0 122 4  0 0 5 0
+ 3 0 0 110  63 0 63 10  0 0 43 0
+ 3 179 0 179  0 0 23 5  0 0 14 0
+ 3 179 0 179  0 0 23 6  0 0 14 0
+EOF

@@ -1,0 +1,75 @@
+// Ilv Version: 5.0
+// File generated: Fri May 24 14:30:57 2002
+// Creator class: IlvGadgetManagerOutput
+FileName "toolbar"
+PathName "C:\\work\\work\\samples\\gantt\\data\\toolbar.ilv"
+Palettes 15
+4 F "coral" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+12 F "skyblue" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+10 F "seashell" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+3 F "goldenrod" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+1 F "khaki" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+9 F "gray47" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+13 F "yellowgreen" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+8 F "gray66" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+2 F "gold" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+11 F "white" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+5 F "turquoise" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+7 F "gray81" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+6 F "cyan" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+14 F "seagreen1" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+IlvObjects 1
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToolBar 0 0 780 30 F268435751 2 V0 2 18
+{ IlvMenuItem 1107380227 8 4 "Select" "Select" 1 0 "select.png"  "OnSelect" "Select Rows, Activities, or Links" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 1107380227 8 4 "Create Row" "Create Row" 1 0 "insertrow.png"  "OnCreateRow" "Create New Rows" } 
+{ IlvMenuItem 1107380227 8 4 "Delete Row" "Delete Row" 1 0 "deleterow.png"  "OnDeleteRow" "Delete Selected Rows" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 1107380227 8 4 "Create Activity" "Create Activity" 1 0 "newactivity.png"  "OnCreateActivity" "Create New Activities" } 
+{ IlvMenuItem 1107380227 8 4 "Create Break" "Create Break" 1 0 "break.png"  "OnCreateBreak" "Create New Breaks" } 
+{ IlvMenuItem 1107380227 8 4 "Create Constraint" "Create Constraint" 1 0 "constraint.png"  "OnCreateConstraint" "Create New Constraints" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 1132529667 8 4 "Views Border" 6 0 "border1.png" "" "" "" "" "border2.png"  "OnBorder" "Enable/Disable Borders" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 1140918275 8 4 "Background" 1 0 "background.png"  0 IlvPopupMenu 204 27 73 162 F166 2 V0 2 11
+{ IlvMenuItem 33570820 2 4 "GridBackground" 1 IlvShadowLabel 210 33 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridBackground" 2 IlvShadowLabel 210 47 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridBackground" 3 IlvShadowLabel 210 61 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridBackground" 4 IlvShadowLabel 210 75 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridBackground" 5 IlvShadowLabel 210 89 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridBackground" 6 IlvShadowLabel 210 103 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridBackground" 7 IlvShadowLabel 210 117 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridBackground" 8 IlvShadowLabel 210 131 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridBackground" 9 IlvShadowLabel 210 145 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridBackground" 10 IlvShadowLabel 210 159 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridBackground" 11 IlvShadowLabel 210 173 60 10 1 10 ""  "OnSetColor" }  66   "Grid Background" } 
+{ IlvMenuItem 1140918275 8 4 "Foreground" 1 0 "foreground.png"  0 IlvPopupMenu 370 80 73 134 F166 2 V0 2 9
+{ IlvMenuItem 33570820 2 4 "GridForeground" 1 IlvShadowLabel 376 86 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridForeground" 2 IlvShadowLabel 376 100 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridForeground" 3 IlvShadowLabel 376 114 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridForeground" 4 IlvShadowLabel 376 128 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridForeground" 5 IlvShadowLabel 376 142 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridForeground" 6 IlvShadowLabel 376 156 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridForeground" 7 IlvShadowLabel 376 170 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridForeground" 8 IlvShadowLabel 376 184 60 10 1 10 ""  "OnSetColor" } 
+{ IlvMenuItem 33570820 2 4 "GridForeground" 9 IlvShadowLabel 376 198 60 10 1 10 ""  "OnSetColor" }  66   "Grid Foreground" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 1107380227 8 4 "Pan & Zoom" "Pan & Zoom" 1 0 "pan.png"  "OnPan" "Pan and Zoom Views" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 1140918275 8 4 "Renderers" 1 0 "renderer.png"  0 IlvPopupMenu 281 27 153 224 F166 2 V0 2 9
+{ IlvMenuItem 33554436 2 4 1 IlvShadowLabel 287 33 140 20 1 10 "Label with a Shadow"  "OnSetSubNodeGraphicModel" } 
+{ IlvMenuItem 33554436 2 4 2 IlvShadowLabel 287 57 140 20 1 10 "Label with a Shadow"  "OnSetSubNodeGraphicModel" } 
+{ IlvMenuItem 33554436 2 4 3 IlvShadowLabel 287 81 140 20 1 10 "Label with a Shadow"  "OnSetSubNodeGraphicModel" } 
+{ IlvMenuItem 33554436 2 4 4 IlvShadowLabel 287 105 140 20 1 10 "Label with a Shadow"  "OnSetSubNodeGraphicModel" } 
+{ IlvMenuItem 33554436 2 4 5 IlvShadowLabel 287 129 140 20 1 10 "Label with a Shadow"  "OnSetSubNodeGraphicModel" } 
+{ IlvMenuItem 33554436 2 4 6 IlvShadowLabel 287 153 140 20 1 10 "Label with a Shadow"  "OnSetSubNodeGraphicModel" } 
+{ IlvMenuItem 33554436 2 4 12 IlvShadowLabel 287 177 140 20 1 10 "Label with a Shadow"  "OnSetSubNodeGraphicModel" } 
+{ IlvMenuItem 33554436 2 4 13 IlvShadowLabel 287 201 140 20 1 10 "Label with a Shadow"  "OnSetSubNodeGraphicModel" } 
+{ IlvMenuItem 33554436 2 4 14 IlvShadowLabel 287 225 140 20 1 10 "Label with a Shadow"  "OnSetSubNodeGraphicModel" }  146   "Activity Renderers" } 
+{ IlvMenuItem 0 2 4  }  0 } 0
+0
+Size 774 424
+EOF

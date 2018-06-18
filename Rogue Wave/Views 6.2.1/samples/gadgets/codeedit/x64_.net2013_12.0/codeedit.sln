@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+
+Project("85CEF490-1D60-11E8-B125-30D7772C9500") = "codeedit", "codeedit.vcxproj", "85CE94D2-1D60-11E8-B125-30D7772C9500"
+EndProject
+
+Global
+EndGlobal
+

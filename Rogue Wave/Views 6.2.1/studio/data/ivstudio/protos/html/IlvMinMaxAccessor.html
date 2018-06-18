@@ -1,0 +1,25 @@
+<html><head><title>Prototypes</title></head>
+<body bgcolor=#ffffff>
+<a name="948626">
+<h3><FONT color=#b61840> Min/Max </FONT></h3>
+</a><a name="948627">
+The Min/Max accessor (class <code>IlvMinMaxAccesor</code>) is similar to the Condition accessor but handles common cases when a value must be tested against a minimum and a maximum threshold. When the value of this accessor is changed, another accessor is set depending on whether the value is less than the minimum, between the minimum and the maximum, or greater than the maximum. In addition, an exception condition can be specified: if the exception condition is true, no value is changed.<p>
+</a><a name="948628">
+<h4><FONT color=#b61840> Parameters</FONT></h4>
+</a><ul><a name="948629">
+<li>Minimum: Defines the minimum value.
+</a><p><a name="948630">
+<li>Maximum: Defines the maximum value.
+</a><p><a name="948631">
+<li>Except if: If this value is true, the value is ignored and the output value or attribute is not set. The expression must result in a Boolean value.
+</a><p><a name="948632">
+<li>Accessor: Prototype value or node attribute that is set to one of the following three values:
+</a><p><a name="948633">
+<li>If x &lt; min: Value to which the prototype or node attribute is set if the value is less than the minimum.
+</a><p><a name="948634">
+<li>If min &lt; x &lt; max: Value to which the prototype or node attribute is set if the value is between the minimum and the maximum.
+</a><p><a name="948635">
+<li>If x &gt; max: Value to which the prototype or node attribute is set if the value is greater than the maximum.
+</a><p></ul><a name="948636">
+</body>
+</html><hr><a href=displayb>Back</a>

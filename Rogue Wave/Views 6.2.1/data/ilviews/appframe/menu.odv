@@ -1,0 +1,248 @@
+; Description of menu items with commands name
+; Menu items will be built using command descriptions if they are not popup
+; Otherwise the command name specifies the real menu item label
+; Separator are specified using SEPARATOR string as command name
+
+class MenuItem
+{
+	string label = ""
+	bool isPopup = false
+	MenuItem[] popupItems 
+}
+
+class Menu
+{
+	MenuItem[] items
+}
+
+class Toolbar
+{
+    string Name = ""
+    string InitialeDockingSide = "Top"
+    bool   IsUserBar = false
+    bool   DoNotUse = false
+    MenuItem[] items
+}
+
+class PopupMenu : Toolbar
+{
+}
+
+; ---------------------------------------------------------------------------
+; Menu Variables
+
+Toolbar MainMenu {
+        Name "&MainMenu"
+	items {
+		{
+			label "&MenuFile"
+			isPopup true
+			popupItems {
+				{
+					label "NewDocument"
+				}
+				{
+					label "OpenDocument"
+				}
+				{
+					label "CloseDocument"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "SaveDocument"
+				}
+				{
+					label "SaveAsDocument"
+				}
+				{
+					label "SaveAllDocuments"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "PageSetup"
+				}
+				{
+					label "Print"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "RecentFiles"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "Exit"
+				}
+			}
+		}
+		{
+			label "&MenuTools"
+			isPopup true
+			popupItems {
+				{
+					label "Customize"
+				}
+                                {
+					label "Modules"
+				}
+			}
+		}
+		{
+			label "&MenuWindow"
+			isPopup true
+			popupItems {
+				{
+					label "NewWindow"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "NextWindow"
+				}
+				{
+					label "PreviousWindow"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "Cascade"
+				}
+				{
+					label "TileHorizontaly"
+				}
+				{
+					label "TileVerticaly"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "Windows"
+				}
+			}
+		}
+	}
+}
+
+; ---------------------------------------------------------------------------
+; Toolbar Variables
+
+Toolbar MainToolbar {
+	Name "&Standard"
+	items {
+		{
+			label "NewDocument"
+		}
+		{
+			label "SEPARATOR"
+		}
+		{
+			label "OpenDocument"
+		}
+		{
+			label "SaveDocument"
+		}
+		{
+			label "SaveAllDocuments"
+		}
+		{
+			label "SEPARATOR"
+		}
+		{
+			label "Print"
+		}
+		{
+			label "SEPARATOR"
+		}
+		{
+			label "NewWindow"
+		}
+		{
+			label "NextWindow"
+		}
+		{
+			label "PreviousWindow"
+		}
+		{
+			label "Cascade"
+		}
+	}
+}
+
+; ---------------------------------------------------------------------------
+; Default popup menus
+
+PopupMenu ProjectFileItem {
+	items {
+		{
+			label "OpenProjectItem"
+		}
+		{
+			label "SEPARATOR"
+		}
+		{
+			label "ToggleFrameBar"
+		}
+		{
+			label "HideBar"
+		}
+		{
+			label "SEPARATOR"
+		}
+		{
+			label "Properties"
+		}
+	}
+}
+
+PopupMenu ProjectBarMenu {
+	items {
+		{
+			label "ToggleFrameBar"
+		}
+		{
+			label "HideBar"
+		}
+		{
+			label "SEPARATOR"
+		}
+		{
+			label "Properties"
+		}
+	}
+}
+
+PopupMenu ProjectFolderItem {
+	items {
+		{
+			label "InsertFolder"
+		}
+		{
+			label "InsertFile"
+		}
+		{
+			label "SEPARATOR"
+		}
+		{
+			label "ToggleFrameBar"
+		}
+		{
+			label "HideBar"
+		}
+		{
+			label "SEPARATOR"
+		}
+		{
+			label "Properties"
+		}
+	}
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Options>
+<!--Main option file loaded by document / view application-->
+  <Include>ilviews/appframe/menu.odv</Include>
+  <Include>ilviews/appframe/command.odv</Include>
+  <Include>ilviews/appframe/document.odv</Include>
+  <Include>ilviews/appframe/config.odv</Include>
+</Options>

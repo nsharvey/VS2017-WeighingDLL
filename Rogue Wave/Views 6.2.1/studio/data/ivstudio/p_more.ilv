@@ -1,0 +1,26 @@
+// Ilv Version: 5.4
+// File generated: Thu Nov 25 15:49:14 2010
+// Creator class: IlvGadgetManagerOutput
+FileName "p_more"
+PathName "p_more.ilv"
+Palettes 1
+"default" 0 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+IlvObjects 5
+0 { 0 0 IlvShadowLabel 16 120 154 35 4 10 "Label with a Shadow" } 0
+0
+0 { 1 0 IlvLabel 136 20 "A label" } 0
+0
+0 { 2 0 IlvListLabel 8 8 1 3
+"This is "
+"an"
+"IlvListLabel" } 0
+0
+0 { 3 0 IlvReliefLabel 16 186 154 35 2 "Relief Label" } 32 "button"
+0
+1 { 4 0 IlvZoomableLabel "Zoomable Label" 1 0 0 1 48 72 } 0
+0
+Size 179 394
+Layers 2
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

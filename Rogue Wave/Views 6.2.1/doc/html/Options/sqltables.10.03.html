@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Structural Definition</title><link rel="Prev" href="sqltables.10.02.html" title="Previous" /><link rel="Next" href="sqltables.10.04.html" title="Next" /><link rel="StyleSheet" href="css/sqltables.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/sqltables_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/Options/sqltables.10.03.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="ppt4YmfP7n94EM8WsX_002fp85Q" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/Options/sqltables.10.03.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../Options/dausrfrontcover.html#wwconnect_header">Data Access User Manual</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/dausrpart2.html#ww144909">Data Access and SQL</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/sqltables.10.01.html#wwconnect_header">SQL Tables</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Structural Definition</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww999312" class="Heading1"><span></span>Structural Definition</div><div id="ww999313" class="Body">Each <span class="code">IliSQLTable</span> object must have an associated SQL SELECT statement that is submitted to the database system whenever the rows of the SQL table object need to be recomputed.</div><div id="ww999314" class="Body">The following shows an example of an SQL SELECT statement:</div><div id="ww999315" class="NormalCode">SELECT EMP.ID, EMP.NAME, EMP.DEPTNO</div><div id="ww1001756" class="NormalCode">FROM EMP</div><div id="ww1001757" class="NormalCode">WHERE EMP.DEPTNO = 3</div><div id="ww1001758" class="LastNormalCode">ORDER BY 2</div><div id="ww1004805" class="Body">When you submit this statement, the result is an ordered collection of rows, each of which has three values (EMP.ID, EMP.NAME and EMP.DEPTNO). These rows are extracted from the database table named EMP and they are sorted by NAME (<span class="code">ORDER BY 2</span>). Not all rows are extracted from table EMP: only the rows whose EMP.DEPTNO is equal to 3. In other words, this SQL statement returns the ID, NAME, and DEPTNO of all employees working in department number 3.</div><div id="ww999318" class="Body">An SQL SELECT statement can have more than one database table referenced in the FROM clause. Here is an example:</div><div id="ww999319" class="NormalCode">SELECT EMP.ID, EMP.NAME, DEPT.NAME</div><div id="ww1001760" class="NormalCode">FROM EMP, DEPT</div><div id="ww1001761" class="LastNormalCode">WHERE EMP.DEPTNO = DEPT.ID</div><div id="ww999320" class="Body">The rows produced by this query are obtained by combining rows from the database tables EMP and DEPT through a <span class="emphasis">join</span> operation.</div><div id="ww999321" class="Body">An <span class="code">IliSQLTable</span> object can be defined so that its SQL query resembles one of the statements shown above. Two different techniques can be used to achieve this. The following sections describe these techniques: creating the definition interactively using Rogue Wave&nbsp;Views&nbsp;Studio and creating the definition in pure C++.</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

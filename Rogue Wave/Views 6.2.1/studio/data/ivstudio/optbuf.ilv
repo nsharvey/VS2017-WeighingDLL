@@ -1,0 +1,52 @@
+// Ilv Version: 3.1
+// File generated: Fri Sep 04 15:12:37 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "optbuf"
+PathName "W:\\work.noiret\\studio\\data\\ivstudio\\optbuf.ilv"
+Palettes 2
+1 "gray" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+IlvObjects 9
+1 { 0 0 IlvTextField 253 12 169 22 F6 2 1 -1 0 "Text Field" } 544 "defaultBufferName"
+1
+1 "__ilvCallback" "defaultBufferNameCallback"
+6144 "bufferBackground" "movePointerToCenter"
+1 { 1 0 IlvMessageLabel 12 36 250 22 F8 0 25 16 4 "&BufferBackground"   } 0
+0
+1 { 2 0 IlvNumberField 252 65 75 22 F6 2 2 -1 0 "1230000" . , 2 2 -2147483648 2147483647 } 544 "bufferSizeX"
+1
+1 "__ilvCallback" "bufferSizeXCallback"
+6144 "bufferSizeY" "bufferBackground"
+1 { 3 0 IlvLabel 334 81 "x" } 0
+0
+1 { 4 0 IlvNumberField 347 64 75 22 F6 2 2 -1 0 "0" . , 2 2 -2147483648 2147483647 } 544 "bufferSizeY"
+1
+1 "__ilvCallback" "bufferSizeYCallback"
+6144 "movePointerToCenter" "bufferSizeX"
+1 { 5 0 IlvToggle 12 96 409 16 F1 2 1 2 0 0 0 Y "&MovingPointer" } 32 "movePointerToCenter"
+6144 "defaultBufferName" "bufferSizeY"
+1 { 6 0 IlvMessageLabel 12 12 230 22 F8 0 25 16 4 "&DefaultBufferName"   } 0
+0
+1 { 7 0 IlvMessageLabel 12 65 235 22 F8 0 25 16 4 "&BufferSize"   } 0
+0
+1 { 8 1 IlvButton 253 38 169 23 F9 2 1 16 4 "button"   } 32 "bufferBackground"
+6144 "bufferSizeX" "defaultBufferName"
+Size 427 117
+GeometryHandlers
+1 100 0 427 0 427 0
+7 3 0 0 12  0 0 230 6  185 0 185 0
+ 3 0 0 253  169 0 169 0  0 0 5 0
+ 3 0 0 253  169 0 169 8  0 0 5 0
+ 3 0 0 347  75 0 75 4  0 0 5 0
+ 3 0 0 252  0 0 75 2  100 0 100 0
+ 3 0 0 12  409 0 409 5  0 0 6 0
+ 3 0 0 12  0 0 235 7  180 0 180 0
+1 100 0 117 0 117 0
+7 3 0 0 12  0 0 22 6  83 0 83 0
+ 3 0 0 12  0 0 22 0  83 0 83 0
+ 3 0 0 38  0 0 23 8  56 0 56 0
+ 3 0 0 64  0 0 22 4  31 0 31 0
+ 3 0 0 69  0 0 13 3  35 0 35 0
+ 3 0 0 65  0 0 22 2  30 0 30 0
+ 3 0 0 96  0 0 16 5  5 0 5 0
+EOF

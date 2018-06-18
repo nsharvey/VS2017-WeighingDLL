@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvproto -->
+<module name="ilvproto" version="6.2">
+<class name="IlvAbstractEventAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvAccessorInteractor" rootClass="IlvInteractor" sharedName="_EventAccessor"/>
+<class name="IlvAnimationAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvBlinkAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvCallbackAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvClockValueSource" rootClass="IlvValueSource"/>
+<class name="IlvCompositeAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvConditionAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvConnectionAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvCounterAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvDebugAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvEventAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvExportOutputAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvFileValueSource" rootClass="IlvValueSource"/>
+<class name="IlvFillAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvFormatAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvGraphicNode" rootClass="IlvGroupNode"/>
+<class name="IlvGraphicValueSource" rootClass="IlvValueSource"/>
+<class name="IlvGroupGraphic" rootClass="IlvGraphic"/>
+<class name="IlvGroupHolder" rootClass="IlvNamedProperty"/>
+<class name="IlvGroupNodeGraphic" rootClass="IlvGraphic"/>
+<class name="IlvGroupUserAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvHookAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvIndirectAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvInvertAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvJavaScriptAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvLoopbackAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvMinMaxAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvMultiRepAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvMultipleUserAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvNodeAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvOperatorAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvOutputAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvProtoGraphic" rootClass="IlvGraphic"/>
+<class name="IlvProtoGraphicInteractor" rootClass="IlvInteractor" sharedName="ProtoGraphic"/>
+<class name="IlvProtoInstance" rootClass="IlvGroup"/>
+<class name="IlvPrototype" rootClass="IlvGroup"/>
+<class name="IlvPrototypeAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvRandomValueSource" rootClass="IlvValueSource"/>
+<class name="IlvRotateAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvRotationAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvSlideXAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvSlideYAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvSubGroupNode" rootClass="IlvGroupNode"/>
+<class name="IlvSwitchAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvToggleAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvTransformerPassThroughInteractor" rootClass="IlvInteractor" sharedName="PassThroughGroupNode"/>
+<class name="IlvTriggerAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvValueAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvValueSourceNode" rootClass="IlvGroupNode"/>
+<class name="IlvZoomXAccessor" rootClass="IlvUserAccessor"/>
+<class name="IlvZoomYAccessor" rootClass="IlvUserAccessor"/>
+</module>

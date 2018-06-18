@@ -1,0 +1,411 @@
+Command RecentProjects {
+	Description "&RecentFileDesc"
+	Categories {
+		 "&Project"
+	}
+}
+
+ProjectGenData projectGenData {
+	alreadyEdited true
+	projectName "Manager"
+	projectDirectory "d:\\views\\work\\samples\\appframe\\manager\\"
+	makefile "msvc6\\manager.dsp"
+	implementations {
+		{
+			classname "ManagerDocument"
+			headerData {
+				filename "ManagerDocument.h"
+				maskFile "hdoc.txt"
+			}
+			sourceData {
+				filename "ManagerDocument.cpp"
+				maskFile "cppdoc.txt"
+			}
+		}
+		{
+			classname "ManagerView"
+			headerData {
+				filename "ManagerView.h"
+				maskFile "hview.txt"
+			}
+			sourceData {
+				filename "ManagerView.cpp"
+				maskFile "cppview.txt"
+			}
+		}
+	}
+	mainImplementation {
+		filename "manager.cpp"
+		maskFile "main.txt"
+	}
+	rcImplementation {
+		filename "manager.rc"
+		maskFile "rc.txt"
+	}
+	data {
+		 "bottom.xpm"
+		 "hcenter.xpm"
+		 "height.xpm"
+		 "left.xpm"
+		 "right.xpm"
+		 "spaceacr.xpm"
+		 "spacedow.xpm"
+		 "top.xpm"
+		 "vcenter.xpm"
+		 "width.xpm"
+	}
+	superclasses {
+		{
+			classname "ProjectView"
+			superclass "IlvDvProjectView"
+		}
+		{
+			classname "TextView"
+			superclass "IlvDvTextView"
+		}
+		{
+			classname "ListView"
+			superclass "IlvDvListView"
+		}
+		{
+			classname "TreeView"
+			superclass "IlvDvTreeView"
+		}
+		{
+			classname "MatrixView"
+			superclass "IlvDvMatrixView"
+		}
+		{
+			classname "SheetView"
+			superclass "IlvDvSheetView"
+		}
+		{
+			classname "HierarchicalSheetView"
+			superclass "IlvDvHierarchicalSheetView"
+		}
+		{
+			classname "ManagerView"
+			superclass "IlvDvManagerView"
+		}
+		{
+			classname "ManagerDocument"
+			superclass "IlvDvManagerDocument"
+		}
+		{
+			classname "GrapherView"
+			superclass "IlvDvGrapherView"
+		}
+		{
+			classname "GrapherDocument"
+			superclass "IlvDvGrapherDocument"
+		}
+		{
+			classname "ProjectDocument"
+			superclass "IlvDvProjectDocument"
+		}
+		{
+			classname "TextDocument"
+			superclass "IlvDvTextDocument"
+		}
+		{
+			classname "FormView"
+			superclass "IlvDvFormView"
+		}
+	}
+}
+
+DocumentTemplate Manager {
+	DefaultDocName "Manager"
+	ShortName "Manager"
+	Description "Manager document"
+	Filters {
+		{
+			Format "*.ilv"
+			Description "Manager files (.ilv)"
+		}
+	}
+	DocumentClass "ManagerDocument"
+	ViewClasses {
+		 "ManagerView"
+	}
+	DocMenu {
+		insertItems {
+			{
+				items {
+					{
+						label "&MenuEdit"
+						isPopup true
+						popupItems {
+							{
+								label "Cut"
+							}
+							{
+								label "Copy"
+							}
+							{
+								label "Paste"
+							}
+							{
+								label "Delete"
+							}
+							{
+								label "SEPARATOR"
+							}
+							{
+								label "Undo"
+							}
+							{
+								label "Redo"
+							}
+							{
+								label "Repeat"
+							}
+							{
+								label "SEPARATOR"
+							}
+							{
+								label "SelectAll"
+							}
+						}
+					}
+					{
+						label "^Layout"
+						isPopup true
+						popupItems {
+							{
+								label "LayoutLeftAlign"
+							}
+							{
+								label "LayoutRightAlign"
+							}
+							{
+								label "LayoutTopAlign"
+							}
+							{
+								label "LayoutRightAlign"
+							}
+							{
+								label "SEPARATOR"
+							}
+							{
+								label "LayoutSameWidth"
+							}
+							{
+								label "LayoutSameHeight"
+							}
+							{
+								label "SEPARATOR"
+							}
+							{
+								label "LayoutCenterVerticaly"
+							}
+							{
+								label "LayoutCenterHorizontaly"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	Toolbars {
+		{
+			Name "ManagerCommands"
+			items {
+				{
+					label "Cut"
+				}
+				{
+					label "Copy"
+				}
+				{
+					label "Paste"
+				}
+				{
+					label "Delete"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "Undo"
+				}
+				{
+					label "Redo"
+				}
+				{
+					label "Repeat"
+				}
+			}
+		}
+		{
+			Name "LayoutCommands"
+			IsUserBar true
+			items {
+				{
+					label "LayoutLeftAlign"
+				}
+				{
+					label "LayoutRightAlign"
+				}
+				{
+					label "LayoutTopAlign"
+				}
+				{
+					label "LayoutBottomAlign"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "LayoutSameWidth"
+				}
+				{
+					label "LayoutSameHeight"
+				}
+				{
+					label "SEPARATOR"
+				}
+				{
+					label "LayoutCenterHorizontaly"
+				}
+				{
+					label "LayoutCenterVerticaly"
+				}
+			}
+		}
+	}
+}
+
+ApplicationConfig App {
+	name "Manager"
+}
+
+; ---------------------------------------------------------------------------
+; Layout commands
+
+Command LayoutLeftAlign {
+	MenuDescription "Align ^Left"
+	Description "Aligns selections on left border of the active selected object"
+	Tooltip "Align Left"
+	Bitmap "left.xpm"
+	BigBitmap "bigicons/left.xpm"
+	Accelerators {
+		 "Ctrl+Left"
+	}
+	Categories {
+		 "Layout"
+	}
+}
+
+Command LayoutRightAlign {
+	MenuDescription "Align ^Right"
+	Description "Aligns selections on right border of the active selected object"
+	Tooltip "Align Right"
+	Bitmap "right.xpm"
+	BigBitmap "bigicons/right.xpm"
+	Accelerators {
+		 "Ctrl+Right"
+	}
+	Categories {
+		 "Layout"
+	}
+}
+
+Command LayoutTopAlign {
+	MenuDescription "Align ^Top"
+	Description "Aligns selections on the top border of the active selected object"
+	Tooltip "Align Top"
+	Bitmap "top.xpm"
+	BigBitmap "bigicons/top.xpm"
+	Accelerators {
+		 "Ctrl+T"
+	}
+	Categories {
+		 "Layout"
+	}
+}
+
+Command LayoutBottomAlign {
+	MenuDescription "Align ^Bottom"
+	Description "Aligns selections on the bottom border of the active selected object"
+	Tooltip "Align Bottom"
+	Bitmap "bottom.xpm"
+	BigBitmap "bigicons/bottom.xpm"
+	Accelerators {
+		 "Ctrl+B"
+	}
+	Categories {
+		 "Layout"
+	}
+}
+
+Command LayoutSameWidth {
+	MenuDescription "Same ^width"
+	Description "Adjusts width of selected objects according to the active selected object"
+	Tooltip "Same width"
+	Bitmap "width.xpm"
+	BigBitmap "bigicons/width.xpm"
+	Accelerators {
+		 "Ctrl+Shift+Left"
+	}
+	Categories {
+		 "Layout"
+	}
+}
+
+Command LayoutSameHeight {
+	MenuDescription "Same ^height"
+	Description "Adjusts height of selected objects according to the active selected object"
+	Tooltip "Same height"
+	Bitmap "height.xpm"
+	BigBitmap "bigicons/height.xpm"
+	Accelerators {
+		 "Ctrl+Shift+Right"
+	}
+	Categories {
+		 "Layout"
+	}
+}
+
+Command LayoutCenterVerticaly {
+	MenuDescription "Center ^Verticaly"
+	Description "Adjusts verticaly selected objects according to their vertical center"
+	Tooltip "Center verticaly"
+	Bitmap "vcenter.xpm"
+	BigBitmap "bigicons/vcenter.xpm"
+	Accelerators {
+		 "Ctrl+Shift+V"
+	}
+	Categories {
+		 "Layout"
+	}
+}
+
+Command LayoutCenterHorizontaly {
+	MenuDescription "Center ^Horizontaly"
+	Description "Adjusts horizontaly selected objects according to their horintal center"
+	Tooltip "Center horizontaly"
+	Bitmap "hcenter.xpm"
+	BigBitmap "bigicons/hcenter.xpm"
+	Accelerators {
+		 "Ctrl+Shift+H"
+	}
+	Categories {
+		 "Layout"
+	}
+}
+
+; ---------------------------------------------------------------------------
+; Container informations
+
+ContainerConfiguration MainPanel {
+	title "Manager Application"
+	BoundingBox {
+		Left 221
+		Top 69
+		Width 653
+		Height 500
+	}
+}
+

@@ -1,0 +1,245 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Foundations - Samples: bitmaps</title>
+	</head>
+    <body>
+		<a name="readbm"><h1>Sample: <code>readbm</code></h1><h1 class="subtitle">Reading and Displaying Bitmaps</h1></a>
+		<p>Loads and displays supported bitmap images.</p>
+		<img src="data/readbm.png"/>
+		<p>This example shows you how to use <code>IlvDisplay::readBitmap</code> to load images.<br/>
+	Filenames are given as command line arguments.<br/>
+	Supported image types are:
+	<ul>
+		<li>JPEG</li>
+		<li>PNG (including transparency)</li>
+		<li>Windows BMP (all subtypes, compressed or not)</li>
+		<li>Portable Pixmap (ppm, pgm, pbm)</li>
+		<li>TIFF</li>
+		<li>Silicon Graphics RGB</li>
+		<li>WAP Bitmap</li>
+	</ul>
+	Images types are automatically recognized at runtime.
+	If you want to use static linking, then define the compilation macro NOT_USING_MODULES
+	and link with appropiate libraries.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvBitmap</code></li>
+			<li><code>IlvBitmapStreamer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/readbm.cpp"><code>src/readbm.cpp</code></a></li>
+		</ul>
+		<a name="createbm"><h1>Sample: <code>createbm</code></h1><h1 class="subtitle">Using Bitmap Data</h1></a>
+		<p>Shows you how to use bitmap data.</p>
+		<img src="data/createbm.png"/>
+		<p>This example shows you how to use bitmap data.
+	Two bitmap data are created: 
+	<ul>
+	   <li>The background bitmap data (ranges from white to black)</li>
+	   <li>The color wheel</li>
+	</ul>
+	The color wheel has a mask created using an 
+	<code>IlvBWBitmapData</code>.<br/>
+	An image of the window can be saved in JPEG format using the 'space'
+	Key (the name of the file is createbm.jpg).</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvRGBBitmapData</code></li>
+			<li><code>IlvBWBitmapData</code></li>
+			<li><code>IlvBitmap</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/createbm.cpp"><code>src/createbm.cpp</code></a></li>
+		</ul>
+		<a name="quantize"><h1>Sample: <code>quantize</code></h1><h1 class="subtitle">Using the Color Quantizer</h1></a>
+		<p>Shows you how to use the color quantizer.</p>
+		<img src="data/quantize.png"/>
+		<p>This sample uses the Rogue Wave Views color quantizer to create an
+	indexed image from a true color image.<br/>
+	An image filename can be given as an argument to the executable. 
+	The indexed image can have up to 256 colors.<br/>
+	Dithering can be switched on or off.<br/>
+	For best results, it is recommended to use a TrueColor display 
+	to run this sample.<br/>
+	When operating on an indexed system, Rogue Wave Views quantizes by default 
+	true color images to 64 colors. This allows for multiple TrueColor
+	images to be displayed while retaining accurate visual aspect for
+	each image.
+      <p>For demonstration purposes, this sample code uses portable GUI 
+      elements from the Gadgets package of the Rogue Wave Views suite. 
+      Feel free to use these elements in your application if you have 
+      a license for Rogue Wave Views or for Rogue Wave Views Controls. 
+      This information applies to the classes located in the library <code>ilvgadgt</code>, 
+      listed in the README file that you can find in the installation directory.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvBitmapData</code></li>
+			<li><code>IlvWUQuantizer</code></li>
+			<li><code>IlvPNGStreamer</code></li>
+			<li><code>IlvBitmap</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/quantize.cpp"><code>src/quantize.cpp</code></a></li>
+		</ul>
+		<a name="animbm"><h1>Sample: <code>animbm</code></h1><h1 class="subtitle">Using Bitmap Data Operators</h1></a>
+		<p>Shows you how to use bitmap data operators.</p>
+		<img src="data/animbm.png"/>
+		<p>This sample uses the Rogue Wave Views bitmap data to create a rotating
+	view of an image.<br/>
+	An idle procedure updates a bitmap data as fast as possible.<br/>
+	A tile image is loaded and then the foreground bitmap data 
+	is generated as a combination of zoom/scale of the tile image.<br/>
+	An additional blur effect can be switched on/off using the 'space'
+	key. This effect uses a background bitmap data. The foreground 
+	bitmap data is blended with the background (the blend 
+	factor is 150/255), then the background is copied in the foreground 
+	data.<br/>
+	Initializing the background with a red color gives a disappearing
+	red flash.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvBitmapData</code></li>
+			<li><code>IlvBitmap</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/animbm.cpp"><code>src/animbm.cpp</code></a></li>
+		</ul>
+		<a name="jpgcomp"><h1>Sample: <code>jpgcomp</code></h1><h1 class="subtitle">Using the JPEG Streamer</h1></a>
+		<p>Shows you how to use the JPEG streamer.</p>
+		<img src="data/jpgcomp.png"/>
+		<p>This sample uses the Rogue Wave Views JPEG streamer to preview the effect 
+	of JPEG compression on an image.<br/>	
+	An image is loaded into a bitmap data, a JPEG image is created 
+	from this image and then displayed.<br/>
+	An image filename can be given as an argument to the executable. 
+	A slider allows you to change the quality setting for the JPEG streamer.
+      <p>For demonstration purposes, this sample code uses portable GUI 
+      elements from the Gadgets package of the Rogue Wave Views suite. 
+      Feel free to use these elements in your application if you have 
+      a license for Rogue Wave Views or for Rogue Wave Views Controls. 
+      This information applies to the classes located in the library <code>ilvgadgt</code>, 
+      listed in the README file that you can find in the installation directory.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvBitmapData</code></li>
+			<li><code>IlvJPGStreamer</code></li>
+			<li><code>IlvBitmap</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/jpgcomp.cpp"><code>src/jpgcomp.cpp</code></a></li>
+		</ul>
+		<a name="animate"><h1>Sample: <code>animate</code></h1><h1 class="subtitle">Using an Animation Handler</h1></a>
+		<p>Shows you how to use the <code>IlvBitmapAnimationHandler</code> class.</p>
+		<img src="data/animate.png"/>
+		<p>This sample uses the <code>IlvBitmapAnimationHandler</code> class to display an animated bitmap. It loads several bitmaps and add them to the animation handler. Then, the animated bitmap is displayed using an <code>IlvTransparentIcon</code> object.<br/>Here are the images loaded by this sample:<br/>
+	<table border="1">
+    	<tr>
+        <td><img src="data/logo1.png"/></td>
+        <td><img src="data/logo2.png"/></td>
+        <td><img src="data/logo3.png"/></td>
+        <td><img src="data/logo4.png"/></td>
+        <td><img src="data/logo5.png"/></td>
+    	</tr>
+	</table></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvBitmap</code></li>
+			<li><code>IlvBitmapAnimationHandler</code></li>
+			<li><code>IlvTransparentIcon</code></li>
+			<li><code>IlvContainer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/animate.cpp"><code>src/animate.cpp</code></a></li>
+		</ul>
+		<a name="alpha"><h1>Sample: <code>alpha</code></h1><h1 class="subtitle">Using Alpha Blending</h1></a>
+		<p>Shows you how to use alpha blending.</p>
+		<img src="data/alpha.png"/>
+		<p>This sample uses the alpha channel in <code>IlvRGBBitmapData</code>
+	to demonstrate alpha compositing.<br/>
+	A PNG image with alpha channel is loaded, then alpha composited 
+	with a destination image. The destination image can be changed using 
+	the 'space' key.
+	An additional blend value can be selected using a slider.
+      <p>For demonstration purposes, this sample code uses portable GUI 
+      elements from the Gadgets package of the Rogue Wave Views suite. 
+      Feel free to use these elements in your application if you have 
+      a license for Rogue Wave Views or for Rogue Wave Views Controls. 
+      This information applies to the classes located in the library <code>ilvgadgt</code>, 
+      listed in the README file that you can find in the installation directory.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvBitmapData</code></li>
+			<li><code>IlvBitmap</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/alpha.cpp"><code>src/alpha.cpp</code></a></li>
+		</ul>
+		<a name="transition"><h1>Sample: <code>transition</code></h1><h1 class="subtitle">Using a Bitmap Transition Handler</h1></a>
+		<p>Shows you how to use the <code>IlvBitmapTransitionHandler</code> class.</p>
+		<img src="data/transition.png"/>
+		<p>This sample uses subclasses of the
+	<code>IlvBitmapTransitionHandler</code> class to perform transitions
+	between two images. To activate a transition, click on the image. To
+	change the type of the transition, use the combo box. It is also
+	possible to modify the speed of the transition.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvBitmapTransition</code></li>
+			<li><code>IlvBitmapTransitionHandler</code></li>
+			<li><code>IlvSlider</code></li>
+			<li><code>IlvComboBox</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/transition.cpp"><code>src/transition.cpp</code></a></li>
+		</ul>
+		<a name="contrast"><h1>Sample: <code>contrast</code></h1><h1 class="subtitle">Using IlvIndexedBitmapData</h1></a>
+		<p>Shows you how to use the IlvIndexedBitmapData class.</p>
+		<img src="data/contrast.png"/>
+		<p>This sample uses the IlvIndexedBitmapData and associated IlvColorMap classes to 
+        interactively change the contrast of an image.
+	An image filename can be given as an argument to the executable. If the image
+        is a true color image, it is automatically converted to an indexed one.
+      <p>For demonstration purposes, this sample code uses portable GUI 
+      elements from the Gadgets package of the Rogue Wave Views suite. 
+      Feel free to use these elements in your application if you have 
+      a license for Rogue Wave Views or for Rogue Wave Views Controls. 
+      This information applies to the classes located in the library <code>ilvgadgt</code>, 
+      listed in the README file that you can find in the installation directory.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvIndexedBitmapData</code></li>
+			<li><code>IlvColorMap</code></li>
+			<li><code>IlvWUQuantizer</code></li>
+			<li><code>IlvBitmap</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/contrast.cpp"><code>src/contrast.cpp</code></a></li>
+		</ul>

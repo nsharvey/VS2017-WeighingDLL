@@ -1,0 +1,14 @@
+// 
+//	    Rogue Wave Views Studio 4.0 Panel Description File
+//		Gadgets Extension
+// 
+
+panel "MainPanel" {
+    menuItem NewGadgetBuffer : "&mfile", "&new";
+}
+
+panel "AttachPanel" {
+  title "&attachPanel";
+  x 400;
+  y 200;
+}

@@ -1,0 +1,40 @@
+.Bulleted > span.WebWorks_Number
+{
+  text-indent: -11.338582677165192pt;
+}
+
+.Bulleted > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.Itemize > span.WebWorks_Number
+{
+  text-indent: -14.173228346456696pt;
+}
+
+.Itemize > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.NoteNumbered > span.WebWorks_Number
+{
+  text-indent: -11.338582677165359pt;
+}
+
+.NoteNumbered > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.NoteNumbered1 > span.WebWorks_Number
+{
+  text-indent: -11.338582677165359pt;
+}
+
+.NoteNumbered1 > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+

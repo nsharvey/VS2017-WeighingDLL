@@ -1,0 +1,20 @@
+var pairs =
+{
+"customizing":{"rogue":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1}
+,"views":{"studio":1}
+,"studio":{"chapter":1,"contains":1}
+,"chapter":{"describes":1}
+,"describes":{"customize":1}
+,"customize":{"rogue":1}
+,"contains":{"information":1}
+,"information":{"following":1}
+,"following":{"topics":1}
+,"topics":{"configuration":1}
+,"configuration":{"files":1}
+,"files":{"resource":1}
+,"resource":{"environment":1}
+,"environment":{"variables":1}
+}
+;Search.control.loadWordPairs(pairs);

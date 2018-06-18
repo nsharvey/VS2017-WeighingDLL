@@ -1,0 +1,66 @@
+// Ilv Version: 3.1
+// File generated: Thu Jan 14 13:44:27 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "chrtstyl"
+PathName "chrtstyl.ilv"
+Palettes 3
+2 "gray" "black" "small" "%arial-10-" 0 solid solid 0 0 0
+1 "gray" "black" "bold" "%MS Sans Serif-11-B" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 7
+0 { 0 0 IliDbToggle 5 5 376 16 F1 2 1 2 0 0 0 Y "&dbchart_AllChartsSame" 2051 0  } 32 "CHKAllCharts"
+0
+1 { 1 0 IliMemoryDataSource 246 3 24 24 1 14 1 -1 IliMemoryTable 0 6 5 
+     92 "SERIE" String 1 128 1 61 "none" "&dbchart_ColSerie" 32 
+     72 "LABEL" String 4 -1 1 61 "&insp_Label_" 32 
+     88 "CHART" String 2 128 1 61 "0" "&dbchart_Chart" 45 "%GRAPH_MS" "CLASS" "NAME" 
+     88 "COLOR" String 3 128 1 61 "black" "&dbchart_Color" 32 
+     72 "MISS" Int 5 -1 1 110 "&insp_MissingValue" 61 "MISS_MS" "ID" "NAME" 
+     16 0 0 0
+0
+ } 32 "%DISPLAY_MS"
+0
+1 { 2 0 IliMemoryDataSource 160 2 24 24 1 14 3 9 IliMemoryTable 0 3 2 
+     10 "CLASS" String 1 128 2 116 32 
+     8 "NAME" String 2 128 1 116 32 
+     16 0 0 11
+"0" "Polyline" 
+"1" "Barchart" 
+"2" "Polygon" 
+"3" "Stair" 
+"4" "Scatter Square" 
+"5" "Scatter Circle" 
+"6" "Scatter Diamond" 
+"7" "3d Bar depth 1" 
+"8" "3d Bar depth 2" 
+"9" "3d Bar depth 3" 
+"10" "Stack Bar" 
+0
+ } 32 "%GRAPH_MS"
+0
+1 { 3 1 IliTableGadget 5 30 376 180 2 2067 "%DISPLAY_MS" 725466695 1 0 0 0 17 18 21 0 0 0 0 1 1 "white" A"normal" "%MS Sans Serif-11-"  } 32 "TBLChart"
+0
+1 { 4 0 IliDbField 110 219 271 21 2 3971 "%GRAPH_MS" "CLASS" "NAME" 16 3 "%MS Sans Serif-8-" 105 221 0 IliTableComboBox 110 219 271 21 F6 2 1 -1 0 "" 3841 "CLASS" "NAME" 11 2 1  ""    } 32 "CBNDef"
+0
+1 { 5 0 IlvMessageLabel 5 222 100 16 F8 0 25 16 4 "&dlg_DefaultChart"   } 0
+0
+1 { 6 2 IliMemoryDataSource 63 3 24 24 1 14 19 0 IliMemoryTable 0 3 2 
+     8 "ID" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 -1 32 
+     16 0 0 0
+0
+ } 32 "MISS_MS"
+0
+Size 386 245
+GeometryHandlers
+1 100 0 386 0 386 0
+4 3 0 0 5  376 0 376 3  0 0 5 0
+ 3 0 0 5  376 0 376 0  0 0 5 0
+ 3 0 0 5  0 0 100 5  281 0 281 0
+ 3 0 0 110  271 0 271 4  0 0 5 0
+1 100 0 245 0 245 0
+4 3 0 0 30  180 0 180 3  0 0 35 0
+ 3 0 0 5  0 0 16 0  224 0 224 0
+ 3 222 0 222  0 0 16 5  0 0 7 0
+ 3 219 0 219  0 0 21 4  0 0 5 0
+EOF

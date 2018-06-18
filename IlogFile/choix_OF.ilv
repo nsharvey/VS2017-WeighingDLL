@@ -1,0 +1,305 @@
+// Ilv Version: 5.3
+// File generated: Tue Mar 20 19:40:07 2012
+// Creator class: IlvGadgetManagerOutput
+FileName "choix_OF"
+PathName "C:\\MyDevelopment\\Centrale V6\\IlogFile\\choix_OF.ilv"
+Palettes 4
+"default" 1 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+2 F "darkslateblue" "white" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+3 F "gray" "black" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 4 0 0 65535 1
+0 F "gray" "black" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 38
+0 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 152 16 248 30 F6 2 1 -1 0 "" } 544 "SaisieNOF"
+2
+1 "__ilvFocusOut" "SaisieNOFCB"
+1 "__ilvFocusIn" "EntreeTextFieldCB"
+2048 "SaisiePhase"
+0 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F3.750000067055227 0 0 3.750000178813933 400 16 } 544 "BoutonListeOF"
+1
+1 "__ilvCallback" "listeOFCB"
+4096 "SaisieNOF"
+0 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F3.750000134110448 0 0 3.750000134110451 656 16 } 544 "BoutonListePhase"
+1
+1 "__ilvCallback" "listePhaseCB"
+20480 "SaisiePhase"
+0 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F6.249999940395355 0 0 6.249999940395355 688 440 } 544 "quitter"
+1
+1 "__ilvCallback" "quitterCB"
+0
+0 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F6.249999940395355 0 0 6.249999821186066 688 384 } 544 "aide"
+1
+1 "__ilvCallback" "aideCB"
+4096 "Allouer"
+0 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F6.24999988079071 0 0 6.25 688 160 } 544 "Valider"
+1
+1 "__ilvCallback" "ValidationCB"
+4096 "BoutonListePhase_Art"
+0 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F6.25 0 0 6.25 688 216 } 544 "Tactile"
+1
+1 "__ilvCallback" "TactileCB"
+4096 "Valider"
+0 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F6.249999940395355 0 0 6.25 688 272 } 544 "VideBox"
+1
+1 "__ilvCallback" "VideBoxCB"
+4096 "Tactile"
+0 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 152 96 248 30 F6 2 1 -1 0 "" } 544 "SaisieComposant"
+2
+1 "__ilvFocusOut" "SaisieComposantCB"
+1 "__ilvFocusIn" "EntreeTextFieldCB"
+6144 "SaisieNOF_Art" "SaisieComposant_Art"
+0 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F3.750000029802322 0 0 3.750000067055225 400 96 } 544 "BoutonListeComposant"
+1
+1 "__ilvCallback" "listeComposantCB"
+4096 "BoutonListePhase_Art"
+0 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F6.24999988079071 0 0 6.25 688 328 } 544 "Allouer"
+1
+1 "__ilvCallback" "AllouerCB"
+4096 "VideBox"
+0 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F3.75 0 0 3.750000134110451 400 16 } 544 "BoutonListeComposant_Art"
+1
+1 "__ilvCallback" "listeComposantCB"
+6144 "SaisieNOF_Art" "SaisieComposant_Art"
+0 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F3.749999888241291 0 0 3.749999888241291 656 96 } 544 "BoutonListePhase_Art"
+1
+1 "__ilvCallback" "listePhaseCB"
+4096 "SaisieComposant"
+0 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 152 96 248 30 F6 2 1 -1 0 "" } 544 "SaisieNOF_Art"
+2
+1 "__ilvFocusIn" "EntreeTextFieldCB"
+1 "__ilvFocusOut" "SaisieNOFCB"
+6144 "SaisiePhase_Art" "BoutonListeComposant_Art"
+0 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Button" ]
+1 IlvZoomableTransparentIcon 0 0 "default" F3.750000067055227 0 0 3.750000178813933 400 96 } 544 "BoutonListeOF_Art"
+1
+1 "__ilvCallback" "listeOFCB"
+6144 "SaisiePhase_Art" "SaisieNOF"
+1 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 6 499 734 41 F536870924 0 { IlvMessageItem 262168 4 16 4  }   } 32 "message"
+0
+1 { 16 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvMessageLabel 8 16 136 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&NOF"  }   } 32 "EtiquetteNoOF"
+0
+1 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 432 16 144 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&NPoste"  }   } 32 "EtiquettePhase"
+0
+1 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvMessageLabel 8 176 136 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&ArticleLance"  }   } 32 "EtiquetteArtLance"
+0
+1 { 19 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvMessageLabel 8 256 136 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&LotLance"  }   } 32 "EtiquetteLotLance"
+0
+1 { 20 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 152 256 248 30 F6 2 1 -1 0 "" } 416 "AffLot"
+0
+1 { 21 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 152 176 248 30 F6 2 1 -1 0 "" } 416 "AffArticle"
+0
+1 { 22 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvMessageLabel 0 336 144 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&QuantiteAllouee"  }   } 32 "EtiquetteQteAllouee"
+0
+1 { 23 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvMessageLabel 336 336 51 30 F268435468 0 { IlvMessageItem 262169 4 16 4 "UN"  }   } 32 "AffUniteComp"
+0
+1 { 24 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 152 208 504 30 F6 2 1 -1 0 "" } 416 "AffLibArticle"
+0
+1 { 25 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvMessageLabel 8 96 136 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&Composant"  }   } 32 "EtiquetteComposant"
+0
+1 { 26 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 152 128 504 30 F6 2 1 -1 0 "" } 416 "AffLibComposant"
+0
+1 { 27 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvMessageLabel 8 400 136 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&QuantiteAPeser"  }   } 32 "LibQuantiteAPeser"
+0
+1 { 28 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvMessageLabel 336 400 51 30 F268435468 0 { IlvMessageItem 262169 4 16 4 "UN"  }   } 32 "AffUniteComposant"
+0
+1 { 29 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 152 336 176 30 F14 2 2 -1 0 "0" . , 6 16 -3.40282e+038 3.40282e+038 } 416 "AffQuantite"
+0
+1 { 30 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 152 400 176 30 F14 2 2 -1 0 "0" . , 6 16 -3.40282e+038 3.40282e+038 } 416 "AffQuantiteAPeser"
+0
+1 { 31 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 576 16 80 30 F6 2 2 -1 0 "0" . , 0 0 -2147483648 2147483647 } 544 "SaisiePhase"
+2
+1 "__ilvFocusIn" "EntreeNumberFieldCB"
+1 "__ilvFocusOut" "SaisiePhaseCB"
+6144 "SaisieComposant_Art" "SaisieNOF"
+1 { 32 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvMessageLabel 8 16 136 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&Composant"  }   } 32 "EtiquetteComposant_Art"
+0
+1 { 33 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 152 48 504 30 F6 2 1 -1 0 "" } 416 "AffLibComposant_Art"
+0
+1 { 34 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 432 96 144 32 F268435468 0 { IlvMessageItem 262153 4 16 4 "&NPoste"  }   } 32 "EtiquettePhase_Art"
+0
+1 { 35 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 576 96 80 30 F6 2 2 -1 0 "0" . , 0 0 -2147483648 2147483647 } 544 "SaisiePhase_Art"
+2
+1 "__ilvFocusIn" "EntreeNumberFieldCB"
+1 "__ilvFocusOut" "SaisiePhaseCB"
+6144 "Valider" "BoutonListeOF_Art"
+1 { 36 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvMessageLabel 8 96 136 30 F268435468 0 { IlvMessageItem 262153 4 16 4 "&NOF"  }   } 32 "EtiquetteNoOF_Art"
+0
+1 { 37 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 152 16 248 30 F6 2 1 -1 0 "" } 544 "SaisieComposant_Art"
+2
+1 "__ilvFocusIn" "EntreeTextFieldCB"
+1 "__ilvFocusOut" "SaisieComposantCB"
+6144 "SaisieComposant" "SaisiePhase"
+Size 742 545
+Background "gray"
+GeometryHandlers
+1 100 0 742 0 742 0
+38 3 688 0 688  50 0 50 3  4 0 4 0
+ 3 688 0 688  50 0 50 4  4 0 4 0
+ 3 6 0 6  734 0 734 15  2 0 2 0
+ 3 688 0 688  50 0 50 5  4 0 4 0
+ 3 688 0 688  50 0 50 6  4 4 4 0
+ 3 432 0 432  144 0 144 17  166 0 166 0
+ 3 0 0 0  144 0 144 22  598 0 598 0
+ 3 152 0 152  248 0 248 20  342 0 342 0
+ 3 152 0 152  248 0 248 21  342 0 342 0
+ 3 152 0 152  248 0 248 0  342 0 342 0
+ 3 400 0 400  30 0 30 1  312 0 312 0
+ 3 656 0 656  30 0 30 2  56 0 56 0
+ 3 8 0 8  136 0 136 16  598 0 598 0
+ 3 0 0 8  136 0 136 18  598 0 598 0
+ 3 0 0 8  136 0 136 19  598 0 598 0
+ 3 152 0 152  504 0 504 24  86 0 86 0
+ 3 336 0 336  51 0 51 23  355 0 355 0
+ 3 688 0 688  50 0 50 7  4 4 4 0
+ 3 152 0 152  504 0 504 26  86 0 86 0
+ 3 400 0 400  30 0 30 9  312 0 312 0
+ 3 152 0 152  248 0 248 8  342 0 342 0
+ 3 8 0 8  136 0 136 25  598 0 598 0
+ 3 0 0 8  136 0 136 27  598 0 598 0
+ 3 336 0 336  51 0 51 28  355 0 355 0
+ 3 688 0 688  50 0 50 10  4 4 4 0
+ 3 152 0 152  176 0 176 29  414 0 414 0
+ 3 152 0 152  176 0 176 30  414 0 414 0
+ 3 576 0 576  80 0 80 31  86 0 86 0
+ 3 0 0 8  136 0 136 32  598 0 598 0
+ 3 152 0 152  504 0 504 33  86 0 86 0
+ 3 400 0 400  30 0 30 11  312 0 312 0
+ 3 576 0 576  80 0 80 35  86 0 86 0
+ 3 432 0 432  144 0 144 34  166 0 166 0
+ 3 656 0 656  30 0 30 12  56 0 56 0
+ 3 152 0 152  248 0 248 37  342 0 342 0
+ 3 152 0 152  248 0 248 13  342 0 342 0
+ 3 8 0 8  136 0 136 36  598 0 598 0
+ 3 400 0 400  30 0 30 14  312 0 312 0
+1 100 0 545 0 545 0
+38 3 440 0 440  50 0 50 3  55 0 55 0
+ 3 384 0 384  50 0 50 4  111 0 111 0
+ 3 499 0 499  41 0 41 15  5 0 5 0
+ 3 160 0 160  50 0 50 5  335 0 335 0
+ 3 216 0 216  50 0 50 6  279 0 279 0
+ 3 16 0 16  30 0 30 17  499 0 499 0
+ 3 336 0 336  30 0 30 22  179 0 179 0
+ 3 256 0 256  30 0 30 20  259 0 259 0
+ 3 176 0 176  30 0 30 21  339 0 339 0
+ 3 16 0 16  30 0 30 0  499 0 499 0
+ 3 16 0 16  30 0 30 1  499 0 499 0
+ 3 16 0 16  30 0 30 2  499 0 499 0
+ 3 16 0 16  30 0 30 16  499 0 499 0
+ 3 176 0 176  30 0 30 18  339 0 339 0
+ 3 256 0 256  30 0 30 19  259 0 259 0
+ 3 208 0 208  30 0 30 24  307 0 307 0
+ 3 336 0 336  30 0 30 23  179 0 179 0
+ 3 272 0 272  50 0 50 7  223 5 223 0
+ 3 128 0 128  30 0 30 26  387 0 387 0
+ 3 96 0 96  30 0 30 9  419 0 419 0
+ 3 96 0 96  30 0 30 8  419 0 419 0
+ 3 96 0 96  30 0 30 25  419 0 419 0
+ 3 400 0 400  30 0 30 27  115 0 115 0
+ 3 400 0 400  30 0 30 28  115 0 115 0
+ 3 328 0 328  50 0 50 10  167 0 167 0
+ 3 336 0 336  30 0 30 29  179 0 179 0
+ 3 400 0 400  30 0 30 30  115 0 115 0
+ 3 16 0 16  30 0 30 31  499 0 499 0
+ 3 16 0 16  30 0 30 32  499 0 499 0
+ 3 48 0 48  30 0 30 33  467 0 467 0
+ 3 16 0 16  30 0 30 11  499 0 499 0
+ 3 96 0 96  30 0 30 35  419 0 419 0
+ 3 96 0 96  32 0 32 34  417 0 417 0
+ 3 96 0 96  30 0 30 12  419 0 419 0
+ 3 16 0 16  30 0 30 37  499 0 499 0
+ 3 96 0 96  30 0 30 13  419 0 419 0
+ 3 96 0 96  30 0 30 36  419 0 419 0
+ 3 96 0 96  30 0 30 14  419 0 419 0
+Layers 2
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+Script "JvScript" Inline ""
+
+static function ValidationCB(obj)
+{ 
+  var panel = Application.pesee_OF;
+  if (panel.visible == true)
+   {panel.visible == false;
+   }
+  else
+   {panel.visible == true;
+   }
+ 
+}
+
+ScriptEnd
+EOF

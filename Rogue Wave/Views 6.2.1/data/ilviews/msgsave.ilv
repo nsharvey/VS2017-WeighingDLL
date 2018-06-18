@@ -1,0 +1,101 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:45:18 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "msgsave"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\msgsave.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 11
+0 { 0 P 2
+[ IlvAttachments _IlvAttachments 336  1 137 1 15 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 137 14 150 20 F1 2 0 -1  } 544 "inLanguages"
+1
+1 "__ilvCallback" "inLanguageChanged"
+0
+0 { 1 P 2
+[ IlvAttachments _IlvAttachments 16  1 16 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 16 13 112 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&language"  }   } 0
+0
+0 { 2 P 2
+[ IlvAttachments _IlvAttachments 16  1 16 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 16 43 112 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&RenameLanguage"  }   } 0
+0
+0 { 3 P 2
+[ IlvAttachments _IlvAttachments 336  1 137 1 15 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 137 44 150 22 F6 2 1 -1 0 "" } 544 "outLanguage"
+1
+1 "__ilvCallback" "outLanguageChanged"
+0
+0 { 4 P 2
+[ IlvAttachments _IlvAttachments 336  1 137 1 15 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvComboBox 137 74 150 20 F38 2 1 -1 0 "US-ASCII" 27
+{ IlvMenuItem 1 2 4 "US-ASCII"  } 
+{ IlvMenuItem 1 2 4 "ISO-8859-1"  } 
+{ IlvMenuItem 1 2 4 "ISO-8859-2"  } 
+{ IlvMenuItem 1 2 4 "ISO-8859-3"  } 
+{ IlvMenuItem 1 2 4 "ISO-8859-4"  } 
+{ IlvMenuItem 1 2 4 "ISO-8859-5"  } 
+{ IlvMenuItem 1 2 4 "ISO-8859-6"  } 
+{ IlvMenuItem 1 2 4 "ISO-8859-7"  } 
+{ IlvMenuItem 1 2 4 "ISO-8859-8"  } 
+{ IlvMenuItem 1 2 4 "ISO-8859-9"  } 
+{ IlvMenuItem 1 2 4 "ISO-8859-10"  } 
+{ IlvMenuItem 1 2 4 "EUC-JP"  } 
+{ IlvMenuItem 1 2 4 "Shift_JIS"  } 
+{ IlvMenuItem 1 2 4 "EUC-KR"  } 
+{ IlvMenuItem 1 2 4 "GB2312"  } 
+{ IlvMenuItem 1 2 4 "Big5"  } 
+{ IlvMenuItem 1 2 4 "hp-roman8"  } 
+{ IlvMenuItem 1 2 4 "IBM850"  } 
+{ IlvMenuItem 1 2 4 "windows-1250"  } 
+{ IlvMenuItem 1 2 4 "windows-1251"  } 
+{ IlvMenuItem 1 2 4 "windows-1252"  } 
+{ IlvMenuItem 1 2 4 "windows-1253"  } 
+{ IlvMenuItem 1 2 4 "windows-1254"  } 
+{ IlvMenuItem 1 2 4 "windows-1255"  } 
+{ IlvMenuItem 1 2 4 "windows-1256"  } 
+{ IlvMenuItem 1 2 4 "windows-1257"  } 
+{ IlvMenuItem 1 2 4 "windows-1258"  }  } 544 "encodings"
+1
+1 "__ilvCallback" "encodingChanged"
+0
+0 { 5 P 2
+[ IlvAttachments _IlvAttachments 16  1 16 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 16 73 112 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Encoding"  }   } 0
+0
+0 { 6 P 2
+[ IlvAttachments _IlvAttachments 336  1 82 1 15 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFileSelectorField 82 106 205 22 F6 2 1 -1 0 "" } 32 "path"
+0
+0 { 7 P 2
+[ IlvAttachments _IlvAttachments 16  1 16 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 16 106 58 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&fileName"  }   } 0
+0
+0 { 8 P 2
+[ IlvAttachments _IlvAttachments 144  1 10 1 11 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 10 146 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "&save"  }   } 512
+1
+1 "__ilvCallback" "save"
+0
+0 { 9 P 2
+[ IlvAttachments _IlvAttachments 192  1 10 1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 219 147 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 512
+1
+1 "__ilvCallback" "quit"
+0
+0 { 10 P 1
+[ IlvAttachments _IlvAttachments 464  1 0 1 0 1 42 2 ]
+0 IlvReliefLine 0 137 302 137 1 } 0
+0
+Size 302 180
+EOF

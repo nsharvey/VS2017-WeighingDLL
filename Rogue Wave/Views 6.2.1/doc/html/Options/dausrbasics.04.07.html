@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Callbacks</title><link rel="Prev" href="dausrbasics.04.06.html" title="Previous" /><link rel="Next" href="dausrbasics.04.08.html" title="Next" /><link rel="StyleSheet" href="css/dausrbasics.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/dausrbasics_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/Options/dausrbasics.04.07.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pU8Y7G2QW_002f9fTDVzI_002bhZEVg" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/Options/dausrbasics.04.07.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../Options/dausrfrontcover.html#wwconnect_header">Data Access User Manual</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/dausrpart1.html#ww144909">Rogue Wave&nbsp;Views Data Access Common Framework</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/dausrbasics.04.01.html#wwconnect_header">Data Access Basics</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/dausrbasics.04.03.html#wwconnect_header">Rogue Wave&nbsp;Views Interface</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Callbacks</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww998096" class="Heading2"><span></span>Callbacks</div><div id="ww998099" class="Body">The behavior of a gadget can be customized by defining a callback function and attaching this function to one of the callback types that the gadget is able to trigger.</div><div id="ww998291" class="Body">At the bottom of the Rogue Wave&nbsp;Views&nbsp;Studio main window, you will find a callback field that lets you define the <span class="emphasis">primary callback</span> of the selected gadget. There are, however, other callback types available with certain gadget classes. These other callback types can generally be defined through the last page of the various gadget inspectors. (The only exception is the SQL Data Source inspector where the callbacks panel is accessed through the Callbacks item in the Tools menu.) </div><div class="ww_skin_page_overflow"><div id="ww1000393" class="Startplain"><img class="Default" src="../Options/images/callbackpanel.gif" width="100%" style="display: block; left: 0.0pt; max-height: 379px; max-width: 355px; top: 0.0pt" alt="" /></div></div><div id="ww999800" class="Body">Note that a check box lets you choose whether the callback is coded in Rogue Wave&nbsp;Script or C++.</div><div id="ww998305" class="Body">The callback types that are supported by each gadget class are described in the Rogue Wave&nbsp;Views and <span class="emphasis">Data Access Reference Manuals</span>. Additional information for classes specific to Data Access can be found in the rest of this manual.</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

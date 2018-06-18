@@ -1,0 +1,36 @@
+// Ilv Version: 3.1
+// File generated: Fri Sep 04 15:37:13 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "optpnl"
+PathName "W:\\work.noiret\\studio\\data\\ivstudio\\optpnl.ilv"
+Palettes 2
+0 "gray" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+"IlvStText" 1 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+IlvObjects 6
+4 { 0 0 IlvButton 20 145 72 23 F9 2 1 16 4 "&InsertList"   } 32 "PnlInsert"
+0
+4 { 1 0 IlvButton 99 145 72 23 F9 2 1 16 4 "&DeleteList"   } 32 "PnlDelete"
+0
+4 { 2 1 IlvMessageLabel 187 23 254 22 F8 0 25 16 4 "&PanelName"   } 32 "PanelNameLabel"
+0
+4 { 3 1 IlvTextField 187 48 251 22 F6 2 1 -1 0 "Text Field" } 32 "PanelName"
+0
+4 { 4 1 IlvStringList 20 27 150 109 F129 2 Y N 0 0 0 0 0 1 0 0 2 0 } 32 "PnlList"
+0
+4 { 5 0 IlvFrame 7 6 442 173 F8 0 25 16 4 "&PanelDescriptions"   } 32 "LanguageFrame"
+0
+Size 454 184
+GeometryHandlers
+2 100 0 179 0 179 0
+ 0 0 275 179 275 179
+3 3 0 0 7  442 0 442 5  0 0 5 1
+ 3 0 0 20  150 0 150 4  0 0 9 0
+ 3 0 0 99  72 0 72 1  0 0 8 0
+2 3 0 0 8  254 0 254 2  0 0 13 1
+ 3 0 0 8  251 0 251 3  0 0 16 1
+1 100 0 184 0 184 0
+4 3 0 0 6  173 0 173 5  0 0 5 0
+ 3 0 0 27  109 0 109 4  0 0 48 0
+ 3 145 0 145  0 0 23 0  0 0 16 0
+ 3 145 0 145  0 0 23 1  0 0 16 0
+EOF

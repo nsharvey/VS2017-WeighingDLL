@@ -1,0 +1,57 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:31:30 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "asklis"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\asklis.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 6
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 20 54 156 23 F6 2 1 -1 0 "" } 544 "strtext"
+1
+1 "__ilvCallback" "apply"
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 15 199 70 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 104 199 70 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cancel"  }   } 544 "cancel"
+1
+1 "__ilvCallback" "cancel"
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 8 3 172 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "MessageLabel"  }   } 32 "title"
+0
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 8 30 173 145 F131 2 A A 0 0 0 0 0 1 0 0 V0 2 1
+{ IlvGadgetItem 1 2 4 "item"  }  } 544 "strlist"
+1
+1 "__ilvCallback" "chooseitem"
+0
+3 { 5 0 IlvReliefLine 0 186 189 186 1 } 32 "line"
+0
+Size 189 234
+GeometryHandlers
+1 100 180 189 0 189 0
+4 3 0 0 8  172 0 172 3  0 0 9 0
+ 3 0 0 0  189 0 189 5  0 0 0 0
+ 3 104 0 104  0 0 70 2  0 0 15 0
+ 3 0 0 8  173 0 173 4  0 0 8 0
+1 100 200 234 0 234 0
+4 3 199 0 199  0 0 23 1  0 0 12 0
+ 3 199 0 199  0 0 23 2  0 0 12 0
+ 3 185 0 185  0 0 2 5  0 0 47 0
+ 3 0 0 30  145 0 145 4  0 0 59 0
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

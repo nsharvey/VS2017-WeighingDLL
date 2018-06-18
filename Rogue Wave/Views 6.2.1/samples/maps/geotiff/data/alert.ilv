@@ -1,0 +1,24 @@
+// Ilv Version: 5.0
+// File generated: Tue Feb 12 09:39:38 2002
+// Creator class: IlvGadgetManagerOutput
+FileName "alert"
+
+Palettes 3
+1 F "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0 65535 1
+"default" 2 F "gray" "black" "default" "fixed" 0 solid solid 0 0 0 65535 0
+0 F "gray" "black" "default" "fixed" 0 solid solid 0 0 0 65535 1
+IlvObjects 3
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 10 350 30 F335544332 0 { IlvMessageItem 262144 4 16 4  }   } 32 "message"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 280 60 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "OK"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+0
+1 { 2 2 IlvReliefLine 11 52 361 51 1 } 0
+0
+Size 371 100
+EOF

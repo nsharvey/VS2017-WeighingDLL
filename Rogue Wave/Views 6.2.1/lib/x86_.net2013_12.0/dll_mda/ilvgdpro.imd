@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvgdpro -->
+<module name="ilvgdpro" version="6.2">
+<class name="IlvSCProtoGadgetManagerRectangle" rootClass="IlvGraphic"/>
+<class name="IlvSCProtoGrapherRectangle" rootClass="IlvGraphic"/>
+<class name="IlvSCProtoManagerRectangle" rootClass="IlvGraphic"/>
+<class name="InstanceLinkProperty" rootClass="IlvNamedProperty"/>
+</module>

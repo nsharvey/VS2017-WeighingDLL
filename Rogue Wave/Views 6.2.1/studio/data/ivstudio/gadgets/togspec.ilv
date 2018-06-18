@@ -1,0 +1,97 @@
+// Ilv Version: 5.0
+// File generated: Fri Feb 08 14:02:29 2002
+// Creator class: IlvGadgetManagerOutput
+FileName "togspec"
+Palettes 1
+"IlvStToolBar" 0 F "defaultBg" "defaultFg" "normal" "%helvetica-12" 0 solid solid 0 0 0 65535 1
+IlvObjects 14
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 111 2 145 22 F6 2 1 -1 0 "0" } 32 "ToggleLabel"
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFileSelectorField 111 29 145 22 F6 2 1 -1 0 "0" } 32 "ToggleBitmap"
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 111 56 145 20 F1 2 3
+{ IlvMenuItem 1 2 4 "&left"  } 
+{ IlvMenuItem 65 2 4 "&center"  } 
+{ IlvMenuItem 1 2 4 "&right"  }  1  } 32 "TogglePosition"
+0
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 2 187 246 16 F1073741829 2 1 2 0 0 0 Y "&state" } 32 "ToggleState"
+0
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 111 110 145 20 F1 2 2
+{ IlvMenuItem 65 2 4 "&checkbox"  } 
+{ IlvMenuItem 1 2 4 "&radio"  }  0  } 32 "ToggleShape"
+0
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 111 136 145 20 F1 2 3
+{ IlvMenuItem 1 2 4 "&left"  } 
+{ IlvMenuItem 1 2 4 "&center"  } 
+{ IlvMenuItem 65 2 4 "&right"  }  2  } 32 "ToggleAlignment"
+0
+2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 0 136 109 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&alignment"  }   } 0
+0
+3 { 7 P 2
+[ IlvAttachments _IlvAttachments 32  1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 0 5 109 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&label"  }   } 0
+0
+3 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 0 29 109 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&bitmap"  }   } 0
+0
+3 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 0 56 109 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&position"  }   } 0
+0
+3 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 0 82 109 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&size"  }   } 0
+0
+3 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 0 110 109 23 F268435468 0 { IlvMessageItem 262169 4 16 4 "&shape"  }   } 0
+0
+3 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 2 167 246 16 F1073741825 2 1 2 0 0 0 Y "&indeterminateMode" } 32 "ToggleIndeterminate"
+0
+3 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvNumberField 111 82 145 22 F6 2 2 -1 0 "1234543.62" . , 2 16 -3.40282e+038 3.40282e+038 } 32 "ToggleSize"
+0
+Size 261 215
+GeometryHandlers
+1 100 0 261 0 261 0
+14 3 0 0 2  246 0 246 3  0 0 13 0
+ 3 0 0 111  145 0 145 0  0 0 5 0
+ 3 0 0 111  145 0 145 1  0 0 5 0
+ 3 0 0 111  145 0 145 2  0 0 5 0
+ 3 0 0 111  145 0 145 4  0 0 5 0
+ 3 0 0 111  145 0 145 5  0 0 5 0
+ 3 0 0 2  246 0 246 12  0 0 13 0
+ 3 0 0 0  0 0 109 6  152 0 152 0
+ 3 0 0 0  0 0 109 11  152 0 152 0
+ 3 0 0 0  0 0 109 10  152 0 152 0
+ 3 0 0 0  0 0 109 9  152 0 152 0
+ 3 0 0 0  0 0 109 8  152 0 152 0
+ 3 0 0 0  0 0 109 7  152 0 152 0
+ 3 0 0 111  145 0 145 13  0 0 5 0
+1 100 0 215 0 215 0
+0
+Layers 4
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+"" 116 30 65535 65535 0
+EOF

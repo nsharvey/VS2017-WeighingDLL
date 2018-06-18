@@ -1,0 +1,68 @@
+// Ilv Version: 4.0
+// File generated: Thu Jun 22 09:32:53 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "chartdef"
+PathName "chartdef.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0
+IlvObjects 6
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 5 206 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Displayers"  }   } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTreeGadget 5 30 212 40 F32 2 A A S 0 0 0 0 20 0 1 1 1 1 0 V0 2
+{ IlvTreeGadgetItem 1 2 4 "root" 0
+ }  } 32 "DADisplayers"
+0
+6 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 0 75 413 284 F268435468 0 { IlvMessageItem 262169 4 16 4 "&SelectedDisplayer"  }   } 32 "DADisplayerFrame"
+0
+6 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 11 100 147 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&DisplayerType"  }   } 32 "DAMsgDisplayer"
+0
+6 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 11 125 144 218 F131 2 A A S 0 0 0 0 0 4 0 0 V0 2 0 } 32 "DADisplayerSelector"
+0
+17 { 5 P 1
+[ IlvPanelObjectReference IlvPanelObjectReference  "959269133.0" ]
+0 IlvGadgetContainerRectangle 169 103 237 242 "" } 32 "DADisplayerRectangle"
+0
+Size 417 364
+GeometryHandlers
+3 100 0 162 0 162 0
+ 0 0 255 162 255 162
+ 0 0 0 417 0 417
+2 3 0 0 0  413 0 413 2  0 0 4 2
+ 3 0 0 11  144 0 144 4  0 0 7 0
+1 3 0 0 7  237 0 237 5  0 0 11 2
+0
+1 100 0 364 0 364 0
+4 3 0 0 75  284 0 284 2  0 0 5 0
+ 3 0 0 100  0 0 22 3  242 0 242 0
+ 3 0 0 125  218 0 218 4  0 0 21 0
+ 3 0 0 103  242 0 242 5  0 0 19 0
+Layers 18
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+EOF

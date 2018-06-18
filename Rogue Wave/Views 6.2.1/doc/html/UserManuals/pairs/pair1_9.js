@@ -1,0 +1,24 @@
+var pairs =
+{
+"drawing":{"ports":1,"port":1,"may":1}
+,"ports":{"drawing":1}
+,"port":{"defined":1,"class":1}
+,"defined":{"ilvport":1}
+,"ilvport":{"class":1,"drawing":1,"ilvsystemport":1}
+,"class":{"area":1,"derived":1,"ilvpsdevice":1}
+,"area":{"user":1}
+,"user":{"drawing":1}
+,"may":{"output":1}
+,"output":{"device":1}
+,"device":{"screen":1}
+,"screen":{"printer":1}
+,"printer":{"details":1}
+,"details":{"discussed":1}
+,"discussed":{"topics":1}
+,"topics":{"ilvport":1}
+,"derived":{"classes":1}
+,"classes":{"ilvport":1}
+,"ilvsystemport":{"class":1}
+,"ilvpsdevice":{"class":1}
+}
+;Search.control.loadWordPairs(pairs);

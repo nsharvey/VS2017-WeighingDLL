@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("D5A0912E-1D68-11E8-81D0-E787772C9500") = "prime", "prime.vcxproj", "D5A04D40-1D68-11E8-81D0-E787772C9500"
+EndProject
+
+Global
+EndGlobal
+

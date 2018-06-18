@@ -1,0 +1,21 @@
+var pairs =
+{
+"code":{"changes":1,"existing":1}
+,"changes":{"section":1,"code":1}
+,"section":{"presents":1}
+,"presents":{"changes":1}
+,"existing":{"rogue":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1,"script":1}
+,"views":{"rogue":1,"classes":1,"foundation":1,"charts":1,"gadgets":1,"gantt":1,"maps":1}
+,"script":{"rogue":1}
+,"classes":{"version":1,"rogue":1}
+,"version":{"rogue":1}
+,"foundation":{"classes":1}
+,"charts":{"classes":1}
+,"gadgets":{"classes":1}
+,"gantt":{"chart":1}
+,"chart":{"classes":1}
+,"maps":{"classes":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,28 @@
+## ----------------------------------------------------------- -*- Makefile -*-
+##
+## This makefile compiles the RDBMS specific examples supplied with 
+## Rogue Wave DB Link.
+##
+## It is included by <RDBMS>/$(SYSTEM)/Makefile
+## For more informations, take a look at that Makefile and to the
+## file <EXSRCDIR>/Makefile.dbl
+##
+## ----------------------------------------------------------------------------
+
+# -----------------------------
+# Procedure call with Informix.
+# -----------------------------
+infproc.$(OEXT): $(EXSRCDIR)/infproc.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/infproc.cpp
+
+infproc$(EEXT): infproc.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) infproc.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# SQL3 features of IUS
+# -----------------------------
+inf9obj.$(OEXT): $(EXSRCDIR)/inf9obj.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/inf9obj.cpp
+
+inf9obj$(EEXT): inf9obj.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) inf9obj.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)

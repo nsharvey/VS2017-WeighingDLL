@@ -1,0 +1,14 @@
+// IlvMessageDatabase 3.0 Wed Nov 26 14:47:13 1997
+// Language: en_US
+// Encoding: US-ASCII
+"&iljControl" "Control"
+"&iljBacktrace" "Backtrace"
+"&iljListener" "Listener"
+"&iljStopNext" "Stop at the next statement"
+"&iljStopDebugging" "Exit debug mode"
+"&iljStepOut" "Step out of the current frame"
+"&iljStepOver" "Step over the next statement"
+"&iljStep" "Step"
+"&iljContinue" "Continue the execution"
+"&iljDebug" "Debug"
+"&iljDebuggerName" "Rogue Wave Script Debugger"

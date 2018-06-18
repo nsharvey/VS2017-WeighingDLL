@@ -1,0 +1,5 @@
+Files: alpha.cpp, alpha.h
+This sample shows how to mix two pictures and use the alpha value to manage
+the transparency.
+If you click into the tab, then you can use the shortcut 'space' to switch 
+to another background.

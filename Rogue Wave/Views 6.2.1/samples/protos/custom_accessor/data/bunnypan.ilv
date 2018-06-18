@@ -1,0 +1,59 @@
+// Ilv Version: 5.0
+// File generated: Tue Jun 04 15:30:52 2002
+// Creator class: IlvManagerOutput
+FileName "bunnypan"
+PathName "C:\\work\\samples\\protos\\custom_accessor\\data\\bunnypan.ilv"
+Palettes 13
+8 F "white" "white" "fixed" 0 solid solid 0 0 0 65535 0
+6 F "white" "black" "fixed" 0 solid solid 0 0 0 65535 0
+5 F 48830 48830 48830 65025 65025 65025 "%Times New Roman-12-[Charset:0]" 0 solid solid 0 0 0 65535 0
+"default" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+9 F "white" "black" "fixed" 0 solid solid 1 0 0 65535 0
+1 F "grey" "whitesmoke" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+"IlvStText" 12 F "gray" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 0
+4 F "grey" "limegreen" "default" "StockedDefaultGui" 0 solid dot 3 0 0 65535 0
+10 F "white" "white" "fixed" 0 solid solid 1 0 0 65535 0
+3 F "grey" "red" "default" "StockedDefaultGui" 0 solid dot 3 0 0 65535 0
+2 F "cyan" "blue" "%Times New Roman-12-[Charset:0]" 0 solid solid 2 0 0 65535 0
+7 F "white" "gray80" "fixed" 0 solid solid 1 0 0 65535 0
+"IlvStToolBar" 11 F "gray" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 2
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+0 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance grpath.movbunny movbunny_5
+    values {
+        Int x = 11
+        Int y = 9
+        String name = movbunny_5
+    }
+    subscriptions {
+    }
+;
+ } 32 "movbunny_5"
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+0 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance output.slider slider_2
+    values {
+        String sliderLabel = 0
+        String title = Translation
+        Int sliderMax = 49
+        Int x = 13
+        Int y = 302
+        Double scaleX = 2.72785
+        String name = slider_2
+    }
+    subscriptions {
+        slider_2 movbunny_5 sliderValue distance Any 17
+    }
+;
+ } 32 "slider_2"
+Layers 2
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+Views 1
+"v127" 1 0 0 1 0 0
+Properties 1
+[ IlvGroupHolder __ilvGroupHolder  ]
+EOF

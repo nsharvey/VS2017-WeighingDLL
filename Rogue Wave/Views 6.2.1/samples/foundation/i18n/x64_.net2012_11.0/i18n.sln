@@ -1,0 +1,11 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("97E2F8B2-1D69-11E8-91B2-87BE772C9500") = "changelang", "changelang.vcxproj", "97E2AFEC-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("97EB7E38-1D69-11E8-91B2-87BE772C9500") = "controlinput", "controlinput.vcxproj", "97E2AFEC-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

@@ -1,0 +1,90 @@
+// Ilv Version: 4.0
+// File generated: Tue Feb 22 17:12:33 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "palette"
+PathName "../data/palette.ilv"
+Palettes 12
+0 "lightsteelblue" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+1 "lightgray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+11 "gray" "maroon" "default" "StockedDefaultGui" 0 solid solid 2 0 0
+5 "cornflowerblue" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+9 "gold" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+10 "gold" 65025 65025 65025 "default" "StockedDefaultGui" 0 solid dashdoubledot 2 0 0
+7 "lightsteelblue" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+2 "dimgray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+"default" 3 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+8 "gold" "gray50" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+4 "blue" "cornflowerblue" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+6 "cornflowerblue" 65025 65025 0 "default" "StockedDefaultGui" 0 solid solid 2 0 0
+IlvObjects 11
+0 { 0 P 1
+[ IlvAttachments _IlvAttachments 368  1 0 1 0 1 0 2 ]
+0 IlvReliefRectangle 0 0 640 56 2 } 0
+0
+0 { 1 P 1
+[ IlvAttachments _IlvAttachments 1008  1 0 1 80 1 0 1 10 2 2 ]
+0 IlvReliefRectangle 0 80 640 510 2 } 0
+0
+1 { 2 1 IlvShadowRectangle 544 6 91 43 0 9 } 32 "LinkModelRect"
+0
+1 { 3 0 IlvGraphicSet 2
+2 IlvReliefLine 206 27 270 27 2 
+3 IlvTransparentIcon 230 19 "../data/ko.png" ""  } 576 "Button"
+1
+1 "__ilvCallback" "ChangeLinkModelCB"
+0
+1 { 4 4 IlvOutlinePolygon 12
+157 22 157 22 181 22 181 17 194 27 181 37 181 32 157 32 157 37 144 27
+157 17 157 22 } 576 "Button"
+1
+1 "__ilvCallback" "ChangeLinkModelCB"
+0
+1 { 5 5 IlvReliefPolygon 5
+19 22 67 22 67 29 19 29 19 22 1 } 576 "Button"
+1
+1 "__ilvCallback" "ChangeLinkModelCB"
+0
+1 { 6 4 IlvOutlinePolygon 8
+81 22 113 22 113 17 130 27 113 37 113 32 81 32 81 22 } 576 "Button"
+1
+1 "__ilvCallback" "ChangeLinkModelCB"
+0
+1 { 7 0 IlvGraphicSet 3
+6 IlvLine 457 27 534 27 
+3 IlvTransparentIcon 462 19 "../data/ok.png" "" 
+3 IlvTransparentIcon 514 19 "../data/ok.png" ""  } 576 "Button"
+1
+1 "__ilvCallback" "ChangeLinkModelCB"
+0
+1 { 8 P 1
+[ IlvAttachments _IlvAttachments 1008  1 2 1 82 1 4 1 14 2 2 ]
+7 IlvViewRectangle 2 82 634 504 } 32 "ViewRect"
+0
+1 { 9 0 IlvGraphicSet 4
+8 IlvPolygon 5
+372 17 445 17 445 37 372 37 372 17 
+9 IlvLine 372 17 444 17 
+9 IlvLine 372 37 444 37 
+10 IlvLine 372 27 444 27  } 576 "Button"
+1
+1 "__ilvCallback" "ChangeLinkModelCB"
+0
+1 { 10 0 IlvGraphicSet 9
+3 IlvLine 280 22 355 22 
+3 IlvLine 280 30 355 30 
+11 IlvLine 288 19 288 33 
+11 IlvLine 298 19 298 33 
+11 IlvLine 308 19 308 33 
+11 IlvLine 318 19 318 33 
+11 IlvLine 328 19 328 33 
+11 IlvLine 338 19 338 33 
+11 IlvLine 348 19 348 33  } 576 "Button"
+1
+1 "__ilvCallback" "ChangeLinkModelCB"
+0
+Size 640 600
+Background "dimgray"
+Layers 2
+"" 0 0 
+"" 0 0 
+EOF

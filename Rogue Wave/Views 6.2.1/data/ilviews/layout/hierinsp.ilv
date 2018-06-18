@@ -1,0 +1,176 @@
+// Ilv Version: 3.1
+// File generated: Thu Jan 27 14:41:08 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "hierinsp"
+PathName "/nfs/views-work/work.lenorman/data/ilviews/layout/hierinsp.ilv"
+Palettes 1
+"IlvStText" 0 "lightgrey" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 33
+1 { 0 P 1
+[ IlvToolTip __ilvToolTip 2 "&globalStyleForAllLinks" 4 4 ]
+0 IlvComboBox 154 5 183 20 F39 2 "" 5
+IlvMenuItem 1 2 4 "&polylineLinkStyle"  
+IlvMenuItem 1 2 4 "&orthogonalLinkStyle"  
+IlvMenuItem 1 2 4 "&straightLineLinkStyle"  
+IlvMenuItem 1 2 4 "&noReshapeLinkStyle"  
+IlvMenuItem 1 2 4 "&mixedLinkStyle"   } 32 "HierarchicalGlobalLinkStyleSel"
+0
+1 { 1 P 1
+[ IlvToolTip __ilvToolTip 2 "&styleToPlaceConnectorPins" 4 4 ]
+0 IlvComboBox 154 30 183 20 F39 2 "" 4
+IlvMenuItem 1 2 4 "&automaticPins"  
+IlvMenuItem 1 2 4 "&clippedPins"  
+IlvMenuItem 1 2 4 "&evenlySpacedPins"  
+IlvMenuItem 1 2 4 "&centeredPins"   } 32 "HierarchicalConnectorStyleSel"
+0
+1 { 2 P 1
+[ IlvToolTip __ilvToolTip 2 "&directionOfTheMajorityOfLinks" 4 4 ]
+0 IlvComboBox 154 55 183 20 F39 2 "" 4
+IlvMenuItem 1 2 4 "&right"  
+IlvMenuItem 1 2 4 "&left"  
+IlvMenuItem 1 2 4 "&bottom"  
+IlvMenuItem 1 2 4 "&top"   } 32 "HierarchicalFlowDirectionSel"
+0
+1 { 3 P 1
+[ IlvToolTip __ilvToolTip 2 "&justificationOfNodesWithinTheirLevel" 4 4 ]
+0 IlvComboBox 154 80 183 20 F39 2 "" 5
+IlvMenuItem 1 2 4 "&center"  
+IlvMenuItem 1 2 4 "&left"  
+IlvMenuItem 1 2 4 "&right"  
+IlvMenuItem 1 2 4 "&top"  
+IlvMenuItem 1 2 4 "&bottom"   } 32 "HierarchicalLevelJustificationSel"
+0
+1 { 4 P 1
+[ IlvToolTip __ilvToolTip 2 "&verticalOffsetBetweenNodes" 4 4 ]
+0 IlvSpinBox 251 135 86 22 2 0 200 64 2 1
+0 IlvNumberField 251 135 63 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "HierarchicalVerticalNodeOffsetNum"
+0
+1 { 5 P 1
+[ IlvToolTip __ilvToolTip 2 "&verticalOffsetBetweenParallelLinks" 4 4 ]
+0 IlvSpinBox 251 160 86 22 2 0 200 64 2 1
+0 IlvNumberField 251 160 63 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "HierarchicalVerticalLinkOffsetNum"
+0
+1 { 6 P 1
+[ IlvToolTip __ilvToolTip 2 "&verticalOffsetBetweenLinkBendAndNode" 4 4 ]
+0 IlvSpinBox 251 185 86 22 2 0 200 64 2 1
+0 IlvNumberField 251 185 63 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "HierarchicalVerticalNodeLinkOffsetNum"
+0
+1 { 7 0 IlvMessageLabel 251 110 86 22 F8 0 25 16 4 "&vertical"   } 32 "VerticalLab"
+0
+1 { 8 P 1
+[ IlvToolTip __ilvToolTip 2 "&styleOfSelectedLinks" 4 4 ]
+0 IlvComboBox 154 348 180 20 F39 2 "" 5
+IlvMenuItem 1 2 4 "&polylineLinkStyle"  
+IlvMenuItem 1 2 4 "&orthogonalLinkStyle"  
+IlvMenuItem 1 2 4 "&straightLineLinkStyle"  
+IlvMenuItem 1 2 4 "&noReshapeLinkStyle"  
+IlvMenuItem 1 2 4 "&undefinedLinkStyle"   } 32 "HierarchicalLinkStyle"
+0
+1 { 9 P 1
+[ IlvToolTip __ilvToolTip 2 "&priorityOfSelectedLinks" 4 4 ]
+0 IlvTextField 154 376 180 22 F6 2 2 25 0 " 1.0" } 32 "HierarchicalLinkPriority"
+0
+1 { 10 0 IlvFrame 5 324 334 84 F8 0 25 16 4 "&forSelectedLinks"   } 0
+0
+1 { 11 0 IlvMessageLabel 154 237 86 22 F8 0 25 16 4 "&specified"   } 32 "SpecNodeLab"
+0
+1 { 12 0 IlvMessageLabel 251 237 86 22 F8 0 25 16 4 "&calculated"   } 32 "CalcNodeLab"
+0
+1 { 13 0 IlvFrame 5 225 334 94 F8 0 25 16 4 "&forSelectedNodes"   } 0
+0
+1 { 14 P 1
+[ IlvToolTip __ilvToolTip 2 "&calculatedPositionIndexOfSelectedNodes" 4 4 ]
+0 IlvTextField 248 287 86 22 F15 2 2 15 0 " 0" } 416 "HierarchicalCalcNodePositionIndex"
+0
+1 { 15 P 1
+[ IlvToolTip __ilvToolTip 2 "&calculatedLevelIndexOfSelectedNodes" 4 4 ]
+0 IlvTextField 248 262 86 22 F15 2 2 15 0 " 0" } 416 "HierarchicalCalcNodeLevelIndex"
+0
+1 { 16 0 IlvMessageLabel 8 5 134 22 F8 0 25 16 4 "&globalLinkStyle"   } 32 "GlobalLinkStyleLab"
+0
+1 { 17 0 IlvMessageLabel 8 30 134 22 F8 0 25 16 4 "&connectorStyle"   } 32 "ConnectorStyleLab"
+0
+1 { 18 0 IlvMessageLabel 8 55 134 22 F8 0 25 16 4 "&flowDirectionTo"   } 32 "FlowDirectionLab"
+0
+1 { 19 0 IlvMessageLabel 8 80 134 22 F8 0 25 16 4 "&levelJustification"   } 32 "LevelJustificationLab"
+0
+1 { 20 0 IlvMessageLabel 8 135 134 22 F8 0 25 16 4 "&nodeOffset"   } 32 "NodeOffsetLab"
+0
+1 { 21 0 IlvMessageLabel 8 160 134 22 F8 0 25 16 4 "&linkOffset"   } 32 "LinkOffsetLab"
+0
+1 { 22 0 IlvMessageLabel 8 185 134 22 F8 0 25 16 4 "&nodeLinkOffset"   } 32 "NodeLinkOffsetLab"
+0
+1 { 23 P 1
+[ IlvToolTip __ilvToolTip 2 "&horizontalOffsetBetweenNodes" 4 4 ]
+0 IlvSpinBox 154 135 86 22 2 0 200 64 2 1
+0 IlvNumberField 154 135 63 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "HierarchicalHorizontalNodeOffsetNum"
+0
+1 { 24 P 1
+[ IlvToolTip __ilvToolTip 2 "&horizontalOffsetBetweenParallelLinks" 4 4 ]
+0 IlvSpinBox 154 160 86 22 2 0 200 64 2 1
+0 IlvNumberField 154 160 63 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "HierarchicalHorizontalLinkOffsetNum"
+0
+1 { 25 P 1
+[ IlvToolTip __ilvToolTip 2 "&horizontalOffsetBetweenLinkBendAndNode" 4 4 ]
+0 IlvSpinBox 154 185 86 22 2 0 200 64 2 1
+0 IlvNumberField 154 185 63 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "HierarchicalHorizontalNodeLinkOffsetNum"
+0
+1 { 26 0 IlvMessageLabel 154 110 86 22 F8 0 25 16 4 "&horizontal"   } 32 "HorizontalLab"
+0
+1 { 27 0 IlvMessageLabel 14 347 128 22 F8 0 25 16 4 "&linkStyle"   } 32 "LinkStyleLab"
+0
+1 { 28 0 IlvMessageLabel 14 376 128 22 F8 0 25 16 4 "&linkPriority"   } 32 "LinkPriorityLab"
+0
+1 { 29 P 1
+[ IlvToolTip __ilvToolTip 2 "&specifiedLevelIndexOfSelectedNodes" 4 4 ]
+0 IlvTextField 154 262 86 22 F6 2 2 15 0 " 0" } 32 "HierarchicalSpecNodeLevelIndex"
+0
+1 { 30 P 1
+[ IlvToolTip __ilvToolTip 2 "&specifiedPositionIndexOfSelectedNodes" 4 4 ]
+0 IlvTextField 154 287 86 22 F6 2 2 15 0 " 0" } 32 "HierarchicalSpecNodePositionIndex"
+0
+1 { 31 0 IlvMessageLabel 14 287 128 22 F8 0 25 16 4 "&positionIndex"   } 32 "NodePositionIndexLab"
+0
+1 { 32 0 IlvMessageLabel 14 262 128 22 F8 0 25 16 4 "&levelIndex"   } 32 "NodeLevelIndexLab"
+0
+Size 344 453
+Background "gray"
+GeometryHandlers
+3 50 150 150 0 150 0
+ 100 0 97 150 97 150
+ 100 0 97 247 97 247
+12 3 0 0 14  128 0 128 28  0 0 8 0
+ 3 0 0 14  128 0 128 27  0 8 8 0
+ 3 0 0 14  128 0 128 31  0 0 8 0
+ 3 0 0 8  134 0 134 22  0 0 8 0
+ 3 0 0 8  134 0 134 21  0 0 8 0
+ 3 0 0 8  134 0 134 20  0 0 8 0
+ 3 0 0 8  134 0 134 19  0 0 8 0
+ 3 0 0 8  134 0 134 18  0 0 8 0
+ 3 0 0 8  134 0 134 17  0 0 8 0
+ 3 0 0 8  134 0 134 16  0 0 8 0
+ 3 0 0 5  334 0 334 10  0 0 5 2
+ 3 0 0 5  334 0 334 13  0 0 5 2
+13 3 0 0 4  183 0 183 3  0 0 7 2
+ 3 0 0 4  183 0 183 2  0 0 7 2
+ 3 0 0 4  183 0 183 1  0 0 7 2
+ 3 0 0 4  183 0 183 0  0 0 7 2
+ 3 0 0 4  180 0 180 8  0 0 10 2
+ 3 0 0 4  180 0 180 9  0 0 10 2
+ 3 0 0 4  86 0 86 23  0 0 7 1
+ 3 0 0 4  86 0 86 26  0 0 7 1
+ 3 0 0 4  86 0 86 24  0 0 7 1
+ 3 0 0 4  86 0 86 25  0 0 7 1
+ 3 0 0 4  86 0 86 11  0 0 7 1
+ 3 0 0 4  86 0 86 29  0 0 7 1
+ 3 0 0 4  86 0 86 30  0 0 7 1
+7 3 0 0 4  86 0 86 4  0 0 7 2
+ 3 0 0 4  86 0 86 7  0 0 7 2
+ 3 0 0 4  86 0 86 5  0 0 7 2
+ 3 0 0 4  86 0 86 6  0 0 7 2
+ 3 0 0 4  86 0 86 12  0 0 7 2
+ 3 0 0 1  86 0 86 15  0 0 10 2
+ 3 0 0 1  86 0 86 14  0 0 10 2
+1 100 0 453 0 453 0
+0
+EOF

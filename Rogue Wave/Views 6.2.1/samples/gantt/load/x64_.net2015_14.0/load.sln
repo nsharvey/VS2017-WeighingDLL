@@ -1,0 +1,6 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{2D552DD8-1D61-11E8-9326-21D9772C9500}") = "load", "load.vcxproj", "{2D54D55E-1D61-11E8-9326-21D9772C9500}"
+EndProject
+Global
+EndGlobal

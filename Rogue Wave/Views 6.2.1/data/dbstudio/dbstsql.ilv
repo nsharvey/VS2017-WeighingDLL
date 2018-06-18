@@ -1,0 +1,13 @@
+// Ilv Version: 4.0
+// File generated: Fri Feb 18 10:00:53 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "dbstsql"
+PathName "dbstsql.ilv"
+Palettes 1
+0 "gray" "black" "small" "%arial-10-" 0 solid solid 0 0 0
+IlvObjects 1
+1 { 0 0 IliSQLDataSource 8 14 24 24 1 14 19 0 IliSQLTable 0 1 0 
+     16 0 9 29070 0 "" 0 1 1 1 0 0 0 0 0 2 "null" "/"  } 64 "Gadget"
+0
+Size 85 54
+EOF

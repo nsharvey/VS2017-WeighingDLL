@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("93F4294C-1D69-11E8-91B2-87BE772C9500") = "loadOnDemand", "loadOnDemand.vcxproj", "93F3E1F8-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("93FDAC2E-1D69-11E8-91B2-87BE772C9500") = "mainpol", "mainpol.vcxproj", "93F3E1F8-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("9406F0F4-1D69-11E8-91B2-87BE772C9500") = "useviews", "useviews.vcxproj", "93F3E1F8-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("94125098-1D69-11E8-91B2-87BE772C9500") = "useproj", "useproj.vcxproj", "93F3E1F8-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("941B79C0-1D69-11E8-91B2-87BE772C9500") = "proj_step1", "proj_step1.vcxproj", "93F3E1F8-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("9425D51E-1D69-11E8-91B2-87BE772C9500") = "proj_step2", "proj_step2.vcxproj", "93F3E1F8-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("943026A4-1D69-11E8-91B2-87BE772C9500") = "proj_step3", "proj_step3.vcxproj", "93F3E1F8-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("9439855A-1D69-11E8-91B2-87BE772C9500") = "shapeLOD", "shapeLOD.vcxproj", "93F3E1F8-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("94430BF2-1D69-11E8-91B2-87BE772C9500") = "imageReader", "imageReader.vcxproj", "93F3E1F8-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("944CE316-1D69-11E8-91B2-87BE772C9500") = "tiff", "tiff.vcxproj", "93F3E1F8-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Project("9456F874-1D69-11E8-91B2-87BE772C9500") = "maptileloader", "maptileloader.vcxproj", "93F3E1F8-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

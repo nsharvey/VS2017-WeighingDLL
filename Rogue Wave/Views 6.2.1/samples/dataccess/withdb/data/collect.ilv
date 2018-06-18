@@ -1,0 +1,96 @@
+// Ilv Version: 4.0
+// File generated: Thu Mar 23 15:42:07 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "collect"
+PathName "collect.ilv"
+Palettes 4
+1 "white" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+3 "gray" "black" "small" "%helvetica-10-" 0 solid solid 0 0 0
+0 "gray" "black" "bold" "%helvetica-12-B" 0 solid solid 0 0 0
+"IlvStText" 2 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 11
+1 { 0 0 IliTableGadget 10 73 423 92 2 2067 "AUT_DS" 1799208543 1 0 0 0 17 19 21 4 0 0 0 1 1 "white" A"normal" "%helvetica-12-"  } 576 "Gadget"
+1
+1 "EnterRow" S"JvScript" "jselect"
+0
+1 { 1 0 IlvMessageLabel 10 13 230 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "This sample is specific to Informix9"  }   } 64 "Gadget"
+0
+1 { 2 2 IlvMessageLabel 10 47 55 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "Authors"  }   } 64 "Gadget"
+0
+1 { 3 2 IlvMessageLabel 10 175 71 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "Books title"  }   } 64 "Gadget"
+0
+1 { 4 0 IliTableGadget 10 200 424 85 2 2051 1799143007 1 0 0 0 17 19 21 0 0 0 0 1 1 "white" A"normal" "%helvetica-12-"  } 96 "tg" "Gadget"
+0
+1 { 5 3 IliSQLDataSource 86 30 24 24 1 14 19 0 IliSQLTable 0 11 3 
+     43 "id" Double 2 -1 2 170 "0" 32 33 "id" 
+     9 "author" String 3 20 1 227 32 33 "author" 
+     1 "books" custom Table "LIST(ROW(ref INT, title VARCHAR(254), price FLOAT(14)) NOT NULL)" 73 64 "books_t" 4 3 
+     9 "ref" Int 1 -1 2 -1 
+     9 "title" String 2 -1 1 -1 
+     9 "price" Double 3 -1 2 -1 
+     4 -1 1 226 32 33 "books" 
+     20 0 0 9 31118 0 "" "SELECT id,\n       author,\n       books\nFROM author" 0 2 1 1 1 3 0 "author" "author" 0 1 15 15 130 75 0 0 0 0 1 0 1 0 1 0 4 3 
+     11 "id" Double 1 -1 2 -1 0 
+     9 "author" String 2 20 1 -1 0 
+     9 "books" custom Table "LIST(ROW(ref INT, title VARCHAR(254), price FLOAT(14)) NOT NULL)" 73 64 "books_t" 4 3 
+     9 "ref" Int 1 -1 2 -1 
+     9 "title" String 2 -1 1 -1 
+     9 "price" Double 3 -1 2 -1 
+     3 -1 1 -1 0 
+     0 0 "author" 0 0 5 "Main" "null" "/" 6 0 OODABDADMOJO  } 608 "AUT_DS" "Gadget"
+1
+1 "CancelEdits" S"JvScript" "jselect"
+0
+1 { 6 0 IlvButton 360 13 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "drop"  }   } 576 "Gadget"
+1
+1 "__ilvCallback" S"JvScript" "jdrop"
+0
+1 { 7 0 IlvButton 277 13 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "create"  }   } 576 "Gadget"
+1
+1 "__ilvCallback" S"JvScript" "jcreate"
+0
+1 { 8 2 IlvMessageLabel 171 42 261 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "MessageLabel"  }   } 96 "msg" "Gadget"
+0
+1 { 9 3 IliMemoryDataSource 235 5 24 24 1 14 3 0 IliMemoryTable 0 3 2 
+     8 "title" String 1 -1 1 111 32 
+     8 "text" String 2 -1 1 255 32 
+     20 0 0 8 5
+"create row type" "create row type BOOK_T (REF integer,\n  TITLE varchar(35), PRICE decimal(10,2))" 
+"create table" "create table AUTHOR (ID numeric primary key,\n  AUTHOR varchar(20), \n  BOOKS list(BOOK_T not null))" 
+"insert 1st record" "insert into AUTHOR values (1000, 'Patricia Cornwell', \n  'list {row(1001, ''Postmortem'', 4.99), row(1002, ''Body of evidence'', 5.25)}' )" 
+"insert 2nd record" "insert into AUTHOR values (2000, 'Virginia Andrews', \n  'list {row(2001, ''Dark angel'', 4.99), row(2002, ''Heaven'', 5.99)}' )" 
+"insert 3rd record" "insert into AUTHOR values (3000, 'Stephen King', \n  'list {row(3001, ''Silver bullet'', 3.99), row(3002, ''Rage'', 7.99), row(3003, ''Roadwork'', 5.99)}' )" 
+0
+ } 96 "create9" "Gadget"
+0
+1 { 10 3 IliMemoryDataSource 134 30 24 24 1 14 3 0 IliMemoryTable 0 3 2 
+     8 "title" String 1 -1 1 111 32 
+     8 "text" String 2 -1 1 255 32 
+     20 0 0 8 2
+"drop table" "drop table AUTHOR" 
+"drop row type" "drop row type BOOK_T restrict" 
+0
+ } 96 "drop9" "Gadget"
+0
+Size 439 293
+GeometryHandlers
+1 100 0 439 0 439 0
+8 3 0 0 10  423 0 423 0  0 0 6 0
+ 3 0 0 10  0 0 218 1  211 0 211 0
+ 3 0 0 10  0 0 55 2  374 2 374 0
+ 3 0 0 10  0 0 71 3  358 0 358 0
+ 3 0 0 10  424 0 424 4  0 0 5 0
+ 3 277 0 277  0 0 73 7  0 0 89 0
+ 3 360 0 360  0 0 73 6  0 0 6 0
+ 3 171 0 171  0 0 261 8  0 0 7 0
+2 100 0 105 0 105 0
+ 50 0 188 105 188 105
+6 3 0 0 47  0 0 22 2  36 0 36 0
+ 3 0 0 13  0 0 22 1  70 0 70 0
+ 3 0 0 73  92 0 92 0  0 -6 -60 0
+ 3 0 0 13  0 0 23 7  257 0 257 1
+ 3 0 0 13  0 0 23 6  257 0 257 1
+ 3 0 0 42  0 0 22 8  229 0 229 1
+2 3 0 0 70  0 0 22 3  96 0 96 1
+ 3 0 0 95  85 0 85 4  0 0 8 1
+EOF

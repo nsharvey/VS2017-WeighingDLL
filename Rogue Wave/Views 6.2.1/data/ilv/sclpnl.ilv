@@ -1,0 +1,49 @@
+// Ilv Version: 1.0
+// File generated: Sun Feb 20 13:11:45 1994
+//  IlvGadgetManagerOutput
+Palettes 1
+0 48830 48830 48830  0 0 0  %times-12- 0 solid solid  0 0 0 
+IlvObjects 28
+2 { 0 0 IlvLabel 16 34 5 "Steps" } 0  0   
+2 { 1 0 IlvLabel 17 69 9 "Step Size" } 0  0   
+2 { 2 0 IlvLabel 17 104 8 "SubSteps" } 0  0   
+2 { 3 0 IlvTextField 134 18 80 23 2 0 0 "" } 64 9 "TextField"  0   
+2 { 4 0 IlvTextField 134 53 80 23 2 0 0 "" } 64 9 "TextField"  0   
+2 { 5 0 IlvTextField 134 89 80 23 2 0 0 "" } 64 9 "TextField"  0   
+2 { 6 0 IlvReliefLine 12 528 225 528 2 } 0  0   
+2 { 7 0 IlvButton 17 543 63 23 2 Y 5 "Apply"  } 64 6 "Button"  0   
+2 { 8 0 IlvButton 151 544 70 23 2 Y 6 "Cancel"  } 64 6 "Button"  0   
+2 { 9 0 IlvLabel 16 139 12 "SubStep Size" } 0  0   
+2 { 10 0 IlvTextField 134 119 80 23 2 0 0 "" } 64 9 "TextField"  0   
+2 { 11 0 IlvLabel 17 170 9 "Direction" } 0  0   
+2 { 12 0 IlvOptionMenu 104 157 110 23 2 8 0
+13 "Left - Bottom"
+14 "Right - Bottom"
+13 "Bottom - Left"
+9 "Top- Left"
+10 "Left - Top"
+11 "Right - Top"
+14 "Bottom - Right"
+11 "Top - Right"
+ } 64 10 "OptionMenu"  0   
+2 { 13 0 IlvOptionMenu 105 198 110 23 2 2 0
+6 "Labels"
+5 "Range"
+ } 64 10 "OptionMenu"  0   
+2 { 14 0 IlvLabel 19 219 14 "Division Style" } 0  0   
+2 { 15 0 IlvLabel 38 258 3 "Min" } 0  0   
+2 { 16 0 IlvLabel 38 299 3 "Max" } 0  0   
+2 { 17 0 IlvLabel 40 335 6 "Format" } 0  0   
+2 { 18 0 IlvTextField 122 242 80 23 2 0 0 "" } 64 9 "TextField"  0   
+2 { 19 0 IlvTextField 123 283 80 23 2 0 0 "" } 64 9 "TextField"  0   
+2 { 20 0 IlvTextField 123 319 80 23 2 0 1 " " } 64 9 "TextField"  0   
+2 { 21 0 IlvRectangle 15 235 199 126  } 0  0   
+2 { 22 0 IlvScrolledStringList 120 379 78 100 2 0 1  0 1
+1 "0"
+ Y  Y  } 64 18 "ScrolledStringList"  0   
+2 { 23 0 IlvButton 31 380 61 23 2 Y 3 "Add"  } 64 6 "Button"  0   
+2 { 24 0 IlvButton 31 411 61 23 2 Y 7 "Replace"  } 64 6 "Button"  0   
+2 { 25 0 IlvButton 31 442 61 23 2 Y 6 "Remove"  } 64 6 "Button"  0   
+2 { 26 0 IlvTextField 31 473 61 23 2 0 0 "" } 64 9 "TextField"  0   
+2 { 27 0 IlvRectangle 15 370 206 138  } 0  0   
+//Size 239 580

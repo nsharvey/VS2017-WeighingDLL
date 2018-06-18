@@ -1,0 +1,14 @@
+// Ilv Version: 4.0
+// File generated: Fri Jun 23 12:03:37 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "bubble"
+PathName "D:\\users\\cmt\\dev\\Charts\\Misc\\Radar\\bubble.ilv"
+Palettes 1
+0 "dimgray" "gray50" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 2
+1 { 0 0 IlvReliefRectangle 0 0 500 350 1 } 32 "ChartRect1"
+0
+1 { 1 0 IlvReliefRectangle 0 350 500 350 1 } 32 "ChartRect2"
+0
+Size 500 700
+EOF

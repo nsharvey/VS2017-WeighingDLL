@@ -1,0 +1,26 @@
+// Ilv Version: 3.1
+// File generated: Thu Apr 01 14:20:19 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "mainpan"
+Palettes 1
+"default" 0 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 2
+1 { 0 0 IlvToolBar 0 0 600 31 F295 2 2 6
+IlvMenuItem 1107380226 2 4 "NewItem" 1 0 "icon/new.png"  "NewCB" "Cleans the buffer." 
+IlvMenuItem 0 2 4  
+IlvMenuItem 1107380226 2 4 "OpenItem" 1 0 "icon/open.png"  "OpenCB" "Open..." 
+IlvMenuItem 1107380226 2 4 "SaveItem" 1 0 "icon/save.png"  "SaveCB" "Saves..." 
+IlvMenuItem 0 2 4  
+IlvMenuItem 1107380226 2 4 "InspectItem" 1 0 "ilviews/layout/icons/icinsp.png"  "InspectCB" "Inspect"  0 } 32 "MainToolBar"
+0
+1 { 1 0 IlvToolBar 0 32 28 282 F359 2 2 6
+IlvMenuItem 1111574530 2 4 "MakeNodeItem" 1 0 "ilviews/layout/icons/icmknode.xbm"  "MakeNodeCB" "Sets the interactor to create nodes." 
+IlvMenuItem 1111574530 2 4 "LinkItem" 1 0 "ilviews/layout/icons/iclinkbits.xbm"  "MakeLinkImageCB" "Sets the interactor to create links." 
+IlvMenuItem 1111574530 2 4 "SquareLinkItem" 1 0 "ilviews/layout/icons/icdlnm.xbm"  "MakeSquareLinkCB" "Sets the interactor to create square links." 
+IlvMenuItem 1111574530 2 4 "MakeCurvedLinkItem" 1 0 "ilviews/layout/icons/icdslnm.xbm"  "MakeCurvedLinkCB" "Sets the interactor to create curved links." 
+IlvMenuItem 0 2 4  
+IlvMenuItem 1111574530 2 4 "SelectItem" 1 0 "ilviews/layout/icons/icselect.png"  "SelectCB" "Sets the select interactor."  0 } 32 "InteractorToolBar"
+0
+Size 600 400
+Background "gray"
+EOF

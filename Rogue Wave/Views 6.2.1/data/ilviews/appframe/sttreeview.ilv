@@ -1,0 +1,29 @@
+// Ilv Version: 4.0
+// File generated: Fri Dec 21 08:18:05 2001
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12" 0 solid solid 0 0 0
+IlvObjects 2
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 1 85 108 20 F268435468 0 { IlvMessageItem 262145 4 16 4 "&AppStuTreeView"  }   } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTreeGadget 1 1 108 83 F32 2 A A S 0 0 0 0 20 1 1 1 1 1 0 V0 2
+{ IlvTreeGadgetItem 1 2 4 "root" 2
+{ IlvTreeGadgetItem 1 2 4 "First Root" 1
+{ IlvTreeGadgetItem 1 2 4 "Leaf 2" 0
+ }  } { IlvTreeGadgetItem 1 2 4 "Sec. Root" 0
+ }  }  } 0
+0
+Size 110 105
+Background "gray"
+GeometryHandlers
+1 100 0 110 0 110 0
+2 3 0 0 1  108 0 108 0  0 0 1 0
+ 3 0 0 1  108 0 108 1  0 0 1 0
+1 100 0 105 0 105 0
+2 3 85 0 85  0 0 20 0  0 0 0 0
+ 3 0 0 1  83 0 83 1  0 0 21 0
+EOF

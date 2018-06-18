@@ -1,0 +1,24 @@
+// IlvMessageDatabase 5.1 Sun Jan  2 15:37:07 2005
+// Language: ja_JP
+// Encoding: Shift_JIS
+"&ErrNbVisItemGT0" "ｴﾗｰ 表示数は 0-50 の範囲内である必要があります"
+"&attachmentMode" "ｱﾀｯﾁﾒﾝﾄ"
+"&attachmentModeP" "ｱﾀｯﾁﾒﾝﾄ編集ﾓｰﾄﾞ"
+"&focusMode" "ﾌｫｰｶｽ"
+"&focusModeP" "ｷｰﾎﾞｰﾄﾞ ﾌｫｰｶｽを設定します"
+"&matrixMode" "ﾏﾄﾘｯｸｽ(^X)"
+"&matrixModePrompt" "ﾏﾄﾘｯｸｽの編集ﾓｰﾄﾞ"
+"&menuMode" "ﾒﾆｭｰ(^M)"
+"&menuModePrompt" "ﾒﾆｭｰの編集ﾓｰﾄﾞ"
+"&newGadgetBuffer" "ｶﾞｼﾞｪｯﾄ"
+"&newGadgetBufferP" "新しいｶﾞｼﾞｪｯﾄのﾊﾞｯﾌｧを作成します"
+"&removeAllAttachments" "ｱﾀｯﾁﾒﾝﾄを削除"
+"&removeAllAttachmentsP" "すべてのｱﾀｯﾁﾒﾝﾄを削除します"
+"&removeAttachments" "ｱﾀｯﾁﾒﾝﾄを削除"
+"&removeAttachmentsP" "選択したｵﾌﾞｼﾞｪｸﾄのｱﾀｯﾁﾒﾝﾄを削除します"
+"&scMgrPrompt" "SCManagerRectangle の作成"
+"&spinBoxMode" "ｽﾋﾟﾝﾎﾞｯｸｽ"
+"&spinBoxModePrompt" "ｽﾋﾟﾝﾎﾞｯｸｽの編集ﾓｰﾄﾞ"
+"&ttmatrixMode" "ﾏﾄﾘｯｸｽ"
+"&ttmenuMode" "ﾒﾆｭｰ"
+

@@ -1,0 +1,76 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Prototypes - Samples: custom_accessor</title>
+	</head>
+    <body>
+		<a name="Custom Accessor Creation and Use"><h1>Sample: <code>Custom Accessor Creation and Use</code></h1><h1 class="subtitle">Custom Accessor Creation and Use</h1></a>
+		<p>Shows how to define a new class of accessors.</p>
+		<img src="data/custom_acc.png"/>
+		<p>The new accessor class is <code>IlvGraphicPathAccessor</code>, and can be used in
+a prototype to move an object along a graphic path (defined by a set
+of polylines). When the value of the accessor is changed, the object
+is moved on the graphic path to a percentage of the total length of
+the path.
+The class <code>IlvGraphicPathAccessor</code> is declared in the C++ file <code>gpacc.h</code>
+and defined in <code>gpacc.cpp</code>.
+The program <code>gppanel</code> shows an example of use of the class
+<code>IlvGraphicPathAccessor</code>: the panel contains a slider gadget connected
+to an instance of a prototype representing an object moving along a
+graphic path. When the user moves the slider, the object moves along
+the path accordingly.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvUserAccessor</code></li>
+			<li><code>IlvGroup</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/gpacc.h"><code>include/gpacc.h</code></a></li>
+			<li><a href="src/gpacc.cpp"><code>src/gpacc.cpp</code></a></li>
+			<li><a href="src/gppanel.cpp"><code>src/gppanel.cpp</code></a></li>
+			<li><a href="data/bunnypan.ilv"><code>data/bunnypan.ilv</code></a></li>
+			<li><a href="data/grpath.ipl"><code>data/grpath.ipl</code></a></li>
+		</ul>
+		<a name="Extending Studio to Use a Custom Accessor"><h1>Sample: <code>Extending Studio to Use a Custom Accessor</code></h1><h1 class="subtitle">Extending Studio to Use a Custom Accessor</h1></a>
+		<p>Shows how to integrate a new class of accessors in Studio,
+if you have the 2D Controls module of Views.</p>
+		<img src="data/custom_acc.png"/>
+		<p>The <code>gpstudio</code> is a version of Studio linked with the
+<code>IlvGraphicPathAccessor</code> class. When you use <code>gpstudio</code> to edit prototypes,
+the new graphic path accessor class appears automatically as a new
+action in the Action combo box of the Accessors page of the
+Prototype Inspector. To see it:
+<ul>
+<li> load the panel file <code>data/bunnypan.ilv</code>,</li>
+<li> select the prototype library <code>grpath</code> in the Prototypes palette,</li>
+<li> double-click the &quot;movbunny&quot; prototype,</li>
+<li> select the Graphic Behaviors page in the Group Inspector,</li>
+<li> select the &quot;distance&quot; attribute in the list of behaviors.</li>
+</ul>
+You will see the definition of the GraphicPath accessor in Display menu
+of the behaviors page of the group inspector.
+Note that in its current state, the sample does not use dynamic modules.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvStExtension</code></li>
+			<li><code>IlvStudio</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/gpacc.h"><code>include/gpacc.h</code></a></li>
+			<li><a href="src/gpacc.cpp"><code>src/gpacc.cpp</code></a></li>
+			<li><a href="src/gpstmain.cpp"><code>src/gpstmain.cpp</code></a></li>
+			<li><a href="src/libini.cpp"><code>src/libini.cpp</code></a></li>
+			<li><a href="src/defaultx.cpp"><code>src/defaultx.cpp</code></a></li>
+		</ul>

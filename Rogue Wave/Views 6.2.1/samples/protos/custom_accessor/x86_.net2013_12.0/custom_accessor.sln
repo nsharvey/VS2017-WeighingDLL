@@ -1,0 +1,11 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+
+Project("311E1946-1D63-11E8-8E12-F080772C9500") = "gppanel", "gppanel.vcxproj", "311DD030-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Project("312AF850-1D63-11E8-8E12-F080772C9500") = "gpstudio", "gpstudio.vcxproj", "311DD030-1D63-11E8-8E12-F080772C9500"
+EndProject
+
+Global
+EndGlobal
+

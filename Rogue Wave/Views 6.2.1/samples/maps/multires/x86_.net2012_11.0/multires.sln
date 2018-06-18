@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("7A2F272A-1D62-11E8-AB12-0BC9772C9500") = "multires", "multires.vcxproj", "7A2ED00E-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Global
+EndGlobal
+

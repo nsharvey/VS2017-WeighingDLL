@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{CD71C9D4-1D6B-11E8-BAD0-7863772C9500}") = "magnify", "magnify.vcxproj", "{CD718528-1D6B-11E8-BAD0-7863772C9500}"
+EndProject
+Project("{CD7BBFDE-1D6B-11E8-BAD0-7863772C9500}") = "scalemgr", "scalemgr.vcxproj", "{CD718528-1D6B-11E8-BAD0-7863772C9500}"
+EndProject
+Global
+EndGlobal

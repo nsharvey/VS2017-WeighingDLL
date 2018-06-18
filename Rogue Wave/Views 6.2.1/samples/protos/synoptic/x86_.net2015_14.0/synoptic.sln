@@ -1,0 +1,6 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{EBF64CD4-1D63-11E8-96A2-F2B8772C9500}") = "synoptic", "synoptic.vcxproj", "{EBF5F1D0-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Global
+EndGlobal

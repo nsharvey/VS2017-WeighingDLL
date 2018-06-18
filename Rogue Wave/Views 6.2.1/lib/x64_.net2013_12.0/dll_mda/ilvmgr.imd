@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvmgr -->
+<module name="ilvmgr" version="6.2">
+<class name="IlvApplyListener" rootClass="IlvNamedProperty"/>
+<class name="IlvApplyListenerList" rootClass="IlvNamedProperty"/>
+<class name="IlvDragRectangleInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvEditPointsInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvHandleMoveInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvLayerVisibilityFilter"/>
+<class name="IlvMakeArcInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeArrowLineInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeArrowPolylineInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeBitmapInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeClosedSplineInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeEllipseInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeFilledArcInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeFilledEllipseInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeFilledRectangleInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeFilledRoundRectangleInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeFilledSplineInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeLineInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeMoveInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeObjectInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeOutlinePolygonInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakePolyPointsInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakePolygonInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakePolylineInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeRectangleInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeReliefDiamondInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeReliefLineInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeReliefPolygonInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeReliefPolylineInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeReliefRectangleInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeRoundRectangleInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeShadowRectangleInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeSplineInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeUnZoomInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvMakeZoomInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvManager"/>
+<class name="IlvManagerLayer"/>
+<class name="IlvManagerMagViewInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvManagerRectangle" rootClass="IlvGraphic"/>
+<class name="IlvManagerViewDragDropInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvPanZoomInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvPolySelectInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvRotateInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvSelectInteractor" rootClass="IlvManagerViewInteractor"/>
+<class name="IlvZoomInteractor" rootClass="IlvManagerViewInteractor"/>
+</module>

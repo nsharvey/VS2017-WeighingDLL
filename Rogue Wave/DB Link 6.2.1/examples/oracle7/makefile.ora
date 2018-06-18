@@ -1,0 +1,34 @@
+## ----------------------------------------------------------- -*- Makefile -*-
+##
+## This makefile declares the target of the RDBMS specific examples supplied
+## with Rogue Wave DB Link.
+##
+## It is included by <RDBMS>/$(SYSTEM)/Makefile
+## For more informations, see that Makefile and the file
+## $(EXSRCDIR)/makefile.dbl
+##
+## ----------------------------------------------------------------------------
+
+# -----------------------------
+# Stored procedure call : parameter bindings
+oraproc.$(OEXT): $(EXSRCDIR)/oraproc.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/oraproc.cpp
+
+oraproc$(EEXT): oraproc.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) oraproc.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# -----------------------------
+# Object features
+ora8obj.$(OEXT): $(EXSRCDIR)/ora8obj.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/ora8obj.cpp
+
+ora8obj$(EEXT): ora8obj.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) ora8obj.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)
+
+# ----------------------------
+# Stored procedure returning a cursor
+oracurs.$(OEXT): $(EXSRCDIR)/oracurs.cpp
+	$(CCC) $(CCFLAGS) $(EXSRCDIR)/oracurs.cpp
+
+oracurs$(EEXT): oracurs.$(OEXT) ildutil.$(OEXT)
+	$(LD) $(OUT) oracurs.$(OEXT) ildutil.$(OEXT) $(LDFLAGS)

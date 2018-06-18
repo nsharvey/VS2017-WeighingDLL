@@ -1,0 +1,60 @@
+// Ilv Version: 4.0
+// File generated: Mon Apr 10 14:33:14 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "psdump"
+Palettes 4
+3 48640 48640 48640 "black" "normal" "%helvetica-12" 0 solid solid 0 0 0
+"IlvStText" 1 "gray" "black" "normal" "%helvetica-12" 0 solid solid 0 0 0
+"default" 0 "gray" "black" "default" "fixed" 0 solid solid 0 0 0
+2 48640 48640 48640 "black" "button" "%helvetica-12-B" 0 solid solid 0 0 0
+IlvObjects 7
+1 { 0 0 IlvReliefLine 1 73 349 73 1 } 0
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFileSelectorField 105 6 242 22 F6 2 1 -1 0 "" } 32 "File"
+6144 "What" "Close"
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvButton 8 84 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+4096 "Orient"
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvButton 267 84 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 32 "Close"
+2048 "File"
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvButton 175 84 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&OptionsMenu"  }   } 512
+1
+1 "__ilvCallback" "Options"
+2048 "File"
+3 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvMessageLabel 8 6 84 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&file"  }   } 0
+0
+3 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvToggle 8 40 337 18 F1 2 1 2 0 0 0 Y "&color" } 32 "color"
+6144 "Orient" "Where"
+Size 353 113
+GeometryHandlers
+1 100 0 353 0 353 0
+6 3 0 0 105  242 0 242 1  0 0 6 0
+ 3 0 0 8  337 0 337 6  0 8 8 0
+ 3 0 0 1  348 0 348 0  0 0 4 0
+ 3 0 0 8  0 0 80 2  265 0 265 0
+ 3 267 0 267  0 0 80 3  0 0 6 0
+ 3 175 0 175  0 0 80 4  0 0 98 0
+1 100 0 113 0 113 0
+4 3 72 0 72  0 0 2 0  0 0 39 0
+ 3 84 0 84  0 0 23 2  0 0 6 0
+ 3 84 0 84  0 0 23 3  0 0 6 0
+ 3 84 0 84  0 0 23 4  0 0 6 0
+Layers 4
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+EOF

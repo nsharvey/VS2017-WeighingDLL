@@ -1,0 +1,22 @@
+var pairs =
+{
+"creating":{"employee":1}
+,"employee":{"manager":1}
+,"manager":{"window":1}
+,"window":{"going":1,"look":1,"window":1,"data":1}
+,"going":{"create":1}
+,"create":{"new":1}
+,"new":{"buffer":1}
+,"buffer":{"containing":1}
+,"containing":{"employee":1}
+,"look":{"finished":1}
+,"finished":{"employee":1}
+,"data":{"source":1}
+,"source":{"empmgr_ds":1}
+,"empmgr_ds":{"save":1}
+,"save":{"file":1}
+,"file":{"give":1}
+,"give":{"name":1}
+,"name":{"empmgr.ilv":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,28 @@
+// Ilv Version: 5.3
+// File generated: Tue Aug 18 09:23:52 2009
+// Creator class: IlvGadgetManagerOutput
+FileName "edit"
+PathName "edit.ilv"
+Palettes 1
+"defaultGadget" 0 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 2
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSheet 15 30 440 260 F34905 2 Y N 0 0 0 0 1 1 80 25 0 1 1 1 1 1 4 1 V0 2 85 
+170 
+255 
+416 
+4 0 0 66 IlvLabelMatrixItem "" 
+1 0 226 IlvLabelMatrixItem "Integer"  2 0 226 IlvLabelMatrixItem "Float"  3 0 226 IlvLabelMatrixItem "FormattedFloat"  1 N 0 0 1 1 0  } 32 "Matrix"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 5 460 295 F268435468 0 { IlvMessageItem 262169 4 16 4 "Matrix"  }   } 0
+0
+Size 470 305
+GeometryHandlers
+1 100 0 470 0 470 0
+1 3 0 0 5  460 0 460 1  0 0 5 0
+1 100 0 305 0 305 0
+1 3 0 0 5  295 0 295 1  0 0 5 0
+EOF

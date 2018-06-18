@@ -1,0 +1,20 @@
+var pairs =
+{
+"retired":{"support":1,"ports":1}
+,"support":{"following":1}
+,"following":{"ports":1}
+,"ports":{"retired":1,"microsoft":1,"operating":1}
+,"microsoft":{"visual":1}
+,"visual":{"studio":1}
+,"studio":{"2008":1}
+,"2008":{"x86_.net2008_9.0":1}
+,"x86_.net2008_9.0":{"x64_.net2008_9.0":1}
+,"x64_.net2008_9.0":{"retired":1}
+,"operating":{"system":1}
+,"system":{"aix":1}
+,"aix":{"5.3":1}
+,"5.3":{"(power32_aix5.3_7.0":1}
+,"(power32_aix5.3_7.0":{"power64_aix5.3_7.0":1}
+,"power64_aix5.3_7.0":{"retired":1}
+}
+;Search.control.loadWordPairs(pairs);

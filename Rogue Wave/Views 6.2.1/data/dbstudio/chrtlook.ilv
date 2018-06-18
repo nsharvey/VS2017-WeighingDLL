@@ -1,0 +1,74 @@
+// Ilv Version: 3.0
+// File generated: Thu Nov 20 11:36:03 1997
+// Creator class: IlvGadgetManagerOutput
+FileName "chrtlook"
+PathName "chrtlook.ilv"
+Palettes 4
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+1 "gray" "black" "%helvetica-10-" 0 solid solid 0 0 0
+2 "gray" "black" "bold" "%MS Sans Serif-8-B" 0 solid solid 0 0 0
+3 "white" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+IlvObjects 15
+1 { 0 0 IlvSwDbToggle 5 25 220 16 F1 2 1 2 0 0 0 Y "&dbchart_VertGrid" 2051 0  } 32 "CHKGridVerti"
+0
+1 { 1 0 IlvSwDbToggle 5 5 220 16 F1 2 1 2 0 0 0 Y "&dbchart_HorzGrid" 2051 0  } 32 "CHKGridHoriz"
+0
+1 { 2 1 IlvSwMemoryDataSource 139 218 24 24 1 14 3 1 IlvSwMemoryTable 0 3 2 
+     76 "AFFECT" String 1 40 1 111 "&dbchart_Type" 32 
+     72 "COLOR" String 2 40 1 108 "&dbchart_Color" 32 
+     0 0 0 3
+"Background" "Gray" 
+"&dbchart_Scale" "Black" 
+"Grid" "Black" 
+0
+ } 32 "%COLOR_MS"
+0
+1 { 3 2 IlvSwTableGadget 5 195 220 70 2 2075 "%COLOR_MS"  2 725466693 1 0 0 0 17 18 21 4 1 0 0 1 1 "white" A"normal" "%MS Sans Serif-8-"  } 32 "TBLColor"
+0
+1 { 4 0 IlvSwTableComboBox 5 70 220 20 F7 2 1 -1 0 "" 2051 11 0 1  ""  } 32 "CBNScale"
+0
+1 { 5 0 IlvSwTableComboBox 5 45 220 20 F7 2 1 -1 0 "" 2051 11 0 1  ""  } 32 "CBNSteps"
+0
+1 { 6 0 IlvSwDbToggle 90 98 135 16 F1 2 1 2 0 0 0 Y "&dbchart_UseMinY" 2051 0  } 32 "CHKUseMinY"
+0
+1 { 7 0 IlvSwDbToggle 90 123 135 16 F1 2 1 2 0 0 0 Y "&dbchart_UseMaxY" 2051 0  } 32 "CHKUseMaxY"
+0
+1 { 8 0 IlvSwEntryField 5 95 80 22 F6 2 1 -1 0 "0.0" 2051 3  } 32 "EDTMinY"
+0
+1 { 9 0 IlvSwEntryField 5 120 80 22 F6 2 1 -1 0 "1000.0" 2051 3  } 32 "EDTMaxY"
+0
+1 { 10 0 IlvSwTableComboBox 100 145 125 20 F6 2 1 -1 0 "" 2051 11 2 1  ""  } 32 "CBNFormat"
+0
+1 { 11 0 IlvMessageLabel 5 144 90 22 0 "&dbchart_FormatY" 1 } 0
+0
+1 { 12 0 IlvMessageLabel 5 169 90 22 0 "&dbchart_Display" 1 } 0
+0
+1 { 13 0 IlvSwEntryField 100 169 50 22 F6 2 1 -1 0 "Entry Field" 2051 11  } 32 "EDTNbPoints"
+0
+1 { 14 0 IlvSwTableComboBox 155 169 70 22 F7 2 1 -1 0 "" 2051 11 0 1  ""  } 32 "CBNTypeFrom"
+0
+Size 230 276
+GeometryHandlers
+1 100 0 230 0 230 0
+10 3 0 0 5  220 0 220 3  0 0 5 0
+ 3 0 0 5  220 0 220 5  0 0 5 0
+ 3 0 0 5  220 0 220 4  0 0 5 0
+ 3 0 0 5  220 0 220 1  0 0 5 0
+ 3 0 0 5  220 0 220 0  0 0 5 0
+ 3 0 0 90  135 0 135 6  0 0 5 0
+ 3 0 0 90  135 0 135 7  0 0 5 0
+ 3 0 0 100  125 0 125 10  0 0 5 0
+ 3 0 0 100  0 0 50 13  80 0 80 0
+ 3 0 0 155  70 0 70 14  0 0 5 0
+1 100 0 276 0 276 0
+10 3 0 0 195  0 0 70 3  11 7 11 0
+ 3 0 0 45  0 0 20 5  211 0 211 0
+ 3 0 0 70  0 0 20 4  186 0 186 0
+ 3 0 0 5  0 0 16 1  255 0 255 0
+ 3 0 0 25  0 0 16 0  235 0 235 0
+ 3 0 0 98  0 0 16 6  162 0 162 0
+ 3 0 0 123  0 0 16 7  137 0 137 0
+ 3 0 0 145  0 0 20 10  111 0 111 0
+ 3 0 0 169  0 0 22 13  85 0 85 0
+ 3 0 0 169  0 0 22 14  85 0 85 0
+EOF

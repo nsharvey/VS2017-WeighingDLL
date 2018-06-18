@@ -1,0 +1,41 @@
+// Ilv Version: 5.1
+// File generated: Tue Aug 28 10:42:33 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "defpnl"
+PathName "defpnl.ilv"
+Palettes 2
+0 F "defaultBg" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 1 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 3
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 201 265 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 544 "cancelBtn"
+1
+1 "__ilvCallback" "cancel"
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 116 265 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "applyBtn"
+1
+1 "__ilvCallback" "apply"
+0
+3 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvGadget 5 5 276 252 2 } 32 "area"
+0
+Size 286 293
+GeometryHandlers
+1 100 0 286 0 286 0
+3 3 0 0 5  276 0 276 2  0 0 5 0
+ 3 116 0 116  0 0 80 1  0 0 90 0
+ 3 201 0 201  0 0 80 0  0 0 5 0
+1 100 0 293 0 293 0
+3 3 0 0 5  252 0 252 2  0 0 36 0
+ 3 265 0 265  0 0 23 1  0 0 5 0
+ 3 265 0 265  0 0 23 0  0 0 5 0
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

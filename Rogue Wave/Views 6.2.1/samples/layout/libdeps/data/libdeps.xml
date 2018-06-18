@@ -1,0 +1,350 @@
+<dependencies>
+  <library name="&lt;display&gt;">
+    <dependency library="ilog"/>
+  </library>
+  <library name="iljsgide">
+    <dependency library="iljs"/>
+    <dependency library="ilvadvgdt"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="iljs">
+  </library>
+  <library name="ilog">
+  </library>
+  <library name="ilvadvgadmgr">
+    <dependency library="ilvgadmgr"/>
+    <dependency library="ilvmgr"/>
+    <dependency library="ilvadvgdt"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvadvgdt">
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvamlook">
+    <dependency library="ilvmlook"/>
+    <dependency library="ilvadvgdt"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvappframe">
+    <dependency library="ilvadvgdt"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvappgrapher">
+    <dependency library="ilvappmgr"/>
+    <dependency library="ilvappframe"/>
+    <dependency library="ilvgrapher"/>
+    <dependency library="ilvmgr"/>
+    <dependency library="ilvadvgdt"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvappmgr">
+    <dependency library="ilvappframe"/>
+    <dependency library="ilvmgr"/>
+    <dependency library="ilvadvgdt"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvappwizard">
+    <dependency library="ilvappframe"/>
+    <dependency library="ilvadvgdt"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvatext">
+    <dependency library="ilvadvgdt"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvavxlook">
+    <dependency library="ilvvxlook"/>
+    <dependency library="ilvawlook"/>
+    <dependency library="ilvwlook"/>
+    <dependency library="ilvadvgdt"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvaw95look">
+    <dependency library="ilvw95look"/>
+    <dependency library="ilvawlook"/>
+    <dependency library="ilvwlook"/>
+    <dependency library="ilvadvgdt"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvawlook">
+    <dependency library="ilvwlook"/>
+    <dependency library="ilvadvgdt"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvbmpflt">
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvbmp">
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvbuild">
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvbus">
+    <dependency library="ilvlayout"/>
+    <dependency library="ilvgrapher"/>
+    <dependency library="ilvmgr"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvcairo">
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvcharts">
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvedit">
+    <dependency library="ilvgadmgr"/>
+    <dependency library="ilvmgr"/>
+    <dependency library="ilvadvgdt"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvgadgraph">
+    <dependency library="ilvgrapher"/>
+    <dependency library="ilvgadmgr"/>
+    <dependency library="ilvmgr"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvgadgt">
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvgadmgr">
+    <dependency library="ilvmgr"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvgantt">
+    <dependency library="ilvgadgraph"/>
+    <dependency library="ilvgrapher"/>
+    <dependency library="ilvgadmgr"/>
+    <dependency library="ilvmgr"/>
+    <dependency library="ilvadvgdt"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvgdpro">
+    <dependency library="ilvproto"/>
+    <dependency library="ilvgadgraph"/>
+    <dependency library="ilvgrapher"/>
+    <dependency library="ilvgadmgr"/>
+    <dependency library="ilvmgr"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvgif">
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvgrapher">
+    <dependency library="ilvmgr"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvhierarchical">
+    <dependency library="ilvlayout"/>
+    <dependency library="ilvgrapher"/>
+    <dependency library="ilvmgr"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvjpg">
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvjs">
+    <dependency library="iljs"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvlayout">
+    <dependency library="ilvgrapher"/>
+    <dependency library="ilvmgr"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvmgrprint">
+    <dependency library="ilvprint"/>
+    <dependency library="ilvmgr"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvmgr">
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvmlook">
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvorthlink">
+    <dependency library="ilvlayout"/>
+    <dependency library="ilvgrapher"/>
+    <dependency library="ilvmgr"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvpng">
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvppm">
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvprint">
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvproto">
+    <dependency library="ilvgrapher"/>
+    <dependency library="ilvmgr"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvprtdlg">
+    <dependency library="ilvprint"/>
+    <dependency library="ilvadvgdt"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvrandom">
+    <dependency library="ilvlayout"/>
+    <dependency library="ilvgrapher"/>
+    <dependency library="ilvmgr"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvrgb">
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvstates">
+    <dependency library="ilvadvgdt"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvtiff">
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvtree">
+    <dependency library="ilvlayout"/>
+    <dependency library="ilvgrapher"/>
+    <dependency library="ilvmgr"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvvxlook">
+    <dependency library="ilvwlook"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvw95look">
+    <dependency library="ilvwlook"/>
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvwbmp">
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="ilvwlook">
+    <dependency library="ilvgadgt"/>
+    <dependency library="views"/>
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+  <library name="views">
+    <dependency library="&lt;display&gt;"/>
+    <dependency library="ilog"/>
+  </library>
+</dependencies>

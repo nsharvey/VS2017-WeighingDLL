@@ -1,0 +1,58 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:56:56 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "tooltip"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\tooltip.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 8
+0 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 5 27 246 22 F6 2 1 -1 0 "" } 544 "label"
+1
+1 "__ilvCallback" "label"
+10240 "bitmap"
+0 { 1 0 IlvReliefLine 0 92 256 92 1 } 32 "line"
+0
+0 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 5 100 76 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 512
+1
+1 "__ilvCallback" "apply"
+6144 "Button_2" "period"
+0 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 175 100 76 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+4096 "Button_1"
+0 { 4 P 2
+[ IlvAttachments _IlvAttachments 16  1 10 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 10 2 236 23 F268435469 0 { IlvMessageItem 262169 4 16 4 "&label"  }   } 0
+0
+0 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 175 59 76 23 F13 2 { IlvMessageItem 262145 4 16 4 "&Palette..."  }   } 512
+1
+1 "__ilvCallback" "palette"
+0
+0 { 6 0 IlvFilledRectangle 5 58 165 26 } 32 "frect"
+0
+0 { 7 0 IlvRectangle 5 58 165 26 } 32 "rect"
+0
+Size 256 128
+GeometryHandlers
+1 100 0 256 0 256 0
+7 3 0 0 0  256 0 256 1  0 0 0 0
+ 3 175 0 175  0 0 76 3  0 0 5 0
+ 3 175 0 175  0 0 76 5  0 0 5 0
+ 3 0 0 5  165 0 165 7  0 0 86 0
+ 3 0 0 5  246 0 246 0  0 0 5 0
+ 3 0 0 5  165 0 165 6  0 0 86 0
+ 3 0 0 5  0 0 76 2  175 0 175 0
+1 100 0 128 0 128 0
+3 3 100 0 100  0 0 23 2  0 0 5 0
+ 3 100 0 100  0 0 23 3  0 0 5 0
+ 3 91 0 91  0 0 2 1  0 0 35 0
+EOF

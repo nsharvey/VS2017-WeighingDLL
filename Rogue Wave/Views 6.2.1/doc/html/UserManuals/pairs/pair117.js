@@ -1,0 +1,19 @@
+var pairs =
+{
+"showalignpanel":{"label":1}
+,"label":{"alignment":1}
+,"alignment":{"path":1,"panel":1,"commands":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"draw":1}
+,"draw":{"menu":1}
+,"menu":{"align\u002Fdistribute":1}
+,"align\u002Fdistribute":{"category":1}
+,"category":{"align":1}
+,"align":{"panel":1}
+,"panel":{"action":1,"provides":1}
+,"action":{"opens":1}
+,"opens":{"alignment":1}
+,"provides":{"alignment":1}
+}
+;Search.control.loadWordPairs(pairs);

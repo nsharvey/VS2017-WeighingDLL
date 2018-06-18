@@ -1,0 +1,40 @@
+// Ilv Version: 5.1
+// File generated: Wed Oct 31 08:44:26 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "sqlappdg"
+PathName "sqlappdg.ilv"
+Palettes 2
+"IlvStToolBar" 1 F "defaultBg" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+0 F "defaultBg" "black" "button" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 3
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 182 244 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 267 244 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+1 { 2 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvPanelObjectReference IlvPanelObjectReference  "953022548.0" ]
+1 IlvNotebook 5 5 342 231 F1 2 0 2  2
+" { IlvNotebookPageItem 1 2 4 "&page_Sessions"  }  "gray" "dbstudio/appage.ilv"
+" { IlvNotebookPageItem 1 2 4 "&page_Dbms"  }  "gray" "dbstudio/appage.ilv"
+0 0 4 5 2 10 10 10 10  } 32 "notebook"
+0
+Size 352 272
+GeometryHandlers
+1 100 0 352 0 352 0
+3 3 267 0 267  0 0 80 1  0 0 5 0
+ 3 182 0 182  0 0 80 0  0 0 90 0
+ 3 0 0 5  342 0 342 2  0 0 5 0
+1 100 0 272 0 272 0
+3 3 244 0 244  0 0 23 1  0 0 5 0
+ 3 244 0 244  0 0 23 0  0 0 5 0
+ 3 0 0 5  231 0 231 2  0 0 36 0
+EOF

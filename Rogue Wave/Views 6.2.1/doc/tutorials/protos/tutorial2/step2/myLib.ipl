@@ -1,0 +1,56 @@
+// Rogue Wave Views Prototype Library File
+// Rogue Wave Views Version: 4.0
+// Date: Wed Jun 21 18:49:24 2000
+Library: myLib
+SingleFile: true
+myproto
+IlvProtoLibraryBlocks
+IlvProtoLibraryBlock myproto.ivp
+// Ilog Views Group Version 1.2
+IlvPrototype myproto
+    accessors {
+        IlvValueAccessor Int threshold
+        IlvNodeAccessor Float temperature gauge.value
+        IlvOutputAccessor Float temperature
+        IlvConditionAccessor (RP) Float temperature > threshold color red blue
+        IlvCompositeAccessor (R) String color {
+            gauge.foreground
+            IlvFilledEllipse.foreground
+        }
+        IlvCallbackAccessor (RP) String Action gauge Generic 0
+        IlvLoopbackAccessor String Action Action
+        IlvTriggerAccessor (RP) String Action temperature gauge.value
+    }
+    values {
+        String threshold = 30
+        Float temperature = 20
+    }
+    nodes {
+        IlvGraphicNode gauge "" 0 0
+        IlvGraphicNode scale "" 0 1
+        IlvGraphicNode IlvFilledEllipse "" 0 2
+    }
+    subscriptions {
+    }
+;
+IlvProtoLibraryBlock myproto.ilv
+// Ilv Version: 4.0
+// File generated: Wed Jun 21 18:49:24 2000
+// Creator class: IlvGraphOutput
+Palettes 3
+1 "gray" "black" "default" "-*-courier-medium-r-normal-*-*-140-*-*-*-*-*-*" 0 solid solid 0 0 0
+2 "gray" "blue" "default" "-*-courier-medium-r-normal-*-*-140-*-*-*-*-*-*" 0 solid solid 0 0 0
+0 "wheat" "blue" "default" "-*-courier-medium-r-normal-*-*-140-*-*-*-*-*-*" 0 solid solid 0 0 0
+IlvObjects 3
+1 2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gauge" ]
+0 IlvRectangularGauge 103 64 22 110 0 100 22.3182 8 1 } 0
+1 2 { 1 1 IlvRectangularScale 75 66 10 106 5 2 10 5 M 0 100 "%4.f"
+"   0" "  25" "  50" "  75" " 100"  85 172 106 8 1  } 0
+1 2 { 2 2 IlvFilledEllipse 98 169 33 32 } 0
+Layers 2
+"" 4 0 
+"" 4 0 
+Views 0
+EOF
+IlvProtoLibraryEnd

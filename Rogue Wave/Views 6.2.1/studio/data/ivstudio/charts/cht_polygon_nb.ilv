@@ -1,0 +1,15 @@
+// Ilv Version: 4.0
+// File generated: Wed May 31 10:01:43 2000
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 1
+8 { 0 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvPanelObjectReference IlvPanelObjectReference  "940585411.0" ]
+0 IlvNotebook 0 0 240 200 F1 2 0 2  1
+" { IlvNotebookPageItem 1 2 4 "&General"  }  "gray" "ivstudio/charts/cht_gen.ilv"
+0 0 4 5 2 10 10 10 10  } 32 "PolygonRectangle"
+0
+Size 240 200
+EOF

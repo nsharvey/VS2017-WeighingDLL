@@ -1,0 +1,38 @@
+help "propal" {
+    title "Prototype Palette";
+    description "Prototype Palette";
+}
+
+This window shows the prototypes that are currently loaded
+or defined. Each page of the notebook contains a prototype
+library.
+
+Creating Prototype Instances:
+-----------------------------
+To create an instance of a prototype, drag the icon of the
+desired prototype to the current buffer.
+
+If the buffer is a "prototype-aware" buffer (i.e. if it was
+created with one of the commands: "New > Prototype Instances
+(2D/Gadgets)", or "New > Prototype Grapher"), then the prototype
+instance is handled directly by the manager, which means that its
+graphic objects are added to the manager with addObject.
+When you select a direct prototype instance, a dashed border is
+drawn around it.
+
+If the buffer is not prototype-aware (for example if it was created
+with "New > 2D Graphic", then the prototype instance is encpasulated
+in a special IlvGraphic object which is added to the manager.
+Encapsulated prototype instance do not have dashed borders around
+them when you select them, they only have the standard selection
+handles.
+
+You can also create an encapsulated prototype instance in a
+prototype-aware buffer by pressing the Control key as you drag the
+prototype icon.
+
+Editing Prototypes:
+-------------------
+You can edit a prototype by double-clicking its icon.
+This will open a prototype edition buffer and load the selected
+prototype in it.

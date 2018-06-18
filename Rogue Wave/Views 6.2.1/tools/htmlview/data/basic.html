@@ -1,0 +1,34 @@
+<html>
+    <head>
+	<title>Rogue Wave Views - Samples: basic</title>
+	</head>
+    <body>
+		<a name="inter"><h1>Sample: <code>inter</code></h1><hr><h2 class="subtitle">Interacting with Graphic Objects</h2></a>
+		<p>Displaying and interacting with graphic objects.</p>
+		<img src="png/inter.png"/>
+		<p>Shows the use of graphic objects and behaviors.<br/>
+	Click the left mouse button to move objects, and the middle
+	mouse button to change their size.<br/>
+	Pressing the <strong>[Dump PS]</strong> button creates a
+	PostScript dump file of the visible area, in a file called
+	<code>"dump.ps"</code>.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGraphic</code></li>
+			<li><code>IlvContainer</code></li>
+		</ul>
+<hr>
+		<a name="hull"><h1>Sample: <code>hull</code></h1><hr><h2 class="subtitle">Convex Hull</h2></a>
+		<p>Using <code>IlPool</code> in a recursive algorithm.</p>
+		<img src="png/hull.png"/>
+		<p>The convex hull of a set of points is computed and dynamically 
+	updated.<br/>
+	Because the algorithm is recursive, we use the Rogue Wave Views
+	Pools mechanism to allocate and release the memory blocks that 
+	are needed.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlPoolOf</code></li>
+		</ul>
+	</body>
+</html>

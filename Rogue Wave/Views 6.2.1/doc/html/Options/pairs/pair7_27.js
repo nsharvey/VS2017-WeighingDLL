@@ -1,0 +1,26 @@
+var pairs =
+{
+"valueoperator":{"<valueoperator>":1}
+,"<valueoperator>":{"tag":1,"<property":1}
+,"tag":{"used":1}
+,"used":{"define":1}
+,"define":{"list":1}
+,"list":{"properties":1}
+,"properties":{"processed":1,"defined":1}
+,"processed":{"separately":1}
+,"separately":{"custom":1}
+,"custom":{"classes":1}
+,"classes":{"(see":1}
+,"(see":{"ilvxmlpropertyreader":1}
+,"ilvxmlpropertyreader":{"class)":1}
+,"class)":{"applied":1}
+,"applied":{"series":1}
+,"series":{"properties":1}
+,"defined":{"example":1}
+,"example":{"<valueoperator>":1}
+,"<property":{"name=\u0022":1}
+,"name=\u0022":{"period":1}
+,"period":{"<\u002Fproperty>":1}
+,"<\u002Fproperty>":{"<\u002Fvalueoperator>":1}
+}
+;Search.control.loadWordPairs(pairs);

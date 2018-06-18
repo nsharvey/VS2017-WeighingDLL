@@ -1,0 +1,44 @@
+// Ilv Version: 2.0
+// File generated: Wed May 11 16:56:03 1994
+//  IlvGadgetManagerOutput
+Palettes 4
+2 48830 48830 48830  0 0 0  %times-12- 0 solid solid  0 0 0 
+1 48830 48830 48830  0 0 0  %courier-12- 0 solid solid  0 0 0 
+3 48830 48830 48830  0 0 0  %helvetica-14-B 0 solid solid  0 0 0 
+0 48830 48830 48830  0 0 0  %helvetica-14- 0 solid solid  0 0 0 
+IlvObjects 34
+2 { 0 0 IlvLabel 135 174 "Thickness" } 0  0    
+2 { 1 1 IlvTextField 80 10 190 23 2 0 "" } 96 "name" "TextField"  320   1  5 2  
+2 { 2 1 IlvTextField 80 40 190 23 2 0 "" } 96 "callback" "TextField"  320   1  5 2  
+2 { 3 0 IlvToggle 160 245 109 16 2 1 1 16 0 Y "Shadow"  } 96 "shadow" "Toggle"  0    
+2 { 4 0 IlvToggle 160 220 109 16 2 1 1 16 0 Y "Sensitive"  } 96 "sens" "Toggle"  0    
+2 { 5 0 IlvToggle 160 195 109 16 2 1 1 16 0 Y "Exclusive"  } 96 "excl" "Toggle"  0    
+2 { 6 2 IlvReliefLine 5 345 270 345 2 } 0  448   1  5 1  40 2  
+2 { 7 0 IlvToggle 105 295 100 16 2 1 1 16 0 Y "Vertical"  } 96 "vsbar" "Toggle"  0    
+2 { 8 0 IlvToggle 105 315 100 16 2 1 1 16 0 Y "Horizontal"  } 96 "hsbar" "Toggle"  0    
+2 { 9 0 IlvLabel 135 145 "First Column" } 0  0    
+2 { 10 1 IlvTextField 80 70 46 23 2 0 "" } 96 "columns" "TextField"  0    
+2 { 11 1 IlvTextField 80 99 46 23 2 0 "" } 96 "xsize" "TextField"  0    
+2 { 12 1 IlvTextField 80 128 46 23 2 0 "" } 96 "frow" "TextField"  0    
+2 { 13 1 IlvTextField 80 157 46 23 2 0 "" } 96 "spacing" "TextField"  0    
+2 { 14 0 IlvLabel 10 176 "Spacing" } 0  0    
+2 { 15 0 IlvLabel 10 145 "First Row" } 0  0    
+2 { 16 0 IlvLabel 10 116 "X Size" } 0  0    
+2 { 17 0 IlvLabel 10 87 "Columns" } 0  0    
+2 { 18 0 IlvLabel 10 52 "Callback" } 0  0    
+2 { 19 0 IlvLabel 10 22 "Name" } 0  0    
+2 { 20 0 IlvLabel 135 116 "Y Size" } 0  0    
+2 { 21 0 IlvLabel 135 87 "Rows" } 0  0    
+2 { 22 1 IlvTextField 223 99 46 23 2 0 "" } 96 "ysize" "TextField"  0    
+2 { 23 1 IlvTextField 223 128 46 23 2 0 "" } 96 "fcol" "TextField"  0    
+2 { 24 1 IlvTextField 223 70 46 23 2 0 "" } 96 "rows" "TextField"  0    
+2 { 25 1 IlvTextField 223 157 46 23 2 0 "" } 96 "thickness" "TextField"  0    
+2 { 26 0 IlvToggle 10 195 109 16 2 1 1 16 0 Y "Grid"  } 96 "grid" "Toggle"  0    
+2 { 27 0 IlvToggle 10 220 109 16 2 1 1 16 0 Y "Fit to Size"  } 96 "fito" "Toggle"  0    
+2 { 28 0 IlvToggle 10 245 109 16 2 1 1 16 0 Y "Background"  } 96 "bg" "Toggle"  0    
+2 { 29 0 IlvToggle 10 270 109 16 2 1 1 16 0 Y "Allow Edit"  } 96 "allowEdit" "Toggle"  0    
+2 { 30 0 IlvLabel 10 311 "Scroll bars" } 0  0    
+2 { 31 3 IlvButton 5 352 60 30 2 Y "Apply"  } 64 "Button"  132 "apply"  1  5  
+2 { 32 3 IlvButton 70 352 60 30 2 Y "Update"  } 64 "Button"  132 "update"  1  5  
+2 { 33 3 IlvButton 210 352 60 30 2 Y "Close"  } 64 "Button"  196 "cancel"  1  5 1  5  
+//Size 275 387

@@ -1,0 +1,3 @@
+Files: grapher.h grapher.cpp 
+This panel displays the nodes which are displayed by IliDbGrapher. 
+The data sources of the IliDbGrapher are global to be visible by this panel.

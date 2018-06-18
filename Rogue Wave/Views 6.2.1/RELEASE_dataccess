@@ -1,0 +1,885 @@
+		      Rogue Wave Views Data Access - Version 6.2
+
+			       RELEASE File
+
+This file describes the changes between this version of 
+Rogue Wave Views Data Access and previous versions. It explains the steps
+that need to be taken to port applications built with previous versions of
+Rogue Wave Views Data Access.
+
+#########################################################################
+#            Rogue Wave Views Data Access 6.2 known incompatibilities   #
+#            with version 6.1                                           #
+#########################################################################
+
+#########################################################################
+#            Rogue Wave Views Data Access 6.1 known incompatibilities   #
+#            with version 6.0                                           #
+#########################################################################
+
+#########################################################################
+#            Rogue Wave Views Data Access 6.0 known incompatibilities   #
+#            with version 5.8                                           #
+#########################################################################
+
+#########################################################################
+#            Rogue Wave Views Data Access 5.8 known incompatibilities   #
+#            with version 5.7                                           #
+#########################################################################
+
+#########################################################################
+#            Rogue Wave Views Data Access 5.7 known incompatibilities   #
+#            with version 5.6                                           #
+#########################################################################
+
+#########################################################################
+#            Rogue Wave Views Data Access 5.6 known incompatibilities   #
+#            with version 5.5                                           #
+#########################################################################
+
+#########################################################################
+#            Rogue Wave Views Data Access 5.5 known incompatibilities     #
+#            with version 5.4                                           #
+#########################################################################
+The ILDHOME environment variable replaces the DBLINK_HOME environment
+variable. The makefiles which link with a specific database and which 
+reference a file from <Data Access Directory>/lib/makefiles/<system> must
+be edited to replace as follow:
+ $(ILVDATACCESSHOME)/lib/makefiles/$(SYSTEM)/db2.mak
+must be replace by
+ $(ILDHOME)/examples/db2/$(SYSTEM)/dbms.mak
+
+ $(ILVDATACCESSHOME)/lib/makefiles/$(SYSTEM)/db29x.mak
+must be replace by
+ $(ILDHOME)/examples/db2/$(SYSTEM)/dbms.mak
+
+ $(ILVDATACCESSHOME)/lib/makefiles/$(SYSTEM)/oracle9.mak
+must be replace by
+ $(ILDHOME)/examples/oracle7/$(SYSTEM)/dbms.mak
+
+ $(ILVDATACCESSHOME)/lib/makefiles/$(SYSTEM)/oracle10.mak
+must be replace by
+ $(ILDHOME)/examples/oracle7/$(SYSTEM)/dbms.mak
+
+ $(ILVDATACCESSHOME)/lib/makefiles/$(SYSTEM)/oracle11.mak
+must be replace by
+ $(ILDHOME)/examples/oracle7/$(SYSTEM)/dbms.mak
+
+ $(ILVDATACCESSHOME)/lib/makefiles/$(SYSTEM)/sybase.mak
+must be replace by
+ $(ILDHOME)/examples/sybase/$(SYSTEM)/dbms.mak
+
+ $(ILVDATACCESSHOME)/lib/makefiles/$(SYSTEM)/informix.mak
+must be replace by
+ $(ILDHOME)/examples/informix/$(SYSTEM)/dbms.mak
+
+ $(ILVDATACCESSHOME)/lib/makefiles/$(SYSTEM)/informix9.mak
+must be replace by
+ $(ILDHOME)/examples/informix/$(SYSTEM)/dbms.mak
+
+ $(ILVDATACCESSHOME)/lib/makefiles/$(SYSTEM)/odbc.mak
+must be replace by
+ $(ILDHOME)/examples/odbc/$(SYSTEM)/dbms.mak
+
+ $(ILVDATACCESSHOME)/lib/makefiles/$(SYSTEM)/oledb.mak
+must be replace by
+ $(ILDHOME)/examples/oledb/$(SYSTEM)/dbms.mak
+
+ $(ILVDATACCESSHOME)/lib/makefiles/$(SYSTEM)/mssql.mak 
+must be replace by
+ $(ILDHOME)/examples/mssql/$(SYSTEM)/dbms.mak
+
+
+#########################################################################
+#            Rogue Wave Views Data Access 5.4 known incompatibilities     #
+#            with version 5.3                                           #
+#########################################################################
+Data Access 5.4 is source-compatible with Data Access 5.3 except for the 
+list of databases. One databases have been removed (Informix 7.2). 
+Binary compatibility is not granted; C++ code must be recompiled and 
+programs must be relinked.
+Please note that source compatibility concerns the documented API only.
+To use the database features, you need to set (or define) a new environment
+variable: ILDHOME. The value of ILDHOME is the same value of DBLINK_HOME.
+For example, if you have set DBLINK_HOME to /usr/ilog/dblinkXX, you need
+to set ILDHOME to /usr/ilog/dblinkXX.
+
+#########################################################################
+#            Rogue Wave Views Data Access 5.3 known incompatibilities     #
+#            with version 5.1                                           #
+#########################################################################
+Data Access 5.3 is source-compatible with Data Access 5.1 except for the 
+list of databases. Some databases have been removed (Open Ingres, Oracle 8.x)
+and some have been added (Oracle 10, Oracle 11, DB2 9.x, OleDb). 
+Binary compatibility is not granted; C++ code must be recompiled and 
+programs must be relinked.
+Please note that source compatibility concerns the documented API only.
+
+#########################################################################
+#            Rogue Wave Views Data Access 5.1 known incompatibilities     #
+#            with version 5.0                                           #
+#########################################################################
+None. Data Access 5.3 is source-compatible with Data Access 5.1. However, 
+binary compatibility is not granted; C++ code must be recompiled and 
+programs must be relinked.
+Please note that source compatibility concerns the documented API only.
+
+#########################################################################
+#            Rogue Wave Views Data Access 5.0 known incompatibilities     #
+#            with version 4.0                                           #
+#########################################################################
+None. Data Access 5.0 is source-compatible with Data Access 4.0. However, 
+binary compatibility is not granted; C++ code must be recompiled and 
+programs must be relinked.
+Please note that source compatibility concerns the documented API only.
+
+#########################################################################
+#            Rogue Wave Views Data Access 4.0 known incompatibilities     #
+#            with Rogue Wave Views InForm 3.0                                   #
+#########################################################################
+
+--------------------------------------------------------------------------
+The Charts
+
+  You can not create an application which uses the old charts (charts from
+  InForm 3.0) and the new charts (charts from Data Access 4.0). 
+
+  To use the old charts, you must install the Views 3.1 compatibility module.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+The prefix IlvSw
+
+  If you want to continue to use this prefix, you must use the Data Access
+  compatibility module. In this case, you can not use the new charts.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+The IliDbOldStringList or IlvSwDbOldStringList class
+
+  This gadget class has been removed. Views does not provide the basic
+  class. 
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+Rs6000
+
+  There is not dynamic module for compatibility module. You can not create
+  a studio with the old charts. To create, a studio with old charts, you
+  must create a dbStudio with the old charts. But in this case, you must
+  install the manager module.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+Alpha
+
+  The is not dynamic module for this platform. To create, a studio, you
+  must create a dbStudio. But in this case, you must install the manager
+  module.
+--------------------------------------------------------------------------
+
+
+#########################################################################
+#            Rogue Wave Views InForm 3.0 known incompatibilities                #
+#            with version 2.0                                           #
+#########################################################################
+
+--------------------------------------------------------------------------
+Prefix Change
+
+  The prefix of Rogue Wave Views InForm names has been changed from IlvSw to Ili.
+  This change affects both C++ and Rogue Wave Script programmers 
+  and it concerns the following items :
+
+	. Class names.
+	. Enumerated type and tag names.
+	. Global variable names.
+
+  For instance class IlvSwDataSource has been renamed to
+  IliDataSource.
+
+  There are two exceptions to this rule:
+
+       . Class IlvSwDbStringList has been renamed IliDbOldStringList
+	 and a new class named IliDbStringList has been created
+
+       . Class IlvSwDbTreeGadget has been renamed IliDbOldTreeGadget
+	 and a new class named IliDbTreeGadget has been created.
+
+
+  In order to ease the migration of user code, the previous
+  IlvSw prefix is still supported in version 3.0 as follows:
+
+	. In C++, if the ILI_COMPAT_PREFIX macro symbol,
+	  is defined then all Rogue Wave Views InForm header files will
+	  define a compatibilty macro for each documented name 
+	  which has changed. 
+
+	  Here is an example (from <inform/gadgets/datasrc.h>) :
+		#ifdef ILI_COMPAT_PREFIX
+		#  define IlvSwDataSource IliDataSource
+		#endif
+
+	. In Rogue Wave Script, all global variable names and all
+	  enumeration tag names are defined using both
+	  the previous name and the new name.
+
+	  For example, the following code extracts :
+
+		var ds = IlvSwRepository.EMP_DS;
+		tg.autoFit = 'IlvSwFitProportional';
+
+	  and
+		var ds = IliRepository.EMP_DS;
+		tg.autoFit = 'IliFitProportional';
+
+	  are both supported in version 3.0.
+	  
+	. In .ilv data files, the class name of a gadget
+	  is part of the gadget textual representation.
+	  Although new data files generated with Rogue Wave Views InForm 3.0 
+	  will contain the names prefixed with Ili, the
+	  Rogue Wave Views reader will be able to read previous data 
+	  files having class names prefixed by IlvSw.
+--------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------
+Windows Library Format
+
+  The following Windows library format is not provided
+  anymore:
+
+		stat_mdd   # Removed library format
+
+  Instead of using the stat_mdd format, it is now possible 
+  to use the following formats with Rogue Wave DB Link dynamic loader:
+
+		stat_md    # New default library format for msvc5
+		stat_mda   # New default library format for msvc6
+
+  This requires :
+    . Linking the application with the following library:
+                <DBLINK_HOME>/lib/<system>/stat_md/dblink.lib
+      or        <DBLINK_HOME>/lib/<system>/stat_mda/dblink.lib
+
+    . Adding the following directory to the PATH environment
+      variable:
+                <DBLINK_HOME>/lib/<system>/dll_md
+      or        <DBLINK_HOME>/lib/<system>/dll_mda
+--------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------
+Reference counting
+
+  The following classes are now reference counted :
+
+	IliSchema (and its subclasses: IliTable, etc)
+	IliDatatype
+
+  This means that the lock and unLock member functions
+  should be used like shown in the following code 
+  extracts.
+
+  This code extract shows how a table object is used :
+
+	IliTable* table = new IliMemoryTable(getDisplay());
+	table->lock();
+	...
+	table->unLock();
+
+  This code extract shows how a datatype is used :
+
+	IliDatatype* type = sqlTable->getColumnType(colno);
+	type->lock();
+	...
+	type->unLock();
+
+  Note that in releases of Rogue Wave Views InForm prior to version 3.0
+  these classes behaved differently :
+
+	. Class IliSchema (and its subclasses) had a public
+	  destructor and it was necessary to delete instances
+	  of these classes when they were not needed anymore.
+
+	  Now that class IliSchema has become reference counted,
+	  its destructor is protected so that instances
+	  cannot be explicitly deleted by application code.
+
+	. Class IliDatatype used to have a fixed set of instances
+	  created at initialisation time and deleted at exit time
+	  by the InForm library.
+	  
+	  Now that structured datatypes are supported, additional
+	  datatype instances can be created dynamically during program
+	  execution. Since class IliDatatype is now reference counted
+	  these additional datatypes are implicitly deleted
+	  as soon as their reference count reaches zero.
+--------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------
+Repository rules
+
+  The IliRepository rules by which a gadget can connect to a data-source
+  based on the data-source name and on the location of the gadget have 
+  changed. Beginning with InForm 3.0, data source lookup proceeds
+  along the following lines :
+
+	. Same holder. 
+	    If a data source is found in the same container as the gadget, 
+	    then it is chosen.
+
+	. Same scope class. 
+	    Otherwise, if a data source is found in another container that 
+	    belongs to the same scope class as the gadget's container, then 
+	    it is chosen.
+
+	    The scope class feature is new in InForm 3.0.
+
+	. Same container hierarchy. 
+	    Otherwise, if a data source is found in another container that 
+	    belongs to the same container hierarchy as the gadget's container, 
+	    then it is chosen.
+
+	    This behaviour is new in InForm 3.0.
+
+	. Global scope.
+	    Otherwise, if a global data-source is found, then it is chosen.
+
+	. Otherwise, the lookup fails and the gadget does not connect
+	  to any data source.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+IliString
+
+  Class IliString represents now the string length as an IlvUInt.
+  In prior releases, the string length was represented by an 
+  IlvUShort.
+
+  The following IliString member functions have had their prototype
+  changed :
+
+
+	IliString(const char* str, IlvUShort len);
+	is replaced by 
+	IliString(const char* str, IlvUInt len);
+
+	IlvUShort length() const;
+	is replaced by 
+	IlvUInt length() const;
+
+	IliString& append(const char* str, IlvUShort len);  
+	is replaced by 
+	IliString& append(const char* str, IlvUInt len);  
+--------------------------------------------------------------------------
+
+
+#########################################################################
+#            Rogue Wave Views InForm 2.0 known incompatibilities                #
+#            with version 1.1                                           #
+#########################################################################
+
+--------------------------------------------------------------------------
+Library formats.
+
+sparc_5_4.0
+sparc_4_4.0
+      The 'static' library format is not provided anymore with the 
+      following systems :
+
+	   sparc_5_4.0
+	   sparc_4_4.0
+
+      Instead, you will find the following formats :
+
+	   static_pic
+	   shared
+
+      Note that you can either create a symbolic link from 'static' 
+      to 'static_pic' in the library directory in order to be able
+      to reklink your applications without modifying makefiles.
+
+      Here is how this can be done :
+
+	   % cd $INFORM_HOME/lib/$SYSTEM
+	   % ln -s static_pic ./static 
+
+      Or you can replace references to 
+	   $INFORM_HOME/lib/$SYSTEM/static
+      by
+	   $INFORM_HOME/lib/$SYSTEM/static_pic
+      in your makefiles.
+  
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+The IlvSwSQLTable class can now support more than one updatable database 
+table.
+
+The following table summarizes the member functions that have changed
+in support of this feature. The left column indicates the new member 
+functions that deal with updatable tables. The right column indicates 
+member functions that do not exist anymore in InForm 2.0.
+
+    Rogue Wave Views InForm 2.0                   | IBM Rogue Wave Views InForm 1.1
+   ---------------------------------------------------------------------------
+    IlvSwSQLTable::isTableUpdatable       | IlvSwSQLTable::getUpdatableTable
+    IlvSwSQLTable::setTableUpdatable      | IlvSwSQLTable::setUpdatableTable
+   ---------------------------------------------------------------------------
+
+Any application code that uses one of the member functions on the right
+needs to be changed to se the member functions on the left.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+Rogue Wave Views InForm Studio initialisation procedure has changed : using the
+IlvSwDbStudio class is not required anymore.
+
+In fact it is strongly recommented to use the new scheme presented 
+below.
+
+Here is a simplified main() routine for an Rogue Wave Views InForm Studio based 
+program (see $INFORM_HOME/bin/dbstudio.cpp for all the details) :
+
+    #include <inform/dbstudio.h>
+    int main(int argc, char* argv[]) {
+       // --- Display ---
+       IlvDisplay* display = new IlvDisplay("dbstudio", "", argc, argv);
+
+       // --- Dbms ---
+       BindDbmsDrivers();
+
+       // ---- Create and initialize the editor ---
+       IlvStudio* editor = new IlvStudio(display, argc, argv);
+
+       InitScriptLanguage(editor);
+       new IlvSwInFormExtension(editor);
+
+       editor->initialize();
+       editor->parseArguments();
+       editor->mainLoop();
+
+       return 0;
+    }
+
+Note that an IlvStudio object in created instead of an IlvSwDbStudio
+object. In addition, the InForm extensions to Rogue Wave Views Studio are added
+by including the following line :
+
+       new IlvSwInFormExtension(editor);
+
+The inclusion of Rogue Wave Script support is done by the following
+line :
+       InitScriptLanguage(editor);
+Simply remove (or comment) this line if you don't want to include
+Rogue Wave Script support in the program.
+
+The inclusion of database support code in the program is done by 
+the following line :
+       BindDbmsDrivers();
+This is a call to the static function BindDbmsDrivers defined 
+in <inform/dbstudio.h>. You still need to define one of the 
+database specific macro symbols (ILDORACLE, ILDINFORMIX, ...) 
+when you compile the file.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+The following types have been renamed :
+
+	Old name                     New name
+	------------------------------------------------------
+	IlvSwDbmsTraceOptions        IlvSwSQLTraceOptions
+	IlvSwNewDbmsFunction         IlvSwSQLNewDbmsFunction
+	IlvSwQueryConnectFlag        IlvSwSQLQueryConnectFlag
+	------------------------------------------------------
+
+And the following enumeration tags have been renamed
+
+	Old name                     New name
+	------------------------------------------------------
+	IlvSwQueryPasswordOnly       IlvSwSQLQueryPasswordOnly
+	IlvSwQueryIfNeeded           IlvSwSQLQueryIfNeeded
+	IlvSwQueryAlways             IlvSwSQLQueryAlways
+	------------------------------------------------------
+
+Note that the old names are now defined as macros that resolve
+to the new names so that applications can be recompiled without
+modifications.
+
+In future versions of InForm, these old names will not be defined
+anymore.
+--------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------
+Rogue Wave Views InForm runtime resource files were moved from
+	$INFORM_HOME/data/
+to
+	$INFORM_HOME/data/inform/
+
+As a consequence, applications need to initialize messages 
+as follows :
+
+	IlvSwFormat::ReadMessageDatabase(getDisplay(), "inform/inform.dbm");
+	IlvSwFormat::ReadMessageDatabase(getDisplay(), "inform/date.dbm");
+
+instead of
+
+	IlvSwFormat::ReadMessageDatabase(getDisplay(), "inform.dbm");
+	IlvSwFormat::ReadMessageDatabase(getDisplay(), "date.dbm");
+--------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------
+DbLink errors messages are now located in file :
+	
+	$INFORM_HOME/data/inform/dblink.dbm
+
+Applications that access database systems should add
+the following code at initialisation time :
+
+	IlvSwFormat::ReadMessageDatabase(getDisplay(), "inform/dblink.dbm");
+	IlvSwSQLSession::ConnectToMessageDatabase(dpy);
+--------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------
+For INFORMIX Users. 
+
+The use of database table names and/or column names containing 
+non-lowercase letters is now supported if the DELIMIDENT variable 
+is defined (in the environment for Unix, in the registery for 
+Windows.)
+
+When DELIMIDENT is defined, Rogue Wave Views InForm will bracket any database
+object identifier containing uppercase letters or non standard
+characters with double quotes (") in order to force INFORMIX
+to take these identifiers as they are.
+
+Note that in previous releases of Rogue Wave Views InForm, the DELIMIDENT
+parameter was ineffective.
+
+As a consequence, if DELIMIDENT is defined in your environment
+you may need either to un-define it, or ensure that the case of 
+letter in database object identifiers is consistent between 
+the database schema and the Rogue Wave Views InForm data-sources of your
+application.
+
+For more information on the DELIMIDENT parameter and on how it
+can be defined, refer to your INFORMIX documentation.
+--------------------------------------------------------------------------
+
+
+#########################################################################
+#            Rogue Wave Views InForm 1.1 known incompatibilities                #
+#            with version 1.0                                           #
+#########################################################################
+
+--------------------------------------------------------------------------
+The InForm include files location was changed from :
+
+	$INFORM_HOME/inform
+
+to
+
+	$INFORM_HOME/include/inform
+
+This may affect any makefiles created for InForm 1.0
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+On Unix platforms, the library directory was changed from
+
+	$INFORM_HOME/lib/<system>
+
+to
+
+	$INFORM_HOME/lib/<system>/<format>
+
+This may affect any makefiles created for InForm 1.0
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+The following file is not anymore part of the InForm distribution:
+
+	data/dbstudio/dbstudio.opt.
+
+This file was previously used by InForm when a makefile was generated
+from Studio. It contained the names of the database libraries that
+need to be added to the makefile.
+
+This file has been replaced by the following files :
+
+	lib/makefiles/<system>/<dbms>.mak
+
+All InForm makefiles and the makefiles generated by Rogue Wave Views InForm Studio
+include one or more of the lib/makefiles/<system>/<dbms>.mak files. 
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+A new InForm datatype has been added :
+
+	IlvSwLongStringType
+
+This datatype is similar to the IlvSwStringType except that it is 
+dedicated for representing LONG VARCHAR database values.
+
+The exact type name for LONG VARCHAR depends on the database :
+
+	Dbms         Type
+	------------------
+	Oracle       LONG
+	Informix     TEXT
+	Sybase       TEXT
+	Ingres        --
+
+It is recommended that the definition of all SQL data-sources 
+which map to database tables containing LONG VARCHAR columns 
+be updated to use the IlvSwLongStringType InForm type.
+
+This can be done either by manually changing the type of the
+column in the SELECT-section of the SQL-data-source inspector
+or, better, by using the menu item :
+
+	Synchronize table with database...
+
+in the Query menu of the SQL-data-source inspector.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+The default direction for formatting string values is now
+'left to right'. The '!' symbol can be used in a format 
+specification to obtain a 'right to left' formatting.
+
+In version 1.0 the default was 'left to right' and using
+the '!' symbol changed that to 'left to right'.
+
+However, calling the following static member function :
+
+	IlvSwFormat::SetDefaultStringLtoR(IlvFalse);
+
+will revert to 1.0 behaviour.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+The IlvSwDbToggle class manages now the foreign table (ie mapping.)
+This contrasts with release 1.0 where the foreign table was
+ignored by the IlvSwDbToggle gadget.
+
+Starting with release 1.1, the IlvSwDbToggle gadget behaves as 
+follows when a foreign table (or foreign data-source) is specified :
+
+	Let TBL be the name of (primary) data-source
+	    COL    the name of the column.
+
+	Let FTBL be the name of the foreign data-source
+	    VAL     the name of the foreign value column
+	    DISP    the name of the foreign display column.
+
+	It is assumed that the DISP column contains integer
+	or boolean values : NULL, 0 and 1.
+
+	The VAL column may contain any values as long the datatype
+	of the VAL column matches the datatype of the COL column.
+
+        
+        Here is an example :
+
+		        FTBL
+		+------------------+
+		| VAL    |  DISP   |
+		+------------------+
+		| "OK"   |  1      |
+		| "NO"   |  0      |
+		| "?"    |  NULL   |
+		+------------------+
+
+	Then, when the db-toggle's state is set, its value becomes "OK".
+	When its state is cleared, it's value becomes "NO". And when its 
+	state is set to indeterminate, it's value becomes "?".
+	
+This may affect the behaviour of any db-toggles created with InForm 1.0
+and having a foreign table or data-source specified.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+The following member functions are now const.
+
+	void IlvSwDataSource::reportErrors(const IlvSwErrorList&) const
+	void IlvSwTableGadget::reportErrors(const IlvSwErrorList&) const
+
+In InForm 1.0 these members function where non-const.
+--------------------------------------------------------------------------
+
+
+
+#########################################################################
+#            Rogue Wave Views InForm 1.0 known incompatibilities                #
+#            with version 0.9.1                                         #
+#########################################################################
+--------------------------------------------------------------------------
+Error reporting has substantially changed in this release.
+Four new classes have been introduced that deal with error 
+messages :
+	IlvSwErrorMessage
+	IlvSwErrorSink
+	IlvSwErrorList
+	IlvSwErrorReporter
+
+and a new enumeration :
+	IlvSwErrorCodeTag
+
+In addition the following table summarizes the member functions that
+have changed. The left column indicates the new member functions that
+deal with error reporting. The right column indicates member functions
+that either do not exist in InForm 1.0 or that have had their
+prototype changed.
+
+    Rogue Wave Views InForm 1.0                   | IBM Rogue Wave Views InForm 0.9.1
+   ------------------------------------------------------------------------
+    IlvSwSQLSession::getErrorMessage      | IlvSwSQLSession::getErrorMessage
+    IlvSwSQLCursor::getErrorMessage       | IlvSwSQLCursor::getErrorMessage
+                                          |
+    IlvSwTableHook::raiseError            | IlvSwTableHook::error
+                                          |
+    IlvSwTable::addErrorSink              | 
+    IlvSwTable::removeErrorSink           | 
+                                          |
+    IlvSwTable::raiseError                | IlvSwTable::error
+                                          |
+                                          | IlvSwDataSource::errorRaised
+                                          | IlvSwDataSource::getErrorMessage
+    IlvSwDataSource::addErrorMessage      | IlvSwDataSource::setErrorMessage
+                                          | IlvSwDataSource::clearError
+    IlvSwDataSource::reportErrors         | IlvSwDataSource::reportLastError
+    IlvSwDataSource::getErrorReporter     | 
+    IlvSwDataSource::setErrorReporter     | 
+    IlvSwDataSource::addErrorSink         | 
+    IlvSwDataSource::removeErrorSink      | 
+                                          |
+                                          | IlvSwTableGadget::errorRaised
+                                          | IlvSwTableGadget::clearError
+    IlvSwTableGadget::addErrorMessage     | IlvSwTableGadget::setErrorMessage
+                                          | IlvSwTableGadget::getErrorMessage
+    IlvSwTableGadget::reportErrors        | 
+    IlvSwTableGadget::getErrorReporter    | IlvSwTableGadget::getErrorReporter
+    IlvSwTableGadget::setErrorReporter    | IlvSwTableGadget::setErrorReporter
+    IlvSwTableGadget::addErrorSink        | 
+    IlvSwTableGadget::removeErrorSink     | 
+                                          |
+    IlvSwSQLTableDef::makeCreateStatement | IlvSwSQLTableDef::makeCreateStatement
+   ------------------------------------------------------------------------
+
+Applications using member functions listed in the right column will
+need to be modified accordingly.
+--------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------
+The IlvSwFieldContainer class has been removed from the library. In
+previous versions of Rogue Wave Views InForm, it was necessary to derive panels
+from this class in order to be able to use global callbacks.
+
+All panels built with 'dbstudio' used the IlvSwFieldContainer class
+as a base class.
+
+With Rogue Wave Views InForm 1.0, global callbacks are active in all container
+and manager classes so the IlvSwFieldContainer class is not necessary
+anymore.
+
+A new class called IlvSwCallbackManager has been introduced. This class
+implements the global callback mechanisms. It has a member function
+to register new global callbacks.
+
+For the global callbacks to be operational, the file
+
+	inform/gcallbak.h
+
+must be included in at least one module of an application.
+
+To port panels built with 'dbstudio', it is necessary
+to inspect all panel classes in the application and set
+the 'Base Class' to 'IlvGadgetContainer', then generate 
+the panel classes again.
+
+For hand-written source files :
+
+  - replace all occurrences of 'IlvSwFieldContainer' by 'IlvGadgetContainer'
+  - remove all occurrences of 
+	#include <inform/fldcont.h>
+  - add 
+	#include <inform/gcallbak.h>
+    in at least one of the source files of the application (typically
+    the file containing the main() function)
+
+Note that an <inform/fldcont.h> is still provided with Rogue Wave Views InForm 1.0
+but its content has been changed to :
+
+	#include <inform/gcallbak.h>
+	#define IlvSwFieldContainer IlvGadgetContainer
+
+so that old applications can still be recompiled without modifications.
+
+In future versions of InForm, this file will be removed.
+
+For applications that define new global callbacks, it is necessary
+to replace occurrences of 
+
+	IlvSwFieldContainer::RegisterGlobalCallback("name", function); 
+
+by
+        #include <inform/gcallbak.h>
+	...
+        IlvSwGetCallbackManager().registerCallback(IlvGetSymbol("name"),
+	                                           function);
+
+Note that type             IlvSwGraphicParamCallback 
+has been replaced by type  IlvSwGlobalGraphicCallback in InForm 1.0 
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+The default value for the 'Concurrency Control' property of class 
+IlvSwSQLTable is now 'Off' (In release 0.9.1 it was 'On')
+--------------------------------------------------------------------------
+
+#########################################################################
+#            Rogue Wave Views InForm 0.9.1 known incompatibilities              #
+#            with previous version                                      #
+#########################################################################
+
+--------------------------------------------------------------------------
+A new library file needs to be linked into InForm applications
+The name of the library is :
+
+	Unix:     libdbinform.a
+	Windows:  DBINFORM.LIB
+--------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------
+The prototype of the member function IlvSwFormat::ReadMessageDatabase
+has changed.
+
+    Rogue Wave Views InForm 0.9:
+	IlvBoolean IlvSwFormat::ReadMessageDatabase(IlvDisplay*);
+
+    Rogue Wave Views InForm 0.9.1:
+	IlvBoolean IlvSwFormat::ReadMessageDatabase(IlvDisplay*,
+                                                    const char*)
+
+This member function is usually called during the initialization 
+of an application.
+
+In order to port an InForm 0.9 application to InForm 0.9.1, you need
+to replace occurrences of
+
+	IlvSwFormat::ReadMessageDatabase(getDisplay());
+
+by
+
+	IlvSwFormat::ReadMessageDatabase(getDisplay(), "inform.dbm");
+	IlvSwFormat::ReadMessageDatabase(getDisplay(), "date.dbm");
+--------------------------------------------------------------------------

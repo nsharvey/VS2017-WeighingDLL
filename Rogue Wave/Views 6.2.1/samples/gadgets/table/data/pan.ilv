@@ -1,0 +1,31 @@
+// Ilv Version: 5.3
+// File generated: Tue Aug 18 09:27:04 2009
+// Creator class: IlvGadgetManagerOutput
+FileName "pan"
+PathName "pan.ilv"
+Palettes 1
+"IlvStToolBar" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 2
+1 { 0 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvPanelObjectReference IlvPanelObjectReference  "917865457.0" ]
+0 IlvNotebook 5 5 475 335 F1 2 0 2  1
+" { IlvNotebookPageItem 1 2 4 "Tab 1"  } B ""
+0 0 8 5 2 0 0 0 0  } 32 "NoteBook"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvText 5 345 475 100 F133 2 Y N 1 1 1 1 0 2
+"Text"
+"multi lines"
+0 0 0 0 } 32 "Legend"
+0
+Size 485 450
+GeometryHandlers
+1 100 0 485 0 485 0
+2 3 0 0 5  475 0 475 0  0 0 5 0
+ 3 0 0 5  475 0 475 1  0 0 5 0
+1 100 0 450 0 450 0
+2 3 0 0 5  335 0 335 0  0 0 110 0
+ 3 345 0 345  0 0 100 1  0 0 5 0
+EOF

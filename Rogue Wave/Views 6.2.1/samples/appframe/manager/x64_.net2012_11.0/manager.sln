@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("975836B4-1D69-11E8-91B2-87BE772C9500") = "manager", "manager.vcxproj", "9757DC14-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

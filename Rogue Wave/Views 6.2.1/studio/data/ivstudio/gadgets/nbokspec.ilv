@@ -1,0 +1,86 @@
+// Ilv Version: 3.1
+// File generated: Fri Jun 18 16:50:09 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "nbokspec"
+PathName "C:\\Users\\Soyhy\\Dev\\Views\\studio\\data\\ivstudio\\inspectors\\nbokspec.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 18
+1 { 0 0 IlvOptionMenu 10 33 159 20 F1 2 4
+IlvMenuItem 65 2 4 "&top"  
+IlvMenuItem 1 2 4 "&right"  
+IlvMenuItem 1 2 4 "&bottom"  
+IlvMenuItem 1 2 4 "&left"   0  } 32 "padsposition"
+2048 "vertlabels"
+1 { 1 0 IlvMessageLabel 10 7 83 22 F8 0 262169 4 16 4 "&position"   } 0
+0
+1 { 2 0 IlvToggle 211 17 142 19 F1073741825 2 1 2 0 0 0 Y "&verticalLabels" } 32 "vertlabels"
+6152 "fliplabels" "padsposition"
+1 { 3 0 IlvToggle 211 46 143 19 F1 2 1 2 0 0 0 Y "&fliplabels" } 32 "fliplabels"
+6144 "NumberField_1" "vertlabels"
+1 { 4 0 IlvNumberField 286 103 52 22 F6 2 2 -1 0 "0" . , 6 0 0 100 } 32 "pagetop"
+6144 "pageright" "padh"
+1 { 5 0 IlvNumberField 286 138 52 22 F6 2 2 -1 0 "0" . , 6 0 0 100 } 32 "pageright"
+6144 "NumberField_5" "pagetop"
+1 { 6 0 IlvNumberField 105 138 52 22 F6 2 2 -1 0 "0" . , 6 0 0 100 } 32 "padh"
+6144 "pagetop" "padv"
+1 { 7 0 IlvNumberField 105 103 52 22 F6 2 2 -1 0 "0" . , 6 0 0 100 } 32 "padv"
+6144 "padh" "Toggle_2"
+1 { 8 0 IlvNumberField 286 208 52 22 F6 2 2 -1 0 "0" . , 6 0 0 100 } 32 "pagebottom"
+4096 "NumberField_5"
+1 { 9 0 IlvNumberField 286 173 52 22 F6 2 2 -1 0 "0" . , 6 0 0 100 } 32 "pageleft"
+6144 "NumberField_6" "NumberField_4"
+1 { 10 0 IlvFrame 177 72 177 169 F8 0 262169 4 16 4 "&pageMargins"   } 0
+0
+1 { 11 0 IlvFrame 9 72 159 105 F8 0 262169 4 16 4 "&padmargin"   } 0
+0
+1 { 12 0 IlvMessageLabel 196 103 63 22 F8 0 262169 4 16 4 "&top"   } 0
+0
+1 { 13 0 IlvMessageLabel 196 138 63 22 F8 0 262169 4 16 4 "&right"   } 0
+0
+1 { 14 0 IlvMessageLabel 196 176 63 22 F8 0 262169 4 16 4 "&left"   } 0
+0
+1 { 15 0 IlvMessageLabel 196 209 63 22 F8 0 262169 4 16 4 "&bottom"   } 0
+0
+1 { 16 0 IlvMessageLabel 24 103 70 22 F8 0 262169 4 16 4 "&vertical"   } 0
+0
+1 { 17 0 IlvMessageLabel 24 138 75 22 F8 0 262169 4 16 4 "&horizontal"   } 0
+0
+Size 365 248
+GeometryHandlers
+6 50 0 0 0 0 0
+ 50 0 0 0 0 0
+ 0 0 0 0 0 0
+ 0 0 0 0 0 0
+ 0 0 0 0 0 0
+ 0 0 365 0 365 0
+18 3 0 0 10  159 0 159 0  0 0 196 5
+ 3 0 0 9  159 0 159 11  0 0 197 5
+ 3 211 0 211  0 0 142 2  0 0 12 5
+ 3 211 0 211  0 0 143 3  0 0 11 5
+ 3 177 0 177  0 0 177 10  0 0 11 5
+ 3 286 0 286  0 0 52 4  0 0 27 5
+ 3 286 0 286  0 0 52 5  0 0 27 5
+ 3 286 0 286  0 0 52 9  0 0 27 5
+ 3 286 0 286  0 0 52 8  0 0 27 5
+ 3 196 0 196  0 0 63 12  0 0 106 5
+ 3 196 0 196  0 0 63 13  0 0 106 5
+ 3 196 0 196  0 0 63 14  0 0 106 5
+ 3 196 0 196  0 0 63 15  0 0 106 5
+ 3 0 0 10  0 0 83 1  272 0 272 5
+ 3 0 0 24  0 0 70 16  271 0 271 5
+ 3 0 0 24  0 0 75 17  266 0 266 5
+ 3 0 0 105  0 0 52 7  208 0 208 5
+ 3 0 0 105  0 0 52 6  208 0 208 5
+0
+0
+0
+0
+0
+3 100 0 0 0 0 0
+ 20 0 0 0 0 0
+ 0 0 262 0 262 0
+1 3 0 0 72  105 0 105 11  0 0 85 2
+0
+0
+EOF

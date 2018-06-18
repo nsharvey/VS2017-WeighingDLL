@@ -1,0 +1,21 @@
+var pairs =
+{
+"savebufferas":{"label":1}
+,"label":{"save":1}
+,"save":{"path":1,"icon":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"file":1}
+,"file":{"menu":1}
+,"menu":{"save":1}
+,"icon":{"toolbar":1}
+,"toolbar":{"category":1}
+,"category":{"buffer":1}
+,"buffer":{"action":1}
+,"action":{"saves":1}
+,"saves":{"current":1}
+,"current":{"panel":1}
+,"panel":{"new":1}
+,"new":{"file":1}
+}
+;Search.control.loadWordPairs(pairs);

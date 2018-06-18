@@ -1,0 +1,76 @@
+// Ilv Version: 5.2
+// File generated: Tue Mar 17 11:22:34 2009
+// Creator class: IlvGadgetManagerOutput
+FileName "sdopan"
+PathName "sdopan.ilv"
+Palettes 4
+"IlvStText" 2 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+"defaultGadget" 0 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+3 F "defaultBg" 14906 22873 41377 "bold" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+1 F 61680 51657 22873 33667 43176 60138 "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+IlvObjects 4
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToolBar 0 27 554 30 F295 2 V0 2 20
+{ IlvMenuItem 1111490562 2 4 1 0 "../../../../data/maps/move.png"  "panCB" "pan interactor" } 
+{ IlvMenuItem 1111490562 2 4 1 0 "../../../../data/maps/select.png"  "selectCB" "select interactor" } 
+{ IlvMenuItem 1107296258 2 4 1 0 "../../../../data/maps/unzoom.png"  "unzoomCB" "Unzoom" } 
+{ IlvMenuItem 1107296258 2 4 1 0 "../../../../data/maps/zoom.png"  "zoomCB" "Zoom" } 
+{ IlvMenuItem 1111490562 2 4 1 0 "../../../../data/maps/zoomin.png"  "zoomInCB" "Zoom interactor" } 
+{ IlvMenuItem 1107296258 2 4 1 0 "../../../../data/maps/fit.png"  "fitCB" "Fit to size" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 1107296258 2 4 1 0 "../../../../data/maps/save.png"  "saveCB" "save file" } 
+{ IlvMenuItem 1107296258 2 4 1 0 "../../../../data/maps/del.png"  "resetCB" "Reinitialize all" } 
+{ IlvMenuItem 1107296258 2 4 1 0 "../../../../data/maps/open.png"  "loadCB" "load map file" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 1107296258 2 4 1 0 "../../../../data/maps/connect.png"  "connectCB" "(re) connect to the Data Base" } 
+{ IlvMenuItem 1107296258 2 4 1 0 "../../../../data/maps/layercr.png"  "newCB" "create new SDO Layer" } 
+{ IlvMenuItem 1107296258 2 4 1 0 "../../../../data/maps/layerdel.png"  "eraseCB" "Drop SDO Layer" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 1107296258 2 4 1 0 "../../../../data/maps/sqlimport.png"  "dbSaveCB" "Write map file into SDO Layer" } 
+{ IlvMenuItem 1107296258 2 4 1 0 "../../../../data/maps/lod.png"  "lodCB" "Load SDO Layer on demand" } 
+{ IlvMenuItem 1107296258 2 4 1 0 "../../../../data/maps/sqlexport.png"  "dbLoadCB" "Read from SDO Layer" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 2097156 2 4 1 IlvReliefGauge 364 31 137 22 0 100 0 1 1 1  }  0 } 416 "toolbar"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "SCManager" ]
+2 IlvSCManagerRectangle 1 58 537 434 YY } 32 "scm"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvMessageLabel 405 34 50 16 F268435468 0 { IlvMessageItem 262169 4 16 4 "0 %"  }   } 32 "percent"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMenuBar 0 0 554 26 F295 2 V0 2 2
+{ IlvMenuItem 67108865 2 4 "&menu_file"  0 IlvPopupMenu 3 23 126 121 F166 2 V0 2 7
+{ IlvMenuItem 33554435 2 4 "Reset all" 1 0 "../../../../data/maps/del.png"  "resetCB" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 33554435 2 4 "Load a map file" 1 0 "../../../../data/maps/open.png"  "loadCB" } 
+{ IlvMenuItem 33554433 2 4 "Open a .ilv file"  "openCB" } 
+{ IlvMenuItem 33554435 2 4 "&menu_save" 1 0 "../../../../data/maps/save.png"  "saveCB" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 33554435 2 4 "&menu_exit" 1 0 "../../../../data/maps/exit.png"  "exitCB" }  22   } 
+{ IlvMenuItem 67108865 2 4 "^DataBase"  0 IlvPopupMenu 27 23 183 178 F166 2 V0 2 10
+{ IlvMenuItem 33554433 2 4 "Col Array Size"  "colarrayCB" } 
+{ IlvMenuItem 33554433 2 4 "Enable SQL traces"  "tracesCB" } 
+{ IlvMenuItem 33554435 2 4 "(re) connect" 1 0 "../../../../data/maps/connect.png"  "connectCB" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 33554435 2 4 "Load Layer from Data Base" 1 0 "../../../../data/maps/sqlexport.png"  "dbLoadCB" } 
+{ IlvMenuItem 33554435 2 4 "Load Layer on demand" 1 0 "../../../../data/maps/lod.png"  "lodCB" } 
+{ IlvMenuItem 33554435 2 4 "Save Layer in Data Base" 1 0 "../../../../data/maps/sqlimport.png"  "dbSaveCB" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 33554435 2 4 "Create SDO Layer" 1 0 "../../../../data/maps/layercr.png"  "newCB" } 
+{ IlvMenuItem 33554435 2 4 "Drop SDO Layer" 1 0 "../../../../data/maps/layerdel.png"  "eraseCB" }  22   }  0 } 32 "menubar"
+0
+Size 554 508
+Background "gray"
+GeometryHandlers
+1 100 0 554 0 554 0
+3 3 0 0 1  553 0 554 1  0 0 0 0
+ 3 0 0 0  554 0 554 0  0 0 0 0
+ 3 0 0 0  554 0 554 3  0 0 0 0
+1 100 0 508 0 508 0
+1 3 0 0 58  450 0 451 1  0 0 0 0
+EOF

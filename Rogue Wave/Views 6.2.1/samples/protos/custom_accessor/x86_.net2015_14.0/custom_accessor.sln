@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{EF8755B4-1D63-11E8-96A2-F2B8772C9500}") = "gppanel", "gppanel.vcxproj", "{EF87006E-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{EF95443A-1D63-11E8-96A2-F2B8772C9500}") = "gpstudio", "gpstudio.vcxproj", "{EF87006E-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Global
+EndGlobal

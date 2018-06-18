@@ -1,0 +1,59 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Gadgets - Samples: pickerbar</title>
+	</head>
+    <body>
+		<a name="guitarchords"><h1>Sample: <code>guitarchords</code></h1><h1 class="subtitle">Rogue Wave Views Guitar Chord picker Sample</h1></a>
+		<p>This sample shows how to create new gadget that
+	lets the user select a value among several values displayed in a
+	horizontal bar with rounded corners.</p>
+		<img src="data/guitarchords.png"/>
+		<p>This sample implements a new control called <em>Picker Bar</em>,
+	  displaying as a horizontal bar (potentially with rounded corners).
+	  The bar contains a set of value from which the user can select, by
+	  clicking on items, on using the keyboard arrow keys.</p>
+
+	<p>This new control class, called <code>PickerBar</code> extends
+	  the <code>IlvGadget</code> base class to implement all it needs
+	  to customize the drawing and interaction parts that are needed to
+	  provide the expected user experience.</p>
+
+	<p><code>PickerBar</code> is used natively in the sample application,
+	  and it is also sub-classed to further customized the display.</p>
+
+	<p>This gadget could be improved in many ways:
+	<ul>
+	  <li>Add Look &amp; Feel support;</li>
+	  <li>Allow a vertical orientation;</li>
+	  <li>Use two different callbacks: one would be called
+	    when the knob is dragged, the other one, when the mouse button
+	    is released...</li>
+	</ul>
+	</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGadget</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/fretboard.h"><code>include/fretboard.h</code></a></li>
+			<li><a href="include/guitarchords.h"><code>include/guitarchords.h</code></a></li>
+			<li><a href="include/pickerbar.h"><code>include/pickerbar.h</code></a></li>
+			<li><a href="include/tonepicker.h"><code>include/tonepicker.h</code></a></li>
+			<li><a href="src/fretboard.cpp"><code>src/fretboard.cpp</code></a></li>
+			<li><a href="src/guitarchords.cpp"><code>src/guitarchords.cpp</code></a></li>
+			<li><a href="src/pickerbar.cpp"><code>src/pickerbar.cpp</code></a></li>
+			<li><a href="src/tonepicker.cpp"><code>src/tonepicker.cpp</code></a></li>
+			<li><a href="src/main.cpp"><code>src/main.cpp</code></a></li>
+		</ul>

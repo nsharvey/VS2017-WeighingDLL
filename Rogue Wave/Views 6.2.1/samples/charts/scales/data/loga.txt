@@ -1,0 +1,5 @@
+Files: loga.cpp, loga.h
+This sample shows you how to use a logarithmic scale in a chart. The logarithmic scale is created by setting 
+a transformer (instance of IlvSimpleChartTransformer) on the associated coordinate. It is then added as the 
+second ordinate axis of the chart and positioned at the right side of the data display area. The first ordinate 
+does not use any coordinate transformation.

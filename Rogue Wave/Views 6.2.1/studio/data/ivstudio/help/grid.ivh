@@ -1,0 +1,4 @@
+help "grid" {
+    title "View panel";
+    description "Window properties";
+}

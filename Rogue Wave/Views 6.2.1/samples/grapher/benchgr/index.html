@@ -1,0 +1,40 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Grapher - Samples: benchgr</title>
+	</head>
+    <body>
+		<a name="benchgr"><h1>Sample: <code>benchgr</code></h1><h1 class="subtitle">Grapher Bench Sample</h1></a>
+		<p>This sample demonstrates the grapher library ability to handle huge graphs.</p>
+		<img src="data/benchgr.png"/>
+		<p>
+	This sample builds a huge graph made of concentric nodes.
+	You can specify the number of circles with an optional parameter to the <code>benchgr</code> 
+	program (the default value is 10). Each ring contains twice as much nodes
+	as the previous inner ring. Each ring node is connected to two nodes 
+	of the next outer ring. A subclass of <code>IlvLinkImage</code> is used for the 
+	links. This class computes the endpoints of the straight link so that it joins the 
+	centers of the nodes.
+	You can use the standard grapher accelerators to zoom or scroll. You can also select
+	and move nodes.
+	</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGrapher</code></li>
+			<li><code>IlvLinkImage</code></li>
+			<li><code>IlvGraphSelectInteractor</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/benchgr.cpp"><code>src/benchgr.cpp</code></a></li>
+		</ul>

@@ -1,0 +1,79 @@
+// Ilv Version: 3.1
+// File generated: Fri Sep 04 15:29:15 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "optdir"
+PathName "W:\\work.noiret\\studio\\data\\ivstudio\\optdir.ilv"
+Palettes 2
+1 "gray" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+IlvObjects 20
+1 { 0 0 IlvMessageLabel 8 5 225 22 F8 0 25 16 4 "&DefaultHeaderDir"   } 32 "DefaultHeaderDirLabel"
+0
+4 { 1 0 IlvFileSelectorField 238 5 209 23 F6 2 1 -1 0 "" } 96 "DefaultHeaderDir" "TextField"
+6144 "callb" "BaseClassHeaderDelete"
+4 { 2 0 IlvMessageLabel 7 59 228 22 F8 0 25 16 4 "&DefaultHeaderFileScope"   } 32 "DefaultHeaderFileScopeLabel"
+0
+4 { 3 0 IlvFileSelectorField 237 60 209 23 F6 2 1 -1 0 "" } 96 "DefaultHeaderFileScope" "TextField"
+6144 "callb" "label"
+4 { 4 0 IlvMessageLabel 7 86 227 22 F8 0 25 16 4 "&DefaultSrcDir"   } 32 "DefaultSrcDirLabel"
+0
+4 { 5 0 IlvFileSelectorField 237 88 209 23 F6 2 1 -1 0 "" } 96 "DefaultSrcDir" "TextField"
+10240 "callb"
+4 { 6 0 IlvMessageLabel 8 32 280 22 F8 0 25 16 4 "&HeaderFileExtension"   } 32 "HeaderFileExtensionLabel"
+0
+4 { 7 0 IlvTextField 293 33 154 22 F6 2 1 -1 0 "Text Field" } 32 "HeaderFileExtension"
+0
+4 { 8 0 IlvMessageLabel 7 113 279 22 F8 0 25 16 4 "&MakeFileExtension"   } 32 "MakeFileExtensionLabel"
+0
+4 { 9 0 IlvTextField 291 116 154 22 F6 2 1 -1 0 "Text Field" } 32 "MakeFileExtension"
+0
+4 { 10 0 IlvMessageLabel 7 140 278 22 F8 0 25 16 4 "&PanelHeaderFile"   } 32 "PanelHeaderFileLabel"
+0
+4 { 11 0 IlvTextField 291 143 154 22 F6 2 1 -1 0 "Text Field" } 32 "PanelHeaderFile"
+0
+4 { 12 1 IlvFrame 7 164 439 117 F8 0 25 16 4 "&BaseClassHeaders"   } 32 "BaseClassHeadersLabel"
+0
+4 { 13 1 IlvButton 18 251 72 23 F9 2 1 16 4 "&InsertList"   } 32 "BaseClassHeaderInsert"
+6144 "BaseClassHeaderDelete" "BaseClassHeaderFile"
+4 { 14 1 IlvButton 97 251 72 23 F9 2 1 16 4 "&DeleteList"   } 32 "BaseClassHeaderDelete"
+6144 "DefaultHeaderDir" "BaseClassHeaderInsert"
+4 { 15 0 IlvMessageLabel 185 181 254 22 F8 0 25 16 4 "&BaseClassName"   } 32 "BaseClassNameLabel"
+0
+4 { 16 0 IlvTextField 185 204 251 22 F6 2 1 -1 0 "Text Field" } 32 "BaseClassName"
+6144 "BaseClassHeaderFile" "BaseClassHeaderList"
+4 { 17 0 IlvMessageLabel 185 230 254 22 F8 0 25 16 4 "&BaseClassHeaderFile"   } 32 "BaseClassHeaderFileLabel"
+0
+4 { 18 0 IlvFileSelectorField 185 251 251 23 F6 2 1 -1 0 "" } 96 "BaseClassHeaderFile" "TextField"
+6144 "BaseClassHeaderInsert" "BaseClassName"
+4 { 19 0 IlvStringList 18 185 150 63 F129 2 A A 0 0 0 0 0 1 0 0 2 0 } 32 "BaseClassHeaderList"
+2048 "BaseClassName"
+Size 452 286
+GeometryHandlers
+2 100 0 177 0 177 0
+ 0 0 275 177 275 177
+10 3 0 0 8  225 0 225 0  0 0 -56 0
+ 3 0 0 8  280 0 280 6  0 0 -111 0
+ 3 0 0 7  228 0 228 2  0 -25 -58 0
+ 3 0 0 7  227 0 227 4  0 -29 -57 0
+ 3 0 0 7  279 0 279 8  0 -3 -109 0
+ 3 0 0 7  278 0 278 10  0 -3 -108 0
+ 3 0 0 97  72 0 72 14  0 0 8 0
+ 3 0 0 18  0 0 72 13  362 0 362 1
+ 3 0 0 18  150 0 150 19  0 0 9 0
+ 3 0 0 7  439 0 439 12  0 0 6 1
+10 3 0 0 61  209 0 209 1  0 0 5 1
+ 3 0 0 116  154 0 154 7  0 0 5 1
+ 3 0 0 60  209 0 209 3  0 0 6 1
+ 3 0 0 60  209 0 209 5  0 0 6 1
+ 3 0 0 114  154 0 154 9  0 0 7 1
+ 3 0 0 114  154 0 154 11  0 0 7 1
+ 3 0 0 8  254 0 254 15  0 0 13 1
+ 3 0 0 8  251 0 251 16  0 0 16 1
+ 3 0 0 8  251 0 251 18  0 0 16 1
+ 3 0 0 8  254 0 254 17  0 0 13 1
+1 100 0 286 0 286 0
+4 3 251 0 251  0 0 23 14  0 0 12 0
+ 3 0 0 185  63 0 63 19  0 0 38 0
+ 3 0 0 164  117 0 117 12  0 0 5 0
+ 3 251 0 251  0 0 23 13  0 0 12 0
+EOF

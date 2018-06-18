@@ -1,0 +1,23 @@
+var pairs =
+{
+"selectscgadgetcontainerrectanglemode":{"deprecated":1}
+,"deprecated":{"-use":1}
+,"-use":{"rectangular":1}
+,"rectangular":{"creation":1}
+,"creation":{"mode":1}
+,"mode":{"instead":1,"state":1,"selected":1}
+,"instead":{"label":1}
+,"label":{"scgadgetcontainerrectangle":1}
+,"scgadgetcontainerrectangle":{"category":1}
+,"category":{"mode":1}
+,"state":{"true":1}
+,"true":{"mode":1}
+,"selected":{"action":1}
+,"action":{"selects":1}
+,"selects":{"scrolled":1}
+,"scrolled":{"gadget":1}
+,"gadget":{"container":1}
+,"container":{"rectangle":1}
+,"rectangle":{"mode":1}
+}
+;Search.control.loadWordPairs(pairs);

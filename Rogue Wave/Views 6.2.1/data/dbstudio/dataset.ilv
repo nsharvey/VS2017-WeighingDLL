@@ -1,0 +1,24 @@
+// Ilv Version: 4.0
+// File generated: Fri Jul 07 10:21:34 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "dataset"
+PathName "dataset.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0
+IlvObjects 2
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 5 28 150 20 F6 2 1 -1 0 "" } 32 "SeriesId"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 5 150 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&insp_SeriesId"  }   } 32 "SeriesIdLabel"
+0
+Size 160 53
+GeometryHandlers
+1 100 0 160 0 160 0
+2 3 0 0 5  150 0 150 0  0 0 5 0
+ 3 0 0 5  150 0 150 1  0 0 5 0
+1 100 0 53 0 53 0
+0
+EOF

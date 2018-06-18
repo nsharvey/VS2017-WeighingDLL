@@ -1,0 +1,57 @@
+// Ilv Version: 5.7
+// File generated: Wed Oct 02 10:20:32 2013
+// Creator class: IlvGadgetManagerOutput
+FileName "mbar"
+PathName "D:\\Tools\\Views57\\samples\\gadgets\\codeedit\\data\\mbar.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 1
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToolBar 2 4 172 25 F423 2 V0 2 5
+{ IlvMenuItem 67125249 2 4 "MenuFile" "^File"  0 IlvPopupMenu 35 75 141 152 F166 2 V0 2 8
+{ IlvMenuItem 33554435 2 4 "^New" 1 0 "icon/new.png"  "newCB" } 
+{ IlvMenuItem 436207619 2 4 "&menu_open..." 1 0 "icon/open.png"  "openCB" "Ctrl+O" 15 } 
+{ IlvMenuItem 1 2 4 "^Close"  } 
+{ IlvMenuItem 436207619 2 4 "&menu_save" 1 0 "icons/save.png"  "saveCB" "Ctrl+S" 19 } 
+{ IlvMenuItem 33554433 2 4 "&menu_saveAs..."  "saveAsCB" } 
+{ IlvMenuItem 33554435 2 4 "Save A^ll" 1 0 "icons/saveall.png"  "saveAllCB" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 33554433 2 4 "&menu_exit"  "exitCB" }  22   } 
+{ IlvMenuItem 67125249 2 4 "MenuEdit" "^Edit"  0 IlvPopupMenu 184 102 168 386 F166 2 V0 2 24
+{ IlvMenuItem 436207619 2 4 "^Undo" 1 0 "icons/undo.png"  "undoCB" "Ctrl+Z" 26 } 
+{ IlvMenuItem 436207619 2 4 "^Redo" 1 0 "icons/redo.png"  "redoCB" "Ctrl+Y" 25 } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 436207619 2 4 "Cu^t" 1 0 "icon/cut.png"  "cutCB" "Ctrl+X" 24 } 
+{ IlvMenuItem 436207619 2 4 "^Copy" 1 0 "icon/copy.png"  "copyCB" "Ctrl+C" 3 } 
+{ IlvMenuItem 436207619 2 4 "^Paste" 1 0 "icon/paste.png"  "pasteCB" "Ctrl+V" 22 } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 436207617 2 4 "Select A^ll"  "selectAllCB" "Ctrl+A" 1 } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 436207617 2 4 "^Find"  "findCB" "Ctrl+F" 6 } 
+{ IlvMenuItem 436207617 2 4 "Find ^Next"  "findNextCB" "F3" 515 } 
+{ IlvMenuItem 973078529 2 4 "Find Pre^vious"  "findPreviousCB" "Shift+F3" 515 256 } 
+{ IlvMenuItem 436207617 2 4 "R^eplace"  "replaceCB" "Ctrl+H" 8 } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 436207617 2 4 "^Go To..."  "gotoCB" "Ctrl+G" 7 } 
+{ IlvMenuItem 134217729 2 4 "Recenter"  "Ctrl+L" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 134217731 2 4 "^Indent" 1 0 "icons/indent.png"  "ESC" } 
+{ IlvMenuItem 134217731 2 4 "Outdent" 1 0 "icons/outdent.png"  "Shift+ESC" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 1 2 4 "Comment"  } 
+{ IlvMenuItem 1 2 4 "Uncomment"  } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 134217731 2 4 "Complete ^Word" 1 0 "icons/complete.png"  "Ctrl+T" }  23   } 
+{ IlvMenuItem 67125249 2 4 "MenuTool" "^Tool"  0 IlvPopupMenu 0 0 93 27 F166 2 V0 2 1
+{ IlvMenuItem 33554433 2 4 "^Options..."  "customizeCB" }  16   } 
+{ IlvMenuItem 67125249 2 4 "MenuWindow" "^Window"  0 IlvPopupMenu 113 84 144 122 F166 2 V0 2 3
+{ IlvMenuItem 33554435 2 4 "^Cascade" 1 0 "icons/cascade.png"  "cascadeCB" } 
+{ IlvMenuItem 3 2 4 "Tile ^Horizontally" 1 0 "icons/tileh.png"  } 
+{ IlvMenuItem 3 2 4 "Tile ^Vertically" 1 0 "icons/tilev.png"  }  22   } 
+{ IlvMenuItem 67125249 2 4 "MenuHelp" "^Help"  0 IlvPopupMenu 0 0 85 27 F166 2 V0 2 1
+{ IlvMenuItem 1 2 4 "^About..."  }  16   }  0 } 32 "menuBar"
+0
+Size 403 300
+Background "gray"
+EOF

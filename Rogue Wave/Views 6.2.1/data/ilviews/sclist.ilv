@@ -1,0 +1,155 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:52:37 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "sclist"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\sclist.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 23
+1 { 0 P 2
+[ IlvAttachments _IlvAttachments 1008  1 4 1 6 1 160 1 182 2 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 4 6 220 180 F268435468 0 { IlvMessageItem 262169 4 16 4 "&items"  }   } 32 "Frame_1"
+0
+1 { 1 P 2
+[ IlvAttachments _IlvAttachments 736  1 6 1 6 1 182 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 236 6 142 180 F268435468 0 { IlvMessageItem 262169 4 16 4 "&scrollbars"  }   } 0
+0
+2 { 2 P 2
+[ IlvAttachments _IlvAttachments 16  1 15 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 15 116 85 22 F13 2 { IlvMessageItem 262145 4 16 4 "&add"  }   } 544 "Button_4"
+1
+1 "__ilvCallback" "add"
+6144 "text" "Button_3"
+2 { 3 P 2
+[ IlvAttachments _IlvAttachments 16  1 15 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 15 88 85 22 F13 2 { IlvMessageItem 262145 4 16 4 "&replace"  }   } 544 "Button_3"
+1
+1 "__ilvCallback" "replace"
+6144 "Button_4" "Button_2"
+2 { 4 P 2
+[ IlvAttachments _IlvAttachments 144  1 6 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 6 340 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "Button_5"
+1
+1 "__ilvCallback" "apply"
+4096 "hpos"
+2 { 5 P 2
+[ IlvAttachments _IlvAttachments 192  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 319 340 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+2 { 6 P 2
+[ IlvAttachments _IlvAttachments 16  1 15 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 15 60 85 22 F13 2 { IlvMessageItem 262145 4 16 4 "&remove"  }   } 544 "Button_2"
+1
+1 "__ilvCallback" "remove"
+6144 "Button_3" "Button_1"
+2 { 7 P 2
+[ IlvAttachments _IlvAttachments 464  1 15 1 168 1 194 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 15 152 201 22 F6 2 1 -1 0 "" } 544 "text"
+1
+1 "__ilvCallback" "add"
+6144 "vert" "Button_4"
+2 { 8 P 2
+[ IlvAttachments _IlvAttachments 144  1 251 1 135 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 251 217 112 16 F1073741825 2 1 2 0 0 0 Y "&exclusive" } 544 "excl"
+1
+1 "__ilvCallback" "resetModes"
+6144 "list2" "selectcb"
+2 { 9 P 2
+[ IlvAttachments _IlvAttachments 144  1 24 1 105 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 24 241 151 22 F6 2 1 -1 0 "" } 32 "selectcb"
+2048 "excl"
+2 { 10 P 2
+[ IlvAttachments _IlvAttachments 16  1 15 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 15 32 85 22 F13 2 { IlvMessageItem 262145 4 16 4 "&clean"  }   } 544 "Button_1"
+1
+1 "__ilvCallback" "clean"
+6144 "Button_2" "list2"
+2 { 11 P 2
+[ IlvAttachments _IlvAttachments 64  1 18 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvComboBox 252 46 114 21 F39 2 1 -1 0 "&show" 3
+{ IlvMenuItem 1 2 4 "&show"  } 
+{ IlvMenuItem 1 2 4 "&hide"  } 
+{ IlvMenuItem 1 2 4 "&asNeeded"  }  } 32 "vert"
+6144 "vpos" "text"
+2 { 12 P 2
+[ IlvAttachments _IlvAttachments 64  1 18 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvComboBox 252 125 114 21 F39 2 1 -1 0 "&show" 3
+{ IlvMenuItem 1 2 4 "&show"  } 
+{ IlvMenuItem 1 2 4 "&hide"  } 
+{ IlvMenuItem 1 2 4 "&asNeeded"  }  } 32 "horiz"
+6144 "hpos" "vpos"
+2 { 13 P 2
+[ IlvAttachments _IlvAttachments 64  1 54 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 251 99 79 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&horizontal"  }   } 0
+0
+2 { 14 P 2
+[ IlvAttachments _IlvAttachments 64  1 67 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 248 24 69 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&vertical"  }   } 0
+0
+2 { 15 P 2
+[ IlvAttachments _IlvAttachments 64  1 18 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 251 153 115 16 F1 2 1 2 0 0 0 Y "&top" } 32 "hpos"
+6144 "Button_5" "horiz"
+2 { 16 P 2
+[ IlvAttachments _IlvAttachments 64  1 25 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 251 74 108 16 F1 2 1 2 0 0 0 Y "&left" } 32 "vpos"
+6144 "horiz" "vert"
+2 { 17 P 2
+[ IlvAttachments _IlvAttachments 1008  1 110 1 31 1 167 1 228 2 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 110 31 107 109 F131 2 A A 0 0 0 0 0 1 0 0 V0 2 1
+{ IlvGadgetItem 1 2 4 "item"  }  } 544 "list"
+2
+1 "__ilvCallback" "select"
+1 "__ilvSCallback" "select"
+0
+3 { 18 P 1
+[ IlvAttachments _IlvAttachments 464  1 0 1 0 1 35 2 ]
+0 IlvReliefLine 0 332 384 332 1 } 32 "line"
+0
+3 { 19 P 2
+[ IlvAttachments _IlvAttachments 144  1 17 1 125 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 17 217 119 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&selectCallback"  }   } 0
+0
+3 { 20 P 2
+[ IlvAttachments _IlvAttachments 144  1 24 1 53 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvScrolledComboBox 24 293 151 22 F807 2 1 -1 0 "" 0 3 0 } 32 "selectionMode"
+0
+3 { 21 P 2
+[ IlvAttachments _IlvAttachments 464  1 4 1 7 1 41 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 4 193 373 134 F268435468 0 { IlvMessageItem 262169 4 16 4 "&selection"  }   } 0
+0
+3 { 22 P 2
+[ IlvAttachments _IlvAttachments 144  1 16 1 78 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 16 268 151 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&listSelectionMode"  }   } 0
+0
+Size 384 368
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

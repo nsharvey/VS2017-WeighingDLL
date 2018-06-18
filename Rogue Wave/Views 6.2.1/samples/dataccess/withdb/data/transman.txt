@@ -1,0 +1,9 @@
+This panel shows how to use a transaction manager
+  - The Start button defines the transaction manager, starts the local 
+transaction and selects all the rows. You need to select a department to be
+able to change, add or delete a row in the table gadget
+  - The Cancel button cancels changes since the last Accept
+  - The Accept button updates the database with changes since the last Cancel
+  - The Stop button ends the local transaction
+  - The message label shows the number of events recorded in the transaction 
+manager

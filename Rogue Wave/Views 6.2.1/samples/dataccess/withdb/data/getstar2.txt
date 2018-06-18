@@ -1,0 +1,2 @@
+Files: getstart.cpp
+Note: Shows the panel "manager" of the "Getting started manual".

@@ -1,0 +1,4 @@
+Files: xml.cpp, xml.h
+This sample shows you how to create a simple chart using the IlvXMLChartData class. 
+You can load a new dataset (either dataset_sample.xml or dataset_sample2.xml) and 
+try various kind of displayers.

@@ -1,0 +1,15 @@
+// Ilv Version: 4
+// File generated: Mon Aug  7 09:00:17 2000
+// Creator class: IliSchemaView
+0 0 "null" "/" 6
+2 0 4 3 
+     10 "DEPTNO" Int 1 -1 2 -1 0 
+     8 "NAME" String 2 25 1 -1 0 
+     8 "MANAGER" String 3 25 1 -1 0 
+     12 0 "I_DEPT" 0 0 15 15 130 75 1 0 6 5 
+     10 "EMPNO" Int 1 -1 2 -1 0 
+     8 "NAME" String 2 25 1 -1 0 
+     8 "STATUS" Int 3 -1 2 -1 0 
+     8 "DEPTNO" Int 4 -1 2 -1 0 
+     9 "SALARY" Double 5 -1 2 -1 0 
+     12 0 "I_EMP" 0 0 160 15 130 122 2 

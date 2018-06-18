@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("7C9A9986-1D62-11E8-AB12-0BC9772C9500") = "draw", "draw.vcxproj", "7C9A4E36-1D62-11E8-AB12-0BC9772C9500"
+EndProject
+
+Global
+EndGlobal
+

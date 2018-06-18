@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Bitmaps</title><link rel="Prev" href="graphicformats.05.2.html" title="Previous" /><link rel="Next" href="graphicformats.05.4.html" title="Next" /><link rel="StyleSheet" href="css/graphicformats.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/graphicformats_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/UserManuals/graphicformats.05.3.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pN0XdFfMrtOxZ1LPJdUQtxsg" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/UserManuals/graphicformats.05.3.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/foundusrfrontcover.html#wwconnect_header">Foundation</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../UserManuals/graphicformats.05.1.html#wwconnect_header">Graphic Formats</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Bitmaps</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww923396" class="Heading1"><span></span>Bitmaps</div><div id="ww934648" class="Body">Rogue Wave®&nbsp;Views supports bitmap (also called raster) images. Bitmaps have the following characteristics.</div><div id="ww925305" class="Heading3"><span></span>Color Bitmaps</div><div id="ww925306" class="Body">If your display system has no true-color capabilities, each pixel value represents a color index. To find the exact color that will be displayed for this pixel, the system lookup table is consulted. If your display system has true-color capabilities, each pixel of the bitmap stores its complete color information.</div><div id="ww924447" class="Heading3"><span></span>Black-and-White Bitmaps</div><div id="ww924449" class="Body">Images can also be monochrome. In this case, there is only one bit per pixel. The drawing of these one-bit-deep bitmaps takes place by setting the “<span class="code">1</span>” pixels to the foreground color of the palette given to the <span class="ClassName"><a href="../RefMan/refcppfoundation/classIlvDisplay.html">IlvDisplay</a></span> instance and the “<span class="code">0</span>” pixels to the background color of the palette. When displayed as a transparent bitmap, the “<span class="code">0</span>” pixels leave the destination port unchanged.</div><div id="ww924462" class="Heading3"><span></span>Transparent Bitmaps and Masks</div><div id="ww923411" class="Body">A colored bitmap can be associated with a mask.  A mask is a monochrome bitmap that indicates which of the pixels in the actual source image will be displayed. The pixels in the bitmap that correspond to “<span class="code">0</span>” bits in the mask are not displayed, achieving the effect of a transparent bitmap. A transparent bitmap is a color bitmap that has transparent parts. </div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

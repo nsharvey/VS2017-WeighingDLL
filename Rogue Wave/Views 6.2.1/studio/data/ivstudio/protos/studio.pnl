@@ -1,0 +1,27 @@
+panel "MainPanel" {
+    menuItem - : "&mfile", "&new";
+    menuItem NewPrototypeEditionBuffer : "&mfile", "&new";
+    menuItem NewProtoLibrary : "&mfile", "&new";
+    
+    menuItem SaveProtoLibraryAs :  "&mfile" -before Quit;
+    menuItem CloseProtoLibrary :  "&mfile" -before Quit;
+    menuItem - :  "&mfile" -before Quit;
+
+    menuItem ToggleTimers : "&mview" -before LockInspector;
+
+//  menuItem EditPrototype : "&mdraw" -before SetLayer;
+    menuItem DeletePrototype : "&mdraw" -after EditGroup;
+
+    menuItem ShowGroupInspector : "&mtools" -before ShowPalettePanel;
+    menuItem - : "&mtools" -before ShowPalettePanel;
+    menuItem GroupIntoGroup : "&mdraw", "&mgrouptype";
+}
+
+panel "GroupInspector" {
+    title "&IlvMsgStProto222";
+    x 240;
+    y 160;
+    width 400;
+    height 550;
+    helpFile "proinsp.ivh";
+}

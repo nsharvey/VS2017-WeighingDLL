@@ -1,0 +1,49 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Foundations - Samples: table</title>
+	</head>
+    <body>
+		<a name="prime"><h1>Sample: <code>prime</code></h1><h1 class="subtitle">Extending the IlvTable Class</h1></a>
+		<p>An example of how to extend an <code>IlvTable</code> that can
+	be used in a specialized graphic object.</p>
+		<img src="data/prime.png"/>
+		<p>This sample displays a grid where each filled square indicates a 
+	prime number. The top left cell corresponds to the value
+	<code>1</code>.<br/>
+	There are more visible cells if you enlarge the window.<br/>
+	The grid is an instance of a new graphic class,
+	called <code>PrimeTable</code>, inheriting from
+	<code>IlvFilledRectangle</code>. It uses a subclass of 
+	<code>IlvTable</code> that implements its
+	<code>drawItem</code> member function by testing whether
+	the indicated cell corresponds to a prime number.<br/>
+	If you click with the left button on a cell, the value of the cell is
+	displayed in a small pop-up menu. This is achieved by a
+	specialized <code>IlvInteractor</code> set on the
+	<code>PrimeTable</code> instance.
+      <p>For demonstration purposes, this sample code uses portable GUI 
+      elements from the Gadgets package of the Rogue Wave Views suite. 
+      Feel free to use these elements in your application if you have 
+      a license for Rogue Wave Views or for Rogue Wave Views Controls. 
+      This information applies to the classes located in the library <code>ilvgadgt</code>, 
+      listed in the README file that you can find in the installation directory.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvTable</code></li>
+			<li><code>IlvInteractor</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/prime.cpp"><code>src/prime.cpp</code></a></li>
+		</ul>

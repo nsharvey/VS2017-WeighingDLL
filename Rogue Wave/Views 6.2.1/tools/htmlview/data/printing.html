@@ -1,0 +1,73 @@
+<html>
+    <head>
+	<title>Rogue Wave Views - Samples: printing</title>
+	</head>
+    <body>
+		<hr><a name="photops"><h1>Sample: <code>photops</code></h1><hr><h2 class="subtitle">Basic PostScript Printing</h2></a>
+		<p>An example of how to print using Postscript printing.</p>
+		<img src="png/photops.png"/>
+		<p>This sample prints a bitmap on an A6 paper in landscape mode using an <code>IlvPSPrinter</code> without displaying any printing dialog box.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvPSPrinter</code></li>
+			<li><code>IlvPrintableDocument</code></li>
+			<li><code>IlvPrintableGraphic</code></li>
+		</ul>
+		<hr><a name="photpsdlg"><h1>Sample: <code>photpsdlg</code></h1><hr><h2 class="subtitle">Postscript Printing using a Printing Setting Dialog Box</h2></a>
+		<p>An example of how to print using an <code>IlvPSPrinter</code> and an <code>IlvPostscripPrinterDialog</code> instance.</p>
+		<img src="png/photpsdlg.png"/>
+		<p>This sample prints a bitmap on an A6 paper in landscape mode using an <code>IlvPSPrinter</code> with an <code>IlvPostscripPrinterDialog</code> to allow the user to change the printing settings.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvPSPrinter</code></li>
+			<li><code>IlvPostscripPrinterDialog</code></li>
+			<li><code>IlvPrintableDocument</code></li>
+			<li><code>IlvPrintableGraphic</code></li>
+		</ul>
+		<hr><a name="photpspr"><h1>Sample: <code>photpspr</code></h1><hr><h2 class="subtitle">Postscript Printing using a Printing Preview Displayer</h2></a>
+		<p>An example of how to print using Postscript printing with a printing preview displayer.</p>
+		<img src="png/photpspr.png"/>
+		<p>This sample prints a bitmap on an A6 paper in landscape mode using an <code>IlvPSPrinter</code> and an <code>IlvPrinterPreviewDialog</code>.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvPSPrinter</code></li>
+			<li><code>IlvPrinterPreviewDialog</code></li>
+			<li><code>IlvPrintableDocument</code></li>
+			<li><code>IlvPrintableGraphic</code></li>
+		</ul>
+		<hr><a name="photowin"><h1>Sample: <code>photowin</code></h1><hr><h2 class="subtitle">Basic Windows Printing</h2></a>
+		<p>An example of how to print using a Windows printer.</p>
+		<img src="png/photowin.png"/>
+		<p>This sample prints a bitmap on an A6 paper in landscape mode using an IlvWindowsPrinter. During this print operation, an OS-dependent printing dialog box is displayed.<br/><b>This sample only runs under Windows.</b></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvWindowsPrinter</code></li>
+			<li><code>IlvPrintableDocument</code></li>
+			<li><code>IlvPrintableGraphic</code></li>
+		</ul>
+		<hr><a name="phowindc"><h1>Sample: <code>phowindc</code></h1><hr><h2 class="subtitle">Custom Windows Printing without any Dialog Box</h2></a>
+		<p>An example of how to print using <code>IlvWindowsPrinter</code> and an <code>IlvWindowsPrinterDCFactory</code> subclass.</p>
+		<img src="png/phowindc.png"/>
+		<p>This sample prints a bitmap on an A6 paper in landscape mode using an <code>IlvWindowsPrinter</code> without displaying any printing dialog box.<br/>To achieve that, a subclass of <code>IlvWindowsPrinterDCFactory</code> has been implemented. This subclass sets the paper size to A6, and the orientation to Landscape. The usage of this subclass gives the possibility to print with these non default settings without any dialog box.<br/><b>This sample only runs under Windows.</b></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvWindowsPrinter</code></li>
+			<li><code>IlvWindowsPrinterDCFactory</code></li>
+			<li><code>IlvPrintableDocument</code></li>
+			<li><code>IlvPrintableGraphic</code></li>
+		</ul>
+		<hr><a name="phowinpr"><h1>Sample: <code>phowinpr</code></h1><hr><h2 class="subtitle">Windows Printing using a Printing Preview Displayer</h2></a>
+		<p>An example of how to print using <code>IlvWindowsPrinter</code> printing with a printing preview displayer.</p>
+		<img src="png/phowinpr.png"/>
+		<p>This sample prints a bitmap on an A6 paper in landscape mode using an <code>IlvWindowsPrinter</code> and an <code>IlvPrinterPreviewDialog</code>.<br/>The IlvWindowsPrinterDCDialogFactory is also used in this sample to allow the user to update the printing settings while the printer preview is displayed.
+		<code>IlvWindowsPrinterDCDialogFactory</code> is a subclass of <code>IlvWindowsPrinterDCFactory</code>.<br/><b>This sample only runs under Windows.</b></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvWindowsPrinter</code></li>
+			<li><code>IlvWindowsPrinterDCDialogFactory</code></li>
+			<li><code>IlvPrinterPreviewDialog</code></li>
+			<li><code>IlvPrintableDocument</code></li>
+			<li><code>IlvPrintableGraphic</code></li>
+		</ul>
+	</body>
+</html>

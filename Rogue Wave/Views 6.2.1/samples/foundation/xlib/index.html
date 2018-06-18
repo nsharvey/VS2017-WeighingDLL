@@ -1,0 +1,121 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Foundations - Samples: xlib</title>
+	</head>
+    <body>
+		<a name="usewin"><h1>Sample: <code>usewin</code></h1><h1 class="subtitle">Using Rogue Wave Views in an Extern X Window</h1></a>
+		<p>This sample demonstrates how to take control over any existing 
+	X Window.</p>
+		<img src="data/usewin.png"/>
+		<p>
+	When launching this application, you can provide, as the
+	unique parameter, the identifier of the X Window you want
+	Rogue Wave Views to take control of. If no parameter is specified,
+	the default window used is the root window.<br/>
+	You can use the X client <code>xwininfo</code> to find out
+	what window ID is used by a given application running on your
+	system: run <code>xwininfo</code>, then click in the
+	destination window. <code>xwininfo</code> prints out the
+	window ID of the window, that you can simply provide to
+	<code>usewin</code>, like in:<br/>
+	<center><code>usewin 0x440023c</code></center><br/>
+	To exit the application, press the 'Q' key.
+	</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvXDisplayConfig</code></li>
+			<li><code>IlvContainer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/usewin.cpp"><code>src/usewin.cpp</code></a></li>
+		</ul>
+		<a name="ilvmotif"><h1>Sample: <code>ilvmotif</code></h1><h1 class="subtitle">Using Rogue Wave Views in an Extern Motif Gadget</h1></a>
+		<p>This sample demonstrates how to take control over any existing 
+	<i>Motif</i> gadget.</p>
+		<img src="data/ilvmotif.png"/>
+		<p>
+	Although Rogue Wave Views has a pure <i>Motif</i> port that makes the
+	integration easier, there are situations where you may want to 
+	use the pure <code>Xlib</code> port of Rogue Wave Views (the one that uses the
+	<code>xviews</code> library) in a gadget.<br/>
+	Because a gadget is based on an actual X Window, the
+	integration is also possible.<br/>
+	The principle is to add an <code>Xt</code>event handler on the gadget you
+	want to take control on. This event handler will redirect events
+	to Rogue Wave Views.
+	</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvXDisplayConfig</code></li>
+			<li><code>IlvContainer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/ilvmotif.cpp"><code>src/ilvmotif.cpp</code></a></li>
+		</ul>
+		<a name="mpanim"><h1>Sample: <code>mpanim</code></h1><h1 class="subtitle">Using X Bitplanes for Fast Animation</h1></a>
+		<p>This sample demonstrates how to use the Rogue Wave Views capability of
+	accessing X Windows bitplanes. Note that this sample fully makes
+        sense only on X visual that are PseudoColor.</p>
+		<img src="data/mpanim.png"/>
+		<p><strong>The Manager package must be installed to be able to build
+	   this sample.</strong></p>
+	<p>Three bitplanes are reserved for a background map (see the
+	   <code>DisplayConfigCallback</code> Display Configuration
+	   Callback), and the other planes will be used to animate
+	   objects on top of this map. The animated object is a
+	   graphic set stored in a layer that is associated
+	   with the top bitplanes group, so that the bitplanes
+	   animation is performed automatically.</p>
+	<p>Because the map and the animated object are located in
+	   separated bitplanes, there is no need to redraw the
+	   background map when the object moves. This achieves the
+	   best animation speed.</p>
+	<p>The program recognizes the following options:
+	  <ul>
+	    <li><code>-display</code> <em>displayName</em>: as any X
+		client.</li>
+	    <li><code>-nom[ultipleplanes]</code>: Specifies that you
+		wnat not to use the multiple bitplanes feature.</li>
+	    <li><code>-nod[oublebuffering]</code>: Specifies that the
+		sample will no use double buffering, nor multiple
+		bitplanes. This is the option that makes the
+		animation smoothness the worse.</li>
+	    <li><code>-map[File]</code> <em>fileName</em>: The
+		<code>ILV</code> file that you want to load as the
+		background map. The default is
+		<code>&quot;../DCW/europe.ilv&quot;</code>.</li>
+	    <li><code>-anim[File]</code> <em>fileName</em>: The
+		<code>ILV</code> file that you want to load as the
+		animated object. The default is
+		<code>&quot;plane.ilv&quot;</code>.</li>
+	    <li><code>-scale</code> <em>scaleValue</em>: The scaling
+		factor that is applied to the animated object before
+		it is stored in the manager. The default value is
+		<code>1</code>.</li>
+	    </ul>
+	  </p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvDisplay</code></li>
+			<li><code>IlvManager</code></li>
+			<li><code>IlvInteractor</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/mpanim.cpp"><code>src/mpanim.cpp</code></a></li>
+		</ul>

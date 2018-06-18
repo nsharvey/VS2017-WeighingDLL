@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<TITLE>ATL 3.0 test page for object DemoATLCtrl</TITLE>
+</HEAD>
+
+<SCRIPT LANGUAGE = JavaScript>
+
+function load(value)
+{
+    DemoATLCtrl.FileName = value;
+}
+
+</SCRIPT>
+<BODY>
+
+<SELECT NAME=Files onchange = "load(value)" >
+<OPTION Selected Value="data/browse.ilv">World
+<OPTION Value="europe.ilv"> Europe
+<OPTION Value="africa.ilv"> Africa
+</SELECT>
+<P>
+
+<OBJECT WIDTH=400 HEIGHT=400 ID="DemoATLCtrl" CLASSID="CLSID:3B10417D-3E6C-11D3-B74F-00C04F68A89D"></OBJECT>
+</BODY>
+</HTML>

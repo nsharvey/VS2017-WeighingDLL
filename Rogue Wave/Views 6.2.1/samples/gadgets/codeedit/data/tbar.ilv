@@ -1,0 +1,30 @@
+// Ilv Version: 5.7
+// File generated: Wed Oct 02 10:07:35 2013
+// Creator class: IlvGadgetManagerOutput
+FileName "tbar"
+PathName "D:\\Tools\\Views57\\samples\\gadgets\\codeedit\\data\\tbar.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 1
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToolBar 6 5 385 31 F295 2 V0 2 15
+{ IlvMenuItem 67587 2 4 "New" 1 0 "icon/new.png"  } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 1107363842 2 4 1 0 "icon/open.png"  "openCB" "Open..." } 
+{ IlvMenuItem 1107363842 2 4 1 0 "icons/save.png"  "saveCB" "Save" } 
+{ IlvMenuItem 1107363842 2 4 1 0 "icons/saveall.png"  "saveAllCB" "Save All" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 1107296258 2 4 1 0 "icons/undo.png"  "undoCB" "Undo" } 
+{ IlvMenuItem 1107296258 2 4 1 0 "icons/redo.png"  "redoCB" "Redo" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 1107296258 2 4 1 0 "icon/cut.png"  "cutCB" "Cut" } 
+{ IlvMenuItem 1107296258 2 4 1 0 "icon/copy.png"  "copyCB" "Copy" } 
+{ IlvMenuItem 1107296258 2 4 1 0 "icon/paste.png"  "pasteCB" "Paste" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 1073741826 2 4 1 0 "icons/cppdoc.png"  "Insert a C++ comment for a method" } 
+{ IlvMenuItem 0 2 4  }  0 } 32 "toolBar"
+0
+Size 400 52
+Background "gray"
+EOF

@@ -1,0 +1,44 @@
+// Ilv Version: 4.0
+// File generated: Tue May  9 16:25:54 2000
+// Creator class: IlvManagerOutput
+FileName "changelang"
+PathName "$ILVHOME/samples/foundation/i18n/data/changelang.ilv"
+Palettes 2
+"IlvStText" 1 33619 42483 46592 "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+0 33619 42483 46592 "black" "large" "%helvetica-18-B" 0 solid solid 0 0 0
+IlvObjects 7
+0 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 270 20 156 30 F268435468 0 { IlvMessageItem 262169 4 16 4 "&goodbye"  }   } 0
+0 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 20 100 100 30 F13 2 { IlvMessageItem 262145 4 16 4 "&americanL"  }   } 512
+1
+1 "__ilvCallback" V"String""en_US" "ChangeLangCB"
+0 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 160 100 100 30 F13 2 { IlvMessageItem 262145 4 16 4 "&frenchL"  }   } 512
+1
+1 "__ilvCallback" V"String""fr_FR" "ChangeLangCB"
+0 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 300 100 100 30 F13 2 { IlvMessageItem 262145 4 16 4 "&italianL"  }   } 512
+1
+1 "__ilvCallback" V"String""it_IT" "ChangeLangCB"
+0 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 170 170 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "&quit"  }   } 512
+1
+1 "__ilvCallback" "QuitCB"
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 30 20 165 30 F268435468 0 { IlvMessageItem 262169 4 16 4 "&hello"  }   } 0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMessageLabel 194 21 29 22 F268435468 0 { IlvMessageItem 262168 4 16 4  }   } 32 "Flag"
+Layers 2
+"" 4 0 
+"" 4 0 
+Views 1
+"v93" 1 0 0 1 0 0
+EOF

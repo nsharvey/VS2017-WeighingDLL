@@ -1,0 +1,25 @@
+var pairs =
+{
+"showgridpanel":{"label":1}
+,"label":{"view":1}
+,"view":{"inspector":1}
+,"inspector":{"path":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"tools":1}
+,"tools":{"menu":1}
+,"menu":{"category":1}
+,"category":{"panel":1}
+,"panel":{"action":1,"lets":1}
+,"action":{"opens":1}
+,"opens":{"grid":1}
+,"grid":{"panel":1,"options":1}
+,"lets":{"grid":1}
+,"options":{"work":1}
+,"work":{"space":1}
+,"space":{"resize":1,"background":1}
+,"resize":{"work":1}
+,"background":{"color":1}
+,"color":{"work":1}
+}
+;Search.control.loadWordPairs(pairs);

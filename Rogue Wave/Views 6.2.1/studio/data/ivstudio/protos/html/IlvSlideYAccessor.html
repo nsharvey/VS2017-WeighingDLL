@@ -1,0 +1,31 @@
+<html><head><title>Prototypes</title></head>
+<body bgcolor=#ffffff>
+<a name="949260">
+<h3><FONT color=#b61840> TranslateY </FONT></h3>
+</a><a name="949261">
+The TranslateY accessor (class <a href="../../refman/html/IlvSlideYAccessor.html"><code>IlvSlideYAccessor</code></a>) moves a node vertically to a position determined by a minimum position, a position range, a minimum value, and a value range. The new position is computed from the value assigned to the TranslateY accessor using the following formula: <p>
+</a><a name="949262">
+<code>y = ymin + (v - minimum) * yrange / range</code><p>
+</a><a name="949263">
+<h4><FONT color=#b61840> Parameters</FONT></h4>
+</a><ul><a name="949264">
+<li>Graphic Node: Name of the node to move. Must be a graphic node.
+</a><p><a name="949265">
+<li>Minimum Y: Name of the minimum position. It is Float or Integer.
+</a><p><a name="949266">
+<li>Y range: Name of the position range. It is Float or Integer.
+</a><p><a name="949267">
+<li>Minimum: Name of the minimum value. It is Float or Integer.
+</a><p><a name="949268">
+<li>Range: Name of the value range. It is Float or Integer.
+</a><p><a name="949269">
+<li>Handle Interaction: Boolean specifying whether the accessor should behave like an Event accessor when the user clicks on the node to rotate it. If it is set to <code>true</code>, the user can rotate the node and the accessor value is updated accordingly.
+</a><p><a name="949270">
+<li>The type of the value is Float.
+</a><p></ul><a name="949271">
+<h4><FONT color=#b61840> Example</FONT></h4>
+</a><a name="949272">
+The use of Translate accessors is similar to the use of Scale accessors, except that Translate accessors change the position instead of the size of an object.<p>
+</a><a name="949313">
+</body>
+</html><hr><a href=displayb>Back</a>

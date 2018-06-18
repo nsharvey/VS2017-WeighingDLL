@@ -1,0 +1,30 @@
+# Makefile to generate .rc file for Windows in all subdirectories.
+#
+# WARNING : generateRcFile.pl does NOT on Unix but only on Windows.
+#
+
+all: \
+	step1/ActiveXApp.rc \
+	step2/ActiveXApp.rc \
+	step3/ActiveXApp.rc \
+	step4/ActiveXApp.rc \
+	step5/ActiveXApp.rc \
+	step6/ActiveXApp.rc
+
+step1/ActiveXApp.rc:
+	cd step1 && $(MAKE) -f makefile.rc
+
+step2/ActiveXApp.rc:
+	cd step2 && $(MAKE) -f makefile.rc
+
+step3/ActiveXApp.rc:
+	cd step3 && $(MAKE) -f makefile.rc
+
+step4/ActiveXApp.rc:
+	cd step4 && $(MAKE) -f makefile.rc
+
+step5/ActiveXApp.rc:
+	cd step5 && $(MAKE) -f makefile.rc
+
+step6/ActiveXApp.rc:
+	cd step6 && $(MAKE) -f makefile.rc

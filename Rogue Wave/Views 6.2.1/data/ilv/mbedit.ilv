@@ -1,0 +1,22 @@
+// Ilv Version: 1.0
+// File generated: Wed Mar  9 18:52:19 1994
+//  IlvGadgetManagerOutput
+Palettes 1
+0 "defaultBg" "defaultFg"  %helvetica-14-B 0 solid solid  0 0 0 
+IlvObjects 1
+2 { 0 0 IlvMenuBar 0 0 500 30 2 7
+4 "File"
+5 "Tools"
+5 "Align"
+8 "Recorder"
+10 "Interactor"
+10 "Properties"
+4 "Help"
+Y 0 IlvPopupMenu 3 28 86 188 2 10
+130 3 "New" 3 "new" 130 4 "Read" 4 "read" 130 4 "Save" 4 "save" 130 7 "Save As" 6 "saveas" 130 8 "C++ code" 4 "code" 0  130 5 "Print" 5 "print" 130 10 "PostScript" 2 "ps" 0  130 4 "Quit" 4 "quit"   Y 0 IlvPopupMenu 44 28 163 160 2 8
+130 4 "Grid" 8 "showgrid" 130 10 "Ressources" 6 "SetRes" 130 12 "Attachements" 9 "SetAttach" 130 6 "Locate" 6 "locate" 0  146 19 "Exclusive Inspector" 8 "exclInsp" 130 11 "Opaque Move" 6 "opMove" 130 16 "Double Buffering" 6 "dblBuf"   Y 0 IlvPopupMenu 98 28 133 260 2 13
+130 4 "Left" 5 "align" 130 5 "Right" 5 "align" 130 3 "Top" 5 "align" 130 6 "Bottom" 5 "align" 130 17 "Center Horizontal" 5 "align" 130 15 "Center Vertical" 5 "align" 130 6 "Center" 5 "align" 130 10 "Same Width" 2 "sw" 130 11 "Same Height" 2 "sh" 130 6 "Column" 3 "col" 130 3 "Row" 3 "row" 0  130 15 "Fit to contents" 13 "fitToContents"   Y 0 IlvPopupMenu 143 94 107 132 2 6
+130 5 "Start" 5 "start" 162 4 "Stop" 4 "stop" 130 4 "Play" 4 "play" 130 4 "Save" 6 "saveev" 130 4 "Read" 6 "readev" 130 12 "Change delay" 5 "speed"   Y 0 IlvPopupMenu 229 79 73 112 2 5
+130 4 "None" 4 "SetI" 130 6 "Button" 4 "SetI" 130 6 "Toggle" 4 "SetI" 130 7 "Reshape" 4 "SetI" 130 4 "Move" 4 "SetI"   Y 0 IlvPopupMenu 315 37 123 160 2 8
+130 4 "Name" 7 "SetName" 130 5 "State" 8 "SetState" 130 8 "Callback" 11 "SetCallback" 0  130 15 "Exclusive group" 8 "selector" 130 15 "Scrolled Matrix" 8 "scmatrix" 130 4 "Menu" 4 "menu" 130 6 "Matrix" 6 "matrix"   N  } 96 2 "mb" 7 "MenuBar"  1012 11 "mb_callback" 1  0 1  0 1  0 1  0 2 2  
+//Size 500 30

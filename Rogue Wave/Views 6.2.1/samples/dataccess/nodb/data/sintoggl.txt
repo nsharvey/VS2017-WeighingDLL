@@ -1,0 +1,4 @@
+Files: sintoggl.h sintoggl.cpp
+Note: shows how to customize a table-gadget to modify the current editor of
+one column. The current editor (IliEntryField) is replaced by a single-toggle
+(Toggle without label).

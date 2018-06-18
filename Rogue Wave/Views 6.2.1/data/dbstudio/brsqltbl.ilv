@@ -1,0 +1,16 @@
+// Ilv Version: 2.4
+// File generated: Thu Jun 26 13:35:15 1997
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"default" 0 "gray" "black" "default" "StockedDeviceDefault" 0 solid solid 0 0 0
+IlvObjects 1
+1 { 0 0 IlvSwSQLTablesUsesGadget 5 5 200 200 F12 2 20 1 1 1 1 1 0
+"root" 8 "N" "N" 0
+  0  0 0 0   } 32 "TblUses"
+0
+Size 210 210
+GeometryHandlers
+1 100 0 210 0 210 0
+1 3 0 0 5  200 0 200 0  0 0 5 0
+1 100 0 210 0 210 0
+1 3 0 0 5  200 0 200 0  0 0 5 0

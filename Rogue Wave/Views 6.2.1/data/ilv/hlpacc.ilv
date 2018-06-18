@@ -1,0 +1,46 @@
+// Ilv Version: 2.0
+// File generated: Tue Aug 23 15:07:41 1994
+//  IlvGadgetManagerOutput
+Palettes 2
+1 48830 48830 48830  0 0 0  %helvetica-12- 0 solid solid  0 0 0 
+0 48830 48830 48830  0 0 0  %courier-12-B 0 solid solid  0 0 0 
+IlvObjects 38
+2 { 0 0 IlvLabel 10 396 "<1..9>" } 0  0    
+2 { 1 1 IlvLabel 66 398 "Toggle the nth layer visibility" } 0  0    
+2 { 2 1 IlvLabel 66 20 "Select all visible objects" } 0  0    
+2 { 3 1 IlvLabel 66 62 "Duplicate selected object(s)" } 0  0    
+2 { 4 1 IlvLabel 66 83 "Remove selected object(s)" } 0  0    
+2 { 5 1 IlvLabel 66 167 "Group selected objects" } 0  0    
+2 { 6 1 IlvLabel 66 251 "Stop the event recorder" } 0  0    
+2 { 7 1 IlvLabel 66 356 "Toggle double buffering mode" } 0  0    
+2 { 8 1 IlvLabel 66 377 "Toggle opaque move mode" } 0  0    
+2 { 9 0 IlvLabel 10 81 "<Del>" } 0  0    
+2 { 10 0 IlvLabel 31 18 "^A" } 0  0    
+2 { 11 0 IlvLabel 31 39 "^B" } 0  0    
+2 { 12 0 IlvLabel 31 60 "^D" } 0  0    
+2 { 13 0 IlvLabel 31 102 "^C" } 0  0    
+2 { 14 0 IlvLabel 31 123 "^X" } 0  0    
+2 { 15 0 IlvLabel 31 144 "^V" } 0  0    
+2 { 16 0 IlvLabel 31 165 "^G" } 0  0    
+2 { 17 0 IlvLabel 31 186 "^U" } 0  0    
+2 { 18 1 IlvLabel 66 41 "Deselect all" } 0  0    
+2 { 19 1 IlvLabel 66 104 "Copy" } 0  0    
+2 { 20 1 IlvLabel 66 125 "Cut" } 0  0    
+2 { 21 1 IlvLabel 66 146 "Paste" } 0  0    
+2 { 22 1 IlvLabel 66 188 "Ungroup" } 0  0    
+2 { 23 0 IlvLabel 33 207 "^R" } 0  0    
+2 { 24 0 IlvLabel 33 228 "^Z" } 0  0    
+2 { 25 0 IlvLabel 33 249 "^P" } 0  0    
+2 { 26 0 IlvLabel 41 270 "u" } 0  0    
+2 { 27 0 IlvLabel 41 291 "r" } 0  0    
+2 { 28 0 IlvLabel 41 312 "P" } 0  0    
+2 { 29 0 IlvLabel 41 333 "p" } 0  0    
+2 { 30 0 IlvLabel 41 375 "o" } 0  0    
+2 { 31 0 IlvLabel 41 354 "b" } 0  0    
+2 { 32 1 IlvLabel 66 209 "Read icon" } 0  0    
+2 { 33 1 IlvLabel 66 230 "Read zoomable icon" } 0  0    
+2 { 34 1 IlvLabel 66 272 "Undo" } 0  0    
+2 { 35 1 IlvLabel 66 293 "Redo" } 0  0    
+2 { 36 1 IlvLabel 66 314 "Push" } 0  0    
+2 { 37 1 IlvLabel 66 335 "Pop" } 0  0    
+Size 250 408

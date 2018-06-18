@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Rogue Wave Views JPEG Dynamic Module Descriptor -->
+<module name="ilvjpg" version="6.2">
+  <class name="IlvJPGStreamer" rootClass="IlvBitmapStreamer" version="4.0">
+    <format description="JPEG-JFIF">
+      <signature>0xff 0xd8 0xff</signature>
+      <extension>jpg</extension>
+      <extension>jpeg</extension>
+    </format>
+  </class>
+</module>

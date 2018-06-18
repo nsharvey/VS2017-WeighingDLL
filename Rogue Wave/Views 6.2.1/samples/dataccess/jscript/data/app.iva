@@ -1,0 +1,49 @@
+application "app" {
+    properties "Dbms Support" {
+        "Count" "1";
+        "Dbms1" "default";
+    }
+    creator      "Rogue Wave Views Studio"; 
+    version      4; 
+    iref         3.9; 
+    ViewsVersion 4; 
+    system       "xlib.sparc_5_4.0"; 
+    date         "Wed Mar 22 15:14:29 2000"; 
+    JvScript     true; 
+    fileBase     "app"; 
+    class        Testapp; 
+    baseClass    IlvApplication; 
+    dataDir      "./"; 
+    panelClass "pan" {
+        class     Pan; 
+        baseClass IlvGadgetContainer; 
+        fileBase  "pan"; 
+        dataDir   "./"; 
+    }
+    panelClass "pic" {
+        class     Pic; 
+        baseClass IlvGadgetContainer; 
+        fileBase  "pic"; 
+        dataDir   "./"; 
+    }
+    panelClass "select" {
+        class     Select; 
+        fileBase  "select"; 
+        dataDir   "./"; 
+        baseClass IlvGadgetContainer; 
+    }
+    panelClass "propman" {
+        class     "Propman"; 
+        fileBase  "propman"; 
+        dataDir   "./"; 
+        baseClass IlvGadgetContainer; 
+    }
+    panel "Pan" {
+        class  Pan; 
+        title  "Pan"; 
+        x      3; 
+        y      3; 
+        width  440; 
+        height 520; 
+    }
+}

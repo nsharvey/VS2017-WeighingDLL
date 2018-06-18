@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvadvgdt -->
+<module name="ilvadvgdt" version="6.2">
+<class name="IlvAbstractMatrix" rootClass="IlvGraphic"/>
+<class name="IlvAbstractMatrixItem"/>
+<class name="IlvApplication"/>
+<class name="IlvArrowButton" rootClass="IlvGraphic"/>
+<class name="IlvBitmapMatrixItem" rootClass="IlvAbstractMatrixItem"/>
+<class name="IlvDateField" rootClass="IlvGraphic"/>
+<class name="IlvDockableContainer" rootClass="IlvAbstractView"/>
+<class name="IlvDockableMainWindow" rootClass="IlvAbstractView"/>
+<class name="IlvDoubleMatrixItem" rootClass="IlvAbstractMatrixItem"/>
+<class name="IlvFileSelectorField" rootClass="IlvGraphic"/>
+<class name="IlvFilledDoubleMatrixItem" rootClass="IlvAbstractMatrixItem"/>
+<class name="IlvFilledFloatMatrixItem" rootClass="IlvAbstractMatrixItem"/>
+<class name="IlvFilledIntMatrixItem" rootClass="IlvAbstractMatrixItem"/>
+<class name="IlvFilledLabelMatrixItem" rootClass="IlvAbstractMatrixItem"/>
+<class name="IlvFloatMatrixItem" rootClass="IlvAbstractMatrixItem"/>
+<class name="IlvGadgetItemMatrixItem" rootClass="IlvAbstractMatrixItem"/>
+<class name="IlvGadgetMatrixItem" rootClass="IlvAbstractMatrixItem"/>
+<class name="IlvGraphicMatrixItem" rootClass="IlvAbstractMatrixItem"/>
+<class name="IlvHierarchicalSheet" rootClass="IlvGraphic"/>
+<class name="IlvHierarchicalSheetItem" rootClass="IlvAbstractMatrixItem"/>
+<class name="IlvIntMatrixItem" rootClass="IlvAbstractMatrixItem"/>
+<class name="IlvInternalAbstractBarDockableContainer" rootClass="IlvAbstractView"/>
+<class name="IlvInternalDockableContainer" rootClass="IlvAbstractView"/>
+<class name="IlvLabelMatrixItem" rootClass="IlvAbstractMatrixItem"/>
+<class name="IlvMatrix" rootClass="IlvGraphic"/>
+<class name="IlvMatrixItemEditorFactory" rootClass="IlvNamedProperty"/>
+<class name="IlvMatrixSelectorInteractor" rootClass="IlvInteractor" sharedName="MatrixSelector"/>
+<class name="IlvNotebook" rootClass="IlvGraphic"/>
+<class name="IlvNotebookPage"/>
+<class name="IlvNotebookPageItem" rootClass="IlvGadgetItem"/>
+<class name="IlvOptionMenu" rootClass="IlvGraphic"/>
+<class name="IlvPanedContainer" rootClass="IlvAbstractView"/>
+<class name="IlvPanelObjectReference" rootClass="IlvNamedProperty"/>
+<class name="IlvScriptCommonDialog"/>
+<class name="IlvScrolledComboBox" rootClass="IlvGraphic"/>
+<class name="IlvScrolledGadget" rootClass="IlvGraphic"/>
+<class name="IlvSheet" rootClass="IlvGraphic"/>
+<class name="IlvSpinBox" rootClass="IlvGraphic"/>
+<class name="IlvSplitterGadget" rootClass="IlvGraphic"/>
+<class name="IlvStringList" rootClass="IlvGraphic"/>
+<class name="IlvText" rootClass="IlvGraphic"/>
+<class name="IlvTreeGadget" rootClass="IlvGraphic"/>
+<class name="IlvTreeGadgetItem" rootClass="IlvGadgetItem"/>
+<class name="IlvUndockedTopContainer" rootClass="IlvAbstractView"/>
+<class name="IlvViewFrame" rootClass="IlvAbstractView"/>
+</module>

@@ -1,0 +1,185 @@
+#code,name,visible,background,foreground,fill,stroke,style stroke,bitmap
+#stroke style: 0:solid, 1:dot 2:dash 3:dashdot 4:dashdoubledot
+# 5:alternate 6:doubledot 7:longdash
+#bitmap is the filename without path
+1,Administration Area (Named),T,BBD2C1,,T,T,0,
+2,Airport/airfield,T,aea052,997035,T,T,0,airare02.png
+3,Anchor berth,T,,,T,T,0,achbrt07.png
+4,Anchorage area,T,,,F,T,0,achare02.png
+5,Beacon (cardinal),T,,,T,T,0,bcncar02.png
+6,Beacon (isolated danger),T,,,T,T,0,bcnisd21.png
+7,Beacon (lateral),T,,,T,T,0,bcnlat15.png
+8,Beacon (safe water),T,,,T,T,0,bcnsaw13.png
+9,Beacon (special purpose/general),T,,,T,T,0,bcnspp13.png
+10,Berth,T,,,T,T,0,
+11,Bridge,T,576a60,576a60,T,T,0,bridge01.png
+12,Building (single),T,707070,,T,T,0,buisgl01.png
+13,Built-up area,T,aea052,997035,T,T,0,buaare02.png
+14,Buoy (cardinal),T,,,T,T,0,boycar02.png
+15,Buoy (installation),T,,,T,T,0,boyinb01.png
+16,Buoy (isolated danger),T,,,T,T,0,boyisd12.png
+17,Buoy (lateral),T,,,T,T,0,boylat13.png
+18,Buoy (safe water),T,,,T,T,0,boysaw12.png
+19,Buoy (special purpose/general),T,,,T,T,0,boyspp11.png
+20,Cable area,T,,,T,T,0,cblare51.png
+21,Cable (overhead),T,,,T,T,0,
+22,Cable (submarine),T,,,T,T,0,
+23,Canal,T,,,T,T,0,
+24,Canal bank,T,,,T,T,0,
+25,Cargo transhipment area,T,,768378,F,T,0,
+26,Causeway,T,,,T,T,0,
+27,Caution area,T,,FFAA00,F,T,0,ctnare51.png
+28,Checkpoint,T,,,T,T,0,
+29,Coastguard station,T,,,T,T,0,cgusta02.png
+30,Coastline,T,,,T,T,0,
+31,Contiguous zone,T,,,T,T,0,
+32,Continental shelf area,T,,768378,F,T,0,
+33,Control point,T,,,T,T,0,
+34,Conveyor,T,,,T,T,0,
+35,Crane,T,,,T,T,0,cranes01.png
+36,Current - non-gravitational,T,,,T,T,0,curent01.png
+37,Custom zone,T,,,T,T,0,
+38,Dam,T,,,T,T,0,
+39,Daymark,T,,,T,T,0,
+40,Deep water route centerline,T,,AC44A1,F,T,0,
+41,Deep water route part,T,,AC44A1,F,T,0,dwrtpt51.png
+42,Depth area,T,d8f4e1,768378,T,T,0,
+43,Depth contour,T,,88988b,T,T,0,
+44,Distance mark,T,,,T,T,0,dismar04.png
+45,Dock area,T,,768378,F,T,0,
+46,Dredged area,T,,768378,F,T,0,
+47,Dry dock,T,,,T,T,0,
+48,Dumping ground,T,,768378,F,T,0,
+49,Dyke,T,,,T,T,0,
+50,Exclusive economic zone,T,,,T,T,0,
+51,Fairway,T,,768378,F,T,0,fairwy52.png
+52,Fence/wall,T,,,T,T,0,
+53,Ferry route,T,,,T,T,0,
+54,Fishery zone,T,0000FF,71A8C2,F,T,0,
+55,Fishing facility,T,,,F,T,0,fshfac02.png
+56,Fishing ground,T,,,T,T,0,fshgrd01.png
+57,Floating dock,T,,,T,T,0,
+58,Fog signal,T,,,T,T,0,fogsig01.png
+59,Fortified structure,T,707070,,T,T,0,forstc01.png
+60,Free port area,T,,768378,F,T,0,
+61,Gate,T,,,T,T,0,gatcon04.png
+62,Gridiron,T,,,T,T,0,
+63,Harbour area (administrative),T,,768378,F,T,0,
+64,Harbour facility,T,,,T,T,0,hrbfac09.png
+65,Hulk,T,,,T,T,0,hulkes01.png
+66,Ice area,T,,768378,F,T,0,
+67,Incineration area,T,,768378,F,T,0,
+68,Inshore traffic zone,T,,AC44A1,F,T,0,
+69,Lake,T,0000FF,768378,F,T,0,
+70,Lake shore,T,,,T,T,0,
+71,Land area,T,cbc783,,T,T,0,lndare01.png
+72,Land elevation,T,,7F6522,T,T,1,
+73,Land region,T,B1AA6B,38356b,F,T,0,
+74,Landmark,T,cbc783,,T,T,0,
+75,Light,T,,,T,T,0,lights81.png
+76,Light float,T,,,T,T,0,litflt01.png
+77,Light vessel,T,,,T,T,0,litves01.png
+78,Local magnetic anomaly,T,,768378,F,T,0,locmag01.png
+79,Lock basin,T,,,T,T,0,
+80,Log pond,T,,,T,T,0,
+81,Magnetic variation,T,,768378,F,T,0,magvar01.png
+82,Marine farm/culture,T,,768378,F,T,0,marcul02.png
+83,Military practice area,T,,768378,F,T,0,
+84,Mooring/Warping facility,T,,,T,T,0,morfac04.png
+85,Navigation line,T,,,T,T,0,
+86,Obstruction,T,,FFAA00,F,T,0,obstrn01.png
+87,Offshore platform,T,,,T,T,0,ofsplf01.png
+88,Offshore production area,T,,AC44A1,F,T,0,
+89,Oil barrier,T,,,T,T,0,
+90,Pile,T,,,T,T,0,pilpnt02.png
+91,Pilot boarding place,T,,,T,T,0,
+92,Pipeline area,T,,768378,F,T,0,
+93,Pipeline (overhead),T,,,T,T,0,
+94,Pipeline (submarine/on land),T,,,T,T,0,
+95,Pontoon,T,,,T,T,0,
+96,Precautionary area,T,,FFAA00,F,T,0,prcare12.png
+97,Production/storage area,T,,768378,F,T,0,
+98,Pylon/bridge support,T,,,T,T,0,
+99,Radar line,T,,,T,T,0,
+100,Radar range,T,,768378,F,T,0,
+101,Radar reflector,T,,,T,T,0,radrfl03.png
+102,Radar station,T,,,T,T,0,
+103,Radar transponder beacon,T,,,T,T,0,rtpbcn02.png
+104,Radio calling-in point,T,,,T,T,0,rdocal03.png
+105,Radio station,T,,,T,T,0,rdosta02.png
+106,Railway,T,,997035,T,T,0,
+107,Rapids,T,,,T,T,0,
+108,Recommended route centerline,T,,,T,T,0,
+109,Recommended track,T,,,T,T,0,rectrc55.png
+110,Recommended traffic lane part,T,,AC44A1,F,T,0,
+111,Rescue station,T,,,T,T,0,rscsta02.png
+112,Restricted area,T,FF0000,FFAA00,F,T,0,
+113,Retro-reflector,T,,,T,T,0,retrfl01.png
+114,River,T,d8f4e1,000000,T,T,0,
+115,River bank,T,,,T,T,0,
+116,Road,T,,997035,T,T,0,
+117,Runway,T,88988b,000000,T,T,0,
+118,Sand waves,T,,,T,T,0,sndwav02.png
+119,Sea area/named water area,T,0000FF,71A8C2,F,T,0,
+120,Sea-plane landing area,T,,,T,T,0,
+121,Seabed area,T,7CA57F,,T,T,0,
+122,Shoreline construction,T,,576a60,T,T,0,
+123,Signal station (traffic),T,,,T,T,0,sistat2.png
+124,Signal station (warning),T,,,T,T,0,
+125,Silo/tank,T,,,T,T,0,
+126,Slope topline,T,,576a60,T,T,0,
+127,Sloping ground,T,,,F,T,0,
+128,Small craft facility,T,,,T,T,0,smcfac02.png
+129,Sounding,F,,,T,T,0,
+130,Spring,T,,,T,T,0,
+131,Square,T,,,T,T,0,
+132,Straight territorial sea baseline,T,,,T,T,0,
+133,Submarine transit lane,T,,AC44A1,F,T,0,
+134,Swept Area,T,,768378,F,T,0,swpare51.png
+135,Territorial sea area,T,0000FF,71A8C2,F,T,0,
+160,Tidal stream - flood/ebb,T,,,T,T,0,
+136,Tidal stream - harmonic prediction,T,,,T,T,0,
+137,Tidal stream - non-harmonic prediction,T,,,T,T,0,
+138,Tidal stream panel data,T,,,T,T,0,
+139,Tidal stream - time series,T,,,T,T,0,
+140,Tide - harmonic prediction,T,,,T,T,0,
+141,Tide - non-harmonic prediction,T,,,T,T,0,
+142,Tide - time series,T,,,T,T,0,
+143,Tideway,T,,,T,T,0,
+144,Topmark,T,,,T,T,0,topmar05.png
+145,Traffic separation line,T,,,T,T,0,
+146,Traffic separation scheme boundary,T,,AC44A1,F,T,0,
+147,Traffic separation scheme crossing,T,,AC44A1,F,T,0,
+148,Traffic separation scheme lane part,T,,AC44A1,F,T,0,tsslpt51.png
+149,Traffic separation scheme roundabout,T,,AC44A1,F,T,0,tssron51.png
+150,Traffic separation zone,T,AC44A1,,T,F,0,
+151,Tunnel,T,,,T,T,0,
+152,Two-way route part,T,,,T,T,0,twrtpt52.png
+153,Underwater/awash rock,T,,,T,T,0,uwtroc03.png
+154,Unsurveyed area,T,e9f5f2,576a60,T,T,0,
+155,Vegetation,T,00AA00,,F,F,0,
+156,Water turbulence,T,,576a60,F,T,7,wattur02.png
+157,Waterfall,T,,,T,T,0,
+158,Weed/Kelp,T,,768378,F,T,0,wedklp03.png
+159,Wreck,T,,,T,T,0,wrecks05.png
+300,Accuracy of data,T,,,T,T,0,
+301,Compilation scale of data,T,,,T,T,0,
+302,Coverage,T,,88988b,F,T,7,
+303,Horizontal datum of data,T,,,T,T,0,
+304,Horizontal datum shift parameters,T,,,T,T,0,
+305,Nautical publication information,T,,,T,T,0,
+306,Navigational system of marks,T,,,F,T,0,
+307,Production information,T,,,T,T,0,
+308,Quality of data,T,,,F,T,0,
+309,Sounding datum,T,,,T,T,0,
+310,Survey reliability,T,,,T,T,0,
+311,Units of measurement of data,T,,,T,T,0,
+312,Vertical datum of data,T,,,T,T,0,
+400,Aggregation,T,,,T,T,0,
+401,Association,T,,,T,T,0,
+402,Stacked on/stacked under,T,,,T,T,0,
+500,Cartographic area,T,,,T,T,0,
+501,Cartographic line,T,,,T,T,0,
+502,Cartographic symbol,T,,,T,T,0,
+503,Compass,T,,,T,T,0,
+504,Text,T,,,T,T,0,

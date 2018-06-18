@@ -1,0 +1,27 @@
+// Ilv Version: 3.0
+// File generated: Mon Jan 19 13:25:48 1998
+// Creator class: IlvProtoGadgetManagerOutput
+Palettes 0
+IlvObjects 0
+Size 256 256
+Instances 2
+IlvProtoInstance output.slider slider#2
+    values {
+        String sliderLabel = 0
+        String title = Value:
+        Int x = 42
+        Int y = 45
+    }
+;
+IlvProtoInstance lcd.lcd4 lcd4#2
+    values {
+        Int value = 0
+        Int x = 51
+        Int y = 149
+    }
+;
+ValueSources 0
+Subscriptions {
+    slider#2 lcd4#2 sliderValue value Any 1
+}
+EOF

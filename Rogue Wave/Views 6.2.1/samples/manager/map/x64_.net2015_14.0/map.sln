@@ -1,0 +1,6 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{29ED56A2-1D61-11E8-9326-21D9772C9500}") = "map", "map.vcxproj", "{29ED0954-1D61-11E8-9326-21D9772C9500}"
+EndProject
+Global
+EndGlobal

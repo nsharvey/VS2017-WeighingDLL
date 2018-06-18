@@ -1,0 +1,212 @@
+/* Rogue Wave Reference Guides style additions */
+
+body, table, div, p, dl {
+    font-family: Lucida Grande, Verdana, Geneva, Arial, sans-serif;
+    font-size: 12px;
+}
+
+#projectlogo
+{
+    vertical-align: middle;
+}
+
+#projectname
+{
+    font: 150% Lucida Grande, Verdana, Geneva, Arial, sans-serif;
+    font-weight: bold;
+    margin: 0px;
+    padding: 2px 0px;
+    text-align: center;
+}
+
+div.qindex, div.navtab{
+    background-color: #E8EEF2;
+    border: 1px solid #84B0C7;
+    margin: 2px;
+    padding: 2px;
+}
+
+a {
+    color: #153788;
+}
+
+.contents a:visited {
+    color: #1B77C5;
+}
+
+a.qindexHL {
+    background-color: #6666CC;
+    border: 1px double #9295C2;
+}
+
+a.code, a.code:visited {
+    color: #3030F0;
+}
+
+a.codeRef, a.codeRef:visited {
+    color: #3030F0;
+}
+
+pre.fragment {
+    border: 1px solid #CCCCCC;
+    background-color: #F5F5F5;
+}
+
+div.fragment {
+    background-color: #F5F5F5;
+    border: 1px solid #CCCCCC;
+}
+
+div.groupHeader {
+    margin-bottom: 6px;
+}
+
+body {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+td.indexkey {
+    background-color: #E8EEF2;
+    border: 1px solid #CCCCCC;
+    /*white-space: nowrap;RW*/
+    /*vertical-align: top;RW*/
+}
+
+td.indexvalue {
+    background-color: #E8EEF2;
+    border: 1px solid #CCCCCC;
+}
+
+tr.memlist {
+    background-color: #F0F0F0;
+}
+
+blockquote {
+    border-left: 2px solid #6666CC;
+}
+
+.dirtab {
+    border: 1px solid #84B0C7;
+}
+
+th.dirtab {
+    background: #E8EEF2;
+}
+
+hr {
+    border-top: 1px solid #666;
+}
+
+.mdescLeft, .mdescRight,
+.memItemLeft, .memItemRight,
+.memTemplItemLeft, .memTemplItemRight, .memTemplParams {
+    background-color: #FAFAFA;
+}
+
+
+.memItemLeft, .memTemplItemLeft {
+    /*white-space: nowrap;RW*/
+}
+
+.memItemRight {
+    width: 100%;
+}
+
+.memTemplParams {
+    color: #606060;
+}
+
+.memtemplate {
+    color: #606060;
+    font-weight: normal;
+    margin-left: 3px;
+}
+
+.memnav {
+    background-color: #E8EEF2;
+    border: 1px solid #84B0C7;
+
+}
+
+.memname {
+    white-space: nowrap;
+}
+
+.memname td {
+    vertical-align: bottom;
+}
+
+.memproto, dl.reflist dt {
+    border-top: 1px solid #84B0C7;
+    border-left: 1px solid #84B0C7;
+    border-right: 1px solid #84B0C7;
+    background-color: #D5E1E8;
+}
+
+.memdoc, dl.reflist dd {
+    border-bottom: 1px solid #84B0C7;
+    border-left: 1px solid #84B0C7;
+    border-right: 1px solid #84B0C7;
+    background-color: #F5F5F5;
+}
+span.mlabel {
+    border-right:1px solid #CCCCCC;
+    border-bottom:1px solid #CCCCCC;
+}
+
+div.directory {
+    border-top: 1px solid #84B0C7;
+    border-bottom: 1px solid #84B0C7;
+}
+
+.directory .levels span {
+    color: #153788;
+}
+
+address {
+    color: #333;
+}
+
+table.doxtable {
+    /*margin-top: 4px; RW*/
+    /*margin-bottom: 4px; RW*/
+}
+
+table.doxtable td, table.doxtable th {
+    border: 1px solid #153788;
+}
+
+table.doxtable th {
+    background-color: #254798;
+    text-align:left;
+}
+
+table.fieldtable {
+    border: 1px solid #A8B8D9;
+}
+
+.fieldtable td.fieldtype, .fieldtable td.fieldname {
+    border-right: 1px solid #A8B8D9;
+    border-bottom: 1px solid #A8B8D9;
+}
+
+.fieldtable td.fielddoc {
+    border-bottom: 1px solid #A8B8D9;
+}
+
+.fieldtable th {
+    background-color: #D5E1E8;
+    border-bottom: 1px solid #A8B8D9;
+}
+
+div.header
+{
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+div.toc h3 {
+    color: #1B77C5;
+}
+

@@ -1,0 +1,21 @@
+var pairs =
+{
+"tilevertically":{"label":1}
+,"label":{"tile":1}
+,"tile":{"vertically":1}
+,"vertically":{"path":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"window":1,"menu":1}
+,"menu":{"category":1}
+,"category":{"buffer":1}
+,"buffer":{"action":1,"windows":1}
+,"action":{"arranges":1}
+,"arranges":{"buffer":1}
+,"windows":{"work":1}
+,"work":{"space":1}
+,"space":{"vertical":1}
+,"vertical":{"nonoverlapping":1}
+,"nonoverlapping":{"tiles":1}
+}
+;Search.control.loadWordPairs(pairs);

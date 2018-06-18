@@ -1,0 +1,104 @@
+// Ilv Version: 5.1
+// File generated: Wed Oct 31 08:47:41 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "sqldspnl"
+PathName "sqldspnl.ilv"
+Palettes 6
+"IlvStMenu" 1 F "defaultBg" "black" "menu" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+4 F "lightgrey" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 0
+2 F 48640 48640 48640 "black" "default" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 0
+5 F "defaultBg" "black" "small" "%MS Sans Serif-10-[Charset:0]" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+3 F "defaultBg" "black" "button" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 11
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvGadget 0 61 458 311 2 } 32 "clientarea"
+0
+2 { 1 P 2
+[ IlvAttachments _IlvAttachments 368  1 0 1 0 1 0 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvMenuBar 0 0 458 26 F295 2 V0 2 2
+{ IlvMenuItem 67108865 2 4 "&menu_file"  1 IlvPopupMenu 0 0 109 72 F166 2 V0 2 4
+{ IlvMenuItem 33554433 2 4 "&menu_Properties"  "onProperties" } 
+{ IlvMenuItem 33554433 2 4 "&menu_ViewSource"  "onViewSource" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 33554433 2 4 "&menu_Close"  "onClose" }  16   } 
+{ IlvMenuItem 67108865 2 4 "&menu_Query"  1 IlvPopupMenu 0 0 279 219 F166 2 V0 2 13
+{ IlvMenuItem 33554433 2 4 "&menu_AddTable"  "onAddTable" } 
+{ IlvMenuItem 33554433 2 4 "&menu_EditTable"  "onEditTable" } 
+{ IlvMenuItem 33554433 2 4 "&menu_RemoveTable"  "onRemoveTable" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 33554433 2 4 "&menu_SyncroTable"  "onSyncroTable" } 
+{ IlvMenuItem 33554433 2 4 "&menu_SyncroAll"  "onSyncroAllTables" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 33554433 2 4 "&menu_AppendColumn"  "onAppendColumn" } 
+{ IlvMenuItem 33554433 2 4 "&menu_InsertColumn"  "onInsertColumn" } 
+{ IlvMenuItem 33554433 2 4 "&menu_DeleteColumn"  "onDeleteColumn" } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 33554433 2 4 "&menu_EditJoin"  "onEditJoin" } 
+{ IlvMenuItem 33554433 2 4 "&menu_DeleteJoin"  "onDeleteJoin" }  16   }  0 } 32 "menubar"
+0
+2 { 2 2 IlvLabel 204 -86 "Remove Table ..." } 0
+0
+2 { 3 P 2
+[ IlvAttachments _IlvAttachments 192  1 90 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvButton 288 340 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "Apply"
+1
+1 "__ilvCallback" "apply"
+0
+2 { 4 P 2
+[ IlvAttachments _IlvAttachments 192  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvButton 373 340 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 544 "Close"
+1
+1 "__ilvCallback" "cancel"
+0
+3 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "SCManager" ]
+4 IlvSCGrapherRectangle 2 59 438 104 YY } 32 "grapher"
+0
+3 { 6 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvPanelObjectReference IlvPanelObjectReference  "918141261.0" ]
+5 IlvNotebook 0 178 458 151 F1 2 0 2  6
+" { IlvNotebookPageItem 1 2 4 "&page_Select"  }  "gray" ""
+" { IlvNotebookPageItem 1 2 4 "&page_Having"  }  "gray" ""
+" { IlvNotebookPageItem 1 2 4 "&page_Datatype"  }  "gray" ""
+" { IlvNotebookPageItem 1 2 4 "&page_Look"  }  "gray" ""
+" { IlvNotebookPageItem 1 2 4 "&page_Mapping"  }  "gray" ""
+" { IlvNotebookPageItem 1 2 4 "&page_Parameters"  }  "gray" ""
+0 0 8 5 2 10 10 10 10  } 544 "notebook"
+1
+1 "__ilvCallback" "onSelectPart"
+0
+3 { 7 P 2
+[ IlvAttachments _IlvAttachments 368  1 0 1 26 1 0 2 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvGadget 0 26 458 31 1 } 0
+0
+3 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 11 31 180 22 F6 2 1 -1 0 "" } 32 "name"
+0
+3 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 205 33 106 16 F1 2 1 2 0 0 0 Y "&lab_Global" } 32 "global"
+0
+3 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 318 33 129 16 F1 2 1 2 0 0 0 Y "&lab_AllowInsert" } 32 "allowInsert"
+0
+Size 458 368
+GeometryHandlers
+1 100 0 458 0 458 0
+1 3 0 0 0  458 0 458 0  0 0 0 0
+1 100 0 368 0 368 0
+1 3 0 0 61  311 0 311 0  0 0 -4 0
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

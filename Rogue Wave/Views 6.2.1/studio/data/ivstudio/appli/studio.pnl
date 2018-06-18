@@ -1,0 +1,72 @@
+// 
+//	    Rogue Wave Views Studio 4.0 Panel Description File
+//		Application Extension
+// 
+
+panel "MainPanel" {
+
+    menuItem NewApplication : "&mfile", "&new";
+    menuItem MakeDefaultApplication : "&mfile", "&new";
+    menuItem - : "&mfile", "&new" -before NewApplication;
+
+    menuItem "&mcode" : -before "&mwindow";
+
+    menu "&mcode" {
+	TestPanel,
+	-,
+	NewPanelClass,
+	ShowClassPalette,
+	ShowPanelClassInspector,
+	-,
+	AddPanel,
+	InspectPanel,
+	-,
+	ShowApplicationInspector,
+	TestApplication,
+    };
+
+    menuItem EditApplication : "&mwindow";
+    menuItem - : "&mwindow";
+
+}
+
+panel "Classes" {
+    title "&classes";
+    helpFile "classpal.ivh";
+    commandName ShowClassPalette;
+    toolbar top {
+	NewPanelClass,
+	RemovePanelClass,
+	ShowPanelClassInspector,
+	HelpClassPalette
+    }
+}
+
+panel "PanelClassInspector" {
+    title "&panelClass";
+    helpFile "pcinsp.ivh";
+}
+
+panel "ApplicationInspector" {
+    title "&application";
+    helpFile "appinsp.ivh";
+}
+
+panel "PanelInspector" {
+  commandName InspectPanel;
+  title "&panelInstance";
+  x 440;
+  y 460;
+  helpFile "paninsp.ivh";
+}
+
+panel "StateInspector" {
+    title "&state";
+    helpFile "statinsp.ivh";
+    toolbar top {
+	NewStateRequirement,
+	RemoveStateRequirement,
+	HelpStateInspector
+    }
+}
+

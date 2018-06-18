@@ -1,0 +1,283 @@
+Command RecentProjects {
+	Description "&RecentFileDesc"
+	Categories {
+		 "&Project"
+	}
+}
+
+ProjectGenData projectGenData {
+	alreadyEdited true
+	rcImplementation {
+		filename "synedit.rc"
+		maskFile "rc.txt"
+	}
+	projectName "synedit"
+	projectDirectory "d:\\views\\work\\samples\\appframe\\synedit\\"
+	makefile "msvc6\\synedit.dsp"
+	implementations {
+		{
+			classname "TreeDocument"
+			headerData {
+				filename "TreeDocument.h"
+				maskFile "hdoc.txt"
+			}
+			sourceData {
+				filename "TreeDocument.cpp"
+				maskFile "cppdoc.txt"
+			}
+		}
+		{
+			classname "TreeView"
+			headerData {
+				filename "TreeView.h"
+				maskFile "hview.txt"
+			}
+			sourceData {
+				filename "TreeView.cpp"
+				maskFile "cppview.txt"
+			}
+		}
+		{
+			classname "TextView"
+			headerData {
+				filename "TextView.h"
+				maskFile "hview.txt"
+			}
+			sourceData {
+				filename "TextView.cpp"
+				maskFile "cppview.txt"
+			}
+		}
+		{
+			classname "ProjectDocument"
+			headerData {
+				filename "ProjectDocument.h"
+				maskFile "hdoc.txt"
+			}
+			sourceData {
+				filename "ProjectDocument.cpp"
+				maskFile "cppdoc.txt"
+			}
+		}
+		{
+			classname "ProjectView"
+			headerData {
+				filename "ProjectView.h"
+				maskFile "hview.txt"
+			}
+			sourceData {
+				filename "ProjectView.cpp"
+				maskFile "cppview.txt"
+			}
+		}
+	}
+	mainImplementation {
+		filename "synedit.cpp"
+		maskFile "main.txt"
+	}
+	data {
+		 "class.xpm"
+		 "member.xpm"
+		 "method.xpm"
+		 "syngraph.ilv"
+	}
+	superclasses {
+		{
+			classname "ProjectView"
+			superclass "IlvDvProjectView"
+		}
+		{
+			classname "TextView"
+			superclass "IlvDvTextView"
+		}
+		{
+			classname "ListView"
+			superclass "IlvDvListView"
+		}
+		{
+			classname "TreeView"
+			superclass "IlvDvTreeView"
+		}
+		{
+			classname "MatrixView"
+			superclass "IlvDvMatrix"
+		}
+		{
+			classname "SheetView"
+			superclass "IlvDvSheetView"
+		}
+		{
+			classname "HierarchicalSheetView"
+			superclass "IlvDvHierarchicalSheetView"
+		}
+		{
+			classname "ManagerView"
+			superclass "IlvDvManagerView"
+		}
+		{
+			classname "ManagerDocument"
+			superclass "IlvDvManagerDocument"
+		}
+		{
+			classname "ProjectDocument"
+			superclass "IlvDvProjectDocument"
+		}
+		{
+			classname "TextDocument"
+			superclass "IlvDvTextDocument"
+		}
+		{
+			classname "FormView"
+			superclass "IlvDvFormView"
+		}
+	}
+}
+
+DocumentTemplate Synedit {
+	ILVFrameTemplate "synview.ilv"
+	DefaultDocName "Syntax"
+	ShortName "Tree"
+	Description "Syntaxic document"
+	Filters {
+		{
+			Format "*.h"
+			Description "Include files (.h)"
+		}
+	}
+	DocumentClass "TreeDocument"
+	ViewClasses {
+		 "TreeView"
+		 "TextView"
+	}
+	DocMenu {
+		insertItems {
+			{
+				items {
+					{
+						label "&MenuEdit"
+						isPopup true
+						popupItems {
+							{
+								label "Cut"
+							}
+							{
+								label "Copy"
+							}
+							{
+								label "Paste"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	Toolbars {
+		{
+			Name "TreeCommands"
+			items {
+				{
+					label "Cut"
+				}
+				{
+					label "Copy"
+				}
+				{
+					label "Paste"
+				}
+			}
+		}
+	}
+}
+
+DocumentTemplate Project {
+	DefaultDocName "Project"
+	ShortName "Project"
+	Description "Project document"
+	Filters {
+		{
+			Format "*.prj"
+			Description "Project files (.prj)"
+		}
+	}
+	DocumentClass "ProjectDocument"
+	ViewClasses {
+		 "ProjectView"
+	}
+	IsMDI false
+	ShowInBar "Left"
+	DocMenu {
+		insertItems {
+			{
+				items {
+					{
+						label "&MenuProject"
+						isPopup true
+						popupItems {
+							{
+								label "NewProject"
+							}
+							{
+								label "OpenProject"
+							}
+							{
+								label "CloseProject"
+							}
+							{
+								label "SEPARATOR"
+							}
+							{
+								label "SaveProject"
+							}
+							{
+								label "SaveAsProject"
+							}
+							{
+								label "SEPARATOR"
+							}
+							{
+								label "InsertFile"
+							}
+							{
+								label "InsertFolder"
+							}
+							{
+								label "SEPARATOR"
+							}
+							{
+								label "RecentProjects"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	AlwaysShowMenu true
+	RecentOpenFiles {
+		MaxFilesCount 3
+		Command "RecentProjects"
+		Name "RecentProjects"
+	}
+	OpenCommand "OpenProject"
+	NewCommand "NewProject"
+	AllowMultipleContainers false
+}
+
+ApplicationConfig App {
+	name "synedit"
+}
+
+; ---------------------------------------------------------------------------
+; Container informations
+
+ContainerConfiguration MainPanel {
+	title "Syntaxic Editor Application"
+	BoundingBox {
+		Left 221
+		Top 69
+		Width 653
+		Height 500
+	}
+}
+

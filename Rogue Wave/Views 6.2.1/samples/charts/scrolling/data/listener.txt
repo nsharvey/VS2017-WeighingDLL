@@ -1,0 +1,4 @@
+Files: listener.cpp, listener.h
+This sample shows you how to synchronize several data sets using listeners. This sample simulates 
+the visualization of successive temperature samples.
+

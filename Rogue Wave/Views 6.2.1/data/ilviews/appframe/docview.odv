@@ -1,0 +1,7 @@
+; Main option file loaded by document / view application
+
+include "ilviews/appframe/menu.odv"
+include "ilviews/appframe/command.odv"
+include "ilviews/appframe/config.odv"
+include "ilviews/appframe/document.odv"
+include "ilviews/appframe/classinfo.odv"

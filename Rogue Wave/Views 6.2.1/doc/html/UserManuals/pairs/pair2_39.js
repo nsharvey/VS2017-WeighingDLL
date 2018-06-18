@@ -1,0 +1,23 @@
+var pairs =
+{
+"using":{"ilvarrowbutton":1,"ilvbutton":1}
+,"ilvarrowbutton":{"class":1,"defines":1,"subclass":1,":setdirection":1,":getdirection":1}
+,"class":{"ilvarrowbutton":1}
+,"defines":{"button":1}
+,"button":{"displaying":1}
+,"displaying":{"arrow":1}
+,"arrow":{"arrow":1,"oriented":1,"buttons":1,"using":1}
+,"oriented":{"down":1}
+,"down":{"right":1}
+,"right":{"left":1}
+,"left":{"ilvarrowbutton":1}
+,"subclass":{"ilvbutton":1}
+,"ilvbutton":{"arrow":1}
+,"buttons":{"specify":1}
+,"specify":{"direction":1}
+,"direction":{"arrow":1}
+,":setdirection":{"retrieve":1}
+,"retrieve":{"ilvarrowbutton":1}
+,":getdirection":{"using":1}
+}
+;Search.control.loadWordPairs(pairs);

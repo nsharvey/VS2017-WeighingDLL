@@ -1,0 +1,80 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Gantt Chart - Samples: calendar</title>
+	</head>
+    <body>
+		<a name="calendar"><h1>Sample: <code>calendar</code></h1><h1 class="subtitle">Rogue Wave Views Gantt Calendar Example</h1></a>
+		<p>This sample shows how to use <code>IlvGanttChartForm</code>s, <code>IlvCalendarScale</code>s,
+and grids for the Gantt chart.</p>
+		<img src="data/calendar.png"/>
+		<p>This sample demonstrates how to use the time scales and the grids with the Gantt chart form. It shows how to do the following with the <code>IlvGanttChartForm</code> and the classes of the time scales:</p>
+  <ul>
+   <li>How to use the toolbar defined in <code>samples\gantt\common</code>.</li>
+   <li>How to create an <code>IlvGanttChartForm</code>.</li>
+   <li>How to create an <code>IlvCalendarScale</code> and use it to show dates and times in the <code>IlvGanttChartForm</code>.</li>
+   <li>How to create an <code>IlvGanttCalendarGrid</code> and use it in the <code>IlvGanttChartForm</code>.</li>
+   <li>How to use <code>IlvGanttResourceGrid</code> as the grid for resource lines.</li>
+   <li>How to customize graphic models used in <code>IlvGanttChartForm</code>.</li>
+   <li>How to use <code>IlvGanttResourceLine</code> to create the line graphic
+    model. The resources in an <code>IlvGanttChartForm</code> are represented by
+    the <code>IlvGanttResourceLine</code> class. The line graphic model of an <code>IlvGanttChartForm</code>
+    must be an instance of <code>IlvGanttResourceLine</code>. The <code>IlvGanttChartForm</code> will create automatically an <code>IlvGanttResourceHeader</code>
+    for such a line graphic model. See the function <code>CreateLineGraphicModel()</code>.</li>
+   <li>How to create a break graphic model. The <code>CreateBreakGraphicModel()</code> function shows the creation of
+    the break graphic model. Note that this graphic model has a nonshared
+    palette and an <code>IlvModeAnd</code> drawing mode.</li>
+  </ul>
+  <h2>How to use the toolbar:</h2>
+   <ol>
+    <li><img src="../data/select.png" border="1"/> Click on this button to select any graphic objects of the Gantt chart.
+      <ul>
+       <li>Select, move, and resize Gantt subnodes.</li>
+       <li>Select and vertically move the Gantt lines. This is useful for
+        resource reorganizing.</li>
+      </ul>
+    </li>
+    <li><img src="../data/insertrow.png" border="1"/> Click on this button to add new rows to the end of the Gantt chart.</li>
+    <li><img src="../data/deleterow.png" border="1"/> Click on this button to delete any selected Gantt lines.</li>
+    <li><img src="../data/newactivity.png" border="1"/> Click on this button to create Gantt nodes.</li>
+    <li><img src="../data/break.png" border="1"/> Click on this button to create breaks.</li>
+    <li><img src="../data/constraint.png" border="1"/> Click on this button to create Gantt links between Gantt nodes.</li>
+    <li><img src="../data/border2.png" border="1"/> Click on this button to enable/disable the outline borders of the grapher views.</li>
+    <li><img src="../data/background.png" border="1"/> Click on this button to change the background of the grid.</li>
+    <li><img src="../data/foreground.png" border="1"/> Click on this button to change the foreground of the grid.</li>
+    <li><img src="../data/pan.png" border="1"/> Click on this button to pan and zoom the Gantt chart.
+      <ul>
+       <li>To pan, drag the left mouse button in one of the grapher views.</li>
+       <li>To zoom, drag the middle button or use the mouse wheel in one of the grapher views.</li>
+      </ul>
+    </li>
+    <li><img src="../data/renderer.png" border="1"/> Click on this button to change the current subnode graphic model of the Gantt chart. If any subnodes are selected, this action also changes their graphics.</li>
+   </ol></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGanttChart</code></li>
+			<li><code>IlvGanttChartForm</code></li>
+			<li><code>IlvGanttLine</code></li>
+			<li><code>IlvGanttNode</code></li>
+			<li><code>IlvGanttSubNode</code></li>
+			<li><code>IlvShadowLabel</code></li>
+			<li><code>IlvGanttResourceLine</code></li>
+			<li><code>IlvGanttResourceHeader</code></li>
+			<li><code>IlvGanttResourceGrid</code></li>
+			<li><code>IlvGanttCalendarScale</code></li>
+			<li><code>IlvGanttCalendarGrid</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/calendar.cpp"><code>src/calendar.cpp</code></a></li>
+		</ul>

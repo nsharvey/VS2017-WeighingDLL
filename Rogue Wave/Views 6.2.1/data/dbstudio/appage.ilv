@@ -1,0 +1,19 @@
+// Ilv Version: 3.0
+// File generated: Thu Nov 20 11:26:32 1997
+// Creator class: IlvGadgetManagerOutput
+FileName "appage"
+PathName "appage.ilv"
+Palettes 2
+0 "gray" "black" "bold" "%MS Sans Serif-8-B" 0 solid solid 0 0 0
+1 "white" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+IlvObjects 1
+1 { 0 0 IlvSwTableGadget 0 0 240 176 2 2051 725597791 2 0 0 0 17 18 21 4 0 1 0 1 1 "white" A"normal" "%MS Sans Serif-8-" IlvSwMemoryTable 0 4 3 
+     9 "Column1" String 1 -1 1 62 32 
+     9 "Column2" String 2 -1 1 72 32 
+     9 "Column3" String 3 -1 1 80 32 
+     0 0 0 0
+0
+ } 32 "tableGadget"
+1008 1 0 1 0 1 0 1 0 2 2
+Size 240 176
+EOF

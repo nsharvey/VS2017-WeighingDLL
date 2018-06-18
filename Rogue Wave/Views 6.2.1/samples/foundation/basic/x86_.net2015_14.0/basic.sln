@@ -1,0 +1,10 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{EADE349C-1D63-11E8-96A2-F2B8772C9500}") = "ilvread", "ilvread.vcxproj", "{EADDD61E-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{EAE79636-1D63-11E8-96A2-F2B8772C9500}") = "inter", "inter.vcxproj", "{EADDD61E-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Project("{EAEEB632-1D63-11E8-96A2-F2B8772C9500}") = "hull", "hull.vcxproj", "{EADDD61E-1D63-11E8-96A2-F2B8772C9500}"
+EndProject
+Global
+EndGlobal

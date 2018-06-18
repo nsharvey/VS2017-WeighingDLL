@@ -1,0 +1,23 @@
+var pairs =
+{
+"showmessagepanel":{"label":1}
+,"label":{"message":1}
+,"message":{"editor":1}
+,"editor":{"path":1,"ets":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"tools":1}
+,"tools":{"menu":1}
+,"menu":{"category":1}
+,"category":{"panel":1}
+,"panel":{"action":1}
+,"action":{"open":1}
+,"open":{"message":1}
+,"ets":{"edit":1}
+,"edit":{"multilingual":1}
+,"multilingual":{"messages":1}
+,"messages":{"manage":1}
+,"manage":{"languages":1}
+,"languages":{"display":1}
+}
+;Search.control.loadWordPairs(pairs);

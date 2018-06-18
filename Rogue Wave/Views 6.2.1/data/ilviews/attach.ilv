@@ -1,0 +1,94 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:33:53 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "attach"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\attach.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 20
+2 { 0 0 IlvRectangle 47 30 161 104 } 32 "Rect"
+0
+2 { 1 0 IlvRectangle 83 58 89 48 } 32 "rect"
+0
+2 { 2 0 IlvRectangle 83 74 89 16 } 32 "width"
+0
+2 { 3 0 IlvRectangle 120 30 15 28 } 32 "top"
+0
+2 { 4 0 IlvRectangle 120 105 15 29 } 32 "bottom"
+0
+2 { 5 0 IlvRectangle 120 58 15 48 } 32 "height"
+0
+2 { 6 0 IlvRectangle 171 74 37 16 } 32 "right"
+0
+2 { 7 0 IlvRectangle 47 74 36 16 } 32 "left"
+0
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 107 5 40 22 F6 2 1 -1 0 "0" } 32 "ttop"
+2
+2 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 107 136 40 22 F6 2 1 -1 0 "0" } 32 "tbottom"
+2
+2 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 4 71 40 22 F6 2 1 -1 0 "0" } 32 "tleft"
+2
+2 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 211 71 40 22 F6 2 1 -1 0 "0" } 32 "tright"
+2
+2 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvPopupMenu 143 34 116 84 F166 2 V0 2 4
+{ IlvMenuItem 1 2 4 "None"  } 
+{ IlvMenuItem 1 2 4 "Elastic"  } 
+{ IlvMenuItem 1 2 4 "Fix"  } 
+{ IlvMenuItem 1 2 4 "Fix and Elastic"  }  16  } 32 "menu"
+0
+2 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvPopupMenu 59 49 79 46 F166 2 V0 2 2
+{ IlvMenuItem 1 2 4 "None"  } 
+{ IlvMenuItem 1 2 4 "Elastic"  }  16  } 32 "smenu"
+0
+2 { 14 0 IlvPolyline 14
+23 17 31 7 38 27 44 7 47 27 53 7 60 27 60 7 68 27 75 7
+78 27 84 7 91 27 99 7 } 32 "elhor"
+0
+2 { 15 0 IlvPolyline 13
+21 8 10 13 31 18 10 22 31 26 10 31 31 35 10 38 31 43 10 47
+31 51 10 56 21 61 } 32 "elvert"
+0
+2 { 16 P 2
+[ IlvAttachments _IlvAttachments 192  1 5 1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 190 174 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+2 { 17 P 2
+[ IlvAttachments _IlvAttachments 128  1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 79 174 72 23 F13 2 { IlvMessageItem 262145 4 16 4 "&reset"  }   } 512
+1
+1 "__ilvCallback" "reset"
+0
+2 { 18 P 2
+[ IlvAttachments _IlvAttachments 128  1 5 ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 5 174 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 512
+1
+1 "__ilvCallback" "apply"
+0
+3 { 19 P 1
+[ IlvAttachments _IlvAttachments 464  1 0 1 0 1 35 2 ]
+0 IlvReliefLine 0 166 255 166 1 } 32 "line"
+0
+Size 255 202
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

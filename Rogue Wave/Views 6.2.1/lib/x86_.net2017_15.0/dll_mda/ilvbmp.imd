@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- Rogue Wave Views BMP Dynamic Module Descriptor -->
+<module name="ilvbmp" version="6.2">
+  <class name="IlvBMPStreamer" rootClass="IlvBitmapStreamer" version="4.0">
+    <format description="Windows BMP">
+      <signature>0x42 0x4d</signature>
+      <extension>bmp</extension>
+    </format>
+  </class>
+</module>

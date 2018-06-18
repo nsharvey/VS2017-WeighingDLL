@@ -1,0 +1,13 @@
+// Ilv Version: 3.1
+// File generated: Mon Mar 22 16:43:08 1999
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+0 "defaultBg" "defaultFg" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 2
+1 { 0 0 IlvMessageLabel 37 21 96 22 F8 0 25 16 4 "&maxIterations"   } 32 "MaxIterLab"
+0
+1 { 1 0 IlvNumberField 154 21 164 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647 } 32 "MaxIterNum"
+0
+Size 328 61
+Background "gray"
+EOF

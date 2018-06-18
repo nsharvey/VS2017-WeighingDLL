@@ -1,0 +1,32 @@
+// Ilv Version: 3.1
+// File generated: Tue Dec 15 19:49:39 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "callback2"
+PathName "W:\\work.noiret\\studio\\data\\ivstudio\\inspectors\\callback2.ilv"
+Palettes 2
+"IlvStText" 0 "defaultBg" "defaultFg" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+"default" 1 "defaultBg" "defaultFg" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 6
+1 { 0 P1
+IlvPanelObjectReference IlvPanelObjectReference  "913718010.0"
+0 IlvSCGadgetContainerRectangle 4 33 212 97 "" 3 } 32 "CallbackContainer"
+0
+1 { 1 1 IlvReliefLine 4 24 216 24 1 } 32 "LineCallback"
+0
+1 { 2 0 IlvMessageLabel 4 2 39 22 F8 0 25 16 4 "&type"   } 32 "LabelCallbackType"
+0
+1 { 3 0 IlvMessageLabel 54 2 42 22 F8 0 25 16 4 "&name"   } 32 "LabelCallbackName"
+0
+1 { 4 0 IlvMessageLabel 113 2 52 22 F8 0 25 16 4 "&value"   } 32 "LabelCallbackValue"
+0
+1 { 5 0 IlvMessageLabel 178 2 38 22 F8 0 25 16 4 "&script"   } 32 "LabelCallbackScript"
+0
+Size 221 134
+GeometryHandlers
+1 100 0 221 0 221 0
+3 3 0 0 4  212 0 212 0  0 0 5 0
+ 3 0 0 4  0 0 39 2  5 0 5 0
+ 3 0 0 4  212 0 212 1  0 0 5 0
+1 100 0 134 0 134 0
+1 3 0 0 33  97 0 97 0  0 0 4 0
+EOF

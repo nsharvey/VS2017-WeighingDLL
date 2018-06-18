@@ -1,0 +1,112 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:41:55 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "fontch"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\fontch.ilv"
+Palettes 2
+"IlvStToolBar" 1 F "gray" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 12
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 5 50 102 152 F131 2 A A 0 0 0 0 0 1 0 0 V0 2 0 } 544 "familylist"
+1
+1 "__ilvCallback" "SelectDir"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvStringList 294 50 81 152 F131 2 A A 0 0 0 0 0 1 0 0 V0 2 0 } 544 "size"
+1
+1 "__ilvCallback" "apply"
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 5 226 367 68 F7 2 1 -1 0 "0123456789 abcdpqrst ABCDEPQRST" } 544 "text"
+1
+1 "__ilvCallback" "PrintType"
+6144 "apply" "size2"
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 112 53 173 16 F1 2 1 2 0 0 0 Y "&italic" } 544 "italic"
+1
+1 "__ilvCallback" "SelectStyle"
+6144 "bold" "normal"
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 112 78 173 16 F1 2 1 2 0 0 0 Y "&bold" } 544 "bold"
+1
+1 "__ilvCallback" "SelectStyle"
+6144 "underline" "italic"
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 112 103 173 16 F1 2 1 2 0 0 0 Y "&underline" } 544 "underline"
+1
+1 "__ilvCallback" "SelectStyle"
+6144 "size2" "bold"
+2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 5 316 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "apply"
+1
+1 "__ilvCallback" "apply"
+6144 "cancel" "text"
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 314 316 60 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 544 "cancel"
+1
+1 "__ilvCallback" "cancel"
+4096 "apply"
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 132 8 165 20 F1 2 9
+{ IlvMenuItem 65 2 4 "*"  } 
+{ IlvMenuItem 1 2 4 "adobe"  } 
+{ IlvMenuItem 1 2 4 "bitstream"  } 
+{ IlvMenuItem 1 2 4 "b&h"  } 
+{ IlvMenuItem 1 2 4 "misc"  } 
+{ IlvMenuItem 1 2 4 "schumacher"  } 
+{ IlvMenuItem 1 2 4 "sun"  } 
+{ IlvMenuItem 1 2 4 "dec"  } 
+{ IlvMenuItem 1 2 4 "sony"  }  0  } 544 "foundary"
+1
+1 "__ilvCallback" "ChFound"
+2048 "familylist2"
+2 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvToggle 112 142 173 16 F1 2 1 2 0 0 0 Y "&pointSize" } 546 "pointSize"
+1
+1 "__ilvCallback" "SelectStyle"
+0
+3 { 10 0 IlvReliefLine 0 308 379 308 1 } 32 "line"
+0
+3 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 5 5 119 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&foundry"  }   } 0
+0
+Size 379 344
+GeometryHandlers
+1 100 0 379 0 379 0
+11 3 0 0 5  367 0 367 2  0 0 7 0
+ 3 314 0 314  0 0 60 7  0 0 5 0
+ 3 0 0 0  379 0 379 10  0 0 0 0
+ 3 112 0 112  0 0 173 5  0 0 94 0
+ 3 112 0 112  0 0 173 4  0 0 94 0
+ 3 112 0 112  0 0 173 3  0 0 94 0
+ 3 0 0 132  165 0 165 8  0 0 82 0
+ 3 0 0 5  0 0 119 11  255 0 255 0
+ 3 112 0 112  0 0 173 9  0 1 94 0
+ 3 0 0 5  102 0 102 0  0 0 272 0
+ 3 294 0 294  0 0 81 1  0 0 4 0
+2 100 0 218 0 218 0
+ 50 0 126 218 126 218
+5 3 316 0 316  0 0 23 6  0 0 5 1
+ 3 316 0 316  0 0 23 7  0 0 5 1
+ 3 307 0 307  0 0 2 10  0 0 35 1
+ 3 0 0 50  152 0 152 0  0 1 16 0
+ 3 0 0 50  152 0 152 1  0 0 16 0
+1 3 0 0 8  68 0 68 2  0 0 50 1
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

@@ -1,0 +1,23 @@
+// IlvMessageDatabase 4 Fri May  5 17:37:43 2000
+// Language: fr_FR
+// Encoding: ISO-8859-1
+"01" "test de l'implantation multiligne sur un texte de très grande longueur en espérant que le découpage de ligne se fasse automatiquement dans de bonnes conditions sans poser de problème de troncage ou autre"
+"03" "produit explosif"
+"04" "produit poison, en cas d'absorption contacter le centre anti-poison au 04 50 87 47 47"
+"05" "produit corrosif"
+"06" "produit radioactif"
+"10" "emission de rayon laser"
+"14" "surface glissant"
+"18" "produit inflammable"
+"27" "émission d'ondes magnétiques"
+"35" "éviter tout contact"
+"36" "attention produit froid"
+"51" "port de lunettes nécessaire"
+"52" "port de casque obligatoire"
+"53" "port du masque à gaz obligatoire"
+"54" "port de gants obligatoire"
+"55" "port de chaussures renforcées obligatoire"
+"58" "port de visières obligatoire"
+"61" "port de combinaison obligatoire"
+"64" "se rincer les mains en fin de manipulation"
+"79" "utilisation du harnais obligatoire"

@@ -1,0 +1,44 @@
+// Ilv Version: 3.1
+// File generated: Wed Jul 21 12:01:25 1999
+// Creator class: IlvGraphOutput
+FileName "SynGraph"
+PathName "C:\\ilog\\Demo\\DocView\\Data\\SynGraph.ilv"
+Palettes 12
+8 "gray" "red" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+5 "gray" "blue" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+3 48830 48830 48830 "navyblue" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+2 48830 48830 48830 "red" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+9 "gray" "blue" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+1 48830 48830 48830 "blue" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+0 48830 48830 48830 "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+7 "gray" "navyblue" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+11 "gray" "navyblue" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+6 "gray" "red" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+"IlvStText" 4 "gray" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+"default" 10 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 19
+0 0 { 0 0 IlvRectangle 13 11 170 22 } 0
+0 0 { 1 1 IlvRectangle 312 11 170 22 } 0
+0 0 { 2 2 IlvRectangle 312 128 170 22 } 0
+0 0 { 3 2 IlvRectangle 312 204 170 22 } 0
+0 0 { 4 0 IlvRectangle 13 165 170 22 } 0
+0 0 { 5 3 IlvRectangle 312 310 170 22 } 0
+1 0 { 6 4 IlvMessageLabel 13 11 170 22 F8 0 1 16 4 "Class1"   } 32 "node1"
+1 0 { 7 5 IlvMessageLabel 312 11 170 22 F8 0 1 16 4 "Class2"   } 32 "node2"
+1 0 { 8 4 IlvMessageLabel 13 165 170 22 F8 0 1 16 4 "Class3"   } 32 "node3"
+1 0 { 9 6 IlvMessageLabel 312 204 170 22 F8 0 1 16 4 "Class5"   } 32 "node5"
+1 0 { 10 6 IlvMessageLabel 312 128 170 22 F8 0 1 16 4 "Class4"   } 32 "node4"
+1 0 { 11 7 IlvMessageLabel 312 310 170 22 F8 0 1 16 4 "Class6"   } 32 "node6"
+1 1 { 12 8 IlvOneLinkImage 1 64 4 2 } 24
+1 1 { 13 8 IlvOneLinkImage 1 64 4 3 } 24
+1 1 { 14 9 IlvLinkImage 1 7 10 } 24
+1 1 { 15 8 IlvLinkImage 1 10 3 } 24
+1 1 { 16 10 IlvOneLinkImage 1 64 6 4 } 24
+1 1 { 17 11 IlvDoubleLinkImage 1 8 11 } 24
+1 1 { 18 10 IlvDoubleLinkImage 1 9 5 } 24
+Layers 2
+"" 0
+"" 0
+Views 1
+"v45" 1 0 0 1 0 -161
+EOF

@@ -1,0 +1,47 @@
+// Ilv Version: 5.1
+// File generated: Wed Oct 31 08:30:54 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "browseds"
+PathName "browseds.ilv"
+Palettes 2
+"IlvStToolBar" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+1 F "defaultBg" "black" "button" "%MS Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 4
+1 { 0 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IlvPanelObjectReference IlvPanelObjectReference  "952702115.0" ]
+0 IlvNotebook 5 5 430 232 F1 2 0 2  1
+" { IlvNotebookPageItem 1 2 4 "&tab_Panels"  }  "gray" ""
+0 0 4 5 2 10 10 10 10  } 32 "NTBook"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 355 245 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 544 "cancel"
+1
+1 "__ilvCallback" "cancel"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 110 245 100 23 F13 2 { IlvMessageItem 262145 4 16 4 "&word_Refresh"  }   } 544 "BtnRefresh"
+1
+1 "__ilvCallback" "BNRefresh"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 5 245 100 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cmd_EditBuffer"  }   } 544 "BtnBuffer"
+1
+1 "__ilvCallback" "BNBuffer"
+0
+Size 440 273
+GeometryHandlers
+1 100 0 440 0 440 0
+4 3 0 0 5  430 0 430 0  0 0 5 0
+ 3 0 0 110  0 0 100 2  230 0 230 0
+ 3 355 0 355  0 0 80 1  0 0 5 0
+ 3 0 0 5  0 0 100 3  335 0 335 0
+1 100 0 273 0 273 0
+4 3 0 0 5  232 0 232 0  0 0 36 0
+ 3 245 0 245  0 0 23 2  0 0 5 0
+ 3 245 0 245  0 0 23 1  0 0 5 0
+ 3 245 0 245  0 0 23 3  0 0 5 0
+EOF

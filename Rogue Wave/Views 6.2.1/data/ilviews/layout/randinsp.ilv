@@ -1,0 +1,18 @@
+// Ilv Version: 3.1
+// File generated: Thu Jan 27 14:49:16 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "randinsp"
+PathName "/nfs/views-work/work.lenorman/data/ilviews/layout/randinsp.ilv"
+Palettes 1
+"IlvStText" 0 "lightgrey" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 1
+1 { 0 0 IlvMessageLabel 10 12 170 22 F8 0 25 16 4 "&noSpecificParameterForThisLayoutStyle"   } 0
+0
+Size 186 48
+Background "gray"
+GeometryHandlers
+1 100 0 186 0 186 0
+1 3 0 0 10  170 0 170 0  0 0 6 0
+1 100 0 48 0 48 0
+0
+EOF

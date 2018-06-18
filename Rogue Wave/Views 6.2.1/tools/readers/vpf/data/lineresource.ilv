@@ -1,0 +1,45 @@
+// Ilv Version: 3.0
+// File generated: Thu Jul 30 15:43:32 1998
+// Creator class: IlvGadgetManagerOutput
+FileName "lineresource"
+
+Palettes 3
+"IlvStText" 2 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+"default" 1 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+0 "gray" "black" "button" "%MS Sans Serif-11-" 0 solid solid 0 0 0
+IlvObjects 7
+1 { 0 0 IlvButton 80 8 92 23 F1 2 16 Y "Color..." } 32 "color"
+0
+1 { 1 0 IlvFrame 8 0 64 72 0 "Sample" 1 } 0
+0
+1 { 2 0 IlvButton 296 8 73 23 F1 2 16 Y "Apply" } 512
+1
+1 "__ilvCallback" "apply"
+0
+1 { 3 0 IlvButton 296 40 73 23 F1 2 16 Y "Cancel" } 512
+1
+1 "__ilvCallback" "cancel"
+0
+1 { 4 1 IlvLine 24 56 56 24 } 32 "line"
+0
+1 { 5 2 IlvScrolledComboBox 184 8 92 22 F7 2 8 "solid"
+"solid"
+"dash"
+"dot"
+"dashdot"
+"dashdoubledot"
+"alternate"
+"doubledot"
+"longdash" 4 } 32 "style"
+0
+1 { 6 2 IlvScrolledComboBox 184 40 92 22 F6 2 6 "1"
+"1"
+"2"
+"3"
+"4"
+"5"
+"6" 4 } 32 "width"
+0
+Size 381 78
+Background "gray"
+EOF

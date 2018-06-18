@@ -1,0 +1,22 @@
+var pairs =
+{
+"delete":{"label":1,"path":1,"icon":1}
+,"label":{"delete":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"edit":1}
+,"edit":{"menu":1,"action":1}
+,"menu":{"delete":1}
+,"icon":{"toolbar":1}
+,"toolbar":{"category":1}
+,"category":{"edit":1}
+,"action":{"deletes":1}
+,"deletes":{"selected":1}
+,"selected":{"objects":1}
+,"objects":{"unlike":1}
+,"unlike":{"cut":1}
+,"cut":{"command":1}
+,"command":{"clipboard":1}
+,"clipboard":{"modified":1}
+}
+;Search.control.loadWordPairs(pairs);

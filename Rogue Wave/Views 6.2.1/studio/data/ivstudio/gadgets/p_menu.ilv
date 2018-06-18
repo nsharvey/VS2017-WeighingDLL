@@ -1,0 +1,52 @@
+// Ilv Version: 5.4
+// File generated: Thu Nov 25 16:48:54 2010
+// Creator class: IlvGadgetManagerOutput
+FileName "p_menu"
+PathName "p_menu.ilv"
+Palettes 1
+"defaultGadget" 0 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 3
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToolBar 5 10 170 31 F295 2 V0 2 8
+{ IlvMenuItem 2 2 4 1 0 "icon/new.png"  } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 2 2 4 1 0 "icon/open.png"  } 
+{ IlvMenuItem 2 2 4 1 0 "icon/save.png"  } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 2 2 4 1 0 "icon/cut.png"  } 
+{ IlvMenuItem 2 2 4 1 0 "icon/copy.png"  } 
+{ IlvMenuItem 2 2 4 1 0 "icon/paste.png"  }  0 } 0
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMenuBar 5 55 170 26 F294 2 V0 2 3
+{ IlvMenuItem 1 2 4 "&menu_file"  } 
+{ IlvMenuItem 1 2 4 "&menu_edit"  } 
+{ IlvMenuItem 1 2 4 "&menu_help"  }  0 } 0
+0
+6 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvPopupMenu 5 90 104 74 F166 2 V0 2 4
+{ IlvMenuItem 3 2 4 "&menu_open..." 1 0 "icon/open.png"  } 
+{ IlvMenuItem 3 2 4 "&menu_save" 1 0 "icon/save.png"  } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 1 2 4 "&menu_exit"  }  22  } 0
+0
+Size 180 175
+GeometryHandlers
+1 100 0 180 0 180 0
+3 3 0 0 5  170 0 170 1  0 0 5 0
+ 3 0 0 5  0 0 104 2  71 0 71 0
+ 3 0 0 5  170 0 170 0  0 1 5 0
+1 100 0 175 0 175 0
+1 3 0 0 90  0 0 74 2  0 0 11 0
+Layers 7
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("96411192-1D69-11E8-91B2-87BE772C9500") = "interactors", "interactors.vcxproj", "9640BD50-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

@@ -1,0 +1,196 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:48:29 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "popup"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\popup.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 25
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 195 370 182 F268435468 0 { IlvMessageItem 262169 4 16 4 "&itemprops"  }   } 32 "Frame_1"
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 125 214 125 23 F6 2 1 -1 0 "" } 544 "label"
+1
+1 "__ilvCallback" "setLabel"
+2048 "bitmap"
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFileSelectorField 125 247 125 23 F6 2 1 -1 0 "" } 544 "bitmap"
+1
+1 "__ilvCallback" "setBitmap"
+6144 "callb" "label"
+2 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 125 281 125 23 F6 2 1 -1 0 "" } 544 "callb"
+1
+1 "__ilvCallback" "setCallback"
+6144 "accel" "bitmap"
+2 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 282 312 88 16 F1 2 1 2 0 0 0 Y "&checked" } 544 "check"
+1
+1 "__ilvCallback" "setChecked"
+6144 "Button_3" "radio"
+2 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 282 216 88 16 F1 2 1 2 0 0 0 Y "&readonly" } 544 "ro"
+1
+1 "__ilvCallback" "setReadOnly"
+6144 "sens" "accelkey"
+2 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 282 240 88 16 F1073741825 2 1 2 0 0 0 Y "&sensitive" } 544 "sens"
+1
+1 "__ilvCallback" "setSensitive"
+6144 "toggle" "ro"
+2 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 5 395 62 23 F13 2 { IlvMessageItem 262145 4 16 4 "&apply"  }   } 544 "Button_3"
+1
+1 "__ilvCallback" "apply"
+4096 "check"
+2 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 313 395 62 23 F13 2 { IlvMessageItem 262145 4 16 4 "&close"  }   } 544 "Button_4"
+1
+1 "__ilvCallback" "cancel"
+16384
+2 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 16 97 118 23 F13 2 { IlvMessageItem 262145 4 16 4 "&insert"  }   } 544 "Button_1"
+1
+1 "__ilvCallback" "add"
+6144 "Button_2" "Toggle_1"
+2 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 17 159 118 23 F13 2 { IlvMessageItem 262145 4 16 4 "&remove"  }   } 544 "remove"
+1
+1 "__ilvCallback" "remove"
+6144 "ScrolledStringList_1" "Button_2"
+2 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 16 127 118 23 F13 2 { IlvMessageItem 262145 4 16 4 "&Insert Separator"  }   } 544 "Button_2"
+1
+1 "__ilvCallback" "separator"
+6144 "remove" "Button_1"
+2 { 12 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 125 346 125 23 F6 2 1 -1 0 "" } 544 "accel"
+1
+1 "__ilvCallback" "setAcceleratorText"
+6144 "accelkey" "callb"
+2 { 13 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 15 345 93 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&accelerator"  }   } 0
+0
+2 { 14 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 125 312 125 23 F6 2 1 -1 0 "" } 544 "accelkey"
+1
+1 "__ilvCallback" "setAcceleratorKey"
+6144 "ro" "accel"
+2 { 15 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 15 312 111 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&acceleratorKey"  }   } 0
+0
+3 { 16 0 IlvReliefLine 0 388 380 388 1 } 32 "line"
+0
+3 { 17 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 15 213 98 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&label"  }   } 0
+0
+3 { 18 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 15 246 88 26 F268435468 0 { IlvMessageItem 262169 4 16 4 "&bitmap"  }   } 0
+0
+3 { 19 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 15 286 90 14 F268435468 0 { IlvMessageItem 262169 4 16 4 "&callback"  }   } 0
+0
+3 { 20 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 2 370 191 F268435468 0 { IlvMessageItem 262169 4 16 4 "&items"  }   } 0
+0
+3 { 21 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 282 264 88 16 F1 2 1 2 0 0 0 Y "Toggle" } 544 "toggle"
+1
+1 "__ilvCallback" "setToggle"
+6144 "radio" "sens"
+3 { 22 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 282 290 88 16 F1 2 1 2 0 0 0 Y "&radio" } 544 "radio"
+1
+1 "__ilvCallback" "setRadio"
+6144 "check" "toggle"
+3 { 23 P 1
+[ IlvPanelObjectReference IlvPanelObjectReference  "1027440297.0" ]
+0 IlvSCGadgetContainerRectangle 153 21 209 159 "" 3 } 32 "scroll"
+0
+3 { 24 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 20 68 90 16 F1 2 1 2 0 0 0 Y "&setTearOff" } 544 "tearOff"
+1
+1 "__ilvCallback" "tearOff"
+6144 "Button_1" "Button_4"
+Size 380 424
+GeometryHandlers
+1 100 0 380 0 380 0
+25 3 0 0 153  209 0 209 23  0 0 18 0
+ 3 0 0 5  370 0 370 20  0 0 5 0
+ 3 0 0 5  370 0 370 0  0 0 5 0
+ 3 0 0 0  380 0 380 16  0 0 0 0
+ 3 313 0 313  0 0 62 8  0 0 5 0
+ 3 282 0 282  0 0 88 4  0 0 10 0
+ 3 282 0 282  0 0 88 22  0 0 10 0
+ 3 282 0 282  0 0 88 21  0 0 10 0
+ 3 282 0 282  0 0 88 6  0 0 10 0
+ 3 282 0 282  0 0 88 5  0 0 10 0
+ 3 0 0 125  125 0 125 1  0 0 130 0
+ 3 0 0 125  125 0 125 2  0 0 130 0
+ 3 0 0 125  125 0 125 3  0 0 130 0
+ 3 0 0 125  125 0 125 12  0 0 130 0
+ 3 0 0 125  125 0 125 14  0 0 130 0
+ 3 0 0 16  0 0 118 9  246 0 246 0
+ 3 0 0 16  0 0 118 11  246 0 246 0
+ 3 0 0 17  0 0 118 10  245 0 245 0
+ 3 0 0 20  0 0 90 24  270 0 270 0
+ 3 0 0 15  0 0 98 17  267 0 267 0
+ 3 0 0 15  0 0 88 18  277 0 277 0
+ 3 0 0 15  0 0 90 19  275 0 275 0
+ 3 0 0 15  0 0 93 13  272 0 272 0
+ 3 0 0 15  0 0 111 15  254 0 254 0
+ 3 0 0 5  0 0 62 7  313 0 313 0
+2 100 197 197 0 197 0
+ 0 0 227 197 227 197
+21 3 0 0 21  159 0 159 23  0 0 244 1
+ 3 0 0 2  191 0 191 20  0 0 231 1
+ 3 195 0 195  0 0 182 0  0 0 47 1
+ 3 387 0 387  0 0 2 16  0 0 35 1
+ 3 395 0 395  0 0 23 7  0 0 6 1
+ 3 395 0 395  0 0 23 8  0 0 6 1
+ 3 312 0 312  0 0 16 4  0 0 96 1
+ 3 290 0 290  0 0 16 22  0 0 118 1
+ 3 264 0 264  0 0 16 21  0 0 144 1
+ 3 240 0 240  0 0 16 6  0 0 168 1
+ 3 216 0 216  0 0 16 5  0 0 192 1
+ 3 214 0 214  0 0 23 1  0 0 187 1
+ 3 247 0 247  0 0 23 2  0 0 154 1
+ 3 281 0 281  0 0 23 3  0 0 120 1
+ 3 346 0 346  0 0 23 12  0 0 55 1
+ 3 312 0 312  0 0 23 14  0 0 89 1
+ 3 213 0 213  0 0 26 17  0 0 185 1
+ 3 246 0 246  0 0 26 18  0 0 152 1
+ 3 286 0 286  0 0 14 19  0 0 124 1
+ 3 345 0 345  0 0 26 13  0 0 53 1
+ 3 312 0 312  0 0 26 15  0 0 86 1
+0
+Layers 4
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

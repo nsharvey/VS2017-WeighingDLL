@@ -1,0 +1,182 @@
+div.Body, caption.Body
+{
+  color: #000000;
+  direction: ltr;
+  font-family: Sans-Serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6.0pt;
+  margin-left: 1.35em;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: left;
+  text-indent: 0em;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 96%;
+}
+
+div.BookTitle, caption.BookTitle
+{
+  background-color: #226099;
+  color: White;
+  direction: ltr;
+  font-family: Sans-Serif;
+  font-size: xx-large;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 50.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  text-align: center;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 96%;
+}
+
+div.Cellbody, caption.Cellbody
+{
+  color: #000000;
+  direction: ltr;
+  font-family: Sans-Serif;
+  font-size: 9.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  padding-bottom: .25em;
+  padding-top: .25em;
+  text-align: left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 96%;
+}
+
+div.Glossaryentry, caption.Glossaryentry
+{
+  color: #858A8B;
+  direction: ltr;
+  font-family: Sans-Serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 0.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: -12.0pt;
+  padding-top: 1em;
+  text-align: left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 20%;
+}
+
+div.Glossarytext, caption.Glossarytext
+{
+  color: #000000;
+  direction: ltr;
+  font-family: Sans-Serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 10.0pt;
+  margin-left: 141.732pt;
+  margin-right: 0pt;
+  margin-top: -1em;
+  padding-top: -1em;
+  text-align: left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+  width: 96%;
+}
+
+span.code, abbreviation.code, acronym.code, citation.code
+{
+  color: #000000;
+  font-family: Monospace;
+  font-size: small;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.emphasis, abbreviation.emphasis, acronym.emphasis, citation.emphasis
+{
+  color: #000000;
+  font-style: italic;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.folionum, abbreviation.folionum, acronym.folionum, citation.folionum
+{
+  color: #000000;
+  font-family: Helvetica;
+  font-size: 10.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.gotoref, abbreviation.gotoref, acronym.gotoref, citation.gotoref
+{
+  color: #000000;
+  font-family: Courier;
+  font-size: 9.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.hypertext, abbreviation.hypertext, acronym.hypertext, citation.hypertext
+{
+  color: #000000;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.mantitle, abbreviation.mantitle, acronym.mantitle, citation.mantitle
+{
+  color: #000000;
+  font-family: Helvetica;
+  font-size: 9.0pt;
+  font-style: normal;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+img.Default
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+video.Default
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+

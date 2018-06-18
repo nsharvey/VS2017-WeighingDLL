@@ -1,0 +1,25 @@
+var pairs =
+{
+"dted":{"file":1,"format":1}
+,"file":{"reader":1}
+,"reader":{"section":1}
+,"section":{"describes":1}
+,"describes":{"classes":1}
+,"classes":{"ilvmaps":1,"reading":1}
+,"ilvmaps":{"library":1}
+,"library":{"allow":1}
+,"allow":{"read":1}
+,"read":{"files":1}
+,"files":{"dted":1}
+,"format":{"covers":1,"classes":1,"graphical":1}
+,"covers":{"following":1}
+,"following":{"topics":1}
+,"topics":{"introducing":1}
+,"introducing":{"dted":1}
+,"reading":{"dted":1}
+,"graphical":{"rendering":1}
+,"rendering":{"digital":1}
+,"digital":{"terrain":1}
+,"terrain":{"model":1}
+}
+;Search.control.loadWordPairs(pairs);

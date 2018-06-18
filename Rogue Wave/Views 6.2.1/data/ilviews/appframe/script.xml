@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+<Options>
+<!--***************************************************************************-->
+<!--Template of script document-->
+  <DocumentTemplate AF_Name="Script" bitmap="" IsMDI="true" ILVFrameTemplate="" ShowInBar="" FrameMaximized="false" AllowMultipleContainers="true" AlwaysShowMenu="false" OpenCommand="" NewCommand="" ShowHidePaneCommand="" DefaultDocName="ScpDoc" ShortName="ScpDoc" Description="Script document" AppearsInLoadFileFilters="false" DocumentClass="IlvDvTextScriptDocument">
+    <ViewTemplates/>
+    <RecentOpenFiles MaxFilesCount="0" Command="" Name=""/>
+    <Filters>
+      <Filters Format="*.scp" Description="Script files (.scp)"/>
+    </Filters>
+    <ViewClasses>
+      <ViewClasses AF_Value="IlvDvTextScriptView"/>
+    </ViewClasses>
+    <DocMenu>
+      <removeItems/>
+      <insertItems>
+        <insertItems After="true" Path="&amp;MainMenu/&amp;MenuFile">
+          <items>
+            <items label="&amp;MenuEdit" isPopup="true">
+              <popupItems>
+                <popupItems isPopup="false" label="Cut">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="Copy">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="Paste">
+                  <popupItems/>
+                </popupItems>
+              </popupItems>
+            </items>
+            <items label="&amp;MenuRun" isPopup="true">
+              <popupItems>
+                <popupItems isPopup="false" label="Execute">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="Stop">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="Pause">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="SEPARATOR">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="StepInto">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="StepOver">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="StepOut">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="RunToCursor">
+                  <popupItems/>
+                </popupItems>
+              </popupItems>
+            </items>
+          </items>
+        </insertItems>
+      </insertItems>
+    </DocMenu>
+    <Toolbars>
+      <Toolbars InitialeDockingSide="Top" IsUserBar="false" DoNotUse="false" Name="Text">
+        <items>
+          <items isPopup="false" label="Cut">
+            <popupItems/>
+          </items>
+          <items isPopup="false" label="Copy">
+            <popupItems/>
+          </items>
+          <items isPopup="false" label="Paste">
+            <popupItems/>
+          </items>
+          <items isPopup="false" label="SEPARATOR">
+            <popupItems/>
+          </items>
+          <items isPopup="false" label="Execute">
+            <popupItems/>
+          </items>
+          <items isPopup="false" label="Stop">
+            <popupItems/>
+          </items>
+          <items isPopup="false" label="Pause">
+            <popupItems/>
+          </items>
+          <items isPopup="false" label="SEPARATOR">
+            <popupItems/>
+          </items>
+          <items isPopup="false" label="StepInto">
+            <popupItems/>
+          </items>
+          <items isPopup="false" label="StepOver">
+            <popupItems/>
+          </items>
+          <items isPopup="false" label="StepOut">
+            <popupItems/>
+          </items>
+          <items isPopup="false" label="RunToCursor">
+            <popupItems/>
+          </items>
+        </items>
+      </Toolbars>
+    </Toolbars>
+  </DocumentTemplate>
+<!--***************************************************************************-->
+<!--Script commands-->
+  <Command AF_Name="Compile" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuCompile" Description="&amp;CompileDesc" Tooltip="&amp;Compile" Bitmap="ilviews/appframe/compile.gif" BigBitmap="ilviews/appframe/bigicons/compile.gif">
+    <Accelerators>
+      <Accelerators AF_Value="Ctrl+F7"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Execute" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuExecute" Description="&amp;ExecuteDesc" Tooltip="&amp;Execute" Bitmap="ilviews/appframe/execute.gif" BigBitmap="ilviews/appframe/bigicons/execute.gif">
+    <Accelerators>
+      <Accelerators AF_Value="Ctrl+F5"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Stop" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuStop" Description="&amp;StopDesc" Tooltip="&amp;Stop" Bitmap="ilviews/appframe/stop.gif" BigBitmap="ilviews/appframe/bigicons/stop.gif">
+    <Accelerators>
+      <Accelerators AF_Value="Ctrl+Break"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Pause" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuPause" Description="&amp;PauseDesc" Tooltip="&amp;Pause" Bitmap="ilviews/appframe/pause.gif" BigBitmap="ilviews/appframe/bigicons/pause.gif">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="Go" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuGo" Description="&amp;GoDesc" Tooltip="&amp;Go" Bitmap="ilviews/appframe/gopgm.gif" BigBitmap="ilviews/appframe/bigicons/gopgm.gif">
+    <Accelerators>
+      <Accelerators AF_Value="F5"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="StepInto" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuStepInto" Description="&amp;StepIntoDesc" Tooltip="&amp;StepInto" Bitmap="ilviews/appframe/stepinto.gif" BigBitmap="ilviews/appframe/bigicons/stepinto.gif">
+    <Accelerators>
+      <Accelerators AF_Value="F11"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="StepOver" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuStepOver" Description="&amp;StepOverDesc" Tooltip="&amp;StepOver" Bitmap="ilviews/appframe/stepover.gif" BigBitmap="ilviews/appframe/bigicons/stepover.gif">
+    <Accelerators>
+      <Accelerators AF_Value="F10"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="StepOut" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuStepOut" Description="&amp;StepOutDesc" Tooltip="&amp;StepOut" Bitmap="ilviews/appframe/stepout.gif" BigBitmap="ilviews/appframe/bigicons/stepout.gif">
+    <Accelerators>
+      <Accelerators AF_Value="Shift+F11"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="RunToCursor" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" IsCustomCommand="false" MenuDescription="&amp;MenuRunToCursor" Description="&amp;RunToCursorDesc" Tooltip="&amp;RunToCursor" Bitmap="ilviews/appframe/runtocur.gif" BigBitmap="ilviews/appframe/bigicons/runtocur.gif">
+    <Accelerators>
+      <Accelerators AF_Value="Ctrl+F10"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+<!--***************************************************************************-->
+<!--Template of ScriptProject documents-->
+  <DocumentTemplate AF_Name="ScriptProject" bitmap="" ILVFrameTemplate="" FrameMaximized="false" ShowHidePaneCommand="" DefaultDocName="Scripp" ShortName="Scripp" Description="Script project document" AppearsInLoadFileFilters="false" DocumentClass="IlvDvScriptProjectDocument" IsMDI="false" ShowInBar="Left" AlwaysShowMenu="true" OpenCommand="OpenScriptProject" NewCommand="NewScriptProject" AllowMultipleContainers="false">
+    <ViewTemplates/>
+    <Toolbars/>
+    <Filters>
+      <Filters Format="*.spj" Description="Script Project files (.spj)"/>
+    </Filters>
+    <ViewClasses>
+      <ViewClasses AF_Value="IlvDvScriptProjectView"/>
+    </ViewClasses>
+    <DocMenu>
+      <removeItems/>
+      <insertItems>
+        <insertItems After="true" Path="&amp;MainMenu/&amp;MenuTools/Modules">
+          <items>
+            <items isPopup="false" label="SEPARATOR">
+              <popupItems/>
+            </items>
+            <items label="&amp;MenuScriptProject" isPopup="true">
+              <popupItems>
+                <popupItems isPopup="false" label="NewScriptProject">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="OpenScriptProject">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="CloseScriptProject">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="SEPARATOR">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="SaveScriptProject">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="SaveAsScriptProject">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="SEPARATOR">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="InsertScriptFile">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="InsertScriptFolder">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="SEPARATOR">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="Execute">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="Stop">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="Pause">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="SEPARATOR">
+                  <popupItems/>
+                </popupItems>
+                <popupItems isPopup="false" label="RecentScriptProjects">
+                  <popupItems/>
+                </popupItems>
+              </popupItems>
+            </items>
+          </items>
+        </insertItems>
+      </insertItems>
+    </DocMenu>
+    <RecentOpenFiles MaxFilesCount="3" Command="RecentScriptProjects" Name="RecentScriptProjects"/>
+  </DocumentTemplate>
+  <Command AF_Name="RecentScriptProjects" MenuDescription="" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" Description="&amp;RecentFileDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="NewScriptProject" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuNewProject" Description="&amp;NewProjectDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="OpenScriptProject" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuOpenProject" Description="&amp;OpenProjectDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="SaveScriptProject" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuSaveProject" Description="&amp;SaveProjectDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="SaveAsScriptProject" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuSaveAsProject" Description="&amp;SaveAsProjectDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="CloseScriptProject" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuCloseProject" Description="&amp;CloseProjectDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="InsertScriptFile" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuInsertFile" Description="&amp;InsertFileDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="InsertScriptFolder" Bitmap="" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuInsertFolder" Description="&amp;InsertFolderDesc">
+    <Accelerators/>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+  <Command AF_Name="DeleteScriptFiles" SelectedBitmap="" UnsensitiveBitmap="" HighlightedBitmap="" BigSelectedBitmap="" BigUnsensitiveBitmap="" BigHighlightedBitmap="" Tooltip="" IsCustomCommand="false" MenuDescription="&amp;MenuDelete" Description="Deletes the selection" Bitmap="ilviews/appframe/delete.gif" BigBitmap="ilviews/appframe/bigicons/delete.gif">
+    <Accelerators>
+      <Accelerators AF_Value="Del"/>
+    </Accelerators>
+    <Categories>
+      <Categories AF_Value="&amp;Script"/>
+    </Categories>
+  </Command>
+</Options>

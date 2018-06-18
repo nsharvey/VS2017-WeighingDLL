@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("9628B304-1D69-11E8-91B2-87BE772C9500") = "cadrgview", "cadrgview.vcxproj", "96285D96-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

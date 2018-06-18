@@ -1,0 +1,25 @@
+var pairs =
+{
+"generatestringdata":{"label":1}
+,"label":{"generate":1}
+,"generate":{"string":1}
+,"string":{"data":1,"corresponding":1,"generated":1}
+,"data":{"category":1,"string":1}
+,"category":{"buffer":1}
+,"buffer":{"action":1,"ata":1,"empty":1}
+,"action":{"generates":1}
+,"generates":{"file":1}
+,"file":{"character":1,"selector":1,"data":1}
+,"character":{"string":1}
+,"corresponding":{"current":1}
+,"current":{"buffer":1}
+,"ata":{"command":1}
+,"command":{"opens":1}
+,"opens":{"file":1}
+,"selector":{"panel":1}
+,"panel":{"lets":1}
+,"lets":{"enter":1}
+,"enter":{"file":1}
+,"generated":{"current":1}
+}
+;Search.control.loadWordPairs(pairs);

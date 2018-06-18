@@ -1,0 +1,100 @@
+// Ilv Version: 5.1
+// File generated: Thu Jan 19 14:57:35 2006
+// Creator class: IlvGadgetManagerOutput
+FileName "treegnrl"
+PathName "C:\\ilog\\views\\work\\data\\ilviews\\treegnrl.ilv"
+Palettes 1
+"defaultGadget" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 1
+IlvObjects 12
+3 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 24 30 181 16 F1 2 1 2 0 0 0 Y "&Show_lines" } 544 "ShowLines"
+1
+1 "__ilvCallback" "ShowLinesCallback"
+6144 "LinesAsRoot" "TreeSample"
+3 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTreeGadget 261 32 190 200 F32 2 A A 0 0 0 0 20 1 1 1 1 1 0 V0 2
+{ IlvTreeGadgetItem 1 2 4 "root" 2
+{ IlvTreeGadgetItem 1 2 4 "First Root" 2
+{ IlvTreeGadgetItem 1 2 4 "Leaf 1" 0
+ } { IlvTreeGadgetItem 1 2 4 "Leaf 2" 0
+ }  } { IlvTreeGadgetItem 1 2 4 "Second Root" 0
+ }  }  } 544 "TreeSample"
+1
+1 "__ilvCallback" "TreeSampleCallback"
+6144 "ShowLines" "ItemsEditable"
+3 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 24 54 181 16 F1 2 1 2 0 0 0 Y "&Lines_as_root" } 544 "LinesAsRoot"
+1
+1 "__ilvCallback" "LinesAsRootCallback"
+6144 "Buttons" "ShowLines"
+3 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 24 78 179 16 F1 2 1 2 0 0 0 Y "&Show_buttons" } 544 "Buttons"
+1
+1 "__ilvCallback" "ButtonsCallback"
+6144 "ToolTips" "LinesAsRoot"
+3 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 24 102 177 16 F1 2 1 2 0 0 0 Y "&Tool_tips" } 544 "ToolTips"
+1
+1 "__ilvCallback" "ToolTipsCallback"
+6144 "Indent" "Buttons"
+3 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvOptionMenu 24 186 128 20 F1 2 2
+{ IlvMenuItem 65 2 4 "Single selection"  } 
+{ IlvMenuItem 1 2 4 "Extended selection"  }  0  } 544 "ModeSelection"
+1
+1 "__ilvCallback" "ModeSelectionCallback"
+6144 "SelectionCallback" "Indent"
+3 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 24 162 142 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Sel_mode"  }   } 0
+0
+3 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 9 5 203 151 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Appearance"  }   } 0
+0
+3 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 249 6 212 237 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Sample"  }   } 0
+0
+3 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 24 125 91 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&Indentation"  }   } 0
+0
+3 { 10 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 128 125 64 22 2 0 200 32 2 1
+0 IlvNumberField 128 125 46 22 F6 2 2 -1 0 "1234543" . , 3 0 0 2147483647  f 1 1 1 1.23454e+006 } 544 "Indent"
+1
+1 "__ilvCallback" "IndentCallback"
+0
+3 { 11 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 24 218 191 16 F1 2 1 2 0 0 0 Y "&Itms_editable" } 544 "ItemsEditable"
+1
+1 "__ilvCallback" "ItemsEditableCallback"
+6144 "TreeSample" "SelectionCallback"
+Size 468 248
+GeometryHandlers
+1 100 0 468 0 468 0
+12 3 0 0 24  0 0 142 6  302 0 302 0
+ 3 0 0 24  0 0 128 5  316 0 316 0
+ 3 0 0 249  212 0 212 8  0 0 7 0
+ 3 0 0 261  190 0 190 1  0 0 17 0
+ 3 0 0 9  0 0 203 7  256 0 256 0
+ 3 0 0 128  0 0 64 10  276 0 276 0
+ 3 0 0 24  0 0 91 9  353 0 353 0
+ 3 0 0 24  0 0 177 4  267 0 267 0
+ 3 0 0 24  0 0 179 3  265 0 265 0
+ 3 0 0 24  0 0 181 2  263 0 263 0
+ 3 0 0 24  0 0 181 0  263 0 263 0
+ 3 0 0 24  0 0 191 11  345 0 345 0
+1 100 0 248 0 248 0
+2 3 0 0 6  237 0 237 8  0 0 5 0
+ 3 0 0 32  200 0 200 1  0 0 16 0
+EOF

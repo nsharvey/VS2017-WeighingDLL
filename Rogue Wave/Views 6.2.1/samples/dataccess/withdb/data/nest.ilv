@@ -1,0 +1,136 @@
+// Ilv Version: 4.0
+// File generated: Thu Mar 23 17:03:01 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "nest"
+PathName "nest.ilv"
+Palettes 4
+1 "gray" "black" "bold" "%helvetica-12-B" 0 solid solid 0 0 0
+0 "gray" "black" "small" "%helvetica-10-" 0 solid solid 0 0 0
+2 "white" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+"IlvStText" 3 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 14
+1 { 0 0 IliSQLDataSource 187 47 24 24 1 14 3 0 IliSQLTable 0 21 3 
+     42 "PRODNO" Double 2 -1 2 -1 "0000" 32 33 "PRODNO" 
+     9 "PRODNAME" String 19 20 1 -1 32 33 "PRODNAME" 
+     9 "PARTS" custom Table "PART_TABLE_T" 2 96 "PART_TABLE_T" "PART_T" 4 3 
+     9 "REF" Double 1 -1 2 -1 
+     9 "LABEL" String 2 -1 1 -1 
+     9 "PRICE" Double 3 -1 2 -1 
+     16 -1 1 -1 32 33 "PARTS" 
+     16 0 9 31118 0 "" "SELECT PRODNO,\n       PRODNAME,\n       PARTS\nFROM PRODUCT" 0 2 1 1 1 3 0 "PRODUCT" "PRODUCT" 0 1 15 15 130 75 0 0 0 0 1 0 1 0 1 0 4 3 
+     10 "PRODNO" Double 1 -1 2 -1 0 
+     9 "PRODNAME" String 2 20 1 -1 0 
+     9 "PARTS" custom Table "PART_TABLE_T" 2 96 "PART_TABLE_T" "PART_T" 4 3 
+     9 "REF" Double 1 -1 2 -1 
+     9 "LABEL" String 2 -1 1 -1 
+     9 "PRICE" Double 3 -1 2 -1 
+     3 -1 1 -1 0 
+     0 0 "PRODUCT" 0 0 6 "Main" "null" "/"  } 96 "PROD_DS" "Gadget"
+0
+1 { 1 0 IliSQLDataSource 251 47 24 24 1 14 3 0 IliSQLTable 0 9 3 
+     41 "REF" Double 2 -1 2 135 "0000" 32 33 "REF" 
+     9 "LABEL" String 3 -1 1 135 32 33 "LABEL" 
+     9 "PRICE" Double 4 -1 2 133 32 33 "PRICE" 
+     20 0 0 9 31118 0 "" "SELECT REF,\n       LABEL,\n       PRICE\nFROM THE(SELECT PARTS\n         FROM PRODUCT\n         WHERE PRODNO = :k1)" 0 2 1 1 1 7 0 "PRODUCT" "PRODUCT" 0 1 15 15 130 75 "PROD_DS" "PRODUCT" 0 1 "PARTS" 0 0 0 0 1 0 1 0 1 0 4 3 
+     10 "PRODNO" Double 1 -1 2 -1 0 
+     9 "PRODNAME" String 2 20 1 -1 0 
+     9 "PARTS" custom Table "PART_TABLE_T" 2 96 "PART_TABLE_T" "PART_T" 4 3 
+     9 "REF" Double 1 -1 2 -1 
+     9 "LABEL" String 2 -1 1 -1 
+     9 "PRICE" Double 3 -1 2 -1 
+     3 -1 1 -1 0 
+     0 0 "PRODUCT" 0 0 6 "Main" "null" "/"  } 608 "PARTS_DS" "Gadget"
+3
+1 "QuitUpdateMode" S"JvScript" "jmaj"
+1 "QuitInsertMode" S"JvScript" "jmaj"
+1 "DeleteRow" S"JvScript" "jmaj"
+0
+1 { 2 1 IliTableGadget 6 90 429 101 2 2067 "PARTS_DS" 1799208543 1 0 0 0 17 19 21 4 0 0 0 1 1 "white" A"normal" "%helvetica-12-"  } 64 "Gadget"
+0
+1 { 3 3 IliTableComboBox 6 37 154 20 F7 2 1 -1 0 "" 3971 "PROD_DS" "PRODNAME" "PRODNAME" 11 0 1  "PRODNO;PRODNAME"  } 608 "tcb" "Gadget"
+1
+1 "Close" S"JvScript" "jselect"
+0
+1 { 4 1 IlvMessageLabel 4 8 230 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "This sample is specific to Oracle 9i"  }   } 64 "Gadget"
+0
+1 { 5 3 IlvMessageLabel 6 64 152 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "Nested Table on Demand"  }   } 64 "Gadget"
+0
+1 { 6 3 IlvMessageLabel 6 194 152 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "Nested Table in Memory"  }   } 64 "Gadget"
+0
+1 { 7 0 IliSQLDataSource 316 46 24 24 1 14 3 0 IliSQLTable 0 8 3 
+     41 "REF" Double 2 -1 2 135 "0000" 32 33 "REF" 
+     9 "LABEL" String 3 -1 1 135 32 33 "LABEL" 
+     9 "PRICE" Double 4 -1 2 133 32 33 "PRICE" 
+     20 0 0 9 31118 0 "" "SELECT REF,\n       LABEL,\n       PRICE\nFROM THE(SELECT PARTS\n         FROM PRODUCT\n         WHERE PRODNO = :k1)" 0 2 1 1 1 7 0 "PRODUCT" "PRODUCT" 0 1 15 15 130 75 "PROD_DS" "PRODUCT" 0 1 "PARTS" 0 0 0 0 1 0 1 0 1 0 4 3 
+     10 "PRODNO" Double 1 -1 2 -1 0 
+     9 "PRODNAME" String 2 20 1 -1 0 
+     9 "PARTS" custom Table "PART_TABLE_T" 2 96 "PART_TABLE_T" "PART_T" 4 3 
+     9 "REF" Double 1 -1 2 -1 
+     9 "LABEL" String 2 -1 1 -1 
+     9 "PRICE" Double 3 -1 2 -1 
+     3 -1 1 -1 0 
+     0 0 "PRODUCT" 0 0 6 "Main" "null" "/"  } 608 "PARTS2_DS" "Gadget"
+3
+1 "QuitUpdateMode" S"JvScript" "jmaj2"
+1 "QuitInsertMode" S"JvScript" "jmaj2"
+1 "DeleteRow" S"JvScript" "jmaj2"
+0
+1 { 8 1 IliTableGadget 6 218 429 98 2 2067 "PARTS2_DS" 1799208543 1 0 0 0 17 19 21 4 0 0 0 1 1 "white" A"normal" "%helvetica-12-"  } 64 "Gadget"
+0
+1 { 9 1 IlvButton 361 8 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "drop"  }   } 576 "Gadget"
+1
+1 "__ilvCallback" S"JvScript" "jdrop"
+0
+1 { 10 1 IlvButton 278 8 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "create"  }   } 576 "Gadget"
+1
+1 "__ilvCallback" S"JvScript" "jcreate"
+0
+1 { 11 3 IlvMessageLabel 176 36 261 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "MessageLabel"  }   } 96 "msg" "Gadget"
+0
+1 { 12 0 IliMemoryDataSource 405 38 24 24 1 14 3 0 IliMemoryTable 0 3 2 
+     8 "title" String 1 -1 1 111 32 
+     8 "text" String 2 -1 1 255 32 
+     20 0 0 8 3
+"drop table" "drop table PRODUCT" 
+"drop table type" "drop type PART_TABLE_T" 
+"drop type" "drop type PART_T" 
+0
+ } 96 "drop8" "Gadget"
+0
+1 { 13 0 IliMemoryDataSource 364 38 24 24 1 14 3 0 IliMemoryTable 0 3 2 
+     8 "title" String 1 -1 1 111 32 
+     8 "text" String 2 -1 1 255 32 
+     20 0 0 8 6
+"create type" "create type PART_T as object (REF numeric, \n  LABEL varchar(30), PRICE numeric)" 
+"create table type" "create type PART_TABLE_T as table of PART_T" 
+"create table" "create table PRODUCT (PRODNO numeric primary key,\n  PRODNAME varchar(20), PARTS PART_TABLE_T) \n  nested table PARTS store as NEST_PART" 
+"insert 1st record" "insert into PRODUCT values (0001, 'Dresser', \n  PART_TABLE_T (\n    PART_T(1001, 'Drawer', 100),\n    PART_T(1002, 'Handle', 3.5)))" 
+"insert 2nd record" "insert into PRODUCT values (0002, 'Showcase',\n  PART_TABLE_T (\n    PART_T(2001, 'Wood shelf', 8),\n    PART_T(2002, 'Glass shelf', 10)))" 
+"insert 3rd record" "insert into PRODUCT values (0003, 'Wardrobe',\n  PART_TABLE_T (\n    PART_T(3001, '1 meter shelf', 11),\n    PART_T(3002, 'Rod', 5),\n    PART_T(3003, 'Basket', 3.8)))" 
+0
+ } 96 "create8" "Gadget"
+0
+Size 442 325
+GeometryHandlers
+1 100 0 442 0 442 0
+9 3 0 0 6  429 0 429 2  0 0 7 0
+ 3 0 0 6  0 0 154 3  282 0 282 0
+ 3 4 0 4  0 0 211 4  227 0 227 0
+ 3 0 0 6  0 0 152 5  284 2 284 0
+ 3 0 0 6  0 0 152 6  284 0 284 0
+ 3 0 0 6  429 0 429 8  0 0 7 0
+ 3 278 0 278  0 0 73 10  0 0 91 0
+ 3 361 0 361  0 0 73 9  0 0 8 0
+ 3 176 0 176  0 0 261 11  0 0 5 0
+2 100 0 190 0 190 0
+ 50 0 135 190 135 190
+7 3 0 0 64  0 0 22 5  104 0 104 0
+ 3 0 0 8  0 0 22 4  160 0 160 0
+ 3 0 0 37  0 0 20 3  133 0 133 0
+ 3 0 0 90  101 0 101 2  0 -1 -1 0
+ 3 0 0 8  0 0 23 10  294 0 294 1
+ 3 0 0 8  0 0 23 9  294 0 294 1
+ 3 0 0 36  0 0 22 11  267 0 267 1
+2 3 0 0 4  0 0 22 6  109 0 109 1
+ 3 0 0 28  98 0 98 8  0 0 9 1
+EOF

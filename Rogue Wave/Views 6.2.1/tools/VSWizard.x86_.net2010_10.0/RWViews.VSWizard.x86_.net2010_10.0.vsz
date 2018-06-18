@@ -1,0 +1,5 @@
+VSWIZARD 7.1
+Wizard=VsWizard.VsWizardEngine.10.0
+Param="WIZARD_NAME = RWViews.VSWizard.x86_.net2010_10.0"
+Param="ABSOLUTE_PATH = C:\Program Files\Rogue Wave\Views 6.2.1\tools\VSWizard.x86_.net2010_10.0"
+Param="FALLBACK_LCID = 1033"

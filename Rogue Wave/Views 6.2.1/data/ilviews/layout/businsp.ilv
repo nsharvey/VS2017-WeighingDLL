@@ -1,0 +1,91 @@
+// Ilv Version: 3.1
+// File generated: Thu Jan 27 16:50:21 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "businsp"
+PathName "/nfs/views-team/members/lenorman/views312/data/ilviews/layout/businsp.ilv"
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 20
+1 { 0 0 IlvButton 154 6 179 23 F9 2 1 16 4 "&makeBusNode"   } 544 "MakeBusBut"
+1
+1 "__ilvCallback" "MakeBusNodeCB"
+0
+1 { 1 0 IlvMessageLabel 8 6 134 22 F8 0 25 16 4 "&busNode"   } 32 "BusNodeLab"
+0
+1 { 2 0 IlvButton 154 38 179 23 F9 2 1 16 4 "&specifySelectedNodeAsBus"   } 544 "SpecBusNodeBut"
+1
+1 "__ilvCallback" "SpecBusNodeCB"
+0
+1 { 3 0 IlvMessageLabel 16 97 126 22 F8 0 25 16 4 "&verticalOffset"   } 32 "VertOffsetLab"
+0
+1 { 4 0 IlvSpinBox 154 97 176 22 2 0 200 64 2 1
+0 IlvNumberField 154 97 153 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "BusVertOffsetNum"
+0
+1 { 5 0 IlvMessageLabel 16 126 126 22 F8 0 25 16 4 "&horizontalOffset"   } 32 "HorOffsetLab"
+0
+1 { 6 0 IlvSpinBox 154 126 176 22 2 0 200 64 2 1
+0 IlvNumberField 154 126 153 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "BusHorOffsetNum"
+0
+1 { 7 0 IlvMessageLabel 8 277 134 20 F8 0 25 16 4 "&order"   } 32 "OderLab"
+0
+1 { 8 0 IlvComboBox 154 277 179 20 F39 2 "" 3
+IlvMenuItem 1 2 4 "&noOrder"  
+IlvMenuItem 1 2 4 "&byHeight"  
+IlvMenuItem 1 2 4 "&byIndex"   } 32 "BusOrderSel"
+0
+1 { 9 0 IlvMessageLabel 8 305 134 20 F8 0 25 16 4 "&linkStyle"   } 32 "StyleLab"
+0
+1 { 10 0 IlvComboBox 154 305 179 20 F39 2 "" 2
+IlvMenuItem 1 2 4 "&noReshapeLinkStyle"  
+IlvMenuItem 1 2 4 "&straightLineLinkStyle"   } 32 "BusStyleSel"
+0
+1 { 11 0 IlvMessageLabel 16 155 126 22 F8 0 25 16 4 "&offsetToPreviousLevel"   } 32 "OffsetPreviousLevelLab"
+0
+1 { 12 0 IlvSpinBox 154 155 176 22 2 0 200 64 2 1
+0 IlvNumberField 154 155 153 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "BusOffsetPreviousLevelNum"
+0
+1 { 13 0 IlvMessageLabel 16 184 126 22 F8 0 25 16 4 "&margin"   } 32 "MarginLab"
+0
+1 { 14 0 IlvSpinBox 154 184 176 22 2 0 200 64 2 1
+0 IlvNumberField 154 184 153 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "BusMarginNum"
+0
+1 { 15 0 IlvMessageLabel 16 213 126 22 F8 0 25 16 4 "&marginOnBus"   } 32 "MarginBusLab"
+0
+1 { 16 0 IlvSpinBox 154 213 176 22 2 0 200 64 2 1
+0 IlvNumberField 154 213 153 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "BusMarginBusNum"
+0
+1 { 17 0 IlvMessageLabel 16 240 126 22 F8 0 25 16 4 "&connectionOnBusMargin"   } 32 "ConnectionOnBusLab"
+0
+1 { 18 0 IlvSpinBox 154 240 176 22 2 0 200 64 2 1
+0 IlvNumberField 154 240 153 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 10 0 } 32 "BusConnectionOnBusNum"
+0
+1 { 19 0 IlvFrame 7 74 326 198 F8 0 25 16 4 "&dimensionalParameters"   } 0
+0
+Size 340 365
+Background "gray"
+GeometryHandlers
+2 50 150 150 0 150 0
+ 100 0 190 150 190 150
+10 3 0 0 7  326 0 326 19  0 1 7 1
+ 3 0 0 16  126 0 126 11  0 0 8 0
+ 3 0 0 16  126 0 126 5  0 0 8 0
+ 3 0 0 16  126 0 126 3  0 0 8 0
+ 3 0 0 16  126 0 126 13  0 0 8 0
+ 3 0 0 16  126 0 126 15  0 0 8 0
+ 3 0 0 16  126 0 126 17  0 0 8 0
+ 3 0 1 8  134 0 134 9  0 0 8 0
+ 3 0 1 8  134 0 134 7  0 0 8 0
+ 3 0 1 8  134 0 134 1  0 0 8 0
+10 3 0 2 4  176 0 176 12  0 0 10 1
+ 3 0 2 4  176 0 176 4  0 0 10 1
+ 3 0 2 4  176 0 176 6  0 0 10 1
+ 3 0 2 4  176 0 176 14  0 0 10 1
+ 3 0 2 4  176 0 176 16  0 0 10 1
+ 3 0 2 4  176 0 176 18  0 0 10 1
+ 3 0 2 4  179 0 179 8  0 1 7 1
+ 3 0 2 4  179 0 179 10  0 1 7 1
+ 3 0 1 4  179 0 179 0  0 1 7 1
+ 3 0 2 4  179 0 179 2  0 1 7 1
+1 100 0 365 0 365 0
+0
+EOF

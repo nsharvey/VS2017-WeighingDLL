@@ -1,0 +1,25 @@
+var pairs =
+{
+"installation":{"rogue":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1,"link":1}
+,"views":{"maps":1,"rogue":1,"graphics":1}
+,"maps":{"order":1,"rogue":1,"need":1,"enables":1}
+,"order":{"product":1}
+,"product":{"need":1}
+,"need":{"following":1,"install":1}
+,"following":{"software":1}
+,"software":{"rogue":1}
+,"graphics":{"standard":1,"professional":1}
+,"standard":{"rogue":1}
+,"professional":{"want":1}
+,"want":{"oracle":1}
+,"oracle":{"spatial":1}
+,"spatial":{"reader":1}
+,"reader":{"rogue":1}
+,"install":{"rogue":1}
+,"link":{"license":1}
+,"license":{"rogue":1}
+,"enables":{"rogue":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Allowed Time</title><link rel="Prev" href="glusrbasics.49.08.html" title="Previous" /><link rel="Next" href="glusrbasics.49.10.html" title="Next" /><link rel="StyleSheet" href="css/glusrbasics.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/glusrbasics_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/Options/glusrbasics.49.09.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pN_002f2KyJp8nVwzmkepx3rQMeA" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/Options/glusrbasics.49.09.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../Options/glusrfrontcover.html#wwconnect_header">Graph Layout</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/glusrbasics.49.01.html#wwconnect_header">Basic Concepts</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/glusrbasics.49.08.html#wwconnect_header">Layout Parameters in IlvGraphLayout   </a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Allowed Time  </span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww1000832" class="Heading2"><span></span>Allowed Time  </div><div id="ww1000834" class="Body">Several layout algorithms can be designed to stop computation when a user-defined time specification is exceeded. This may be done for different reasons: as a security measure to avoid a long computation time on very large graphs or as an upper limit for algorithms that iteratively improve a current solution and have no other criteria to stop the computation.</div><div id="ww1000839" class="Body">Rogue Wave&nbsp;Views allows you to specify the allowed time: </div><div id="ww1000841" class="IndentedL1"><span class="code">void </span><span class="ClassName"><a href="../RefMan/refcppgraphlayout/classIlvGraphLayout.html">IlvGraphLayout</a></span><span class="code">::setAllowedTime(IlvRuntimeType time</span>)</div><div id="ww1014457" class="Body">To obtain the current value, use the method:  </div><div id="ww1014460" class="IndentedL1"><span class="code">IlvRuntimeType IlvGraphLayout::getAllowedTime() const</span></div><div id="ww1014461" class="Body">If you subclass <span class="ClassName"><a href="../RefMan/refcppgraphlayout/classIlvGraphLayout.html">IlvGraphLayout</a></span>, use the following call to know whether the specified time was exceeded:  </div><div id="ww1000849" class="IndentedL1"><span class="code">IlBoolean IlvGraphLayout::isLayoutTimeElapsed() const</span></div><div id="ww1000851" class="Body">The time is in seconds. The default value is 32.0 seconds.</div><div id="ww1002732" class="Body">To indicate whether a subclass of <span class="code">IlvGraphLayout</span> supports this mechanism, the following method is provided:  </div><div id="ww1002733" class="IndentedL1"><span class="code">IlBoolean IlvGraphLayout::supportsAllowedTime() const</span></div><div id="ww1002734" class="Body">The default implementation returns <span class="code">IlFalse</span>. A subclass can override this method to return <span class="code">IlTrue</span> to indicate that this mechanism is supported.</div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>

@@ -1,0 +1,26 @@
+var pairs =
+{
+"financial":{"applications":1}
+,"applications":{"rogue":1,"powerful":1}
+,"rogue":{"wave":1}
+,"wave":{"views":1}
+,"views":{"controls":1,"charts":1}
+,"controls":{"combined":1}
+,"combined":{"rogue":1}
+,"charts":{"provides":1,"predefined":1}
+,"provides":{"necessary":1}
+,"necessary":{"tools":1}
+,"tools":{"financial":1}
+,"powerful":{"charts":1}
+,"predefined":{"gauges":1}
+,"gauges":{"spreadsheets":1}
+,"spreadsheets":{"display":1}
+,"display":{"huge":1}
+,"huge":{"amounts":1}
+,"amounts":{"data":1}
+,"data":{"real":1}
+,"real":{"time":1}
+,"time":{"trading":1}
+,"trading":{"application":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,4 @@
+panel "MainPanel" {
+    menuItem ShowLayoutInspector : "&mtools" -before ShowPalettePanel;
+    menuItem - : "&mtools" -before ShowPalettePanel;
+}

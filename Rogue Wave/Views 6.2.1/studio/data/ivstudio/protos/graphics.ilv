@@ -1,0 +1,35 @@
+// Ilv Version: 4.0
+// File generated: Thu Jul 19 00:14:07 2001
+// Creator class: IlvGadgetManagerOutput
+FileName "graphics"
+PathName "C:\\work\\studio\\data\\ivstudio\\protos\\graphics.ilv"
+Palettes 2
+"default" 1 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+"IlvStMenu" 0 "gray" "black" "menu" "%Microsoft Sans Serif-11-[Charset:0]" 0 solid solid 0 0 0
+IlvObjects 2
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMenuBar 0 0 263 24 F294 2 V0 2 2
+{ IlvMenuItem 67108865 2 4 "&menu_edit"  0 IlvPopupMenu 0 0 147 72 F166 2 V0 2 4
+{ IlvMenuItem 436207617 2 4 "&unDo"  "GroupInspectorUndoCB" "Ctrl+Z" 26 } 
+{ IlvMenuItem 973078529 2 4 "&redo"  "GroupInspectorRedoCB" "Ctrl+Shift+Z" 26 256 } 
+{ IlvMenuItem 0 2 4  } 
+{ IlvMenuItem 436207617 2 4 "&DeleteNode"  "GroupInspectorDeleteNode" "Del" 127 }  16   } 
+{ IlvMenuItem 33554433 2 4 "&menu_help"  "GroupInspectorHelpCB" }  0 } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvGroupHierarchicalSheet 0 26 263 318 F35198 2 A A s 0 0 0 0 0 0 131 20 1 1 0 0 1 1 10 2 V0 2 2 0 0 226 IlvLabelMatrixItem "&node" 
+1 0 226 IlvLabelMatrixItem "&properties"  1 N 0 1 0 0 1  10 1
+{ IlvTreeGadgetItem 1 2 4 "root" 0
+ }  } 32 "graphicsTree"
+0
+Size 263 344
+GeometryHandlers
+1 100 0 263 0 263 0
+2 3 0 0 0  263 0 263 0  0 0 0 0
+ 3 0 0 0  263 0 263 1  0 0 0 0
+1 100 0 344 0 344 0
+2 3 0 0 0  0 0 24 0  320 0 320 0
+ 3 0 0 26  318 0 318 1  0 0 0 0
+EOF

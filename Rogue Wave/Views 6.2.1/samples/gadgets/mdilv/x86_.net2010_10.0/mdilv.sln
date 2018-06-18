@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("DD24A87E-1D61-11E8-866E-3591772C9500") = "mdilv", "mdilv.vcxproj", "DD24659E-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Global
+EndGlobal
+

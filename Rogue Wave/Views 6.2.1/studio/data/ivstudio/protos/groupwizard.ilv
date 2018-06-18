@@ -1,0 +1,65 @@
+// Ilv Version: 5.2
+// File generated: Thu Apr 10 16:31:16 2008
+// Creator class: IlvGadgetManagerOutput
+FileName "groupwizard"
+PathName "groupwizard.ilv"
+Palettes 4
+2 F "defaultBg" "black" "bold" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"defaultGadget" 3 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"IlvStText" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+"IlvStToolBar" 1 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 7
+1 { 0 P 1
+[ IlvPanelObjectReference IlvPanelObjectReference  "941825256.0" ]
+0 IlvGadgetContainerRectangle 338 37 338 430 "" } 32 "content"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 217 480 110 23 F13 2 { IlvMessageItem 262145 4 16 4 "&ConciseMode"  }   } 544 "helpButton"
+1
+1 "__ilvCallback" "GroupInspectorHelpCB"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 342 6 212 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "Interface definition"  }   } 32 "title"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 339 480 97 23 F13 2 { IlvMessageItem 262145 4 16 4 "<< Previous"  }   } 544 "previous"
+1
+1 "__ilvCallback" "GroupInspectorChangePage"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvButton 450 480 97 23 F13 2 { IlvMessageItem 262145 4 16 4 "Next >>"  }   } 544 "next"
+1
+1 "__ilvCallback" "GroupInspectorChangePage"
+0
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+3 IlvATHtmlText 6 37 322 430 2 A A 1 1 1 1 } 32 "helpPage"
+0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvMessageLabel 11 8 212 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "&GroupEditor"  }   } 0
+0
+Size 684 513
+GeometryHandlers
+2 100 0 332 0 332 0
+ 100 0 351 332 351 332
+3 3 0 0 6  322 0 322 5  0 0 4 0
+ 3 0 0 11  0 0 212 6  109 0 109 0
+ 3 217 0 217  0 0 110 1  0 0 5 0
+4 3 0 0 6  338 0 338 0  0 0 7 1
+ 3 0 0 7  0 0 97 3  247 0 247 1
+ 3 0 0 118  0 0 97 4  136 0 136 1
+ 3 0 0 10  212 0 212 2  0 0 129 1
+1 100 0 513 0 513 0
+7 3 0 0 37  430 0 430 0  0 0 46 0
+ 3 480 0 480  0 0 23 3  0 0 10 0
+ 3 480 0 480  0 0 23 4  0 0 10 0
+ 3 480 0 480  0 0 23 1  0 0 10 0
+ 3 0 0 6  0 0 22 2  485 0 485 0
+ 3 0 0 37  430 0 430 5  0 0 46 0
+ 3 0 0 8  0 0 22 6  483 0 483 0
+EOF

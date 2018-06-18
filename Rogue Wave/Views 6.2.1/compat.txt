@@ -1,0 +1,600 @@
+File: COMPAT.TXT
+
+        Notes concerning compatibility of this version of Rogue Wave Views
+        with previous versions.
+        This file is a short summary of the changes in Rogue Wave Views in
+        its latest release.
+        The complete explanation is available in the Release Notes manual.
+
+#########################################################################
+#               Rogue Wave Views 6.2 known incompatibilities            #
+#               with Rogue Wave Views 6.1                               #
+#########################################################################
+
+
+#########################################################################
+#               Rogue Wave Views 6.1 known incompatibilities            #
+#               with Rogue Wave Views 6.0                               #
+#########################################################################
+
+
+#########################################################################
+#               Rogue Wave Views 6.0 known incompatibilities            #
+#               with Rogue Wave Views 5.8                               #
+#########################################################################
+
+
+#########################################################################
+#               Rogue Wave Views 5.8 known incompatibilities            #
+#               with Rogue Wave Views 5.7                               #
+#########################################################################
+
+
+#########################################################################
+#               Rogue Wave Views 5.7 known incompatibilities            #
+#               with Rogue Wave Views 5.6                               #
+#########################################################################
+
+
+#########################################################################
+#               Rogue Wave Views 5.6 known incompatibilities            #
+#               with Rogue Wave Views 5.5                               #
+#########################################################################
+
+
+#########################################################################
+#               Rogue Wave Views 5.5 known incompatibilities            #
+#               with version 5.4                                        #
+#########################################################################
+
+
+#########################################################################
+#               Rogue Wave Views 5.4 known incompatibilities            #
+#               with version 5.3                                        #
+#########################################################################
+- This release introduces a new gadget look and feel called Views X, or VX.
+  VX Look is now the default look on Unix platforms, instead of Motif look.
+  If an application really needs to use the Motif look, it has to set it
+  explicitly.
+
+- ILM (ex-ILOG License Manager) is deprecated.
+  For compatibility reasons, the related APIs still exist but are deprecated
+  and do nothing. 
+
+#########################################################################
+#               Rogue Wave Views 5.3 known incompatibilities            #
+#               with version 5.2                                        #
+#########################################################################
+- Most product icons have been changed to comply with IBM look-and-feel
+  guidelines.
+
+- The Web package is deprecated and has been removed from the distribution.
+  This includes the following directories and files
+    -  lib/<platform>/<format>/libilvweb.(a|sl|so) on Unix
+    -  lib/<platform>/<format>/ilvweb.(lib|dll) on Windows
+    -  include/ilviews/web/
+    -  data/web/
+    -  samples/web/
+
+#########################################################################
+#               Rogue Wave Views 5.2 known incompatibilities            #
+#               with version 5.1                                        #
+#########################################################################
+- Method IlvManager::reDo(), whose behavior was to repeat the last
+  command, has been renamed IlvManager::repeat().
+  A new method IlvManager::reDo(IlBoolean) was added. Its behavior
+  is to execute the last command undone by the last call to undo().
+  The boolean parameter was added to cause a compilation error on
+  old code calling reDo() so these calls can be replaced by calls
+  to repeat().
+  
+- IlvTimeScaleRow: 
+  some internal fields (_tickColor, _textColor, _font) have been replaced
+  by others fields.
+
+- Unused and undocumented method removed
+	IlvManager::isDoubleBufferingTemporary()
+	IlvMgrView::temporaryDoubleBuffer() 
+
+- class IlvMakePolyPointsInteractor and its subclasses:
+  The method 
+    virtual void react(IlvPoint& p, IlUShort modifier = 0);
+  now has one extra argument that contains the configuration of the
+  keyboard modifiers when the event that generated the addition of a point
+  was triggered. This extra argument enables the overriden methods to
+  position the point depending on these modifiers. 
+  While it is highly unlikely that this method has been overridden, if
+  this is the case, a compile-time error will occur. In this case, the
+  derived method's signature should simply be extended to include this
+  extra argument.
+
+#########################################################################
+#               Rogue Wave Views 5.1 known incompatibilities            #
+#               with version 5.0                                        #
+#########################################################################
+-  The State enum (IlvViewFrame class) and its values have been renamed to
+   add the prefix IlvFrame (State --> IlvFrameState, ...).
+   See include/ilviews/gadgets/vframe.h
+
+-  The Area enum (IlvViewFrame class) and its values have been renamed to
+   add the prefix IlvFrame (Area --> IlvFrameArea, ...).
+   See include/ilviews/gadgets/vframe.h
+
+-  The virtual method
+	IlvAbstractView* IlvDvDocViewInterface::getView();
+   has been renamed
+	IlvAbstractView* IlvDvDocViewInterface::getDvView();
+   because of name collision with other Rogue Wave Views classes when using
+   multiple inheritance.
+   See include/ilviews/appframe/view.h
+
+Besides the points noted above, Views 5.1 is source-compatible with
+Views 5.0. However, binary compatibility is not granted; C++ code must
+be recompiled and programs must be relinked.
+Please note that source compatibility concerns the documented API only.
+
+#########################################################################
+#               Rogue Wave Views 5.0 known incompatibilities            #
+#               with version 4.0                                        #
+#########################################################################
+--------------------------------------------------------------------------
+Predefined Look and Feels
+
+The predefined look and feels (Motif, Microsoft Windows 3.11,
+Microsoft Windows 95) are now located in specific libraries. If you
+don't use shared libraries, you will have to link your application
+with the corresponding libraries:
+
+For UNIX :
+--------------------------------------------------------------------
+	    |	Standard Gadgets	|	Advanced Gadgets
+------------|---------------------------|---------------------------
+Motif 	    | 	libilvmlook		|	libilvamlook
+------------|---------------------------|---------------------------
+Windows 3.11|	libilvwlook		|	libilvawlook
+------------|---------------------------|---------------------------
+Windows 95  |	libilvw95look,		|	libilvaw95look,
+	    |	libilvwlook		|	libilvawlook
+--------------------------------------------------------------------
+
+For Microsoft Windows :
+--------------------------------------------------------------------
+	    |	Standard Gadgets	|	Advanced Gadgets
+------------|---------------------------|---------------------------
+Motif 	    | 	ilvmlook.lib		|	ilvamlook.lib
+------------|---------------------------|---------------------------
+Windows 3.11|	ilvwlook.lib		|	ilvawlook.lib
+------------|---------------------------|---------------------------
+Windows 95  |	ilvw95look.lib,		|	ilvaw95look.lib,
+	    |	ilvwlook.lib		|	ilvawlook.lib
+------------|---------------------------|---------------------------
+Windows XP  |	ilvwxplook.lib		|	ilvawxplook.lib
+	    |	ilvw95look.lib,		|	ilvaw95look.lib,
+	    |	ilvwlook.lib		|	ilvawlook.lib
+--------------------------------------------------------------------
+
+Note that if you use shared libraries, you can avoid linking your
+application with the look and feel libraries by compiling using the
+ILVNODEFAULTLOOK flag. See the User's Manual for details.
+
+--------------------------------------------------------------------------
+Indexed Bitmap Datas
+
+The colormap information is now handled as a class. See Reference Manual for
+IlvIndexedBitmapData and IlvColorMap.
+--------------------------------------------------------------------------
+
+#########################################################################
+#               Rogue Wave Views 4.0 known incompatibilities            #
+#               with version 3.x                                        #
+#########################################################################
+--------------------------------------------------------------------------
+Rogue Wave Views 4.0 has been the occasion of a large repackaging effort, for
+better compile and link times, as well as a reduced size of the
+executables. The impacts of this repackaging and a transition path from
+Rogue Wave Views 3.1 are described in the Release Notes.
+
+To summarize what has been done:
+    Nearly every header file has been moved to dedicated subdirectories
+        under the 'include' directory.
+    Most of the libraries have been splitted in several parts to allow
+        for much smaller memory usage at run-time.
+    Some classes and class packages have been removed from Rogue Wave Views. 
+        These classes can be found in the directory 'views31',
+        which is part of the compatibility package, where the original
+        (converted) header files can be found, as well as the
+        corresponding libraries.
+        Note that these libraries hold the same classes than in
+        Rogue Wave Views 3.1, but their name has an additionnal '31' to
+        indicate that they do not belong to the core Rogue Wave Views 4.0.
+
+It is possible to recompile Rogue Wave Views 3.1-compatible source code, and 
+get it linked properly, as long as the compatibility package is
+installed, using the header files remapping directory
+(views31/include), and setting the appropriate libraries at link
+time.
+Finer incompatibilities are summarized below.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+The following list contains all the header file that will *not* be
+renamed by the views31/repackage.pl script. If your application
+references these files, you will thus still have to use the
+compatibility library after using this script.
+
+The files are splitted into two categories:
+
+- The files that contains classes that has been removed and only
+  exists in the compatibility library.
+- The files that contains classes for which an equivalent exists in
+  Views 4.0.
+
+Depending on how you use these classes, you can remove the dependency
+with the compatibility library by including the header file containing
+the Views 4.0 equivalent.
+
+==
+1) Graphic Interactors
+==
+These interactors have been rewritten in Views 4.0.
+
+If your code simply includes the header file because you want to have
+persistency, you can most of the time simply remove the #include
+directive from your source file, because the interactor class is
+defined in the header file where the class it applies to is defined.
+
+If you do use these class because you extended them, you will have to
+link with the compatibility library (in views31/lib), or change your
+base class. Please refer to the Release Notes document for details
+about this.
+
+-----------------------------------+--------------------------------+
+        Rogue Wave Views 3.1         |      Rogue Wave Views 4.0      |
+                                   |                                |
+        Header File /              |       Header File /            |
+         Class Name                |        ClassName               |
+-----------------------------------+--------------------------------+
+contint.h                          | ilviews/graphics/inter.h       |
+  IlvViewButtonInteractor          |   IlvButtonInteractor          |
+  IlvViewRepeatButtonInteractor    |   IlvRepeatButtonInteractor    |
+  IlvViewToggleInteractor          |   IlvToggleInteractor          |
+  IlvViewMoveInteractor            |   IlvViewMoveInteractor        |
+  IlvViewReshapeInteractor         |   IlvViewReshapeInteractor     |
+  IlvViewMoveReshapeInteractor     |   IlvViewMoveReshapeInteractor |
+                                   |                                |
+exclint.h                          | ilviews/graphics/selector.h    |
+  IlvManagerSelectorInteractor     |   IlvSelectorInteractor        |
+vexclint.h                         | ilviews/graphics/selector.h    |
+  IlvViewSelectorInteractor        |   IlvSelectorInteractor        |
+                                   |                                |
+gaugeint.h                         | ilviews/graphics/gauge.h       |
+  IlvViewGaugeInteractor           |   IlvGaugeInteractor           |
+mgrinter.h                         | ilviews/graphics/gauge.h       |
+  IlvManagerGaugeInteractor        |   IlvGaugeInteractor           |
+                                   |                                |
+dragint.h                          | ilviews/graphics/inter.h       |
+  IlvViewDragDropInteractor        |   IlvDragDropInteractor        |
+                                   |                                |
+objinter.h                         | ilviews/graphics/inter.h       |
+  IlvManagerDragDropInteractor     |   IlvDragDropInteractor        |
+  IlvManagerButtonInteractor       |   IlvButtonInteractor          |
+  IlvManagerRepeatButtonInteractor |   IlvRepeatButtonInteractor    |
+  IlvManagerToggleInteractor       |   IlvToggleInteractor          |
+  IlvManagerMoveInteractor         |   IlvViewMoveInteractor        |
+  IlvManagerReshapeInteractor      |   IlvViewReshapeInteractor     |
+  IlvManagerMoveReshapeInteractor  |   IlvViewMoveReshapeInteractor |
+                                   |                                |
+scmgrint.h                         | ilviews/gadmgr/rectscmg.h      |
+  IlvManagerSCManagerInteractor    |   IlvSCManagerInteractor       |
+vscmgrin.h                         | ilviews/gadmgr/rectscmg.h      |
+  IlvViewSCManagerInteractor       |   IlvSCManagerInteractor       |
+-----------------------------------+--------------------------------+
+
+
+==
+2) Obsolete Gadget Interactor Classes
+==
+These interactors are available only in the compatibility library, in
+the views31 subdirectory.
+
+         Container Object Interactors
+------------------------------------------------------------
+Header File             |       Classes
+------------------------------------------------------------
+vcombint.h              | IlvViewComboBoxInteractor
+vmatint.h               | IlvViewMatrixInteractor
+vmatsel.h               | IlvViewMatrixSelectorInteractor
+vmbinter.h              | IlvViewMenuBarInteractor
+voptmint.h              | IlvViewOptionMenuInteractor
+vpopint.h               | IlvViewPopupMenuInteractor
+vsbinter.h              | IlvViewSBInteractor
+vsclint.h               | IlvViewScrolledStringListInteractor
+vscmatin.h              | IlvViewScrolledMatrixInteractor
+vscmatsl.h              | IlvViewScrolledMatrixSelectorInteractor
+vscombin.h              | IlvViewSComboBoxInteractor
+vsheetin.h              | IlvViewSheetInteractor
+vslidint.h              | IlvViewSliderInteractor
+vslinter.h              | IlvViewStringListInteractor
+vtextint.h              | IlvViewTextInteractor
+vtfinter.h              | IlvViewTextFieldInteractor
+------------------------+-----------------------------------
+
+         Manager Object Interactors
+------------------------+-----------------------------------
+Header File             |       Classes
+------------------------------------------------------------
+comboint.h              | IlvManagerComboBoxInteractor
+matinter.h              | IlvManagerMatrixInteractor
+matsel.h                | IlvManagerMatrixSelectorInteractor
+mbinter.h               | IlvManagerMenuBarInteractor
+optmint.h               | IlvManagerOptionMenuInteractor
+popinter.h              | IlvManagerPopupMenuInteractor
+sbinter.h               | IlvManagerSBInteractor
+sclinter.h              | IlvManagerScrolledStringListInteractor
+scmatint.h              | IlvManagerScrolledMatrixInteractor
+scmatsel.h              | IlvManagerScrolledMatrixSelectorInteractor
+scomboin.h              | IlvManagerSComboBoxInteractor
+sheetint.h              | IlvManagerSheetInteractor
+slidint.h               | IlvManagerSliderInteractor
+slinter.h               | IlvManagerStringListInteractor
+textint.h               | IlvManagerTextInteractor
+tfdinter.h              | IlvManagerTextFieldInteractor
+------------------------+-----------------------------------
+
+
+==
+3) Obsolete Gadgets Classes
+==
+These classes are available only in the compatibility library, in
+the views31 subdirectory.
+
+Header File     |       CLASS(ES)
+----------------+-------------------------------------------
+sclist.h        | IlvScrolledStringList
+scmatrix.h      | IlvScrolledMatrix
+
+
+==
+4) Obsolete Chart Interactor Classes
+==
+These interactors are available only in the compatibility library, in
+the views31 subdurectory.
+
+Header File     |       CLASS(ES)
+----------------+----------------------------------
+chartint.h      | IlvViewChartInteractorSelectPoint
+                | IlvViewChartInteractorDragPoint
+                | IlvViewChartInteractorDragXPoint
+                | IlvViewChartInteractorDragYPoint
+                |
+mgrinter.h      | IlvManagerChartInteractorSelectPoint
+                | IlvManagerChartInteractorDragPoint
+                | IlvManagerChartInteractorDragXPoint
+                | IlvManagerChartInteractorDragYPoint
+----------------+----------------------------------
+
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+IlvDrawSelection is now an abstract class. The IlvReshapeSelection class
+is now the equivalent of the former version of the IlvDrawSelection class.
+Incompatibilities can arise if you have subclassed IlvDrawSelection or if
+you have explicitely created instances of this class.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+Several Views methods return arrays that are allocated on a volatile memory
+space. Those arrays had to be copied in Views 3.1 when you wanted to ensure
+that their contents would not be overwritten by a call to another method of 
+the library. Although you may not have encountered any problem in 
+Views 3.1 if you have not followed this rule, undefined behaviors can appear 
+with Views 4.0 as it uses an improved and safer mechanism to recycle memory.
+This mechanism, based on the notion of memory pools, enables you to lock 
+the returned array and prevent any other method to use the same memory 
+space until it is unlocked. 
+
+For more information, on memory pools, please refer to the IlPoolOf 
+documentation in the Reference Manual.
+--------------------------------------------------------------------------
+
+#########################################################################
+#               Rogue Wave Views 3.0 known incompatibilities            #
+#               with version 2.4                                        #
+#########################################################################
+
+--------------------------------------------------------------------------
+Libraries location
+On Unix platforms, libraries are now located in subdirectories, under the
+system subdirectory of the <ILVHOME>/lib path (they were located in
+<ILVHOME>/lib/<SYSTEM> before Views 3.0).
+Usually, shared libraries and static libraries are separated in two
+different directories.
+The names of the subdirectories where you can find these libraries depend
+on the target system.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+Annotext and Gantt tools files location
+The two libraries ilvatext (that comes from the Annotext tool) and
+ilvgantt (that comes from the Gantt tool) are now located with the other
+libraries of the product.
+The header files for these two tool libraries have moved under the
+<ILVHOME>/include/ilviews directory:
+        - Files located in <ILVHOME>/tools/annotext/ilvatext are now
+          located in
+                <ILVHOME>/include/ilviews/ilvatext
+          So that the -I<ILVHOME>/tools/annotext compiler option can be
+          removed.
+        - Files located in <ILVHOME>/tools/gantt/gantt are now
+          located in
+                <ILVHOME>/include/ilviews/ilvgantt
+          So that the -I<ILVHOME>/tools/gantt compiler option can be
+          removed, and the include files must be referenced with a
+                #include <ilviews/ilvgantt/FILE.h>
+          directive, instead of <gantt/FILE.h>.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+IlvTransformer: Constructors and setValues, getValues, translate, scale and
+rotate member functions have changed their function signature. Use
+IlvTransfoParam instead of IlvFloat.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+The Input Method support needs to link applications on PC (msvc4 and msvc5)
+with the imm32 system library (imm32.lib).
+--------------------------------------------------------------------------
+
+#########################################################################
+#               Rogue Wave Views 2.4 known incompatibilities            #
+#               with version 2.3                                        #
+#########################################################################
+
+--------------------------------------------------------------------------
+The two virtual member functions IlvStringList::addLabel and
+IlvStringList::insertLabel have an additionnal parameter that adds
+a client data of type IlvAny to the indicated entry.
+Although this parameter is optional, so that code that uses it will not
+notice it, classes that overload this member function must be modified.
+--------------------------------------------------------------------------
+
+#########################################################################
+#               Rogue Wave Views 2.3 known incompatibilities            #
+#               with version 2.2.2                                      #
+#########################################################################
+--------------------------------------------------------------------------
+Rogue Wave Views license key if now checked when the first IlvDisplay is created.
+This object is invalidated if no valid license can be found.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+IlvApplication::getPanel(const char*) now returns an IlvContainer*. You
+need to cast the returned value to an IlvGadgetContainer* to store the
+returned value into an IlvGadgetContainer*.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+Makefile on all Solaris platforms need to link explicitely with the
+flags '-lsocket', '-lnsl', and '-lgen'.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+Incompatibility in message dialog and subclasses (IlvIMessageDialog):
+the object that displays the message is no longer a string list, 
+but an IlvMessageLabel.
+Since IlvMessageLabel now supports multi-line messages the
+IlvIMessageDialog also supports multi-line messages.
+The incompatibility is in the constructor:
+IlvIMessageDialog(IlvDisplay*,
+                  const char* const* s,
+                  IlvUShort          count,
+                  IlvBoolean         copy         = IlvTrue,
+                  const char*        fileordata   = 0,
+                  IlvIDialogType     type         = IlvDialogOkCancel,
+                  IlvSystemView      transientFor = 0);
+In the previous version, each string of the variable 's' was a
+reference to the message database. Whereas in this version, the constructor
+concatenates the strings in 's', adding a \n between each string, and 
+only the result of the concatenation is a reference to the message
+database.
+--------------------------------------------------------------------------
+#########################################################################
+#               Rogue Wave Views 2.2 known incompatibilities            #
+#               with previous versions                                  #
+#########################################################################
+--------------------------------------------------------------------------
+- setObjectInteractor(object, 0) on a gadget does not remove the object
+  interactor when applied to an IlvGadget, but it restores the interactor
+  to internal gadget's.
+
+  Workaround:
+        use IlvGadget::setActive(IlvFalse) instead.
+
+  Furthermore, a gadget now always reacts with its default behaviour as
+  soon as it is stored in a container or a manager.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+- The value returned by getSystemView on a Motif topview is not
+  the Shell Widget anymore. In fact, it returns a pointer to a
+  Widget created as a child of the actual Shell Widget.
+
+  Workaround:
+        IlvAbstractView::getShellSystemView() returns the actual Shell widget.
+
+- The virtual member function getPoints of the class IlvOneLinkImage, overloaded
+  in IlvOneSplineLinkImage is obsolete.
+
+  Workaround:
+        virtual void getPoints(IlvPoint*, int&, IlvTransformer* = 0) const;
+        has been kept for code compatibility, but it actually calls the new
+        virtual member function getLinkPoints of IlvLinkImage:
+
+        virtual IlvPoint* getLinkPoints(IlvUInt& nPoints,
+                                        const IlvTransformer* t = 0) const;
+        returns the array of points that describes the link, if it is
+        displayed using the Transformer t.
+        nPoints returns the number of returned points.
+        You should not modify or delete this array, which is internally managed.
+        The array should be copied if you need to keep its values after further
+        calls to library are made.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+- The location of IlvZoomableLabels that are build calling their constructor
+  has changed in order to become homogeneous with the class IlvLabel.
+  The data files don't need to be modified.
+
+  Workarounds:
+        1) Because you have the source code of the definition of this class,
+        in <ILVHOME>/src/zoomlab.cc, you can change the constructor
+
+        >>> IlvZoomableLabel::IlvZoomableLabel(IlvDisplay*     display,
+        >>>                                    const IlvPoint& position, 
+        >>>                                    const char*     label,
+        >>>                                    IlvPalette*     palette)
+        >>> : IlvLabel(display, position, label, palette),
+        >>>   _t()
+        >>> {
+        >>>     _t.setValues((IlvFloat)position.x(),
+        >>>                  (IlvFloat)position.y() - (IlvPos)getFont()->height());
+        >>> }
+
+        to
+
+        <<< IlvZoomableLabel::IlvZoomableLabel(IlvDisplay*     display,
+        <<<                                    const IlvPoint& position, 
+        <<<                                    const char*     label,
+        <<<                                    IlvPalette*     palette)
+        <<< : IlvLabel(display, position, label, palette),
+        <<<   _t()
+        <<< {
+        <<<     _t.setValues((IlvFloat)position.x(),
+        <<<                  (IlvFloat)position.y());
+        <<< }
+
+        The you will compile zoomlab.o, and link it to the final application as if
+        it was one of your regular object files.
+
+        2) You can change your code, and need no change in your link command:
+
+        Instead of calling:
+
+        >       label = new IlvZoomableLabel(display, IlvPoint(x, y), 
+        >                                    "My Label",
+        >                                    palette);
+
+        Use:
+        >       label = new IlvZoomableLabel(display,
+        >                                    IlvPoint(x,
+        >                                             y
+        >#if defined(IlvVersion) && (IlvVersion > 210)
+        >                                             +palette->getFont()->height()
+        >#endif /* Rogue Wave Views Version < 2.2 */
+        >                                             ), 
+        >                                    "My Label",
+        >                                    palette);
+
+        Note that if there is no palette parameter, you must use
+                display->defaultPalette()->getFont()->height()
+--------------------------------------------------------------------------

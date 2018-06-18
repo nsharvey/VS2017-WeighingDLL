@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<Options>
+<!--Description of menu items with commands name-->
+<!--Menu items will be built using command descriptions if they are not popup-->
+<!--Otherwise the command name specifies the real menu item label-->
+<!--Separator are specified using SEPARATOR string as command name-->
+  <Class AF_Name="MenuItem">
+    <label AF_Class="string" AF_Value=""/>
+    <isPopup AF_Class="bool" AF_Value="false"/>
+    <popupItems AF_Class="MenuItem" AF_IsArray="1"/>
+  </Class>
+  <Class AF_Name="Menu">
+    <items AF_Class="MenuItem" AF_IsArray="1"/>
+  </Class>
+  <Class AF_Name="Toolbar">
+    <Name AF_Class="string" AF_Value=""/>
+    <InitialeDockingSide AF_Class="string" AF_Value="Top"/>
+    <IsUserBar AF_Class="bool" AF_Value="false"/>
+    <DoNotUse AF_Class="bool" AF_Value="false"/>
+    <items AF_Class="MenuItem" AF_IsArray="1"/>
+  </Class>
+  <Class AF_Name="PopupMenu">
+    <AF_Superclasses>
+      <AF_Superclasses AF_Classname="Toolbar"/>
+    </AF_Superclasses>
+  </Class>
+<!--***************************************************************************-->
+<!--Menu Variables-->
+  <Toolbar AF_Name="MainMenu" InitialeDockingSide="Top" IsUserBar="false" DoNotUse="false" Name="&amp;MainMenu">
+    <items>
+      <items label="&amp;MenuFile" isPopup="true">
+        <popupItems>
+          <popupItems isPopup="false" label="NewDocument">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="OpenDocument">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="CloseDocument">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="SEPARATOR">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="SaveDocument">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="SaveAsDocument">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="SaveAllDocuments">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="SEPARATOR">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="PageSetup">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="Print">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="SEPARATOR">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="RecentFiles">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="SEPARATOR">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="Exit">
+            <popupItems/>
+          </popupItems>
+        </popupItems>
+      </items>
+      <items label="&amp;MenuTools" isPopup="true">
+        <popupItems>
+          <popupItems isPopup="false" label="Customize">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="Modules">
+            <popupItems/>
+          </popupItems>
+        </popupItems>
+      </items>
+      <items label="&amp;MenuWindow" isPopup="true">
+        <popupItems>
+          <popupItems isPopup="false" label="NewWindow">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="SEPARATOR">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="NextWindow">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="PreviousWindow">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="SEPARATOR">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="Cascade">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="TileHorizontaly">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="TileVerticaly">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="SEPARATOR">
+            <popupItems/>
+          </popupItems>
+          <popupItems isPopup="false" label="Windows">
+            <popupItems/>
+          </popupItems>
+        </popupItems>
+      </items>
+    </items>
+  </Toolbar>
+<!--***************************************************************************-->
+<!--Toolbar Variables-->
+  <Toolbar AF_Name="MainToolbar" InitialeDockingSide="Top" IsUserBar="false" DoNotUse="false" Name="&amp;Standard">
+    <items>
+      <items isPopup="false" label="NewDocument">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="SEPARATOR">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="OpenDocument">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="SaveDocument">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="SaveAllDocuments">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="SEPARATOR">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="Print">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="SEPARATOR">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="NewWindow">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="NextWindow">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="PreviousWindow">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="Cascade">
+        <popupItems/>
+      </items>
+    </items>
+  </Toolbar>
+<!--***************************************************************************-->
+<!--Default popup menus-->
+  <PopupMenu AF_Name="ProjectFileItem" Name="" InitialeDockingSide="Top" IsUserBar="false" DoNotUse="false">
+    <items>
+      <items isPopup="false" label="OpenProjectItem">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="SEPARATOR">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="ToggleFrameBar">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="HideBar">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="SEPARATOR">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="Properties">
+        <popupItems/>
+      </items>
+    </items>
+  </PopupMenu>
+  <PopupMenu AF_Name="ProjectBarMenu" Name="" InitialeDockingSide="Top" IsUserBar="false" DoNotUse="false">
+    <items>
+      <items isPopup="false" label="ToggleFrameBar">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="HideBar">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="SEPARATOR">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="Properties">
+        <popupItems/>
+      </items>
+    </items>
+  </PopupMenu>
+  <PopupMenu AF_Name="ProjectFolderItem" Name="" InitialeDockingSide="Top" IsUserBar="false" DoNotUse="false">
+    <items>
+      <items isPopup="false" label="InsertFolder">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="InsertFile">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="SEPARATOR">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="ToggleFrameBar">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="HideBar">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="SEPARATOR">
+        <popupItems/>
+      </items>
+      <items isPopup="false" label="Properties">
+        <popupItems/>
+      </items>
+    </items>
+  </PopupMenu>
+</Options>

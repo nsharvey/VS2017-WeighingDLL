@@ -1,0 +1,25 @@
+var pairs =
+{
+"introduction":{"ilisqltable":1}
+,"ilisqltable":{"class":1,"chapter":1,"objects":1}
+,"class":{"defines":1}
+,"defines":{"object":1}
+,"object":{"manages":1,"associated":1}
+,"manages":{"rows":1}
+,"rows":{"remote":1}
+,"remote":{"relational":1}
+,"relational":{"database":1}
+,"database":{"management":1}
+,"management":{"system":1}
+,"system":{"created":1}
+,"created":{"automatically":1,"ilisqldatasource":1}
+,"automatically":{"ilisqldatasource":1}
+,"ilisqldatasource":{"created":1,"object":1}
+,"associated":{"ilisqltable":1}
+,"chapter":{"explains":1}
+,"explains":{"ilisqltable":1}
+,"objects":{"defined":1}
+,"defined":{"subsequently":1}
+,"subsequently":{"used":1}
+}
+;Search.control.loadWordPairs(pairs);

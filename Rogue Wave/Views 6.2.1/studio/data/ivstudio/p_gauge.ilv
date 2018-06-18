@@ -1,0 +1,52 @@
+// Ilv Version: 5.4
+// File generated: Thu Nov 25 16:00:42 2010
+// Creator class: IlvGadgetManagerOutput
+FileName "p_gauge"
+PathName "p_gauge.ilv"
+Palettes 3
+"default" 0 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+1 F 65025 65025 65025 "gray" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+2 F "defaultBg" "black" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+IlvObjects 8
+3 { 0 0 IlvRectangularScale 26 56 10 106 5 2 10 5 M 0 100 "%4.f"
+"   0" "  25" "  50" "  75" " 100"  36 162 106 8 1  } 0
+0
+3 { 1 0 IlvRectangularScale 53 27 107 10 3 0 10 5 M 0 100 "%4.f"
+"0" "50" "100"  53 37 107 1 4  } 0
+0
+3 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gauge" ]
+1 IlvReliefGauge 50 55 120 22 0 100 42 1 1 1 } 0
+0
+3 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gauge" ]
+1 IlvRectangularGauge 50 98 120 22 0 100 42 1 1 } 0
+0
+3 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gauge" ]
+1 IlvSliderGauge 50 142 120 21 0 100 42 1 1 10 } 0
+0
+3 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gauge" ]
+0 IlvFilledCircularGauge 50 180 117 117 0 100 75 0 360 } 0
+0
+3 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gauge" ]
+0 IlvCircularGauge 22 347 121 92 0 100 20 0 270 } 0
+0
+3 { 7 2 IlvCircularScale 16 320 142 136 11 5 10 5 M 0 100 "%4.f"
+"0" "10" "20" "30" "40" "50" "60" "70" "80" "90" "100"  1 0 270 } 0
+0
+Size 180 556
+GeometryHandlers
+1 100 0 180 0 180 0
+7 3 0 1 1  0 0 36 0  143 0 143 0
+ 3 0 0 50  120 0 120 1  0 0 10 0
+ 3 0 0 50  120 0 120 2  0 0 10 0
+ 3 0 0 50  120 0 120 3  0 0 10 0
+ 3 0 0 50  120 0 120 4  0 0 10 0
+ 3 0 0 50  118 0 118 5  0 0 12 0
+ 3 0 2 22  121 0 121 6  0 0 37 0
+1 100 0 556 0 556 0
+0
+EOF

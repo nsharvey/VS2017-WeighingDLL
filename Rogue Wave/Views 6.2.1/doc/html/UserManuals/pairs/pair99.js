@@ -1,0 +1,25 @@
+var pairs =
+{
+"selectrectangularobjectcreationmode":{"label":1}
+,"label":{"rectangular":1}
+,"rectangular":{"object":1,"bounding":1}
+,"object":{"creation":1,"palette":1}
+,"creation":{"path":1,"mode":1,"objects":1}
+,"path":{"palettes":1}
+,"palettes":{"panel":1}
+,"panel":{"object":1}
+,"palette":{"specific":1}
+,"specific":{"creation":1}
+,"mode":{"attached":1,"state":1,"selected":1}
+,"attached":{"category":1}
+,"category":{"mode":1}
+,"state":{"true":1}
+,"true":{"mode":1}
+,"selected":{"action":1}
+,"action":{"allows":1}
+,"allows":{"creation":1}
+,"objects":{"delimited":1}
+,"delimited":{"rectangular":1}
+,"bounding":{"box":1}
+}
+;Search.control.loadWordPairs(pairs);

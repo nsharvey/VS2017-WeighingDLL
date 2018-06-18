@@ -1,0 +1,44 @@
+// Ilv Version: 4.0
+// File generated: Wed Jun 21 18:58:19 2000
+// Creator class: IlvManagerOutput
+FileName "myPanel"
+Palettes 1
+0 "Grey40" "light blue" "-*-courier-medium-r-normal-*-*-140-*-*-*-*-*-*" 0 solid solid 0 0 0
+IlvObjects 2
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+0 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance myLib.myproto myThermometer
+    values {
+        Float temperature = 20
+        Int x = 57
+        Int y = 31
+        String name = myThermometer
+    }
+    subscriptions {
+        myThermometer display_4 temperature value Any 17
+    }
+;
+ } 32 "myThermometer"
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "ProtoGraphic" ]
+0 IlvProtoGraphic 1 0 // Ilog Views Group Version 1.2
+IlvProtoInstance samples.display display_4
+    values {
+        Float value = 20
+        Int x = 72
+        Int y = 221
+        String name = display_4
+    }
+    subscriptions {
+    }
+;
+ } 32 "display_4"
+Layers 2
+"" 4 0 
+"" 4 0 
+Views 1
+"v103" 1 0 0 1 0 0
+Properties 1
+[ IlvGroupHolder __ilvGroupHolder  ]
+EOF

@@ -1,0 +1,5 @@
+Files: usercall.h usercall.cpp
+Note: shows how to define global (generic) callbacks. Implements two global 
+callbacks :
+        - load data from a file into a table object
+        - save data from a table object to a file

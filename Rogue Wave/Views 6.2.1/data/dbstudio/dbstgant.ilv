@@ -1,0 +1,24 @@
+// Ilv Version: 4.0
+// File generated: Wed Feb 09 14:06:46 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "dbstgant"
+PathName "dbstgant.ilv"
+Palettes 1
+"default" 0 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 1
+1 { 0 P 1
+[ IlvPanelObjectReference IlvPanelObjectReference  "950101584.0" ]
+0 IliDbGantt 8 11 180 120 "" 0 240 0 120 24 0 240 0 120 24 24 0 18 0 24 26 18 0 20 0 6 87 61 4 8 2 0 0 0 1 5 1 0 2 2 2 2 0 2 4 3 1 1 "" 3 0 IlvGanttResourceHeader 0 0 18 26 F34896 1 N N s 0 0 0 0 0 0 60 26 1 1 0 1 0 0 3 1 V0 2 0 1 N 0 0 0 1 0   0 0 1  11  1  1998 1 0 10 6 0  "" 2 "" "" 
+0  "" 6 "" "" "" "" "" "" 
+0  "" 6 "" "" "" "" "" "" 
+0  "" 5 "" "" "" "" "" 
+0  "" 4 "" "" "" "" 
+0  "" 4 "" "" "" "" 
+
+0 
+6 "white" "gray" "green" "red" "darkgreen" "red" 
+0 1 "IliDbGanttFullModel"
+1 1   } 0
+0
+Size 200 149
+EOF

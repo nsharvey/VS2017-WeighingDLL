@@ -1,0 +1,51 @@
+// Ilv Version: 4.0
+// File generated: Wed May 24 16:05:42 2000
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 10
+5 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 7 4 232 22 F268435468 0 { IlvMessageItem 262169 4 4 16 "&DataCount"  }   } 32 "MsgDataCount"
+0
+5 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 7 26 232 22 2 0 200 64 2 1
+0 IlvNumberField 7 26 209 22 F6 2 2 -1 0 "1234543" . , 2 0 0 2147483647  f 1 1 1 1.23454e+06 } 32 "FunctionDataCount"
+0
+5 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 7 54 232 22 F268435468 0 { IlvMessageItem 262169 4 4 16 "&XMin"  }   } 32 "MsgFunctionXMin"
+0
+5 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 7 79 232 22 2 0 200 64 2 1
+0 IlvNumberField 7 79 209 22 F6 2 2 -1 0 "1234543.62" . , 2 24 -3.40282e+38 3.40282e+38  f 1 1 1 1.23454e+06 } 32 "FunctionXMin"
+0
+5 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 7 104 232 22 F268435468 0 { IlvMessageItem 262169 4 4 16 "&XMax"  }   } 32 "MsgFunctionXMax"
+0
+5 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvSpinBox 7 128 232 22 2 0 200 64 2 1
+0 IlvNumberField 7 128 209 22 F6 2 2 -1 0 "1234543.62" . , 2 24 -3.40282e+38 3.40282e+38  f 1 1 1 1.23454e+06 } 32 "FunctionXMax"
+0
+5 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 7 155 170 22 F268435468 0 { IlvMessageItem 262169 4 4 16 "&ScriptFunction"  }   } 32 "MsgFunctionName"
+0
+5 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 7 181 50 22 F268435468 0 { IlvMessageItem 262169 4 4 16 "&Float"  }   } 32 "MsgFunctionY"
+0
+5 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvTextField 55 181 106 22 F6 2 1 -1 0 "Text Field" } 32 "ScriptFunctionName"
+0
+5 { 9 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvMessageLabel 166 181 73 22 F268435468 0 { IlvMessageItem 262169 4 4 16 "&ScriptFunctionParam"  }   } 32 "MsgFunctionX"
+0
+Size 251 213
+EOF

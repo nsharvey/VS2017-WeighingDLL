@@ -1,0 +1,45 @@
+<html><head><title>Prototypes</title></head>
+<body bgcolor=#ffffff>
+<a name="949104">
+<h3><FONT color=#b61840> Rotation</FONT></h3>
+</a><a name="949105">
+The Rotation accessor (class <a href="../../refman/html/IlvRotationAccessor.html"><code>IlvRotationAccessor</code></a>) lets you set the rotation angle of an object to a given value. The value defined by this accessor is the angle in degrees to which the rotation must be set. The angle is stored every time it is set so resetting the value rotates the object by the angle corresponding to the delta between the old and new angles.<p>
+</a><a name="949106">
+The Minimum Angle, Angle Range, Minimum Value, and Value Range parameters are used to compute the new rotation angle given the input value. The new rotation is computed from the value assigned to the Rotation accessor using the following formula: <p>
+</a><a name="949107">
+<code>angle = minAngle + (value - mininimum)* Anglerange / range</code><p>
+</a><a name="949108">
+The initial value of the rotation angle is assumed to be the value of the Minimum Angle parameter so the initial position of the rotating object must correspond to this value. <p>
+<Table>
+<tr><td><table>
+<tr>
+<td align=left valign=top>
+<b>Not all graphic objects are sensitive to rotation. Rectangles, ellipses, and text objects do not rotate. It is suggested to use polygons and splines instead.</b>
+</td></tr>
+</table></td></tr>
+</Table>
+<p> <p>
+</a><a name="949112">
+<h4><FONT color=#b61840> Parameters</FONT></h4>
+</a><ul><a name="949113">
+<li>Graphic Node: Name of the node to rotate. Must be a graphic node.
+</a><p><a name="949114">
+<li>Center X: X coordinate of the rotation center. You can use the centerX accessor for this parameter. Float or Integer.
+</a><p><a name="949115">
+<li>Center Y: Y coordinate of the rotation center. You can use the centerY accessor for this parameter. Float or Integer.
+</a><p><a name="949116">
+<li>Minimum Angle: Minimum angle used to compute the rotation. Float or Integer.
+</a><p><a name="949117">
+<li>Angle Range: Angle range used to compute the rotation. Float or Integer.
+</a><p><a name="949118">
+<li>Minimum: Minimum value used to compute the rotation. Float or Integer.
+</a><p><a name="949119">
+<li>Range: Value range used to compute the rotation. Float or Integer.
+</a><p><a name="949120">
+<li>Handle Interaction: Boolean specifying whether or not the accessor should behave like an Event accessor when the user clicks on the node to rotate it. If it is set to <code>true</code>, the user can rotate the node and the accessor value is updated accordingly.
+</a><p><a name="949121">
+<li>The type of this value is Float (the angle of rotation).
+</a><p></ul><a name="949122">
+</body>
+</html>
+<hr><a href=displayb>Back</a>

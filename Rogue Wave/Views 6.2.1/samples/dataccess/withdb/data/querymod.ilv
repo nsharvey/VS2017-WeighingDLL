@@ -1,0 +1,88 @@
+// Ilv Version: 4.0
+// File generated: Wed Apr 12 15:39:14 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "querymod"
+PathName "querymod.ilv"
+Palettes 6
+1 "gray" "black" "small" "%helvetica-10-" 0 solid solid 0 0 0
+0 "Gray" 0 0 0 "button" "%helvetica-12-" 0 solid solid 0 0 0
+3 "white" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+5 "gray" "black" "button" "%helvetica-12-" 0 solid solid 0 0 0
+"IlvStText" 4 "gray" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+2 "gray" "black" "bold" "%helvetica-12-B" 0 solid solid 0 0 0
+IlvObjects 8
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 74 209 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "Switch"  }   } 544 "Button_1"
+1
+1 "__ilvCallback" S"JvScript" "jswitch"
+6144 "Button_2" "tg"
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 167 209 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "Cancel"  }   } 544 "Button_2"
+1
+1 "__ilvCallback" S"JvScript" "jcancel"
+6144 "Button_3" "Button_1"
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvButton 260 209 73 23 F13 2 { IlvMessageItem 262145 4 16 4 "Apply"  }   } 544 "Button_3"
+1
+1 "__ilvCallback" S"JvScript" "japply"
+6144 "Button_4" "Button_2"
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliSQLDataSource 28 193 24 24 1 14 3 0 IliSQLTable 0 18 5 
+     10 "EMPNO" Int 5 -1 2 82 32 33 "EMPNO" 
+     8 "NAME" String 6 25 1 82 32 33 "NAME" 
+     8 "STATUS" Int 7 -1 2 82 32 33 "STATUS" 
+     8 "DEPTNO" Int 8 -1 2 82 45 "DEPT" "DEPTNO" "NAME" 33 "DEPTNO" 
+     8 "SALARY" Double 9 -1 2 86 32 33 "SALARY" 
+     20 0 0 9 31118 0 "" "SELECT EMPNO,\n       NAME,\n       STATUS,\n       DEPTNO,\n       SALARY\nFROM I_EMP" 0 2 1 0 1 3 0 "I_EMP" "I_EMP" 0 1 15 15 130 75 0 0 0 0 0 0 1 0 1 0 1 0 6 5 
+     10 "EMPNO" Int 1 -1 2 -1 0 
+     8 "NAME" String 2 25 1 -1 0 
+     8 "STATUS" Int 3 -1 2 -1 0 
+     8 "DEPTNO" Int 4 -1 2 -1 0 
+     9 "SALARY" Double 5 -1 2 -1 0 
+     0 0 "I_EMP" 0 0 6 "Main" "null" "/"  } 32 "EMP"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IliTableGadget 8 44 440 155 2 2067 "EMP" 1799208543 1 0 0 0 17 19 21 4 0 0 0 1 1 "white" A"normal" "%helvetica-12-"  } 32 "tg"
+6144 "Button_1" "ef"
+1 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+4 IlvMessageLabel 93 243 221 22 F268435468 0 { IlvMessageItem 262169 4 16 4 "MessageLabel"  }   } 32 "msg"
+0
+1 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliSQLDataSource 350 195 24 24 1 14 3 0 IliSQLTable 0 7 2 
+     10 "DEPTNO" Int 2 -1 2 -1 32 33 "DEPTNO" 
+     8 "NAME" String 3 25 1 -1 32 33 "NAME" 
+     16 0 9 31118 0 "" "SELECT DEPTNO,\n       NAME\nFROM I_DEPT" 0 2 1 1 1 3 0 "I_DEPT" "I_DEPT" 0 1 15 15 130 75 0 0 0 1 0 1 0 1 0 4 3 
+     10 "DEPTNO" Int 1 -1 2 -1 0 
+     8 "NAME" String 2 25 1 -1 0 
+     8 "MANAGER" String 3 25 1 -1 0 
+     0 0 "I_DEPT" 0 0 6 "Main" "null" "/"  } 32 "DEPT"
+0
+1 { 7 P 2
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+[ IliGadgetSetToolTip __ilvToolTip 2 "&DbNav_Previous" 4 4 ]
+5 IliDbNavigator 8 9 276 23 2 1  2067 "EMP" 927 4  } 0
+0
+Size 462 272
+GeometryHandlers
+1 100 0 462 0 462 0
+6 3 0 0 8  440 0 440 4  0 14 14 0
+ 3 0 0 74  0 0 73 0  315 0 315 0
+ 3 0 0 167  0 0 73 1  222 0 222 0
+ 3 0 0 260  0 0 73 2  129 0 129 0
+ 3 0 0 93  0 0 221 5  148 0 148 0
+ 3 0 0 8  0 0 276 7  178 0 178 0
+1 100 0 272 0 272 0
+6 3 0 0 44  155 0 155 4  0 0 73 0
+ 3 209 0 209  0 0 23 0  0 0 40 0
+ 3 209 0 209  0 0 23 1  0 0 40 0
+ 3 209 0 209  0 0 23 2  0 0 40 0
+ 3 243 0 243  0 0 22 5  0 0 7 0
+ 3 0 0 9  0 0 23 7  240 0 240 0
+EOF

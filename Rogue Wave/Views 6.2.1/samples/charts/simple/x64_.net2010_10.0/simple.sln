@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("D0A2C32C-1D68-11E8-81D0-E787772C9500") = "simple", "simple.vcxproj", "D0A274D0-1D68-11E8-81D0-E787772C9500"
+EndProject
+
+Global
+EndGlobal
+

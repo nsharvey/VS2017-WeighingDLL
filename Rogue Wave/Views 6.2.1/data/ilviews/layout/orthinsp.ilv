@@ -1,0 +1,66 @@
+// Ilv Version: 3.1
+// File generated: Mon Jul 03 15:50:41 2000
+// Creator class: IlvGadgetManagerOutput
+Palettes 1
+"IlvStText" 0 "lightgrey" "black" "normal" "%helvetica-12-" 0 solid solid 0 0 0
+IlvObjects 14
+1 { 0 0 IlvMessageLabel 8 33 116 22 F8 0 25 16 4 "&linkOffset"   } 32 "OrthLinkOffsetLab"
+0
+1 { 1 0 IlvMessageLabel 8 112 118 22 F8 0 25 16 4 "&linkToLinkCrossingPenalty"   } 32 "OrthLinkLinkPenaltyLab"
+0
+1 { 2 0 IlvMessageLabel 8 85 111 22 F8 0 25 16 4 "&linkBundleMode"   } 32 "OrthLinkBundleModeLab"
+0
+1 { 3 0 IlvComboBox 156 86 164 20 F39 2 "" 3
+IlvMenuItem 1 2 4 "&noBundle"  
+IlvMenuItem 1 2 4 "&firstLastSegment"  
+IlvMenuItem 1 2 4 "&improvedFirstLastSegment"   } 32 "OrthLinkBundleModeSel"
+0
+1 { 4 0 IlvSpinBox 156 33 164 22 2 0 200 64 2 1
+0 IlvNumberField 156 33 149 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 1 0 } 32 "OrthLinkOffsetNum"
+0
+1 { 5 0 IlvSpinBox 156 112 164 22 2 0 200 64 2 1
+0 IlvNumberField 156 112 149 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 1 0 } 32 "OrthLinkLinkPenaltyNum"
+0
+1 { 6 0 IlvMessageLabel 8 60 116 20 F8 0 25 16 4 "&linkStyle"   } 32 "OrthLinkStyleLab"
+0
+1 { 7 0 IlvComboBox 156 60 164 20 F39 2 "" 2
+IlvMenuItem 1 2 4 "&directLinkStyle"  
+IlvMenuItem 1 2 4 "&orthogonalLinkStyle"   } 32 "OrthLinkStyleSel"
+0
+1 { 8 0 IlvMessageLabel 8 6 116 22 F8 0 25 16 4 "&allowedNbOfIterations"   } 32 "OrthNbIterLab"
+0
+1 { 9 0 IlvSpinBox 156 6 164 22 2 0 200 64 2 1
+0 IlvNumberField 156 6 149 22 F6 2 2 -1 0 "0" . , 1 0 0 2147483647  f 1 0 1 0 } 32 "OrthNbIterNum"
+0
+1 { 10 0 IlvMessageLabel 8 139 118 22 F8 0 25 16 4 "&linkToNodeCrossingPenalty"   } 32 "OrthLinkNodePenaltyLab"
+0
+1 { 11 0 IlvSpinBox 156 139 164 22 2 0 200 64 2 1
+0 IlvNumberField 156 139 149 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 1 0 } 32 "OrthLinkNodePenaltyNum"
+0
+1 { 12 0 IlvMessageLabel 8 166 118 22 F8 0 25 16 4 "&minFinalSegmentLength"   } 32 "OrthMinFinalSegmentLab"
+0
+1 { 13 0 IlvSpinBox 156 166 164 22 2 0 200 64 2 1
+0 IlvNumberField 156 166 149 22 F6 2 2 -1 0 "0" . , 2 0 0 2147483647  f 1 0 1 0 } 32 "OrthMinFinalSegmentNum"
+0
+Size 323 284
+Background "gray"
+GeometryHandlers
+2 50 150 150 0 150 0
+ 100 0 173 150 173 150
+7 3 0 0 8  116 0 116 8  0 0 26 0
+ 3 0 0 8  116 0 116 0  0 0 26 0
+ 3 0 0 8  116 0 116 6  0 0 26 0
+ 3 0 0 8  111 0 111 2  0 0 31 0
+ 3 0 0 8  118 0 118 1  0 0 24 0
+ 3 0 0 8  118 0 118 10  0 0 24 0
+ 3 0 0 8  118 0 118 12  0 0 24 0
+7 3 0 0 6  164 0 164 9  0 0 3 1
+ 3 0 0 6  164 0 164 4  0 0 3 1
+ 3 0 0 6  164 0 164 7  0 0 3 1
+ 3 0 0 6  164 0 164 3  0 0 3 1
+ 3 0 0 6  164 0 164 5  0 0 3 1
+ 3 0 0 6  164 0 164 11  0 0 3 1
+ 3 0 0 6  164 0 164 13  0 0 3 1
+1 100 0 284 0 284 0
+0
+EOF

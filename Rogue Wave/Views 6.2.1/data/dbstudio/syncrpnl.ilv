@@ -1,0 +1,54 @@
+// Ilv Version: 5.1
+// File generated: Thu Aug 30 16:30:08 2007
+// Creator class: IlvGadgetManagerOutput
+FileName "syncrpnl"
+PathName "C:\\ilog\\dataccess\\work\\data\\dbstudio\\syncrpnl.ilv"
+Palettes 3
+"IlvStToolBar" 0 F "gray" "black" "normal" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+2 F "gray" "black" "button" "%Tahoma-11-[Charset:0]" 0 solid solid 0 0 0 65535 1
+1 F "gray" "black" "bold" "%Tahoma-11-B[Charset:0]" 0 solid solid 0 0 0 65535 1
+IlvObjects 5
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IliMemoryDataSource 142 187 24 24 1 14 3 -1 IliMemoryTable 0 5 4 
+     77 "ETAT" String 1 -1 1 -1 "&sync_State" 32 
+     77 "TABLE" String 4 -1 1 -1 "&sync_Table" 32 
+     77 "COLUMN" String 2 -1 1 -1 "&hdr_Column" 32 
+     77 "ATRIBUTE" String 3 -1 1 175 "&sync_Attributes" 32 
+     16 0 8 0
+0
+ } 32 "RES_MS"
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IliTableGadget 5 5 390 178 2 2067 "RES_MS" 725466321 2 0 0 0 17 18 21 0 0 0 0 1 1 "white" A"normal" "%Tahoma-11-[Charset:0]"  } 32 "TBLRes"
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvButton 230 212 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&sync_Validate"  }   } 512
+1
+1 "__ilvCallback" "apply"
+0
+1 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvButton 315 212 80 23 F13 2 { IlvMessageItem 262145 4 16 4 "&cancel"  }   } 512
+1
+1 "__ilvCallback" "cancel"
+0
+1 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvToggle 5 188 390 16 F1 2 1 2 0 0 0 Y "&sync_ImpackSelCol" } 32 "CHKImpack"
+0
+Size 400 240
+GeometryHandlers
+1 100 0 400 0 400 0
+4 3 0 0 5  390 0 390 1  0 0 5 0
+ 3 0 0 5  390 0 390 4  0 0 5 0
+ 3 230 0 230  0 0 80 2  0 0 90 0
+ 3 315 0 315  0 0 80 3  0 0 5 0
+1 100 0 240 0 240 0
+4 3 0 0 5  178 0 178 1  0 0 57 0
+ 3 188 0 188  0 0 16 4  0 0 36 0
+ 3 212 0 212  0 0 23 2  0 0 5 0
+ 3 212 0 212  0 0 23 3  0 0 5 0
+EOF

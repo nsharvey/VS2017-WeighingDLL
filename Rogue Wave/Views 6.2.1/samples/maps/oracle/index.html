@@ -1,0 +1,199 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Maps - Samples: oracle</title>
+	</head>
+    <body>
+		<a name="oracle"><h1>Sample: <code>oracle</code></h1><h1 class="subtitle">Rogue Wave Views Maps Oracle SDO Sample</h1></a>
+		<p>This sample shows how you can use Views Maps
+        with Oracle Spatial, also known as Oracle SDO (Spatial Data Option).</p>
+		<img src="data/oracle.png"/>
+		<p> The sample provides source code that shows how to:
+	<ul>
+	<li> Export vector data read with a Views Maps Reader to an Oracle
+       	     Spatial Database. 
+	</li>
+	<li> Import vector data from an Oracle Spatial Database into Views.
+	</li>
+	<li> Implement Load-on-Demand with data imported from an Oracle
+             Spatial Database.
+	</li>
+	</ul>
+
+        This sample is able to handle Oracle Spatial relational model and
+        Oracle Spatial object model (since Oracle 9 and above).
+
+<h2>Note for Environment Configuration</h2>
+<p> Do not forget to set the ORACLE_HOME environment variable.  
+    As the <code>ilvdbmaps</code> library uses the dynamically loadable module of DB Link, do not forget
+    to rebuild the dynamically loadable versions of dbora9(1) (on Unix) and to install the
+    DLLs (on Windows). For more information on this subject, see the DB Link User's Manual 
+    at Chapter 7.
+</p>
+<p>
+    On Unix platforms, add in your <code>LD_LIBRARY_PATH</code> variable (<code>SHLIB_PATH</code> on HP-UX) the path
+    <code>$ORACLE_HOME/lib</code> and of course, the path <code>$ILDHOME/lib/$PLATFORM/sharedXXX</code>.
+    On Windows platforms, add in your PATH variable, the path <code>%ORACLE_HOME%\bin</code> and the path
+    for DB Link <code>%ILDHOME%\lib\x86_.net2005_8.0\dll_mda</code>.
+</p>
+
+<h2>About Oracle Spatial</h2>
+<p> Oracle SDO is the spatial extension of Oracle in its 7.3 version. This
+      extension has been renamed to Spatial Cartridge in the 8.0 version, and
+        has been renamed again to Oracle Spatial in the 8i version.
+</p>
+<p> Oracle Spatial can work either in relational or object modes:
+
+
+<ul>
+<li>
+	In relational mode, each SDO Layer relies on four specific Oracle tables,
+        which are called <tt>layerName_SDOGEOM</tt> (which handles the
+        geometries), 
+	<tt>layerName_SDOLAYER</tt> (which handles information about
+        tiling level and layer specific information), 
+	<tt>layerName_SDODIM</tt> (which handles information about the 
+	boundaries of the layer, its dimensions, and so on) and
+	<tt>layerName_SDOINDEX</tt> (which handles the Spatial indexation    
+	information).
+
+	</li>
+	<li> In object mode, one SDO Layer relies on a single
+	 table that has a <tt>SDO_GEOMETRY</tt> column, in association with an 
+	<em>index</em> and a global table <tt>SDO_GEOM_METADATA</tt> (<tt>USER_SDO_GEOM_METADATA</tt>
+	in oracle 9i) that stores the layer information for all layers.
+
+</li>
+</ul>
+</p>
+	<p> Oracle Spatial allows you to store georeferenced objects in an 
+	Oracle database and to perform spatial queries, such as getting the list of objects 
+	that intersect a specific polygon, and so on.
+</p>
+<p>    For more information about this extension, refer to the Oracle 
+	OnLine documentation.
+
+</p>
+</p>
+
+
+<h2>How Works the Sample</h2>
+<p> 
+This is the toolbar used in the sample: <IMG src="data/toolbar.png"/><BR/>
+<B>Description:</B><BR/>
+
+<ul>
+<li><IMG src="../../../data/maps/move.png"/>This button enables the pan zoom interactor. The left mouse button allows you to 
+pan the current view (translating it while dragging the left mouse button). The right (or middle, or mouse wheel)
+mouse button allows to zoom in/out the view. The sample uses the non opaque zoom mode of the pan zoom interactor.</li>
+
+<li><IMG src="../../../data/maps/select.png"/>Allows you to select a graphic object. If this graphic has been retrieved from a map feature
+that had attributes, then selecting the graphic will pop a window showing its attributes (Fig. 1). Note that the automatic
+reading of the attributes is a feature of the Object model classes (<code>IlvObjectSDOFeatureIterator</code>). Thanks to the 
+<code>IlvObjectSDOWriter</code>, you have the possibility to change the attributes of one or more objects attributes. To do so,
+check one of the attributes names that will be used as an SQL Key and then change the value of the desired attribute:
+pressing the Return key will commit the change in the DB.<BR/>
+<IMG src="data/attributes.png"/><BR/>
+In Figure 2, the user has chosen to change the 'TYPE_DESC' attribute of all the DB rows having their 'PPPTNAME'
+set to 'SAN JOSE'.<BR/>
+</li>
+
+<li><IMG src="../../../data/maps/unzoom.png"/>Unzooms your view into this rectangle.</li>
+
+<li><IMG src="../../../data/maps/zoom.png"/>Zooms your view into this rectangle.</li>
+
+<li><IMG src="../../../data/maps/zoomin.png"/>Activates the zoom interactor so that you can drag a rectangle and fit your view
+into this rectangle.</li>
+
+<li><IMG src="../../../data/maps/fit.png"/>Shows all data of your view into this rectangle.</li>
+
+<li><IMG src="../../../data/maps/save.png"/>Saves an Rogue Wave Views <code>.ilv</code> file (will also save the Load-On-Demand layers).</li>
+
+<li><IMG src="../../../data/maps/del.png"/>Erases all the Load-On-Demand layers, their contents, the debug view, and so on.</li>
+
+<li><IMG src="../../../data/maps/open.png"/>Loads a map file thanks to the <code>IlvMapLoader</code> class. You can use this in order to 
+load a shapefile for instance (a vectorial format) that you will be able to write down into Oracle SDO. To load <code>.ilv</code> 
+files, use the Open entry of the File menu.</li>
+
+<li><IMG src="../../../data/maps/connect.png"/>Pops a connection panel allowing the connection to the Oracle DB where the SDO
+package should be available. Figure 3 shows the connection panel where you have to give the Rogue Wave DB Link
+driver (the dbora9 driver will be used in this example), the user name, his password and the Oracle SID.<BR/>
+<IMG src="data/connpan.png"/><BR/> To have an Oracle account correctly tuned for this sample, please contact your
+DBA.
+</li>
+
+<li><IMG src="../../../data/maps/layercr.png"/>Creates a new SDO layer in the Oracle DB under the current connection parameters.
+A panel will be popped in order to ask the layer name. You can not give a name that already exists in the DB: this
+will raise an Oracle error (but you can drop the layer before). Creating or deleting Oracle tables requires certain
+privileges.</li>
+
+<li><IMG src="../../../data/maps/layerdel.png"/>Drops an SDO layer. This will pop a new panel allowing to choose a layer (Fig. 4:
+the layer 'ROADS' will be dropped). This panel has a &quot;re-compute&quot; button that allows you to update the list of layers
+in the current combo box.<BR/>
+<IMG src="data/chooseLayer1.png"/><BR/>Creating or deleting Oracle tables requires certain privileges.
+</li>
+
+<li><IMG src="../../../data/maps/sqlimport.png"/>Saves a map file into an SDO layer. It is assumed that you have previously loaded
+a vectorial map file (shapefile for example). This will pop a new panel allowing to choose a layer (Fig. 4).
+You can insert multiple files into an SDO layer. This feature uses the <code>IlvSDOWriter</code> or the <code>IlvObjectSDOWriter</code> whether
+you are using the relational or the Object model. When the writer is done, it proposes a tiling panel where you can
+give the tiling level for the Spatial Indexation (an estimated value is given and can be used). Do not use values
+smaller than 1. It is not recommended to ignore the indexation by canceling the Panel: the spatial indexes will not be
+created and you will have troubles with Load-On-Demand. For more information about the Tiling process and the
+Spatial Indexation, see the Oracle Spatial documentation.
+</li>
+
+<li><IMG src="../../../data/maps/lod.png"/>Allows you to use the Load-On-Demand feature on a chosen SDO layer. 
+It is assumed that Spatial Indexes has been correctly created. The sample uses an <code>IlvMapAdapter</code>: you must tune it so that it fits your data. 
+The current map adapter uses a geographic projection. This button will pop a Panel (Fig. 5) allowing you to choose a layer and 
+to set some other parameters of the class <code>IlvObjectSDOLayer</code> such as the ID column name (the name of a column in the SDO layer
+that can be considered as a unique Key), the tile width (the with of one Load-On-Demand tile in the DB coordinate
+system) and the tile height.<BR/>
+<IMG src="data/lodObject.png"/><BR/>
+In this example (Fig. 5), the user has chosen to load the 'WORLD' SDO layer (the geometry column that will be loaded up
+is 'GEOMETRY' here), where the layer has an ID (unique Key) column name 'TYPE_ID' and a tile width and a tile height
+of 100.
+</li>
+
+<li><IMG src="../../../data/maps/sqlexport.png"/>Loads a complete SDO layer from the DB. This will pop a new panel allowing you to choose a 
+layer (Fig. 4).
+</li>
+
+<li><IMG src="data/gauge.png"/>A gauge that shows the evolution of a read/write process. It is not active in Load-On-Demand
+mode.
+</li>
+
+</ul>
+
+</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvSDOWriter</code></li>
+			<li><code>IlvSDOFeatureIterator</code></li>
+			<li><code>IlvSDOLayer</code></li>
+			<li><code>IlvSDOUtil</code></li>
+			<li><code>IlvObjectSDOWriter</code></li>
+			<li><code>IlvObjectSDOFeatureIterator</code></li>
+			<li><code>IlvObjectSDOLayer</code></li>
+			<li><code>IlvObjectSDOUtil</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/defdbmsfact.h"><code>include/defdbmsfact.h</code></a></li>
+			<li><a href="include/mysdopan.h"><code>include/mysdopan.h</code></a></li>
+			<li><a href="include/sdopan.h"><code>include/sdopan.h</code></a></li>
+			<li><a href="src/defdbmsfact.cpp"><code>src/defdbmsfact.cpp</code></a></li>
+			<li><a href="src/mysdopan.cpp"><code>src/mysdopan.cpp</code></a></li>
+			<li><a href="src/sdopan.cpp"><code>src/sdopan.cpp</code></a></li>
+			<li><a href="src/sdosample.cpp"><code>src/sdosample.cpp</code></a></li>
+		</ul>

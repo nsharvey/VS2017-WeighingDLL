@@ -1,0 +1,25 @@
+var pairs =
+{
+"directory":{"class":1,"table":1}
+,"class":{"example":1,"used":1}
+,"example":{"directory":1}
+,"used":{"following":1}
+,"following":{"ilvdisplay*dpy":1}
+,"ilvdisplay*dpy":{"ilidatasource*ds":1}
+,"ilidatasource*ds":{"directorytable*tbl":1}
+,"directorytable*tbl":{"=new":1}
+,"=new":{"directorytable":1}
+,"directorytable":{"(dpy":1}
+,"(dpy":{"\u201C\u002Fusr\u002Fhome\u002Fme":1}
+,"\u201C\u002Fusr\u002Fhome\u002Fme":{"ds->":1}
+,"ds->":{"settable":1}
+,"settable":{"(tbl":1}
+,"(tbl":{"iltrue)":1}
+,"iltrue)":{"example":1}
+,"table":{"created":1}
+,"created":{"attached":1}
+,"attached":{"existing":1}
+,"existing":{"data":1}
+,"data":{"source":1}
+}
+;Search.control.loadWordPairs(pairs);

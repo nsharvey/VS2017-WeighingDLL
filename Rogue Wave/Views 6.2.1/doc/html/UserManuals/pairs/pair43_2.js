@@ -1,0 +1,19 @@
+var pairs =
+{
+"showpanelclassinspector":{"label":1}
+,"label":{"inspect":1}
+,"inspect":{"panel":1}
+,"panel":{"class":1,"action":1}
+,"class":{"path":1,"palette":1,"inspector":1}
+,"path":{"panel":1}
+,"palette":{"toolbar":1}
+,"toolbar":{"category":1}
+,"category":{"application":1}
+,"application":{"panel":1}
+,"action":{"shows":1}
+,"shows":{"hides":1}
+,"hides":{"panel":1}
+,"inspector":{"selected":1}
+,"selected":{"object":1}
+}
+;Search.control.loadWordPairs(pairs);

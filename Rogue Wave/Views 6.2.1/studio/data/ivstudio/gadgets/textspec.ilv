@@ -1,0 +1,33 @@
+// Ilv Version: 5.3
+// File generated: Tue Sep 15 08:16:16 2009
+// Creator class: IlvGadgetManagerOutput
+FileName "textspec"
+PathName "textspec.ilv"
+Palettes 2
+"defaultGadget" 1 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"IlvStToolBar" 0 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 3
+2 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Toggle" ]
+0 IlvToggle 5 5 320 16 F1 2 1 2 0 0 0 Y "&editable" } 32 "textEditable"
+0
+2 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvFrame 5 25 318 268 F268435468 0 { IlvMessageItem 262169 4 16 4 "&gadText"  }   } 0
+0
+2 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvText 15 50 298 233 F129 2 Y N 1 1 1 1 0 1
+""
+0 0 0 0 } 32 "textValue"
+0
+Size 328 298
+GeometryHandlers
+1 100 0 328 0 328 0
+3 3 0 0 5  320 0 320 0  0 0 3 0
+ 3 0 0 5  318 0 318 1  0 0 5 0
+ 3 0 0 15  298 0 298 2  0 0 15 0
+1 100 0 298 0 298 0
+2 3 0 0 25  268 0 268 1  0 0 5 0
+ 3 0 0 50  233 0 233 2  0 0 15 0
+EOF

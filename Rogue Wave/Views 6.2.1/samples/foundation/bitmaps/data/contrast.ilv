@@ -1,0 +1,31 @@
+// Ilv Version: 5.2
+// File generated: Tue Aug 19 07:38:21 2008
+// Creator class: IlvGadgetManagerOutput
+FileName "contrast"
+PathName "contrast.ilv"
+Palettes 2
+"IlvStToolBar" 1 F "defaultBg" "black" "normal" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+"defaultGadget" 0 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 1
+IlvObjects 3
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 5 5 285 290 F268435468 0 { IlvMessageItem 262169 4 16 4 "Origin"  }   } 0
+0
+1 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvFrame 315 5 285 290 F268435468 0 { IlvMessageItem 262169 4 16 4 "Preview"  }   } 0
+0
+1 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvSlider 293 10 18 285 F5 2 0 100 50 10 8 10 } 32 "slider"
+0
+Size 605 300
+GeometryHandlers
+1 100 0 605 0 605 0
+2 3 0 0 5  0 0 285 0  315 0 315 0
+ 3 0 0 315  285 0 285 1  0 5 5 0
+1 100 0 300 0 300 0
+3 3 0 0 5  290 0 290 0  0 0 5 0
+ 3 0 0 5  290 0 290 1  0 0 5 0
+ 3 0 0 10  285 0 285 2  0 0 5 0
+EOF

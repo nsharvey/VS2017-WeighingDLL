@@ -1,0 +1,114 @@
+// Ilv Version: 5.4
+// File generated: Thu Nov 25 15:46:50 2010
+// Creator class: IlvGadgetManagerOutput
+FileName "p_grphic"
+PathName "p_grphic.ilv"
+Palettes 4
+"default" 0 F "defaultBg" "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+3 F "black" "gray50" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+1 F "antiquewhite3" "black" "fixed" 0 solid solid 0 0 0 65535 0
+2 F 35700 36465 35700 "black" "default" "%MS Sans Serif-11-" 0 solid solid 0 0 0 65535 0
+IlvObjects 31
+0 { 0 0 IlvMarker 9 384 1 4 } 0
+0
+0 { 1 0 IlvMarker 29 384 2 4 } 0
+0
+0 { 2 0 IlvMarker 49 384 4 4 } 0
+0
+0 { 3 0 IlvMarker 69 384 8 4 } 0
+0
+0 { 4 0 IlvMarker 89 384 16 4 } 0
+0
+0 { 5 0 IlvMarker 109 384 32 4 } 0
+0
+0 { 6 0 IlvMarker 129 384 64 4 } 0
+0
+0 { 7 0 IlvMarker 149 384 256 4 } 0
+0
+0 { 8 0 IlvMarker 169 384 512 4 } 0
+0
+1 { 9 0 IlvEllipse 4 84 64 64 } 0
+0
+1 { 10 0 IlvRoundRectangle 90 119 84 28 4 } 0
+0
+1 { 11 0 IlvRectangle 90 84 84 28 } 0
+0
+1 { 12 P 1
+[ IlvStringProperty CreationMode  "SelectPolylineMode" ]
+0 IlvPolyline 4
+147 48 156 76 158 48 166 77 } 0
+0
+2 { 13 0 IlvFilledEllipse 4 154 64 64 } 0
+0
+2 { 14 1 IlvFilledRectangle 90 154 84 28 } 0
+0
+2 { 15 0 IlvFilledRoundRectangle 90 189 84 28 6 } 0
+0
+2 { 16 2 IlvShadowRectangle 90 225 84 41 3 10 } 0
+0
+2 { 17 P 1
+[ IlvStringProperty CreationMode  "SelectReliefLineMode" ]
+0 IlvReliefLine 12 39 31 10 1 } 0
+0
+2 { 18 P 1
+[ IlvStringProperty CreationMode  "SelectLineMode" ]
+0 IlvLine 45 38 64 9 } 0
+0
+2 { 19 P 1
+[ IlvStringProperty CreationMode  "SelectArrowLineMode" ]
+0 IlvArrowLine 79 38 98 9 1 } 0
+0
+2 { 20 P 1
+[ IlvStringProperty CreationMode  "SelectArcMode" ]
+0 IlvArc -9 320 39 58 0 90 } 0
+0
+2 { 21 P 1
+[ IlvStringProperty CreationMode  "SelectFilledArcMode" ]
+0 IlvFilledArc 29 320 38 58 0 90 } 0
+0
+2 { 22 P 1
+[ IlvStringProperty CreationMode  "SelectPolygonMode" ]
+0 IlvPolygon 4
+21 48 21 77 30 61 11 62 } 0
+0
+2 { 23 P 1
+[ IlvStringProperty CreationMode  "SelectSplineMode" ]
+0 IlvSpline 4
+49 48 90 45 9 94 65 73 } 0
+0
+2 { 24 P 1
+[ IlvStringProperty CreationMode  "SelectFilledSplineMode" ]
+0 IlvFilledSpline 6
+113 48 158 48 90 79 133 78 133 78 113 48 } 0
+0
+2 { 25 P 1
+[ IlvStringProperty CreationMode  "SelectClosedSplineMode" ]
+0 IlvClosedSpline 6
+81 49 136 41 40 86 100 76 100 76 81 49 } 0
+0
+2 { 26 0 IlvArrowPolyline 0 1 5
+112 8 122 39 139 8 158 39 166 8 } 0
+0
+2 { 27 3 IlvOutlinePolygon 6
+52 225 62 245 52 265 22 265 12 245 22 225 } 0
+0
+2 { 28 0 IlvReliefDiamond 13 273 50 35 2 } 0
+0
+2 { 29 0 IlvReliefRectangle 90 273 84 35 2 } 0
+0
+2 { 30 0 IlvGridRectangle 90 315 84 41 f 10 5 } 0
+0
+Size 182 423
+GeometryHandlers
+1 100 0 182 0 182 0
+4 3 0 0 4  0 0 64 13  114 0 114 0
+ 3 0 0 90  84 0 84 14  0 5 8 0
+ 3 0 4 90  84 0 84 15  0 8 8 0
+ 3 0 0 90  84 0 84 16  0 0 8 0
+1 100 0 423 0 423 0
+0
+Layers 3
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+""  116 30 65535 65535 0
+EOF

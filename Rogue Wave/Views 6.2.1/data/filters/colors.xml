@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<filters>
+<filter id="Negate" x="0" y="0" width="100" height="100">
+<desc>Inverts the colors</desc>
+     <feComponentTransfer> 
+        <feFuncR type="table" tableValues="1,0"/>
+        <feFuncG type="table" tableValues="1,0"/>
+        <feFuncB type="table" tableValues="1,0"/>
+     </feComponentTransfer>
+</filter>
+  <filter id="Sepia" x="0" y="0" width="100" height="100">
+    <desc>Applies a sepia coloration</desc>
+     <feColorMatrix type="matrix" result="grey"
+                    values="0.2125,0.7154,0.0721,0,0,0.2125,0.7154,0.0721,0,0,0.2125,0.7154,0.0721,0,0,0,0,0,1"/>
+     <feComponentTransfer in="grey">
+        <feFuncR type="linear" slope="0.5" intercept="0.5"/>
+        <feFuncB type="table" tableValues="0,0"/>
+     </feComponentTransfer>
+  </filter>
+<filter id="ConvertToGray" x="0" y="0" width="100" height="100">
+<desc>Converts to grayscale</desc>
+     <feColorMatrix type="matrix" 
+                    values="0.2125,0.7154,0.0721,0,0,0.2125,0.7154,0.0721,0,0,0.2125,0.7154,0.0721,0,0,0,0,0,1"/>
+</filter>
+<filter id="ShowRed" x="0" y="0" width="100" height="100">
+<desc>Shows the red component</desc>
+     <feComponentTransfer> 
+        <feFuncG type="table" tableValues="0,0"/>
+        <feFuncB type="table" tableValues="0,0"/>
+     </feComponentTransfer>
+</filter>
+<filter id="ShowGreen" x="0" y="0" width="100" height="100">
+<desc>Shows the green component</desc>
+     <feComponentTransfer> 
+        <feFuncR type="table" tableValues="0,0"/>
+        <feFuncB type="table" tableValues="0,0"/>
+     </feComponentTransfer>
+</filter>
+<filter id="ShowBlue" x="0" y="0" width="100" height="100">
+<desc>Shows the blue component</desc>
+     <feComponentTransfer> 
+        <feFuncR type="table" tableValues="0,0"/>
+        <feFuncG type="table" tableValues="0,0"/>
+     </feComponentTransfer>
+</filter>
+<filter id="ShowRedAsGrey" x="0" y="0" width="100" height="100">
+<desc>Shows the red component as grey</desc>
+     <feColorMatrix type="matrix" values="1,0,0,0,0,
+                                          1,0,0,0,0,
+                                          1,0,0,0,0,
+                                          0,0,0,0,1"/>
+</filter>
+<filter id="ShowGreenAsGrey" x="0" y="0" width="100" height="100">
+<desc>Shows the green component as grey</desc>
+     <feColorMatrix type="matrix" values="0,1,0,0,0,
+                                          0,1,0,0,0,
+                                          0,1,0,0,0,
+                                          0,0,0,0,1"/>
+</filter>
+<filter id="ShowBlueAsGrey" x="0" y="0" width="100" height="100">
+<desc>Shows the blue component as grey</desc>
+     <feColorMatrix type="matrix" values="0,0,1,0,0,
+                                          0,0,1,0,0,
+                                          0,0,1,0,0,
+                                          0,0,0,0,1"/>
+</filter>
+  <filter id="HueRotate60" x="0" y="0" width="100" height="100">
+    <desc>Rotates the hue by 60 degrees</desc>
+    <feColorMatrix type="hueRotate" values="60"/>
+  </filter>
+  <filter id="HueRotate120" x="0" y="0" width="100" height="100">
+    <desc>Rotates the hue by 120 degrees</desc>
+    <feColorMatrix type="hueRotate" values="120"/>
+  </filter>
+  <filter id="HueRotate180" x="0" y="0" width="100" height="100">
+    <desc>Rotates the hue by 180 degrees</desc>
+    <feColorMatrix type="hueRotate" values="180"/>
+  </filter>
+  <filter id="HueRotate270" x="0" y="0" width="100" height="100">
+    <desc>Rotates the hue by 270 degrees</desc>
+    <feColorMatrix type="hueRotate" values="270"/>
+  </filter>
+</filters>

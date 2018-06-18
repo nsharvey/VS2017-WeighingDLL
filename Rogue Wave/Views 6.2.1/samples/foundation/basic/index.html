@@ -1,0 +1,66 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Foundations - Samples: basic</title>
+	</head>
+    <body>
+		<a name="ilvread"><h1>Sample: <code>ilvread</code></h1><h1 class="subtitle">Reading a Rogue Wave Views Data File</h1></a>
+		<p>Loading and displaying a Rogue Wave Views data file.</p>
+		<img src="data/ilvread.png"/>
+		<p>This example shows how to use
+	<code>IlvContainer::readFile</code> to load a Rogue Wave Views data 
+	file.<br/>
+	If objects are associated with interactors, they will be
+	interactive as expected.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvContainer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/ilvread.cpp"><code>src/ilvread.cpp</code></a></li>
+		</ul>
+		<a name="inter"><h1>Sample: <code>inter</code></h1><h1 class="subtitle">Interacting with Graphic Objects</h1></a>
+		<p>Displaying and interacting with graphic objects.</p>
+		<img src="data/inter.png"/>
+		<p>Shows the use of graphic objects and behaviors.<br/>
+	Click the left mouse button to move objects, and the middle
+	mouse button to change their size.<br/>
+	Pressing the <strong>[Dump PS]</strong> button creates a
+	PostScript dump file of the visible area, in a file called
+	<code>&quot;dump.ps&quot;</code>.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGraphic</code></li>
+			<li><code>IlvContainer</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/inter.cpp"><code>src/inter.cpp</code></a></li>
+		</ul>
+		<a name="hull"><h1>Sample: <code>hull</code></h1><h1 class="subtitle">Convex Hull</h1></a>
+		<p>Using <code>IlPool</code> in a recursive algorithm.</p>
+		<img src="data/hull.png"/>
+		<p>The convex hull of a set of points is computed and dynamically 
+	updated.<br/>
+	Because the algorithm is recursive, we use the Rogue Wave Views
+	Pools mechanism to allocate and release the memory blocks that 
+	are needed.</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlPoolOf</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/hull.cpp"><code>src/hull.cpp</code></a></li>
+		</ul>

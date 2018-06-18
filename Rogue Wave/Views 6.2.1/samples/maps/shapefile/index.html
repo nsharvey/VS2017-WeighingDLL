@@ -1,0 +1,76 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Maps - Samples: shapefile</title>
+	</head>
+    <body>
+		<a name="shapeviewer"><h1>Sample: <code>shapeviewer</code></h1><h1 class="subtitle">Rogue Wave Views Maps Shapefile Sample</h1></a>
+		<p>This sample shows how to load Shapefile data.</p>
+		<img src="data/shpview.png"/>
+		<p>Moreover, it allows you
+	to load on demand a Shapefile thanks to an Rogue Wave Views Maps <code>.idx</code> index 
+	file that it can generate. For the load-on-demand, the <code>.shx</code> index 
+	file is mandatory.
+	</p>
+	<p>	
+	Geometries are read from the <tt>.SHP</tt> file, while feature
+	attributes are read from the <tt>.DBF</tt> file, when this file exists.
+	In this demo, when clicking on graphics elements like line, markers, and
+	so on, will display the attached attributes, if any.
+	</p>
+	<P>
+	<br/><img SRC="../../../data/maps/select.png" align="CENTER"/> : Activates the tooltip interactor allowing you to
+	show the attributes of a geometry (if any) by clicking it.
+	<br/><img SRC="../../../data/maps/open.png" align="CENTER"/> : Loads an ESRI <code>.shp</code> Shapefile. If there is
+	a <code>.dbf</code> attribute file associated, then it is loaded automatically.
+	<br/><img SRC="../../../data/maps/tiling.png" align="CENTER"/> : Loads a Shapefile on demand. This needs an Rogue Wave Views Maps
+	<code>.idx</code> index file and an ESRI <code>.shx</code> index file.
+	<br/><img SRC="../../../data/maps/generate.png" align="CENTER"/> : Creates a new Rogue Wave Views Maps <code>.idx</code> index file
+	for load-on-demand.
+	<br/><img SRC="../../../data/maps/del.png" align="CENTER"/> : Empties the manager.
+	</P>
+	<p>
+	Note: This sample uses a default adapter with a precision of 0.001.
+	This means that the precision of a manager for coordinates in degrees
+	is 0.001 degrees, but 0.001 meters for coordinates specified in meters.
+	You can change this projection by specifying a '-a n' parameter,
+	where n is the precision you want. Typically, you should use a
+	precision greater than 0.1 meters for coordinates specified in meters
+	(below this precision, if you have to represent the whole world,
+	the manager coordinate of your objects will be in an overflow state.)
+	</p>
+	<p>
+	<h2>About the Shapefile Format</h2>
+	The Shape format is the exchange format for vector maps of ESRI. This
+	format supports polygons, arc, lines, and points. Each Shapefile
+	contains one theme, and all the objects of the file are of the
+	same type. The shape reader provided in this demo is based on	
+	a technical document from ESRI: 
+	<a href="http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf">
+	ESRI Shapefile Technical Description. An ESRI white paper.</a> 
+	</p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvShapeFileReader</code></li>
+			<li><code>IlvShapeSHPReader</code></li>
+			<li><code>IlvShapeDBFReader</code></li>
+			<li><code>IlvShapeFileTileLoader</code></li>
+			<li><code>IlvShapeFileTiler</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="include/shapeviewer.h"><code>include/shapeviewer.h</code></a></li>
+			<li><a href="include/gui.h"><code>include/gui.h</code></a></li>
+			<li><a href="src/shapeviewer.cpp"><code>src/shapeviewer.cpp</code></a></li>
+			<li><a href="src/gui.cpp"><code>src/gui.cpp</code></a></li>
+		</ul>

@@ -1,0 +1,21 @@
+// Ilv Version: 3.1
+// File generated: Fri Jul 23 18:56:29 1999
+// Creator class: IlvGadgetManagerOutput
+FileName "console"
+PathName "console.ilv"
+Palettes 1
+0 "gray" "black" "monospace" "StockedSystemFixed" 0 solid solid 0 0 0
+IlvObjects 1
+1 { 0 0 IlvText 0 2 738 169 F131 2 Y Y 1 1 1 1 0 2
+"Text"
+"multi lines"
+0 0 0 0 } 32 "Console"
+0
+Size 739 173
+Background 48640 48640 48640
+GeometryHandlers
+1 100 0 739 0 739 0
+1 3 0 0 0  738 0 738 0  0 1 1 0
+1 100 0 173 0 173 0
+1 3 0 0 2  169 0 169 0  0 0 2 0
+EOF

@@ -1,0 +1,14 @@
+// Ilv Version: 4.0
+// File generated: Wed Feb 09 14:07:15 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "dbstgrap"
+PathName "dbstgrap.ilv"
+Palettes 1
+"default" 0 "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 1
+1 { 0 0 IliDbGrapher 14 7 164 104 YY 3  42  0 "" "" "" ""
+"" "" "" "" "" "" "" "" "" "" "" "" 
+"blue" "black" "white"  } 64 "SCManager"
+0
+Size 200 137
+EOF

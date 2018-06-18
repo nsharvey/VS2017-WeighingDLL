@@ -1,0 +1,62 @@
+// Ilv Version: 4.0
+// File generated: Tue Apr 11 20:06:01 2000
+// Creator class: IlvGadgetManagerOutput
+FileName "margins"
+Palettes 3
+"IlvStText" 1 "gray" "black" "normal" "%helvetica-12" 0 solid solid 0 0 0
+"default" 0 "gray" "black" "default" "fixed" 0 solid solid 0 0 0
+2 "cornflowerblue" 65025 65025 65025 "bold" "%helvetica-12-B" 0 solid solid 6 0 0
+IlvObjects 9
+1 { 0 0 IlvIcon 120 76 "ilviews/appframe/margins.xpm" } 0
+0
+3 { 1 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvSpinBox 31 128 76 22 2 0 200 64 2 1
+1 IlvNumberField 31 128 61 22 F6 2 1 -1 0 "20" . , 6 0 0 32000  f 1 1 1 20 } 32 "LeftMargin"
+6144 "RightMargin" "BottomMargin"
+3 { 2 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvSpinBox 225 128 76 22 2 0 200 64 2 1
+1 IlvNumberField 225 128 61 22 F6 2 1 -1 0 "20" . , 6 0 0 32000  f 1 1 1 20 } 32 "RightMargin"
+6144 "TopMargin" "LeftMargin"
+3 { 3 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvSpinBox 128 45 76 22 2 0 200 64 2 1
+1 IlvNumberField 128 45 61 22 F6 2 1 -1 0 "20" . , 6 0 0 32000  f 1 1 1 20 } 32 "TopMargin"
+6144 "BottomMargin" "RightMargin"
+3 { 4 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvSpinBox 128 228 76 22 2 0 200 64 2 1
+1 IlvNumberField 128 228 61 22 F6 2 1 -1 0 "20" . , 6 0 0 32000  f 1 1 1 20 } 32 "BottomMargin"
+6144 "LeftMargin" "TopMargin"
+11 { 5 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 128 24 76 20 F536870919 0 1 -1 0 "&top" } 0
+0
+11 { 6 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 31 107 76 20 F536870919 0 1 -1 0 "&left" } 0
+0
+11 { 7 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 225 107 76 20 F536870919 0 1 -1 0 "&right" } 0
+0
+11 { 8 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+2 IlvTextField 128 207 76 20 F536870919 0 1 -1 0 "&bottom" } 0
+0
+Size 350 284
+Layers 12
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+"" 4 0 
+EOF

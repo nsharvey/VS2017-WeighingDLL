@@ -1,0 +1,27 @@
+var pairs =
+{
+"defining":{"parameter":1}
+,"parameter":{"parameter":1,"defined":1,"defining":1,"sql":1,"name":1,"used":1}
+,"defined":{"sql":1,"four":1,"parameter":1}
+,"sql":{"data":1}
+,"data":{"source":1}
+,"source":{"inspector":1,"attached":1,"table":1}
+,"inspector":{"parameters":1,"note":1}
+,"parameters":{"page":1,"need":1}
+,"page":{"table":1,"enter":1}
+,"table":{"parameters":1,"defines":1}
+,"enter":{"parameters":1}
+,"need":{"parameter":1}
+,"four":{"characteristics":1}
+,"characteristics":{"name":1}
+,"name":{"type":1,"data":1,"used":1,"prefixed":1}
+,"type":{"name":1}
+,"attached":{"column":1}
+,"column":{"data":1}
+,"defines":{"parameter":1}
+,"note":{"parameter":1}
+,"used":{"however":1,"name":1}
+,"however":{"parameter":1}
+,"prefixed":{"colon":1}
+}
+;Search.control.loadWordPairs(pairs);

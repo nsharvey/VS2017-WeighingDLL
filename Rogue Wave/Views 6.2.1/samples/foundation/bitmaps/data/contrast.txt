@@ -1,0 +1,3 @@
+Files: contrast.cpp, contrast.h
+This sample shows how to adjust the contrast of a picture. 
+You can use the slider to modify the contrast.

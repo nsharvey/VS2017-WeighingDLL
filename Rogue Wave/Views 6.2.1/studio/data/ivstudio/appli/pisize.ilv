@@ -1,0 +1,53 @@
+// Ilv Version: 2.3
+// File generated: Mon Feb 17 18:30:00 1997
+// Creator class: IlvGadgetManagerOutput
+Palettes 3
+"IlvStText" 0 "defaultBg" "defaultFg" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+1 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+2 "defaultBg" "defaultFg" "button" "StockedDefaultGui" 0 solid solid 0 0 0
+IlvObjects 20
+2 { 0 0 IlvTextField 85 30 50 22 F6 2 1 -1 0 "" } 96 "x" "TextField" 6144 "panelY" "visible"
+2 { 1 0 IlvTextField 280 30 50 22 F6 2 1 -1 0 "" } 96 "y" "TextField" 6144 "dims" "panelX"
+2 { 2 0 IlvTextField 85 60 50 22 F6 2 1 -1 0 "" } 96 "width" "TextField" 6144 "panelHeight" "dims"
+2 { 3 0 IlvTextField 280 60 50 22 F6 2 1 -1 0 "" } 96 "height" "TextField" 6144 "applyButton" "panelWidth"
+2 { 4 0 IlvTextField 85 165 50 22 F6 2 1 -1 0 "" } 96 "minWidth" "TextField" 0
+2 { 5 0 IlvTextField 280 165 50 22 F6 2 1 -1 0 "" } 96 "minHeight" "TextField" 0
+2 { 6 0 IlvTextField 85 245 50 22 F6 2 1 -1 0 "" } 96 "maxWidth" "TextField" 0
+2 { 7 0 IlvTextField 280 245 50 22 F6 2 1 -1 0 "" } 96 "maxHeight" "TextField" 0
+3 { 8 1 IlvToggle 20 95 185 19 F1 2 1 2 0 14 0 Y "&generateSize" } 96 "genSize" "Toggle" 6148 "checkDims" "panelWidth" "panelY"
+3 { 9 1 IlvMessageLabel 20 30 53 22 0 "&x" 1 } 0 0
+3 { 10 1 IlvMessageLabel 225 30 53 22 0 "&y" 1 } 0 0
+3 { 11 1 IlvMessageLabel 20 60 53 22 0 "&width" 1 } 0 0
+3 { 12 1 IlvMessageLabel 225 60 50 22 0 "&height" 1 } 0 0
+3 { 13 2 IlvFrame 5 5 337 125 0 "&boundingBox" 1 } 0 0
+3 { 14 2 IlvFrame 5 135 337 70 0 "&minSize" 1 } 0 0
+3 { 15 1 IlvMessageLabel 20 165 53 22 0 "&width" 1 } 0 0
+3 { 16 1 IlvMessageLabel 225 165 53 22 0 "&height" 1 } 0 0
+3 { 17 2 IlvFrame 5 215 337 70 0 "&maxSize" 1 } 0 0
+3 { 18 1 IlvMessageLabel 20 245 53 22 0 "&width" 1 } 0 0
+3 { 19 1 IlvMessageLabel 225 245 53 22 0 "&height" 1 } 0 0
+Size 347 290
+GeometryHandlers
+1 100 50 347 0 347 0
+20 3 0 0 5  337 0 337 13  0 0 5 0
+ 3 0 0 5  337 0 337 14  0 0 5 0
+ 3 0 0 5  337 0 337 17  0 0 5 0
+ 3 0 0 20  0 0 53 9  274 0 274 0
+ 3 0 0 20  0 0 53 11  274 0 274 0
+ 3 0 0 85  0 0 50 0  212 0 212 0
+ 3 0 0 85  0 0 50 2  212 0 212 0
+ 3 0 0 20  185 0 185 8  0 0 142 0
+ 3 225 0 225  0 0 50 12  0 0 72 0
+ 3 280 0 280  0 0 50 3  0 0 17 0
+ 3 0 0 20  0 0 53 15  274 0 274 0
+ 3 0 0 85  0 0 50 4  212 0 212 0
+ 3 0 0 20  0 0 53 18  274 0 274 0
+ 3 0 0 85  0 0 50 6  212 0 212 0
+ 3 280 0 280  0 0 50 1  0 0 17 0
+ 3 225 0 225  0 0 53 10  0 0 69 0
+ 3 225 0 225  0 0 53 16  0 0 69 0
+ 3 280 0 280  0 0 50 5  0 0 17 0
+ 3 280 0 280  0 0 50 7  0 0 17 0
+ 3 225 0 225  0 0 53 19  0 0 69 0
+1 100 250 290 0 290 0
+0

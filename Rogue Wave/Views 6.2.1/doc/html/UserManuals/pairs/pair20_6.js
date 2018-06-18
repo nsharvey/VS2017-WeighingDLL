@@ -1,0 +1,20 @@
+var pairs =
+{
+"generatemakefile":{"label":1}
+,"label":{"generate":1}
+,"generate":{"file":1}
+,"file":{"path":1,"even":1}
+,"path":{"main":1}
+,"main":{"window":1}
+,"window":{"application":1}
+,"application":{"menu":1,"action":1,"file":1,"inspector":1}
+,"menu":{"category":1}
+,"category":{"application":1}
+,"action":{"generates":1}
+,"generates":{"application":1}
+,"even":{"toggle":1}
+,"toggle":{"button":1}
+,"button":{"application":1}
+,"inspector":{"turned":1}
+}
+;Search.control.loadWordPairs(pairs);

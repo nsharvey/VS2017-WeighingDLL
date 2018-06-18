@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("DFEC845A-1D61-11E8-866E-3591772C9500") = "custgad", "custgad.vcxproj", "DFEC304A-1D61-11E8-866E-3591772C9500"
+EndProject
+
+Global
+EndGlobal
+

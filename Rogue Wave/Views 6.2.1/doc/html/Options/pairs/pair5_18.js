@@ -1,0 +1,24 @@
+var pairs =
+{
+"connecting":{"table":1}
+,"table":{"gadget":1,"click":1}
+,"gadget":{"empmgr_ds":1,"data":1,"main":1,"emp_ds":1,"inspector":1}
+,"empmgr_ds":{"data":1}
+,"data":{"source":1,"table":1}
+,"source":{"going":1,"drag":1,"procedure":1,"press":1}
+,"going":{"connect":1}
+,"connect":{"table":1,"empmgr_ds":1}
+,"drag":{"table":1}
+,"main":{"window":1}
+,"window":{"connect":1,"looks":1}
+,"procedure":{"connecting":1}
+,"emp_ds":{"data":1}
+,"press":{"key":1}
+,"key":{"add":1}
+,"add":{"data":1}
+,"click":{"apply":1}
+,"apply":{"table":1}
+,"inspector":{"panel":1}
+,"panel":{"main":1}
+}
+;Search.control.loadWordPairs(pairs);

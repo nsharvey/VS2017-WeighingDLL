@@ -1,0 +1,53 @@
+<html>
+    <head>
+	<STYLE type="text/css">
+	  H1 {border-width: 0; border: solid; text-align: center;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H1.subtitle {text-align: center; border: none;
+	      font-family: Verdana,Arial,Helvetica; font-size: 14pt}
+	  H2 {font-family: Verdana,Arial,Helvetica;
+	      font-size: 12pt; font-weight: bold}
+	  Table {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  P {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	  LI {font-family:Verdana,Arial,Helvetica; font-size: 10pt}
+	</STYLE>
+	<title>Rogue Wave Views 6.2 - Grapher - Samples: graphed</title>
+	</head>
+    <body>
+		<a name="graphed"><h1>Sample: <code>graphed</code></h1><h1 class="subtitle">Small Grapher Editor</h1></a>
+		<p>This sample shows how to create a small grapher editor.</p>
+		<img src="data/graphed.png"/>
+		<p>
+	This sample shows how to use the predefined interactors of the
+	grapher library to build a small editor. The GUI of this sample
+	uses a toolbar that enables to switch between several editing
+	modes:
+	</p>
+	<ul>
+		<li><img src="data/select.png" width="16" height="16"/> <b>Selection.</b> This mode is implemented
+			by the <code>IlvGraphSelectInteractor</code> class. </li>
+		<li><img src="data/mklink.png" align="texttop" width="16" height="16"/> <b>Link creation.</b> This mode is
+			implemented by the <code>IlvMakeLinkInteractor</code>
+			class. The type of link created by the interactor is
+			specified by a factory. This factory is a subclass of 
+			<code>IlvMakeLinkInteractorFactory</code>
+			that creates a copy of a link model. You can use the
+			combo box to choose the link model that must be used.
+			The <img src="data/oriented.png" width="16" height="16"/> toggle in the toolbar lets you
+			specify whether created links are oriented.</li>
+		<li><img src="data/pinedt.png" align="texttop" width="16" height="16"/> <b>Pin editing.</b> This mode is implemented
+			by the <code>IlvPinEditorInteractor</code> class and lets
+			you interactively edit the connection pins of a node. </li>
+	</ul></p>
+		<h2>Classes involved:</h2>
+		<ul>
+			<li><code>IlvGrapher</code></li>
+			<li><code>IlvMakeLinkInteractor</code></li>
+			<li><code>IlvMakeLinkInteractorFactory</code></li>
+			<li><code>IlvPinEditorInteractor</code></li>
+			<li><code>IlvGraphSelectInteractor</code></li>
+		</ul>
+		<h2>Source files:</h2>
+		<ul>
+			<li><a href="src/graphed.cpp"><code>src/graphed.cpp</code></a></li>
+		</ul>

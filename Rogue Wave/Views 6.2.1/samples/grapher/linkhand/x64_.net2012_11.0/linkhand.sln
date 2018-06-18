@@ -1,0 +1,8 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("94CF925C-1D69-11E8-91B2-87BE772C9500") = "linkhand", "linkhand.vcxproj", "94CF40FE-1D69-11E8-91B2-87BE772C9500"
+EndProject
+
+Global
+EndGlobal
+

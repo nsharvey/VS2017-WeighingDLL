@@ -1,0 +1,31 @@
+application "app" {
+    properties "Dbms Support" {
+        "Count" "1";
+        "Dbms1" "default";
+    }
+    creator      "Rogue Wave Views Studio, Rogue Wave Script Edition"; 
+    version      3.1; 
+    iref         3.72; 
+    ViewsVersion 3.1; 
+    system       "xlib.sparc_5_4.0"; 
+    date         "Mon Feb  1 11:30:33 1999"; 
+    JvScript     true; 
+    fileBase     "app"; 
+    class        Testapp; 
+    baseClass    IlvApplication; 
+    dataDir      "./"; 
+    panelClass "pan" {
+        class     Pan; 
+        baseClass IlvGadgetContainer; 
+        fileBase  "pan"; 
+        dataDir   "./"; 
+    }
+    panel "Pan" {
+        class  Pan; 
+        title  "Pan"; 
+        x      3; 
+        y      3; 
+        width  440; 
+        height 593; 
+    }
+}

@@ -1,0 +1,74 @@
+// Ilv Version: 3.0
+// File generated: Thu Nov 20 11:32:32 1997
+// Creator class: IlvGadgetManagerOutput
+FileName "chrtdata"
+PathName "chrtdata.ilv"
+Palettes 3
+"IlvStText" 0 "gray" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+1 "gray" "black" "bold" "%MS Sans Serif-8-B" 0 solid solid 0 0 0
+2 "white" "black" "normal" "%MS Sans Serif-8-" 0 solid solid 0 0 0
+IlvObjects 15
+1 { 0 0 IlvSwDbToggle 5 205 280 16 F1 2 1 2 0 0 0 Y "&dbchart_DsToCharts" 2051 0  } 32 "CHKDynDs"
+0
+1 { 1 0 IlvMessageLabel 5 5 115 22 0 "&dbchart_Ds" 2 } 0
+0
+1 { 2 0 IlvMessageLabel 5 53 115 22 0 "&dbchart_Serie" 2 } 32 "TXTSerie"
+0
+1 { 3 0 IlvMessageLabel 5 70 115 22 0 "&dbchart_AxisX" 2 } 0
+0
+1 { 4 0 IlvMessageLabel 5 87 115 22 0 "&dbchart_Value" 2 } 0
+0
+1 { 5 0 IlvSwTableComboBox 130 6 155 20 F6 2 1 -1 0 "" 2947 "%COMBO_MS" "NAME" "NAME" 11 2 1  ""  } 32 "CBNDataSource"
+0
+1 { 6 0 IlvSwMemoryDataSource 136 211 24 24 1 14 3 0 IlvSwMemoryTable 0 3 2 
+     8 "CODE" Int 1 -1 2 -1 32 
+     8 "NAME" String 2 -1 1 -1 32 
+     0 0 0 0
+0
+ } 32 "%COLUMN_MS"
+0
+1 { 7 0 IlvSwMemoryDataSource 41 210 24 24 1 14 3 0 IlvSwMemoryTable 0 2 1 
+     8 "NAME" String 1 128 1 -1 32 
+     0 0 0 0
+0
+ } 32 "%COMBO_MS"
+0
+1 { 8 0 IlvSwMemoryDataSource 222 209 24 24 1 14 3 -1 IlvSwMemoryTable 0 4 1 
+     88 "COL" Int 1 -1 1 133 "0" "&dbchart_Columns" 45 "%COLUMN_MS" "CODE" "NAME" 
+     0 0 0 0
+0
+ } 32 "%AXE_MS"
+0
+1 { 9 0 IlvSwDbToggle 5 165 280 16 F1 2 1 2 0 0 0 Y "&dbchart_Xsorted" 2051 0  } 32 "CHKAxisX"
+0
+1 { 10 0 IlvMessageLabel 5 135 115 22 0 "&dbchart_Dual" 2 } 0
+0
+1 { 11 0 IlvSwTableComboBox 130 136 155 20 F7 2 1 -1 0 "" 2051 11 0 1  ""  } 32 "CBNDualValue"
+0
+1 { 12 1 IlvSwTableGadget 130 35 155 70 2 2075 "%AXE_MS"  8 725466191 1 0 0 0 17 18 21 0 -1 -1 0 1 1 "white" A"normal" "%MS Sans Serif-8-"  } 32 "TBLColumn"
+0
+1 { 13 0 IlvSwDbToggle 130 115 155 16 F1 2 1 2 0 0 0 Y "&dbchart_ExtractDataByColumn" 2051 0  } 32 "CHKNotSerie"
+0
+1 { 14 0 IlvSwDbToggle 5 185 280 16 F1 2 1 2 0 0 0 Y "&dbchart_AutoSelect" 2051 0  } 32 "CHKAutoSelect"
+0
+Size 290 253
+GeometryHandlers
+1 100 0 290 0 290 0
+8 3 0 0 130  155 0 155 5  0 0 5 0
+ 3 0 0 130  155 0 155 12  0 0 5 0
+ 3 0 0 130  155 0 155 11  0 0 5 0
+ 3 0 0 5  280 0 280 0  0 0 5 0
+ 3 0 0 5  280 0 280 9  0 0 5 0
+ 3 0 0 130  155 0 155 13  0 0 5 0
+ 3 0 0 5  280 0 280 14  0 0 5 0
+ 3 0 0 5  0 0 115 10  170 0 170 0
+1 100 0 253 0 253 0
+8 3 0 0 6  0 0 20 5  227 0 227 0
+ 3 0 0 35  70 0 70 12  0 0 148 0
+ 3 136 0 136  0 0 20 11  0 0 97 0
+ 3 205 0 205  0 0 17 0  0 31 31 0
+ 3 165 0 165  0 0 17 9  0 0 71 0
+ 3 115 0 115  0 0 17 13  0 0 121 0
+ 3 185 0 185  0 0 17 14  0 0 51 0
+ 3 135 0 135  0 0 22 10  0 0 96 0
+EOF

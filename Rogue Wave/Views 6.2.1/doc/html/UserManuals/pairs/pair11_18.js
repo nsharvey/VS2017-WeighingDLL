@@ -1,0 +1,22 @@
+var pairs =
+{
+"changing":{"look":1}
+,"look":{"feel":1}
+,"feel":{"existing":1,"specific":1}
+,"existing":{"component":1}
+,"component":{"section":1,"find":1,"object":1}
+,"section":{"describes":1}
+,"describes":{"modify":1}
+,"modify":{"look":1}
+,"specific":{"component":1}
+,"find":{"information":1}
+,"information":{"following":1}
+,"following":{"topics":1}
+,"topics":{"subclassing":1}
+,"subclassing":{"component":1}
+,"object":{"look-and-feel":1}
+,"look-and-feel":{"handler":1}
+,"handler":{"replacing":1}
+,"replacing":{"object":1}
+}
+;Search.control.loadWordPairs(pairs);

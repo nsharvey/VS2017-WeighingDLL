@@ -1,0 +1,32 @@
+// Ilv Version: 6.0
+// File generated: Mon Oct 19 15:06:05 2015
+// Creator class: IlvGadgetManagerOutput
+FileName "pan"
+PathName "/export/devco/gbenati/mywork/views/samples/foundation/bitmaps/data/pan.ilv"
+Palettes 2
+"IlvStToolBar" 0 F "gray" "black" "normal" "6x13" 0 solid solid 0 0 0 65535 1
+1 F "gray" "black" "6x13" 0 solid solid 0 0 0 65535 1
+IlvObjects 2
+1 { 0 P 1
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+0 IlvText 5 356 647 100 F133 2 Y N 1 1 1 1 0 2
+"Text"
+"multi lines"
+0 0 0 0 } 32 "Legend"
+0
+1 { 1 P 2
+[ IlvPanelObjectReference IlvPanelObjectReference  "1445262487.0" ]
+[ IlvInteractorProperty __ilvInteractor "Gadget" ]
+1 IlvNotebook 5 5 647 346 F1 2 0 2  1
+" { IlvNotebookPageItem 1 2 4 "Tab 1"  }  B ""
+0 0 8 5 2 0 0 0 0  } 32 "NoteBook"
+0
+Size 657 461
+GeometryHandlers
+1 100 0 657 0 657 0
+2 3 0 0 5  647 0 647 0  0 0 5 0
+ 3 0 0 5  647 0 647 1  0 0 5 0
+1 100 0 461 0 461 0
+2 3 356 0 356  0 0 100 0  0 0 5 0
+ 3 0 0 5  346 0 346 1  0 0 110 0
+EOF

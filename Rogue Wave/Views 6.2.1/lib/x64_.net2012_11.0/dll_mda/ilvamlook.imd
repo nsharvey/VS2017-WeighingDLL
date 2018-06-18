@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- IMD file for module ilvamlook -->
+<module name="ilvamlook" version="6.2">
+<class name="IlvAbstractMatrix/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvArrowButton/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvFileSelectorField/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvHierarchicalSheet/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvMatrix/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvNotebook/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvOptionMenu/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvScrolledComboBox/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvScrolledGadget/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvSheet/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvSpinBox/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvStringList/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvText/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvTreeGadget/motif" rootClass="IlvObjectLFHandler"/>
+<class name="IlvViewFrame/motif" rootClass="IlvObjectLFHandler"/>
+</module>

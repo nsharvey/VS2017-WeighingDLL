@@ -1,0 +1,34 @@
+<!DOCTYPE html ><html xml:lang="en" lang="en" data-highlight-require-whitespace="false" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- RW Customization - favicon file --><link rel="shortcut icon" href="connect/favicon.ico" /><title>Formatting an IliValue Object</title><link rel="Prev" href="valuehandling.07.7.html" title="Previous" /><link rel="Next" href="valuehandling.07.9.html" title="Next" /><link rel="StyleSheet" href="css/valuehandling.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/skin.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/social.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" /><!--[if IE 7]><link rel="StyleSheet" href="css/valuehandling_IE7.css" type="text/css" media="all" /><![endif]--><link rel="StyleSheet" href="css/custom.css" type="text/css" media="all" /><link rel="StyleSheet" href="css/print.css" type="text/css" media="print" /><script type="text/javascript">
+    'use strict';
+
+    var redirect_url, page_hash;
+
+    if ((window === window.top) && (window.navigator.userAgent.indexOf('bot/') === -1)) {
+        // Redirect
+        //
+        redirect_url = "../views.html#page/Options/valuehandling.07.8.html";
+        if (window.document.location.hash.length > 1) {
+            // Sanitize and append it
+            //
+            page_hash = window.document.location.hash.substring(1);
+            page_hash = page_hash.replace(/[\\><:;"]|%5C|%3C|%3E|%3A|%3B|%22/gi, '');
+            redirect_url += '#' + page_hash;
+        }
+        window.document.location.replace(redirect_url);
+    }
+</script><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/page.js"></script><script type="text/javascript" src="scripts/search-client.js"></script><script type="text/javascript" src="scripts/unidata.js"></script><script type="text/javascript" src="scripts/unibreak.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-111257570-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></head><body id="pCZy4bvWOZLQk9HbVwZmXSw" class="ww_skin_page_body" onload="Page.OnLoad('../views.html#page/Options/valuehandling.07.8.html');"><header id="wwconnect_header"><div class="ww_skin_breadcrumbs"><span class="ww_skin_breadcrumbs_parent"><a href="../Options/dausrfrontcover.html#wwconnect_header">Data Access User Manual</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/dausrpart1.html#ww144909">Rogue Wave&nbsp;Views Data Access Common Framework</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/valuehandling.07.1.html#wwconnect_header">Handling Values in Data Access</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_parent"><a href="../Options/valuehandling.07.5.html#wwconnect_header">Data Types</a></span><span class="ww_skin_breadcrumbs_divider"> &gt; </span><span class="ww_skin_breadcrumbs_current">Formatting an IliValue Object</span></div><div class="ww_skin_page_toolbar"><a class="ww_behavior_print ww_skin ww_skin_print" title="Print" href="#">&nbsp;</a></div></header><div id="ww998156" class="Heading2"><span></span>Formatting an IliValue Object</div><div id="ww998159" class="Body">An <span class="ClassName"><a href="../RefMan/refcppdataccess/classIliValue.html">IliValue</a></span> object can be formatted using the <span class="MethodName"><a href="../RefMan/refcppdataccess/classIliValue.html#ac9bf07d0e91f5fb924e4f26143a567cd">format</a></span> member function. This is shown in the following example:</div><div id="ww998076" class="NormalCode">IliString stringBuf;</div><div id="ww999219" class="NormalCode">IliFormat fmt(“#,##0.00 Yens”);</div><div id="ww999220" class="NormalCode">IliValue value = 5.677;</div><div id="ww999221" class="NormalCode">value.format(stringBuf, fmt);</div><div id="ww999222" class="LastNormalCode">IlvPrint(“Price: %s”, (const char*)stringBuf);</div><div id="ww998077" class="Body">You can also use the <span class="MethodName"><a href="../RefMan/refcppdataccess/classIliValue.html#a57a72a6d731979c2cd4b8dec7e2568e7">getFormatted</a></span> member function, which does not require an <span class="ClassName"><a href="../RefMan/refcppdataccess/classIliString.html">IliString</a></span> parameter to store the result. An example is shown in the following code:</div><div id="ww998078" class="NormalCode">IliFormat fmt(“#,##0.00 Yens”);</div><div id="ww999153" class="NormalCode">IliValue value = 5.677;</div><div id="ww999154" class="NormalCode">const char* result = value.getFormatted(fmt);</div><div id="ww999155" class="LastNormalCode">IlvPrint(“Price: %s, result);</div><div id="ww998079" class="Body">Note that the <span class="code">getFormatted</span> member function returns its result in a static character buffer. This result must therefore be used immediately after the call. </div><footer><!-- Related Topics --><!--                --><!-- Disqus --><!--        --><!-- Google Translation --><!--                    --><div class="ww_skin_page_globalization"><div id="google_translate_element">&nbsp;</div><script><!--
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                  pageLanguage: '',
+                  autoDisplay: true
+                }, 'google_translate_element');
+            }
+// --></script></div><br /></footer><HR /><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Version 6.2.1</div><div style="font-size: 8pt; font-family: verdana; font-weight: normal; text-align: center;">Copyright © 2018, Rogue Wave Software, Inc. All Rights Reserved.</div></body></html>
