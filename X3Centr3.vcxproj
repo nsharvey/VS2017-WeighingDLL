@@ -105,7 +105,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalOptions>/GR  %(AdditionalOptions)</AdditionalOptions>
-      <Optimization>MaxSpeed</Optimization>
+      <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>C:\Program Files (x86)\Rogue Wave\Views 6.2.1\include;C:\GitHub\VS2017-WeighingDLL\cssrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;IL_STD;X3CENTR3_EXPORTS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -115,7 +115,7 @@
       <WarningLevel>Level1</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4996;4482;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <AdditionalDependencies>winviews.lib;ilvbmp.lib;ilvjpg.lib;ilvgadgt.lib;ilvadvgdt.lib;ilvatext.lib;ilvadvgadmgr.lib;ilvappframe.lib;ilvmgr.lib;ilvgadmgr.lib;ilog.lib;views.lib;wsock32.lib;imm32.lib;comctl32.lib;shlwapi.lib;Version.lib;%(AdditionalDependencies)</AdditionalDependencies>

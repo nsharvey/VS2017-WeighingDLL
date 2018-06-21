@@ -1,12 +1,12 @@
-// Ilv Version: 6.2
-// File generated: Mon Jun 18 12:06:28 2018
+// Ilv Version: 5.6
+// File generated: Wed Jun 06 12:28:49 2018
 // Creator class: IlvGadgetManagerOutput
 FileName "clavier_tactile"
-PathName "C:\\GitHub\\VS2017-WeighingDLL\\IlogFile\\clavier_tactile.ilv"
+PathName "C:\\GitHub\\weighing\\IlogFile\\clavier_tactile.ilv"
 Palettes 3
-"default" 1 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
-2 F "darkslateblue" "white" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
 0 F "gray" "black" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+"default" 1 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
+2 F 65025 65025 65025 "white" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
 IlvObjects 43
 1 { 0 P 1
 [ IlvInteractorProperty __ilvInteractor "Gadget" ]
@@ -54,7 +54,7 @@ IlvObjects 43
 0
 1 { 8 P 1
 [ IlvInteractorProperty __ilvInteractor "Button" ]
-1 IlvZoomableTransparentIcon 0 0 "default" F9.007120678629398 0 0 8.950297974203824 88 224 } 544 "A6"
+1 IlvZoomableTransparentIcon 0 0 "default" F9.007120678629399 0 0 8.950297974203824 88 224 } 544 "A6"
 1
 1 "__ilvCallback" V"String""6" "toucheCB"
 0
@@ -246,7 +246,7 @@ IlvObjects 43
 0
 1 { 40 P 1
 [ IlvInteractorProperty __ilvInteractor "Button" ]
-1 IlvZoomableTransparentIcon 0 0 "default" F6.294187954849625 0 0 6.199098944911213 688 72 } 544 "validation"
+1 IlvZoomableTransparentIcon 0 0 "default" F6.294187954849625 0 0 6.199098944911213 688 384 } 544 "validation"
 1
 1 "__ilvCallback" "validationCB"
 0
@@ -262,7 +262,7 @@ IlvObjects 43
 1
 1 "__ilvCallback" V"String""-" "toucheCB"
 0
-Size 751 543
+Size 1304 613
 Background "gray"
 GeometryHandlers
 1 100 0 751 0 751 0
@@ -317,7 +317,7 @@ GeometryHandlers
  3 224 0 224  72 0 72 6  247 0 247 0
  3 304 0 304  72 0 72 26  167 0 167 0
  3 384 0 384  72 0 72 27  87 0 87 0
- 3 72 0 72  50 0 50 40  421 9 421 0
+ 3 384 0 384  50 0 50 40  109 9 109 0
  3 440 0 440  46 0 46 41  0 0 57 0
  3 64 0 64  72 0 72 18  407 0 407 0
  3 144 0 144  72 0 72 20  327 0 327 0

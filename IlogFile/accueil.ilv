@@ -1,12 +1,12 @@
-// Ilv Version: 5.3
-// File generated: Tue May 11 11:33:39 2010
+// Ilv Version: 6.2
+// File generated: Thu Jun 21 07:51:04 2018
 // Creator class: IlvGadgetManagerOutput
 FileName "accueil"
-PathName "C:\\e\\MyDevelopment\\centrale sarto modif\\IlogFile\\accueil.ilv"
+PathName "C:\\GitHub\\VS2017-WeighingDLL\\IlogFile\\accueil.ilv"
 Palettes 3
 "default" 0 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
-1 F "darkslateblue" "white" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
 2 F "gray" "black" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+1 F "darkslateblue" "white" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
 IlvObjects 23
 0 { 0 P 1
 [ IlvInteractorProperty __ilvInteractor "Button" ]
