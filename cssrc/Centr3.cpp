@@ -1,7 +1,7 @@
 // -------------------------------------------------------------- -*- C++ -*-
-// File: C:\GitHub\VS2017-WeighingDLL\cssrc\Centr3.cpp
+// File: C:\GitHub\weighing\cssrc\Centr3.cpp
 //                                                    application source file
-// File generated Mon Jun 18 12:06:26 2018
+// File generated Tue Jun 12 08:15:49 2018
 //      by Rogue Wave Views Studio
 // --------------------------------------------------------------------------
 

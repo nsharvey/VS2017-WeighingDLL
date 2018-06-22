@@ -1,12 +1,12 @@
-// Ilv Version: 5.6
-// File generated: Wed Jun 06 12:28:49 2018
+// Ilv Version: 5.3
+// File generated: Wed May 12 10:12:10 2010
 // Creator class: IlvGadgetManagerOutput
 FileName "clavier_tactile"
-PathName "C:\\GitHub\\weighing\\IlogFile\\clavier_tactile.ilv"
+PathName "C:\\e\\MyDevelopment\\centrale sarto modif\\IlogFile\\clavier_tactile.ilv"
 Palettes 3
 0 F "gray" "black" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
+2 F "darkslateblue" "white" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
 "default" 1 F "gray" "black" "default" "StockedDefaultGui" 0 solid solid 0 0 0 65535 0
-2 F 65025 65025 65025 "white" "%MS Sans Serif-24-[Charset:0]" 0 solid solid 0 0 0 65535 1
 IlvObjects 43
 1 { 0 P 1
 [ IlvInteractorProperty __ilvInteractor "Gadget" ]
@@ -262,7 +262,7 @@ IlvObjects 43
 1
 1 "__ilvCallback" V"String""-" "toucheCB"
 0
-Size 1304 613
+Size 751 543
 Background "gray"
 GeometryHandlers
 1 100 0 751 0 751 0

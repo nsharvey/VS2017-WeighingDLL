@@ -499,7 +499,7 @@ bool AdxData::loadParameters( const char* ParamfileName)
 			setDebutSlo(line.getLong(SLODEB));
 		}
 
-//X3-67237: Added below sention to determine whether we are pre V11 or not
+//X3-67237: Set the new fields based on whether we are Pre V11 or not
 		if ( getX3Ver() == 11)
 		{
 			if (getDecoupageCAB() == 1)
